@@ -1,0 +1,201 @@
+{
+  "id": "2026-11-10-kyushu-spa-naoiri-odai-endurance",
+  "slug": "kyushu-spa-naoiri-odai-endurance-special",
+  "publishedAt": "2026-11-10",
+  "category": "endurance-fun",
+  "articleType": "digest",
+  "circuit": "SPA直入 (Oita, Takeda)",
+  "region": "Kyushu / Oita",
+  "featuredCat": "naoko",
+  "heroImage": "/images/cats/naoko.png",
+  "tags": ["SPA直入", "お題付き耐久草レース", "レン耐", "大分", "草レース"],
+  "eventMeta": {
+    "date": "2026-11-08",
+    "venue": {
+      "ja": "SPA直入（大分県竹田市直入町）全長1,430m",
+      "ca": "Circuit SPA Naoiri (Takeda, Oita) — 1.430m",
+      "en": "SPA Naoiri Circuit (Takeda, Oita) — 1,430m"
+    },
+    "weather": {
+      "ja": "快晴 / ドライ（気温 17℃・路面温度 24℃）",
+      "ca": "Assolellat / Sec (Temp. ambient 17°C / Asfalt 24°C)",
+      "en": "Sunny / Dry (Air 17°C / Track 24°C)"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【大分・SPA直入】笑いと涙の「お題付き耐久草レース」徹底レポート！ピットのお題で知恵の輪に悶絶、大逆転劇の結末は！？",
+      "subtitle": "コースで1秒削るより、ピットでけん玉一発成功が効く！？ナオコ姐さんが斬る究極のエンタメ草耐久",
+      "summary": "大分県竹田市のSPA直入を舞台に開催された大人気レクリエーションレース「お題付き耐久草レース」。レン耐などと共に全国で盛り上がる「速さ×ピットお題」の熱戦を、ガレージ住まいの黒猫メカニック・ナオコが辛口かつ愛たっぷりに振り返ります。",
+      "highlightPoint": "ラップタイム最速のガチ勢チームがピットお題「知恵の輪＆早口言葉」でまさかの4分足止め！エンジョイ勢が最終盤で大逆転チェッカー！",
+      "sections": [
+        {
+          "heading": "1コーナーの突っ込みより熱い！？「お題付き耐久草レース」の醍醐味",
+          "body": "大分県・長湯温泉のすぐ近く、標高のある爽やかな風が吹く「SPA直入（スパなおいり）」。普段は九州ロードレースシリーズやストイックなスポーツ走行で熱い火花が散るこの1,430mのテクニカルコースが、この日は朝から爆笑と歓声に包まれました。それが、ライダー交代やルーティンピットのたびに特別ミッションが課される『お題付き耐久草レース』です！青木拓磨プロデュースの「レン耐」などでもお馴染みのこのレクリエーション耐久フォーマットでは、いくらコース上で膝を擦ってベストラップを叩き出しても、ピットロードで待つ「お題（けん玉、知恵の輪、クイズ、ラムネ一気飲み、お絵描き伝言ゲームなど）」をクリアしない限りコースへ復帰できません。"
+        },
+        {
+          "heading": "勝負の分かれ目は後半スティントの「知恵の輪＆大分ご当地クイズ」！",
+          "body": "序盤からトップを快走していたのは、SPA直入のレコードタイムに近いペースで周回するベテラン組。しかし耐久折り返しの第3ピットインで事件が起きます。引き当てたお題カードは『激ムズ知恵の輪＋大分・竹田の名物3つ暗唱』。レーシンググローブを外す手も震える中、極度の緊張からか知恵の輪がまったく外れない！その横で、普段はツーリングメインの夫婦＆友人チームが一発でけん玉のお題を決め、なんと同一周回から一気にトップへ浮上！ピットウォールからは敵味方関係なく大拍手が巻き起こりました。"
+        },
+        {
+          "heading": "ナオコ姐さん直伝：お題付き耐久を勝ち抜く「3つの鉄則」",
+          "body": "① コース上で無理をして転倒しないこと（無転倒ボーナスや修理タイムロスの回避が最優先）。② ピットイン直前の最終コーナー〜ホームストレートは呼吸を整えて心拍数を下げておくこと（息が上がった状態での細かい手作業お題は失敗率3倍）。③ 何よりチーム全員で笑い飛ばすこと！レース後は長湯温泉で汗を流し、直入名物のソフトクリームで乾杯するのが九州ライダーの正しい休日です。"
+        }
+      ],
+      "resultTableTitle": "SPA直入 お題付き耐久草レース（3時間クラス）ダイジェスト結果",
+      "results": [
+        {
+          "pos": "1st 🏆",
+          "riderOrTeam": "Team 湯けむり肉球レーシング",
+          "machine": "GROM / CBR250R 混走",
+          "timeOrNote": "112周（お題ノーミスクリア賞＋逆転優勝！）"
+        },
+        {
+          "pos": "2nd 🥈",
+          "riderOrTeam": "直入ガレージ黒猫組",
+          "machine": "NSF100 / GSX-R125",
+          "timeOrNote": "112周（+14.8秒 / けん玉お題1回やり直し）"
+        },
+        {
+          "pos": "3rd 🥉",
+          "riderOrTeam": "HSR＆オートポリス遠征隊",
+          "machine": "CBR250RR / YZF-R25",
+          "timeOrNote": "111周（コース上ファステスト・知恵の輪で4分滞在）"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naoko",
+          "mood": "grumpy",
+          "text": "ったく、あんたたちコース上でコンマ5秒削るために必死な顔してるくせに、ピットに戻ってきて知恵の輪ひとつ外せなくて半泣きになってんじゃないわよ！レーシンググローブ脱ぐ前に深呼吸しろってあれほど言ったでしょ！"
+        },
+        {
+          "speaker": "suzuka",
+          "mood": "normal",
+          "text": "あはは！でもナオコさん、ピットでお題に苦戦してるライダーさんに、冷たいおしぼりと飲み物を一番最初に渡してたの、私の望遠レンズでしっかり撮っちゃいましたよ📸"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "maiden",
+          "text": "な、なによスズカ！そのデータは今すぐ消しなさいよっ！…べ、別に心配なんかしてないわよ！ただ、あんたが「ナオコさんの整備してくれたバイク、最高に乗りやすい」なんて言うから…その、最後まで無事にチェッカー受けてほしかっただけよ…バカ…🌸"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Oita · SPA Naoiri] Crònica de la «Cursa de Resistència amb Reptes»: puzles al box, rialles i una remuntada èpica!",
+      "subtitle": "De què serveix guanyar un segon per volta si t'encalles amb un trencaclosques al pit-stop? L'anàlisi de la mecànica Naoko",
+      "summary": "El circuit SPA Naoiri, a Takeda (prefectura d'Oita, Kyushu), va acollir una nova edició de les populars curses de resistència recreatives «Odai-tsuki» (amb reptes al box). La nostra gata mecànica Naoko ens explica com un equip amateur va superar els pilots més ràpids.",
+      "highlightPoint": "L'equip amb la volta ràpida va perdre 4 minuts al box intentant resoldre un trencaclosques metàl·lic, permetent una victòria històrica dels debutants!",
+      "sections": [
+        {
+          "heading": "Més emocionant que una apurada de frenada: l'esperit de la resistència amb reptes",
+          "body": "A prop de les fonts termals de Nagayu, a les muntanyes d'Oita, el Circuit SPA Naoiri (1.430 metres) és un paradís tècnic per als motoristes de Kyushu. Però en les curses de «Resistència amb Reptes» (similars al popular format japonès Rentai), la velocitat pura a l'asfalt és només la meitat de la batalla. A cada canvi de pilot al pit-lane, l'equip ha d'extreure una targeta i superar una prova d'habilitat —com encertar amb el kendama (joc tradicional japonès), resoldre un anell metàl·lic d'enginy o respondre preguntes locals— abans que el comissari els doni llum verda per sortir a pista."
+        },
+        {
+          "heading": "El gir dramàtic a la tercera aturada: quan els nervis traïcionen els més ràpids",
+          "body": "Durant la primera meitat de la prova, els pilots més experimentats dominaven amb ritme de rècord. Tanmateix, a la tercera aturada obligatòria, les pulsacions a 170 bpm els van jugar una mala passada amb el trencaclosques metàl·lic. Mentrestant, l'equip «Yukemuri Paws», format per amics i aficionats de cap de setmana, va superar el repte del kendama al primer intent, prenent el lideratge davant l'ovació de tot el pàdoc."
+        },
+        {
+          "heading": "Els 3 consells de la Naoko per triomfar a les curses populars de Kyushu",
+          "body": "1) Zero caigudes: mantenir la moto sencera val més que qualsevol volta ràpida. 2) Baixar les pulsacions a la recta abans d'entrar a box perquè no et tremolin les potes durant el repte. 3) Gaudir de les aigües termals d'Oita i d'un bon gelat després de la bandera de quadres!"
+        }
+      ],
+      "resultTableTitle": "Resultats destacats — Resistència amb Reptes SPA Naoiri (3 Hores)",
+      "results": [
+        {
+          "pos": "1r 🏆",
+          "riderOrTeam": "Team Yukemuri Paws Racing",
+          "machine": "GROM / CBR250R",
+          "timeOrNote": "112 voltes (0 errors als reptes del box!)"
+        },
+        {
+          "pos": "2n 🥈",
+          "riderOrTeam": "Naoiri Garage Black Cats",
+          "machine": "NSF100 / GSX-R125",
+          "timeOrNote": "112 voltes (+14.8s)"
+        },
+        {
+          "pos": "3r 🥉",
+          "riderOrTeam": "Expedició HSR & Autopolis",
+          "machine": "CBR250RR / YZF-R25",
+          "timeOrNote": "111 voltes (Volta ràpida en pista, 4 min al puzle)"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naoko",
+          "mood": "grumpy",
+          "text": "Però serà possible?! Us deixeu la pell per esgarrapar mig segon a la chicane i després entreu al box i us poseu a plorar perquè no sabeu separar dos ferros d'un trencaclosques! Respireu fondo abans de treure-us els guants, tros d'ase!"
+        },
+        {
+          "speaker": "suzuka",
+          "mood": "normal",
+          "text": "Hahaha! Però Naoko, amb el meu teleobjectiu t'he enxampat donant una tovallola fresca i beguda isotònica d'amagat al pilot quan estava més nerviós al box 📸"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "maiden",
+          "text": "Q-què dius ara, Suzuka?! Esborra aquesta foto immediatament! ...N-no és que estigués preocupada per ell! És només que abans de sortir m'ha dit que la moto anava finíssima gràcies a mi i... bé, volia veure el seu somriure en creuar la meta, d'acord?! Que tonta soc... 🌸"
+        }
+      ]
+    },
+    "en": {
+      "title": "[Oita · SPA Naoiri] Laughs, Tears & Checkered Flags at the 'Odai' Challenge Endurance Race!",
+      "subtitle": "Why shaving a second on track means nothing if you can't solve a metal puzzle in the pit box! Garage Chief Naoko breaks it down",
+      "summary": "Held at SPA Naoiri Circuit in Takeda, Oita Prefecture, the 'Odai-Tsuki' (Task-Challenge) Grassroots Endurance Race delivered unforgettable drama. Similar to Japan's famous Rentai series, riders must clear quirky pit-stop mini-games at every rider change.",
+      "highlightPoint": "The fastest pro-am squad lost 4 full minutes wrestling with a brain-teaser ring puzzle in the pits—handing a fairytale victory to a weekend touring crew!",
+      "sections": [
+        {
+          "heading": "Hard Braking Meets Brain Teasers: What is 'Odai' Challenge Endurance?",
+          "body": "Tucked away in the lush highlands of Takeda, Oita Prefecture near Nagayu Onsen, the 1,430-meter SPA Naoiri Circuit is a beloved home track for Kyushu riders. While regional championship days are all about split-second lap times, 'Odai-Tsuki' Challenge Endurance turns the paddock into a festival. Just like Takuma Aoki’s popular 'Rentai' series, teams must draw a challenge card at every pit stop—ranging from landing a traditional Japanese kendama trick, untangling a metal puzzle, or answering local Oita trivia—before their bike is released back onto the track."
+        },
+        {
+          "heading": "The Third-Stint Twist: High Heart Rates vs. Delicate Puzzles",
+          "body": "For the first two hours, the lap-record regulars looked untouchable on track. Then came Pit Stop #3. With adrenaline pumping and hands trembling inside racing gloves, their rider drew the 'Master Metal Puzzle + Takeda Local Quiz' combo and froze for four agonizing minutes. Meanwhile, Team Yukemuri Paws nailed their kendama catch on the first try and sailed into the overall lead to wild cheers from the pit wall."
+        },
+        {
+          "heading": "Naoko’s 3 Golden Rules for Kyushu Recreational Endurance",
+          "body": "1) Keep the shiny side up—zero crashes beat hero laps every time. 2) Cool down your heart rate on the final lap before pitting so your paws don't shake on the puzzle table. 3) Celebrate afterwards with Nagayu hot springs and Naoiri soft-serve ice cream!"
+        }
+      ],
+      "resultTableTitle": "SPA Naoiri 'Odai' Challenge Endurance (3-Hour Class) Highlights",
+      "results": [
+        {
+          "pos": "1st 🏆",
+          "riderOrTeam": "Team Yukemuri Paws Racing",
+          "machine": "GROM / CBR250R Mixed",
+          "timeOrNote": "112 Laps (Flawless Pit Challenge Award!)"
+        },
+        {
+          "pos": "2nd 🥈",
+          "riderOrTeam": "Naoiri Garage Black Cats",
+          "machine": "NSF100 / GSX-R125",
+          "timeOrNote": "112 Laps (+14.8s)"
+        },
+        {
+          "pos": "3rd 🥉",
+          "riderOrTeam": "HSR & Autopolis Expedition",
+          "machine": "CBR250RR / YZF-R25",
+          "timeOrNote": "111 Laps (Fastest Lap, 4m Puzzle Delay)"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naoko",
+          "mood": "grumpy",
+          "text": "Give me a break! You knuckleheads risk your paintwork to shave half a second in the hairpin, then come into the pit box and nearly cry over a wire puzzle?! Take a deep breath before pulling off your gloves, you amateurs!"
+        },
+        {
+          "speaker": "suzuka",
+          "mood": "normal",
+          "text": "Hehe, Naoko-san, my telephoto lens totally caught you sneaking a cold towel and sports drink to our anchor rider right before the final stint! 📸"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "maiden",
+          "text": "W-what are you talking about, Suzuka?! Delete that photo right now! ...I-it's not like I was worried! He just told me earlier that my carb and suspension setup felt like magic, so... I just wanted to see him cross the finish line with a smile, okay?! Don't read into it... 🌸"
+        }
+      ]
+    }
+  }
+}

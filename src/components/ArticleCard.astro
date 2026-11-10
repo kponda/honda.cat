@@ -1,0 +1,240 @@
+---
+import type { ArticleData } from '../data/articles';
+import { CAT_TEAM, UI_TEXT } from '../data/i18n';
+
+interface Props {
+  article: ArticleData;
+}
+
+const { article } = Astro.props;
+const cat = CAT_TEAM[article.featuredCat] || CAT_TEAM.marc;
+const catLabel = UI_TEXT.categories[article.category];
+const typeLabel = UI_TEXT.articleTypes[article.articleType];
+---
+
+<article class="article-card" data-category={article.category}>
+  <a href={`/articles/${article.slug}/`} class="card-link">
+    <div class="card-media">
+      <img src={article.heroImage} alt={article.locales.ja.title} class="card-img" loading="lazy" />
+      <div class="card-badges">
+        <span class="badge cat-badge" style={`background: ${cat.badgeColor}; color: #fff;`}>
+          <span data-i18n="ja">{catLabel.ja}</span>
+          <span data-i18n="ca">{catLabel.ca}</span>
+          <span data-i18n="en">{catLabel.en}</span>
+        </span>
+        <span class="badge type-badge">
+          <span data-i18n="ja">{typeLabel.ja}</span>
+          <span data-i18n="ca">{typeLabel.ca}</span>
+          <span data-i18n="en">{typeLabel.en}</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <div class="card-meta">
+        <span class="meta-date racing-font">📅 {article.publishedAt}</span>
+        <span class="meta-circuit">📍 {article.circuit}</span>
+      </div>
+
+      <h3 class="card-title">
+        <span data-i18n="ja">{article.locales.ja.title}</span>
+        <span data-i18n="ca">{article.locales.ca.title}</span>
+        <span data-i18n="en">{article.locales.en.title}</span>
+      </h3>
+
+      <p class="card-summary">
+        <span data-i18n="ja">{article.locales.ja.summary}</span>
+        <span data-i18n="ca">{article.locales.ca.summary}</span>
+        <span data-i18n="en">{article.locales.en.summary}</span>
+      </p>
+
+      <div class="card-highlight">
+        <span class="hl-icon">⚡</span>
+        <p class="hl-text">
+          <span data-i18n="ja">{article.locales.ja.highlightPoint}</span>
+          <span data-i18n="ca">{article.locales.ca.highlightPoint}</span>
+          <span data-i18n="en">{article.locales.en.highlightPoint}</span>
+        </p>
+      </div>
+
+      <div class="card-footer">
+        <div class="reporter-chip">
+          <img src={cat.image} alt={cat.name.en} class="reporter-avatar" />
+          <div class="reporter-info">
+            <span class="reporter-label">
+              <span data-i18n="ja">担当猫記者</span>
+              <span data-i18n="ca">Redactor felí</span>
+              <span data-i18n="en">Cat Reporter</span>
+            </span>
+            <span class="reporter-name">
+              <span data-i18n="ja">{cat.name.ja}</span>
+              <span data-i18n="ca">{cat.name.ca}</span>
+              <span data-i18n="en">{cat.name.en}</span>
+            </span>
+          </div>
+        </div>
+
+        <span class="read-more racing-font">
+          <span data-i18n="ja">記事を読む →</span>
+          <span data-i18n="ca">Llegir més →</span>
+          <span data-i18n="en">Read Report →</span>
+        </span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<style>
+  .article-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 183, 3, 0.4);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+  }
+
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-media {
+    position: relative;
+    height: 210px;
+    overflow: hidden;
+    background: #10131a;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+    transition: transform 0.35s ease;
+  }
+
+  .article-card:hover .card-img {
+    transform: scale(1.05);
+  }
+
+  .card-badges {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: space-between;
+  }
+
+  .type-badge {
+    background: rgba(13, 15, 20, 0.85);
+    backdrop-filter: blur(6px);
+    color: var(--accent-gold);
+    border: 1px solid rgba(255, 183, 3, 0.35);
+  }
+
+  .card-content {
+    padding: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+  }
+
+  .card-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .meta-circuit {
+    color: var(--accent-gold);
+    font-weight: 600;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.45;
+    color: var(--text-primary);
+  }
+
+  .card-summary {
+    font-size: 0.86rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .card-highlight {
+    margin-top: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    background: rgba(255, 183, 3, 0.08);
+    border-left: 3px solid var(--accent-gold);
+    padding: 0.6rem 0.75rem;
+    border-radius: 0 0.45rem 0.45rem 0;
+    font-size: 0.8rem;
+    color: #ffe599;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.85rem;
+    margin-top: 0.25rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .reporter-chip {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .reporter-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-gold);
+  }
+
+  .reporter-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  .reporter-label {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+  }
+
+  .reporter-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .read-more {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--accent-red);
+  }
+</style>

@@ -1,0 +1,149 @@
+---
+import type { CatDialogue } from '../data/articles';
+import { CAT_TEAM, type Lang } from '../data/i18n';
+
+interface Props {
+  dialogues: CatDialogue[];
+  lang: Lang;
+}
+
+const { dialogues, lang } = Astro.props;
+
+const moodBadgeLabels: Record<CatDialogue['mood'], Record<Lang, string>> = {
+  normal: { ja: '🐾 パドック解説', ca: '🐾 Comentari de Pàdoc', en: '🐾 Paddock Note' },
+  excited: { ja: '🔥 大興奮モード', ca: '🔥 Màxima Emoció', en: '🔥 Full Throttle' },
+  grumpy: { ja: '🔧 ナオコのやさぐれ毒舌', ca: '🔧 Naoko Rondinaire', en: '🔧 Scruffy Garage Rant' },
+  maiden: { ja: '🌸 ナオコのふいに出る乙女モード♡', ca: '🌸 El costat tendre de la Naoko♡', en: '🌸 Sudden Maiden Blush♡' }
+};
+---
+
+<div class="dialogue-container">
+  <h3 class="dialogue-heading">
+    {lang === 'ja' && '🐱 猫編集部のパドック裏話＆掛け合い'}
+    {lang === 'ca' && '🐱 La Tertúlia Felina del Pàdoc'}
+    {lang === 'en' && '🐱 Cat Editorial Paddock Banter'}
+  </h3>
+
+  <div class="dialogue-list">
+    {dialogues.map((item) => {
+      const cat = CAT_TEAM[item.speaker] || CAT_TEAM.marc;
+      const isMaiden = item.mood === 'maiden';
+      const isGrumpy = item.mood === 'grumpy';
+      return (
+        <div class={`dialogue-row mood-${item.mood}`}>
+          <div class="speaker-col">
+            <img src={cat.image} alt={cat.name[lang]} class="speaker-avatar" />
+          </div>
+          <div class="bubble-col">
+            <div class="bubble-header">
+              <span class="speaker-name">{cat.name[lang]}</span>
+              <span class={`mood-pill ${isMaiden ? 'pill-maiden' : isGrumpy ? 'pill-grumpy' : ''}`}>
+                {moodBadgeLabels[item.mood][lang]}
+              </span>
+            </div>
+            <p class="bubble-text">{item.text}</p>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</div>
+
+<style>
+  .dialogue-container {
+    margin-top: 2.5rem;
+    background: rgba(21, 25, 34, 0.9);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1rem;
+    padding: 1.75rem;
+  }
+
+  .dialogue-heading {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 1.35rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .dialogue-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+  }
+
+  .dialogue-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.85rem;
+    background: rgba(13, 15, 20, 0.65);
+    border: 1px solid var(--border-subtle);
+  }
+
+  .dialogue-row.mood-maiden {
+    background: linear-gradient(135deg, rgba(255, 117, 143, 0.14), rgba(199, 125, 255, 0.08));
+    border-color: rgba(255, 117, 143, 0.45);
+  }
+
+  .dialogue-row.mood-grumpy {
+    border-left: 4px solid var(--accent-naoko);
+  }
+
+  .speaker-avatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-gold);
+    flex-shrink: 0;
+  }
+
+  .mood-maiden .speaker-avatar {
+    border-color: var(--accent-pink);
+  }
+
+  .bubble-col {
+    flex: 1;
+  }
+
+  .bubble-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.4rem;
+  }
+
+  .speaker-name {
+    font-weight: 800;
+    font-size: 0.92rem;
+  }
+
+  .mood-pill {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.18rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+  }
+
+  .pill-maiden {
+    background: rgba(255, 117, 143, 0.22);
+    color: #ffacc2;
+    border: 1px solid rgba(255, 117, 143, 0.4);
+  }
+
+  .pill-grumpy {
+    background: rgba(199, 125, 255, 0.2);
+    color: #e0aaff;
+  }
+
+  .bubble-text {
+    font-size: 0.93rem;
+    line-height: 1.65;
+    color: var(--text-primary);
+  }
+</style>

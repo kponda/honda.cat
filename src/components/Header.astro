@@ -1,0 +1,205 @@
+---
+import { UI_TEXT } from '../data/i18n';
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand">
+      <span class="brand-logo">🐾🏁</span>
+      <div class="brand-text">
+        <span class="brand-domain racing-font">HONDA<span class="dot-cat">.CAT</span></span>
+        <span class="brand-sub" data-i18n="ja">二足歩行の猫編集部・二輪レース情報局</span>
+        <span class="brand-sub" data-i18n="ca">El Pàdoc dels Gats · Motociclisme</span>
+        <span class="brand-sub" data-i18n="en">Bipedal Cat Motorsport Paddock</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main Navigation">
+      <a href="/#articles" class="nav-link">
+        <span data-i18n="ja">{UI_TEXT.nav.articles.ja}</span>
+        <span data-i18n="ca">{UI_TEXT.nav.articles.ca}</span>
+        <span data-i18n="en">{UI_TEXT.nav.articles.en}</span>
+      </a>
+      <a href="/#kyushu-hub" class="nav-link nav-highlight">
+        <span data-i18n="ja">{UI_TEXT.nav.kyushu.ja}</span>
+        <span data-i18n="ca">{UI_TEXT.nav.kyushu.ca}</span>
+        <span data-i18n="en">{UI_TEXT.nav.kyushu.en}</span>
+      </a>
+      <a href="/#cat-team" class="nav-link">
+        <span data-i18n="ja">{UI_TEXT.nav.cats.ja}</span>
+        <span data-i18n="ca">{UI_TEXT.nav.cats.ca}</span>
+        <span data-i18n="en">{UI_TEXT.nav.cats.en}</span>
+      </a>
+      <a href="/#catalunya-mission" class="nav-link">
+        <span data-i18n="ja">{UI_TEXT.nav.catalunya.ja}</span>
+        <span data-i18n="ca">{UI_TEXT.nav.catalunya.ca}</span>
+        <span data-i18n="en">{UI_TEXT.nav.catalunya.en}</span>
+      </a>
+    </nav>
+
+    <div class="lang-switcher" role="group" aria-label="Language Switcher">
+      <button type="button" class="lang-btn active" data-lang-switch="ja" title="日本語 (デフォルト・自動記憶)">
+        🇯🇵 日本語
+      </button>
+      <button type="button" class="lang-btn" data-lang-switch="ca" title="Català (.cat Oficial)">
+        🏴󠁥󠁳󠁣󠁴󠁿 Català
+      </button>
+      <button type="button" class="lang-btn" data-lang-switch="en" title="English">
+        🇬🇧 EN
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="lang-memory-toast" class="lang-toast" role="status" aria-live="polite"></div>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(13, 15, 20, 0.9);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .brand-logo {
+    font-size: 1.75rem;
+    line-height: 1;
+    background: rgba(230, 57, 70, 0.14);
+    border: 1px solid rgba(230, 57, 70, 0.35);
+    padding: 0.4rem 0.55rem;
+    border-radius: 0.6rem;
+  }
+
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand-domain {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+  }
+
+  .dot-cat {
+    color: var(--accent-gold);
+  }
+
+  .brand-sub {
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: color 0.15s ease;
+  }
+
+  .nav-link:hover {
+    color: #fff;
+  }
+
+  .nav-highlight {
+    color: var(--accent-gold);
+    background: rgba(255, 183, 3, 0.1);
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 183, 3, 0.25);
+  }
+
+  .lang-switcher {
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg-secondary);
+    padding: 0.25rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--border-subtle);
+    gap: 0.2rem;
+  }
+
+  .lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.38rem 0.68rem;
+    border-radius: 0.42rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: inherit;
+  }
+
+  .lang-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .lang-btn.active {
+    background: var(--accent-red);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(230, 57, 70, 0.4);
+  }
+
+  .lang-toast {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 200;
+    background: #1b202c;
+    color: #fff;
+    border: 1px solid var(--accent-gold);
+    padding: 0.75rem 1.1rem;
+    border-radius: 0.65rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+  }
+
+  .lang-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 860px) {
+    .main-nav {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      padding-top: 0.4rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+  }
+</style>

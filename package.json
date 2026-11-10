@@ -1,0 +1,19 @@
+{
+  "name": "honda-cat",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "honda.cat - Trilingual (JA/CA/EN) Motorsport & Grassroots Racing Portal powered by Bipedal Paddock Cats & AI",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "generate:article": "python3 scripts/generate_articles.py",
+    "generate:preview": "python3 scripts/generate_articles.py --mode preview",
+    "generate:digest": "python3 scripts/generate_articles.py --mode digest",
+    "generate:kyushu": "python3 scripts/generate_articles.py --mode kyushu"
+  },
+  "dependencies": {
+    "astro": "^4.16.18"
+  }
+}

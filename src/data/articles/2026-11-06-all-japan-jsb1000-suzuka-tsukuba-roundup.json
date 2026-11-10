@@ -1,0 +1,189 @@
+{
+  "id": "2026-11-06-all-japan-jsb1000-suzuka-tsukuba-roundup",
+  "slug": "all-japan-road-race-and-national-grassroots-roundup",
+  "publishedAt": "2026-11-06",
+  "category": "all-japan",
+  "articleType": "digest",
+  "circuit": "鈴鹿 / もてぎ / 筑波 / オートポリス / SUGO / 岡山",
+  "region": "All-Japan / Nationwide",
+  "featuredCat": "suzuka",
+  "heroImage": "/images/cats/suzuka.png",
+  "tags": ["全日本ロードレース", "JSB1000", "鈴鹿サンデー", "テイスト・オブ・ツクバ", "地方選手権"],
+  "eventMeta": {
+    "date": "2026-11-06",
+    "venue": {
+      "ja": "鈴鹿サーキット・筑波サーキット・モビリティリゾートもてぎ 他全国",
+      "ca": "Circuits de Suzuka, Tsukuba, Motegi, Autopolis i tot el Japó",
+      "en": "Suzuka, Tsukuba, Motegi, Autopolis & Nationwide Japanese Tracks"
+    },
+    "weather": {
+      "ja": "秋晴れ / ベストタイム更新続出の好コンディション",
+      "ca": "Sol de tardor / Condicions de rècord a tot el país",
+      "en": "Crisp Autumn Sun / Record-Breaking Track Conditions"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【全日本ロード＆全国地方選総まとめ】鈴鹿MFJグランプリから筑波・もてぎ・九州まで！日本列島を駆けるライダーたちの秋",
+      "subtitle": "JSB1000の頂上決戦から、サンデーレース・鉄フレームの祭典までスズカが全国パドックを徹底取材",
+      "summary": "最高峰JSB1000・ST1000・ST600・J-GP3が激突した全日本ロードレース選手権から、鈴鹿サンデーロードレース、筑波やもてぎ、そして九州の地方戦まで、日本の二輪レースピラミッドの盛り上がりを3カ国語で発信します。",
+      "highlightPoint": "全日本J-GP3やST600で活躍する若手ライダーの多くが、各地のミニバイクレースや地方サンデーレースからステップアップ！",
+      "sections": [
+        {
+          "heading": "鈴鹿・もてぎ・オートポリスを繋ぐ全日本ロードレースの熱気",
+          "body": "日本のロードレース最高峰であるMFJ全日本ロードレース選手権。リッタースーパースポーツが200馬力超の咆哮を響かせるJSB1000クラスはもちろん、イコールコンディションのダンロップタイヤで1000分の1秒を競うST1000・ST600、そして将来の世界グランプリライダーを育てるJ-GP3まで、どのクラスも最終ラップのシケインまで勝敗が分からない名勝負が繰り広げられました。"
+        },
+        {
+          "heading": "草レースから全日本へ！日本の豊かなサーキット文化を世界へ発信",
+          "body": "日本の二輪レースの凄さは、トップカテゴリーだけではありません。筑波の『テイスト・オブ・ツクバ』や熊本の『鉄馬（HSR九州）』のようなカスタム＆ビンテージレーサーの祭典、鈴鹿・もてぎ・SUGO・岡山の地方選手権、そして大分SPA直入の『お題付き耐久草レース』や『レン耐』のような入門レクリエーション耐久まで、誰もが自分のペースでサーキットを楽しめる裾野の広さこそ日本が世界に誇る宝物です。"
+        }
+      ],
+      "resultTableTitle": "日本全国の主要ロードレースカテゴリー＆特徴一覧",
+      "results": [
+        {
+          "pos": "MFJ 全日本",
+          "riderOrTeam": "JSB1000 / ST1000 / ST600 / J-GP3",
+          "machine": "鈴鹿・もてぎ・AP・SUGO・岡山・筑波",
+          "timeOrNote": "国内最高峰！メーカー系チームと名門プライベーターが激突"
+        },
+        {
+          "pos": "地方選手権",
+          "riderOrTeam": "九州選手権 / 鈴鹿サンデー / もてぎロード",
+          "machine": "SPA直入・HSR九州・AP・鈴鹿・もてぎ",
+          "timeOrNote": "週末レーサーたちの真剣勝負＆登竜門カテゴリー"
+        },
+        {
+          "pos": "エンタメ＆鉄馬",
+          "riderOrTeam": "お題付き耐久 / レン耐 / 鉄馬 / TOT",
+          "machine": "SPA直入・HSR九州・筑波・全国ミニコース",
+          "timeOrNote": "笑顔と情熱あふれる大人の最高峰ホビーレース！"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "suzuka",
+          "mood": "excited",
+          "text": "鈴鹿のヘアピンから大分のSPA直入まで、どのサーキットに行ってもパドックの皆さんが温かく迎えてくれて、シャッターを切る肉球が止まりません📸✨"
+        },
+        {
+          "speaker": "marc",
+          "mood": "normal",
+          "text": "カタルーニャのライダーたちも、日本の草レースやミニバイク耐久の層の厚さにはいつも驚いてるニャ！これが強いライダーと最高のバイクを生む土壌なんだニャ！"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "maiden",
+          "text": "全日本だろうが草レースだろうが、チェッカーを受けた後のライダーの顔はみんな同じくらいキラキラしてるわよ…。って、な、何よその目は！別に感動なんかしてないわよ、目にパーツクリーナーがしみただけよ…🌸"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Especial Japó] Del Gran Premi MFJ de Suzuka a les curses populars de Kyushu: la piràmide del motociclisme japonès",
+      "subtitle": "La fotoperiodista Suzuka ens descobreix com es connecten el Campionat del Japó (JSB1000) i les curses amateurs de tot el país",
+      "summary": "Un recorregut complet per l'ecosistema del motociclisme japonès: des de la màxima categoria JSB1000 a Suzuka i Autopolis fins als festivals de motos clàssiques (Tetsuma i Taste of Tsukuba) i les curses de resistència amateurs.",
+      "highlightPoint": "La força del motociclisme japonès neix als circuits locals com SPA Naoiri, HSR Kyushu i Tsukuba, on milers d'aficionats competeixen cada cap de setmana!",
+      "sections": [
+        {
+          "heading": "L'emoció del Campionat del Japó (MFJ All-Japan Road Race)",
+          "body": "El campionat nacional japonès reuneix a Suzuka, Motegi, Autopolis, SUGO, Okayama i Tsukuba les millors Superbikes a la categoria reina JSB1000, juntament amb les igualadíssimes classes ST1000, ST600 i el planter de joves talents de J-GP3. Les batalles a l'última chicane de Suzuka són pura electricitat."
+        },
+        {
+          "heading": "Una cultura de circuit oberta a tothom: de les clàssiques a la resistència amb reptes",
+          "body": "El que fa únic el Japó és la seva base amateur: festivals com el «Taste of Tsukuba» o el «Tetsuma» a HSR Kyushu (Kumamoto), juntament amb les curses de resistència amb reptes («Odai-tsuki») a SPA Naoiri (Oita), permeten que qualsevol motorista visqui l'emoció de la competició amb seguretat i bon humor."
+        }
+      ],
+      "resultTableTitle": "Mapa de categories del motociclisme japonès",
+      "results": [
+        {
+          "pos": "MFJ Nacional",
+          "riderOrTeam": "JSB1000 / ST1000 / ST600 / J-GP3",
+          "machine": "Suzuka · Motegi · Autopolis · SUGO",
+          "timeOrNote": "L'elit del motociclisme japonès i banc de proves per al Mundial"
+        },
+        {
+          "pos": "Regional",
+          "riderOrTeam": "Campionat de Kyushu / Suzuka Sunday",
+          "machine": "SPA Naoiri · HSR Kyushu · Autopolis",
+          "timeOrNote": "El planter on es forgen els campions regionals"
+        },
+        {
+          "pos": "Popular & Fun",
+          "riderOrTeam": "Odai Resistència / Rentai / Tetsuma",
+          "machine": "SPA Naoiri · HSR Kyushu · Tsukuba",
+          "timeOrNote": "Diversió, mecànica artesanal i passió compartida!"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "suzuka",
+          "mood": "excited",
+          "text": "Des del revolt d'entrada a meta de Suzuka fins al pàdoc familiar de SPA Naoiri a Oita, l'ambient dels circuits japonesos és meravellós! No puc parar de fer fotos 📸✨"
+        },
+        {
+          "speaker": "marc",
+          "mood": "normal",
+          "text": "A Catalunya tenim una gran tradició de minimotos i resistència, i veure com ho viuen els nostres amics japonesos a Kyushu ens agermana encara més, miau!"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "maiden",
+          "text": "Tant si corren a JSB1000 com a la cursa popular d'Oita, tots posen la mateixa cara d'il·lusió sota el casc en veure la bandera de quadres... Q-què mireu?! No estic plorant, és que m'ha entrat esprai netejador de frens a l'ull... 🌸"
+        }
+      ]
+    },
+    "en": {
+      "title": "[All-Japan & Grassroots Roundup] From the Suzuka MFJ Grand Prix to Tsukuba & Kyushu Club Racing!",
+      "subtitle": "Photojournalist Suzuka explores the vibrant pyramid of Japanese motorcycle racing—from 200hp JSB1000 superbikes to recreational endurance",
+      "summary": "Discover how Japan's premier MFJ All-Japan Road Race Championship (JSB1000, ST1000, ST600, J-GP3) connects seamlessly with regional Sunday series, iron-frame festivals, and Oita's beloved grassroots endurance events.",
+      "highlightPoint": "Japan's racing strength comes from its deep grassroots culture across tracks like SPA Naoiri, HSR Kyushu, Autopolis, Tsukuba, and Suzuka!",
+      "sections": [
+        {
+          "heading": "MFJ All-Japan Road Race: Split-Second Battles Across the Archipelago",
+          "body": "Across iconic venues like Suzuka, Mobility Resort Motegi, Autopolis, Sportsland SUGO, Okayama, and Tsukuba, the MFJ All-Japan series showcases thrilling action from factory-backed JSB1000 superbikes down to the ultra-competitive ST600 and J-GP3 talent classes."
+        },
+        {
+          "heading": "Grassroots Heaven: Where Every Rider Can Be a Hero",
+          "body": "Beyond the pro ranks, Japan boasts an extraordinary grassroots ecosystem: heritage iron-frame festivals like 'Taste of Tsukuba' and HSR Kyushu's 'Tetsuma', regional Sunday championships, and joyful recreational endurance events like SPA Naoiri's 'Odai-Tsuki' Challenge Endurance and Rentai."
+        }
+      ],
+      "resultTableTitle": "Overview of Japan's Motorcycle Road Racing Pyramid",
+      "results": [
+        {
+          "pos": "MFJ All-Japan",
+          "riderOrTeam": "JSB1000 / ST1000 / ST600 / J-GP3",
+          "machine": "Suzuka · Motegi · Autopolis · SUGO",
+          "timeOrNote": "Premier national championship & World GP stepping stone"
+        },
+        {
+          "pos": "Regional Series",
+          "riderOrTeam": "Kyushu Road Race / Suzuka Sunday",
+          "machine": "SPA Naoiri · HSR Kyushu · Autopolis",
+          "timeOrNote": "Fierce clubman competition every weekend"
+        },
+        {
+          "pos": "Fun & Heritage",
+          "riderOrTeam": "Odai Endurance / Rentai / Tetsuma",
+          "machine": "SPA Naoiri · HSR Kyushu · Tsukuba",
+          "timeOrNote": "Grassroots camaraderie, custom builds & pit-stop games!"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "suzuka",
+          "mood": "excited",
+          "text": "From the Suzuka hairpin to the friendly paddock at SPA Naoiri in Oita, every rider has such a warm smile—my shutter paw never stops clicking! 📸✨"
+        },
+        {
+          "speaker": "marc",
+          "mood": "normal",
+          "text": "Catalonia and Japan both share this incredible grassroots mini-bike and endurance culture. That's why our two regions love racing so much, meow!"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "maiden",
+          "text": "Whether it's JSB1000 or a Sunday club race in Oita, every rider's eyes sparkle the exact same way under their visor after taking the checkered flag... H-hey, stop staring at me! I'm not tearing up, I just got brake cleaner in my eye... 🌸"
+        }
+      ]
+    }
+  }
+}

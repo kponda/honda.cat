@@ -1,0 +1,332 @@
+---
+import { CAT_TEAM, UI_TEXT } from '../data/i18n';
+
+const cats = [CAT_TEAM.marc, CAT_TEAM.suzuka, CAT_TEAM.naoko];
+---
+
+<section id="cat-team" class="cat-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge" style="background: rgba(230, 57, 70, 0.15); color: #ff6b78; border: 1px solid rgba(230, 57, 70, 0.3);">
+        RETRO-POP BIPEDAL PADDOCK CATS
+      </span>
+      <h2 class="section-title">
+        <span data-i18n="ja">{UI_TEXT.catPaddock.title.ja}</span>
+        <span data-i18n="ca">{UI_TEXT.catPaddock.title.ca}</span>
+        <span data-i18n="en">{UI_TEXT.catPaddock.title.en}</span>
+      </h2>
+      <p class="section-subtitle">
+        <span data-i18n="ja">{UI_TEXT.catPaddock.subtitle.ja}</span>
+        <span data-i18n="ca">{UI_TEXT.catPaddock.subtitle.ca}</span>
+        <span data-i18n="en">{UI_TEXT.catPaddock.subtitle.en}</span>
+      </p>
+    </div>
+
+    <div class="cat-grid">
+      {cats.map((cat) => (
+        <article class={`cat-card cat-${cat.id}`} data-cat-card={cat.id}>
+          <div class="cat-license-header" style={`border-bottom-color: ${cat.badgeColor}`}>
+            <span class="license-tag racing-font">PADDOCK PASS #{cat.id.toUpperCase()}</span>
+            <span class="cat-gender">
+              <span data-i18n="ja">{cat.gender.ja}</span>
+              <span data-i18n="ca">{cat.gender.ca}</span>
+              <span data-i18n="en">{cat.gender.en}</span>
+            </span>
+          </div>
+
+          <div class="cat-portrait-wrap">
+            <img src={cat.image} alt={cat.name.en} class="cat-portrait" loading="lazy" />
+            <div class="bipedal-stamp">
+              <span data-i18n="ja">🐾 二足歩行・実写レトロ仕様</span>
+              <span data-i18n="ca">🐾 Fotografia Retro Bípede</span>
+              <span data-i18n="en">🐾 Retro-Pop Bipedal Press</span>
+            </div>
+          </div>
+
+          <div class="cat-body">
+            <h3 class="cat-name">
+              <span data-i18n="ja">{cat.name.ja}</span>
+              <span data-i18n="ca">{cat.name.ca}</span>
+              <span data-i18n="en">{cat.name.en}</span>
+            </h3>
+
+            <div class="cat-role" style={`color: ${cat.badgeColor}`}>
+              <span data-i18n="ja">{cat.role.ja}</span>
+              <span data-i18n="ca">{cat.role.ca}</span>
+              <span data-i18n="en">{cat.role.en}</span>
+            </div>
+
+            <div class="cat-specialty">
+              <strong>🎯 </strong>
+              <span data-i18n="ja">{cat.specialty.ja}</span>
+              <span data-i18n="ca">{cat.specialty.ca}</span>
+              <span data-i18n="en">{cat.specialty.en}</span>
+            </div>
+
+            <p class="cat-bio">
+              <span data-i18n="ja">{cat.bio.ja}</span>
+              <span data-i18n="ca">{cat.bio.ca}</span>
+              <span data-i18n="en">{cat.bio.en}</span>
+            </p>
+
+            <div class="cat-quote-box" data-quote-normal={cat.id}>
+              <div class="quote-mode-tag">
+                {cat.id === 'naoko' ? (
+                  <>
+                    <span data-i18n="ja">🔧 通常（やさぐれガレージモード）</span>
+                    <span data-i18n="ca">🔧 Mode habitual (Mecànica rondinaire)</span>
+                    <span data-i18n="en">🔧 Normal (Scruffy Garage Mode)</span>
+                  </>
+                ) : (
+                  <>
+                    <span data-i18n="ja">💬 決めゼリフ</span>
+                    <span data-i18n="ca">💬 Frase característica</span>
+                    <span data-i18n="en">💬 Signature Quote</span>
+                  </>
+                )}
+              </div>
+              <p class="quote-text">
+                <span data-i18n="ja">{cat.quoteNormal.ja}</span>
+                <span data-i18n="ca">{cat.quoteNormal.ca}</span>
+                <span data-i18n="en">{cat.quoteNormal.en}</span>
+              </p>
+            </div>
+
+            {cat.quoteAlt && (
+              <div class="naoko-maiden-wrap">
+                <button type="button" class="maiden-toggle-btn" id="naoko-mode-toggle">
+                  <span data-i18n="ja">{cat.quoteAlt.label.ja}</span>
+                  <span data-i18n="ca">{cat.quoteAlt.label.ca}</span>
+                  <span data-i18n="en">{cat.quoteAlt.label.en}</span>
+                </button>
+                <div class="cat-quote-box maiden-quote-box" id="naoko-maiden-box" hidden>
+                  <div class="quote-mode-tag maiden-tag">
+                    <span data-i18n="ja">🌸 ふいに出る「乙女モード」発動中！</span>
+                    <span data-i18n="ca">🌸 Mode tendre i romàntic activat!</span>
+                    <span data-i18n="en">🌸 Sudden Maiden Mode Activated!</span>
+                  </div>
+                  <p class="quote-text">
+                    <span data-i18n="ja">{cat.quoteAlt.text.ja}</span>
+                    <span data-i18n="ca">{cat.quoteAlt.text.ca}</span>
+                    <span data-i18n="en">{cat.quoteAlt.text.en}</span>
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('naoko-mode-toggle');
+    const maidenBox = document.getElementById('naoko-maiden-box');
+    if (toggleBtn && maidenBox) {
+      toggleBtn.addEventListener('click', () => {
+        const isHidden = maidenBox.hasAttribute('hidden');
+        if (isHidden) {
+          maidenBox.removeAttribute('hidden');
+          toggleBtn.classList.add('active');
+        } else {
+          maidenBox.setAttribute('hidden', '');
+          toggleBtn.classList.remove('active');
+        }
+      });
+    }
+  });
+</script>
+
+<style>
+  .cat-section {
+    padding: 4.5rem 0;
+    background: linear-gradient(180deg, rgba(21, 25, 34, 0.4), rgba(13, 15, 20, 0.95));
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .section-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 3rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 3vw, 2.25rem);
+    font-weight: 900;
+    margin-top: 0.7rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .section-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+  }
+
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 1.75rem;
+  }
+
+  .cat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .cat-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+
+  .cat-license-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 1.1rem;
+    background: rgba(0, 0, 0, 0.35);
+    border-bottom: 3px solid var(--accent-red);
+    font-size: 0.76rem;
+    font-weight: 700;
+  }
+
+  .license-tag {
+    letter-spacing: 0.08em;
+    color: var(--accent-gold);
+  }
+
+  .cat-gender {
+    color: var(--text-secondary);
+  }
+
+  .cat-portrait-wrap {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    overflow: hidden;
+    background: #10131a;
+  }
+
+  .cat-portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+  }
+
+  .cat-card:hover .cat-portrait {
+    transform: scale(1.04);
+  }
+
+  .bipedal-stamp {
+    position: absolute;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    background: rgba(13, 15, 20, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 183, 3, 0.45);
+    color: var(--accent-gold);
+    padding: 0.25rem 0.65rem;
+    border-radius: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  .cat-body {
+    padding: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+  }
+
+  .cat-name {
+    font-size: 1.35rem;
+    font-weight: 900;
+  }
+
+  .cat-role {
+    font-size: 0.86rem;
+    font-weight: 700;
+  }
+
+  .cat-specialty {
+    font-size: 0.82rem;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.45rem 0.7rem;
+    border-radius: 0.45rem;
+    color: var(--text-primary);
+  }
+
+  .cat-bio {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+  }
+
+  .cat-quote-box {
+    margin-top: auto;
+    background: rgba(0, 0, 0, 0.28);
+    border-left: 3px solid var(--accent-gold);
+    padding: 0.8rem 0.95rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .quote-mode-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    margin-bottom: 0.3rem;
+  }
+
+  .quote-text {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #fff;
+  }
+
+  .naoko-maiden-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.35rem;
+  }
+
+  .maiden-toggle-btn {
+    width: 100%;
+    padding: 0.55rem 0.85rem;
+    border-radius: 0.5rem;
+    border: 1px dashed var(--accent-pink);
+    background: rgba(255, 117, 143, 0.12);
+    color: #ff9ebb;
+    font-weight: 700;
+    font-size: 0.82rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+  }
+
+  .maiden-toggle-btn:hover,
+  .maiden-toggle-btn.active {
+    background: rgba(255, 117, 143, 0.24);
+    color: #fff;
+    border-style: solid;
+  }
+
+  .maiden-quote-box {
+    border-left-color: var(--accent-pink);
+    background: rgba(255, 117, 143, 0.12);
+  }
+
+  .maiden-tag {
+    color: #ff9ebb;
+  }
+</style>

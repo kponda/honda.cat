@@ -1,0 +1,311 @@
+---
+import Header from './Header.astro';
+import ArticleCard from './ArticleCard.astro';
+import KyushuCircuitHub from './KyushuCircuitHub.astro';
+import CatTeamSection from './CatTeamSection.astro';
+import Footer from './Footer.astro';
+import { getAllArticles } from '../data/articles';
+import { UI_TEXT } from '../data/i18n';
+
+const articles = getAllArticles();
+const categories = ['all', 'kyushu', 'endurance-fun', 'world', 'all-japan', 'spotlight'] as const;
+---
+
+<Header />
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="badge hero-badge">
+          <span data-i18n="ja">{UI_TEXT.hero.badge.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.hero.badge.ca}</span>
+          <span data-i18n="en">{UI_TEXT.hero.badge.en}</span>
+        </span>
+
+        <h1 class="hero-title">
+          <span data-i18n="ja">{UI_TEXT.hero.title.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.hero.title.ca}</span>
+          <span data-i18n="en">{UI_TEXT.hero.title.en}</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          <span data-i18n="ja">{UI_TEXT.hero.subtitle.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.hero.subtitle.ca}</span>
+          <span data-i18n="en">{UI_TEXT.hero.subtitle.en}</span>
+        </p>
+
+        <div class="hero-actions">
+          <a href="#articles" class="btn btn-primary">
+            <span data-i18n="ja">{UI_TEXT.hero.ctaPrimary.ja}</span>
+            <span data-i18n="ca">{UI_TEXT.hero.ctaPrimary.ca}</span>
+            <span data-i18n="en">{UI_TEXT.hero.ctaPrimary.en}</span>
+          </a>
+          <a href="#kyushu-hub" class="btn btn-secondary">
+            <span data-i18n="ja">{UI_TEXT.hero.ctaSecondary.ja}</span>
+            <span data-i18n="ca">{UI_TEXT.hero.ctaSecondary.ca}</span>
+            <span data-i18n="en">{UI_TEXT.hero.ctaSecondary.en}</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-pill">
+            <strong class="racing-font">3 LANGS</strong>
+            <span data-i18n="ja">日本語 · カタルーニャ語 · 英語</span>
+            <span data-i18n="ca">Català · Japonès · Anglès</span>
+            <span data-i18n="en">JA · Català · EN</span>
+          </div>
+          <div class="stat-pill">
+            <strong class="racing-font">KYUSHU FOCUS</strong>
+            <span data-i18n="ja">SPA直入 · オートポリス · HSR九州</span>
+            <span data-i18n="ca">SPA Naoiri · Autopolis · HSR</span>
+            <span data-i18n="en">SPA Naoiri · Autopolis · HSR</span>
+          </div>
+          <div class="stat-pill">
+            <strong class="racing-font">FULL AUTO AI</strong>
+            <span data-i18n="ja">情報収集〜記事・3言語翻訳まで自動化</span>
+            <span data-i18n="ca">Recerca, redacció i traducció 100% IA</span>
+            <span data-i18n="en">Automated AI Scouting & Translation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-frame">
+          <img
+            src="/images/cats/hero-paddock.png"
+            alt="Marc, Suzuka, and Naoko bipedal paddock cats in the pit lane"
+            class="hero-img"
+          />
+          <div class="hero-caption">
+            <span data-i18n="ja">📸 左から：マルク（MotoGP担当）、スズカ（全日本＆九州担当）、ナオコ（草耐久＆ガレージ担当・黒雌猫）</span>
+            <span data-i18n="ca">📸 D'esquerra a dreta: Marc (MotoGP), Suzuka (Nacional/Kyushu) i Naoko (Mecànica i Curses Populars)</span>
+            <span data-i18n="en">📸 Left to right: Marc (MotoGP), Suzuka (All-Japan/Kyushu), and Naoko (Garage Mechanic & Fun Endurance)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Race Articles Section with Category Filter -->
+  <section id="articles" class="articles-section">
+    <div class="container">
+      <div class="articles-header">
+        <div>
+          <span class="badge" style="background: rgba(42, 157, 143, 0.16); color: #4ecdc4;">
+            PADDOCK DISPATCH & RACE DIGEST
+          </span>
+          <h2 class="section-heading">
+            <span data-i18n="ja">🏁 最新レース開催情報・結果・スーパーセーブ＆草耐久レポート</span>
+            <span data-i18n="ca">🏁 Últimes Cròniques, Prèvies, Salvades i Curses Populars</span>
+            <span data-i18n="en">🏁 Latest Race Previews, Results, Super Saves & Grassroots Reports</span>
+          </h2>
+        </div>
+
+        <div class="category-filters" role="tablist" aria-label="Category Filter">
+          {categories.map((catKey, idx) => (
+            <button
+              type="button"
+              class={`filter-btn ${idx === 0 ? 'active' : ''}`}
+              data-filter-category={catKey}
+            >
+              <span data-i18n="ja">{UI_TEXT.categories[catKey].ja}</span>
+              <span data-i18n="ca">{UI_TEXT.categories[catKey].ca}</span>
+              <span data-i18n="en">{UI_TEXT.categories[catKey].en}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="articles-grid" id="articles-grid">
+        {articles.map((article) => (
+          <ArticleCard article={article} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Kyushu 3 Circuits & Odai Endurance Special Hub -->
+  <KyushuCircuitHub />
+
+  <!-- Bipedal Cat Editorial Team Section -->
+  <CatTeamSection />
+</main>
+
+<Footer />
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('[data-filter-category]');
+    const articleCards = document.querySelectorAll('.article-card[data-category]');
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const selected = btn.getAttribute('data-filter-category');
+        filterButtons.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        articleCards.forEach((card) => {
+          const cat = card.getAttribute('data-category');
+          if (selected === 'all' || cat === selected) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .hero-section {
+    padding: 3.5rem 0 4rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .hero-badge {
+    background: rgba(230, 57, 70, 0.16);
+    color: #ff758f;
+    border: 1px solid rgba(230, 57, 70, 0.35);
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 3.6vw, 2.85rem);
+    font-weight: 900;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.6rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .stat-pill {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.65rem;
+    padding: 0.65rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .stat-pill strong {
+    font-size: 0.78rem;
+    color: var(--accent-gold);
+    letter-spacing: 0.05em;
+  }
+
+  .stat-pill span {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+  }
+
+  .hero-frame {
+    background: var(--bg-card);
+    border: 2px solid rgba(255, 183, 3, 0.35);
+    border-radius: 1.15rem;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
+  }
+
+  .hero-img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-caption {
+    padding: 0.75rem 1rem;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    background: rgba(0, 0, 0, 0.45);
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .articles-section {
+    padding: 4rem 0 2rem;
+  }
+
+  .articles-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-heading {
+    font-size: clamp(1.45rem, 2.8vw, 2rem);
+    font-weight: 900;
+    margin-top: 0.5rem;
+  }
+
+  .category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    padding: 0.5rem 0.95rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s ease;
+  }
+
+  .filter-btn:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .filter-btn.active {
+    background: var(--accent-gold);
+    color: #0d0f14;
+    border-color: var(--accent-gold);
+  }
+
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.6rem;
+  }
+
+  @media (max-width: 960px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,201 @@
+{
+  "id": "2026-11-08-motogp-catalunya-valencia-supersave-spotlight",
+  "slug": "motogp-catalunya-66-degree-supersave-physics",
+  "publishedAt": "2026-11-08",
+  "category": "spotlight",
+  "articleType": "spotlight",
+  "circuit": "Circuit de Barcelona-Catalunya / World GP",
+  "region": "Catalunya / World",
+  "featuredCat": "marc",
+  "heroImage": "/images/cats/marc.png",
+  "tags": ["MotoGP", "スーパーセーブ", "カタルーニャ", "ライディング科学", "WorldSBK"],
+  "eventMeta": {
+    "date": "2026-11-08",
+    "venue": {
+      "ja": "バルセロナ＝カタルーニャ・サーキット（モンメロ）特設解析ラボ",
+      "ca": "Circuit de Barcelona-Catalunya (Montmeló) — Laboratori Tècnic",
+      "en": "Circuit de Barcelona-Catalunya (Montmeló) — Technical Lab"
+    },
+    "weather": {
+      "ja": "テレメトリー解析：最大バンク角 66.4° / フロントスリップ角 14°からの復元",
+      "ca": "Telemetria: Inclinació màxima 66,4° / Recuperació amb colze i genoll",
+      "en": "Telemetry: 66.4° Peak Lean Angle / Front-Tuck Elbow Recovery"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【スーパーセーブ解剖】バンク角66度からの奇跡！フロントスリップを肘と肉球（膝）でねじ伏せる「カタルーニャ流セーブ術」の物理",
+      "subtitle": "なぜ転ばないのか！？猫の空中姿勢制御にも通じるMotoGPライダーの「第3の接地面」をマルク編集長が徹底解説",
+      "summary": "フロントタイヤが完全にグリップを失い、誰もが転倒を確信した瞬間から車体を起こすMotoGPの「スーパーセーブ（Salvada）」。カタルーニャ出身のマルク編集長が、その物理メカニズムと草レーサーにも役立つリカバリーの基本を解説します。",
+      "highlightPoint": "フロントが切れ込んだ瞬間にアクセルを全閉にせず、肘と膝スライダーを路面への「支点（第3のタイヤ）」にしてフロント荷重を逃がすのが奇跡を生む！",
+      "sections": [
+        {
+          "heading": "バンク角66.4度！フロントタイヤが「完全に逃げた」瞬間何が起きているか",
+          "body": "通常の市販スポーツバイクでは50度、レーシングスリックでも60度が限界と言われた二輪のバンク角。しかし現代のMotoGPやWorldSBKでは、フロントタイヤが限界を超えてイン側へ切れ込む（タックインする）瞬間、バンク角は65度〜66度以上に達します。カタルーニャ語でこの神業リカバリーを『Salvada espectacular（劇的なセーブ）』と呼びます。普通ならこのままスリップダウンするところですが、超一流ライダーは路面と接触している「肘スライダー」と「膝スライダー」をテコの支点として使い、倒れ込む車体を物理的に押し返しているのです。"
+        },
+        {
+          "heading": "猫の「キャットツイスト（空中立ち直り反射）」とスーパーセーブの共通点",
+          "body": "我々猫族が高いところから落ちても必ず足から着地できるのは、上半身と下半身の慣性モーメントを瞬時に逆回転させる反射神経があるからニャ。MotoGPのスーパーセーブも全く同じ！フロントが滑った瞬間、ライダーは反射的にイン側の肘と膝で地面を強く突き放しつつ、リアタイヤにわずかな駆動力（スロットルパーシャル）を残すことで、ジャイロ効果によって車体を自己起立させています。"
+        },
+        {
+          "heading": "SPA直入やオートポリスの草レーサーが真似していいこと・ダメなこと",
+          "body": "一般のサーキット走行や草レースで66度まで寝かせるのは厳禁ですが、「フロントやリアがズルッと滑った瞬間にパニックでアクセルを急閉しない・フロントブレーキを握り足さない」という原則は100%共通です！急激な荷重移動を避け、ステップ荷重と下半身ホールドでタイヤが再び路面を掴むのを待つことが、ハイサイドやスリップダウンを防ぐ最大の武器になります。"
+        }
+      ],
+      "resultTableTitle": "テレメトリーで見る「スーパーセーブ」発生時の0.8秒間プロセス",
+      "results": [
+        {
+          "pos": "0.00秒",
+          "riderOrTeam": "クリッピング付近でフロント限界突破",
+          "machine": "バンク角 62.5° → 66.4°",
+          "timeOrNote": "フロントタイヤがイン側へ14度切れ込む"
+        },
+        {
+          "pos": "0.25秒",
+          "riderOrTeam": "肘＆膝スライダーによる路面プッシュ",
+          "machine": "3点支持状態（リア＋膝＋肘）",
+          "timeOrNote": "フロント荷重が一時的に抜け、スリップが止まる"
+        },
+        {
+          "pos": "0.65秒",
+          "riderOrTeam": "リア駆動＆ジャイロ効果で車体起立",
+          "machine": "バンク角 66.4° → 54.0° 復帰",
+          "timeOrNote": "コース内に留まりそのまま加速！"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "mood": "excited",
+          "text": "アミーゴ！カタルーニャGPの最終コーナーでも見られたこの66度セーブ、まさに猫が空中でクルッと体勢を立て直すのと同じ芸術だニャ！肘スライダーから火花じゃなくて情熱が散ってるニャ！"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "grumpy",
+          "text": "ちょっとマルク！うちのガレージの連中がこの記事読んで「俺も明日SPA直入で肘すりセーブ試す！」とか言い出したらどうしてくれんのよ！ツナギの肘に穴開けて帰ってきたら説教3時間だからね！"
+        },
+        {
+          "speaker": "suzuka",
+          "mood": "normal",
+          "text": "ふふっ、でもナオコさん、みんなのレーシングツナギのスライダーが減ってないか、いつも走行前にこっそりチェックしてあげてますよね？"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Anàlisi Super-Salvada] Miracle a 66 graus d'inclinació! La física de les «salvades amb el colze» explicada per en Marc",
+      "subtitle": "Com s'evita una caiguda segura quan es tanca la roda davantera? El secret que uneix els pilots de MotoGP i els reflexos dels gats",
+      "summary": "Quan el pneumàtic davanter perd tota l'adherència en ple vèrtex del revolt, només una «salvada espectacular» amb el colze i el genoll pot evitar la caiguda. El nostre redactor en cap de Montmeló, en Marc, desgranen la telemetria i què en podem aprendre per a les curses amateurs.",
+      "highlightPoint": "Utilitzar el colze i el genoll com a «tercera roda» sobre l'asfalt mentre es manté un fil de gas evita que la moto s'enfonsi de davant!",
+      "sections": [
+        {
+          "heading": "66,4 graus d'inclinació: què passa quan es tanca la direcció",
+          "body": "En el motociclisme modern de MotoGP i WorldSBK, el límit físic ja no està només en els dos pneumàtics. Quan la roda davantera perd adherència a l'interior del revolt, l'angle d'inclinació supera els 65 o 66 graus. En aquest precís instant, els grans especialistes catalans i mundials utilitzen les lliscadores del colze i del genoll com un punt de palanca contra l'asfalt per descarregar pes del tren davanter i permetre que el pneumàtic torni a agafar."
+        },
+        {
+          "heading": "El reflex de redreçament felí aplicat a MotoGP",
+          "body": "Els gats tenim la capacitat innata de girar el cos a l'aire per caure sempre de quatre potes gràcies a la conservació del moment angular. Una salvada a MotoGP funciona amb la mateixa rapidesa neuromuscular: en menys de 0,25 segons, el pilot fa força amb el colze contra el terra i manté una lleugera tracció a la roda del darrere perquè l'efecte giroscopi aixequi la moto."
+        },
+        {
+          "heading": "Què poden aplicar els pilots amateurs d'Oita i Catalunya?",
+          "body": "Tot i que en una cursa popular a SPA Naoiri o Calafat no hem d'intentar plegar a 66 graus, la regla d'or és idèntica: si notes que la moto llisca, mai tanquis el gas de cop ni toquis el fre davanter en pànic! Mantenir l'estabilitat del xassís és la millor assegurança contra el temut highside."
+        }
+      ],
+      "resultTableTitle": "Cronologia telemètrica d'una Super-Salvada (0,8 segons)",
+      "results": [
+        {
+          "pos": "0.00s",
+          "riderOrTeam": "Pèrdua d'adherència davantera al vèrtex",
+          "machine": "Inclinació 62.5° → 66.4°",
+          "timeOrNote": "La roda davantera es tanca 14 graus"
+        },
+        {
+          "pos": "0.25s",
+          "riderOrTeam": "Palanca amb colze i genoll a l'asfalt",
+          "machine": "Suport en 3 punts (roda + genoll + colze)",
+          "timeOrNote": "S'allibera càrrega davantera i s'atura el lliscament"
+        },
+        {
+          "pos": "0.65s",
+          "riderOrTeam": "Efecte giroscopi i recuperació",
+          "machine": "Inclinació 66.4° → 54.0°",
+          "timeOrNote": "La moto es redreça sense sortir de pista!"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "mood": "excited",
+          "text": "Amics! Aquesta salvada a 66 graus al Circuit de Barcelona-Catalunya és pura física felina! El colze actua exactament com la nostra cua per recuperar l'equilibri al límit, miau!"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "grumpy",
+          "text": "Escolti'm, Marc! Com algun dels meus pilots del garatge d'Oita llegeixi això i demà intenti fregar el colze a SPA Naoiri fins a foradar la granota de cuir, et juro que et faig netejar tots els carburadors a tu!"
+        },
+        {
+          "speaker": "suzuka",
+          "mood": "normal",
+          "text": "Hehe, però Naoko, si sempre revises d'amagat que tots portin les lliscadores i les proteccions ben cordades abans de sortir a pista!"
+        }
+      ]
+    },
+    "en": {
+      "title": "[Super-Save Physics] Miracle at 66.4 Degrees! How MotoGP Riders Use Elbows & Paws to Defy Front-End Tucks",
+      "subtitle": "Why didn't it crash?! Chief Editor Marc compares Catalan-style MotoGP elbow saves to a cat's mid-air righting reflex",
+      "summary": "When a front slick completely washes out at full lean, how do top MotoGP and WorldSBK riders lever the bike back upright? Montmeló-born editor Marc breaks down the telemetry of a 66-degree 'Salvada' and what grassroots riders should take away.",
+      "highlightPoint": "Using the elbow and knee sliders as a 'third wheel' fulcrum against the asphalt while keeping slight rear throttle lets gyroscopic force stand the bike back up!",
+      "sections": [
+        {
+          "heading": "66.4 Degrees of Lean: Inside a Front-End Washout",
+          "body": "In modern MotoGP and WorldSBK, the limit no longer ends when the front tire lets go. When the front slick tucks inward at the apex, lean angles spike past 65 to 66.4 degrees. Known in Catalan as a 'Salvada espectacular', elite riders instantly plant both their knee slider and elbow slider into the curbing or asphalt, creating a three-point tripod that unweights the overloaded front tire just enough for it to stop sliding."
+        },
+        {
+          "heading": "Feline Physics: The Cat Righting Reflex on Two Wheels",
+          "body": "Cats famously land on their paws by counter-rotating their upper and lower body inertia mid-air. A MotoGP super save relies on the exact same split-second reflex: within 0.25 seconds of the front tuck, the rider pushes off the tarmac with their elbow while keeping a whisper of rear throttle open so rear-wheel gyroscopic precession pulls the chassis upright."
+        },
+        {
+          "heading": "What Grassroots Riders at SPA Naoiri & Autopolis Should (and Shouldn't) Copy",
+          "body": "While nobody should intentionally test 66-degree elbow drags at a weekend track day, the golden rule of survival is universal: when a tire slides, NEVER chop the throttle shut or grab a panicked handful of front brake! Staying relaxed on the bars and weighting the pegs lets the chassis self-correct."
+        }
+      ],
+      "resultTableTitle": "Telemetry Breakdown of a 0.8-Second MotoGP Super Save",
+      "results": [
+        {
+          "pos": "0.00s",
+          "riderOrTeam": "Front slick exceeds grip limit at apex",
+          "machine": "Lean Angle 62.5° → 66.4°",
+          "timeOrNote": "Front wheel tucks 14° inward"
+        },
+        {
+          "pos": "0.25s",
+          "riderOrTeam": "Elbow & knee slider fulcrum push",
+          "machine": "3-Point Tripod (Rear + Knee + Elbow)",
+          "timeOrNote": "Front load reduced, slide arrests"
+        },
+        {
+          "pos": "0.65s",
+          "riderOrTeam": "Gyroscopic recovery via rear drive",
+          "machine": "Lean Angle 66.4° → 54.0°",
+          "timeOrNote": "Bike snaps upright and holds the line!"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "mood": "excited",
+          "text": "Amigos! That 66-degree save at Barcelona-Catalunya is pure feline physics! Planting the elbow slider works just like a cat's tail whip in mid-air, meow!"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "grumpy",
+          "text": "Hey Marc! If the riders in my Oita garage read this and try dragging their elbows at SPA Naoiri tomorrow until they rip their leathers, I'm making YOU rebuild their carburetors!"
+        },
+        {
+          "speaker": "suzuka",
+          "mood": "normal",
+          "text": "Hehe, Naoko-san acts tough, but she always checks everyone's knee sliders and back protectors before they roll out of the pit box!"
+        }
+      ]
+    }
+  }
+}

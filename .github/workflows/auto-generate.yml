@@ -1,0 +1,79 @@
+name: "🐾 AI Auto-Generate Trilingual Motorsport Articles"
+
+on:
+  schedule:
+    # 毎週木曜 09:00 JST (00:00 UTC): 週末レース開催プレビュー
+    - cron: "0 0 * * 4"
+    # 毎週土曜 12:00 JST (03:00 UTC): 九州サーキット(SPA直入・AP・HSR)＆お題付き耐久草レース特集
+    - cron: "0 3 * * 6"
+    # 毎週月曜 09:00 JST (00:00 UTC): 週末レース結果＆スーパーセーブダイジェスト
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "生成モード (preview / digest / kyushu / spotlight)"
+        required: true
+        default: "kyushu"
+        type: choice
+        options:
+          - kyushu
+          - preview
+          - digest
+          - spotlight
+      topic:
+        description: "カスタムお題（例：SPA直入のお題付き耐久草レース最新レポート）※空欄で自動検索"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install AI Pipeline Dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Determine Mode from Schedule or Input
+        id: resolve_mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ inputs.mode }}" >> $GITHUB_OUTPUT
+          elif [ "$(date -u +%u)" = "4" ]; then
+            echo "mode=preview" >> $GITHUB_OUTPUT
+          elif [ "$(date -u +%u)" = "6" ]; then
+            echo "mode=kyushu" >> $GITHUB_OUTPUT
+          else
+            echo "mode=digest" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run Gemini 3.8 Flash Grounded Article Generator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.topic }}" ]; then
+            python3 scripts/generate_articles.py --mode "${{ steps.resolve_mode.outputs.mode }}" --topic "${{ inputs.topic }}"
+          else
+            python3 scripts/generate_articles.py --mode "${{ steps.resolve_mode.outputs.mode }}"
+          fi
+
+      - name: Commit & Push New Trilingual Article
+        run: |
+          git config user.name "honda-cat-editorial-bot"
+          git config user.email "bot@honda.cat"
+          git add src/data/articles/*.json
+          if git diff --staged --quiet; then
+            echo "No new articles to commit."
+          else
+            git commit -m "chore(articles): auto-publish new JA/CA/EN motorsport report"
+            git push
+          fi

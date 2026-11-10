@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PortalHome from '../../components/PortalHome.astro';
+import { UI_TEXT } from '../../data/i18n';
+---
+
+<BaseLayout
+  title={UI_TEXT.siteTitle.en}
+  description={UI_TEXT.siteTagline.en}
+  initialLang="en"
+  canonicalPath="/en/"
+>
+  <PortalHome />
+</BaseLayout>
