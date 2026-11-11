@@ -9,6 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "generate:article": "python3 scripts/generate_articles.py",
+    "generate:maintenance": "python3 scripts/generate_articles.py --mode maintenance",
     "generate:preview": "python3 scripts/generate_articles.py --mode preview",
     "generate:digest": "python3 scripts/generate_articles.py --mode digest",
     "generate:kyushu": "python3 scripts/generate_articles.py --mode kyushu"

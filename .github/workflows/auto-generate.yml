@@ -1,27 +1,30 @@
-name: "🐾 AI Auto-Generate Trilingual Motorsport Articles"
+name: "🐾 AI Auto-Generate Fact-Verified Motorsport & Maintenance Articles"
 
 on:
   schedule:
-    # 毎週木曜 09:00 JST (00:00 UTC): 週末レース開催プレビュー
-    - cron: "0 0 * * 4"
-    # 毎週土曜 12:00 JST (03:00 UTC): 九州サーキット(SPA直入・AP・HSR)＆お題付き耐久草レース特集
-    - cron: "0 3 * * 6"
-    # 毎週月曜 09:00 JST (00:00 UTC): 週末レース結果＆スーパーセーブダイジェスト
+    # 毎週月曜 09:00 JST (00:00 UTC): 週末レース結果＆史実ダイジェスト (digest)
     - cron: "0 0 * * 1"
+    # 毎週水曜 09:00 JST (00:00 UTC): 週1回連載・サーキット走行向けバイクメンテナンス情報＆豆知識 (maintenance)
+    - cron: "0 0 * * 3"
+    # 毎週木曜 09:00 JST (00:00 UTC): 週末レース開催プレビュー (preview)
+    - cron: "0 0 * * 4"
+    # 毎週土曜 12:00 JST (03:00 UTC): 九州サーキット(SPA直入・AP・HSR)＆お題付き耐久草レース特集 (kyushu)
+    - cron: "0 3 * * 6"
   workflow_dispatch:
     inputs:
       mode:
-        description: "生成モード (preview / digest / kyushu / spotlight)"
+        description: "生成モード (maintenance / kyushu / preview / digest / spotlight)"
         required: true
-        default: "kyushu"
+        default: "maintenance"
         type: choice
         options:
+          - maintenance
           - kyushu
           - preview
           - digest
           - spotlight
       topic:
-        description: "カスタムお題（例：SPA直入のお題付き耐久草レース最新レポート）※空欄で自動検索"
+        description: "カスタムお題（例：サーキット走行でのクーラント真水化とラジエーターキャップ管理の豆知識）"
         required: false
         type: string
 
@@ -48,6 +51,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "mode=${{ inputs.mode }}" >> $GITHUB_OUTPUT
+          elif [ "$(date -u +%u)" = "3" ]; then
+            echo "mode=maintenance" >> $GITHUB_OUTPUT
           elif [ "$(date -u +%u)" = "4" ]; then
             echo "mode=preview" >> $GITHUB_OUTPUT
           elif [ "$(date -u +%u)" = "6" ]; then
@@ -56,7 +61,7 @@ jobs:
             echo "mode=digest" >> $GITHUB_OUTPUT
           fi
 
-      - name: Run Gemini 3.8 Flash Grounded Article Generator
+      - name: Run Gemini 3.8 Flash Grounded & Fact-Audited Article Generator
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
@@ -66,7 +71,10 @@ jobs:
             python3 scripts/generate_articles.py --mode "${{ steps.resolve_mode.outputs.mode }}"
           fi
 
-      - name: Commit & Push New Trilingual Article
+      - name: Audit All Articles Before Commit
+        run: python3 scripts/generate_articles.py --dry-run
+
+      - name: Commit & Push New Fact-Verified Trilingual Article
         run: |
           git config user.name "honda-cat-editorial-bot"
           git config user.email "bot@honda.cat"
@@ -74,6 +82,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new articles to commit."
           else
-            git commit -m "chore(articles): auto-publish new JA/CA/EN motorsport report"
+            git commit -m "chore(articles): auto-publish fact-verified JA/CA/EN report (${{ steps.resolve_mode.outputs.mode }})"
             git push
           fi

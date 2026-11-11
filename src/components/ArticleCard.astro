@@ -33,6 +33,13 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
     <div class="card-content">
       <div class="card-meta">
         <span class="meta-date racing-font">📅 {article.publishedAt}</span>
+        {article.factCheck?.verified && (
+          <span class="meta-verified">
+            <span data-i18n="ja">✅ 史実・規格検証済</span>
+            <span data-i18n="ca">✅ Fets Verificats</span>
+            <span data-i18n="en">✅ Fact-Verified</span>
+          </span>
+        )}
         <span class="meta-circuit">📍 {article.circuit}</span>
       </div>
 
@@ -165,6 +172,16 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
   .meta-circuit {
     color: var(--accent-gold);
     font-weight: 600;
+  }
+
+  .meta-verified {
+    color: #4ecdc4;
+    background: rgba(42, 157, 143, 0.16);
+    border: 1px solid rgba(42, 157, 143, 0.4);
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
   }
 
   .card-title {

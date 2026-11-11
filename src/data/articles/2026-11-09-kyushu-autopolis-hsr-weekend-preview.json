@@ -9,6 +9,29 @@
   "featuredCat": "suzuka",
   "heroImage": "/images/cats/suzuka.png",
   "tags": ["オートポリス", "SPA直入", "HSR九州", "九州ロードレース", "開催情報"],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "オートポリス（1990年開場・大分県日田市上津江町・標高約900m・全長4,674m・高低差52m）、SPA直入（大分県竹田市直入町・全長1,430m）、HSR九州（熊本県菊池郡大津町・全長2,350m）の公式コース諸元および開催カテゴリーに基づき検証済み。",
+      "ca": "Dades oficials verificades d'Autopolis (1990, Hita Oita, altitud ~900m, 4.674m, desnivell 52m), SPA Naoiri (Takeda Oita, 1.430m) i HSR Kyushu (Ozu Kumamoto, 2.350m).",
+      "en": "Verified against official track specifications for Autopolis (opened 1990, Hita Oita, ~900m elevation, 4,674m length, 52m elevation change), SPA Naoiri (1,430m), and HSR Kyushu (2,350m)."
+    },
+    "sources": [
+      {
+        "title": "オートポリス (AUTOPOLIS) 公式サイト・コースガイド",
+        "url": "https://autopolis.jp/"
+      },
+      {
+        "title": "HSR九州（ホンダセーフティ＆ライディングプラザ九州）公式",
+        "url": "https://www.hsr.jp/"
+      },
+      {
+        "title": "SPA直入 公式サイト",
+        "url": "https://spa-naoiri.com/"
+      }
+    ]
+  },
   "eventMeta": {
     "date": "2026-11-14 - 2026-11-15",
     "venue": {

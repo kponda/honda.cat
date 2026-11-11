@@ -1,0 +1,238 @@
+{
+  "id": "2026-11-11-circuit-maintenance-brake-fluid-wire-locking-tips",
+  "slug": "circuit-maintenance-wire-locking-brake-fluid-tire-pressure",
+  "publishedAt": "2026-11-11",
+  "category": "maintenance",
+  "articleType": "maintenance",
+  "circuit": "全サーキット共通 (MFJ技術規則・JIS規格準拠)",
+  "region": "Garage & Paddock Tech",
+  "featuredCat": "naoko",
+  "heroImage": "/images/cats/naoko.png",
+  "tags": ["メンテナンス", "ワイヤリング", "ブレーキフルード", "空気圧管理", "サーキット豆知識"],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "MFJ国内競技規則（ロードレース技術仕様）、JIS K 2233（自動車用非鉱油系ブレーキ液規格 / FMVSS No.116）、および熱力学の気体状態方程式に基づき技術数値を検証済み。",
+      "ca": "Dades tècniques verificades segons el Reglament Tècnic MFJ/FIM, la normativa JIS K 2233 / FMVSS 116 per a líquids de frens (DOT 4 / 5.1) i les lleis físiques de pressió-temperatura dels gasos.",
+      "en": "Technical specifications verified against MFJ/FIM Road Racing Technical Regulations, JIS K 2233 / FMVSS No.116 brake fluid standards, and ideal gas law pressure-temperature physics."
+    },
+    "sources": [
+      {
+        "title": "MFJ 国内競技規則書（ロードレース技術仕様・ワイヤリング規定）",
+        "url": "https://www.mfj.or.jp/rule/"
+      },
+      {
+        "title": "JIS K 2233 自動車用非鉱油系ブレーキ液規格 (DOT 3 / DOT 4 / DOT 5.1)",
+        "url": "https://www.jisc.go.jp/"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-11-11",
+    "venue": {
+      "ja": "ナオコのガレージ整備塾（週1連載・サーキット走行メンテナンス編）",
+      "ca": "Taller de Pàdoc de la Naoko (Sèrie Setmanal de Manteniment)",
+      "en": "Naoko's Paddock Garage Clinic (Weekly Track Maintenance Series)"
+    },
+    "weather": {
+      "ja": "適用範囲：スポーツ走行・草耐久・地方選手権 車検対応",
+      "ca": "Aplicació: Tandes lliures, resistència amateur i verificacions tècniques",
+      "en": "Scope: Track Days, Grassroots Endurance & Official Tech Inspection"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【ナオコのサーキット整備塾 #1】車検と安全の基本！「ワイヤリング・ブレーキフルード沸点・温間空気圧」の科学と実践豆知識",
+      "subtitle": "なぜドレンボルトは締まる方向に引っ張る？なぜDOT4でも吸湿するとベーパーロックが起きる？物理と規格で学ぶサーキット整備",
+      "summary": "サーキット走行会や草レース（SPA直入・オートポリス・HSR九州など）に挑むライダー必見の週1回メンテナンス連載。第1回は、MFJ技術規則に基づくワイヤリング（ワイヤーロック）の正しい掛け方、JIS規格から見るブレーキフルードのドライ/ウェット沸点、そして温度変化によるタイヤ空気圧の物理法則を黒猫メカニック・ナオコが徹底解説します。",
+      "highlightPoint": "DOT4ブレーキフルードは新品時のドライ沸点230℃以上に対し、水分を3.7%吸収したウェット沸点は155℃まで低下！またタイヤ空気圧は温度が10℃上がると約7〜10kPa（0.07〜0.1kgf/cm²）上昇する！",
+      "sections": [
+        {
+          "heading": "1. ワイヤリング（ワイヤーロック）の基本：MFJ規則と「締まる方向」の力学",
+          "body": "MFJ公認のロードレースはもちろん、多くのサンデーレースや耐久草レース、サーキット走行会でも義務付け（または強く推奨）されているのが『オイル系ボルトのワイヤリング（ワイヤーロック）』です。エンジン振動や熱膨張によって万が一コース上でオイルドレンボルトやオイルフィラーキャップ、オイルフィルターが緩むと、後続車を巻き込む重大な転倒事故に繋がります。\n\n【実践豆知識】使用するステンレスロックワイヤーは線径 0.6mm〜0.8mm が標準です。最も重要な鉄則は『必ずボルトが締まる方向（右ネジなら時計回り方向）にテンションがかかる角度でワイヤーを引くこと』。逆方向（緩む方向）に引っ張ってしまうと、車検で不合格になるだけでなく振動時に緩みを助長してしまいます。また、切りっぱなしのワイヤー先端はメカニックやライダーの指・レーシンググローブを突き刺すため、先端を5mmほど残して内側に丸め込む（ピッグテール処理）のがプロの作法です。"
+        },
+        {
+          "heading": "2. ブレーキフルードの科学：JIS規格（DOT4）の「ドライ沸点」と「ウェット沸点」",
+          "body": "公道では問題なくても、オートポリスの第1コーナー（時速250km/h超からの減速）やSPA直入・HSR九州の連続周回では、ブレーキキャリパーピストン周辺の温度が200℃近くまで上昇します。ここで知っておくべき史実・規格データが、JIS K 2233（およびFMVSS No.116）で定められたブレーキフルードの沸点です。\n\nグリコールエーテル系のDOT4フルードは、新品（水分0%）の『ドライ沸点』が 230℃以上（レーシングDOT4では300℃〜328℃に達するものもあります）ですが、大気中の水分を約3.7%吸湿した状態の『ウェット沸点』規格値は 155℃以上 まで急落します。フルード内の水分が沸騰して気泡が発生すると、ブレーキレバーを握っても気泡が圧縮されるだけで油圧が伝わらなくなる『ベーパーロック現象』が発生します。サーキット走行では「色が茶色くなる前」であっても、最低でも半年に1回（激しい耐久レースなら走行毎）のフルード交換・エア抜きが必須です。"
+        },
+        {
+          "heading": "3. タイヤ空気圧の物理：冷間と温間の差を生む「ゲイ＝リュサックの法則」",
+          "body": "サーキットのパドックで「空気圧いくつにしてる？」と話す際、必ず『冷間（Cold）』か『温間（Hot：タイヤウォーマー加熱後または走行直後）』かを区別しなければなりません。気体の状態方程式（定積変化におけるゲイ＝リュサックの法則 P₁/T₁ = P₂/T₂ ※Tは絶対温度ケルビン）により、タイヤ内部の空気温度が 10℃ 上昇するごとに、ゲージ圧はおおよそ 7〜10 kPa（0.07〜0.10 kgf/cm²）上昇します。\n\n例えば朝9時の外気温15℃（冷間）で 180 kPa に合わせたタイヤが、走行後に内部温度75℃（+60℃）まで上がると、温間空気圧は 225〜240 kPa 前後まで上昇します。空気中に含まれる水蒸気の膨張によるバラつきを抑えるためにも、基準とするエアゲージを1つ決め、走行直後にピットへ戻ったら即座に『温間空気圧』を測定・記録してメーカー推奨値に合わせる習慣をつけましょう。"
+        }
+      ],
+      "resultTableTitle": "【保存版】サーキット走行前メンテナンス 規格・物理数値リファレンス表",
+      "results": [
+        {
+          "pos": "DOT 4 規格",
+          "riderOrTeam": "ドライ沸点 ≧ 230℃ / ウェット沸点 ≧ 155℃",
+          "machine": "JIS K 2233 (4種) / FMVSS 116",
+          "timeOrNote": "吸湿により沸点が大幅低下するため定期的なエア抜き・全量交換が必須"
+        },
+        {
+          "pos": "Racing Fluid",
+          "riderOrTeam": "ドライ沸点 300℃〜328℃ クラス",
+          "machine": "競技専用高沸点DOT4相当",
+          "timeOrNote": "高沸点な反面、吸湿性が高いためこまめなメンテナンスが前提"
+        },
+        {
+          "pos": "ワイヤリング",
+          "riderOrTeam": "0.6mm〜0.8mm ステンレスロックワイヤー",
+          "machine": "ドレン・フィラー・オイルフィルター",
+          "timeOrNote": "必ずネジが『締まる方向（時計回り）』にテンションを掛けて端末を丸める"
+        },
+        {
+          "pos": "空気圧変化",
+          "riderOrTeam": "温度 +10℃ あたり 約 +7〜10 kPa 上昇",
+          "machine": "冷間(外気温) → 温間(走行直後/ウォーマー80℃)",
+          "timeOrNote": "走行直後にピットで温間空気圧を測定しタイヤメーカー指定値に調整"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naoko",
+          "mood": "grumpy",
+          "text": "いいかい、車検の前日に慌ててワイヤリングして、緩む方向にワイヤー引っ張ってくるんじゃないわよ！それじゃ『緩み止め』じゃなくて『緩め促進ワイヤー』だろ！あと、去年の梅雨から変えてないブレーキフルードでオートポリスの1コーナーに突っ込む気！？今すぐブリーダーレンチ持ってきな！"
+        },
+        {
+          "speaker": "suzuka",
+          "mood": "normal",
+          "text": "さすがナオコさん！JIS規格のドライ沸点とウェット沸点の差や、温度10℃あたりの空気圧変化を数値で教えてもらえると、なぜ走行前の点検が大切なのかすごく納得できますね！"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "maiden",
+          "text": "べ、別に難しい講釈を垂れたいわけじゃないわよ！ただ…ブレーキが抜けてコースアウトしたり、オイル漏らして悲しい顔するあんたを絶対に見たくないだけよ…。ほ、ほら、エア抜き手伝ってあげるから、終わったらまた直入のプリン買ってきなさいよね…🌸"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Taller de Circuit de la Naoko #1] Frenat de filferro (Wire-Locking), Punt d'Ebullició del Líquid de Frens i Pressió en Calent",
+      "subtitle": "La ciència i les normes oficials (MFJ / FIM / JIS) que tot pilot de tanda i resistència ha de dominar abans de sortir a pista",
+      "summary": "Estrenem la secció setmanal de manteniment i trucs mecànics per a circuit amb la nostra gata mecànica Naoko. En aquest primer capítol analitzem amb dades reals com fer el frenat de cargols amb filferro d'acer inoxidable, la diferència entre el punt d'ebullició sec i humit del líquid DOT 4 i la llei física de les pressions dels pneumàtics.",
+      "highlightPoint": "El líquid de frens DOT 4 passa d'un punt d'ebullició sec mínim de 230°C a només 155°C quan absorbeix un 3,7% d'humitat! I la pressió del pneumàtic puja entre 0,07 i 0,10 bar per cada 10°C d'augment de temperatura!",
+      "sections": [
+        {
+          "heading": "1. El frenat amb filferro (Wire-Locking): normativa tècnica i sentit de tracció",
+          "body": "Tant als campionats oficials MFJ i FIM com a les curses de resistència amateurs, assegurar el tap d'ompliment d'oli, el cargol de buidatge del càrter i el filtre d'oli amb filferro d'acer inoxidable (de 0,6 mm a 0,8 mm de diàmetre) és obligatori per evitar vessaments d'oli a pista.\n\n【Truc de taller】La regla d'or és que el filferro sempre ha d'exercir tensió en el sentit d'estrènyer la rosca (sentit horari en rosques estàndard). Si es lliga al revés, la vibració del motor a altes revolucions ajudarà a afluixar el cargol. A més, cal doblegar sempre la punta final del filferro cap a dins perquè cap mecànic es punxi els dits."
+        },
+        {
+          "heading": "2. Líquid de frens DOT 4 i Racing: el perill invisible del «Vapor Lock»",
+          "body": "Segons les normes internacionals FMVSS 116 i la japonesa JIS K 2233, un líquid de frens DOT 4 nou té un punt d'ebullició sec («Dry Boiling Point») superior als 230°C (i més de 300°C en líquids DOT 4 de competició). Tanmateix, els líquids basats en glicol són higroscòpics: absorbeixen humitat de l'aire. Quan el contingut d'aigua arriba al 3,7%, el punt d'ebullició humit («Wet Boiling Point») cau fins als 155°C.\n\nEn frenades fortes com el final de recta d'Autopolis o Montmeló, si el líquid bull es formen bombolles de vapor comprimibles i la maneta de fre s'enfonsa fins al puny («Vapor Lock»). Purgueu i substituïu el líquid abans de cada cita important!"
+        },
+        {
+          "heading": "3. Física de la pressió dels pneumàtics: de fred a calent (Llei de Gay-Lussac)",
+          "body": "D'acord amb la llei dels gasos ideals, la pressió absoluta d'un volum constant és proporcional a la seva temperatura absoluta (Kelvin). A la pràctica del pàdoc, per cada 10°C que puja la temperatura de l'aire dins del pneumàtic, la pressió del manòmetre augmenta entre 7 i 10 kPa (0,07 – 0,10 bar). Per això, el valor decisiu és sempre la «pressió en calent» mesurada immediatament en entrar a box o després de 45-60 minuts d'escalfadors a 80°C."
+        }
+      ],
+      "resultTableTitle": "Taula de referència tècnica per a manteniment de circuit",
+      "results": [
+        {
+          "pos": "Estàndard DOT 4",
+          "riderOrTeam": "Ebullició en sec ≧ 230°C / Humit ≧ 155°C",
+          "machine": "Norma JIS K 2233 / FMVSS 116",
+          "timeOrNote": "L'absorció d'humitat redueix dràsticament la resistència tèrmica"
+        },
+        {
+          "pos": "Líquid Racing",
+          "riderOrTeam": "Ebullició en sec 300°C – 328°C",
+          "machine": "DOT 4 d'alta competició",
+          "timeOrNote": "Màxima estabilitat al tacte de maneta; requereix purgat freqüent"
+        },
+        {
+          "pos": "Wire-Locking",
+          "riderOrTeam": "Filferro inoxidable de 0,6mm a 0,8mm",
+          "machine": "Càrter, tap d'ompliment i filtre d'oli",
+          "timeOrNote": "Tensió sempre en sentit horari (d'estrènyer) i punta doblegada"
+        },
+        {
+          "pos": "Pressió Pneumàtic",
+          "riderOrTeam": "+7 a +10 kPa (0,07–0,10 bar) per cada +10°C",
+          "machine": "Fred (ambient) → Calent (pista / escalfador 80°C)",
+          "timeOrNote": "Ajustar sempre prenent com a referència la pressió en calent"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naoko",
+          "mood": "grumpy",
+          "text": "Escolteu-me bé! No em vingueu a última hora amb el filferro del càrter lligat al revés! I ni se us acudeixi entrar a Autopolis amb un líquid de frens que porta un any agafant humitat al garatge! Porteu-me la clau del 8 i el tub de purga ara mateix!"
+        },
+        {
+          "speaker": "suzuka",
+          "mood": "normal",
+          "text": "Quina classe magistral, Naoko! Entendre la diferència entre els 230°C en sec i els 155°C amb humitat explica perfectament per què cal purgar els frens abans de córrer!"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "maiden",
+          "text": "N-no us penseu que us renyo per gust! És que si us quedeu sense frens a final de recta em moro de l'ensurt... Vinga, que jo us ajudo a bombar la maneta per purgar el circuit, però quan acabem em convideu a un flam casolà, entesos?... 🌸"
+        }
+      ]
+    },
+    "en": {
+      "title": "[Naoko's Track Garage Clinic #1] The Science of Safety Wire-Locking, Brake Fluid Boiling Points & Hot Tire Pressures",
+      "subtitle": "Why wire tension direction matters and how moisture drops DOT 4 boiling points by 75°C: real engineering facts for track riders",
+      "summary": "Welcome to our weekly circuit maintenance and technical trivia column led by black-cat mechanic Naoko! Issue #1 covers official MFJ/FIM wire-locking technique, JIS/FMVSS brake fluid dry vs. wet boiling point physics, and ideal gas law tire pressure management.",
+      "highlightPoint": "Standard DOT 4 brake fluid has a minimum dry boiling point of 230°C, which plummets to 155°C at 3.7% moisture absorption! Meanwhile, tire pressure rises ~7–10 kPa (1.0–1.4 psi) for every 10°C increase in air temperature!",
+      "sections": [
+        {
+          "heading": "1. Safety Wire-Locking Fundamentals: Positive Tension & Pigtail Ends",
+          "body": "Under MFJ All-Japan and regional road racing technical regulations—as well as most grassroots endurance events—oil drain bolts, oil filler caps, and oil filter bolts must be secured with stainless steel lock wire (typically 0.6mm to 0.8mm diameter).\n\n【Garage Tip】Always route the safety wire so that tension pulls the bolt in the TIGHTENING direction (clockwise for standard right-hand threads). Routing wire in the loosening direction will fail tech inspection and allow high-RPM engine vibration to back the fastener out. Always fold the cut pigtail tip inward so it never punctures a mechanic's hand or racing glove."
+        },
+        {
+          "heading": "2. Brake Fluid Science: JIS K 2233 / FMVSS 116 Dry vs. Wet Boiling Points",
+          "body": "Repeated heavy braking from over 250 km/h into Turn 1 at Autopolis or Barcelona-Catalunya transfers intense heat through the pads and caliper pistons into the brake fluid. Per JIS K 2233 and FMVSS No.116 standards, fresh DOT 4 glycol-ether fluid boasts a minimum Dry Boiling Point of 230°C (with top-shelf racing DOT 4 fluids exceeding 300°C–328°C).\n\nHowever, glycol fluid is hygroscopic—it absorbs moisture through microscopic hose pores and reservoir vents. At 3.7% water content, the minimum Wet Boiling Point of DOT 4 drops to just 155°C. Once boiling occurs in the caliper, compressible vapor bubbles form ('Vapor Lock'), causing the brake lever to pull straight to the clip-on bar. Bleed or flush your brake fluid regularly before track events."
+        },
+        {
+          "heading": "3. Tire Pressure Physics: Cold vs. Hot Readings via Gay-Lussac's Law",
+          "body": "Because pressure in a fixed volume is directly proportional to absolute temperature (Gay-Lussac's Law, P₁/T₁ = P₂/T₂), every 10°C rise in internal tire air temperature increases gauge pressure by roughly 7 to 10 kPa (0.07–0.10 kgf/cm² or ~1.0–1.4 psi). A tire set to 180 kPa cold at 15°C morning ambient temperature will climb to roughly 225–240 kPa once heated to 75°C on track. Always measure and tune to your tire manufacturer's recommended HOT target pressure immediately upon pitting in."
+        }
+      ],
+      "resultTableTitle": "Track Maintenance Standards & Physics Quick-Reference",
+      "results": [
+        {
+          "pos": "DOT 4 Standard",
+          "riderOrTeam": "Dry Boiling ≧ 230°C / Wet Boiling ≧ 155°C",
+          "machine": "JIS K 2233 / FMVSS No.116",
+          "timeOrNote": "3.7% moisture absorption cuts boiling resistance by 75°C+"
+        },
+        {
+          "pos": "Racing DOT 4",
+          "riderOrTeam": "Dry Boiling 300°C – 328°C Class",
+          "machine": "High-Temp Motorsport Spec",
+          "timeOrNote": "Superior lever feel under heavy braking; bleed frequently"
+        },
+        {
+          "pos": "Safety Wire",
+          "riderOrTeam": "0.6mm – 0.8mm Stainless Lock Wire",
+          "machine": "Oil Drain, Filler Cap & Filter",
+          "timeOrNote": "Must pull clockwise (tightening direction) with folded pigtail tip"
+        },
+        {
+          "pos": "Tire Pressure",
+          "riderOrTeam": "+7 to +10 kPa per +10°C Temp Rise",
+          "machine": "Cold (Ambient) → Hot (Track / 80°C Warmer)",
+          "timeOrNote": "Always verify hot pressures immediately after coming off track"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naoko",
+          "mood": "grumpy",
+          "text": "Listen up! Stop safety-wiring your drain bolts backward the night before tech inspection! If it pulls counterclockwise, that's a loosening wire, not a lock wire! And don't you dare roll onto track with year-old brake fluid—grab an 8mm wrench and bleed hose right now!"
+        },
+        {
+          "speaker": "suzuka",
+          "mood": "normal",
+          "text": "Seeing the exact JIS boiling point numbers—230°C dry vs. 155°C wet—really drives home why fresh brake fluid saves lives at the end of the back straight!"
+        },
+        {
+          "speaker": "naoko",
+          "mood": "maiden",
+          "text": "I-it's not like I enjoy nagging you guys! I just... can't stand the thought of your brake lever going spongy at Turn 1... H-here, I'll pump the lever while you crack the bleeder valve, okay? Just buy me a pudding on the way home... 🌸"
+        }
+      ]
+    }
+  }
+}

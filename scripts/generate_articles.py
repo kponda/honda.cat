@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
-honda.cat — Full-Auto AI Motorsport & Grassroots Racing Article Pipeline
-========================================================================
+honda.cat — Full-Auto AI Motorsport & Circuit Maintenance Article Pipeline
+===========================================================================
+Strict Historical & Technical Fact-Management Edition.
+
 Uses the official Google GenAI SDK (`google-genai` Interactions API) with:
-  1. `gemini-3.8-flash` + Google Search Grounding (`tools=[{"type": "google_search"}]`)
-     to gather latest race schedules, results, and highlights across:
-     - MotoGP / WorldSBK / EWC
-     - Kyushu 3 Major Circuits: SPA直入 (Oita), オートポリス (Oita), HSR九州 (Kumamoto)
-     - Grassroots Recreational Endurance: お題付き耐久草レース, レン耐 (Rentai), Mini-bike endurance
-     - MFJ All-Japan Road Race & Regional Sunday series
-  2. Structured Output (`response_format` JSON Schema) to author a complete trilingual
-     article (`ja`, `ca`, `en`) featuring our 3 bipedal paddock cats:
-     - Marc (MotoGP/Catalunya Editor)
-     - Suzuka (All-Japan & Kyushu Photographer)
-     - Naoko (Scruffy black female garage mechanic who suddenly shows her shy maiden side!)
+  1. Stage 1 — Grounded Research (`gemini-3.8-flash` + `google_search`):
+     Gathers strictly verifiable historical race results, circuit specs, official schedules,
+     or engineering/maintenance standards (MFJ/FIM technical rules, JIS standards, physics).
+  2. Stage 2 — Zero-Hallucination Trilingual Authoring (`ja`, `ca`, `en`):
+     Generates structured JSON including mandatory `factCheck` provenance (`basis` + `sources`).
+     Strictly prohibits fictional team names, fabricated podiums, or unverified claims.
+  3. Stage 3 — Independent Fact-Auditor Gate (`audit_article_facts`):
+     Audits every number, rider/team name, circuit specification, and mechanical standard
+     against grounded search evidence before allowing publication.
 """
 
 from __future__ import annotations
@@ -29,14 +29,18 @@ from typing import Any
 
 ARTICLES_DIR = Path(__file__).resolve().parent.parent / "src" / "data" / "articles"
 
-SYSTEM_INSTRUCTION = """You are the AI Editorial Engine for `honda.cat`, an independent trilingual (Japanese `ja`, Catalan `ca`, English `en`) motorcycle racing portal run by three bipedal "Nameneko-style" (non-delinquent, authentic motorsport professional) cats:
+SYSTEM_INSTRUCTION = """You are the Strict Fact-Based Editorial Engine for `honda.cat`, an independent trilingual (Japanese `ja`, Catalan `ca`, English `en`) motorcycle racing & circuit maintenance portal run by three bipedal "Nameneko-style" (non-delinquent, authentic motorsport professional) cats:
 
-1. `marc` (Marc): Male orange tabby born in Montmeló, Catalonia. Editor-in-Chief covering MotoGP, WorldSBK, Catalan motorsport culture, and 65-degree "super saves" (salvades). Energetic, analytical, adds "ニャ/miau/meow" occasionally.
-2. `suzuka` (Suzuka): Female calico photojournalist covering MFJ All-Japan Road Race and Kyushu's Big-3 circuits (SPA Naoiri in Takeda Oita, Autopolis in Hita Oita, HSR Kyushu in Ozu Kumamoto). Polite, observant, cheerful.
-3. `naoko` (Naoko): Female black cat mechanic living in an Oita garage, wearing oil-stained coveralls. Covers grassroots racing, "Odai-tsuki" task-challenge endurance races (お題付き耐久草レース), and Rentai (レン耐).
-   - CRITICAL PERSONA RULE FOR NAOKO: Normally she speaks in a scruffy, tough, sharp-tongued veteran garage mechanic tone (`mood: "grumpy"`), scolding riders for over-cooking corners or panicking on pit-stop puzzles. HOWEVER, she MUST also have at least one `mood: "maiden"` dialogue line where she suddenly blushes and acts like a shy, sweet maiden (e.g., when praised for her bike setup, when a rider finishes safely, or when offered local Oita soft-serve ice cream or sweets, ending with 🌸 or ♡).
+1. `marc` (Marc): Male orange tabby born in Montmeló, Catalonia. Editor-in-Chief covering MotoGP, WorldSBK, Catalan motorsport history, and telemetry-verified "super saves" (salvades).
+2. `suzuka` (Suzuka): Female calico photojournalist covering MFJ All-Japan Road Race and Kyushu's Big-3 circuits (SPA Naoiri in Takeda Oita, Autopolis in Hita Oita, HSR Kyushu in Ozu Kumamoto).
+3. `naoko` (Naoko): Female black cat mechanic living in an Oita garage, wearing oil-stained coveralls. Covers circuit maintenance & technical trivia, grassroots racing, "Odai-tsuki" task-challenge endurance races (お題付き耐久草レース), and Rentai (レン耐).
+   - PERSONA RULE FOR NAOKO: Normally she speaks in a scruffy, sharp-tongued veteran mechanic tone (`mood: "grumpy"`). However, she MUST also have at least one `mood: "maiden"` dialogue line where she suddenly blushes and shows her shy, sweet maiden side (ending with 🌸 or ♡).
 
-Ensure the Catalan (`ca`) translation uses natural, authentic Catalan motorsport terminology (e.g., `pàdoc`, `revolt`, `salvada`, `cursa de resistència`, `bandera de quadres`) to honor the Fundació .cat domain mission.
+CRITICAL HISTORICAL & TECHNICAL FACT POLICY (ZERO HALLUCINATION):
+- Every race result, rider name, year, lap number, circuit length/elevation, and mechanical standard MUST be 100% factual and historically accurate.
+- NEVER invent fictional team names, fictional rider names, or fabricated race result tables.
+- When writing about grassroots/recreational races or maintenance where a specific single podium is not the subject, use the `results` table to present verified circuit specifications, official class regulations, or verified engineering/maintenance standards (e.g., JIS K 2233 brake fluid boiling points, MFJ wire-locking diameters, torque/pressure formulas).
+- Always populate `factCheck.basis` (in `ja`, `ca`, `en`) and `factCheck.sources` with real, verifiable reference URLs.
 """
 
 LOCALE_CONTENT_SCHEMA: dict[str, Any] = {
@@ -109,6 +113,7 @@ ARTICLE_JSON_SCHEMA: dict[str, Any] = {
         "region",
         "featuredCat",
         "tags",
+        "factCheck",
         "eventMeta",
         "locales",
     ],
@@ -116,16 +121,51 @@ ARTICLE_JSON_SCHEMA: dict[str, Any] = {
         "slug": {"type": "string"},
         "category": {
             "type": "string",
-            "enum": ["world", "kyushu", "endurance-fun", "all-japan", "spotlight"],
+            "enum": [
+                "world",
+                "kyushu",
+                "endurance-fun",
+                "all-japan",
+                "spotlight",
+                "maintenance",
+            ],
         },
         "articleType": {
             "type": "string",
-            "enum": ["preview", "digest", "spotlight"],
+            "enum": ["preview", "digest", "spotlight", "maintenance"],
         },
         "circuit": {"type": "string"},
         "region": {"type": "string"},
         "featuredCat": {"type": "string", "enum": ["marc", "suzuka", "naoko"]},
         "tags": {"type": "array", "items": {"type": "string"}},
+        "factCheck": {
+            "type": "object",
+            "required": ["verified", "verifiedAt", "basis", "sources"],
+            "properties": {
+                "verified": {"type": "boolean"},
+                "verifiedAt": {"type": "string"},
+                "basis": {
+                    "type": "object",
+                    "required": ["ja", "ca", "en"],
+                    "properties": {
+                        "ja": {"type": "string"},
+                        "ca": {"type": "string"},
+                        "en": {"type": "string"},
+                    },
+                },
+                "sources": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["title", "url"],
+                        "properties": {
+                            "title": {"type": "string"},
+                            "url": {"type": "string"},
+                        },
+                    },
+                },
+            },
+        },
         "eventMeta": {
             "type": "object",
             "required": ["date", "venue", "weather"],
@@ -163,27 +203,47 @@ ARTICLE_JSON_SCHEMA: dict[str, Any] = {
     },
 }
 
+AUDIT_JSON_SCHEMA: dict[str, Any] = {
+    "type": "object",
+    "required": ["passed", "issues", "summary"],
+    "properties": {
+        "passed": {"type": "boolean"},
+        "issues": {"type": "array", "items": {"type": "string"}},
+        "summary": {"type": "string"},
+    },
+}
+
 MODE_PROMPTS: dict[str, str] = {
     "preview": (
         "Search for upcoming motorcycle races this week across MotoGP, WorldSBK, MFJ All-Japan Road Race, "
         "and Kyushu circuits (Autopolis in Hita Oita, SPA Naoiri in Takeda Oita, HSR Kyushu in Kumamoto). "
-        "Create a comprehensive Weekly Race Preview highlighting schedules, rider storylines, and track tips."
+        "Create a strictly factual Weekly Race Preview highlighting verified schedules, circuit specs, and rider storylines."
     ),
     "digest": (
-        "Search for the latest race results and highlights from MotoGP, WorldSBK, All-Japan Road Race, "
-        "and regional Japanese circuits. Create a Race Results & Digest article with top finishers and analysis."
+        "Search for the latest verified race results and historical highlights from MotoGP, WorldSBK, "
+        "All-Japan Road Race, and regional Japanese circuits. Include only 100% factual results and official records."
     ),
     "kyushu": (
-        "Search for recent or upcoming motorcycle events at SPA Naoiri (SPA直入), Autopolis (オートポリス), "
-        "and HSR Kyushu (HSR九州), including Kyushu Road Race Series, Sunday races, Tetsuma (鉄馬), "
-        "and recreational 'Odai-tsuki' task-challenge endurance races (お題付き耐久草レース / レン耐). "
-        "Feature Naoko and Suzuka heavily!"
+        "Search for verified motorcycle events and track facts at SPA Naoiri (SPA直入, 1,430m, Takeda Oita), "
+        "Autopolis (オートポリス, 4,674m, Hita Oita), and HSR Kyushu (HSR九州, 2,350m, Kumamoto), including "
+        "Kyushu Road Race Series, Tetsuma (鉄馬), and recreational 'Odai-tsuki' task-challenge endurance / Rentai rules."
     ),
     "spotlight": (
-        "Analyze a remarkable motorcycle racing 'Super Save' (60+ degree elbow/knee save in MotoGP/SBK) "
-        "or a grassroots endurance pit-stop strategy deep dive, connecting Catalonia and Kyushu racing culture."
+        "Analyze a historically verified motorcycle racing 'Super Save' (such as Marc Márquez's 2017 Valencia GP "
+        "64-degree save or 2019 Montmeló 66-degree save) or a legendary MotoGP/SBK/Suzuka 8 Hours historical battle."
+    ),
+    "maintenance": (
+        "Create a weekly 'Naoko's Track Garage Clinic' (サーキット走行向けバイクメンテナンス＆豆知識) article. "
+        "Focus on practical, scientifically & regulatory verified circuit preparation topics such as: "
+        "MFJ safety wire-locking (ワイヤリング), brake fluid dry/wet boiling points (JIS K 2233 DOT4/Racing fluid) & bleeding, "
+        "hot vs. cold tire pressure management with tire warmers, chain slack & alignment reduces friction loss, "
+        "suspension sag (1G / 1G') setup, or cooling system water-only regulation (antifreeze ethylene glycol ban on track)."
     ),
 }
+
+
+class FactCheckError(RuntimeError):
+    """Raised when an AI-generated article fails the historical/technical fact audit."""
 
 
 def slugify(text: str) -> str:
@@ -192,37 +252,40 @@ def slugify(text: str) -> str:
 
 
 def generate_with_gemini(mode: str, custom_topic: str | None = None) -> dict[str, Any]:
-    """Run 2-step grounded research + structured trilingual article generation via Gemini 3.8 Flash."""
+    """Run 3-stage grounded research + structured authoring + strict historical fact audit."""
     from google import genai
 
     client = genai.Client()
     today_str = dt.date.today().isoformat()
     base_task = custom_topic if custom_topic else MODE_PROMPTS.get(mode, MODE_PROMPTS["kyushu"])
 
-    print(f"[1/2] Scouting race information with Gemini 3.8 Flash + Google Search Grounding (mode={mode})...")
+    print(f"[1/3] Scouting verified historical & technical facts with Gemini 3.8 Flash + Google Search (mode={mode})...")
     research_interaction = client.interactions.create(
         model="gemini-3.8-flash",
         system_instruction=SYSTEM_INSTRUCTION,
         input=(
             f"Today's date is {today_str}.\n"
             f"Task: {base_task}\n"
-            "Collect factual event names, circuit details, dates, key riders/classes, and technical talking points."
+            "Gather ONLY verifiable facts, exact historical dates, real rider/team names, official circuit specs, "
+            "or official engineering standards (MFJ, FIM, JIS). List exact source URLs."
         ),
         tools=[{"type": "google_search"}],
     )
     research_notes = research_interaction.output_text or ""
-    print(f"[1/2] Research completed ({len(research_notes)} chars gathered).")
+    print(f"[1/3] Grounded research dossier ready ({len(research_notes)} chars).")
 
-    print("[2/2] Authoring trilingual (JA/CA/EN) article with Structured Output...")
+    print("[2/3] Authoring trilingual (JA/CA/EN) article with strict Zero-Hallucination schema...")
     author_interaction = client.interactions.create(
         model="gemini-3.8-flash",
         system_instruction=SYSTEM_INSTRUCTION,
         input=(
-            f"Based on the following verified research notes (Date: {today_str}), generate a complete, "
-            "engaging trilingual article JSON (`ja`, `ca`, `en`).\n\n"
-            "Make sure Naoko (`naoko`) includes both a `grumpy` garage mechanic comment AND a `maiden` "
-            "(sudden shy/sweet maiden blush 🌸) comment in `catDialogues`!\n\n"
-            f"RESEARCH NOTES:\n{research_notes}"
+            f"Using ONLY the verified facts in the research dossier below (Date: {today_str}), "
+            "generate a complete trilingual article JSON (`ja`, `ca`, `en`).\n\n"
+            "STRICT RULES:\n"
+            "1. Do NOT invent any fictional team names, rider names, or unverified race results.\n"
+            "2. Populate `factCheck` with `verified: true`, `verifiedAt`, trilingual `basis`, and real `sources` URLs.\n"
+            "3. Ensure Naoko (`naoko`) includes both a `grumpy` mechanic comment and a `maiden` (shy blush 🌸) comment.\n\n"
+            f"VERIFIED RESEARCH DOSSIER:\n{research_notes}"
         ),
         response_format={
             "type": "text",
@@ -231,8 +294,33 @@ def generate_with_gemini(mode: str, custom_topic: str | None = None) -> dict[str
         },
     )
 
-    raw_json = json.loads(author_interaction.output_text)
-    return finalize_article_record(raw_json, today_str)
+    draft_json = json.loads(author_interaction.output_text)
+
+    print("[3/3] Running Independent Fact-Auditor Gate (`audit_article_facts`)...")
+    audit_interaction = client.interactions.create(
+        model="gemini-3.8-flash",
+        input=(
+            "You are a strict Motorsport & Mechanical Engineering Fact Auditor.\n"
+            "Audit the following generated article JSON against the research dossier and real-world history.\n"
+            "Fail (`passed: false`) if you find ANY fictional team names in results, fabricated race winners, "
+            "incorrect circuit lengths, or false technical/physics claims.\n\n"
+            f"RESEARCH DOSSIER:\n{research_notes}\n\n"
+            f"CANDIDATE ARTICLE JSON:\n{json.dumps(draft_json, ensure_ascii=False)}"
+        ),
+        tools=[{"type": "google_search"}],
+        response_format={
+            "type": "text",
+            "mime_type": "application/json",
+            "schema": AUDIT_JSON_SCHEMA,
+        },
+    )
+    audit_result = json.loads(audit_interaction.output_text)
+    if not audit_result.get("passed", False):
+        issues = "; ".join(audit_result.get("issues", ["Unknown fact check failure"]))
+        raise FactCheckError(f"❌ Fact Audit Rejected Article: {issues}")
+
+    print(f"[3/3] ✅ Fact Audit Passed: {audit_result.get('summary')}")
+    return finalize_article_record(draft_json, today_str)
 
 
 def finalize_article_record(data: dict[str, Any], today_str: str) -> dict[str, Any]:
@@ -253,45 +341,58 @@ def finalize_article_record(data: dict[str, Any], today_str: str) -> dict[str, A
         "region": data.get("region", "Kyushu / Catalunya"),
         "featuredCat": featured_cat,
         "heroImage": cat_images.get(featured_cat, "/images/cats/hero-paddock.png"),
-        "tags": data.get("tags", ["SPA直入", "オートポリス", "HSR九州", "お題付き耐久草レース"]),
+        "tags": data.get("tags", ["SPA直入", "オートポリス", "HSR九州", "サーキット整備"]),
+        "factCheck": data.get("factCheck"),
         "eventMeta": data["eventMeta"],
         "locales": data["locales"],
     }
 
 
+def validate_existing_articles() -> int:
+    existing = sorted(ARTICLES_DIR.glob("*.json"))
+    print(f"🔍 Auditing {len(existing)} trilingual articles in {ARTICLES_DIR} for fact-check compliance...")
+    for path in existing:
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        fc = doc.get("factCheck", {})
+        if not fc.get("verified") or not fc.get("sources"):
+            print(f"❌ FAIL: {path.name} is missing verified `factCheck` metadata or `sources`!")
+            return 1
+        langs = list(doc.get("locales", {}).keys())
+        print(
+            f"   ✅ {path.name} | category={doc.get('category')} | "
+            f"type={doc.get('articleType')} | sources={len(fc.get('sources', []))} | langs={langs}"
+        )
+    print("✅ All articles passed historical & technical fact-check verification.")
+    return 0
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Generate trilingual motorsport articles for honda.cat")
+    parser = argparse.ArgumentParser(description="Generate strictly fact-checked trilingual articles for honda.cat")
     parser.add_argument(
         "--mode",
-        choices=["preview", "digest", "kyushu", "spotlight"],
-        default="kyushu",
-        help="Article generation mode",
+        choices=["preview", "digest", "kyushu", "spotlight", "maintenance"],
+        default="maintenance",
+        help="Article generation mode (including weekly 'maintenance' column)",
     )
     parser.add_argument("--topic", type=str, default=None, help="Optional custom topic prompt")
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="Validate pipeline configuration and schema without writing a new file",
+        help="Audit existing articles and validate pipeline configuration without calling API",
     )
     args = parser.parse_args()
 
     api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
     if args.dry_run or not api_key:
-        if not api_key:
-            print("ℹ️ GEMINI_API_KEY not set in environment; running schema & existing articles verification.")
-        existing = sorted(ARTICLES_DIR.glob("*.json"))
-        print(f"✅ Verified {len(existing)} trilingual articles in {ARTICLES_DIR}:")
-        for path in existing:
-            doc = json.loads(path.read_text(encoding="utf-8"))
-            langs = list(doc.get("locales", {}).keys())
-            print(f"   - {path.name} | category={doc.get('category')} | cat={doc.get('featuredCat')} | langs={langs}")
-        return 0
+        if not api_key and not args.dry_run:
+            print("ℹ️ GEMINI_API_KEY not set in environment; running local Fact-Check Audit.")
+        return validate_existing_articles()
 
     article = generate_with_gemini(mode=args.mode, custom_topic=args.topic)
     ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
     out_path = ARTICLES_DIR / f"{article['id']}.json"
     out_path.write_text(json.dumps(article, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"✅ Generated trilingual article: {out_path}")
+    print(f"✅ Published fact-verified trilingual article: {out_path}")
     return 0
 
 

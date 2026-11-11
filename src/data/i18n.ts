@@ -175,12 +175,14 @@ export const UI_TEXT = {
     kyushu: { ja: '🔥 九州 (SPA直入・AP・HSR)', ca: '🔥 Kyushu (SPA Naoiri / AP / HSR)', en: '🔥 Kyushu (SPA Naoiri / AP / HSR)' },
     'endurance-fun': { ja: '🎯 お題付き耐久・レン耐・草レース', ca: '🎯 Resistència amb Reptes i Popular', en: '🎯 Odai Endurance & Grassroots' },
     'all-japan': { ja: '🗾 全日本・全国地方選', ca: '🗾 Campionat del Japó (MFJ)', en: '🗾 All-Japan & Regional' },
-    spotlight: { ja: '⚡ スーパーセーブ＆注目解説', ca: '⚡ Salvades i Anàlisi Tècnica', en: '⚡ Super Saves & Spotlight' }
+    spotlight: { ja: '⚡ スーパーセーブ＆注目解説', ca: '⚡ Salvades i Anàlisi Tècnica', en: '⚡ Super Saves & Spotlight' },
+    maintenance: { ja: '🔧 サーキット整備＆豆知識', ca: '🔧 Manteniment i Trucs de Circuit', en: '🔧 Track Maintenance & Tips' }
   },
   articleTypes: {
     preview: { ja: '📅 今週の開催情報＆見どころ', ca: '📅 Prèvia i Horaris', en: '📅 Weekly Race Preview' },
     digest: { ja: '🏆 レース結果＆ダイジェスト', ca: '🏆 Resultats i Resum', en: '🏆 Race Results & Digest' },
-    spotlight: { ja: '⚡ スーパーセーブ・深掘り特集', ca: '⚡ Salvada / Punt Clau', en: '⚡ Super Save & Spotlight' }
+    spotlight: { ja: '⚡ スーパーセーブ・深掘り特集', ca: '⚡ Salvada / Punt Clau', en: '⚡ Super Save & Spotlight' },
+    maintenance: { ja: '🔧 週1連載：サーキット整備＆豆知識', ca: '🔧 Manteniment Setmanal de Pàdoc', en: '🔧 Weekly Track Maintenance & Trivia' }
   },
   kyushuHub: {
     title: {

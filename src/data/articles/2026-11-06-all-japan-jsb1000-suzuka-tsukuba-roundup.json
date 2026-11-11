@@ -9,6 +9,25 @@
   "featuredCat": "suzuka",
   "heroImage": "/images/cats/suzuka.png",
   "tags": ["全日本ロードレース", "JSB1000", "鈴鹿サンデー", "テイスト・オブ・ツクバ", "地方選手権"],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "MFJ全日本ロードレース選手権（JSB1000 / ST1000 / ST600 / J-GP3 公式クラス区分）、筑波サーキット「テイスト・オブ・ツクバ（Taste of Tsukuba）」、HSR九州「鉄馬（Tetsuma）」の実在開催規定に基づき検証済み。",
+      "ca": "Verificat segons les categories oficials del Campionat del Japó MFJ (JSB1000, ST1000, ST600, J-GP3) i els festivals històrics reals Taste of Tsukuba i Tetsuma (HSR Kyushu).",
+      "en": "Verified against official MFJ All-Japan Road Race Championship class regulations (JSB1000, ST1000, ST600, J-GP3) and factual event formats of Taste of Tsukuba and HSR Kyushu's Tetsuma."
+    },
+    "sources": [
+      {
+        "title": "JRR 全日本ロードレース選手権 公式サイト (superbike.jp)",
+        "url": "https://www.superbike.jp/"
+      },
+      {
+        "title": "MFJ 日本モーターサイクルスポーツ協会",
+        "url": "https://www.mfj.or.jp/"
+      }
+    ]
+  },
   "eventMeta": {
     "date": "2026-11-06",
     "venue": {

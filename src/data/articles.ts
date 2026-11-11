@@ -18,6 +18,18 @@ export interface ResultRow {
   timeOrNote: string;
 }
 
+export interface FactSource {
+  title: string;
+  url: string;
+}
+
+export interface FactCheckMeta {
+  verified: boolean;
+  verifiedAt: string;
+  basis: Record<Lang, string>;
+  sources: FactSource[];
+}
+
 export interface LocalizedArticleContent {
   title: string;
   subtitle: string;
@@ -33,13 +45,14 @@ export interface ArticleData {
   id: string;
   slug: string;
   publishedAt: string;
-  category: 'world' | 'kyushu' | 'endurance-fun' | 'all-japan' | 'spotlight';
-  articleType: 'preview' | 'digest' | 'spotlight';
+  category: 'world' | 'kyushu' | 'endurance-fun' | 'all-japan' | 'spotlight' | 'maintenance';
+  articleType: 'preview' | 'digest' | 'spotlight' | 'maintenance';
   circuit: string;
   region: string;
   featuredCat: 'marc' | 'suzuka' | 'naoko';
   heroImage: string;
   tags: string[];
+  factCheck?: FactCheckMeta;
   eventMeta: {
     date: string;
     venue: Record<Lang, string>;

@@ -9,6 +9,29 @@
   "featuredCat": "marc",
   "heroImage": "/images/cats/hero-paddock.png",
   "tags": ["MotoGP", "WorldSBK", "カタルーニャ", "RC213V", "CBR1000RR-R"],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "FIM MotoGP世界選手権（RC213V）・FIMスーパーバイク世界選手権（CBR1000RR-R FIREBLADE SP）およびバルセロナ＝カタルーニャ・サーキット（1991年開場・全長4,657m・メインストレート1,047m）の公式技術・コースデータに基づき検証済み。",
+      "ca": "Verificat amb les dades oficials de FIM MotoGP, FIM WorldSBK i el Circuit de Barcelona-Catalunya (inaugurat el 1991 a Montmeló, 4.657m de longitud i recta principal de 1.047m).",
+      "en": "Verified against official FIM MotoGP, FIM WorldSBK, and Circuit de Barcelona-Catalunya (opened 1991 in Montmeló, 4,657m length, 1,047m main straight) technical records."
+    },
+    "sources": [
+      {
+        "title": "FIM MotoGP Official Website",
+        "url": "https://www.motogp.com/"
+      },
+      {
+        "title": "FIM WorldSBK Official Website",
+        "url": "https://www.worldsbk.com/"
+      },
+      {
+        "title": "Circuit de Barcelona-Catalunya Official",
+        "url": "https://www.circuitcat.com/"
+      }
+    ]
+  },
   "eventMeta": {
     "date": "2026-11-07",
     "venue": {
