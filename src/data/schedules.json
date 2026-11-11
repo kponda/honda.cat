@@ -319,33 +319,68 @@
       }
     },
     {
-      "id": "2026-05-17-brows-odai-r2-nakakyushu-and-rentai-ajimu",
+      "id": "2026-05-17-brows-odai-r2-nakakyushu",
       "scope": "japan",
       "category": "endurance-fun",
-      "series": "ブラウズ主催「お題付耐久『草』レース R-2」in 中九州カートウェイ ＆ Let's レン耐！西日本第4戦 in ソニックパーク安心院",
+      "series": "ブラウズ主催「お題付耐久『草』レース R-2」in 中九州カートウェイ",
       "startDate": "2026-05-17",
-      "endDate": "2026-05-24",
+      "endDate": "2026-05-17",
       "circuit": {
-        "ja": "中九州カートウェイ（熊本県山鹿市）／ ソニックパーク安心院（大分県宇佐市）",
-        "ca": "Nakakyushu Kartway (Yamaga, Kumamoto) i Sonic Park Ajimu (Usa, Oita)",
-        "en": "Nakakyushu Kartway (Yamaga, Kumamoto) & Sonic Park Ajimu (Usa, Oita)"
+        "ja": "中九州カートウェイ（熊本県山鹿市）",
+        "ca": "Nakakyushu Kartway (Yamaga, Kumamoto)",
+        "en": "Nakakyushu Kartway (Yamaga, Kumamoto)"
       },
       "eventName": {
-        "ja": "ブラウズ主催「お題付耐久『草』レース R-2（5/17 中九州カートウェイ）」＆ 青木拓磨プロデュース「Let's レン耐！西日本シリーズ第4戦（5/24 ソニックパーク安心院 3時間耐久）」",
-        "ca": "BROW'S «Odai-tsuki Endurance R-2» (17 maig, Nakakyushu Kartway) i «Let's Rentai! West Rd.4» (24 maig, Sonic Park Ajimu 3h)",
-        "en": "BROW'S 'Odai-tsuki Endurance R-2' (May 17, Nakakyushu Kartway) & 'Let's Rentai! West Rd.4' (May 24, Sonic Park Ajimu 3h)"
+        "ja": "飲酒運転撲滅チャリティー ブラウズ主催「お題付耐久『草』レース R-2」in 中九州カートウェイ",
+        "ca": "BROW'S «Odai-tsuki Endurance R-2» a Nakakyushu Kartway (Yamaga, Kumamoto)",
+        "en": "BROW'S 'Odai-tsuki Endurance R-2' at Nakakyushu Kartway (Yamaga, Kumamoto)"
       },
       "scheduleWindow": {
-        "ja": "2026年5月17日(日) 中九州カートウェイ ／ 5月24日(日) ソニックパーク安心院",
-        "ca": "17 de maig de 2026 (Nakakyushu) i 24 de maig de 2026 (Sonic Park Ajimu)",
-        "en": "May 17, 2026 (Nakakyushu Kartway) & May 24, 2026 (Sonic Park Ajimu)"
+        "ja": "2026年5月17日(日) 1Day開催（中九州カートウェイ）",
+        "ca": "17 de maig de 2026 (Nakakyushu Kartway)",
+        "en": "May 17, 2026 (Nakakyushu Kartway)"
       },
-      "classes": "お題付90分耐久（かめさん/うさぎさん/らいおんさん）・チーターさん(10周) ／ レン耐 3時間耐久（GROM / Monkey125・ダブルペリア方式）",
+      "classes": "お題付90分耐久（かめさん48秒/うさぎさん46秒/らいおんさん制限なし）・10周スプリント（チーターさん）",
       "officialWebUrl": "https://brow-s.jp/event2026/2026odai_r2nkw.html",
-      "circuitWebUrl": "http://rentai.takuma-gp.com/",
-      "snsHandle": "BROW'S公式 (brow-s.jp) / レン耐公式 (takuma-gp.com)",
+      "circuitWebUrl": "https://brow-s.jp/",
+      "snsHandle": "BROW'S公式 (brow-s.jp)",
       "snsUrl": "https://brow-s.jp/",
-      "verifiedSource": "ライダーズファンショップ ブラウズ公式 (brow-s.jp) ＆ Let's レン耐！公式 (rentai.takuma-gp.com)",
+      "verifiedSource": "ライダーズファンショップ ブラウズ公式 (brow-s.jp)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-05-25-kyushu-odai-r2-nakakyushu-and-rentai-ajimu-digest",
+        "lastCheckedAt": "2026-05-25T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-05-24-lets-rentai-west-rd4-ajimu",
+      "scope": "japan",
+      "category": "endurance-fun",
+      "series": "青木拓磨プロデュース「Let's レン耐！西日本シリーズ第4戦」in ソニックパーク安心院",
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-24",
+      "circuit": {
+        "ja": "ソニックパーク安心院（大分県宇佐市安心院町）",
+        "ca": "Sonic Park Ajimu (Usa, Oita)",
+        "en": "Sonic Park Ajimu (Usa, Oita)"
+      },
+      "eventName": {
+        "ja": "青木拓磨プロデュース「Let's レン耐！西日本シリーズ第4戦（3時間耐久）」in ソニックパーク安心院",
+        "ca": "«Let's Rentai! West Series Rd.4» (Resistència 3h) a Sonic Park Ajimu (Oita)",
+        "en": "'Let's Rentai! West Series Rd.4' (3-Hour Endurance) at Sonic Park Ajimu (Oita)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年5月24日(日) 1Day開催（ソニックパーク安心院・3時間耐久）",
+        "ca": "24 de maig de 2026 (Sonic Park Ajimu · Resistència 3h)",
+        "en": "May 24, 2026 (Sonic Park Ajimu · 3-Hour Endurance)"
+      },
+      "classes": "レン耐 3時間耐久（GROM / Monkey125 レンタルマシン・ピットお題＆ダブルペリア方式）",
+      "officialWebUrl": "http://rentai.takuma-gp.com/",
+      "circuitWebUrl": "http://www.sonicpark.jp/",
+      "snsHandle": "Let's レン耐！公式 (takuma-gp.com)",
+      "snsUrl": "http://rentai.takuma-gp.com/",
+      "verifiedSource": "Let's レン耐！公式 (rentai.takuma-gp.com)",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",

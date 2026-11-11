@@ -1,9 +1,164 @@
 ---
 import schedulesData from '../data/schedules.json';
 import sourcesConfig from '../../scripts/sources_config.json';
+import { getAllArticles } from '../data/articles';
 
 const events = schedulesData.events;
 const sources = sourcesConfig.sources;
+const allArticles = getAllArticles();
+const articleMap = new Map(allArticles.map((art) => [art.id, art]));
+
+const CATEGORY_META: Record<
+  string,
+  {
+    icon: string;
+    color: string;
+    label: { ja: string; ca: string; en: string };
+  }
+> = {
+  world: {
+    icon: '🌍',
+    color: '#e63946',
+    label: {
+      ja: '世界選手権 (MotoGP / WorldSBK)',
+      ca: 'Mundial (MotoGP / WorldSBK)',
+      en: 'World Championship (MotoGP / WorldSBK)',
+    },
+  },
+  'all-japan': {
+    icon: '🗾',
+    color: '#2a9d8f',
+    label: {
+      ja: 'MFJ全日本・全国地方選手権',
+      ca: 'Campionat del Japó MFJ i Regionals',
+      en: 'MFJ All-Japan & Regional Championships',
+    },
+  },
+  kyushu: {
+    icon: '🔥',
+    color: '#ffb703',
+    label: {
+      ja: '九州サーキット (オートポリス / SPA直入 / HSR九州)',
+      ca: 'Circuits de Kyushu (Autopolis / SPA Naoiri / HSR)',
+      en: 'Kyushu Circuits (Autopolis / SPA Naoiri / HSR)',
+    },
+  },
+  'endurance-fun': {
+    icon: '🏁',
+    color: '#c77dff',
+    label: {
+      ja: '草耐久・レン耐 (お題付耐久 / Let\'s レン耐)',
+      ca: 'Resistència Grassroots i Rentai',
+      en: 'Grassroots Endurance & Rentai',
+    },
+  },
+};
+
+const enrichedEvents = events.map((ev) => {
+  const resultArticleId = ev.publicationState?.resultArticleId || null;
+  const linkedArticle = resultArticleId ? articleMap.get(resultArticleId) : undefined;
+  const catMeta = CATEGORY_META[ev.category] || CATEGORY_META.kyushu;
+  return {
+    ...ev,
+    catIcon: catMeta.icon,
+    catColor: catMeta.color,
+    catLabel: catMeta.label,
+    articleSlug: linkedArticle?.slug || null,
+  };
+});
+
+interface CalendarDayCell {
+  day: number | null;
+  dateStr: string | null;
+  dayOfWeek: number; // 0 = Mon ... 6 = Sun
+  events: typeof enrichedEvents;
+}
+
+interface CalendarMonth {
+  key: string;
+  year: number;
+  month: number; // 1-12
+  label: { ja: string; ca: string; en: string };
+  cells: CalendarDayCell[];
+  eventCount: number;
+}
+
+const MONTH_LABELS: Record<number, { ja: string; ca: string; en: string }> = {
+  4: { ja: '2026年 4月', ca: 'Abril 2026', en: 'April 2026' },
+  5: { ja: '2026年 5月', ca: 'Maig 2026', en: 'May 2026' },
+  6: { ja: '2026年 6月', ca: 'Juny 2026', en: 'June 2026' },
+};
+
+function buildCalendarMonths(year: number, months: number[]): CalendarMonth[] {
+  return months.map((month) => {
+    const daysInMonth = new Date(year, month, 0).getDate();
+    // JS getDay(): 0 = Sun, 1 = Mon ... 6 = Sat. Convert to Monday-first: 0 = Mon ... 6 = Sun
+    const firstJsDay = new Date(year, month - 1, 1).getDay();
+    const leadingEmpty = (firstJsDay + 6) % 7;
+
+    const cells: CalendarDayCell[] = [];
+    for (let i = 0; i < leadingEmpty; i++) {
+      cells.push({
+        day: null,
+        dateStr: null,
+        dayOfWeek: i,
+        events: [],
+      });
+    }
+
+    const monthPrefix = `${year}-${String(month).padStart(2, '0')}`;
+    const monthEventsSet = new Set<string>();
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const dateStr = `${monthPrefix}-${String(d).padStart(2, '0')}`;
+      const dayOfWeek = (leadingEmpty + d - 1) % 7;
+      const dayEvents = enrichedEvents.filter(
+        (ev) => ev.startDate <= dateStr && dateStr <= ev.endDate
+      );
+      dayEvents.forEach((ev) => monthEventsSet.add(ev.id));
+
+      cells.push({
+        day: d,
+        dateStr,
+        dayOfWeek,
+        events: dayEvents,
+      });
+    }
+
+    while (cells.length % 7 !== 0) {
+      cells.push({
+        day: null,
+        dateStr: null,
+        dayOfWeek: cells.length % 7,
+        events: [],
+      });
+    }
+
+    return {
+      key: monthPrefix,
+      year,
+      month,
+      label: MONTH_LABELS[month] || {
+        ja: `${year}年 ${month}月`,
+        ca: `${month}/${year}`,
+        en: `${year}-${month}`,
+      },
+      cells,
+      eventCount: monthEventsSet.size,
+    };
+  });
+}
+
+const calendarMonths = buildCalendarMonths(2026, [4, 5, 6]);
+const weekdays = [
+  { ja: '月', ca: 'DL', en: 'MON', isWeekend: false },
+  { ja: '火', ca: 'DT', en: 'TUE', isWeekend: false },
+  { ja: '水', ca: 'DC', en: 'WED', isWeekend: false },
+  { ja: '木', ca: 'DJ', en: 'THU', isWeekend: false },
+  { ja: '金', ca: 'DV', en: 'FRI', isWeekend: false },
+  { ja: '土', ca: 'DS', en: 'SAT', isWeekend: true },
+  { ja: '日', ca: 'DG', en: 'SUN', isWeekend: true },
+];
 ---
 
 <section id="schedule-board" class="schedule-section">
@@ -37,11 +192,209 @@ const sources = sourcesConfig.sources;
       </p>
     </div>
 
+    <!-- ==========================================
+         INTERACTIVE RACE CALENDAR WITH ICON TOOLTIPS
+         ========================================== -->
+    <div class="calendar-board-card">
+      <div class="calendar-board-top">
+        <div class="calendar-board-heading">
+          <h3 class="calendar-board-title">
+            <span data-i18n="ja">📅 カテゴリー別レース開催カレンダー（アイコンをホバー／タップで詳細ティップス表示）</span>
+            <span data-i18n="ca">📅 Calendari per Categories (Passa el cursor o toca les icones per veure els detalls)</span>
+            <span data-i18n="en">📅 Category Race Calendar (Hover or Tap Icons for Event Tooltip)</span>
+          </h3>
+          <p class="calendar-board-hint">
+            <span data-i18n="ja">💡 カレンダー内の各カテゴリーアイコン（🌍 🗾 🔥 🏁）にマウスを重ねるかタップすると、大会名・開催サーキット・クラス・結果記事へのリンクが表示されます。</span>
+            <span data-i18n="ca">💡 Passa el ratolí per sobre o toca qualsevol icona (🌍 🗾 🔥 🏁) per obrir la fitxa amb el nom de la cursa, el circuit i l'enllaç a la crònica.</span>
+            <span data-i18n="en">💡 Hover over or tap any category icon (🌍 🗾 🔥 🏁) in the calendar to view the race name, circuit, classes, and race report link.</span>
+          </p>
+        </div>
+
+        <div class="calendar-month-tabs" role="tablist" aria-label="Calendar Month Filter">
+          <button type="button" class="cal-month-tab active" data-month-filter="all">
+            <span data-i18n="ja">すべて表示 (4月〜6月)</span>
+            <span data-i18n="ca">Tots (Abr–Jun)</span>
+            <span data-i18n="en">All Months (Apr–Jun)</span>
+          </button>
+          {calendarMonths.map((m) => (
+            <button type="button" class="cal-month-tab" data-month-filter={m.key}>
+              <span data-i18n="ja">{m.label.ja}</span>
+              <span data-i18n="ca">{m.label.ca}</span>
+              <span data-i18n="en">{m.label.en}</span>
+              <span class="cal-tab-count">{m.eventCount}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Category Icon Legend -->
+      <div class="calendar-legend">
+        {Object.entries(CATEGORY_META).map(([catKey, meta]) => (
+          <div class={`legend-item cat-badge-${catKey}`}>
+            <span class="legend-icon">{meta.icon}</span>
+            <span class="legend-text">
+              <span data-i18n="ja">{meta.label.ja}</span>
+              <span data-i18n="ca">{meta.label.ca}</span>
+              <span data-i18n="en">{meta.label.en}</span>
+            </span>
+          </div>
+        ))}
+      </div>
+
+      <!-- Monthly Calendars Grid -->
+      <div class="calendar-months-grid" id="calendar-months-grid">
+        {calendarMonths.map((m) => (
+          <div class="calendar-month-card" data-month-card={m.key}>
+            <div class="cal-month-header">
+              <h4 class="cal-month-title">
+                <span data-i18n="ja">{m.label.ja}</span>
+                <span data-i18n="ca">{m.label.ca}</span>
+                <span data-i18n="en">{m.label.en}</span>
+              </h4>
+              <span class="cal-month-meta">
+                {m.eventCount} <span data-i18n="ja">大会</span><span data-i18n="ca">curses</span><span data-i18n="en">events</span>
+              </span>
+            </div>
+
+            <div class="cal-weekdays-row">
+              {weekdays.map((w, idx) => (
+                <div class={`cal-weekday ${w.isWeekend ? (idx === 5 ? 'sat' : 'sun') : ''}`}>
+                  <span data-i18n="ja">{w.ja}</span>
+                  <span data-i18n="ca">{w.ca}</span>
+                  <span data-i18n="en">{w.en}</span>
+                </div>
+              ))}
+            </div>
+
+            <div class="cal-days-grid">
+              {m.cells.map((cell) => {
+                const hasEvents = cell.events.length > 0;
+                const isSat = cell.dayOfWeek === 5;
+                const isSun = cell.dayOfWeek === 6;
+                return (
+                  <div
+                    class={`cal-day-cell ${cell.day === null ? 'empty' : ''} ${hasEvents ? 'has-events' : ''} ${isSat ? 'is-sat' : ''} ${isSun ? 'is-sun' : ''}`}
+                    data-date={cell.dateStr || undefined}
+                  >
+                    {cell.day !== null && (
+                      <>
+                        <span class="cal-day-num">{cell.day}</span>
+                        {hasEvents && (
+                          <div class="cal-day-icons">
+                            {cell.events.map((ev) => (
+                              <button
+                                type="button"
+                                class={`cal-event-icon-btn cat-btn-${ev.category}`}
+                                data-event-id={ev.id}
+                                data-date={cell.dateStr}
+                                aria-label={`${ev.eventName.ja} (${cell.dateStr})`}
+                              >
+                                <span class="cal-icon-emoji">{ev.catIcon}</span>
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Hidden Event Tooltip Templates & Floating Tooltip Container -->
+      <div id="calendar-tooltip-templates" hidden>
+        {enrichedEvents.map((ev) => (
+          <div data-tooltip-template={ev.id}>
+            <div class={`cal-tip-inner cat-tip-${ev.category}`}>
+              <div class="cal-tip-header">
+                <span class={`cal-tip-cat-pill cat-pill-${ev.category}`}>
+                  {ev.catIcon}{' '}
+                  <span data-i18n="ja">{ev.catLabel.ja}</span>
+                  <span data-i18n="ca">{ev.catLabel.ca}</span>
+                  <span data-i18n="en">{ev.catLabel.en}</span>
+                </span>
+                <button type="button" class="cal-tip-close" aria-label="Close tooltip">✕</button>
+              </div>
+
+              <div class="cal-tip-series">{ev.series}</div>
+
+              <h5 class="cal-tip-title">
+                <span data-i18n="ja">{ev.eventName.ja}</span>
+                <span data-i18n="ca">{ev.eventName.ca}</span>
+                <span data-i18n="en">{ev.eventName.en}</span>
+              </h5>
+
+              <div class="cal-tip-meta">
+                <div class="cal-tip-meta-item">
+                  <strong>📍 </strong>
+                  <span data-i18n="ja">{ev.circuit.ja}</span>
+                  <span data-i18n="ca">{ev.circuit.ca}</span>
+                  <span data-i18n="en">{ev.circuit.en}</span>
+                </div>
+                <div class="cal-tip-meta-item">
+                  <strong>🗓️ </strong>
+                  <span data-i18n="ja">{ev.scheduleWindow.ja}</span>
+                  <span data-i18n="ca">{ev.scheduleWindow.ca}</span>
+                  <span data-i18n="en">{ev.scheduleWindow.en}</span>
+                </div>
+                <div class="cal-tip-meta-item">
+                  <strong>🏍️ </strong>
+                  <span>{ev.classes}</span>
+                </div>
+              </div>
+
+              <div class="cal-tip-actions">
+                {ev.articleSlug && (
+                  <a href={`/articles/${ev.articleSlug}/`} class="cal-tip-btn primary">
+                    📰 <span data-i18n="ja">レース結果記事を読む</span>
+                    <span data-i18n="ca">Llegir la crònica</span>
+                    <span data-i18n="en">Read Race Report</span>
+                  </a>
+                )}
+                <a href={`#sched-card-${ev.id}`} class="cal-tip-btn secondary" data-jump-card={`sched-card-${ev.id}`}>
+                  📋 <span data-i18n="ja">スケジュール詳細へ</span>
+                  <span data-i18n="ca">Fitxa de la cursa</span>
+                  <span data-i18n="en">Jump to Card</span>
+                </a>
+                <a href={ev.officialWebUrl} target="_blank" rel="noopener noreferrer" class="cal-tip-btn ghost">
+                  🌐 <span data-i18n="ja">公式情報</span>
+                  <span data-i18n="ca">Web Oficial</span>
+                  <span data-i18n="en">Official Web</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div id="calendar-floating-tooltip" class="calendar-floating-tooltip" role="dialog" aria-hidden="true"></div>
+    </div>
+
+    <!-- ==========================================
+         DETAILED SCHEDULE CARDS LIST
+         ========================================== -->
+    <div class="schedule-list-heading">
+      <h3 class="schedule-list-title">
+        <span data-i18n="ja">📋 大会別スケジュール・公式リンク一覧</span>
+        <span data-i18n="ca">📋 Llista Detallada de Curses i Enllaços Oficials</span>
+        <span data-i18n="en">📋 Detailed Race Schedule & Official Links</span>
+      </h3>
+    </div>
+
     <div class="schedule-grid">
-      {events.map((ev) => (
-        <div class={`schedule-card cat-${ev.category}`}>
+      {enrichedEvents.map((ev) => (
+        <div
+          id={`sched-card-${ev.id}`}
+          class={`schedule-card cat-${ev.category}`}
+          data-event-month={ev.startDate.slice(0, 7)}
+        >
           <div class="sched-top">
-            <span class="sched-series">{ev.series}</span>
+            <span class="sched-series">
+              {ev.catIcon} {ev.series}
+            </span>
             <span class="sched-verified">✅ {ev.verifiedSource}</span>
           </div>
 
@@ -71,6 +424,11 @@ const sources = sourcesConfig.sources;
           </div>
 
           <div class="sched-links">
+            {ev.articleSlug && (
+              <a href={`/articles/${ev.articleSlug}/`} class="source-pill article-pill">
+                📰 <span data-i18n="ja">レース結果記事</span><span data-i18n="ca">Crònica de la Cursa</span><span data-i18n="en">Race Report</span>
+              </a>
+            )}
             <a href={ev.officialWebUrl} target="_blank" rel="noopener noreferrer" class="source-pill web-pill">
               🌐 <span data-i18n="ja">公式カレンダー</span><span data-i18n="ca">Calendari Oficial</span><span data-i18n="en">Official Calendar</span>
             </a>
@@ -135,6 +493,219 @@ const sources = sourcesConfig.sources;
   </div>
 </section>
 
+<script is:inline>
+  (function () {
+    const tooltipEl = document.getElementById('calendar-floating-tooltip');
+    const templatesContainer = document.getElementById('calendar-tooltip-templates');
+    if (!tooltipEl || !templatesContainer) return;
+
+    let activeBtn = null;
+    let pinnedByClick = false;
+    let closeTimer = null;
+
+    function clearCloseTimer() {
+      if (closeTimer) {
+        clearTimeout(closeTimer);
+        closeTimer = null;
+      }
+    }
+
+    function scheduleClose(delay) {
+      clearCloseTimer();
+      closeTimer = setTimeout(() => {
+        if (!pinnedByClick) {
+          hideTooltip();
+        }
+      }, delay || 160);
+    }
+
+    function positionTooltip(triggerBtn) {
+      if (!triggerBtn || !tooltipEl.classList.contains('is-open')) return;
+      const rect = triggerBtn.getBoundingClientRect();
+      const tipRect = tooltipEl.getBoundingClientRect();
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const margin = 12;
+
+      // Horizontal centering relative to icon, clamped within viewport margins
+      let left = rect.left + rect.width / 2 - tipRect.width / 2;
+      if (left < margin) left = margin;
+      if (left + tipRect.width > vw - margin) {
+        left = Math.max(margin, vw - tipRect.width - margin);
+      }
+
+      // Prefer placing below the icon unless near the bottom of the screen
+      let top = rect.bottom + 10;
+      if (top + tipRect.height > vh - margin && rect.top - tipRect.height - 10 > margin) {
+        top = rect.top - tipRect.height - 10;
+      }
+
+      tooltipEl.style.left = `${Math.round(left)}px`;
+      tooltipEl.style.top = `${Math.round(top)}px`;
+    }
+
+    function showTooltipForButton(btn, isPinned) {
+      clearCloseTimer();
+      const eventId = btn.getAttribute('data-event-id');
+      if (!eventId) return;
+
+      const tpl = templatesContainer.querySelector(`[data-tooltip-template="${eventId}"]`);
+      if (!tpl) return;
+
+      if (activeBtn && activeBtn !== btn) {
+        activeBtn.classList.remove('is-active');
+      }
+
+      activeBtn = btn;
+      activeBtn.classList.add('is-active');
+      if (isPinned) {
+        pinnedByClick = true;
+      }
+
+      tooltipEl.innerHTML = tpl.innerHTML;
+      tooltipEl.classList.add('is-open');
+      tooltipEl.setAttribute('aria-hidden', 'false');
+
+      // Wire close button inside tooltip
+      const closeBtn = tooltipEl.querySelector('.cal-tip-close');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          hideTooltip();
+        });
+      }
+
+      // Wire smooth scroll + highlight for "Jump to Card" button
+      const jumpBtn = tooltipEl.querySelector('[data-jump-card]');
+      if (jumpBtn) {
+        jumpBtn.addEventListener('click', () => {
+          const targetId = jumpBtn.getAttribute('data-jump-card');
+          const targetCard = targetId ? document.getElementById(targetId) : null;
+          hideTooltip();
+          if (targetCard) {
+            targetCard.classList.remove('highlight-pulse');
+            void targetCard.offsetWidth;
+            targetCard.classList.add('highlight-pulse');
+          }
+        });
+      }
+
+      requestAnimationFrame(() => {
+        positionTooltip(btn);
+      });
+    }
+
+    function hideTooltip() {
+      clearCloseTimer();
+      pinnedByClick = false;
+      if (activeBtn) {
+        activeBtn.classList.remove('is-active');
+        activeBtn = null;
+      }
+      tooltipEl.classList.remove('is-open');
+      tooltipEl.setAttribute('aria-hidden', 'true');
+    }
+
+    // Bind icon buttons for both hover (desktop) and tap/click (mobile & desktop)
+    const iconBtns = document.querySelectorAll('.cal-event-icon-btn');
+    iconBtns.forEach((btn) => {
+      btn.addEventListener('mouseenter', () => {
+        if (window.matchMedia('(hover: hover)').matches && !pinnedByClick) {
+          showTooltipForButton(btn, false);
+        }
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        if (window.matchMedia('(hover: hover)').matches && !pinnedByClick) {
+          scheduleClose(180);
+        }
+      });
+
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (activeBtn === btn && pinnedByClick && tooltipEl.classList.contains('is-open')) {
+          hideTooltip();
+        } else {
+          showTooltipForButton(btn, true);
+        }
+      });
+    });
+
+    // Keep tooltip open when hovering inside the tooltip itself
+    tooltipEl.addEventListener('mouseenter', () => {
+      clearCloseTimer();
+    });
+
+    tooltipEl.addEventListener('mouseleave', () => {
+      if (!pinnedByClick) {
+        scheduleClose(160);
+      }
+    });
+
+    // Dismiss on outside click or Escape key
+    document.addEventListener('click', (e) => {
+      if (!tooltipEl.classList.contains('is-open')) return;
+      if (tooltipEl.contains(e.target)) return;
+      if (activeBtn && activeBtn.contains(e.target)) return;
+      hideTooltip();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && tooltipEl.classList.contains('is-open')) {
+        hideTooltip();
+      }
+    });
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (activeBtn && tooltipEl.classList.contains('is-open')) {
+          positionTooltip(activeBtn);
+        }
+      },
+      { passive: true }
+    );
+
+    window.addEventListener('resize', () => {
+      if (activeBtn && tooltipEl.classList.contains('is-open')) {
+        positionTooltip(activeBtn);
+      }
+    });
+
+    // Month filter tabs
+    const monthTabs = document.querySelectorAll('.cal-month-tab');
+    const monthCards = document.querySelectorAll('[data-month-card]');
+    const scheduleCards = document.querySelectorAll('[data-event-month]');
+    const calendarGrid = document.getElementById('calendar-months-grid');
+
+    monthTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const selected = tab.getAttribute('data-month-filter') || 'all';
+        hideTooltip();
+
+        monthTabs.forEach((t) => t.classList.toggle('active', t === tab));
+
+        if (calendarGrid) {
+          calendarGrid.classList.toggle('single-month-mode', selected !== 'all');
+        }
+
+        monthCards.forEach((card) => {
+          const cardMonth = card.getAttribute('data-month-card');
+          const show = selected === 'all' || cardMonth === selected;
+          card.style.display = show ? '' : 'none';
+        });
+
+        scheduleCards.forEach((sc) => {
+          const evMonth = sc.getAttribute('data-event-month');
+          const show = selected === 'all' || evMonth === selected;
+          sc.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  })();
+</script>
+
 <style>
   .schedule-section {
     padding: 3.5rem 0 2rem;
@@ -165,6 +736,490 @@ const sources = sourcesConfig.sources;
     line-height: 1.7;
   }
 
+  /* ==========================================
+     CALENDAR BOARD STYLES
+     ========================================== */
+  .calendar-board-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1.1rem;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+  }
+
+  .calendar-board-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.15rem;
+  }
+
+  .calendar-board-heading {
+    max-width: 680px;
+  }
+
+  .calendar-board-title {
+    font-size: 1.15rem;
+    font-weight: 900;
+    margin-bottom: 0.35rem;
+    color: var(--text-primary);
+  }
+
+  .calendar-board-hint {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  .calendar-month-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .cal-month-tab {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    padding: 0.42rem 0.75rem;
+    border-radius: 0.55rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.15s ease;
+  }
+
+  .cal-month-tab:hover {
+    border-color: var(--accent-gold);
+    color: var(--text-primary);
+  }
+
+  .cal-month-tab.active {
+    background: linear-gradient(135deg, rgba(255, 183, 3, 0.24), rgba(230, 57, 70, 0.22));
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+    box-shadow: 0 0 12px rgba(255, 183, 3, 0.2);
+  }
+
+  .cal-tab-count {
+    font-size: 0.68rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.08rem 0.38rem;
+    border-radius: 999px;
+    color: var(--text-primary);
+  }
+
+  /* Category Legend */
+  .calendar-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0.75rem 0.95rem;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.75rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.26rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+  }
+
+  .legend-icon {
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+
+  .cat-badge-world {
+    background: rgba(230, 57, 70, 0.14);
+    border-color: rgba(230, 57, 70, 0.45);
+    color: #ff8fa3;
+  }
+  .cat-badge-all-japan {
+    background: rgba(42, 157, 143, 0.15);
+    border-color: rgba(42, 157, 143, 0.45);
+    color: #64dfdf;
+  }
+  .cat-badge-kyushu {
+    background: rgba(255, 183, 3, 0.15);
+    border-color: rgba(255, 183, 3, 0.45);
+    color: #ffd166;
+  }
+  .cat-badge-endurance-fun {
+    background: rgba(199, 125, 255, 0.15);
+    border-color: rgba(199, 125, 255, 0.45);
+    color: #e0aaff;
+  }
+
+  /* Monthly Calendars Grid */
+  .calendar-months-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .calendar-months-grid.single-month-mode {
+    grid-template-columns: minmax(310px, 680px);
+    justify-content: center;
+  }
+
+  .calendar-month-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.9rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cal-month-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .cal-month-title {
+    font-size: 1.02rem;
+    font-weight: 900;
+    color: var(--accent-gold);
+  }
+
+  .cal-month-meta {
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.18rem 0.55rem;
+    border-radius: 999px;
+  }
+
+  .cal-weekdays-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+    margin-bottom: 0.35rem;
+    text-align: center;
+  }
+
+  .cal-weekday {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--text-muted);
+    padding: 0.2rem 0;
+  }
+
+  .cal-weekday.sat {
+    color: #4ecdc4;
+  }
+
+  .cal-weekday.sun {
+    color: #ff6b6b;
+  }
+
+  .cal-days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.28rem;
+  }
+
+  .cal-day-cell {
+    min-height: 3.7rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+    padding: 0.28rem 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .cal-day-cell.empty {
+    background: transparent;
+    border-color: transparent;
+    min-height: 2.5rem;
+  }
+
+  .cal-day-cell.has-events {
+    background: rgba(255, 255, 255, 0.055);
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .cal-day-num {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    align-self: flex-start;
+    line-height: 1;
+    padding-left: 0.15rem;
+  }
+
+  .cal-day-cell.is-sat .cal-day-num {
+    color: #4ecdc4;
+  }
+
+  .cal-day-cell.is-sun .cal-day-num {
+    color: #ff6b6b;
+  }
+
+  .cal-day-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.22rem;
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+
+  .cal-event-icon-btn {
+    appearance: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 0.45rem;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .cal-icon-emoji {
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+
+  .cal-event-icon-btn.cat-btn-world {
+    background: rgba(230, 57, 70, 0.24);
+    border-color: rgba(230, 57, 70, 0.65);
+  }
+  .cal-event-icon-btn.cat-btn-all-japan {
+    background: rgba(42, 157, 143, 0.24);
+    border-color: rgba(42, 157, 143, 0.65);
+  }
+  .cal-event-icon-btn.cat-btn-kyushu {
+    background: rgba(255, 183, 3, 0.24);
+    border-color: rgba(255, 183, 3, 0.65);
+  }
+  .cal-event-icon-btn.cat-btn-endurance-fun {
+    background: rgba(199, 125, 255, 0.24);
+    border-color: rgba(199, 125, 255, 0.65);
+  }
+
+  .cal-event-icon-btn:hover,
+  .cal-event-icon-btn.is-active {
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+    border-color: #fff;
+  }
+
+  /* ==========================================
+     FLOATING TOOLTIP / POPOVER STYLES
+     ========================================== */
+  .calendar-floating-tooltip {
+    position: fixed;
+    z-index: 1200;
+    width: min(360px, calc(100vw - 24px));
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(4px);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+  }
+
+  .calendar-floating-tooltip.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  :global(.cal-tip-inner) {
+    background: rgba(16, 18, 27, 0.98);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 0.85rem;
+    padding: 1rem 1.05rem;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.65);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  :global(.cal-tip-inner.cat-tip-world) {
+    border-left-color: var(--accent-red);
+  }
+  :global(.cal-tip-inner.cat-tip-all-japan) {
+    border-left-color: var(--accent-teal);
+  }
+  :global(.cal-tip-inner.cat-tip-kyushu) {
+    border-left-color: var(--accent-gold);
+  }
+  :global(.cal-tip-inner.cat-tip-endurance-fun) {
+    border-left-color: var(--accent-naomi);
+  }
+
+  :global(.cal-tip-header) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  :global(.cal-tip-cat-pill) {
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--accent-gold);
+  }
+
+  :global(.cal-tip-cat-pill.cat-pill-world) {
+    background: rgba(230, 57, 70, 0.2);
+    color: #ff8fa3;
+  }
+  :global(.cal-tip-cat-pill.cat-pill-all-japan) {
+    background: rgba(42, 157, 143, 0.2);
+    color: #64dfdf;
+  }
+  :global(.cal-tip-cat-pill.cat-pill-kyushu) {
+    background: rgba(255, 183, 3, 0.2);
+    color: #ffd166;
+  }
+  :global(.cal-tip-cat-pill.cat-pill-endurance-fun) {
+    background: rgba(199, 125, 255, 0.2);
+    color: #e0aaff;
+  }
+
+  :global(.cal-tip-close) {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: var(--text-secondary);
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  :global(.cal-tip-close:hover) {
+    color: #fff;
+    border-color: var(--accent-gold);
+  }
+
+  :global(.cal-tip-series) {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-muted);
+  }
+
+  :global(.cal-tip-title) {
+    font-size: 0.94rem;
+    font-weight: 900;
+    line-height: 1.38;
+    color: #fff;
+    margin: 0;
+  }
+
+  :global(.cal-tip-meta) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.55rem 0.65rem;
+    border-radius: 0.55rem;
+  }
+
+  :global(.cal-tip-actions) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding-top: 0.25rem;
+  }
+
+  :global(.cal-tip-btn) {
+    font-size: 0.74rem;
+    font-weight: 800;
+    padding: 0.35rem 0.65rem;
+    border-radius: 0.45rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  :global(.cal-tip-btn.primary) {
+    background: var(--accent-gold);
+    color: #111;
+  }
+
+  :global(.cal-tip-btn.primary:hover) {
+    filter: brightness(1.08);
+  }
+
+  :global(.cal-tip-btn.secondary) {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  :global(.cal-tip-btn.secondary:hover) {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+  }
+
+  :global(.cal-tip-btn.ghost) {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-subtle);
+  }
+
+  :global(.cal-tip-btn.ghost:hover) {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.35);
+  }
+
+  /* ==========================================
+     DETAILED CARDS LIST STYLES
+     ========================================== */
+  .schedule-list-heading {
+    margin-bottom: 1rem;
+  }
+
+  .schedule-list-title {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+
   .schedule-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -181,6 +1236,25 @@ const sources = sourcesConfig.sources;
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
+    scroll-margin-top: 6rem;
+  }
+
+  @keyframes cardPulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 183, 3, 0.65);
+      border-color: var(--accent-gold);
+    }
+    70% {
+      box-shadow: 0 0 0 14px rgba(255, 183, 3, 0);
+      border-color: var(--accent-gold);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 183, 3, 0);
+    }
+  }
+
+  .schedule-card.highlight-pulse {
+    animation: cardPulse 1.6s ease-out;
   }
 
   .schedule-card.cat-world {
@@ -248,8 +1322,14 @@ const sources = sourcesConfig.sources;
     transition: all 0.15s ease;
   }
 
-  .source-pill:hover {
+  .source-pill.article-pill {
     background: rgba(255, 183, 3, 0.18);
+    border-color: rgba(255, 183, 3, 0.55);
+    color: var(--accent-gold);
+  }
+
+  .source-pill:hover {
+    background: rgba(255, 183, 3, 0.24);
     border-color: var(--accent-gold);
     color: #fff;
   }
