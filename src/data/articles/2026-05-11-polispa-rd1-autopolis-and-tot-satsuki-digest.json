@@ -87,7 +87,7 @@
   "locales": {
     "ja": {
       "title": "【2026年5月第2週 国内レース結果ダイジェスト】オートポリス「POLISPAロードレース第1戦」開幕＆筑波「テイスト・オブ・ツクバ SATSUKI STAGE」で新クラス『HYDRA』誕生！",
-      "subtitle": "※月曜ダイジェスト分割ルールによりMotoGPフランスGPとは別記事で国内2大イベントを詳報！",
+      "subtitle": "オートポリスでは5月末の全日本九州戦を前に『POLISPAロードレース第1戦』が開幕！筑波T.O.Tではキャブ車の『HERCULES』に加えFI・新世代エンジン対応の新クラス『HYDRA』が新設！",
       "summary": "2026年5月9日(土)〜10日(日)、大分県のオートポリスでは九州の地方選手権『2026 POLISPAロードレース選手権 第1戦（併催：ONE&TWOフェスティバル春の大会・Ninja Team Green Cup）』が開催され、茨城県の筑波サーキットでは伝統の『テイスト・オブ・ツクバ SATSUKI STAGE』が開催されました。筑波では今季から最速クラスが再編され、新クラス『HYDRA（ヒュドラー）』が歴史的デビューを飾りました。",
       "highlightPoint": "オートポリスでは5月末の全日本九州戦を前に『POLISPAロードレース第1戦』が開幕！筑波T.O.Tではキャブ車の『HERCULES』に加えFI・新世代エンジン対応の新クラス『HYDRA』が新設！",
       "sections": [
@@ -124,7 +124,7 @@
       "catDialogues": [
         {
           "speaker": "suzuka",
-          "text": "5月第2週はフランスのル・マン（小椋藍選手3位表彰台！）と、国内のオートポリス『POLISPA開幕戦』＆筑波『テイスト・オブ・ツクバ』が重なったので、2記事に分けてお届けしています！オートポリスは3週間後の全日本九州戦に向けてエントラントの気合がすごかったです📸✨"
+          "text": "5月第2週はフランスのル・マン（小椋藍選手3位表彰台！）と、国内のオートポリス『POLISPA開幕戦』＆筑波『テイスト・オブ・ツクバ』が重なったので、オートポリスは3週間後の全日本九州戦に向けてエントラントの気合がすごかったです📸✨"
         },
         {
           "speaker": "naomi",
@@ -183,7 +183,7 @@
     },
     "en": {
       "title": "[May Week 2 Japan Digest] Autopolis Hosts 2026 POLISPA Road Race Opener While Taste of Tsukuba Debuts New 'HYDRA' Class!",
-      "subtitle": "Published separately from our Le Mans MotoGP digest: regional championship action in Oita and custom history in Ibaraki",
+      "subtitle": "regional championship action in Oita and custom history in Ibaraki",
       "summary": "Across May 9–10, 2026, Autopolis International Racing Course in Oita hosted Round 1 of the 2026 POLISPA Road Race Championship alongside the Spring ONE&TWO Festival, while Tsukuba Circuit staged 'Taste of Tsukuba SATSUKI STAGE' featuring the debut of the new 'HYDRA' class.",
       "highlightPoint": "Autopolis kicked off the 2026 POLISPA Championship (JSB1000, ST1000, ST600, JP-SPORT) while Taste of Tsukuba launched its new fuel-injected/custom-frame 'HYDRA' division!",
       "sections": [
@@ -214,7 +214,7 @@
       "catDialogues": [
         {
           "speaker": "suzuka",
-          "text": "Following our Monday split-article rule, we covered Le Mans MotoGP in Article #1 and Japan's Autopolis POLISPA opener & Taste of Tsukuba right here in Article #2! 📸✨"
+          "text": "we covered Le Mans MotoGP in Article #1 and Japan's Autopolis POLISPA opener & Taste of Tsukuba right here in Article #2! 📸✨"
         },
         {
           "speaker": "naomi",

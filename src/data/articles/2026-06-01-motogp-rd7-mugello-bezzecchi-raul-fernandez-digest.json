@@ -88,7 +88,7 @@
   "locales": {
     "ja": {
       "title": "【2026年5月最終週 MotoGP結果ダイジェスト】第7戦イタリアGP（ムジェロ）：土曜スプリントはラウル・フェルナンデス、日曜決勝は母国マルコ・ベッツェッキが優勝！",
-      "subtitle": "2位マルティンでアプリリアがムジェロ1-2達成、3位にバニャイア！※同週末の全日本オートポリス戦は別記事で詳報",
+      "subtitle": "2位マルティンでアプリリアがムジェロ1-2達成、3位にバニャイア！",
       "summary": "2026年5月29日〜31日、イタリアのムジェロ・サーキットでMotoGP第7戦イタリアGPが開催されました。土曜スプリントではラウル・フェルナンデス選手（Trackhouse Racing）が優勝し、日曜の決勝グランプリでは母国イタリアのマルコ・ベッツェッキ選手（Aprilia Racing）が優勝！2位にチームメイトのホルヘ・マルティン選手、3位にフランチェスコ・バニャイア選手（Ducati Lenovo Team）が入りました。",
       "highlightPoint": "高速コーナーが連続するムジェロで土曜スプリントはラウル・フェルナンデスが制覇！日曜決勝はベッツェッキ＆マルティンが1-2フィニッシュを達成！",
       "sections": [
@@ -135,7 +135,7 @@
         },
         {
           "speaker": "suzuka",
-          "text": "そして同じ週末（5月30日〜31日）には、大分県のオートポリスで全日本ロード第3戦『スーパーバイクレース in 九州』が開催されました！月曜ダイジェスト分割ルールに従い、オートポリス戦の熱戦は別記事でたっぷりお届けします📸✨"
+          "text": "そして同じ週末（5月30日〜31日）には、大分県のオートポリスで全日本ロード第3戦『スーパーバイクレース in 九州』が開催されました！オートポリス戦の熱戦は別記事でたっぷりお届けします📸✨"
         },
         {
           "speaker": "naomi",
@@ -145,7 +145,7 @@
     },
     "ca": {
       "title": "[Resum Maig Setmana 5 · MotoGP] GP d'Itàlia a Mugello: Raúl Fernández guanya l'Sprint i Marco Bezzecchi triomfa diumenge davant Martín i Bagnaia!",
-      "subtitle": "Doblet històric de Bezzecchi i Martín a les colines de la Toscana (Crònica separada de la ronda de Kyushu a Autopolis)",
+      "subtitle": "Doblet històric de Bezzecchi i Martín a les colines de la Toscana",
       "summary": "Del 29 al 31 de maig de 2026 es va disputar el GP d'Itàlia de MotoGP a l'Autodromo Internazionale del Mugello. Raúl Fernández (Trackhouse Racing) va guanyar l'Sprint de dissabte, mentre que Marco Bezzecchi (Aprilia Racing) es va imposar diumenge al Gran Premi per davant de Jorge Martín (2n) i Francesco Bagnaia (3r).",
       "highlightPoint": "Raúl Fernández s'adjudica l'Sprint de dissabte i Marco Bezzecchi guanya el Gran Premi d'Itàlia a Mugello liderant un doblet amb Jorge Martín!",
       "sections": [
@@ -198,7 +198,7 @@
     },
     "en": {
       "title": "[May Week 5 MotoGP Digest] Italian GP at Mugello: Raúl Fernández Wins the Sprint Before Marco Bezzecchi Leads Home Martín & Bagnaia on Sunday!",
-      "subtitle": "Published separately from our MFJ All-Japan Rd.3 Autopolis Kyushu digest under our Monday two-article rule",
+      "subtitle": "under our Monday two-article rule",
       "summary": "Round 7 of the 2026 MotoGP World Championship at Mugello (May 29–31) saw Trackhouse Racing's Raúl Fernández win Saturday's Sprint before Aprilia Racing's Marco Bezzecchi captured Sunday's Italian Grand Prix ahead of teammate Jorge Martín (2nd) and Ducati's Francesco Bagnaia (3rd).",
       "highlightPoint": "Raúl Fernández claimed Saturday's Sprint at Mugello before Marco Bezzecchi and Jorge Martín scored a 1–2 finish in Sunday's Italian Grand Prix!",
       "sections": [

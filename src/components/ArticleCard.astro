@@ -33,20 +33,6 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
     <div class="card-content">
       <div class="card-meta">
         <span class="meta-date racing-font">📅 {article.publishedAt}</span>
-        {article.factCheck?.verified && (
-          <span class="meta-verified">
-            <span data-i18n="ja">✅ 史実・規格検証済</span>
-            <span data-i18n="ca">✅ Fets Verificats</span>
-            <span data-i18n="en">✅ Fact-Verified</span>
-          </span>
-        )}
-        {article.snsCitations && article.snsCitations.length > 0 && (
-          <span class="meta-sns">
-            <span data-i18n="ja">📱 公式SNSポスト ({article.snsCitations.length})</span>
-            <span data-i18n="ca">📱 Xarxes Oficials ({article.snsCitations.length})</span>
-            <span data-i18n="en">📱 Official SNS Posts ({article.snsCitations.length})</span>
-          </span>
-        )}
         <span class="meta-circuit">📍 {article.circuit}</span>
       </div>
 

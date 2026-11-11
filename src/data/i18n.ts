@@ -124,7 +124,7 @@ export const UI_TEXT = {
     articles: { ja: '最新記事', ca: 'Notícies i Cròniques', en: 'Articles' },
     kyushu: { ja: '九州サーキットガイド', ca: 'Circuits de Kyushu', en: 'Kyushu Circuits' },
     cats: { ja: '猫編集部紹介', ca: 'Redacció Felina', en: 'Cat Editorial Team' },
-    catalunya: { ja: '.cat カタルーニャ貢献', ca: 'Missió .cat Catalunya-Japó', en: '.cat Catalunya Mission' }
+    about: { ja: 'About (.cat理念・編集方針)', ca: 'Sobre nosaltres (.cat)', en: 'About & Mission' }
   },
   hero: {
     badge: {

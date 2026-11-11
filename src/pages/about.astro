@@ -1,0 +1,223 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import CatTeamSection from '../components/CatTeamSection.astro';
+import Footer from '../components/Footer.astro';
+import { UI_TEXT } from '../data/i18n';
+---
+
+<BaseLayout
+  title="About HONDA.CAT — .cat カタルーニャ貢献・編集方針・猫編集部について"
+  description="honda.cat の運営理念（Fundació .cat カタルーニャ語・二輪文化への貢献）、公式SNSポスト埋め込み方針、史実・技術ファクトチェック体制について。"
+  initialLang="ja"
+  canonicalPath="/about/"
+>
+  <Header />
+
+  <main class="about-main">
+    <div class="container about-container">
+      <div class="breadcrumb">
+        <a href="/">
+          <span data-i18n="ja">← トップページへ戻る</span>
+          <span data-i18n="ca">← Tornar a l'inici</span>
+          <span data-i18n="en">← Back to Paddock Home</span>
+        </a>
+      </div>
+
+      <header class="about-hero">
+        <span class="badge" style="background: rgba(255, 183, 3, 0.18); color: var(--accent-gold);">
+          ABOUT HONDA.CAT & EDITORIAL POLICY
+        </span>
+        <h1 class="about-title">
+          <span data-i18n="ja">🐾 HONDA.CAT について — サイト理念・編集方針</span>
+          <span data-i18n="ca">🐾 Sobre HONDA.CAT — Missió .cat i Política Editorial</span>
+          <span data-i18n="en">🐾 About HONDA.CAT — Mission & Editorial Policy</span>
+        </h1>
+        <p class="about-lead">
+          <span data-i18n="ja">
+            カタルーニャ（モンメロ）と日本全国のサーキット（鈴鹿・もてぎ・筑波・SUGO・岡山・十勝・オートポリス・SPA直入・HSR九州）を繋ぐ、二足歩行の猫編集部による3カ国語（日本語・カタルーニャ語・英語）二輪モータースポーツ情報サイトです。
+          </span>
+          <span data-i18n="ca">
+            Un pont entre Catalunya (Montmeló) i els circuits de tot el Japó (Suzuka, Motegi, Tsukuba, SUGO, Okayama, Tokachi, Autopolis, SPA Naoiri i HSR Kyushu), redactat per la nostra redacció felina en català, japonès i anglès.
+          </span>
+          <span data-i18n="en">
+            Bridging Catalonia (Montmeló) and circuits across Japan (Suzuka, Motegi, Tsukuba, SUGO, Okayama, Tokachi, Autopolis, SPA Naoiri & HSR Kyushu) through trilingual feline motorsport journalism in Japanese, Catalan, and English.
+          </span>
+        </p>
+      </header>
+
+      <!-- 1. Fundació .cat Catalunya Mission -->
+      <section class="policy-card">
+        <div class="senyera-stripe"></div>
+        <div class="policy-body">
+          <span class="badge" style="background: rgba(255, 183, 3, 0.18); color: var(--accent-gold);">
+            {UI_TEXT.catalunyaSection.badge}
+          </span>
+          <h2>
+            <span data-i18n="ja">{UI_TEXT.catalunyaSection.title.ja}</span>
+            <span data-i18n="ca">{UI_TEXT.catalunyaSection.title.ca}</span>
+            <span data-i18n="en">{UI_TEXT.catalunyaSection.title.en}</span>
+          </h2>
+          <p>
+            <span data-i18n="ja">{UI_TEXT.catalunyaSection.body.ja}</span>
+            <span data-i18n="ca">{UI_TEXT.catalunyaSection.body.ca}</span>
+            <span data-i18n="en">{UI_TEXT.catalunyaSection.body.en}</span>
+          </p>
+          <div class="lang-edition-links">
+            <a href="/ca/" class="btn btn-secondary" onclick="window.setHondaCatLang && window.setHondaCatLang('ca')">
+              🏴󠁥󠁳󠁣󠁴󠁿 Edició en Català (/ca/)
+            </a>
+            <a href="/" class="btn btn-secondary" onclick="window.setHondaCatLang && window.setHondaCatLang('ja')">
+              🇯🇵 日本語版トップ (/)
+            </a>
+            <a href="/en/" class="btn btn-secondary" onclick="window.setHondaCatLang && window.setHondaCatLang('en')">
+              🇬🇧 English Edition (/en/)
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Image & Official SNS Embed Policy -->
+      <div class="policy-grid">
+        <section class="policy-card">
+          <div class="policy-body">
+            <span class="badge" style="background: rgba(29, 155, 240, 0.16); color: #58a6ff;">
+              OFFICIAL SNS EMBEDS & MEDIA POLICY
+            </span>
+            <h2>
+              <span data-i18n="ja">📱 公式SNSポスト表示とオリジナルイラスト方針</span>
+              <span data-i18n="ca">📱 Publicacions Oficials de Xarxes Socials i Il·lustracions Originals</span>
+              <span data-i18n="en">📱 Official Social Media Embeds & Original Artwork Policy</span>
+            </h2>
+            <p>
+              <span data-i18n="ja">
+                当サイトでは、インターネット上の写真や画像を無断でダウンロード・転載することは一切ありません。サイト内のキャラクタービジュアルにはオリジナルの二足歩行猫イラスト（マルク・スズカ・ナオミ）を使用し、実際のレース写真や映像については、各レース主催者・公式サーキット・参戦チームの公式SNS（X / Instagram / YouTube）の投稿ウィジェットを直接サイト内に埋め込み表示することで、公式ビジュアルとともに現地の熱気をリスペクトを持って紹介しています。
+              </span>
+              <span data-i18n="ca">
+                A honda.cat no utilitzem cap imatge d'internet sense permís. Les il·lustracions dels nostres gats periodistes són 100% originals, mentre que les fotos i vídeos de les curses es mostren mitjançant la incrustació oficial directa (widgets de X, Instagram i YouTube) dels comptes oficials dels campionats, circuits i equips.
+              </span>
+              <span data-i18n="en">
+                honda.cat never uses unauthorized third-party web images. All character illustrations are original artwork, while real-world race photography and video highlights are presented by directly embedding official X (Twitter), Instagram, and YouTube posts from race organizers, circuits, and teams.
+              </span>
+            </p>
+          </div>
+        </section>
+
+        <!-- 3. Fact-Check & Publishing Schedule Policy -->
+        <section class="policy-card">
+          <div class="policy-body">
+            <span class="badge" style="background: rgba(42, 157, 143, 0.16); color: #4ecdc4;">
+              STRICT FACT-CHECK & SCHEDULE ENGINE
+            </span>
+            <h2>
+              <span data-i18n="ja">✅ 史実・技術ファクト検証とスケジュール連動配信</span>
+              <span data-i18n="ca">✅ Verificació de Fets Històrics i Calendari de Publicació</span>
+              <span data-i18n="en">✅ Historical Fact Verification & Schedule-Driven Publishing</span>
+            </h2>
+            <p>
+              <span data-i18n="ja">
+                すべての記事は、公式カレンダーおよび公式リザルト（MotoGP / WorldSBK / MFJ全日本ロードレース / 各サーキット公式発表）の確定情報のみに基づいて作成されます。開催会場と主催イベントの組み合わせ（例：オートポリス、SPA直入、HSR九州、ソニックパーク安心院、中九州カートウェイ等の各大会）やライダー名・順位・車両規格に誤りがないよう厳格に検証しています。また、同じ週末に世界戦と日本国内戦の両方が開催された場合は、月曜ダイジェストを海外編・国内編の2記事に分けて詳しくお届けします。
+              </span>
+              <span data-i18n="ca">
+                Totes les nostres cròniques es basen exclusivament en calendaris i classificacions oficials verificades (MotoGP, WorldSBK, MFJ i circuits oficials). Quan en un mateix cap de setmana coincideixen curses mundials i japoneses, publiquem dues cròniques separades per oferir la màxima profunditat.
+              </span>
+              <span data-i18n="en">
+                Every article is strictly grounded in verified official calendars and confirmed classification results across MotoGP, WorldSBK, MFJ All-Japan, and regional circuits. When both World and Japanese races take place on the same weekend, we publish two dedicated Monday digests so neither scene is compromised.
+              </span>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <CatTeamSection />
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .about-main {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .about-container {
+    max-width: 980px;
+  }
+
+  .breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+  }
+
+  .about-hero {
+    margin-bottom: 2.25rem;
+  }
+
+  .about-title {
+    font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+    font-weight: 900;
+    margin: 0.75rem 0;
+    line-height: 1.3;
+  }
+
+  .about-lead {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+  }
+
+  .policy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .policy-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .senyera-stripe {
+    height: 10px;
+    background: repeating-linear-gradient(
+      90deg,
+      #ffb703 0px,
+      #ffb703 24px,
+      #e63946 24px,
+      #e63946 48px
+    );
+  }
+
+  .policy-body {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .policy-body h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .policy-body p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+  }
+
+  .lang-edition-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.4rem;
+  }
+</style>

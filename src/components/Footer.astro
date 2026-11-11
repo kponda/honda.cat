@@ -2,40 +2,6 @@
 import { UI_TEXT } from '../data/i18n';
 ---
 
-<section id="catalunya-mission" class="catalunya-mission">
-  <div class="container">
-    <div class="mission-card">
-      <div class="mission-flag-stripe"></div>
-      <div class="mission-content">
-        <span class="badge" style="background: rgba(255, 183, 3, 0.18); color: var(--accent-gold);">
-          {UI_TEXT.catalunyaSection.badge}
-        </span>
-        <h2 class="mission-title">
-          <span data-i18n="ja">{UI_TEXT.catalunyaSection.title.ja}</span>
-          <span data-i18n="ca">{UI_TEXT.catalunyaSection.title.ca}</span>
-          <span data-i18n="en">{UI_TEXT.catalunyaSection.title.en}</span>
-        </h2>
-        <p class="mission-body">
-          <span data-i18n="ja">{UI_TEXT.catalunyaSection.body.ja}</span>
-          <span data-i18n="ca">{UI_TEXT.catalunyaSection.body.ca}</span>
-          <span data-i18n="en">{UI_TEXT.catalunyaSection.body.en}</span>
-        </p>
-        <div class="mission-links">
-          <a href="/ca/" class="btn btn-secondary" onclick="window.setHondaCatLang && window.setHondaCatLang('ca')">
-            🏴󠁥󠁳󠁣󠁴󠁿 Edició en Català (/ca/)
-          </a>
-          <a href="/" class="btn btn-secondary" onclick="window.setHondaCatLang && window.setHondaCatLang('ja')">
-            🇯🇵 日本語版トップ (/)
-          </a>
-          <a href="/en/" class="btn btn-secondary" onclick="window.setHondaCatLang && window.setHondaCatLang('en')">
-            🇬🇧 English Edition (/en/)
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-top">
@@ -50,14 +16,22 @@ import { UI_TEXT } from '../data/i18n';
         </p>
       </div>
 
-      <div class="footer-circuits">
-        <strong>Featured Tracks:</strong>
-        <span>SPA直入 (Oita)</span> ·
-        <span>Autopolis (Oita)</span> ·
-        <span>HSR九州 (Kumamoto)</span> ·
-        <span>Circuit de Barcelona-Catalunya</span> ·
-        <span>Suzuka / Motegi / Tsukuba</span>
+      <div class="footer-links">
+        <a href="/about/" class="footer-about-link">
+          <span data-i18n="ja">ℹ️ 当サイトについて（.cat カタルーニャ貢献・編集方針）</span>
+          <span data-i18n="ca">ℹ️ Sobre nosaltres (Missió .cat i Política Editorial)</span>
+          <span data-i18n="en">ℹ️ About honda.cat (.cat Mission & Editorial Policy)</span>
+        </a>
       </div>
+    </div>
+
+    <div class="footer-circuits">
+      <strong>Featured Tracks:</strong>
+      <span>SPA直入 (Oita)</span> ·
+      <span>Autopolis (Oita)</span> ·
+      <span>HSR九州 (Kumamoto)</span> ·
+      <span>Circuit de Barcelona-Catalunya</span> ·
+      <span>Suzuka / Motegi / Tsukuba</span>
     </div>
 
     <p class="footer-disclaimer">
@@ -69,59 +43,11 @@ import { UI_TEXT } from '../data/i18n';
 </footer>
 
 <style>
-  .catalunya-mission {
-    padding: 3rem 0;
-  }
-
-  .mission-card {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-subtle);
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-
-  /* Catalan Senyera 4 red stripes on gold */
-  .mission-flag-stripe {
-    height: 10px;
-    background: repeating-linear-gradient(
-      90deg,
-      #ffb703 0px,
-      #ffb703 24px,
-      #e63946 24px,
-      #e63946 48px
-    );
-  }
-
-  .mission-content {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-  }
-
-  .mission-title {
-    font-size: 1.35rem;
-    font-weight: 800;
-  }
-
-  .mission-body {
-    color: var(--text-secondary);
-    font-size: 0.92rem;
-    line-height: 1.7;
-  }
-
-  .mission-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-top: 0.4rem;
-  }
-
   .site-footer {
     margin-top: auto;
-    background: #08090d;
+    background: #090b0f;
     border-top: 1px solid var(--border-subtle);
-    padding: 2.5rem 0;
+    padding: 2.25rem 0;
     font-size: 0.82rem;
     color: var(--text-muted);
   }
@@ -129,33 +55,48 @@ import { UI_TEXT } from '../data/i18n';
   .footer-inner {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1rem;
   }
 
   .footer-top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
   }
 
   .footer-memory-note {
-    margin-top: 0.35rem;
+    margin-top: 0.25rem;
+    color: var(--text-secondary);
+  }
+
+  .footer-about-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(255, 183, 3, 0.1);
+    border: 1px solid rgba(255, 183, 3, 0.28);
     color: var(--accent-gold);
+    font-weight: 700;
     font-size: 0.8rem;
+    transition: all 0.15s ease;
+  }
+
+  .footer-about-link:hover {
+    background: rgba(255, 183, 3, 0.2);
+    color: #fff;
   }
 
   .footer-circuits {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
     color: var(--text-secondary);
   }
 
   .footer-disclaimer {
+    border-top: 1px solid var(--border-subtle);
     padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
     line-height: 1.6;
   }
 </style>
