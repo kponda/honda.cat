@@ -15,6 +15,42 @@
     "九州ロードレース",
     "開催情報"
   ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "オートポリス (AUTOPOLIS) 公式",
+      "handle": "@autopolis2005",
+      "url": "https://x.com/autopolis2005",
+      "publishedDate": "Official Morning Track Condition Feed",
+      "quotedPostText": {
+        "ja": "大分県日田市・オートポリス公式X（@autopolis2005）より、毎朝のサーキット天候・気温・路面温度・霧（視界）状況、および2輪スポーツ走行枠・ゴールドカップ開催スケジュールをリアルタイム配信！",
+        "ca": "Des del compte oficial d'Autopolis (@autopolis2005) a Hita (Oita), informació en temps real cada matí sobre l'estat del cel, temperatura de l'asfalt, boira i horaris de les tandes de 2 rodes i Gold Cup!",
+        "en": "From Autopolis Official X (@autopolis2005) in Hita, Oita: live morning updates on mountain weather, track surface temperature, fog visibility, and 2-wheel sports riding / Gold Cup schedules!"
+      },
+      "editorialCommentary": {
+        "ja": "標高約900mに位置するオートポリスでは、市街地が晴れていても上津江の山上だけ霧が出たり路面温度が急変することがあります。走行当日の朝は必ず公式X（@autopolis2005）の『今朝のオートポリス』投稿（現地写真付き）で路面状況とゲートオープン情報を確認してからピット設営・空気圧調整を行うのが九州ライダーの鉄則です。",
+        "ca": "Com que Autopolis es troba a 900 metres d'altitud, el temps pot canviar ràpidament. Consultar la foto matinal que publica @autopolis2005 és imprescindible per saber si hi ha boira i ajustar les pressions abans de sortir a pista.",
+        "en": "Because Autopolis sits at 900m elevation, mountain weather changes fast. Checking @autopolis2005's morning track photo post is essential for verifying fog conditions and setting initial cold tire pressures."
+      }
+    },
+    {
+      "platform": "X",
+      "accountName": "HSR九州「鉄馬」公式 ＆ SPA直入 公式SNS",
+      "handle": "@tetsuma_with_b / @hsr_kyushu",
+      "url": "https://x.com/tetsuma_with_b",
+      "publishedDate": "Kyushu Paddock Official SNS",
+      "quotedPostText": {
+        "ja": "HSR九州『鉄馬（@tetsuma_with_b）』公式XおよびInstagram（@hsr_kyushu）、大分・竹田『SPA直入』公式Facebookにて、エントリー情報・パドック配置・走行枠変更・現地イベントフォトレポートを随時更新中！",
+        "ca": "Els comptes oficials de «Tetsuma» (@tetsuma_with_b) i HSR Kyushu (@hsr_kyushu) a Kumamoto, juntament amb el Facebook oficial de SPA Naoiri a Oita, publiquen horaris, distribució de pàdoc i cròniques en directe.",
+        "en": "Official feeds for HSR Kyushu's 'Tetsuma' (@tetsuma_with_b), @hsr_kyushu on Instagram, and SPA Naoiri Official Facebook share entry updates, paddock maps, and event reports."
+      },
+      "editorialCommentary": {
+        "ja": "HSR九州の『鉄馬』公式X（@tetsuma_with_b）では出場マシンの紹介やパドックの熱気が写真付きで投稿されており、SPA直入の公式SNSでも走行枠の空き状況や路面コンディションが告知されます。無断転載画像に頼らずとも、これら公式SNSの投稿を直接チェックすることで現地の空気感を100%味わえます。",
+        "ca": "Seguir directament @tetsuma_with_b i les xarxes oficials de SPA Naoiri permet veure les motos participants i l'estat de la pista directament de la font oficial.",
+        "en": "Following @tetsuma_with_b and SPA Naoiri's official social feeds lets riders inspect participating machines and live track updates straight from the organizers."
+      }
+    }
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",

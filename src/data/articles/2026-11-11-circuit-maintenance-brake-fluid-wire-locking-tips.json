@@ -15,6 +15,25 @@
     "空気圧管理",
     "サーキット豆知識"
   ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "MFJ 日本モーターサイクルスポーツ協会 / JRR公式技術情報",
+      "handle": "@jrr_official / mfj.or.jp",
+      "url": "https://www.mfj.or.jp/rule/",
+      "publishedDate": "MFJ Official Technical Regulation Notice",
+      "quotedPostText": {
+        "ja": "MFJ国内競技規則（ロードレース技術仕様）：オイルドレンボルト、オイルフィラーキャップ、オイルフィルター等のオイル経路ボルト類は、緩み防止のためロックワイヤー（ワイヤリング）を確実に施すこと。",
+        "ca": "Reglament Tècnic Oficial MFJ de Velocitat: tots els cargols de buidatge d'oli, taps d'ompliment i filtres d'oli han d'estar degudament assegurats amb filferro de bloqueig (wire-locking) per superar la verificació tècnica.",
+        "en": "MFJ Domestic Road Racing Technical Regulations: All oil drain plugs, filler caps, and oil filter bolts must be positively secured with safety lock wire to pass pre-race technical inspection."
+      },
+      "editorialCommentary": {
+        "ja": "各サーキットの公式SNS（@suzuka_event や @autopolis2005 など）でも、レースウィークの木曜・金曜に行われる『公式車検（Tech Inspection）』の様子が頻繁に投稿されます。車検員が最も厳しくチェックするのが、ドレンボルトやフィラーキャップのワイヤリングが『締まる方向（時計回り）』にピンと張られているか、そしてアンダーカウル（アンダートレー）やキャッチタンクが規定容量を満たしているかという点です。",
+        "ca": "A les publicacions de verificacions tècniques dels circuits oficials (@suzuka_event, @autopolis2005) es recorda sempre que el filferro ha d'estirar en el sentit d'estrènyer la rosca per evitar fugues d'oli a pista.",
+        "en": "Official circuit social feeds (@suzuka_event, @autopolis2005) regularly highlight pre-race tech inspection checks, where scrutineers verify that lock wire pulls positively in the tightening direction."
+      }
+    }
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",

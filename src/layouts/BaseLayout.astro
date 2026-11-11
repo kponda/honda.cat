@@ -204,6 +204,19 @@ const {
     <div class="checkered-stripe"></div>
     <slot />
 
+    <!-- Official X (Twitter) Widget Loader for Embedded Official Posts (Loaded only when blockquote.twitter-tweet is present) -->
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+        if (document.querySelector('blockquote.twitter-tweet')) {
+          const s = document.createElement('script');
+          s.src = 'https://platform.twitter.com/widgets.js';
+          s.async = true;
+          s.charset = 'utf-8';
+          document.body.appendChild(s);
+        }
+      });
+    </script>
+
     <!-- Global Language Switcher & Web Storage Sync Controller -->
     <script is:inline>
       (function () {

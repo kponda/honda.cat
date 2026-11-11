@@ -1,0 +1,297 @@
+---
+import type { SnsCiteItem } from '../data/articles';
+import type { Lang } from '../data/i18n';
+
+interface Props {
+  citations?: SnsCiteItem[];
+  lang: Lang;
+}
+
+const { citations = [], lang } = Astro.props;
+
+const sectionTitle: Record<Lang, string> = {
+  ja: '📱 公式SNSポスト引用＆現地ディテール深掘り（著作権クリーン公式引用）',
+  ca: '📱 Citacions de Xarxes Socials Oficials i Anàlisi en Detall',
+  en: '📱 Official SNS Post Citations & In-Depth Paddock Breakdown'
+};
+
+const sectionNote: Record<Lang, string> = {
+  ja: '※インターネット上の写真・画像の無断転載は一切行わず、各レース主催者・公式サーキット・公式チームのSNS（X / Instagram / YouTube）および公式発表ポストを正当に引用・埋め込みリンクし、その投稿内容を詳細に解説しています。',
+  ca: '*Cap imatge d\'internet s\'utilitza sense permís. Citem i enllacem directament les publicacions oficials de X (Twitter), Instagram i YouTube dels circuits i campionats per analitzar-ne tots els detalls.',
+  en: '*Zero unauthorized web images are used. We strictly cite and embed-link official X (Twitter), Instagram, and YouTube posts from race organizers and circuits with detailed editorial commentary.'
+};
+
+const commentaryLabel: Record<Lang, string> = {
+  ja: '🐾 猫編集部のポスト深掘り解説',
+  ca: '🐾 Anàlisi detallada de la publicació',
+  en: '🐾 Editorial Deep-Dive on this Post'
+};
+
+const viewPostLabel: Record<Lang, string> = {
+  ja: '公式SNSで元の投稿・写真/動画を見る ↗',
+  ca: 'Veure la publicació original (fotos/vídeo) a la xarxa oficial ↗',
+  en: 'View Original Post & Media on Official SNS ↗'
+};
+
+function getPlatformBadge(platform: SnsCiteItem['platform']) {
+  switch (platform) {
+    case 'X':
+      return { icon: '𝕏', label: 'X (Twitter) Official Post', color: '#1d9bf0', bg: 'rgba(29, 155, 240, 0.14)' };
+    case 'Instagram':
+      return { icon: '📸', label: 'Instagram Official Dispatch', color: '#e1306c', bg: 'rgba(225, 48, 108, 0.14)' };
+    case 'YouTube':
+      return { icon: '▶️', label: 'YouTube Official Broadcast', color: '#ff0000', bg: 'rgba(255, 0, 0, 0.14)' };
+    default:
+      return { icon: '🌐', label: 'Official Press Dispatch', color: '#ffb703', bg: 'rgba(255, 183, 3, 0.14)' };
+  }
+}
+
+function isTweetStatusUrl(url?: string): boolean {
+  if (!url) return false;
+  return /^https?:\/\/(twitter\.com|x\.com)\/[^/]+\/status\/\d+/.test(url);
+}
+---
+
+{citations && citations.length > 0 && (
+  <section class="sns-citations-section">
+    <div class="sns-section-header">
+      <h3 class="sns-section-title">{sectionTitle[lang]}</h3>
+      <p class="sns-section-note">{sectionNote[lang]}</p>
+    </div>
+
+    <div class="sns-cards-grid">
+      {citations.map((item) => {
+        const badge = getPlatformBadge(item.platform);
+        const targetUrl = item.postUrl || item.url;
+        const hasStatusEmbed = isTweetStatusUrl(item.postUrl);
+
+        return (
+          <div class="sns-cite-card">
+            <div class="sns-card-top">
+              <div class="sns-author-meta">
+                <span class="sns-avatar-icon" style={`background: ${badge.bg}; color: ${badge.color}; border-color: ${badge.color}44;`}>
+                  {badge.icon}
+                </span>
+                <div>
+                  <div class="sns-account-name">{item.accountName}</div>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer" class="sns-handle racing-font">
+                    {item.handle}
+                  </a>
+                </div>
+              </div>
+
+              <div class="sns-platform-tag" style={`background: ${badge.bg}; color: ${badge.color};`}>
+                <span>{badge.icon}</span>
+                <span>{badge.label}</span>
+              </div>
+            </div>
+
+            {/* Official Quote Block (Supports official Twitter/X widgets.js if status URL is present) */}
+            {hasStatusEmbed ? (
+              <div class="sns-official-embed-wrapper">
+                <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
+                  <p>{item.quotedPostText[lang]}</p>
+                  &mdash; {item.accountName} ({item.handle}) <a href={item.postUrl}>{item.publishedDate || 'Official Post'}</a>
+                </blockquote>
+              </div>
+            ) : (
+              <blockquote class="sns-quote-block" cite={targetUrl}>
+                <div class="quote-mark">“</div>
+                <p class="sns-quoted-text">{item.quotedPostText[lang]}</p>
+                {item.publishedDate && (
+                  <footer class="sns-quote-footer racing-font">
+                    📅 {item.publishedDate} · {item.handle}
+                  </footer>
+                )}
+              </blockquote>
+            )}
+
+            <div class="sns-editorial-box">
+              <div class="editorial-label">{commentaryLabel[lang]}</div>
+              <p class="editorial-text">{item.editorialCommentary[lang]}</p>
+            </div>
+
+            <div class="sns-card-actions">
+              <a href={targetUrl} target="_blank" rel="noopener noreferrer" class="sns-action-link racing-font">
+                {viewPostLabel[lang]}
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+)}
+
+<style>
+  .sns-citations-section {
+    margin-top: 2.5rem;
+    background: linear-gradient(165deg, rgba(21, 25, 34, 0.95), rgba(27, 32, 44, 0.95));
+    border: 1px solid rgba(29, 155, 240, 0.32);
+    border-radius: 1rem;
+    padding: 1.6rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  .sns-section-header {
+    margin-bottom: 1.35rem;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 0.95rem;
+  }
+
+  .sns-section-title {
+    font-size: 1.18rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.4rem;
+  }
+
+  .sns-section-note {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+  }
+
+  .sns-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .sns-cite-card {
+    background: rgba(13, 15, 20, 0.72);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.85rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .sns-cite-card:hover {
+    border-color: rgba(29, 155, 240, 0.45);
+  }
+
+  .sns-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .sns-author-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .sns-avatar-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.05rem;
+    border: 1px solid transparent;
+  }
+
+  .sns-account-name {
+    font-weight: 800;
+    font-size: 0.95rem;
+    color: #fff;
+  }
+
+  .sns-handle {
+    font-size: 0.8rem;
+    color: #58a6ff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .sns-platform-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    font-weight: 700;
+  }
+
+  .sns-quote-block {
+    position: relative;
+    background: rgba(255, 255, 255, 0.035);
+    border-left: 3px solid #1d9bf0;
+    padding: 0.95rem 1.15rem 0.95rem 2.2rem;
+    border-radius: 0 0.65rem 0.65rem 0;
+  }
+
+  .quote-mark {
+    position: absolute;
+    top: 0.35rem;
+    left: 0.65rem;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: rgba(29, 155, 240, 0.55);
+    font-family: Georgia, serif;
+  }
+
+  .sns-quoted-text {
+    font-size: 0.92rem;
+    color: var(--text-primary);
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  .sns-quote-footer {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .sns-editorial-box {
+    background: rgba(255, 183, 3, 0.07);
+    border: 1px solid rgba(255, 183, 3, 0.22);
+    border-radius: 0.65rem;
+    padding: 0.9rem 1.05rem;
+  }
+
+  .editorial-label {
+    font-size: 0.76rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    margin-bottom: 0.35rem;
+    letter-spacing: 0.03em;
+  }
+
+  .editorial-text {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+
+  .sns-card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sns-action-link {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #58a6ff;
+    background: rgba(29, 155, 240, 0.12);
+    border: 1px solid rgba(29, 155, 240, 0.3);
+    padding: 0.45rem 0.9rem;
+    border-radius: 0.5rem;
+    transition: all 0.15s ease;
+  }
+
+  .sns-action-link:hover {
+    background: rgba(29, 155, 240, 0.22);
+    color: #fff;
+  }
+</style>

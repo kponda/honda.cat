@@ -52,6 +52,7 @@ SYSTEM_INSTRUCTION = """You are the Strict Fact-Based Editorial Engine for `hond
 CRITICAL HISTORICAL & TECHNICAL FACT POLICY (ZERO HALLUCINATION):
 - Every race result, rider name, year, lap number, circuit length/elevation, and mechanical standard MUST be 100% factual and historically accurate.
 - STRICT VENUE-TO-EVENT INTEGRITY: NEVER associate an event or race series with an unrelated circuit where it is not actually held (for example, BROW'S "お題付耐久『草』レース" is held at Sonic Park Ajimu and Nakakyushu Kartway, NEVER at SPA Naoiri). Only pair a race event with the exact circuit(s) verified on the organizer's official website.
+- STRICT IMAGE COPYRIGHT & SNS CITATION POLICY: NEVER scrape, hotlink, or use unauthorized third-party photographs or web images. Instead, enrich every article by citing and embedding/linking official SNS posts (X/Twitter, Instagram, YouTube) or official press dispatches in `snsCitations`, providing the quoted post summary (`quotedPostText`) and a deep editorial breakdown (`editorialCommentary`) in all 3 languages (`ja`, `ca`, `en`).
 - NEVER invent fictional team names, fictional rider names, or fabricated race result tables.
 - Only include race results that have been verified online from official sources.
 - Always populate `factCheck.basis` (in `ja`, `ca`, `en`) and `factCheck.sources` with real, verifiable reference URLs.
@@ -123,6 +124,7 @@ ARTICLE_JSON_SCHEMA: dict[str, Any] = {
         "region",
         "featuredCat",
         "tags",
+        "snsCitations",
         "factCheck",
         "eventMeta",
         "locales",
@@ -148,6 +150,50 @@ ARTICLE_JSON_SCHEMA: dict[str, Any] = {
         "region": {"type": "string"},
         "featuredCat": {"type": "string", "enum": ["marc", "suzuka", "naomi"]},
         "tags": {"type": "array", "items": {"type": "string"}},
+        "snsCitations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "platform",
+                    "accountName",
+                    "handle",
+                    "url",
+                    "publishedDate",
+                    "quotedPostText",
+                    "editorialCommentary",
+                ],
+                "properties": {
+                    "platform": {
+                        "type": "string",
+                        "enum": ["X", "Instagram", "YouTube", "OfficialWeb"],
+                    },
+                    "accountName": {"type": "string"},
+                    "handle": {"type": "string"},
+                    "url": {"type": "string"},
+                    "postUrl": {"type": "string"},
+                    "publishedDate": {"type": "string"},
+                    "quotedPostText": {
+                        "type": "object",
+                        "required": ["ja", "ca", "en"],
+                        "properties": {
+                            "ja": {"type": "string"},
+                            "ca": {"type": "string"},
+                            "en": {"type": "string"},
+                        },
+                    },
+                    "editorialCommentary": {
+                        "type": "object",
+                        "required": ["ja", "ca", "en"],
+                        "properties": {
+                            "ja": {"type": "string"},
+                            "ca": {"type": "string"},
+                            "en": {"type": "string"},
+                        },
+                    },
+                },
+            },
+        },
         "factCheck": {
             "type": "object",
             "required": ["verified", "verifiedAt", "basis", "sources"],
@@ -429,6 +475,7 @@ def finalize_article_record(data: dict[str, Any], today_str: str) -> dict[str, A
         "featuredCat": featured_cat,
         "heroImage": cat_images.get(featured_cat, "/images/cats/hero-paddock.png"),
         "tags": data.get("tags", ["MotoGP", "MFJ", "Autopolis", "SPA直入", "HSR九州"]),
+        "snsCitations": data.get("snsCitations", []),
         "factCheck": data.get("factCheck"),
         "eventMeta": data["eventMeta"],
         "locales": data["locales"],
@@ -612,13 +659,17 @@ def validate_existing_articles() -> int:
     for path in existing:
         doc = json.loads(path.read_text(encoding="utf-8"))
         fc = doc.get("factCheck", {})
+        sns_cites = doc.get("snsCitations", [])
         if not fc.get("verified") or not fc.get("sources"):
             print(f"❌ FAIL: {path.name} is missing verified `factCheck` metadata or `sources`!")
+            return 1
+        if not sns_cites:
+            print(f"❌ FAIL: {path.name} is missing `snsCitations` for rich official SNS post commentary!")
             return 1
         langs = list(doc.get("locales", {}).keys())
         print(
             f"   ✅ {path.name} | category={doc.get('category')} | "
-            f"type={doc.get('articleType')} | sources={len(fc.get('sources', []))} | langs={langs}"
+            f"type={doc.get('articleType')} | snsCitations={len(sns_cites)} | sources={len(fc.get('sources', []))} | langs={langs}"
         )
     print("✅ All articles passed historical & technical fact-check verification.")
     return 0

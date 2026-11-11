@@ -40,6 +40,13 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
             <span data-i18n="en">✅ Fact-Verified</span>
           </span>
         )}
+        {article.snsCitations && article.snsCitations.length > 0 && (
+          <span class="meta-sns">
+            <span data-i18n="ja">📱 公式SNS引用・深掘り ({article.snsCitations.length}件)</span>
+            <span data-i18n="ca">📱 Citacions SNS ({article.snsCitations.length})</span>
+            <span data-i18n="en">📱 Official SNS Citations ({article.snsCitations.length})</span>
+          </span>
+        )}
         <span class="meta-circuit">📍 {article.circuit}</span>
       </div>
 
@@ -178,6 +185,16 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
     color: #4ecdc4;
     background: rgba(42, 157, 143, 0.16);
     border: 1px solid rgba(42, 157, 143, 0.4);
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  .meta-sns {
+    color: #58a6ff;
+    background: rgba(29, 155, 240, 0.14);
+    border: 1px solid rgba(29, 155, 240, 0.38);
     padding: 0.1rem 0.45rem;
     border-radius: 999px;
     font-size: 0.7rem;

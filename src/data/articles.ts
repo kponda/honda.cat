@@ -18,6 +18,17 @@ export interface ResultRow {
   timeOrNote: string;
 }
 
+export interface SnsCiteItem {
+  platform: 'X' | 'Instagram' | 'YouTube' | 'OfficialWeb';
+  accountName: string;
+  handle: string;
+  url: string;
+  postUrl?: string;
+  publishedDate?: string;
+  quotedPostText: Record<Lang, string>;
+  editorialCommentary: Record<Lang, string>;
+}
+
 export interface FactSource {
   title: string;
   url: string;
@@ -52,6 +63,7 @@ export interface ArticleData {
   featuredCat: 'marc' | 'suzuka' | 'naomi';
   heroImage: string;
   tags: string[];
+  snsCitations?: SnsCiteItem[];
   factCheck?: FactCheckMeta;
   eventMeta: {
     date: string;

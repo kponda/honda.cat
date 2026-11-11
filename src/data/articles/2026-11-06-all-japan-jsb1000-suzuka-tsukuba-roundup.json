@@ -15,6 +15,42 @@
     "テイスト・オブ・ツクバ",
     "地方選手権"
   ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "JRR 全日本ロードレース選手権 公式",
+      "handle": "@jrr_official",
+      "url": "https://x.com/jrr_official",
+      "publishedDate": "2026 Season Official Feed",
+      "quotedPostText": {
+        "ja": "MFJ全日本ロードレース選手権（JSB1000 / ST1000 / ST600 / J-GP3）各ラウンドの公式タイムスケジュール・予選/決勝速報・ライダーインタビューおよび公式フォトギャラリーを順次公開中！",
+        "ca": "Campionat del Japó MFJ de Velocitat (JSB1000 / ST1000 / ST600 / J-GP3): horaris oficials, resultats en directe, entrevistes als pilots i galeries fotogràfiques oficials de cada ronda!",
+        "en": "MFJ All-Japan Road Race Championship (JSB1000 / ST1000 / ST600 / J-GP3) official schedules, qualifying/race updates, rider interviews, and official photo galleries posted live!"
+      },
+      "editorialCommentary": {
+        "ja": "JRR公式X（@jrr_official）では、全日本各戦のグリッド写真や決勝後の表彰台ショットが公式配信されています。特にST1000・ST600で上位に食い込む若手ライダーの多くが、鈴鹿サンデー（@suzuka_event）やもてぎロードレース（@motegi_official）の公式投稿でも紹介されており、地方選から全日本へ駆け上がるリアルな軌跡をSNS上で追うことができます。",
+        "ca": "Al compte oficial de X (@jrr_official) es publiquen les imatges oficials de graella i podi de cada cursa. Molts dels joves talents de ST600 i J-GP3 també apareixen a les cròniques oficials de Suzuka (@suzuka_event) i Motegi (@motegi_official), mostrant el camí des dels campionats regionals fins a l'elit nacional.",
+        "en": "The official JRR X feed (@jrr_official) shares verified grid photos and podium shots from every round. Comparing their posts with regional circuit feeds like @suzuka_event and @motegi_official lets fans trace how clubman riders step up to the national JSB1000 and ST600 stage."
+      }
+    },
+    {
+      "platform": "X",
+      "accountName": "筑波サーキット 公式 (Taste of Tsukuba / 筑波ロードレース)",
+      "handle": "@tsukuba_circuit",
+      "url": "https://x.com/tsukuba_circuit",
+      "publishedDate": "2026 Season Official Feed",
+      "quotedPostText": {
+        "ja": "筑波ロードレース選手権および「テイスト・オブ・ツクバ（Taste of Tsukuba）」各クラスのエントリーリスト・公式プログラム・パドック最新情報を公式Xよりお届けします。",
+        "ca": "Campionat de Velocitat de Tsukuba i festival «Taste of Tsukuba»: llistes d'inscrits, programes oficials i ambient en directe des del pàdoc de Tsukuba.",
+        "en": "Tsukuba Road Race Championship and 'Taste of Tsukuba' entry lists, official race programs, and live paddock updates from Tsukuba Circuit."
+      },
+      "editorialCommentary": {
+        "ja": "筑波サーキット公式X（@tsukuba_circuit）の投稿では、鉄フレームモンスターが集う『テイスト・オブ・ツクバ（HERCULES /モンスタークラス等）』や筑波選手権のパドックの様子が写真・動画付きで発信されています。熊本・HSR九州の『鉄馬（@tetsuma_with_b）』と並び、日本のカスタム＆サンデーレース文化の熱量を視覚的に体感できる必見アカウントです。",
+        "ca": "Les publicacions de @tsukuba_circuit mostren les espectaculars motos de xassís de ferro del «Taste of Tsukuba», germà espiritual del festival «Tetsuma» (@tetsuma_with_b) de Kumamoto.",
+        "en": "Tsukuba Circuit's official X (@tsukuba_circuit) showcases the incredible custom iron-frame builds of 'Taste of Tsukuba' alongside HSR Kyushu's 'Tetsuma' (@tetsuma_with_b)."
+      }
+    }
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",
@@ -111,7 +147,7 @@
         },
         {
           "heading": "Una cultura de circuit oberta a tothom: de les clàssiques a la resistència amb reptes",
-          "body": "El que fa únic el Japó és la seva base amateur: festivals com el «Taste of Tsukuba» o el «Tetsuma» a HSR Kyushu (Kumamoto), juntament amb les curses de resistència amb reptes («Odai-tsuki») a SPA Naoiri (Oita), permeten que qualsevol motorista visqui l'emoció de la competició amb seguretat i bon humor."
+          "body": "El que fa únic el Japó és la seva base amateur: festivals com el «Taste of Tsukuba» o el «Tetsuma» a HSR Kyushu (Kumamoto), les sèries regionals a SPA Naoiri i Autopolis, i les curses de resistència amb reptes («Odai-tsuki» de BROW'S) a Sonic Park Ajimu (Usa, Oita) i Nakakyushu Kartway (Yamaga, Kumamoto) o «Let's Rentai!», permeten que qualsevol motorista visqui l'emoció de la competició amb seguretat."
         }
       ],
       "resultTableTitle": "Mapa de categories del motociclisme japonès",
@@ -131,7 +167,7 @@
         {
           "pos": "Popular & Fun",
           "riderOrTeam": "Odai Resistència / Rentai / Tetsuma",
-          "machine": "SPA Naoiri · HSR Kyushu · Tsukuba",
+          "machine": "Sonic Park Ajimu · Nakakyushu · HSR · Tsukuba",
           "timeOrNote": "Diversió, mecànica artesanal i passió compartida!"
         }
       ],
@@ -162,7 +198,7 @@
         },
         {
           "heading": "Grassroots Heaven: Where Every Rider Can Be a Hero",
-          "body": "Beyond the pro ranks, Japan boasts an extraordinary grassroots ecosystem: heritage iron-frame festivals like 'Taste of Tsukuba' and HSR Kyushu's 'Tetsuma', regional Sunday championships, and joyful recreational endurance events like SPA Naoiri's 'Odai-Tsuki' Challenge Endurance and Rentai."
+          "body": "Beyond the pro ranks, Japan boasts an extraordinary grassroots ecosystem: heritage iron-frame festivals like 'Taste of Tsukuba' and HSR Kyushu's 'Tetsuma', regional Sunday championships at SPA Naoiri and Autopolis, and joyful recreational endurance events like BROW'S 'Odai-tsuki' Challenge Endurance at Sonic Park Ajimu (Oita) and Nakakyushu Kartway (Kumamoto) alongside the nationwide 'Let's Rentai!' series."
         }
       ],
       "resultTableTitle": "Overview of Japan's Motorcycle Road Racing Pyramid",
@@ -182,7 +218,7 @@
         {
           "pos": "Fun & Heritage",
           "riderOrTeam": "Odai Endurance / Rentai / Tetsuma",
-          "machine": "SPA Naoiri · HSR Kyushu · Tsukuba",
+          "machine": "Sonic Park Ajimu · Nakakyushu · HSR · Tsukuba",
           "timeOrNote": "Grassroots camaraderie, custom builds & pit-stop games!"
         }
       ],

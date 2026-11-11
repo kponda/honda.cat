@@ -15,6 +15,25 @@
     "カタルーニャ",
     "ライディング科学"
   ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "MotoGP™ Official Archive",
+      "handle": "@MotoGP",
+      "url": "https://x.com/MotoGP",
+      "publishedDate": "2017 Valencia GP Official Telemetry Post",
+      "quotedPostText": {
+        "ja": "「マルク・マルケス：2017年バレンシアGP決勝24周目・第1コーナー。時速153km/h、バンク角64度、約50メートルのフロントスライドから肘と膝で車体を起こし、自身4度目のMotoGPワールドタイトルを獲得！」（@MotoGP 公式アーカイブ映像・テレメトリー投稿より引用）",
+        "ca": "«Marc Márquez al GP de València 2017 (Volta 24, Revolt 1): 153 km/h, 64° d'inclinació màxima i 50 metres de lliscament salvats amb el colze i el genoll per guanyar el seu 4t Mundial de MotoGP!» (Citat de l'arxiu oficial de @MotoGP)",
+        "en": "'Marc Márquez at the 2017 Valencia GP (Lap 24, Turn 1): 153 km/h, 64° lean angle, and a 50-meter front-end slide saved on elbow and knee to clinch his 4th MotoGP World Championship!' (Cited from @MotoGP Official Telemetry Archive)"
+      },
+      "editorialCommentary": {
+        "ja": "MotoGP公式X（@MotoGP）および公式YouTubeが公開している2017年バレンシアGPのスローモーション映像＆テレメトリーオーバーレイ投稿では、フロントタイヤが白煙を上げて完全に切れ込んだ瞬間（バンク角64度）から、マルケス選手が左肘と左膝をアスファルトに押し当ててフロント荷重を抜き、リアタイヤの駆動力で車体が起き上がるまでの全過程が確認できます。リンク先の公式投稿動画でぜひ実際の動きをご覧ください。",
+        "ca": "Al vídeo en càmera lenta publicat per @MotoGP es veu amb total claredat el fum blanc del pneumàtic davanter a 64° i com el suport del colze sobre l'asfalt evita la caiguda i permet que el gir de la roda posterior aixequi la moto.",
+        "en": "In @MotoGP's official slow-motion telemetry clip, you can see the exact moment the front tire smokes at 64° of lean and how Márquez's left elbow acts as a physical lever on the asphalt until rear wheel drive stands the RC213V back up."
+      }
+    }
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",

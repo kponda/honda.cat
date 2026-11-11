@@ -15,6 +15,42 @@
     "RC213V",
     "CBR1000RR-R"
   ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "Circuit de Barcelona-Catalunya Official",
+      "handle": "@Circuitcat_cat",
+      "url": "https://x.com/Circuitcat_cat",
+      "publishedDate": "Official Montmeló Feed",
+      "quotedPostText": {
+        "ja": "バルセロナ＝カタルーニャ・サーキット（モンメロ）公式カタルーニャ語アカウントより、MotoGPカタルーニャGP・WorldSBK・公式テストのオンボード映像、セクター別最高速データ、パドックの様子を現地発信！",
+        "ca": "Des del compte oficial en català del Circuit de Barcelona-Catalunya (@Circuitcat_cat) compartim vídeos onboard, velocitats punta a la recta d'1,047 km i tota l'actualitat del GP de Catalunya de MotoGP i WorldSBK!",
+        "en": "From the official Catalan X feed of Circuit de Barcelona-Catalunya (@Circuitcat_cat): onboard clips, 1,047m main-straight speed traps, and paddock updates from the Catalunya GP and WorldSBK!"
+      },
+      "editorialCommentary": {
+        "ja": "モンメロ公式X（@Circuitcat_cat）の投稿では、全長1,047mのメインストレートエンド（Turn 1ブレーキング）や最終セクターの高速右コーナーを駆け抜けるRC213VやCBR1000RR-Rの公式写真・動画がカタルーニャ語でリアルタイム公開されています。新しい空力カウル（グラウンドエフェクト形状）やスイングアームのディテールは、公式SNSの高解像度クリップから確認するのが最も確実です。",
+        "ca": "Les publicacions oficials de @Circuitcat_cat permeten observar de prop els nous carenats aerodinàmics i el comportament dels xassissos als revolts llargs de dreta de Montmeló sense necessitat de reproduir imatges sense llicència.",
+        "en": "Following @Circuitcat_cat gives fans direct access to official high-res clips of Turn 1 braking and fast right-handers at Montmeló, showcasing the latest aero fairings and swingarm updates legally and directly."
+      }
+    },
+    {
+      "platform": "X",
+      "accountName": "FIM MotoGP & WorldSBK Official",
+      "handle": "@MotoGP / @WorldSBK",
+      "url": "https://x.com/MotoGP",
+      "publishedDate": "Official Championship Feed",
+      "quotedPostText": {
+        "ja": "MotoGP公式（@MotoGP）およびWorldSBK公式（@WorldSBK）にて、各セッションの公式リザルトシート、テレメトリー比較グラフィック、開発テスト後のライダーコメント動画を配信中。",
+        "ca": "Els comptes oficials @MotoGP i @WorldSBK publiquen els fulls de temps oficials, gràfics de telemetria i les declaracions dels pilots després de cada jornada de test.",
+        "en": "Official @MotoGP and @WorldSBK feeds publish verified timing sheets, telemetry comparison graphics, and post-test rider debrief videos."
+      },
+      "editorialCommentary": {
+        "ja": "公式Xアカウント（@MotoGP / @WorldSBK）が投稿するテレメトリー比較動画や公式タイムシートを見ることで、レース後半の摩耗したタイヤにおける立ち上がりトラクション（気筒別エンジンブレーキ制御やトルクマップの効果）がどのようにラップタイム安定に寄与しているかを視覚的に確認できます。",
+        "ca": "Els vídeos oficials de telemetria compartits per @MotoGP i @WorldSBK mostren clarament com la nova gestió electrònica del fre motor ajuda a conservar el pneumàtic posterior a final de cursa.",
+        "en": "Official telemetry videos posted by @MotoGP and @WorldSBK illustrate how updated engine-braking control preserves rear tire grip over late-race distance."
+      }
+    }
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",

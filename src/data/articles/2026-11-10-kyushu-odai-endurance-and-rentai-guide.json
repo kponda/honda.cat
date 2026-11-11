@@ -15,6 +15,44 @@
     "レン耐",
     "耐久レース"
   ],
+  "snsCitations": [
+    {
+      "platform": "OfficialWeb",
+      "accountName": "ライダーズファンショップ ブラウズ（BROW'S）公式告知",
+      "handle": "brow-s.jp (Official Event Dispatch)",
+      "url": "https://brow-s.jp/",
+      "postUrl": "https://brow-s.jp/event2026/2026odai_r1SPajimu.html",
+      "publishedDate": "2026 Season Official Regulations",
+      "quotedPostText": {
+        "ja": "「飲酒運転撲滅チャリティーイベント『お題付耐久「草」レース』in ソニックパーク安心院／中九州カートウェイ！90分耐久のグリッドは参加申込完了順（申込書と入金の確認順）、スプリント（10周）は一発タイムアタック！学生チーム割引（6,000円）あり。会場内での飲酒は一切禁止です！」（ブラウズ公式要項より引用）",
+        "ca": "«Esdeveniment benèfic contra la conducció sota els efectes de l'alcohol: Cursa 'Odai-tsuki Endurance' a Sonic Park Ajimu i Nakakyushu Kartway! Graella de resistència (90 min) per ordre d'inscripció completada; Sprint (10 voltes) a una volta ràpida! Descompte per a estudiants (6.000 JPY).» (Citat de la web oficial brow-s.jp)",
+        "en": "'Anti-Drunk Driving Charity Event: Odai-tsuki Endurance Grassroots Race at Sonic Park Ajimu & Nakakyushu Kartway! 90-minute endurance grids decided by completed entry order; 10-lap sprint grid by 1-lap time attack! 6,000 JPY student team discount available.' (Cited from official organizer page brow-s.jp)"
+      },
+      "editorialCommentary": {
+        "ja": "ブラウズ公式サイト（brow-s.jp）で公開されている開催要項では、大分県宇佐市のソニックパーク安心院大会（初級A：1分20秒／中級B：1分5秒／上級C：制限なし）と熊本県山鹿市の中九州カートウェイ大会（かめさん：48秒／うさぎさん：46秒／らいおんさん：無制限／チーターさん：10周）のクラス分けがユーモアたっぷりに紹介されています。耐久クラスのスタートグリッドが『申込完了順』というルールは、仲間とエントリー書類を準備する時点からすでにレースが始まっているという草耐久ならではの最高の仕掛けです！",
+        "ca": "El reglament oficial publicat per BROW'S detalla els temps mínims per volta de cada circuit (Sonic Park Ajimu a Oita i Nakakyushu Kartway a Kumamoto). El fet que la graella es decideixi per ordre d'inscripció fa que l'estratègia comenci abans i tot d'arribar al circuit!",
+        "en": "BROW'S official event page lays out the exact breakout lap times for Sonic Park Ajimu (Oita) and Nakakyushu Kartway (Kumamoto). Deciding the 90-minute endurance grid by registration completion order means the race strategy starts the day entries open!"
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "accountName": "Let's レン耐！（PRODUCED BY 青木 拓磨）公式",
+      "handle": "rentai.takuma-gp.com",
+      "url": "http://rentai.takuma-gp.com/about.html",
+      "postUrl": "http://rentai.takuma-gp.com/about.html",
+      "publishedDate": "2026 Season 22nd Year Official Guide",
+      "quotedPostText": {
+        "ja": "「おかげさまで22年目。2026年も東日本・中日本・西日本の3地区シリーズ全36戦開催！車両はすべて主催者が用意。ピットイン数回ごとのお題、レース半分でハンデが決まる『ダブルペリア』、女性ライダーのピンクビブス保護（転ばせたら即失格）、転倒時はピットで5,000円支払い！」（レン耐公式『レン耐とは？』より引用）",
+        "ca": "«22è aniversari i 36 curses a tot el Japó el 2026! Motos de lloguer preparades per l'organització, sortida Le Mans, proves a cada cert nombre d'aturades a box, sistema d'handicap 'Double Peria' a mitja cursa, pitrall rosa per a dones pilot i 5.000 iens en cas de caiguda!» (Citat de rentai.takuma-gp.com)",
+        "en": "'Celebrating our 22nd year with 36 rounds across East, Central, and West Japan in 2026! Organizer-supplied rental bikes, pit-stop challenges, mid-race Double Peria handicap, Pink Bib protection for female riders (immediate DQ if knocked down), and a 5,000 JPY crash fee!' (Cited from rentai.takuma-gp.com)"
+      },
+      "editorialCommentary": {
+        "ja": "青木拓磨氏プロデュース『Let's レン耐！』公式ページでは、イラスト付きで『1日の流れ（受付→車検・装備チェック→朝のブリーフィング→練習走行→記念撮影→ル・マン式スタート→数回ごとのお題＆ダブルペリア→チェッカー）』が公開されています。参加者の約3割が初心者でありながら、ベテランもダブルペリアのハンデ計算とお題クリアに本気になる理由がこの公式ルールに詰まっています。",
+        "ca": "La guia oficial de «Let's Rentai!» mostra pas a pas el funcionament d'una jornada completa de cursa, des del briefing matinal i la foto de grup a graella fins a la sortida tipus Le Mans i els reptes a box.",
+        "en": "The official 'Let's Rentai!' guide walks riders through the full race-day flow—from tech inspection and grid group photos to the Le Mans start, pit-stop challenges, and the mid-race Double Peria handicap."
+      }
+    }
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",
