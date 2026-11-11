@@ -6,9 +6,15 @@
   "articleType": "digest",
   "circuit": "SPA直入 (Oita, Takeda)",
   "region": "Kyushu / Oita",
-  "featuredCat": "naoko",
-  "heroImage": "/images/cats/naoko.png",
-  "tags": ["SPA直入", "お題付き耐久草レース", "レン耐", "大分", "草レース"],
+  "featuredCat": "naomi",
+  "heroImage": "/images/cats/naomi.png",
+  "tags": [
+    "SPA直入",
+    "お題付き耐久草レース",
+    "レン耐",
+    "大分",
+    "草レース"
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",
@@ -45,7 +51,7 @@
     "ja": {
       "title": "【大分・SPA直入＆草耐久】速いだけじゃ勝てない！「お題付き耐久草レース」と「レン耐」の競技システム＆必勝ガイド",
       "subtitle": "全長1,430mのテクニカルコースで繰り広げられる、ラップタイム×ピットお題攻略×無転倒ボーナスの奥深き世界",
-      "summary": "大分県竹田市直入町の『SPA直入』をはじめ九州・全国で親しまれているレクリエーション耐久「お題付き耐久草レース」および「レン耐」。コース諸元やピットお題ルール、転倒ペナルティなど史実・実在規定に基づき、黒猫メカニック・ナオコがその魅力と攻略法を解説します。",
+      "summary": "大分県竹田市直入町の『SPA直入』をはじめ九州・全国で親しまれているレクリエーション耐久「お題付き耐久草レース」および「レン耐」。コース諸元やピットお題ルール、転倒ペナルティなど史実・実在規定に基づき、黒猫メカニック・ナオミがその魅力と攻略法を解説します。",
       "highlightPoint": "ピットイン毎の「お題（知恵の輪・けん玉・クイズ等）」のクリア時間と無転倒ボーナス（または転倒時のマイナス周回・待機ペナルティ）が最終順位を大きく左右する！",
       "sections": [
         {
@@ -57,7 +63,7 @@
           "body": "草レースの裾野を広げたレクリエーション耐久の代表格が、ピットインのたびにミニゲームや課題が課される『お題付き耐久草レース』（全国的には元WGPライダー青木拓磨氏が2007年からスタートさせた『レン耐』などが有名）です。\n\n通常の耐久レースは純粋な周回数のみを競いますが、このフォーマットでは：① 規定回数のピットイン＆ライダー交代義務、② ピットごとに引いた「お題（知恵の輪、けん玉、早食い、ご当地クイズ、じゃんけん等）」をクリアしないとコース復帰できないルール、③ 燃費制限や無転倒ボーナス（転倒時のピットストップペナルティや罰金・減算制度）が組み合わさります。そのため、コース上で1周1秒速い上級者チームがピットのお題で数分間足止めされ、着実に無転倒＆お題一発クリアを重ねたエンジョイ勢が逆転上位入賞を果たすのが最大の醍醐味です。"
         },
         {
-          "heading": "3. ナオコ姐さん直伝：レクリエーション耐久を120%楽しむための実戦鉄則",
+          "heading": "3. ナオミ姐さん直伝：レクリエーション耐久を120%楽しむための実戦鉄則",
           "body": "① 【無転倒が最大の武器】レクリエーション耐久では1回の転倒による修復時間とペナルティが、コース上のタイム差を一瞬で吹き飛ばします。② 【ピットイン前の呼吸コントロール】心拍数が上がった直後にレーシンググローブを外して細かい知恵の輪やけん玉に挑むと手先が震えて失敗しがちです。ピットインのサインが出たら最終セクターで深呼吸して落ち着くこと。③ 【アフターレースの温泉＆グルメ】走行後に竹田・長湯温泉の湯に浸かり、直入のソフトクリームを味わうまでが九州草耐久の正式パッケージです！"
         }
       ],
@@ -84,19 +90,16 @@
       ],
       "catDialogues": [
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
+          "speaker": "naomi",
           "text": "ったく、全長1,430mのコース上でコンマ5秒削るために必死な顔してるくせに、ピットに戻ってきて知恵の輪ひとつ外せなくて半泣きになってんじゃないわよ！レーシンググローブ脱ぐ前に深呼吸しろってあれほど言ったでしょ！"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "お題付き耐久やレン耐は、速いライダーさんだけでなく初心者や女性ライダーもお題クリアで大貢献できるから、パドック中が笑顔になりますよね📸"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "ま、まあね…転ばずに無事チェッカーを受けてピットに帰ってきてくれれば、順位なんて何位でもいいのよ…。あ、あんたが「ナオコさんの整備してくれたバイク、最高に乗りやすかった」なんて言うから…帰りに長湯温泉の近くでソフトクリーム、一緒に食べてあげてもいいわよ…🌸"
+          "speaker": "naomi",
+          "text": "ま、まあね…転ばずに無事チェッカーを受けてピットに帰ってきてくれれば、順位なんて何位でもいいのよ…。あ、あんたが「ナオミさんの整備してくれたバイク、最高に乗りやすかった」なんて言うから…帰りに長湯温泉の近くでソフトクリーム、一緒に食べてあげてもいいわよ…"
         }
       ]
     },
@@ -115,7 +118,7 @@
           "body": "Al Japó, les curses de resistència recreatives amb proves al box —popularitzades a nivell nacional des del 2007 sota el nom de «Rentai» per l'expilot de 500cc i Superbike Takuma Aoki, i celebrades també en formats locals a circuits com SPA Naoiri— tenen tres pilars reglamentaris: 1) Parades obligatòries amb canvi de pilot, 2) Superació d'un repte («Odai»: kendama, anells metàl·lics d'enginy, preguntes o proves d'habilitat) abans de tornar a pista, i 3) Bonificacions per no caure (o penalitzacions severes en cas de caiguda) per fomentar la seguretat."
         },
         {
-          "heading": "3. Consells de la mecànica Naoko per gaudir de la resistència popular",
+          "heading": "3. Consells de la mecànica Naomi per gaudir de la resistència popular",
           "body": "En aquestes proves, mantenir un ritme constant sense arriscar a les frenades i arribar al box amb les pulsacions controlades per resoldre el repte a la primera és molt més efectiu que buscar la volta ràpida."
         }
       ],
@@ -142,19 +145,16 @@
       ],
       "catDialogues": [
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
+          "speaker": "naomi",
           "text": "Però serà possible?! Us deixeu la pell per esgarrapar mig segon als 1.430 metres de SPA Naoiri i després entreu al box i us encallau amb un trencaclosques! Respireu fondo abans de treure-us els guants!"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "El millor d'aquest reglament real és que qualsevol membre de l'equip, encara que sigui debutant, pot ser l'heroi si resol ràpid la prova del box 📸"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "M-mira, mentre em torneu la moto sencera i sense ni una rascada, el resultat m'és igual... I si em dius que la posada a punt t'ha agradat tant... potser sí que accepto aquell gelat de Naoiri en acabar... 🌸"
+          "speaker": "naomi",
+          "text": "M-mira, mentre em torneu la moto sencera i sense ni una rascada, el resultat m'és igual... I si em dius que la posada a punt t'ha agradat tant... potser sí que accepto aquell gelat de Naoiri en acabar..."
         }
       ]
     },
@@ -173,7 +173,7 @@
           "body": "Pioneered nationwide in 2007 by former World GP and Superbike podium finisher Takuma Aoki ('Rentai' rental-bike endurance) and embraced at regional circuits like SPA Naoiri as 'Odai-Tsuki' (Task-Challenge) Endurance, the official format features three real-world rule pillars: 1) Mandatory minimum pit stops and rider swaps, 2) Pit-Stop Tasks ('Odai' such as metal ring puzzles, kendama, or local trivia) that must be completed before rejoining the track, and 3) Zero-crash bonuses (or strict crash penalties) designed to prioritize safety and camaraderie over reckless overtaking."
         },
         {
-          "heading": "3. Naoko's Real-World Strategy for Recreational Endurance",
+          "heading": "3. Naomi's Real-World Strategy for Recreational Endurance",
           "body": "Because a four-minute struggle on a pit-box brain teaser costs roughly four full laps at SPA Naoiri (~1 minute per lap), lowering your heart rate on the in-lap and riding 100% crash-free are the true keys to victory."
         }
       ],
@@ -200,19 +200,16 @@
       ],
       "catDialogues": [
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
+          "speaker": "naomi",
           "text": "Give me a break! One lap around SPA Naoiri's 1,430m course takes about a minute, so if you waste three minutes panicking over a wire puzzle in the pit box, you just threw away three whole laps!"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "That's what makes the real Odai Endurance and Rentai rules so wonderful—every teammate plays a huge role in the result! 📸"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "W-well, as long as you bring the bike back without a scratch, I don't care what trophy we get... A-and since you praised my suspension setup earlier, I suppose I'll let you treat me to Naoiri soft-serve ice cream on the way home... 🌸"
+          "speaker": "naomi",
+          "text": "W-well, as long as you bring the bike back without a scratch, I don't care what trophy we get... A-and since you praised my suspension setup earlier, I suppose I'll let you treat me to Naoiri soft-serve ice cream on the way home..."
         }
       ]
     }

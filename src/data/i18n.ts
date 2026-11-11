@@ -1,7 +1,7 @@
 export type Lang = 'ja' | 'ca' | 'en';
 
 export interface CatCharacter {
-  id: 'marc' | 'suzuka' | 'naoko';
+  id: 'marc' | 'suzuka' | 'naomi';
   image: string;
   badgeColor: string;
   gender: { ja: string; ca: string; en: string };
@@ -10,13 +10,9 @@ export interface CatCharacter {
   specialty: { ja: string; ca: string; en: string };
   bio: { ja: string; ca: string; en: string };
   quoteNormal: { ja: string; ca: string; en: string };
-  quoteAlt?: {
-    label: { ja: string; ca: string; en: string };
-    text: { ja: string; ca: string; en: string };
-  };
 }
 
-export const CAT_TEAM: Record<'marc' | 'suzuka' | 'naoko', CatCharacter> = {
+export const CAT_TEAM: Record<'marc' | 'suzuka' | 'naomi', CatCharacter> = {
   marc: {
     id: 'marc',
     image: '/images/cats/marc.png',
@@ -79,15 +75,15 @@ export const CAT_TEAM: Record<'marc' | 'suzuka' | 'naoko', CatCharacter> = {
       en: '"Track conditions are prime this weekend! I’ll be capturing every overtake right from the morning riders’ briefing!"'
     }
   },
-  naoko: {
-    id: 'naoko',
-    image: '/images/cats/naoko.png',
+  naomi: {
+    id: 'naomi',
+    image: '/images/cats/naomi.png',
     badgeColor: '#c77dff',
-    gender: { ja: 'メス ♀（やさぐれ×時々乙女）', ca: 'Femella ♀ (Rondinaire però Dolça)', en: 'Female ♀ (Scruffy Garage Queen)' },
+    gender: { ja: 'メス ♀', ca: 'Femella ♀', en: 'Female ♀' },
     name: {
-      ja: 'ナオコ (Naoko)',
-      ca: 'Naoko (Mecànica de Garatge)',
-      en: 'Naoko (Garage Mechanic & Endurance Chief)'
+      ja: 'ナオミ (Naomi)',
+      ca: 'Naomi (Mecànica de Garatge)',
+      en: 'Naomi (Garage Mechanic & Endurance Chief)'
     },
     role: {
       ja: 'サーキット整備・耐久＆ガレージ担当',
@@ -100,26 +96,14 @@ export const CAT_TEAM: Record<'marc' | 'suzuka' | 'naoko', CatCharacter> = {
       en: 'Track Maintenance, Tech Inspection Prep, Endurance & Suspension Setup'
     },
     bio: {
-      ja: '九州のガレージに棲みつく二足歩行の黒雌猫メカニック。オイルまみれのツナギを腰巻きにし、レンチ片手に毒づく「やさぐれ姐御」だが、実は誰よりもライダーの安全と完走を願っている。ふとした瞬間に褒められたり甘い差し入れをもらうと、隠しきれない「乙女な一面」が漏れ出てしまうギャップの持ち主。',
-      ca: 'Gata negra bípede que viu en un garatge de Kyushu amb la seva granota tacada d\'oli. Sempre rondina als pilots («No entreu tan colats a la corba!»), però en el fons té un cor tendre i quan algú li dóna les gràcies o li porta un dolç, li surt la seva faceta més romàntica i tímida.',
-      en: 'Bipedal black female cat living in a Kyushu garage, wearing oil-stained coveralls tied at her waist. Normally a sharp-tongued, scruffy veteran mechanic who scolds riders over maintenance and braking points, she unexpectedly blushes like a shy maiden whenever thanked or gifted local sweets.'
+      ja: '九州のガレージに棲みつく二足歩行の黒雌猫メカニック。オイル汚れのついたヴィンテージのツナギを腰巻きにし、レンチ片手にライダーたちの甘い整備や無理な突っ込みをバッサリ斬る現場主義の職人。ぶっきらぼうな物言いの裏で、コースへ送り出すマシンの仕上がりとライダーの無事な帰還に誰よりも心を砕いている。',
+      ca: 'Gata negra bípede que viu en un garatge de Kyushu amb la seva granota tacada d\'oli i una clau anglesa a l\'espatlla. De caràcter directe i exigent amb la mecànica, no perdona cap descuit al box, però vetlla com ningú perquè cada moto i cada pilot tornin sans i estalvis a meta.',
+      en: 'Bipedal black female cat living in a Kyushu garage, wearing oil-stained coveralls tied at her waist with a box wrench over her shoulder. Blunt, battle-hardened, and uncompromising about mechanical prep, she watches over every rider rolling out of pit lane.'
     },
     quoteNormal: {
-      ja: '「ったく、どいつもこいつも1コーナー突っ込みすぎなんだよ！タイム削る前にまずブレーキフルードのエア抜きと温間空気圧をきっちり合わせなって言ってるだろ！」',
-      ca: '«Però què feu entrant tan passats al primer revolt?! Abans de buscar el rècord de pista, purgueu bé els frens i reviseu les pressions en calent!»',
-      en: '"Tch, every single one of you is over-cooking Turn 1! Before chasing lap times, bleed your brake fluid properly and dial in your hot tire pressures!"'
-    },
-    quoteAlt: {
-      label: {
-        ja: '🌸 ナオコの「時々出る乙女モード」を見る',
-        ca: '🌸 Veure el costat tendre secret de la Naoko',
-        en: '🌸 Peek at Naoko’s secret maiden side'
-      },
-      text: {
-        ja: '「…え？ナオコさんが組んだ足回りのおかげで自己ベスト出たし、無事に完走できたって…？べ、別にあんたのために徹夜したんじゃないわよ！マシンが泣いてただけよ！…で、でも、帰りに直入のソフトクリーム奢ってくれるなら…一緒に食べてあげなくもないわよ…🌸」',
-        ca: '«...Eh? Que gràcies a la meva posada a punt has fet rècord personal i has acabat la cursa sa i estalvi...? N-no és pas que m\'hagi quedat tota la nit treballant per tu! Ho he fet per la moto! ...Però bé, si em convides a un gelat tornant de Naoiri... potser sí que t\'acompanyo... 🌸»',
-        en: '"...Huh? You set a personal best and finished safely thanks to my suspension setup...? I-it’s not like I stayed up all night wrenching for YOU! The bike was crying for help, that’s all! ...B-but if you’re buying Naoiri soft-serve ice cream on the way back... I suppose I wouldn’t mind sharing it with you... 🌸"'
-      }
+      ja: '「ったく、どいつもこいつも1コーナー突っ込みすぎなんだよ！タイム削る前にまずブレーキのエア抜きと温間空気圧をきっちり合わせなって言ってるだろ！…え？私が組んだ足回りのおかげで自己ベスト出たって？…べ、別にあんたのために徹夜したんじゃないわよ、帰りに直入のソフトクリーム奢ってくれるなら許してあげるけど…」',
+      ca: '«Però què feu entrant tan passats al primer revolt?! Abans de buscar el rècord de pista, purgueu bé els frens i reviseu les pressions! ...Eh? Que gràcies a la meva posada a punt has fet rècord personal? N-no és pas que m\'hagi quedat tota la nit treballant per tu... però si em convides a un gelat tornant de Naoiri, potser t\'acompanyo...»',
+      en: '"Tch, every single one of you is over-cooking Turn 1! Bleed your brakes and check your hot tire pressures before chasing lap times! ...Huh? You set a personal best thanks to my suspension setup? I-it’s not like I stayed up all night wrenching for you... though if you’re buying Naoiri soft-serve on the way home, I suppose I’ll come along..."'
     }
   }
 };

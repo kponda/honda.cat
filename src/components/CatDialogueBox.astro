@@ -8,13 +8,6 @@ interface Props {
 }
 
 const { dialogues, lang } = Astro.props;
-
-const moodBadgeLabels: Record<CatDialogue['mood'], Record<Lang, string>> = {
-  normal: { ja: '🐾 パドック解説', ca: '🐾 Comentari de Pàdoc', en: '🐾 Paddock Note' },
-  excited: { ja: '🔥 大興奮モード', ca: '🔥 Màxima Emoció', en: '🔥 Full Throttle' },
-  grumpy: { ja: '🔧 ナオコのやさぐれ毒舌', ca: '🔧 Naoko Rondinaire', en: '🔧 Scruffy Garage Rant' },
-  maiden: { ja: '🌸 ナオコのふいに出る乙女モード♡', ca: '🌸 El costat tendre de la Naoko♡', en: '🌸 Sudden Maiden Blush♡' }
-};
 ---
 
 <div class="dialogue-container">
@@ -26,20 +19,16 @@ const moodBadgeLabels: Record<CatDialogue['mood'], Record<Lang, string>> = {
 
   <div class="dialogue-list">
     {dialogues.map((item) => {
-      const cat = CAT_TEAM[item.speaker] || CAT_TEAM.marc;
-      const isMaiden = item.mood === 'maiden';
-      const isGrumpy = item.mood === 'grumpy';
+      const cat = CAT_TEAM[item.speaker as keyof typeof CAT_TEAM] || CAT_TEAM.marc;
       return (
-        <div class={`dialogue-row mood-${item.mood}`}>
+        <div class="dialogue-row">
           <div class="speaker-col">
-            <img src={cat.image} alt={cat.name[lang]} class="speaker-avatar" />
+            <img src={cat.image} alt={cat.name[lang]} class="speaker-avatar" style={`border-color: ${cat.badgeColor};`} />
           </div>
           <div class="bubble-col">
             <div class="bubble-header">
               <span class="speaker-name">{cat.name[lang]}</span>
-              <span class={`mood-pill ${isMaiden ? 'pill-maiden' : isGrumpy ? 'pill-grumpy' : ''}`}>
-                {moodBadgeLabels[item.mood][lang]}
-              </span>
+              <span class="speaker-role">{cat.role[lang]}</span>
             </div>
             <p class="bubble-text">{item.text}</p>
           </div>
@@ -82,15 +71,6 @@ const moodBadgeLabels: Record<CatDialogue['mood'], Record<Lang, string>> = {
     border: 1px solid var(--border-subtle);
   }
 
-  .dialogue-row.mood-maiden {
-    background: linear-gradient(135deg, rgba(255, 117, 143, 0.14), rgba(199, 125, 255, 0.08));
-    border-color: rgba(255, 117, 143, 0.45);
-  }
-
-  .dialogue-row.mood-grumpy {
-    border-left: 4px solid var(--accent-naoko);
-  }
-
   .speaker-avatar {
     width: 58px;
     height: 58px;
@@ -98,10 +78,6 @@ const moodBadgeLabels: Record<CatDialogue['mood'], Record<Lang, string>> = {
     object-fit: cover;
     border: 2px solid var(--accent-gold);
     flex-shrink: 0;
-  }
-
-  .mood-maiden .speaker-avatar {
-    border-color: var(--accent-pink);
   }
 
   .bubble-col {
@@ -121,24 +97,9 @@ const moodBadgeLabels: Record<CatDialogue['mood'], Record<Lang, string>> = {
     font-size: 0.92rem;
   }
 
-  .mood-pill {
-    font-size: 0.72rem;
-    font-weight: 700;
-    padding: 0.18rem 0.55rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    color: var(--text-secondary);
-  }
-
-  .pill-maiden {
-    background: rgba(255, 117, 143, 0.22);
-    color: #ffacc2;
-    border: 1px solid rgba(255, 117, 143, 0.4);
-  }
-
-  .pill-grumpy {
-    background: rgba(199, 125, 255, 0.2);
-    color: #e0aaff;
+  .speaker-role {
+    font-size: 0.75rem;
+    color: var(--text-muted);
   }
 
   .bubble-text {

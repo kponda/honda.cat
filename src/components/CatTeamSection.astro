@@ -1,7 +1,7 @@
 ---
 import { CAT_TEAM, UI_TEXT } from '../data/i18n';
 
-const cats = [CAT_TEAM.marc, CAT_TEAM.suzuka, CAT_TEAM.naoko];
+const cats = [CAT_TEAM.marc, CAT_TEAM.suzuka, CAT_TEAM.naomi];
 ---
 
 <section id="cat-team" class="cat-section">
@@ -69,75 +69,19 @@ const cats = [CAT_TEAM.marc, CAT_TEAM.suzuka, CAT_TEAM.naoko];
               <span data-i18n="en">{cat.bio.en}</span>
             </p>
 
-            <div class="cat-quote-box" data-quote-normal={cat.id}>
-              <div class="quote-mode-tag">
-                {cat.id === 'naoko' ? (
-                  <>
-                    <span data-i18n="ja">🔧 通常（やさぐれガレージモード）</span>
-                    <span data-i18n="ca">🔧 Mode habitual (Mecànica rondinaire)</span>
-                    <span data-i18n="en">🔧 Normal (Scruffy Garage Mode)</span>
-                  </>
-                ) : (
-                  <>
-                    <span data-i18n="ja">💬 決めゼリフ</span>
-                    <span data-i18n="ca">💬 Frase característica</span>
-                    <span data-i18n="en">💬 Signature Quote</span>
-                  </>
-                )}
-              </div>
+            <div class="cat-quote-box">
               <p class="quote-text">
                 <span data-i18n="ja">{cat.quoteNormal.ja}</span>
                 <span data-i18n="ca">{cat.quoteNormal.ca}</span>
                 <span data-i18n="en">{cat.quoteNormal.en}</span>
               </p>
             </div>
-
-            {cat.quoteAlt && (
-              <div class="naoko-maiden-wrap">
-                <button type="button" class="maiden-toggle-btn" id="naoko-mode-toggle">
-                  <span data-i18n="ja">{cat.quoteAlt.label.ja}</span>
-                  <span data-i18n="ca">{cat.quoteAlt.label.ca}</span>
-                  <span data-i18n="en">{cat.quoteAlt.label.en}</span>
-                </button>
-                <div class="cat-quote-box maiden-quote-box" id="naoko-maiden-box" hidden>
-                  <div class="quote-mode-tag maiden-tag">
-                    <span data-i18n="ja">🌸 ふいに出る「乙女モード」発動中！</span>
-                    <span data-i18n="ca">🌸 Mode tendre i romàntic activat!</span>
-                    <span data-i18n="en">🌸 Sudden Maiden Mode Activated!</span>
-                  </div>
-                  <p class="quote-text">
-                    <span data-i18n="ja">{cat.quoteAlt.text.ja}</span>
-                    <span data-i18n="ca">{cat.quoteAlt.text.ca}</span>
-                    <span data-i18n="en">{cat.quoteAlt.text.en}</span>
-                  </p>
-                </div>
-              </div>
-            )}
           </div>
         </article>
       ))}
     </div>
   </div>
 </section>
-
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    const toggleBtn = document.getElementById('naoko-mode-toggle');
-    const maidenBox = document.getElementById('naoko-maiden-box');
-    if (toggleBtn && maidenBox) {
-      toggleBtn.addEventListener('click', () => {
-        const isHidden = maidenBox.hasAttribute('hidden');
-        if (isHidden) {
-          maidenBox.removeAttribute('hidden');
-          toggleBtn.classList.add('active');
-        } else {
-          maidenBox.setAttribute('hidden', '');
-          toggleBtn.classList.remove('active');
-        }
-      });
-    }
-  });
-</script>
 
 <style>
   .cat-section {
@@ -276,57 +220,14 @@ const cats = [CAT_TEAM.marc, CAT_TEAM.suzuka, CAT_TEAM.naoko];
     margin-top: auto;
     background: rgba(0, 0, 0, 0.28);
     border-left: 3px solid var(--accent-gold);
-    padding: 0.8rem 0.95rem;
+    padding: 0.85rem 0.95rem;
     border-radius: 0 0.5rem 0.5rem 0;
-  }
-
-  .quote-mode-tag {
-    font-size: 0.72rem;
-    font-weight: 700;
-    color: var(--accent-gold);
-    margin-bottom: 0.3rem;
   }
 
   .quote-text {
     font-size: 0.85rem;
     font-style: italic;
     color: #fff;
-  }
-
-  .naoko-maiden-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    margin-top: 0.35rem;
-  }
-
-  .maiden-toggle-btn {
-    width: 100%;
-    padding: 0.55rem 0.85rem;
-    border-radius: 0.5rem;
-    border: 1px dashed var(--accent-pink);
-    background: rgba(255, 117, 143, 0.12);
-    color: #ff9ebb;
-    font-weight: 700;
-    font-size: 0.82rem;
-    cursor: pointer;
-    font-family: inherit;
-    transition: all 0.2s ease;
-  }
-
-  .maiden-toggle-btn:hover,
-  .maiden-toggle-btn.active {
-    background: rgba(255, 117, 143, 0.24);
-    color: #fff;
-    border-style: solid;
-  }
-
-  .maiden-quote-box {
-    border-left-color: var(--accent-pink);
-    background: rgba(255, 117, 143, 0.12);
-  }
-
-  .maiden-tag {
-    color: #ff9ebb;
+    line-height: 1.65;
   }
 </style>

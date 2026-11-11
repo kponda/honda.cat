@@ -8,7 +8,13 @@
   "region": "Catalunya & World GP",
   "featuredCat": "marc",
   "heroImage": "/images/cats/marc.png",
-  "tags": ["MotoGP", "スーパーセーブ", "マルク・マルケス", "カタルーニャ", "ライディング科学"],
+  "tags": [
+    "MotoGP",
+    "スーパーセーブ",
+    "マルク・マルケス",
+    "カタルーニャ",
+    "ライディング科学"
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",
@@ -85,17 +91,14 @@
       "catDialogues": [
         {
           "speaker": "marc",
-          "mood": "excited",
           "text": "2017年バレンシアGPの1コーナー、時速153km/h・バンク角64度で50m滑りながら車体を起こしたあの瞬間は、カタルーニャ中のバルが揺れるほど大歓声だったニャ！史実のデータで見ても鳥肌モノだニャ！"
         },
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
+          "speaker": "naomi",
           "text": "いいかい、あれは世界チャンピオンが毎日ダートトラックとジムで鍛え抜いてるからできる神業よ！あんたたちがSPA直入で真似してツナギの肘に穴開けてきたら、自分で針と糸持って縫わせるからね！"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "でも「滑った瞬間にパニックでアクセルを急閉しない」という物理の基本は、どんなカテゴリーのライダーにもすごく勉強になりますね！"
         }
       ]
@@ -143,17 +146,14 @@
       "catDialogues": [
         {
           "speaker": "marc",
-          "mood": "excited",
           "text": "Aquell 12 de novembre de 2017 tot Catalunya va contenir la respiració durant 50 metres al revolt 1 de València! 64 graus a 153 km/h és història pura del motociclisme, miau!"
         },
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
+          "speaker": "naomi",
           "text": "Això només ho pot fer un campió del món de Cervera! Si algun de vosaltres intenta fer el mateix demà a SPA Naoiri i em porta la granota foradada, us la fareu cosir vosaltres mateixos!"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "Però la lliçó de no tancar el gas en pànic quan llisca la moto és un consell d'or per a tots els pilots!"
         }
       ]
@@ -201,17 +201,14 @@
       "catDialogues": [
         {
           "speaker": "marc",
-          "mood": "excited",
           "text": "On November 12, 2017, every racing fan in Catalonia held their breath for 50 meters in Valencia Turn 1! 64 degrees at 153 km/h is verified MotoGP history, meow!"
         },
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
+          "speaker": "naomi",
           "text": "That's a Cervera world champion on a factory RC213V! If any of my Oita garage regulars try testing 64 degrees at SPA Naoiri and rip their leathers, you're sewing them up yourself!"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "Still, understanding why not chopping the throttle prevents a highside is priceless knowledge for every rider!"
         }
       ]

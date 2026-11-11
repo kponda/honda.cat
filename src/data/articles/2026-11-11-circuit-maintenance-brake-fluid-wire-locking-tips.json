@@ -6,9 +6,15 @@
   "articleType": "maintenance",
   "circuit": "全サーキット共通 (MFJ技術規則・JIS規格準拠)",
   "region": "Garage & Paddock Tech",
-  "featuredCat": "naoko",
-  "heroImage": "/images/cats/naoko.png",
-  "tags": ["メンテナンス", "ワイヤリング", "ブレーキフルード", "空気圧管理", "サーキット豆知識"],
+  "featuredCat": "naomi",
+  "heroImage": "/images/cats/naomi.png",
+  "tags": [
+    "メンテナンス",
+    "ワイヤリング",
+    "ブレーキフルード",
+    "空気圧管理",
+    "サーキット豆知識"
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",
@@ -31,9 +37,9 @@
   "eventMeta": {
     "date": "2026-11-11",
     "venue": {
-      "ja": "ナオコのガレージ整備塾（週1連載・サーキット走行メンテナンス編）",
-      "ca": "Taller de Pàdoc de la Naoko (Sèrie Setmanal de Manteniment)",
-      "en": "Naoko's Paddock Garage Clinic (Weekly Track Maintenance Series)"
+      "ja": "ナオミのガレージ整備塾（週1連載・サーキット走行メンテナンス編）",
+      "ca": "Taller de Pàdoc de la Naomi (Sèrie Setmanal de Manteniment)",
+      "en": "Naomi's Paddock Garage Clinic (Weekly Track Maintenance Series)"
     },
     "weather": {
       "ja": "適用範囲：スポーツ走行・草耐久・地方選手権 車検対応",
@@ -43,9 +49,9 @@
   },
   "locales": {
     "ja": {
-      "title": "【ナオコのサーキット整備塾 #1】車検と安全の基本！「ワイヤリング・ブレーキフルード沸点・温間空気圧」の科学と実践豆知識",
+      "title": "【ナオミのサーキット整備塾 #1】車検と安全の基本！「ワイヤリング・ブレーキフルード沸点・温間空気圧」の科学と実践豆知識",
       "subtitle": "なぜドレンボルトは締まる方向に引っ張る？なぜDOT4でも吸湿するとベーパーロックが起きる？物理と規格で学ぶサーキット整備",
-      "summary": "サーキット走行会や草レース（SPA直入・オートポリス・HSR九州など）に挑むライダー必見の週1回メンテナンス連載。第1回は、MFJ技術規則に基づくワイヤリング（ワイヤーロック）の正しい掛け方、JIS規格から見るブレーキフルードのドライ/ウェット沸点、そして温度変化によるタイヤ空気圧の物理法則を黒猫メカニック・ナオコが徹底解説します。",
+      "summary": "サーキット走行会や草レース（SPA直入・オートポリス・HSR九州など）に挑むライダー必見の週1回メンテナンス連載。第1回は、MFJ技術規則に基づくワイヤリング（ワイヤーロック）の正しい掛け方、JIS規格から見るブレーキフルードのドライ/ウェット沸点、そして温度変化によるタイヤ空気圧の物理法則を黒猫メカニック・ナオミが徹底解説します。",
       "highlightPoint": "DOT4ブレーキフルードは新品時のドライ沸点230℃以上に対し、水分を3.7%吸収したウェット沸点は155℃まで低下！またタイヤ空気圧は温度が10℃上がると約7〜10kPa（0.07〜0.1kgf/cm²）上昇する！",
       "sections": [
         {
@@ -90,26 +96,23 @@
       ],
       "catDialogues": [
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
+          "speaker": "naomi",
           "text": "いいかい、車検の前日に慌ててワイヤリングして、緩む方向にワイヤー引っ張ってくるんじゃないわよ！それじゃ『緩み止め』じゃなくて『緩め促進ワイヤー』だろ！あと、去年の梅雨から変えてないブレーキフルードでオートポリスの1コーナーに突っ込む気！？今すぐブリーダーレンチ持ってきな！"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
-          "text": "さすがナオコさん！JIS規格のドライ沸点とウェット沸点の差や、温度10℃あたりの空気圧変化を数値で教えてもらえると、なぜ走行前の点検が大切なのかすごく納得できますね！"
+          "text": "さすがナオミさん！JIS規格のドライ沸点とウェット沸点の差や、温度10℃あたりの空気圧変化を数値で教えてもらえると、なぜ走行前の点検が大切なのかすごく納得できますね！"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "べ、別に難しい講釈を垂れたいわけじゃないわよ！ただ…ブレーキが抜けてコースアウトしたり、オイル漏らして悲しい顔するあんたを絶対に見たくないだけよ…。ほ、ほら、エア抜き手伝ってあげるから、終わったらまた直入のプリン買ってきなさいよね…🌸"
+          "speaker": "naomi",
+          "text": "べ、別に難しい講釈を垂れたいわけじゃないわよ！ただ…ブレーキが抜けてコースアウトしたり、オイル漏らして悲しい顔するあんたを絶対に見たくないだけよ…。ほ、ほら、エア抜き手伝ってあげるから、終わったらまた直入のプリン買ってきなさいよね…"
         }
       ]
     },
     "ca": {
-      "title": "[Taller de Circuit de la Naoko #1] Frenat de filferro (Wire-Locking), Punt d'Ebullició del Líquid de Frens i Pressió en Calent",
+      "title": "[Taller de Circuit de la Naomi #1] Frenat de filferro (Wire-Locking), Punt d'Ebullició del Líquid de Frens i Pressió en Calent",
       "subtitle": "La ciència i les normes oficials (MFJ / FIM / JIS) que tot pilot de tanda i resistència ha de dominar abans de sortir a pista",
-      "summary": "Estrenem la secció setmanal de manteniment i trucs mecànics per a circuit amb la nostra gata mecànica Naoko. En aquest primer capítol analitzem amb dades reals com fer el frenat de cargols amb filferro d'acer inoxidable, la diferència entre el punt d'ebullició sec i humit del líquid DOT 4 i la llei física de les pressions dels pneumàtics.",
+      "summary": "Estrenem la secció setmanal de manteniment i trucs mecànics per a circuit amb la nostra gata mecànica Naomi. En aquest primer capítol analitzem amb dades reals com fer el frenat de cargols amb filferro d'acer inoxidable, la diferència entre el punt d'ebullició sec i humit del líquid DOT 4 i la llei física de les pressions dels pneumàtics.",
       "highlightPoint": "El líquid de frens DOT 4 passa d'un punt d'ebullició sec mínim de 230°C a només 155°C quan absorbeix un 3,7% d'humitat! I la pressió del pneumàtic puja entre 0,07 i 0,10 bar per cada 10°C d'augment de temperatura!",
       "sections": [
         {
@@ -154,26 +157,23 @@
       ],
       "catDialogues": [
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
+          "speaker": "naomi",
           "text": "Escolteu-me bé! No em vingueu a última hora amb el filferro del càrter lligat al revés! I ni se us acudeixi entrar a Autopolis amb un líquid de frens que porta un any agafant humitat al garatge! Porteu-me la clau del 8 i el tub de purga ara mateix!"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
-          "text": "Quina classe magistral, Naoko! Entendre la diferència entre els 230°C en sec i els 155°C amb humitat explica perfectament per què cal purgar els frens abans de córrer!"
+          "text": "Quina classe magistral, Naomi! Entendre la diferència entre els 230°C en sec i els 155°C amb humitat explica perfectament per què cal purgar els frens abans de córrer!"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "N-no us penseu que us renyo per gust! És que si us quedeu sense frens a final de recta em moro de l'ensurt... Vinga, que jo us ajudo a bombar la maneta per purgar el circuit, però quan acabem em convideu a un flam casolà, entesos?... 🌸"
+          "speaker": "naomi",
+          "text": "N-no us penseu que us renyo per gust! És que si us quedeu sense frens a final de recta em moro de l'ensurt... Vinga, que jo us ajudo a bombar la maneta per purgar el circuit, però quan acabem em convideu a un flam casolà, entesos?..."
         }
       ]
     },
     "en": {
-      "title": "[Naoko's Track Garage Clinic #1] The Science of Safety Wire-Locking, Brake Fluid Boiling Points & Hot Tire Pressures",
+      "title": "[Naomi's Track Garage Clinic #1] The Science of Safety Wire-Locking, Brake Fluid Boiling Points & Hot Tire Pressures",
       "subtitle": "Why wire tension direction matters and how moisture drops DOT 4 boiling points by 75°C: real engineering facts for track riders",
-      "summary": "Welcome to our weekly circuit maintenance and technical trivia column led by black-cat mechanic Naoko! Issue #1 covers official MFJ/FIM wire-locking technique, JIS/FMVSS brake fluid dry vs. wet boiling point physics, and ideal gas law tire pressure management.",
+      "summary": "Welcome to our weekly circuit maintenance and technical trivia column led by black-cat mechanic Naomi! Issue #1 covers official MFJ/FIM wire-locking technique, JIS/FMVSS brake fluid dry vs. wet boiling point physics, and ideal gas law tire pressure management.",
       "highlightPoint": "Standard DOT 4 brake fluid has a minimum dry boiling point of 230°C, which plummets to 155°C at 3.7% moisture absorption! Meanwhile, tire pressure rises ~7–10 kPa (1.0–1.4 psi) for every 10°C increase in air temperature!",
       "sections": [
         {
@@ -218,19 +218,16 @@
       ],
       "catDialogues": [
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
+          "speaker": "naomi",
           "text": "Listen up! Stop safety-wiring your drain bolts backward the night before tech inspection! If it pulls counterclockwise, that's a loosening wire, not a lock wire! And don't you dare roll onto track with year-old brake fluid—grab an 8mm wrench and bleed hose right now!"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "Seeing the exact JIS boiling point numbers—230°C dry vs. 155°C wet—really drives home why fresh brake fluid saves lives at the end of the back straight!"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "I-it's not like I enjoy nagging you guys! I just... can't stand the thought of your brake lever going spongy at Turn 1... H-here, I'll pump the lever while you crack the bleeder valve, okay? Just buy me a pudding on the way home... 🌸"
+          "speaker": "naomi",
+          "text": "I-it's not like I enjoy nagging you guys! I just... can't stand the thought of your brake lever going spongy at Turn 1... H-here, I'll pump the lever while you crack the bleeder valve, okay? Just buy me a pudding on the way home..."
         }
       ]
     }

@@ -8,7 +8,13 @@
   "region": "All-Japan / Nationwide",
   "featuredCat": "suzuka",
   "heroImage": "/images/cats/suzuka.png",
-  "tags": ["全日本ロードレース", "JSB1000", "鈴鹿サンデー", "テイスト・オブ・ツクバ", "地方選手権"],
+  "tags": [
+    "全日本ロードレース",
+    "JSB1000",
+    "鈴鹿サンデー",
+    "テイスト・オブ・ツクバ",
+    "地方選手権"
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",
@@ -81,18 +87,15 @@
       "catDialogues": [
         {
           "speaker": "suzuka",
-          "mood": "excited",
           "text": "鈴鹿のヘアピンから大分のSPA直入まで、どのサーキットに行ってもパドックの皆さんが温かく迎えてくれて、シャッターを切る肉球が止まりません📸✨"
         },
         {
           "speaker": "marc",
-          "mood": "normal",
           "text": "カタルーニャのライダーたちも、日本の草レースやミニバイク耐久の層の厚さにはいつも驚いてるニャ！これが強いライダーと最高のバイクを生む土壌なんだニャ！"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "全日本だろうが草レースだろうが、チェッカーを受けた後のライダーの顔はみんな同じくらいキラキラしてるわよ…。って、な、何よその目は！別に感動なんかしてないわよ、目にパーツクリーナーがしみただけよ…🌸"
+          "speaker": "naomi",
+          "text": "全日本だろうが草レースだろうが、チェッカーを受けた後のライダーの顔はみんな同じくらいキラキラしてるわよ…。って、な、何よその目は！別に感動なんかしてないわよ、目にパーツクリーナーがしみただけよ…"
         }
       ]
     },
@@ -135,18 +138,15 @@
       "catDialogues": [
         {
           "speaker": "suzuka",
-          "mood": "excited",
           "text": "Des del revolt d'entrada a meta de Suzuka fins al pàdoc familiar de SPA Naoiri a Oita, l'ambient dels circuits japonesos és meravellós! No puc parar de fer fotos 📸✨"
         },
         {
           "speaker": "marc",
-          "mood": "normal",
           "text": "A Catalunya tenim una gran tradició de minimotos i resistència, i veure com ho viuen els nostres amics japonesos a Kyushu ens agermana encara més, miau!"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "Tant si corren a JSB1000 com a la cursa popular d'Oita, tots posen la mateixa cara d'il·lusió sota el casc en veure la bandera de quadres... Q-què mireu?! No estic plorant, és que m'ha entrat esprai netejador de frens a l'ull... 🌸"
+          "speaker": "naomi",
+          "text": "Tant si corren a JSB1000 com a la cursa popular d'Oita, tots posen la mateixa cara d'il·lusió sota el casc en veure la bandera de quadres... Q-què mireu?! No estic plorant, és que m'ha entrat esprai netejador de frens a l'ull..."
         }
       ]
     },
@@ -189,18 +189,15 @@
       "catDialogues": [
         {
           "speaker": "suzuka",
-          "mood": "excited",
           "text": "From the Suzuka hairpin to the friendly paddock at SPA Naoiri in Oita, every rider has such a warm smile—my shutter paw never stops clicking! 📸✨"
         },
         {
           "speaker": "marc",
-          "mood": "normal",
           "text": "Catalonia and Japan both share this incredible grassroots mini-bike and endurance culture. That's why our two regions love racing so much, meow!"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "Whether it's JSB1000 or a Sunday club race in Oita, every rider's eyes sparkle the exact same way under their visor after taking the checkered flag... H-hey, stop staring at me! I'm not tearing up, I just got brake cleaner in my eye... 🌸"
+          "speaker": "naomi",
+          "text": "Whether it's JSB1000 or a Sunday club race in Oita, every rider's eyes sparkle the exact same way under their visor after taking the checkered flag... H-hey, stop staring at me! I'm not tearing up, I just got brake cleaner in my eye..."
         }
       ]
     }

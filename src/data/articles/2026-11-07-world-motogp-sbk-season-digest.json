@@ -8,7 +8,13 @@
   "region": "World (Catalunya & Europe)",
   "featuredCat": "marc",
   "heroImage": "/images/cats/hero-paddock.png",
-  "tags": ["MotoGP", "WorldSBK", "カタルーニャ", "RC213V", "CBR1000RR-R"],
+  "tags": [
+    "MotoGP",
+    "WorldSBK",
+    "カタルーニャ",
+    "RC213V",
+    "CBR1000RR-R"
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",
@@ -85,18 +91,15 @@
       "catDialogues": [
         {
           "speaker": "marc",
-          "mood": "excited",
           "text": "モンメロの最終セクターでリアを綺麗にスライドさせながら立ち上がるあのサウンド、何度聴いてもシッポがピーンと立つニャ！日本の技術陣とカタルーニャの情熱がタッグを組めば無敵だニャ！"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "世界戦の空力や電子制御のトレンドが、翌年の全日本ロードレースやオートポリス戦でもすぐに見られるのがワクワクしますよね！"
         },
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
-          "text": "ふん、何億円のワークスマシンだろうがうちのガレージのミニバイクだろうが、最後にタイムを出すのはライダーの度胸とチェーンの張り具合よ！…でもまあ、テストライダーたちの泥臭い走りを見ると…ちょっとだけ胸が熱くなるじゃないの…🌸"
+          "speaker": "naomi",
+          "text": "ふん、何億円のワークスマシンだろうがうちのガレージのミニバイクだろうが、最後にタイムを出すのはライダーの度胸とチェーンの張り具合よ！…でもまあ、テストライダーたちの泥臭い走りを見ると…ちょっとだけ胸が熱くなるじゃないの…"
         }
       ]
     },
@@ -139,18 +142,15 @@
       "catDialogues": [
         {
           "speaker": "marc",
-          "mood": "excited",
           "text": "Sentir com bramen els motors a la recta de Montmeló em fa posar tots els pèls de punta, miau! La unió entre l'enginyeria japonesa i l'escola catalana de pilots és història viva del motociclisme!"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "És fascinant veure com aquestes millores de WorldSBK arriben després a les motos que fotografiem al Campionat del Japó a Autopolis i Suzuka!"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "Bah, tant se val si és un prototip de milions d'euros o una minimoto del meu garatge: sense una cadena ben greixada no vas enlloc! ...Tot i que, he de reconèixer que veure els pilots de proves treballar fins tan tard... em fa bategar el cor una miqueta... 🌸"
+          "speaker": "naomi",
+          "text": "Bah, tant se val si és un prototip de milions d'euros o una minimoto del meu garatge: sense una cadena ben greixada no vas enlloc! ...Tot i que, he de reconèixer que veure els pilots de proves treballar fins tan tard... em fa bategar el cor una miqueta..."
         }
       ]
     },
@@ -193,18 +193,15 @@
       "catDialogues": [
         {
           "speaker": "marc",
-          "mood": "excited",
           "text": "Hearing prototypes scream down the Montmeló straight makes my tail stand straight up, meow! When Japanese engineering meets Catalan racing passion, magic happens!"
         },
         {
           "speaker": "suzuka",
-          "mood": "normal",
           "text": "It's so exciting seeing these WorldSBK electronics and chassis updates show up on All-Japan machines at Autopolis and Suzuka!"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "Hmph, whether it's a million-dollar factory bike or a garage mini-bike, nothing wins without a properly lubed chain! ...Still, watching test riders put in 80 laps before sunset... k-kind of makes my heart skip a beat... 🌸"
+          "speaker": "naomi",
+          "text": "Hmph, whether it's a million-dollar factory bike or a garage mini-bike, nothing wins without a properly lubed chain! ...Still, watching test riders put in 80 laps before sunset... k-kind of makes my heart skip a beat..."
         }
       ]
     }

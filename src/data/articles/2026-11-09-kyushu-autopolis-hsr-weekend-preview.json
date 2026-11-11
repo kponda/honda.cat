@@ -8,7 +8,13 @@
   "region": "Kyushu (Oita / Kumamoto)",
   "featuredCat": "suzuka",
   "heroImage": "/images/cats/suzuka.png",
-  "tags": ["オートポリス", "SPA直入", "HSR九州", "九州ロードレース", "開催情報"],
+  "tags": [
+    "オートポリス",
+    "SPA直入",
+    "HSR九州",
+    "九州ロードレース",
+    "開催情報"
+  ],
   "factCheck": {
     "verified": true,
     "verifiedAt": "2026-11-11",
@@ -89,25 +95,22 @@
       "catDialogues": [
         {
           "speaker": "suzuka",
-          "mood": "excited",
           "text": "今週末も大分のSPA直入とオートポリス、熊本のHSR九州をハシゴ取材しますよ！澄んだ秋空の下、皆さんのカッコいいコーナリング写真をたくさん撮るのが楽しみです📷✨"
         },
         {
           "speaker": "marc",
-          "mood": "normal",
           "text": "標高900mのオートポリスの気候は、カタルーニャのピレネー山脈近くのサーキットにそっくりだニャ！空気密度が高くてストレートが伸びるから、ギア比の微調整が面白いニャ！"
         },
         {
-          "speaker": "naoko",
-          "mood": "grumpy",
-          "text": "いいかい、朝の1本目から夏場と同じ感覚で寝かし込んだら一発でハイサイド食らうからね！空気圧は温間でしっかり合わせな！…あ、それと直入の朝は冷えるから、ピットに温かい缶コーヒーと肉まん用意しといてやったわよ。べ、別に余っただけだからね…🌸"
+          "speaker": "naomi",
+          "text": "いいかい、朝の1本目から夏場と同じ感覚で寝かし込んだら一発でハイサイド食らうからね！空気圧は温間でしっかり合わせな！…あ、それと直入の朝は冷えるから、ピットに温かい缶コーヒーと肉まん用意しといてやったわよ。べ、別に余っただけだからね…"
         }
       ]
     },
     "ca": {
       "title": "[Prèvia Kyushu] Agenda del cap de setmana a Autopolis, SPA Naoiri i HSR Kyushu: claus per dominar l'asfalt de tardor",
       "subtitle": "Aire fresc a les muntanyes d'Oita i Kumamoto: horaris, curses i consells de pneumàtics de la nostra redacció felina",
-      "summary": "Repassem tota l'activitat d'aquest cap de setmana als tres grans circuits de l'illa de Kyushu: Autopolis i SPA Naoiri (prefectura d'Oita) i HSR Kyushu (prefectura de Kumamoto). La Suzuka i la Naoko us expliquen com gestionar la temperatura dels pneumàtics a primera hora.",
+      "summary": "Repassem tota l'activitat d'aquest cap de setmana als tres grans circuits de l'illa de Kyushu: Autopolis i SPA Naoiri (prefectura d'Oita) i HSR Kyushu (prefectura de Kumamoto). La Suzuka i la Naomi us expliquen com gestionar la temperatura dels pneumàtics a primera hora.",
       "highlightPoint": "A 900m d'altitud a Autopolis i a les muntanyes de Takeda (SPA Naoiri), l'asfalt matinal baixa fins als 12°C: gestionar les pressions en calent és vital!",
       "sections": [
         {
@@ -147,25 +150,22 @@
       "catDialogues": [
         {
           "speaker": "suzuka",
-          "mood": "excited",
           "text": "Aquest cap de setmana recorreré SPA Naoiri, Autopolis i HSR Kyushu amb la meva càmera! Amb la llum de tardor d'Oita les fotos de les plegades quedaran espectaculars 📷✨"
         },
         {
           "speaker": "marc",
-          "mood": "normal",
           "text": "L'aire fresc de les muntanyes d'Autopolis em recorda les matinals de test a Catalunya a la tardor: els motors respiren millor i la velocitat punta puja, miau!"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "Escolteu-me bé: si sortiu a la primera tanda plegant com a l'agost, anireu per terra al segon revolt! Vigileu les pressions! ...Ah, i com que al matí a Naoiri hi fa rasca, he portat cafè calent i panets al vapor al garatge... P-però només perquè me'n sobraven, eh?! 🌸"
+          "speaker": "naomi",
+          "text": "Escolteu-me bé: si sortiu a la primera tanda plegant com a l'agost, anireu per terra al segon revolt! Vigileu les pressions! ...Ah, i com que al matí a Naoiri hi fa rasca, he portat cafè calent i panets al vapor al garatge... P-però només perquè me'n sobraven, eh?!"
         }
       ]
     },
     "en": {
       "title": "[Kyushu Weekend Preview] Autopolis, SPA Naoiri & HSR Kyushu Race Schedule & Late-Autumn Track Guide",
       "subtitle": "Crisp mountain air means peak horsepower—and tricky morning tire temps! Our feline crew previews Kyushu's big weekend",
-      "summary": "Your complete guide to this weekend's action across Oita Prefecture (Autopolis & SPA Naoiri) and Kumamoto Prefecture (HSR Kyushu). Photographer Suzuka and garage chief Naoko share essential cold-track tire pressure and setup tips.",
+      "summary": "Your complete guide to this weekend's action across Oita Prefecture (Autopolis & SPA Naoiri) and Kumamoto Prefecture (HSR Kyushu). Photographer Suzuka and garage chief Naomi share essential cold-track tire pressure and setup tips.",
       "highlightPoint": "At 900m elevation in Autopolis and highland SPA Naoiri, 9:00 AM track temps drop to ~12°C—managing hot tire pressures and out-lap warmup is crucial!",
       "sections": [
         {
@@ -205,18 +205,15 @@
       "catDialogues": [
         {
           "speaker": "suzuka",
-          "mood": "excited",
           "text": "I'll be hopping between SPA Naoiri, Autopolis, and HSR Kyushu all weekend! Autumn light in Oita makes every knee-down photo look like a magazine cover 📷✨"
         },
         {
           "speaker": "marc",
-          "mood": "normal",
           "text": "Cool highland air at Autopolis is just like autumn testing in Catalonia—engines breathe crisp oxygen and top speeds climb, meow!"
         },
         {
-          "speaker": "naoko",
-          "mood": "maiden",
-          "text": "Listen up! If you flick the bike into Turn 1 on Lap 1 like it's mid-August, you'll highside into orbit! Check your hot pressures! ...Oh, and since Naoiri mornings are freezing, I brought hot canned coffee and steamed buns to the garage... I-I just bought too many by mistake, okay?! 🌸"
+          "speaker": "naomi",
+          "text": "Listen up! If you flick the bike into Turn 1 on Lap 1 like it's mid-August, you'll highside into orbit! Check your hot pressures! ...Oh, and since Naoiri mornings are freezing, I brought hot canned coffee and steamed buns to the garage... I-I just bought too many by mistake, okay?!"
         }
       ]
     }

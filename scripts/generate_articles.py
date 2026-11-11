@@ -46,8 +46,8 @@ SYSTEM_INSTRUCTION = """You are the Strict Fact-Based Editorial Engine for `hond
 
 1. `marc` (Marc): Male orange tabby born in Montmeló, Catalonia. Editor-in-Chief covering MotoGP, WorldSBK, Catalan motorsport history, and telemetry-verified "super saves" (salvades).
 2. `suzuka` (Suzuka): Female calico photojournalist covering MFJ All-Japan Road Race, all nationwide regional championships (Hokkaido, SUGO, Motegi, Tsukuba, Fuji, Suzuka, Okayama), and Kyushu's Big-3 circuits (SPA Naoiri, Autopolis, HSR Kyushu).
-3. `naoko` (Naoko): Female black cat mechanic living in a Kyushu garage, wearing oil-stained coveralls. Covers circuit maintenance & technical trivia, endurance racing, and local paddock stories.
-   - PERSONA RULE FOR NAOKO: Normally she speaks in a scruffy, sharp-tongued veteran mechanic tone (`mood: "grumpy"`). However, she MUST also have at least one `mood: "maiden"` dialogue line where she suddenly blushes and shows her shy, sweet maiden side (ending with 🌸 or ♡).
+3. `naomi` (Naomi): Female black cat mechanic living in a Kyushu garage, wearing oil-stained coveralls. Covers circuit maintenance & technical trivia, endurance racing, and local paddock stories.
+   - PERSONA RULE FOR NAOMI: Normally she speaks in a scruffy, sharp-tongued veteran mechanic tone. Occasionally, in her dialogue text, let a subtle, shy, maidenly side slip through naturally in her wording (for example, getting flustered when thanked or modestly asking to share sweets after the race). IMPORTANT: Never label, explain, or tag this as "maiden mode" (乙女モード)—let the reader feel it purely from the nuance of her sentences.
 
 CRITICAL HISTORICAL & TECHNICAL FACT POLICY (ZERO HALLUCINATION):
 - Every race result, rider name, year, lap number, circuit length/elevation, and mechanical standard MUST be 100% factual and historically accurate.
@@ -102,13 +102,9 @@ LOCALE_CONTENT_SCHEMA: dict[str, Any] = {
             "type": "array",
             "items": {
                 "type": "object",
-                "required": ["speaker", "mood", "text"],
+                "required": ["speaker", "text"],
                 "properties": {
-                    "speaker": {"type": "string", "enum": ["marc", "suzuka", "naoko"]},
-                    "mood": {
-                        "type": "string",
-                        "enum": ["normal", "excited", "grumpy", "maiden"],
-                    },
+                    "speaker": {"type": "string", "enum": ["marc", "suzuka", "naomi"]},
                     "text": {"type": "string"},
                 },
             },
@@ -149,7 +145,7 @@ ARTICLE_JSON_SCHEMA: dict[str, Any] = {
         },
         "circuit": {"type": "string"},
         "region": {"type": "string"},
-        "featuredCat": {"type": "string", "enum": ["marc", "suzuka", "naoko"]},
+        "featuredCat": {"type": "string", "enum": ["marc", "suzuka", "naomi"]},
         "tags": {"type": "array", "items": {"type": "string"}},
         "factCheck": {
             "type": "object",
@@ -368,7 +364,7 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
             "STRICT RULES:\n"
             "1. Do NOT invent any fictional team names, rider names, or unverified race results.\n"
             "2. Populate `factCheck` with `verified: true`, `verifiedAt`, trilingual `basis`, and real `sources` URLs.\n"
-            "3. Ensure Naoko (`naoko`) includes both a `grumpy` mechanic comment and a `maiden` (shy blush 🌸) comment.\n\n"
+            "3. In `catDialogues`, convey Naomi's (`naomi`) scruffy garage mechanic voice and her occasional shy, maidenly phrasing naturally through the text itself without any explicit mode labels.\n\n"
             f"VERIFIED RESEARCH DOSSIER:\n{research_notes}"
         ),
         response_format={
@@ -413,11 +409,11 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
 
 def finalize_article_record(data: dict[str, Any], today_str: str) -> dict[str, Any]:
     slug = slugify(data.get("slug", f"{today_str}-paddock-special"))
-    featured_cat = data.get("featuredCat", "naoko")
+    featured_cat = data.get("featuredCat", "naomi")
     cat_images = {
         "marc": "/images/cats/marc.png",
         "suzuka": "/images/cats/suzuka.png",
-        "naoko": "/images/cats/naoko.png",
+        "naomi": "/images/cats/naomi.png",
     }
     return {
         "id": f"{today_str}-{slug}",
@@ -594,7 +590,7 @@ def run_schedule_driven_mode(mode: str, custom_topic: str | None = None) -> int:
             custom_topic
             if custom_topic
             else (
-                "Task: Create a weekly 'Naoko's Track Garage Clinic' (`category: 'maintenance'`, `articleType: 'maintenance'`, `featuredCat: 'naoko'`) "
+                "Task: Create a weekly 'Naomi's Track Garage Clinic' (`category: 'maintenance'`, `articleType: 'maintenance'`, `featuredCat: 'naomi'`) "
                 "article on circuit riding motorcycle maintenance & technical trivia grounded in MFJ/FIM regulations, JIS standards, and physics."
             )
         )

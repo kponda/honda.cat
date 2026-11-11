@@ -1,8 +1,8 @@
 import type { Lang } from './i18n';
 
 export interface CatDialogue {
-  speaker: 'marc' | 'suzuka' | 'naoko';
-  mood: 'normal' | 'excited' | 'grumpy' | 'maiden';
+  speaker: 'marc' | 'suzuka' | 'naomi';
+  mood?: string;
   text: string;
 }
 
@@ -49,7 +49,7 @@ export interface ArticleData {
   articleType: 'preview' | 'digest' | 'spotlight' | 'maintenance';
   circuit: string;
   region: string;
-  featuredCat: 'marc' | 'suzuka' | 'naoko';
+  featuredCat: 'marc' | 'suzuka' | 'naomi';
   heroImage: string;
   tags: string[];
   factCheck?: FactCheckMeta;
