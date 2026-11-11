@@ -1,0 +1,322 @@
+---
+import schedulesData from '../data/schedules.json';
+import sourcesConfig from '../../scripts/sources_config.json';
+
+const events = schedulesData.events;
+const sources = sourcesConfig.sources;
+---
+
+<section id="schedule-board" class="schedule-section">
+  <div class="container">
+    <div class="schedule-header">
+      <div class="schedule-badges">
+        <span class="badge" style="background: rgba(42, 157, 143, 0.18); color: #4ecdc4; border: 1px solid rgba(42, 157, 143, 0.4);">
+          📡 AUTO-COLLECTED FROM OFFICIAL CALENDARS & SNS
+        </span>
+        <span class="badge" style="background: rgba(255, 255, 255, 0.06); color: var(--text-secondary);">
+          MotoGP · MFJ全日本＆全国地方選（北海道〜九州）· SPA直入 · AP · HSR · レン耐
+        </span>
+      </div>
+
+      <h2 class="schedule-title">
+        <span data-i18n="ja">🗓️ 公式レース開催スケジュール＆全国サーキット・SNS自動収集ボード</span>
+        <span data-i18n="ca">🗓️ Calendari Oficial de Curses i Monitorització de Circuits i Xarxes Socials</span>
+        <span data-i18n="en">🗓️ Official Race Calendar & Nationwide Circuit / SNS Auto-Monitor Board</span>
+      </h2>
+
+      <p class="schedule-subtitle">
+        <span data-i18n="ja">
+          MotoGP公式サイト、MFJ公式サイト（全日本ロードレースおよび北海道・東北SUGO・関東もてぎ/筑波/富士・鈴鹿・岡山国際・九州の全国地方選手権）、九州3大サーキット（SPA直入・オートポリス・HSR九州）、お題付き耐久・レン耐の公式カレンダーおよび公式SNSアカウントから自動収集しています。
+        </span>
+        <span data-i18n="ca">
+          Recollit automàticament dels webs oficials i xarxes socials de MotoGP, MFJ (Campionat del Japó i tots els campionats regionals de Hokkaido, SUGO, Motegi, Tsukuba, Fuji, Suzuka, Okayama i Kyushu), SPA Naoiri, Autopolis, HSR Kyushu i Rentai.
+        </span>
+        <span data-i18n="en">
+          Automatically aggregated from the official websites and official SNS accounts of MotoGP, MFJ (All-Japan Road Race & all regional championships across Hokkaido, SUGO, Motegi, Tsukuba, Fuji, Suzuka, Okayama, and Kyushu), SPA Naoiri, Autopolis, HSR Kyushu, and Rentai.
+        </span>
+      </p>
+    </div>
+
+    <div class="schedule-grid">
+      {events.map((ev) => (
+        <div class={`schedule-card cat-${ev.category}`}>
+          <div class="sched-top">
+            <span class="sched-series">{ev.series}</span>
+            <span class="sched-verified">✅ {ev.verifiedSource}</span>
+          </div>
+
+          <h3 class="sched-event">
+            <span data-i18n="ja">{ev.eventName.ja}</span>
+            <span data-i18n="ca">{ev.eventName.ca}</span>
+            <span data-i18n="en">{ev.eventName.en}</span>
+          </h3>
+
+          <div class="sched-meta-list">
+            <div class="sched-meta-row">
+              <strong>📍 </strong>
+              <span data-i18n="ja">{ev.circuit.ja}</span>
+              <span data-i18n="ca">{ev.circuit.ca}</span>
+              <span data-i18n="en">{ev.circuit.en}</span>
+            </div>
+            <div class="sched-meta-row">
+              <strong>🗓️ </strong>
+              <span data-i18n="ja">{ev.scheduleWindow.ja}</span>
+              <span data-i18n="ca">{ev.scheduleWindow.ca}</span>
+              <span data-i18n="en">{ev.scheduleWindow.en}</span>
+            </div>
+            <div class="sched-meta-row">
+              <strong>🏍️ Classes: </strong>
+              <span>{ev.classes}</span>
+            </div>
+          </div>
+
+          <div class="sched-links">
+            <a href={ev.officialWebUrl} target="_blank" rel="noopener noreferrer" class="source-pill web-pill">
+              🌐 <span data-i18n="ja">公式カレンダー</span><span data-i18n="ca">Calendari Oficial</span><span data-i18n="en">Official Calendar</span>
+            </a>
+            <a href={ev.circuitWebUrl} target="_blank" rel="noopener noreferrer" class="source-pill circuit-pill">
+              🏁 <span data-i18n="ja">サーキット/連盟公式</span><span data-i18n="ca">Web Circuit/MFJ</span><span data-i18n="en">Circuit/MFJ Web</span>
+            </a>
+            <a href={ev.snsUrl} target="_blank" rel="noopener noreferrer" class="source-pill sns-pill">
+              📱 {ev.snsHandle}
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <details class="crawler-registry-details">
+      <summary class="registry-summary">
+        <span data-i18n="ja">🔍 自動収集対象の公式サイト・全国サーキット・公式SNS一覧（全 {sources.length} 系統）を表示</span>
+        <span data-i18n="ca">🔍 Veure totes les fonts oficials i comptes de xarxes socials monitoritzats ({sources.length} sistemes)</span>
+        <span data-i18n="en">🔍 View All Monitored Official Websites, Nationwide Circuits & SNS Accounts ({sources.length} feeds)</span>
+      </summary>
+      <div class="registry-table-wrap">
+        <table class="registry-table">
+          <thead>
+            <tr>
+              <th>REGION / AREA</th>
+              <th>OFFICIAL ORGANIZATION / CIRCUIT</th>
+              <th>CALENDAR URLS</th>
+              <th>OFFICIAL SNS ACCOUNTS</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sources.map((src) => (
+              <tr>
+                <td class="reg-region racing-font">{src.region}</td>
+                <td>
+                  <span data-i18n="ja">{src.name.ja}</span>
+                  <span data-i18n="ca">{src.name.ca}</span>
+                  <span data-i18n="en">{src.name.en}</span>
+                </td>
+                <td>
+                  <div class="url-list">
+                    {src.calendarUrls.map((u) => (
+                      <a href={u} target="_blank" rel="noopener noreferrer" class="reg-link">{u}</a>
+                    ))}
+                  </div>
+                </td>
+                <td>
+                  <div class="sns-list">
+                    {src.sns.map((s) => (
+                      <a href={s.url} target="_blank" rel="noopener noreferrer" class="reg-sns-badge">
+                        {s.platform}: {s.handle}
+                      </a>
+                    ))}
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</section>
+
+<style>
+  .schedule-section {
+    padding: 3.5rem 0 2rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .schedule-header {
+    max-width: 900px;
+    margin-bottom: 2rem;
+  }
+
+  .schedule-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .schedule-title {
+    font-size: clamp(1.45rem, 2.8vw, 2rem);
+    font-weight: 900;
+    margin-bottom: 0.65rem;
+  }
+
+  .schedule-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .schedule-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 0.9rem;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .schedule-card.cat-world {
+    border-left-color: var(--accent-red);
+  }
+  .schedule-card.cat-all-japan {
+    border-left-color: var(--accent-teal);
+  }
+  .schedule-card.cat-kyushu {
+    border-left-color: var(--accent-gold);
+  }
+  .schedule-card.cat-endurance-fun {
+    border-left-color: var(--accent-naoko);
+  }
+
+  .sched-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 0.74rem;
+  }
+
+  .sched-series {
+    font-weight: 800;
+    color: var(--accent-gold);
+  }
+
+  .sched-verified {
+    color: #4ecdc4;
+    font-size: 0.7rem;
+  }
+
+  .sched-event {
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+  .sched-meta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-size: 0.83rem;
+    color: var(--text-secondary);
+  }
+
+  .sched-links {
+    margin-top: auto;
+    padding-top: 0.65rem;
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+
+  .source-pill {
+    font-size: 0.74rem;
+    font-weight: 700;
+    padding: 0.28rem 0.6rem;
+    border-radius: 0.4rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-subtle);
+    transition: all 0.15s ease;
+  }
+
+  .source-pill:hover {
+    background: rgba(255, 183, 3, 0.18);
+    border-color: var(--accent-gold);
+    color: #fff;
+  }
+
+  .crawler-registry-details {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.85rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .registry-summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--accent-gold);
+  }
+
+  .registry-table-wrap {
+    margin-top: 1rem;
+    overflow-x: auto;
+  }
+
+  .registry-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+
+  .registry-table th,
+  .registry-table td {
+    padding: 0.65rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-subtle);
+    vertical-align: top;
+  }
+
+  .registry-table th {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+  }
+
+  .reg-region {
+    color: var(--accent-gold);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .url-list,
+  .sns-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .reg-link {
+    color: #4ecdc4;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+
+  .reg-sns-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.15rem 0.45rem;
+    border-radius: 0.3rem;
+    color: var(--text-primary);
+    width: fit-content;
+  }
+</style>

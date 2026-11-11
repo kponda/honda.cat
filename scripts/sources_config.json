@@ -1,0 +1,238 @@
+{
+  "version": "2.0.0",
+  "description": "honda.cat Official Race Schedule & SNS Source Registry (World MotoGP/SBK + Nationwide MFJ All-Japan & Regional Championships + Kyushu Special + Grassroots Endurance)",
+  "sources": [
+    {
+      "id": "motogp-official",
+      "category": "world",
+      "region": "World / Catalunya",
+      "name": {
+        "ja": "FIM MotoGP 公式サイト＆公式SNS",
+        "ca": "Web Oficial i Xarxes de FIM MotoGP",
+        "en": "FIM MotoGP Official Website & Social"
+      },
+      "calendarUrls": [
+        "https://www.motogp.com/en/calendar",
+        "https://www.motogp.com/ja/calendar"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@MotoGP", "url": "https://x.com/MotoGP" },
+        { "platform": "Instagram", "handle": "@motogp", "url": "https://www.instagram.com/motogp/" }
+      ]
+    },
+    {
+      "id": "worldsbk-official",
+      "category": "world",
+      "region": "World / Catalunya",
+      "name": {
+        "ja": "FIM WorldSBK（スーパーバイク世界選手権）＆ EWC世界耐久公式",
+        "ca": "FIM WorldSBK i EWC Resistència Oficial",
+        "en": "FIM WorldSBK & EWC Official"
+      },
+      "calendarUrls": [
+        "https://www.worldsbk.com/en/calendar",
+        "https://www.fimewc.com/en/calendar"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@WorldSBK", "url": "https://x.com/WorldSBK" },
+        { "platform": "X", "handle": "@FIM_EWC", "url": "https://x.com/FIM_EWC" }
+      ]
+    },
+    {
+      "id": "circuit-catalunya",
+      "category": "world",
+      "region": "Catalunya",
+      "name": {
+        "ja": "バルセロナ＝カタルーニャ・サーキット（モンメロ）公式",
+        "ca": "Circuit de Barcelona-Catalunya (Montmeló) Oficial",
+        "en": "Circuit de Barcelona-Catalunya Official"
+      },
+      "calendarUrls": [
+        "https://www.circuitcat.com/ca/calendari/",
+        "https://www.circuitcat.com/en/calendar/"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@Circuitcat_cat", "url": "https://x.com/Circuitcat_cat" },
+        { "platform": "Instagram", "handle": "@circuitdebcncatalunya", "url": "https://www.instagram.com/circuitdebcncatalunya/" }
+      ]
+    },
+    {
+      "id": "mfj-all-japan-official",
+      "category": "all-japan",
+      "region": "Nationwide Japan (全国)",
+      "name": {
+        "ja": "MFJ（日本モーターサイクルスポーツ協会）＆ JRR全日本ロードレース公式（全国開催＋地方選統括）",
+        "ca": "MFJ (Federació Japonesa de Motociclisme) i JRR Campionat del Japó",
+        "en": "MFJ (Motorcycle Federation of Japan) & JRR All-Japan Road Race Official"
+      },
+      "calendarUrls": [
+        "https://www.mfj.or.jp/calendar/",
+        "https://www.mfj.or.jp/national/road-race/",
+        "https://www.superbike.jp/calendar/"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@jrr_official", "url": "https://x.com/jrr_official" },
+        { "platform": "YouTube", "handle": "motoバトルLIVE", "url": "https://www.youtube.com/@motobattlelive" }
+      ]
+    },
+    {
+      "id": "suzuka-circuit",
+      "category": "all-japan",
+      "region": "Chubu / Kinki (三重・鈴鹿)",
+      "name": {
+        "ja": "鈴鹿サーキット（鈴鹿サンデーロードレース・鈴鹿8耐・MFJ GP・ミニモト4耐）",
+        "ca": "Circuit de Suzuka (Suzuka Sunday Road Race, 8 Hores i MFJ GP)",
+        "en": "Suzuka Circuit (Suzuka Sunday Road Race, 8 Hours & MFJ GP)"
+      },
+      "calendarUrls": [
+        "https://www.suzukacircuit.jp/motorsports_s/",
+        "https://www.suzukacircuit.jp/sundayr/"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@suzuka_event", "url": "https://x.com/suzuka_event" },
+        { "platform": "Instagram", "handle": "@suzukacircuit_official", "url": "https://www.instagram.com/suzukacircuit_official/" }
+      ]
+    },
+    {
+      "id": "mobility-resort-motegi",
+      "category": "all-japan",
+      "region": "Kanto (栃木・もてぎ)",
+      "name": {
+        "ja": "モビリティリゾートもてぎ（もてぎロードレース選手権・もて耐7時間耐久・全日本戦）",
+        "ca": "Mobility Resort Motegi (Campionat Regional de Motegi i Motetai 7h)",
+        "en": "Mobility Resort Motegi (Motegi Road Race Championship & Motetai 7h)"
+      },
+      "calendarUrls": [
+        "https://www.mr-motegi.jp/motorsports_m/",
+        "https://www.mr-motegi.jp/mrr/"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@motegi_official", "url": "https://x.com/motegi_official" }
+      ]
+    },
+    {
+      "id": "tsukuba-circuit",
+      "category": "all-japan",
+      "region": "Kanto (茨城・筑波)",
+      "name": {
+        "ja": "筑波サーキット（筑波ロードレース選手権・テイスト・オブ・ツクバ・筑波TT）",
+        "ca": "Circuit de Tsukuba (Campionat de Tsukuba, Taste of Tsukuba i TT)",
+        "en": "Tsukuba Circuit (Tsukuba Road Race, Taste of Tsukuba & Tsukuba TT)"
+      },
+      "calendarUrls": [
+        "https://www.tsukuba-circuit.jp/race/withme/index.html",
+        "https://www.tsukuba-circuit.jp/calendar/index.html"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@tsukuba_circuit", "url": "https://x.com/tsukuba_circuit" }
+      ]
+    },
+    {
+      "id": "sportsland-sugo-and-tokachi",
+      "category": "all-japan",
+      "region": "Tohoku & Hokkaido (宮城・SUGO / 北海道・十勝)",
+      "name": {
+        "ja": "スポーツランドSUGO（SUGOロードレース選手権）＆ 十勝スピードウェイ（北海道ロードレース）",
+        "ca": "Sportsland SUGO (Tohoku) i Tokachi Speedway (Hokkaido)",
+        "en": "Sportsland SUGO (Tohoku Road Race) & Tokachi Speedway (Hokkaido)"
+      },
+      "calendarUrls": [
+        "https://www.sportsland-sugo.co.jp/race/",
+        "https://tokachi.msf.ne.jp/"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@sugo_official", "url": "https://x.com/sugo_official" }
+      ]
+    },
+    {
+      "id": "okayama-and-fuji",
+      "category": "all-japan",
+      "region": "Chugoku & Shizuoka (岡山国際 / 富士スピードウェイ)",
+      "name": {
+        "ja": "岡山国際サーキット（岡山ロードレース・モトレヴォ）＆ 富士スピードウェイ（ミニろく）",
+        "ca": "Okayama International Circuit i Fuji Speedway",
+        "en": "Okayama International Circuit (Okayama Road Race) & Fuji Speedway"
+      },
+      "calendarUrls": [
+        "https://www.okayama-international-circuit.jp/mirai/race/rr-index.html",
+        "https://www.fsw.tv/motorsports/"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@fswpress", "url": "https://x.com/fswpress" }
+      ]
+    },
+    {
+      "id": "spa-naoiri",
+      "category": "kyushu",
+      "region": "Kyushu (大分・竹田)",
+      "name": {
+        "ja": "SPA直入（九州ロードレースシリーズ・サンデーレース・お題付き耐久）公式＆SNS",
+        "ca": "Circuit SPA Naoiri (Takeda, Oita) Oficial",
+        "en": "SPA Naoiri Circuit (Takeda, Oita) Official"
+      },
+      "calendarUrls": [
+        "https://spa-naoiri.com/",
+        "https://spa-naoiri.com/schedule/"
+      ],
+      "sns": [
+        { "platform": "Facebook", "handle": "SPA直入公式", "url": "https://www.facebook.com/spanaoiri" },
+        { "platform": "Instagram", "handle": "#SPA直入", "url": "https://www.instagram.com/explore/tags/spa%E7%9B%B4%E5%85%A5/" }
+      ]
+    },
+    {
+      "id": "autopolis",
+      "category": "kyushu",
+      "region": "Kyushu (大分・日田)",
+      "name": {
+        "ja": "オートポリス (AUTOPOLIS：全日本九州戦・九州ロードレース ゴールドカップ・ミニろく)",
+        "ca": "Circuit Internacional Autopolis (Hita, Oita) Oficial",
+        "en": "Autopolis International Racing Course (Hita, Oita) Official"
+      },
+      "calendarUrls": [
+        "https://autopolis.jp/ap/event/",
+        "https://autopolis.jp/ap/schedule/"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@autopolis2005", "url": "https://x.com/autopolis2005" },
+        { "platform": "Instagram", "handle": "@autopolis_official", "url": "https://www.instagram.com/autopolis_official/" }
+      ]
+    },
+    {
+      "id": "hsr-kyushu",
+      "category": "kyushu",
+      "region": "Kyushu (熊本・大津)",
+      "name": {
+        "ja": "HSR九州（九州ロードレース選手権・鉄馬・ドリームカップ・ミニバイク8耐）公式＆SNS",
+        "ca": "HSR Kyushu (Kumamoto) i Festival «Tetsuma» Oficial",
+        "en": "HSR Kyushu (Kumamoto) & 'Tetsuma' Official"
+      },
+      "calendarUrls": [
+        "https://www.hsr.jp/race/",
+        "https://www.hsr.jp/schedule/",
+        "https://www.tetsuma.jp/"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@tetsuma_with_b", "url": "https://x.com/tetsuma_with_b" },
+        { "platform": "Instagram", "handle": "@hsr_kyushu", "url": "https://www.instagram.com/hsr_kyushu/" }
+      ]
+    },
+    {
+      "id": "rentai-odai-endurance",
+      "category": "endurance-fun",
+      "region": "Nationwide & Kyushu (全国・九州)",
+      "name": {
+        "ja": "レン耐（青木拓磨プロデュース全国シリーズ）＆ お題付き耐久草レース",
+        "ca": "Rentai i Curses de Resistència amb Reptes («Odai-tsuki»)",
+        "en": "Rentai Nationwide Series & 'Odai-Tsuki' Task-Challenge Endurance"
+      },
+      "calendarUrls": [
+        "https://rentai.jp/",
+        "https://spa-naoiri.com/schedule/"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@rentai_official", "url": "https://x.com/rentai_official" },
+        { "platform": "Facebook", "handle": "レン耐 Official", "url": "https://www.facebook.com/rentai.jp" }
+      ]
+    }
+  ]
+}

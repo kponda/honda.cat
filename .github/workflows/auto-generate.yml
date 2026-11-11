@@ -61,6 +61,11 @@ jobs:
             echo "mode=digest" >> $GITHUB_OUTPUT
           fi
 
+      - name: Auto-Collect Official Race Schedules (MotoGP, MFJ Nationwide, Circuits & SNS)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/collect_schedules.py
+
       - name: Run Gemini 3.8 Flash Grounded & Fact-Audited Article Generator
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -71,17 +76,19 @@ jobs:
             python3 scripts/generate_articles.py --mode "${{ steps.resolve_mode.outputs.mode }}"
           fi
 
-      - name: Audit All Articles Before Commit
-        run: python3 scripts/generate_articles.py --dry-run
+      - name: Audit All Articles & Schedules Before Commit
+        run: |
+          python3 scripts/collect_schedules.py --dry-run
+          python3 scripts/generate_articles.py --dry-run
 
-      - name: Commit & Push New Fact-Verified Trilingual Article
+      - name: Commit & Push New Fact-Verified Trilingual Article & Schedules
         run: |
           git config user.name "honda-cat-editorial-bot"
           git config user.email "bot@honda.cat"
-          git add src/data/articles/*.json
+          git add src/data/schedules.json src/data/articles/*.json
           if git diff --staged --quiet; then
-            echo "No new articles to commit."
+            echo "No new updates to commit."
           else
-            git commit -m "chore(articles): auto-publish fact-verified JA/CA/EN report (${{ steps.resolve_mode.outputs.mode }})"
+            git commit -m "chore(content): auto-update official schedules & publish fact-verified report (${{ steps.resolve_mode.outputs.mode }})"
             git push
           fi

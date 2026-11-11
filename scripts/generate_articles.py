@@ -28,6 +28,8 @@ from pathlib import Path
 from typing import Any
 
 ARTICLES_DIR = Path(__file__).resolve().parent.parent / "src" / "data" / "articles"
+SCHEDULES_JSON_PATH = Path(__file__).resolve().parent.parent / "src" / "data" / "schedules.json"
+SOURCES_CONFIG_PATH = Path(__file__).resolve().parent / "sources_config.json"
 
 SYSTEM_INSTRUCTION = """You are the Strict Fact-Based Editorial Engine for `honda.cat`, an independent trilingual (Japanese `ja`, Catalan `ca`, English `en`) motorcycle racing & circuit maintenance portal run by three bipedal "Nameneko-style" (non-delinquent, authentic motorsport professional) cats:
 
@@ -215,13 +217,16 @@ AUDIT_JSON_SCHEMA: dict[str, Any] = {
 
 MODE_PROMPTS: dict[str, str] = {
     "preview": (
-        "Search for upcoming motorcycle races this week across MotoGP, WorldSBK, MFJ All-Japan Road Race, "
-        "and Kyushu circuits (Autopolis in Hita Oita, SPA Naoiri in Takeda Oita, HSR Kyushu in Kumamoto). "
+        "Search for upcoming motorcycle races this week across MotoGP, WorldSBK, MFJ All-Japan Road Race (JRR), "
+        "ALL nationwide MFJ Regional Road Race Championships (Suzuka Sunday Road Race, Motegi Road Race & Motetai, "
+        "Tsukuba Road Race & Taste of Tsukuba, Sportsland SUGO, Okayama International, Fuji Speedway, Tokachi Speedway), "
+        "AND Kyushu circuits (Autopolis in Hita Oita, SPA Naoiri in Takeda Oita, HSR Kyushu in Kumamoto). "
         "Create a strictly factual Weekly Race Preview highlighting verified schedules, circuit specs, and rider storylines."
     ),
     "digest": (
         "Search for the latest verified race results and historical highlights from MotoGP, WorldSBK, "
-        "All-Japan Road Race, and regional Japanese circuits. Include only 100% factual results and official records."
+        "MFJ All-Japan Road Race, and nationwide MFJ regional championships (Suzuka, Motegi, Tsukuba, SUGO, Okayama, "
+        "Fuji, Tokachi, Autopolis, SPA Naoiri, HSR Kyushu). Include only 100% factual results and official records."
     ),
     "kyushu": (
         "Search for verified motorcycle events and track facts at SPA Naoiri (SPA直入, 1,430m, Takeda Oita), "
@@ -260,6 +265,13 @@ def generate_with_gemini(mode: str, custom_topic: str | None = None) -> dict[str
     base_task = custom_topic if custom_topic else MODE_PROMPTS.get(mode, MODE_PROMPTS["kyushu"])
 
     print(f"[1/3] Scouting verified historical & technical facts with Gemini 3.8 Flash + Google Search (mode={mode})...")
+    schedules_context = ""
+    if SCHEDULES_JSON_PATH.exists():
+        schedules_context = SCHEDULES_JSON_PATH.read_text(encoding="utf-8")
+    sources_context = ""
+    if SOURCES_CONFIG_PATH.exists():
+        sources_context = SOURCES_CONFIG_PATH.read_text(encoding="utf-8")
+
     research_interaction = client.interactions.create(
         model="gemini-3.8-flash",
         system_instruction=SYSTEM_INSTRUCTION,
@@ -267,7 +279,11 @@ def generate_with_gemini(mode: str, custom_topic: str | None = None) -> dict[str
             f"Today's date is {today_str}.\n"
             f"Task: {base_task}\n"
             "Gather ONLY verifiable facts, exact historical dates, real rider/team names, official circuit specs, "
-            "or official engineering standards (MFJ, FIM, JIS). List exact source URLs."
+            "or official engineering standards (MFJ, FIM, JIS). Prioritize the registered official websites "
+            "(motogp.com, mfj.or.jp, superbike.jp, spa-naoiri.com, autopolis.jp, hsr.jp, tetsuma.jp, rentai.jp) "
+            "and their official SNS accounts below.\n\n"
+            f"OFFICIAL SOURCE REGISTRY:\n{sources_context}\n\n"
+            f"COLLECTED OFFICIAL SCHEDULE SNAPSHOT:\n{schedules_context}"
         ),
         tools=[{"type": "google_search"}],
     )

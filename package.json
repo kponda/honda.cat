@@ -8,6 +8,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "collect:schedules": "python3 scripts/collect_schedules.py",
     "generate:article": "python3 scripts/generate_articles.py",
     "generate:maintenance": "python3 scripts/generate_articles.py --mode maintenance",
     "generate:preview": "python3 scripts/generate_articles.py --mode preview",
