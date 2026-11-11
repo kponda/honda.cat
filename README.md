@@ -36,7 +36,7 @@ python3 scripts/generate_articles.py --dry-run
 
 # Gemini API キーを設定して新規3言語記事を全自動生成
 export GEMINI_API_KEY="your-api-key"
-python3 scripts/generate_articles.py --mode kyushu --topic "SPA直入のお題付き耐久草レースとオートポリス週末情報"
+python3 scripts/generate_articles.py --mode custom --topic "ソニックパーク安心院・中九州カートウェイのお題付耐久草レースとレン耐の公式ガイド"
 ```
 
 ---

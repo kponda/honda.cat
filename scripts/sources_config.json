@@ -265,6 +265,45 @@
         { "platform": "X", "handle": "@tetsuma_with_b", "url": "https://x.com/tetsuma_with_b" },
         { "platform": "Instagram", "handle": "@hsr_kyushu", "url": "https://www.instagram.com/hsr_kyushu/" }
       ]
+    },
+    {
+      "id": "brows-odai-endurance",
+      "scope": "japan",
+      "category": "endurance-fun",
+      "region": "Kyushu (大分・宇佐 ソニックパーク安心院 / 熊本・山鹿 中九州カートウェイ)",
+      "name": {
+        "ja": "ライダーズファンショップ ブラウズ（BROW'S）主催「お題付耐久『草』レース」（ソニックパーク安心院・中九州カートウェイ）",
+        "ca": "Rider's Fan Shop BROW'S «Odai-tsuki Endurance» (Sonic Park Ajimu i Nakakyushu Kartway)",
+        "en": "Rider's Fan Shop BROW'S 'Odai-tsuki Endurance Grassroots Race' (Sonic Park Ajimu & Nakakyushu Kartway)"
+      },
+      "calendarUrls": [
+        "https://brow-s.jp/",
+        "https://brow-s.jp/event2026/2026odai_r1SPajimu.html",
+        "https://brow-s.jp/event2026/2026odai_r2nkw.html"
+      ],
+      "resultUrls": [
+        "https://brow-s.jp/"
+      ],
+      "sns": []
+    },
+    {
+      "id": "takuma-gp-rentai",
+      "scope": "japan",
+      "category": "endurance-fun",
+      "region": "Nationwide Japan (東日本・中日本・西日本シリーズ 全36戦)",
+      "name": {
+        "ja": "Let's レン耐！（PRODUCED BY 青木 拓磨）全国シリーズ公式",
+        "ca": "Let's Rentai! (Produït per Takuma Aoki) Sèrie Nacional Oficial",
+        "en": "Let's Rentai! (Produced by Takuma Aoki) Official Nationwide Series"
+      },
+      "calendarUrls": [
+        "http://rentai.takuma-gp.com/",
+        "http://rentai.takuma-gp.com/about.html"
+      ],
+      "resultUrls": [
+        "http://rentai.takuma-gp.com/"
+      ],
+      "sns": []
     }
   ]
 }

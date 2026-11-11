@@ -206,6 +206,40 @@
         "resultStatus": "pending",
         "lastCheckedAt": "2026-11-11T09:50:00+09:00"
       }
+    },
+    {
+      "id": "kyushu-brows-odai-endurance-and-rentai",
+      "scope": "japan",
+      "category": "endurance-fun",
+      "series": "ブラウズ主催「お題付耐久『草』レース」＆ 青木拓磨プロデュース「Let's レン耐！」",
+      "startDate": "2026-04-01",
+      "endDate": "2026-11-29",
+      "circuit": {
+        "ja": "ソニックパーク安心院（大分・宇佐）／ 中九州カートウェイ（熊本・山鹿）／ レン耐全国開催コース",
+        "ca": "Sonic Park Ajimu (Usa, Oita), Nakakyushu Kartway (Yamaga, Kumamoto) i Circuits Rentai",
+        "en": "Sonic Park Ajimu (Usa, Oita), Nakakyushu Kartway (Yamaga, Kumamoto) & Nationwide Rentai Tracks"
+      },
+      "eventName": {
+        "ja": "お題付耐久「草」レース（ソニックパーク安心院・中九州カートウェイ）＆ Let's レン耐！（全国36戦）",
+        "ca": "Cursa «Odai-tsuki Endurance» (Sonic Park Ajimu / Nakakyushu Kartway) i «Let's Rentai!»",
+        "en": "BROW'S 'Odai-tsuki Endurance Grassroots Race' (Sonic Park Ajimu / Nakakyushu Kartway) & 'Let's Rentai!'"
+      },
+      "scheduleWindow": {
+        "ja": "ブラウズ公式 (brow-s.jp) および レン耐公式 (rentai.takuma-gp.com) 年間スケジュール同期",
+        "ca": "Sincronitzat dels webs oficials de BROW'S (brow-s.jp) i Let's Rentai! (rentai.takuma-gp.com)",
+        "en": "Synced from BROW'S Official (brow-s.jp) & Let's Rentai! Official (rentai.takuma-gp.com)"
+      },
+      "classes": "90分耐久（初級A・かめさん / 中級B・うさぎさん / 上級C・らいおんさん）・10周スプリント / レン耐レンタルクラス",
+      "officialWebUrl": "https://brow-s.jp/",
+      "circuitWebUrl": "http://rentai.takuma-gp.com/",
+      "snsHandle": "BROW'S公式 (brow-s.jp) / レン耐公式 (takuma-gp.com)",
+      "snsUrl": "https://brow-s.jp/",
+      "verifiedSource": "ライダーズファンショップ ブラウズ公式 (brow-s.jp) ＆ Let's レン耐！公式 (rentai.takuma-gp.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "lastCheckedAt": "2026-11-11T11:55:00+09:00"
+      }
     }
   ]
 }

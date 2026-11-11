@@ -1,0 +1,265 @@
+{
+  "id": "2026-11-10-kyushu-odai-endurance-and-rentai-guide",
+  "slug": "odai-endurance-brows-and-rentai-official-guide",
+  "publishedAt": "2026-11-10",
+  "category": "endurance-fun",
+  "articleType": "spotlight",
+  "circuit": "ソニックパーク安心院 / 中九州カートウェイ / 全国レン耐開催サーキット",
+  "region": "Kyushu (Oita / Kumamoto) & Nationwide",
+  "featuredCat": "naomi",
+  "heroImage": "/images/cats/naomi.png",
+  "tags": [
+    "お題付耐久草レース",
+    "ソニックパーク安心院",
+    "中九州カートウェイ",
+    "レン耐",
+    "耐久レース"
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "ライダーズファンショップ ブラウズ公式（https://brow-s.jp/）の「お題付耐久『草』レース」開催要項（会場：大分県宇佐市・ソニックパーク安心院／熊本県山鹿市・中九州カートウェイ、飲酒運転撲滅チャリティーイベント、90分耐久3クラス制・10周スプリント、申込順グリッド、クラス別規定タイム）、および青木拓磨プロデュース「Let's レン耐！」公式（http://rentai.takuma-gp.com/）の公式規約（22年目・2026年全国36戦、レンタル車両制、ル・マン式スタート、ピットイン数回ごとのお題、ダブルペリア方式ハンデ、女性ライダーのピンクビブス保護規定、転倒時5,000円支払い）に基づき厳密に検証済み。無関係なサーキット情報の混入を排除しています。",
+      "ca": "Verificat estrictament segons la web oficial de Rider's Fan Shop BROW'S (https://brow-s.jp/) per a la cursa «Odai-tsuki Endurance» (celebrada a Sonic Park Ajimu a Usa, Oita, i Nakakyushu Kartway a Yamaga, Kumamoto) i la web oficial de «Let's Rentai!» produïda per Takuma Aoki (http://rentai.takuma-gp.com/).",
+      "en": "Strictly verified against Rider's Fan Shop BROW'S official website (https://brow-s.jp/) for the 'Odai-tsuki Endurance Grassroots Race' (held at Sonic Park Ajimu in Usa, Oita, and Nakakyushu Kartway in Yamaga, Kumamoto) and Takuma Aoki's 'Let's Rentai!' official website (http://rentai.takuma-gp.com/)."
+    },
+    "sources": [
+      {
+        "title": "ライダーズファンショップ ブラウズ（BROW'S）お題付耐久「草」レース 公式ページ",
+        "url": "https://brow-s.jp/"
+      },
+      {
+        "title": "お題付耐久「草」レース R1 in ソニックパーク安心院 公式要項",
+        "url": "https://brow-s.jp/event2026/2026odai_r1SPajimu.html"
+      },
+      {
+        "title": "お題付耐久「草」レース R2 in 中九州カートウェイ 公式要項",
+        "url": "https://brow-s.jp/event2026/2026odai_r2nkw.html"
+      },
+      {
+        "title": "Let's レン耐！（PRODUCED BY 青木 拓磨）公式サイト",
+        "url": "http://rentai.takuma-gp.com/"
+      },
+      {
+        "title": "レン耐とは？ 1日の流れ＆公式ルール解説",
+        "url": "http://rentai.takuma-gp.com/about.html"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026 Season Official Guide",
+    "venue": {
+      "ja": "ソニックパーク安心院（大分・宇佐）・中九州カートウェイ（熊本・山鹿） ／ レン耐全国開催コース",
+      "ca": "Sonic Park Ajimu (Usa, Oita), Nakakyushu Kartway (Yamaga, Kumamoto) i Circuits Rentai",
+      "en": "Sonic Park Ajimu (Usa, Oita), Nakakyushu Kartway (Yamaga, Kumamoto) & Nationwide Rentai Tracks"
+    },
+    "weather": {
+      "ja": "公式規則・開催サーキット完全準拠ガイド",
+      "ca": "Guia Oficial Verificada d'Esdeveniments i Reglaments",
+      "en": "Verified Official Event & Regulation Guide"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【九州・安心院＆中九州／全国】「お題付耐久『草』レース」と「レン耐」の公式ルール＆開催サーキット完全ガイド",
+      "subtitle": "ソニックパーク安心院・中九州カートウェイで開催のブラウズ主催「お題付耐久」と、青木拓磨プロデュース「Let's レン耐！」の魅力をナオミが徹底解説",
+      "summary": "福岡県大野城市の「ライダーズファンショップ ブラウズ（BROW'S）」がソニックパーク安心院（大分県宇佐市）や中九州カートウェイ（熊本県山鹿市）で開催する飲酒運転撲滅チャリティーイベント『お題付耐久「草」レース』と、青木拓磨氏がプロデュースし22年目を迎える『Let's レン耐！』の公式競技システムを公式サイトに基づき正確に解説します。",
+      "highlightPoint": "お題付耐久「草」レースはクラス別の基準タイム（安心院：初級1分20秒・中級1分5秒／中九州：かめさん48秒・うさぎさん46秒）と申込順グリッドが特徴！レン耐はレース中盤でハンデが決まる「ダブルペリア」と数回ごとのピットお題が勝負の鍵！",
+      "sections": [
+        {
+          "heading": "ブラウズ主催『お題付耐久「草」レース』：ソニックパーク安心院＆中九州カートウェイで熱戦！",
+          "body": "福岡県大野城市の「ライダーズファンショップ ブラウズ（BROW'S）」が主催する『お題付耐久「草」レース』は、飲酒運転撲滅を掲げるチャリティーイベントとして九州のライダーに親しまれています。2026年シリーズは大分県宇佐市安心院町の「ソニックパーク安心院」や熊本県山鹿市の「中九州カートウェイ」を舞台に開催されています。\n\n最大の特徴は、レベルに合わせて安全に楽しめる「90分耐久の3クラス分け」と独自のグリッド方式です。耐久のスタートグリッドは予選タイム順ではなく「参加申込完了順（申込用紙と入金の確認順）」で決定！一方、10周で争われるスプリント（Sクラス）は「一発タイムアタック」でグリッドが決まります。\n\nソニックパーク安心院大会では、初級（Aクラス：お笑い枠・ハンデ・追い越し制限あり、規定タイム1分20秒／雨天1分23秒、長袖長ズボン・ライディングウェア可）、中級（Bクラス：規定タイム1分5秒／雨天1分10秒、革ツナギ必須）、上級（Cクラス：タイム制限なし「100%で走って100%で遊ぼう！」）の3クラスを設定。中九州カートウェイ大会では「かめさん（初級：規定48秒／雨天51秒）」「うさぎさん（中級：規定46秒／雨天49秒）」「らいおんさん（上級：制限なし）」「チーターさん（スプリント10周）」の愛称でクラス分けされ、24歳以下の学生を含むチームには「学生チーム割引（6,000円）」も用意されています。"
+        },
+        {
+          "heading": "青木拓磨プロデュース『Let's レン耐！』：22年目・全国36戦開催のミニバイク超入門耐久",
+          "body": "元WGPライダーの青木拓磨氏がプロデュースする『Let's レン耐！（レンタルバイク耐久）』は、2026年で22年目を迎え、東日本・中日本・西日本の3地区シリーズで特別戦を含む全36戦が開催されている「ミニバイク超入門レース」です。参加者の約3割が初心者で、マシンはすべて主催者が用意するイコールコンディションのレンタル車両を使用します。\n\n決勝は伝統の「ル・マン式スタート」で幕を開け、ピットイン数回ごとにチーム全員で協力してクリアする「お題」が出題されます。さらに最大のポイントが、レース中盤（半分経過時点）でハンデが決定する独自システム「ダブルペリア」です。速いチームだけでなく後方を走るチームにも大逆転のチャンスが生まれるため、チェッカーまで順位が分からないスリリングな展開が楽しめます。"
+        },
+        {
+          "heading": "安全第一とマナーを守る鉄則：車両規定・ピンクビブス・転倒ペナルティ",
+          "body": "どちらの大会も「安全に笑顔で完走すること」を最優先としています。『お題付耐久「草」レース』では飲酒運転撲滅チャリティーとして会場内での飲酒が一切禁止（発見次第即退場）されており、車両規定としてタイヤ溝の確認やキャッチタンク・アンダートレーの装着徹底が求められます。\n\nまた『レン耐』では、女性ライダーが目印として「ピンクビブス」を着用し、レディーファースト厳守・接触等で転ばせた場合は「即失格」となる厳格な安全保護ルールを採用。さらに万が一転倒した場合は、安全意識向上のためピットに戻ってその場で5,000円を支払うルールが定められています。"
+        }
+      ],
+      "resultTableTitle": "公式サイト準拠：『お題付耐久「草」レース』＆『Let's レン耐！』公式システム比較表",
+      "results": [
+        {
+          "pos": "お題付耐久 R1",
+          "riderOrTeam": "ソニックパーク安心院（大分県宇佐市）",
+          "machine": "主催：ブラウズ (brow-s.jp)",
+          "timeOrNote": "90分耐久3クラス（初級1分20秒/中級1分5秒/上級制限なし）＋10周スプリント"
+        },
+        {
+          "pos": "お題付耐久 R2",
+          "riderOrTeam": "中九州カートウェイ（熊本県山鹿市）",
+          "machine": "主催：ブラウズ (brow-s.jp)",
+          "timeOrNote": "かめさん(48秒) / うさぎさん(46秒) / らいおんさん(無制限) / チーターさん"
+        },
+        {
+          "pos": "お題付耐久 方式",
+          "riderOrTeam": "申込順グリッド ＆ 学生割引制度",
+          "machine": "飲酒運転撲滅チャリティー",
+          "timeOrNote": "耐久グリッドは申込完了順！スプリントは一発タイムアタック（学生チーム6,000円）"
+        },
+        {
+          "pos": "Let's レン耐！",
+          "riderOrTeam": "全国36戦（東・中・西日本シリーズ）",
+          "machine": "青木拓磨プロデュース (takuma-gp.com)",
+          "timeOrNote": "主催者用意レンタル車両・ル・マン式スタート・数回ごとのお題・ダブルペリア方式"
+        },
+        {
+          "pos": "レン耐 安全規定",
+          "riderOrTeam": "ピンクビブス保護 ＆ 転倒5,000円規定",
+          "machine": "参加者約3割が初心者",
+          "timeOrNote": "女性ライダーを転ばせたら即失格／転倒時はピット帰還＋その場で5,000円支払い"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "いいかい、ブラウズさんの『お題付耐久「草」レース』はソニックパーク安心院や中九州カートウェイで開催されてるチャリティーレースよ！耐久のグリッドは申込完了順だから、エントリー開始日に書類と入金を済ませるのが最初の戦略ね。それとキャッチタンクとアンダートレーを忘れたら車検で突き返すからね！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "ソニックパーク安心院の初級Aクラス（規定1分20秒）や中九州カートウェイの「かめさんクラス（規定48秒）」は長袖長ズボンのライディングウェアでも参加できて、学生チームは6,000円という優しい設定なんですよね！レン耐の「ダブルペリア」とお題ピットインも毎回笑顔がいっぱいで大好きです📸"
+        },
+        {
+          "speaker": "naomi",
+          "text": "レン耐で女性ライダーのピンクビブスに無理な仕掛けなんかしたら即失格だし、転倒したらピットで5,000円支払いだから、熱くなりすぎずスマートに走ってきなさいよ。…あ、あんたたちが安心院や中九州でピットのお題に引っかからないように、ストップウォッチとサインボードは私が持っててあげるわよ。べ、別に暇だっただけだからね…"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Guia Oficial] Curses de resistència amb reptes «Odai-tsuki» (Sonic Park Ajimu i Nakakyushu) i «Let's Rentai!»",
+      "subtitle": "La mecànica Naomi explica el reglament oficial de les proves de BROW'S a Oita i Kumamoto i el campionat nacional Rentai de Takuma Aoki",
+      "summary": "Analitzem a partir de les fonts oficials el funcionament de la cursa benèfica «Odai-tsuki Endurance» organitzada per Rider's Fan Shop BROW'S als circuits de Sonic Park Ajimu (Usa, Oita) i Nakakyushu Kartway (Yamaga, Kumamoto), així com les 36 proves nacionals de «Let's Rentai!» produïdes per Takuma Aoki.",
+      "highlightPoint": "A l'Odai-tsuki Endurance la graella es decideix per ordre d'inscripció i hi ha temps mínims per volta segons el nivell; a Rentai, el sistema d'handicap «Double Peria» a mitja cursa i els reptes a box ho poden canviar tot!",
+      "sections": [
+        {
+          "heading": "«Odai-tsuki Endurance» de BROW'S: emoció a Sonic Park Ajimu (Oita) i Nakakyushu Kartway (Kumamoto)",
+          "body": "Organitzada per la botiga Rider's Fan Shop BROW'S (Onojo, Fukuoka), la cursa «Odai-tsuki Endurance» és un esdeveniment benèfic contra la conducció sota els efectes de l'alcohol que se celebra a Sonic Park Ajimu (Usa, prefectura d'Oita) i a Nakakyushu Kartway (Yamaga, prefectura de Kumamoto).\n\nLes curses de resistència de 90 minuts es divideixen en tres nivells amb temps mínims per volta per garantir la seguretat: a Sonic Park Ajimu, Classe A Iniciació (límit d'1 min 20 s en sec), Classe B Intermèdia (1 min 05 s) i Classe C Avançada (sense límit de temps), a més d'una cursa Sprint de 10 voltes. A Nakakyushu Kartway, les classes reben els noms de «Tortuga» (iniciació, límit 48 s), «Conill» (intermèdia, 46 s), «Lleó» (avançada, sense límit) i «Guepard» (Sprint 10 voltes). La graella de sortida de resistència s'assigna per ordre d'inscripció completada, i els equips d'estudiants (fins a 24 anys) gaudeixen d'una tarifa reduïda de 6.000 iens."
+        },
+        {
+          "heading": "«Let's Rentai!» (Takuma Aoki): 22 anys i 36 curses a tot el Japó amb motos de lloguer",
+          "body": "Produït per l'expilot del Mundial Takuma Aoki, el campionat «Let's Rentai!» celebra el seu 22è aniversari el 2026 amb 36 proves repartides en les sèries de l'Est, Centre i Oest del Japó. Totes les minimotos les proporciona l'organització en igualtat de condicions i prop del 30% dels participants són debutants.\n\nLa cursa comença amb una sortida clàssica tipus Le Mans, inclou proves («Odai») cada cert nombre d'aturades a box i aplica el sistema d'handicap «Double Peria», que es calcula a la meitat de la prova perquè els equips de darrere també tinguin opcions de victòria."
+        },
+        {
+          "heading": "Seguretat i cavallerositat a pista: pitralls roses, verificacions i penalitzacions per caiguda",
+          "body": "A les proves de BROW'S és obligatori l'ús de safata inferior (under-tray) i dipòsit recuperador de líquids, i està totalment prohibit l'alcohol a tot el recinte. A «Rentai», les dones pilot porten un pitrall rosa («Pink Bib») amb una norma estricta: provocar la caiguda d'una pilot suposa la desqualificació immediata. A més, qualsevol caiguda obliga a passar pel box i abonar 5.000 iens al moment per fomentar una conducció segura."
+        }
+      ],
+      "resultTableTitle": "Comparativa Oficial: «Odai-tsuki Endurance» (BROW'S) i «Let's Rentai!» (Takuma-GP)",
+      "results": [
+        {
+          "pos": "Odai-tsuki R1",
+          "riderOrTeam": "Sonic Park Ajimu (Usa, Oita)",
+          "machine": "Organitza: BROW'S (brow-s.jp)",
+          "timeOrNote": "Resistència 90 min (A: 1'20\" / B: 1'05\" / C: Lliure) + Sprint 10 voltes"
+        },
+        {
+          "pos": "Odai-tsuki R2",
+          "riderOrTeam": "Nakakyushu Kartway (Yamaga, Kumamoto)",
+          "machine": "Organitza: BROW'S (brow-s.jp)",
+          "timeOrNote": "Classes Tortuga (48s), Conill (46s), Lleó (Lliure) i Guepard (Sprint)"
+        },
+        {
+          "pos": "Format BROW'S",
+          "riderOrTeam": "Graella per ordre d'inscripció i Descompte Estudiant",
+          "machine": "Esdeveniment benèfic",
+          "timeOrNote": "Graella de resistència per ordre de pagament; descompte estudiants (6.000 JPY)"
+        },
+        {
+          "pos": "Let's Rentai!",
+          "riderOrTeam": "36 rondes nacionals (Est / Centre / Oest)",
+          "machine": "Takuma Aoki (rentai.takuma-gp.com)",
+          "timeOrNote": "Motos de lloguer igualades, sortida Le Mans, reptes a box i Double Peria"
+        },
+        {
+          "pos": "Seguretat Rentai",
+          "riderOrTeam": "Pitrall Rosa i Regla dels 5.000 JPY",
+          "machine": "30% de debutants",
+          "timeOrNote": "Desqualificació si es fa caure una pilot amb pitrall rosa / 5.000 JPY per caiguda"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "Escolteu bé! La cursa «Odai-tsuki» de BROW'S es corre a Sonic Park Ajimu (Oita) i a Nakakyushu Kartway (Kumamoto)! Com que la graella de resistència va per ordre d'inscripció, no deixeu la paperassa per a l'últim dia. I no oblideu la safata inferior de la moto!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "M'encanta que a Sonic Park Ajimu i Nakakyushu Kartway hi hagi un descompte especial de 6.000 iens per als equips d'estudiants, i que el 30% dels pilots de Rentai siguin debutants! 📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "I a Rentai, màxim respecte pels pitralls roses i zero caigudes si no voleu pagar 5.000 iens al box! ...Va, ja us portaré jo el cronòmetre i la pissarra a Ajimu perquè no us desqualifiquin per passar-vos del temps mínim... P-però només perquè em ve de pas, eh?!"
+        }
+      ]
+    },
+    "en": {
+      "title": "[Official Guide] BROW'S 'Odai-tsuki Endurance' (Sonic Park Ajimu & Nakakyushu Kartway) & Takuma Aoki's 'Let's Rentai!'",
+      "subtitle": "Garage chief Naomi breaks down the official rules and venues of Kyushu's charity challenge endurance and Japan's 36-round rental mini-bike series",
+      "summary": "Based strictly on official organizer documentation from Rider's Fan Shop BROW'S (https://brow-s.jp/) and Takuma-GP (http://rentai.takuma-gp.com/), here is the complete guide to the 'Odai-tsuki Endurance Grassroots Race' held at Sonic Park Ajimu (Usa, Oita) and Nakakyushu Kartway (Yamaga, Kumamoto), alongside the nationwide 'Let's Rentai!' series.",
+      "highlightPoint": "BROW'S Odai-tsuki Endurance features entry-order grids and class breakout lap times at Sonic Park Ajimu & Nakakyushu Kartway, while Rentai uses the mid-race 'Double Peria' handicap and pit-stop challenges!",
+      "sections": [
+        {
+          "heading": "BROW'S 'Odai-tsuki Endurance Grassroots Race': Action at Sonic Park Ajimu & Nakakyushu Kartway",
+          "body": "Organized by Rider's Fan Shop BROW'S in Onojo, Fukuoka, the 'Odai-tsuki Endurance Grassroots Race' is a charity event against drunk driving held in Kyushu at Sonic Park Ajimu (Usa City, Oita Prefecture) and Nakakyushu Kartway (Yamaga City, Kumamoto Prefecture).\n\nThe event features 90-minute endurance races split into three skill classes plus a 10-lap Sprint (Class S). Uniquely, endurance starting grids are determined by the order of completed registration and payment, while sprint grids are decided by a single-lap time attack!\n\nAt Sonic Park Ajimu, the 90-minute classes are Class A Beginner (lap time floor of 1:20 dry / 1:23 wet, overtaking restrictions, riding jacket/pants allowed), Class B Intermediate (1:05 dry / 1:10 wet floor, leather suit required), and Class C Advanced (no lap time limit). At Nakakyushu Kartway, the classes are affectionately named 'Kame-san' (Beginner, 48s dry / 51s wet floor), 'Usagi-san' (Intermediate, 46s dry / 49s wet floor), 'Lion-san' (Advanced, unlimited), and 'Cheetah-san' (10-lap Sprint). Student teams (including at least one student aged 24 or under) receive a discounted entry fee of 6,000 JPY."
+        },
+        {
+          "heading": "Takuma Aoki's 'Let's Rentai!': 22nd Year & 36 Rounds Nationwide",
+          "body": "Produced by former World GP rider Takuma Aoki, 'Let's Rentai!' ('Rent' + 'Endurance') celebrates its 22nd year in 2026 with 36 rounds across East, Central, and West Japan. All machines are organizer-supplied rental mini-bikes prepared to equal conditions, and roughly 30% of participants are first-time racers.\n\nEach race begins with a traditional Le Mans-style start, requires teams to complete cooperative 'Odai' (challenges) every few pit stops, and uses the signature 'Double Peria' handicap system—calculated at the halfway mark of the race so teams running further back still have a shot at victory."
+        },
+        {
+          "heading": "Safety & Paddock Rules: Tech Inspection, Pink Bibs & Crash Fees",
+          "body": "Both series put safety first. BROW'S enforces strict zero-alcohol venue rules and requires catch tanks and under-trays for tech inspection. In 'Let's Rentai!', female riders wear 'Pink Bibs' under a strict Ladies First rule—causing a pink-bib rider to crash results in immediate disqualification. Additionally, any rider who crashes in Rentai must return to the pits and pay 5,000 JPY on the spot to promote safe riding."
+        }
+      ],
+      "resultTableTitle": "Official System Comparison: BROW'S Odai-tsuki Endurance vs. Let's Rentai!",
+      "results": [
+        {
+          "pos": "Odai-tsuki R1",
+          "riderOrTeam": "Sonic Park Ajimu (Usa, Oita)",
+          "machine": "Organizer: BROW'S (brow-s.jp)",
+          "timeOrNote": "90-min Endurance (A: 1m20s / B: 1m05s / C: Open) + 10-lap Sprint"
+        },
+        {
+          "pos": "Odai-tsuki R2",
+          "riderOrTeam": "Nakakyushu Kartway (Yamaga, Kumamoto)",
+          "machine": "Organizer: BROW'S (brow-s.jp)",
+          "timeOrNote": "Turtle (48s) / Rabbit (46s) / Lion (Open) / Cheetah (10-lap Sprint)"
+        },
+        {
+          "pos": "BROW'S Format",
+          "riderOrTeam": "Entry-Order Grid & Student Discount",
+          "machine": "Anti-Drunk Driving Charity",
+          "timeOrNote": "Endurance grid by entry completion order; 6,000 JPY student team rate"
+        },
+        {
+          "pos": "Let's Rentai!",
+          "riderOrTeam": "36 Rounds Nationwide (East/Central/West)",
+          "machine": "Takuma Aoki (rentai.takuma-gp.com)",
+          "timeOrNote": "Organizer rental bikes, Le Mans start, pit tasks & Double Peria handicap"
+        },
+        {
+          "pos": "Rentai Safety",
+          "riderOrTeam": "Pink Bib Protection & 5,000 JPY Crash Rule",
+          "machine": "~30% Beginner Riders",
+          "timeOrNote": "Immediate DQ for knocking down a Pink Bib rider / 5,000 JPY fee per crash"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "Listen up! BROW'S 'Odai-tsuki Endurance' is held at Sonic Park Ajimu in Oita and Nakakyushu Kartway in Kumamoto! Since the endurance grid is decided by registration completion order, get your entry form and payment in early—and don't forget your catch tank and under-tray!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "I love how accessible both events are—Sonic Park Ajimu and Nakakyushu Kartway offer a 6,000 yen student team discount, and 30% of Rentai riders are complete beginners! 📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "And in Rentai, respect the Pink Bib riders and keep it rubber-side down unless you want to pay 5,000 yen in the pit! ...Fine, I'll hold the stopwatch and pit board for you at Ajimu so you don't break the class lap-time cap... I-I just happened to have a free Sunday, okay?!"
+        }
+      ]
+    }
+  }
+}

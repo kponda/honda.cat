@@ -51,6 +51,7 @@ SYSTEM_INSTRUCTION = """You are the Strict Fact-Based Editorial Engine for `hond
 
 CRITICAL HISTORICAL & TECHNICAL FACT POLICY (ZERO HALLUCINATION):
 - Every race result, rider name, year, lap number, circuit length/elevation, and mechanical standard MUST be 100% factual and historically accurate.
+- STRICT VENUE-TO-EVENT INTEGRITY: NEVER associate an event or race series with an unrelated circuit where it is not actually held (for example, BROW'S "お題付耐久『草』レース" is held at Sonic Park Ajimu and Nakakyushu Kartway, NEVER at SPA Naoiri). Only pair a race event with the exact circuit(s) verified on the organizer's official website.
 - NEVER invent fictional team names, fictional rider names, or fabricated race result tables.
 - Only include race results that have been verified online from official sources.
 - Always populate `factCheck.basis` (in `ja`, `ca`, `en`) and `factCheck.sources` with real, verifiable reference URLs.
@@ -381,8 +382,10 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
         input=(
             "You are a strict Motorsport & Mechanical Engineering Fact Auditor.\n"
             "Audit the following generated article JSON against the research dossier and real-world history.\n"
-            "Fail (`passed: false`) if you find ANY fictional team names in results, fabricated race winners, "
-            "incorrect circuit lengths, or false technical/physics claims.\n\n"
+            "Fail (`passed: false`) if you find ANY of the following:\n"
+            "1. Unrelated or incorrect circuit-to-event pairings (e.g., claiming a race series is held at a circuit where it was never held).\n"
+            "2. Fictional team names in results or fabricated race winners.\n"
+            "3. Incorrect circuit lengths or false technical/physics claims.\n\n"
             f"RESEARCH DOSSIER:\n{research_notes}\n\n"
             f"CANDIDATE ARTICLE JSON:\n{json.dumps(draft_json, ensure_ascii=False)}"
         ),
