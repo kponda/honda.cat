@@ -1,9 +1,6 @@
 ---
 import Header from './Header.astro';
 import ArticleCard from './ArticleCard.astro';
-import RaceScheduleBoard from './RaceScheduleBoard.astro';
-import KyushuCircuitHub from './KyushuCircuitHub.astro';
-import CatTeamSection from './CatTeamSection.astro';
 import Footer from './Footer.astro';
 import { getAllArticles } from '../data/articles';
 import { UI_TEXT } from '../data/i18n';
@@ -12,7 +9,7 @@ const articles = getAllArticles();
 const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'all-japan', 'spotlight'] as const;
 ---
 
-<Header />
+<Header activeNav="home" />
 
 <main>
   <!-- Hero Section -->
@@ -43,7 +40,7 @@ const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'a
             <span data-i18n="ca">{UI_TEXT.hero.ctaPrimary.ca}</span>
             <span data-i18n="en">{UI_TEXT.hero.ctaPrimary.en}</span>
           </a>
-          <a href="#kyushu-hub" class="btn btn-secondary">
+          <a href="/schedule/" class="btn btn-secondary">
             <span data-i18n="ja">{UI_TEXT.hero.ctaSecondary.ja}</span>
             <span data-i18n="ca">{UI_TEXT.hero.ctaSecondary.ca}</span>
             <span data-i18n="en">{UI_TEXT.hero.ctaSecondary.en}</span>
@@ -126,15 +123,6 @@ const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'a
       </div>
     </div>
   </section>
-
-  <!-- Official Multi-Source Race Schedule & Nationwide/World/SNS Monitor Board -->
-  <RaceScheduleBoard />
-
-  <!-- Kyushu 3 Circuits & Odai Endurance Special Hub -->
-  <KyushuCircuitHub />
-
-  <!-- Bipedal Cat Editorial Team Section -->
-  <CatTeamSection />
 </main>
 
 <Footer />

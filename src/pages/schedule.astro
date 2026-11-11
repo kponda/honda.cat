@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import RaceScheduleBoard from '../components/RaceScheduleBoard.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="公式レース開催スケジュール | HONDA.CAT"
+  description="MotoGP・WorldSBK・MFJ全日本ロードレース・全国地方選手権・九州3大サーキット（オートポリス・SPA直入・HSR九州）の公式開催スケジュール一覧。"
+  initialLang="ja"
+  canonicalPath="/schedule/"
+>
+  <Header activeNav="schedule" />
+
+  <main class="page-main">
+    <RaceScheduleBoard />
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-main {
+    padding-bottom: 3rem;
+  }
+</style>

@@ -24,6 +24,7 @@ const cat = CAT_TEAM[article.featuredCat] || CAT_TEAM.marc;
 const langs: Lang[] = ['ja', 'ca', 'en'];
 const catLabel = UI_TEXT.categories[article.category];
 const typeLabel = UI_TEXT.articleTypes[article.articleType];
+const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
 ---
 
 <BaseLayout
@@ -32,7 +33,7 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
   initialLang="ja"
   canonicalPath={`/articles/${article.slug}/`}
 >
-  <Header />
+  <Header activeNav={articleActiveNav} />
 
   <main class="article-main">
     <div class="container article-container">

@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import KyushuCircuitHub from '../components/KyushuCircuitHub.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Footer from '../components/Footer.astro';
+import { getAllArticles } from '../data/articles';
+
+const kyushuArticles = getAllArticles().filter(
+  (a) => a.category === 'kyushu' || a.category === 'endurance-fun' || a.circuit.includes('オートポリス') || a.circuit.includes('SPA直入') || a.circuit.includes('HSR九州')
+);
+---
+
+<BaseLayout
+  title="九州サーキットガイド（オートポリス・SPA直入・HSR九州） | HONDA.CAT"
+  description="大分・熊本を中心に名勝負が繰り広げられる九州3大サーキット（オートポリス・SPA直入・HSR九州）および九州草耐久・サンデーレースのコースガイド＆最新記事。"
+  initialLang="ja"
+  canonicalPath="/kyushu/"
+>
+  <Header activeNav="kyushu" />
+
+  <main class="page-main">
+    <KyushuCircuitHub />
+
+    <section class="kyushu-articles-section">
+      <div class="container">
+        <h2 class="sub-heading">
+          <span data-i18n="ja">🔥 九州サーキット関連のレース記事・ダイジェスト</span>
+          <span data-i18n="ca">🔥 Cròniques i Resultats dels Circuits de Kyushu</span>
+          <span data-i18n="en">🔥 Kyushu Circuit Race Reports & Digests</span>
+        </h2>
+
+        <div class="articles-grid">
+          {kyushuArticles.map((article) => (
+            <ArticleCard article={article} />
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-main {
+    padding-bottom: 4rem;
+  }
+
+  .kyushu-articles-section {
+    padding-top: 1rem;
+  }
+
+  .sub-heading {
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+  }
+
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.6rem;
+  }
+</style>

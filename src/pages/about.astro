@@ -1,18 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
-import CatTeamSection from '../components/CatTeamSection.astro';
 import Footer from '../components/Footer.astro';
 import { UI_TEXT } from '../data/i18n';
 ---
 
 <BaseLayout
-  title="About HONDA.CAT — .cat カタルーニャ貢献・編集方針・猫編集部について"
+  title="About HONDA.CAT — .cat カタルーニャ貢献・編集方針について"
   description="honda.cat の運営理念（Fundació .cat カタルーニャ語・二輪文化への貢献）、公式SNSポスト埋め込み方針、史実・技術ファクトチェック体制について。"
   initialLang="ja"
   canonicalPath="/about/"
 >
-  <Header />
+  <Header activeNav="about" />
 
   <main class="about-main">
     <div class="container about-container">
@@ -129,8 +128,6 @@ import { UI_TEXT } from '../data/i18n';
         </section>
       </div>
     </div>
-
-    <CatTeamSection />
   </main>
 
   <Footer />
