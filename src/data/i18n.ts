@@ -120,7 +120,7 @@ export const UI_TEXT = {
     en: 'From MotoGP & WorldSBK to MFJ All-Japan, nationwide regional series, Kyushu circuits & track maintenance! Feline motorsport journalism in 3 languages.'
   },
   nav: {
-    home: { ja: 'ホーム', ca: 'Inici', en: 'Home' },
+    home: { ja: '最新記事', ca: 'Notícies i Cròniques', en: 'Latest Articles' },
     schedule: { ja: '🗓️ 全国＆世界スケジュール', ca: '🗓️ Calendari Oficial', en: '🗓️ Official Schedule' },
     kyushu: { ja: '九州サーキットガイド', ca: 'Circuits de Kyushu', en: 'Kyushu Circuits' },
     cats: { ja: '猫編集部紹介', ca: 'Redacció Felina', en: 'Cat Editorial Team' },
