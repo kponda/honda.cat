@@ -1,75 +1,95 @@
 {
-  "lastUpdated": "2026-11-11T09:32:00+09:00",
-  "collectionMethod": "Multi-Source Official Calendar Crawler (MotoGP / MFJ Nationwide All-Japan & All Regional Championships / Kyushu Special / Official SNS)",
+  "lastUpdated": "2026-11-11T09:50:00+09:00",
+  "season": 2026,
+  "collectionMethod": "Weekly Official Calendar Database Sync (Dec–Feb Off-Season Full-Year Ingestion + Weekly Differential Check)",
   "events": [
     {
       "id": "motogp-world-calendar",
+      "scope": "world",
       "category": "world",
       "series": "FIM MotoGP & WorldSBK World Championship",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-15",
       "circuit": {
-        "ja": "バルセロナ＝カタルーニャ（モンメロ）／ もてぎ 他世界全戦",
-        "ca": "Circuit de Barcelona-Catalunya (Montmeló) / Motegi i Mundial",
-        "en": "Circuit de Barcelona-Catalunya (Montmeló) / Motegi & Worldwide"
+        "ja": "バルセロナ＝カタルーニャ（モンメロ）／ バレンシア ／ もてぎ 他世界全戦",
+        "ca": "Circuit de Barcelona-Catalunya (Montmeló) / València / Motegi i Mundial",
+        "en": "Circuit de Barcelona-Catalunya (Montmeló) / Valencia / Motegi & Worldwide"
       },
       "eventName": {
-        "ja": "FIM MotoGP世界選手権（カタルーニャGP・日本GPほか全戦）＆ WorldSBK",
-        "ca": "Campionat del Món FIM MotoGP (GP de Catalunya, GP del Japó) i WorldSBK",
-        "en": "FIM MotoGP World Championship (Catalunya GP, Japanese GP) & WorldSBK"
+        "ja": "FIM MotoGP世界選手権（カタルーニャGP・日本GP・最終戦ほか）＆ WorldSBK",
+        "ca": "Campionat del Món FIM MotoGP (GP de Catalunya, GP del Japó, Final) i WorldSBK",
+        "en": "FIM MotoGP World Championship (Catalunya GP, Japanese GP, Finale) & WorldSBK"
       },
       "scheduleWindow": {
-        "ja": "MotoGP公式カレンダー（3月開幕〜11月最終戦・公式テスト随時更新）",
-        "ca": "Calendari Oficial FIM MotoGP i WorldSBK (Març – Novembre)",
-        "en": "FIM MotoGP & WorldSBK Official Calendar (Mar – Nov + Official Tests)"
+        "ja": "MotoGP公式年間カレンダー（毎週同期・オフシーズン12〜2月次年度発表対応）",
+        "ca": "Calendari Anual Oficial FIM MotoGP i WorldSBK (Sincronització setmanal)",
+        "en": "FIM MotoGP & WorldSBK Annual Official Calendar (Synced Weekly)"
       },
       "classes": "MotoGP / Moto2 / Moto3 / WorldSBK",
       "officialWebUrl": "https://www.motogp.com/ja/calendar",
       "circuitWebUrl": "https://www.circuitcat.com/ca/calendari/",
       "snsHandle": "@MotoGP / @WorldSBK / @Circuitcat_cat",
       "snsUrl": "https://x.com/MotoGP",
-      "verifiedSource": "FIM MotoGP Official (motogp.com) & WorldSBK Official"
+      "verifiedSource": "FIM MotoGP Official (motogp.com) & WorldSBK Official",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "lastCheckedAt": "2026-11-11T09:50:00+09:00"
+      }
     },
     {
       "id": "mfj-all-japan-road-race-nationwide",
+      "scope": "japan",
       "category": "all-japan",
       "series": "MFJ 全日本ロードレース選手権シリーズ（全国6サーキット開催）",
+      "startDate": "2026-04-04",
+      "endDate": "2026-11-01",
       "circuit": {
         "ja": "鈴鹿（三重）・もてぎ（栃木）・SUGO（宮城）・筑波（茨城）・岡山国際（岡山）・オートポリス（大分）",
         "ca": "Suzuka, Motegi, SUGO, Tsukuba, Okayama i Autopolis (Tot el Japó)",
         "en": "Suzuka, Motegi, SUGO, Tsukuba, Okayama & Autopolis (Nationwide)"
       },
       "eventName": {
-        "ja": "MFJ全日本ロードレース選手権（2&4開幕戦〜SUGO・筑波・もてぎ・オートポリス・岡山・鈴鹿MFJ GP）",
+        "ja": "MFJ全日本ロードレース選手権（もてぎ・SUGO・筑波・オートポリス・岡山・鈴鹿MFJ GP）",
         "ca": "Campionat del Japó MFJ de Velocitat (Totes les rondes nacionals fins al MFJ GP de Suzuka)",
         "en": "MFJ All-Japan Road Race Championship (Full Nationwide Series through Suzuka MFJ GP)"
       },
       "scheduleWindow": {
-        "ja": "MFJ / JRR公式カレンダー（全戦スケジュール・エントリーリスト・公式リザルト連動）",
-        "ca": "Calendari Oficial MFJ / JRR (superbike.jp / mfj.or.jp)",
-        "en": "MFJ / JRR Official Calendar (superbike.jp / mfj.or.jp)"
+        "ja": "MFJ / JRR公式年間カレンダー（12〜2月発表の次年度日程を週1回自動同期）",
+        "ca": "Calendari Anual Oficial MFJ / JRR (superbike.jp / mfj.or.jp)",
+        "en": "MFJ / JRR Official Annual Calendar (superbike.jp / mfj.or.jp)"
       },
       "classes": "JSB1000 / ST1000 / ST600 / J-GP3",
       "officialWebUrl": "https://www.superbike.jp/calendar/",
       "circuitWebUrl": "https://www.mfj.or.jp/calendar/",
       "snsHandle": "@jrr_official / YouTube: motoバトルLIVE",
       "snsUrl": "https://x.com/jrr_official",
-      "verifiedSource": "MFJ公式 (mfj.or.jp) & JRR全日本公式 (superbike.jp)"
+      "verifiedSource": "MFJ公式 (mfj.or.jp) & JRR全日本公式 (superbike.jp)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "lastCheckedAt": "2026-11-11T09:50:00+09:00"
+      }
     },
     {
       "id": "mfj-regional-suzuka-chubu-kinki",
+      "scope": "japan",
       "category": "all-japan",
       "series": "MFJ地方選手権（中部・近畿）：鈴鹿サンデーロードレース ＆ ミニモト耐久",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
       "circuit": {
-        "ja": "鈴鹿サーキット（三重県鈴鹿市・全長5,821m）／ 近畿スポーツランド 他",
+        "ja": "鈴鹿サーキット（三重県鈴鹿市・全長5,821m）／ 近畿・中部エリア",
         "ca": "Circuit de Suzuka (Mie · 5.821m) i Circuits de Kansai/Chubu",
         "en": "Suzuka Circuit (Mie · 5,821m) & Chubu/Kinki Tracks"
       },
       "eventName": {
-        "ja": "MFJ鈴鹿サンデーロードレース ／ 鈴鹿8耐・4耐 ／ 鈴鹿ミニモト4時間耐久",
+        "ja": "MFJ鈴鹿サンデーロードレース最終戦 ／ 鈴鹿8耐・4耐 ／ 鈴鹿ミニモト4時間耐久",
         "ca": "MFJ Suzuka Sunday Road Race / 8 Hores de Suzuka / Mini-Moto 4h",
         "en": "MFJ Suzuka Sunday Road Race / Suzuka 8 Hours / Mini-Moto 4h Endurance"
       },
       "scheduleWindow": {
-        "ja": "鈴鹿サーキット公式モータースポーツカレンダー（通年開催）",
+        "ja": "鈴鹿サーキット公式モータースポーツカレンダー（年間日程DB連動）",
         "ca": "Calendari Oficial de Suzuka Circuit",
         "en": "Suzuka Circuit Official Motorsport Calendar"
       },
@@ -78,12 +98,20 @@
       "circuitWebUrl": "https://www.suzukacircuit.jp/motorsports_s/",
       "snsHandle": "@suzuka_event / @suzukacircuit_official",
       "snsUrl": "https://x.com/suzuka_event",
-      "verifiedSource": "鈴鹿サーキット公式 (suzukacircuit.jp)"
+      "verifiedSource": "鈴鹿サーキット公式 (suzukacircuit.jp)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "lastCheckedAt": "2026-11-11T09:50:00+09:00"
+      }
     },
     {
       "id": "mfj-regional-kanto-motegi-tsukuba-fuji",
+      "scope": "japan",
       "category": "all-japan",
-      "series": "MFJ地方選手権（関東）：もてぎ・筑波・富士スピードウェイ＆テイスト・オブ・ツクバ",
+      "series": "MFJ地方選手権（関東）：もてぎ・筑波・富士スピードウェイ",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-08",
       "circuit": {
         "ja": "モビリティリゾートもてぎ（栃木）・筑波サーキット（茨城）・富士スピードウェイ（静岡）",
         "ca": "Mobility Resort Motegi, Circuit de Tsukuba i Fuji Speedway (Kanto)",
@@ -95,21 +123,29 @@
         "en": "Motegi & Tsukuba Regional Championships / Motetai 7h / Taste of Tsukuba / Fuji Mini-6"
       },
       "scheduleWindow": {
-        "ja": "もてぎ・筑波・富士 各公式レースカレンダー＆SNSにて随時更新",
-        "ca": "Calendaris Oficials de Motegi, Tsukuba i Fuji Speedway",
-        "en": "Motegi, Tsukuba & Fuji Official Race Calendars"
+        "ja": "もてぎ・筑波・富士 各公式年間レースカレンダー＆SNS同期",
+        "ca": "Calendaris Anuals Oficials de Motegi, Tsukuba i Fuji Speedway",
+        "en": "Motegi, Tsukuba & Fuji Official Annual Race Calendars"
       },
       "classes": "ST1000 / ST600 / J-GP3 / TC-Formula / HERCULES (TOT) / 7耐・ミニろく",
       "officialWebUrl": "https://www.mr-motegi.jp/mrr/",
       "circuitWebUrl": "https://www.tsukuba-circuit.jp/calendar/index.html",
       "snsHandle": "@motegi_official / @tsukuba_circuit / @fswpress",
       "snsUrl": "https://x.com/tsukuba_circuit",
-      "verifiedSource": "もてぎ (mr-motegi.jp) ・ 筑波 (tsukuba-circuit.jp) ・ 富士 (fsw.tv)"
+      "verifiedSource": "もてぎ (mr-motegi.jp) ・ 筑波 (tsukuba-circuit.jp) ・ 富士 (fsw.tv)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "lastCheckedAt": "2026-11-11T09:50:00+09:00"
+      }
     },
     {
       "id": "mfj-regional-tohoku-hokkaido-chugoku",
+      "scope": "japan",
       "category": "all-japan",
       "series": "MFJ地方選手権（北海道・東北・中国）：SUGO・十勝・岡山国際",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-18",
       "circuit": {
         "ja": "スポーツランドSUGO（宮城）・十勝スピードウェイ（北海道）・岡山国際サーキット（岡山）",
         "ca": "Sportsland SUGO (Miyagi), Tokachi (Hokkaido) i Okayama International",
@@ -121,68 +157,55 @@
         "en": "SUGO Road Race Series / Hokkaido Road Race / Okayama Road Race & Moto Revolution"
       },
       "scheduleWindow": {
-        "ja": "MFJ地方選手権カレンダーおよびSUGO・十勝・岡山国際 各公式サイト掲載",
-        "ca": "Calendari Regional MFJ (SUGO, Tokachi i Okayama)",
-        "en": "MFJ Regional Calendar (SUGO, Tokachi & Okayama Official Sites)"
+        "ja": "MFJ地方選手権年間カレンダーおよびSUGO・十勝・岡山国際 各公式サイト同期",
+        "ca": "Calendari Anual Regional MFJ (SUGO, Tokachi i Okayama)",
+        "en": "MFJ Regional Annual Calendar (SUGO, Tokachi & Okayama Official Sites)"
       },
       "classes": "JSB1000 / ST1000 / ST600 / J-GP3 / CBR250R・GROM / モトレヴォ各クラス",
       "officialWebUrl": "https://www.sportsland-sugo.co.jp/race/",
       "circuitWebUrl": "https://www.okayama-international-circuit.jp/mirai/race/rr-index.html",
       "snsHandle": "@sugo_official / 岡山国際公式 / 十勝公式",
       "snsUrl": "https://x.com/sugo_official",
-      "verifiedSource": "SUGO公式・岡山国際公式・十勝公式・MFJ公式"
+      "verifiedSource": "SUGO公式・岡山国際公式・十勝公式・MFJ公式",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "lastCheckedAt": "2026-11-11T09:50:00+09:00"
+      }
     },
     {
       "id": "kyushu-autopolis-spa-naoiri-hsr",
+      "scope": "japan",
       "category": "kyushu",
-      "series": "MFJ九州ロードレース選手権 ＆ 九州3大サーキット特別重点カレンダー",
+      "series": "MFJ九州ロードレース選手権 ＆ 九州3大サーキット公式カレンダー",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
       "circuit": {
         "ja": "SPA直入（大分・竹田）／ オートポリス（大分・日田）／ HSR九州（熊本・大津）",
         "ca": "SPA Naoiri (Oita), Autopolis (Oita) i HSR Kyushu (Kumamoto)",
         "en": "SPA Naoiri (Oita), Autopolis (Oita) & HSR Kyushu (Kumamoto)"
       },
       "eventName": {
-        "ja": "九州ロードレース選手権 ／ オートポリスゴールドカップ＆ミニろく ／ HSR九州「鉄馬」＆ミニバイク8耐 ／ SPA直入サンデー＆耐久",
+        "ja": "九州ロードレース選手権 ／ オートポリスゴールドカップ＆ミニろく ／ HSR九州「鉄馬」＆ミニバイク8耐 ／ SPA直入シリーズ＆耐久",
         "ca": "Campionat de Kyushu / Gold Cup Autopolis / HSR «Tetsuma» i Mini 8h / SPA Naoiri",
         "en": "Kyushu Road Race Championship / Autopolis Gold Cup / HSR 'Tetsuma' & Mini 8h / SPA Naoiri"
       },
       "scheduleWindow": {
-        "ja": "SPA直入・オートポリス・HSR九州 各公式スケジュール＆公式SNSから自動収集",
-        "ca": "Recollit automàticament dels webs i xarxes oficials de SPA Naoiri, Autopolis i HSR",
-        "en": "Auto-collected from SPA Naoiri, Autopolis & HSR Kyushu Official Calendars & SNS"
+        "ja": "SPA直入・オートポリス・HSR九州 各公式年間スケジュール＆公式SNSから週次同期",
+        "ca": "Sincronitzat setmanalment dels webs i xarxes oficials de SPA Naoiri, Autopolis i HSR",
+        "en": "Weekly synced from SPA Naoiri, Autopolis & HSR Kyushu Official Calendars & SNS"
       },
       "classes": "JSB1000 / ST600 / 鉄馬 (Iron Frame) / ミニバイク耐久 / サンデー各クラス",
       "officialWebUrl": "https://spa-naoiri.com/schedule/",
       "circuitWebUrl": "https://autopolis.jp/ap/schedule/",
       "snsHandle": "@autopolis2005 / @tetsuma_with_b / SPA直入公式FB",
       "snsUrl": "https://x.com/autopolis2005",
-      "verifiedSource": "SPA直入 (spa-naoiri.com) ・ オートポリス (autopolis.jp) ・ HSR九州 (hsr.jp)"
-    },
-    {
-      "id": "odai-endurance-and-rentai-nationwide",
-      "category": "endurance-fun",
-      "series": "お題付き耐久草レース（SPA直入ほか）＆ レン耐（全国サーキット開催）",
-      "circuit": {
-        "ja": "SPA直入（大分）および全国サーキット（筑波・もてぎ・鈴鹿・袖ヶ浦・幸田 他）",
-        "ca": "SPA Naoiri (Oita) i circuits de tot el Japó (Tsukuba, Motegi, Suzuka...)",
-        "en": "SPA Naoiri (Oita) & Nationwide Circuits (Tsukuba, Motegi, Suzuka, etc.)"
-      },
-      "eventName": {
-        "ja": "お題付き耐久草レース ＆ 青木拓磨プロデュース「レン耐」全国シリーズ",
-        "ca": "Curses de Resistència amb Reptes («Odai-tsuki») i Sèrie Nacional «Rentai»",
-        "en": "'Odai-Tsuki' Task-Challenge Grassroots Endurance & Nationwide 'Rentai' Series"
-      },
-      "scheduleWindow": {
-        "ja": "レン耐公式サイト・公式X (`@rentai_official`) および各サーキット草耐久カレンダー",
-        "ca": "Calendari oficial a rentai.jp, @rentai_official i circuits locals",
-        "en": "Official Calendar at rentai.jp, @rentai_official & Local Circuit Feeds"
-      },
-      "classes": "ミニバイク（GROM / モンキー125 / NSF100 / エイプ）〜250cc（ピットお題＆無転倒ボーナス制）",
-      "officialWebUrl": "https://rentai.jp/",
-      "circuitWebUrl": "https://spa-naoiri.com/schedule/",
-      "snsHandle": "@rentai_official / SPA直入公式FB",
-      "snsUrl": "https://x.com/rentai_official",
-      "verifiedSource": "レン耐公式 (rentai.jp) & SPA直入公式スケジュール"
+      "verifiedSource": "SPA直入 (spa-naoiri.com) ・ オートポリス (autopolis.jp) ・ HSR九州 (hsr.jp)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "lastCheckedAt": "2026-11-11T09:50:00+09:00"
+      }
     }
   ]
 }

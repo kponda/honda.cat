@@ -1,9 +1,11 @@
 {
-  "version": "2.0.0",
-  "description": "honda.cat Official Race Schedule & SNS Source Registry (World MotoGP/SBK + Nationwide MFJ All-Japan & Regional Championships + Kyushu Special + Grassroots Endurance)",
+  "version": "3.0.0",
+  "description": "honda.cat Comprehensive Official Race Schedule & SNS Source Registry (World MotoGP/SBK + Nationwide MFJ All-Japan & Regional Championships + Major Japanese Circuits)",
+  "offSeasonFocusMonths": [12, 1, 2],
   "sources": [
     {
       "id": "motogp-official",
+      "scope": "world",
       "category": "world",
       "region": "World / Catalunya",
       "name": {
@@ -15,6 +17,9 @@
         "https://www.motogp.com/en/calendar",
         "https://www.motogp.com/ja/calendar"
       ],
+      "resultUrls": [
+        "https://www.motogp.com/en/gp-results"
+      ],
       "sns": [
         { "platform": "X", "handle": "@MotoGP", "url": "https://x.com/MotoGP" },
         { "platform": "Instagram", "handle": "@motogp", "url": "https://www.instagram.com/motogp/" }
@@ -22,6 +27,7 @@
     },
     {
       "id": "worldsbk-official",
+      "scope": "world",
       "category": "world",
       "region": "World / Catalunya",
       "name": {
@@ -33,6 +39,9 @@
         "https://www.worldsbk.com/en/calendar",
         "https://www.fimewc.com/en/calendar"
       ],
+      "resultUrls": [
+        "https://www.worldsbk.com/en/results%20statistics"
+      ],
       "sns": [
         { "platform": "X", "handle": "@WorldSBK", "url": "https://x.com/WorldSBK" },
         { "platform": "X", "handle": "@FIM_EWC", "url": "https://x.com/FIM_EWC" }
@@ -40,6 +49,7 @@
     },
     {
       "id": "circuit-catalunya",
+      "scope": "world",
       "category": "world",
       "region": "Catalunya",
       "name": {
@@ -51,6 +61,9 @@
         "https://www.circuitcat.com/ca/calendari/",
         "https://www.circuitcat.com/en/calendar/"
       ],
+      "resultUrls": [
+        "https://www.circuitcat.com/ca/actualitat/"
+      ],
       "sns": [
         { "platform": "X", "handle": "@Circuitcat_cat", "url": "https://x.com/Circuitcat_cat" },
         { "platform": "Instagram", "handle": "@circuitdebcncatalunya", "url": "https://www.instagram.com/circuitdebcncatalunya/" }
@@ -58,6 +71,7 @@
     },
     {
       "id": "mfj-all-japan-official",
+      "scope": "japan",
       "category": "all-japan",
       "region": "Nationwide Japan (全国)",
       "name": {
@@ -70,6 +84,10 @@
         "https://www.mfj.or.jp/national/road-race/",
         "https://www.superbike.jp/calendar/"
       ],
+      "resultUrls": [
+        "https://www.superbike.jp/result/",
+        "https://www.mfj.or.jp/result/"
+      ],
       "sns": [
         { "platform": "X", "handle": "@jrr_official", "url": "https://x.com/jrr_official" },
         { "platform": "YouTube", "handle": "motoバトルLIVE", "url": "https://www.youtube.com/@motobattlelive" }
@@ -77,6 +95,7 @@
     },
     {
       "id": "suzuka-circuit",
+      "scope": "japan",
       "category": "all-japan",
       "region": "Chubu / Kinki (三重・鈴鹿)",
       "name": {
@@ -88,6 +107,9 @@
         "https://www.suzukacircuit.jp/motorsports_s/",
         "https://www.suzukacircuit.jp/sundayr/"
       ],
+      "resultUrls": [
+        "https://www.suzukacircuit.jp/result_s/"
+      ],
       "sns": [
         { "platform": "X", "handle": "@suzuka_event", "url": "https://x.com/suzuka_event" },
         { "platform": "Instagram", "handle": "@suzukacircuit_official", "url": "https://www.instagram.com/suzukacircuit_official/" }
@@ -95,6 +117,7 @@
     },
     {
       "id": "mobility-resort-motegi",
+      "scope": "japan",
       "category": "all-japan",
       "region": "Kanto (栃木・もてぎ)",
       "name": {
@@ -106,12 +129,16 @@
         "https://www.mr-motegi.jp/motorsports_m/",
         "https://www.mr-motegi.jp/mrr/"
       ],
+      "resultUrls": [
+        "https://www.mr-motegi.jp/result_m/"
+      ],
       "sns": [
         { "platform": "X", "handle": "@motegi_official", "url": "https://x.com/motegi_official" }
       ]
     },
     {
       "id": "tsukuba-circuit",
+      "scope": "japan",
       "category": "all-japan",
       "region": "Kanto (茨城・筑波)",
       "name": {
@@ -123,12 +150,16 @@
         "https://www.tsukuba-circuit.jp/race/withme/index.html",
         "https://www.tsukuba-circuit.jp/calendar/index.html"
       ],
+      "resultUrls": [
+        "https://www.tsukuba-circuit.jp/race/result/"
+      ],
       "sns": [
         { "platform": "X", "handle": "@tsukuba_circuit", "url": "https://x.com/tsukuba_circuit" }
       ]
     },
     {
       "id": "sportsland-sugo-and-tokachi",
+      "scope": "japan",
       "category": "all-japan",
       "region": "Tohoku & Hokkaido (宮城・SUGO / 北海道・十勝)",
       "name": {
@@ -140,12 +171,16 @@
         "https://www.sportsland-sugo.co.jp/race/",
         "https://tokachi.msf.ne.jp/"
       ],
+      "resultUrls": [
+        "https://www.sportsland-sugo.co.jp/results/"
+      ],
       "sns": [
         { "platform": "X", "handle": "@sugo_official", "url": "https://x.com/sugo_official" }
       ]
     },
     {
       "id": "okayama-and-fuji",
+      "scope": "japan",
       "category": "all-japan",
       "region": "Chugoku & Shizuoka (岡山国際 / 富士スピードウェイ)",
       "name": {
@@ -157,22 +192,29 @@
         "https://www.okayama-international-circuit.jp/mirai/race/rr-index.html",
         "https://www.fsw.tv/motorsports/"
       ],
+      "resultUrls": [
+        "https://www.okayama-international-circuit.jp/mirai/result/"
+      ],
       "sns": [
         { "platform": "X", "handle": "@fswpress", "url": "https://x.com/fswpress" }
       ]
     },
     {
       "id": "spa-naoiri",
+      "scope": "japan",
       "category": "kyushu",
       "region": "Kyushu (大分・竹田)",
       "name": {
-        "ja": "SPA直入（九州ロードレースシリーズ・サンデーレース・お題付き耐久）公式＆SNS",
+        "ja": "SPA直入（九州ロードレースシリーズ・サンデーレース・耐久イベント）公式＆SNS",
         "ca": "Circuit SPA Naoiri (Takeda, Oita) Oficial",
         "en": "SPA Naoiri Circuit (Takeda, Oita) Official"
       },
       "calendarUrls": [
         "https://spa-naoiri.com/",
         "https://spa-naoiri.com/schedule/"
+      ],
+      "resultUrls": [
+        "https://spa-naoiri.com/race/"
       ],
       "sns": [
         { "platform": "Facebook", "handle": "SPA直入公式", "url": "https://www.facebook.com/spanaoiri" },
@@ -181,6 +223,7 @@
     },
     {
       "id": "autopolis",
+      "scope": "japan",
       "category": "kyushu",
       "region": "Kyushu (大分・日田)",
       "name": {
@@ -192,6 +235,9 @@
         "https://autopolis.jp/ap/event/",
         "https://autopolis.jp/ap/schedule/"
       ],
+      "resultUrls": [
+        "https://autopolis.jp/ap/motorsports/result/"
+      ],
       "sns": [
         { "platform": "X", "handle": "@autopolis2005", "url": "https://x.com/autopolis2005" },
         { "platform": "Instagram", "handle": "@autopolis_official", "url": "https://www.instagram.com/autopolis_official/" }
@@ -199,6 +245,7 @@
     },
     {
       "id": "hsr-kyushu",
+      "scope": "japan",
       "category": "kyushu",
       "region": "Kyushu (熊本・大津)",
       "name": {
@@ -211,27 +258,12 @@
         "https://www.hsr.jp/schedule/",
         "https://www.tetsuma.jp/"
       ],
+      "resultUrls": [
+        "https://www.hsr.jp/race/result/"
+      ],
       "sns": [
         { "platform": "X", "handle": "@tetsuma_with_b", "url": "https://x.com/tetsuma_with_b" },
         { "platform": "Instagram", "handle": "@hsr_kyushu", "url": "https://www.instagram.com/hsr_kyushu/" }
-      ]
-    },
-    {
-      "id": "rentai-odai-endurance",
-      "category": "endurance-fun",
-      "region": "Nationwide & Kyushu (全国・九州)",
-      "name": {
-        "ja": "レン耐（青木拓磨プロデュース全国シリーズ）＆ お題付き耐久草レース",
-        "ca": "Rentai i Curses de Resistència amb Reptes («Odai-tsuki»)",
-        "en": "Rentai Nationwide Series & 'Odai-Tsuki' Task-Challenge Endurance"
-      },
-      "calendarUrls": [
-        "https://rentai.jp/",
-        "https://spa-naoiri.com/schedule/"
-      ],
-      "sns": [
-        { "platform": "X", "handle": "@rentai_official", "url": "https://x.com/rentai_official" },
-        { "platform": "Facebook", "handle": "レン耐 Official", "url": "https://www.facebook.com/rentai.jp" }
       ]
     }
   ]

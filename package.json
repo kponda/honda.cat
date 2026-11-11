@@ -1,19 +1,20 @@
 {
   "name": "honda-cat",
   "type": "module",
-  "version": "1.0.0",
-  "description": "honda.cat - Trilingual (JA/CA/EN) Motorsport & Grassroots Racing Portal powered by Bipedal Paddock Cats & AI",
+  "version": "1.1.0",
+  "description": "honda.cat - Trilingual (JA/CA/EN) Motorsport & Circuit Portal powered by Bipedal Paddock Cats & AI",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "collect:schedules": "python3 scripts/collect_schedules.py",
-    "generate:article": "python3 scripts/generate_articles.py",
+    "sync:schedules": "python3 scripts/collect_schedules.py",
+    "generate:preview-world": "python3 scripts/generate_articles.py --mode preview_world",
+    "generate:preview-japan": "python3 scripts/generate_articles.py --mode preview_japan",
+    "generate:digest-monday": "python3 scripts/generate_articles.py --mode digest_monday",
+    "generate:digest-wednesday": "python3 scripts/generate_articles.py --mode digest_wednesday",
     "generate:maintenance": "python3 scripts/generate_articles.py --mode maintenance",
-    "generate:preview": "python3 scripts/generate_articles.py --mode preview",
-    "generate:digest": "python3 scripts/generate_articles.py --mode digest",
-    "generate:kyushu": "python3 scripts/generate_articles.py --mode kyushu"
+    "generate:custom": "python3 scripts/generate_articles.py --mode custom"
   },
   "dependencies": {
     "astro": "^4.16.18"

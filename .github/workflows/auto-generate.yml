@@ -1,30 +1,48 @@
-name: "🐾 AI Auto-Generate Fact-Verified Motorsport & Maintenance Articles"
+name: "🐾 Schedule-Driven Motorsport & Maintenance Auto-Publisher"
 
 on:
   schedule:
-    # 毎週月曜 09:00 JST (00:00 UTC): 週末レース結果＆史実ダイジェスト (digest)
-    - cron: "0 0 * * 1"
-    # 毎週水曜 09:00 JST (00:00 UTC): 週1回連載・サーキット走行向けバイクメンテナンス情報＆豆知識 (maintenance)
-    - cron: "0 0 * * 3"
-    # 毎週木曜 09:00 JST (00:00 UTC): 週末レース開催プレビュー (preview)
+    # [週1回 スケジュールDB同期] 毎週火曜 09:00 JST (00:00 UTC):
+    # 年間スケジュール（特に12〜2月発表分）および全国・世界各サーキットの更新を確認しDBへ反映
+    - cron: "0 0 * * 2"
+
+    # [1. 世界戦プレビュー] 毎週木曜 09:00 JST (00:00 UTC):
+    # 今週末の MotoGP / WorldSBK 開催プレビュー（開催がなければスキップ）
     - cron: "0 0 * * 4"
-    # 毎週土曜 12:00 JST (03:00 UTC): 九州サーキット(SPA直入・AP・HSR)＆お題付き耐久草レース特集 (kyushu)
-    - cron: "0 3 * * 6"
+
+    # [2. 日本国内プレビュー] 毎週金曜 09:00 JST (00:00 UTC):
+    # 今週末に日本各地で開催されるレースの開催プレビュー（開催がなければスキップ）
+    - cron: "0 0 * * 5"
+
+    # [3. レース結果ダイジェスト1] 毎週月曜 09:00 JST (00:00 UTC):
+    # 週末のレース結果（ネットから取得できたもののみ掲載 / 世界戦と国内戦は別記事に分割 / なければスキップ）
+    - cron: "0 0 * * 1"
+
+    # [4. レース結果ダイジェスト2] 毎週水曜 09:00 JST (00:00 UTC):
+    # ダイジェスト1で結果未取得だったレースの再収集（取得できれば掲載 / 該当なしはスキップ）
+    - cron: "0 0 * * 3"
+
+    # [週1回 メンテナンス＆豆知識連載] 毎週水曜 12:00 JST (03:00 UTC):
+    # サーキット走行向けバイクメンテナンス情報・豆知識
+    - cron: "0 3 * * 3"
+
   workflow_dispatch:
     inputs:
-      mode:
-        description: "生成モード (maintenance / kyushu / preview / digest / spotlight)"
+      task:
+        description: "実行タスク種別"
         required: true
-        default: "maintenance"
+        default: "custom"
         type: choice
         options:
+          - custom
+          - sync_schedule
+          - preview_world
+          - preview_japan
+          - digest_monday
+          - digest_wednesday
           - maintenance
-          - kyushu
-          - preview
-          - digest
-          - spotlight
       topic:
-        description: "カスタムお題（例：サーキット走行でのクーラント真水化とラジエーターキャップ管理の豆知識）"
+        description: "カスタムお題（手動実行時：任意のトピックを指定して1クリック生成）"
         required: false
         type: string
 
@@ -32,7 +50,7 @@ permissions:
   contents: write
 
 jobs:
-  generate-and-commit:
+  run-scheduled-pipeline:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -46,49 +64,54 @@ jobs:
       - name: Install AI Pipeline Dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Determine Mode from Schedule or Input
-        id: resolve_mode
+      - name: Resolve Scheduled Task from Cron or Manual Input
+        id: resolve_task
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "mode=${{ inputs.mode }}" >> $GITHUB_OUTPUT
-          elif [ "$(date -u +%u)" = "3" ]; then
-            echo "mode=maintenance" >> $GITHUB_OUTPUT
-          elif [ "$(date -u +%u)" = "4" ]; then
-            echo "mode=preview" >> $GITHUB_OUTPUT
-          elif [ "$(date -u +%u)" = "6" ]; then
-            echo "mode=kyushu" >> $GITHUB_OUTPUT
+            echo "task=${{ inputs.task }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 0 * * 2" ]; then
+            echo "task=sync_schedule" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 0 * * 4" ]; then
+            echo "task=preview_world" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 0 * * 5" ]; then
+            echo "task=preview_japan" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 0 * * 1" ]; then
+            echo "task=digest_monday" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 0 * * 3" ]; then
+            echo "task=digest_wednesday" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 3 * * 3" ]; then
+            echo "task=maintenance" >> $GITHUB_OUTPUT
           else
-            echo "mode=digest" >> $GITHUB_OUTPUT
+            echo "task=sync_schedule" >> $GITHUB_OUTPUT
           fi
 
-      - name: Auto-Collect Official Race Schedules (MotoGP, MFJ Nationwide, Circuits & SNS)
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python3 scripts/collect_schedules.py
-
-      - name: Run Gemini 3.8 Flash Grounded & Fact-Audited Article Generator
+      - name: Execute Weekly Schedule Sync or Schedule-Driven Article Pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          if [ -n "${{ inputs.topic }}" ]; then
-            python3 scripts/generate_articles.py --mode "${{ steps.resolve_mode.outputs.mode }}" --topic "${{ inputs.topic }}"
+          TASK="${{ steps.resolve_task.outputs.task }}"
+          echo "Running pipeline task: $TASK"
+          if [ "$TASK" = "sync_schedule" ]; then
+            python3 scripts/collect_schedules.py
+          elif [ -n "${{ inputs.topic }}" ]; then
+            python3 scripts/generate_articles.py --mode "$TASK" --topic "${{ inputs.topic }}"
           else
-            python3 scripts/generate_articles.py --mode "${{ steps.resolve_mode.outputs.mode }}"
+            python3 scripts/generate_articles.py --mode "$TASK"
           fi
 
-      - name: Audit All Articles & Schedules Before Commit
+      - name: Audit Schedule DB & Articles Integrity
         run: |
           python3 scripts/collect_schedules.py --dry-run
           python3 scripts/generate_articles.py --dry-run
 
-      - name: Commit & Push New Fact-Verified Trilingual Article & Schedules
+      - name: Commit & Push If Schedule DB or New Articles Were Generated
         run: |
           git config user.name "honda-cat-editorial-bot"
           git config user.email "bot@honda.cat"
           git add src/data/schedules.json src/data/articles/*.json
           if git diff --staged --quiet; then
-            echo "No new updates to commit."
+            echo "⏭️ No changes or skipped task (${{ steps.resolve_task.outputs.task }}); nothing to commit."
           else
-            git commit -m "chore(content): auto-update official schedules & publish fact-verified report (${{ steps.resolve_mode.outputs.mode }})"
+            git commit -m "chore(pipeline): automated update via ${{ steps.resolve_task.outputs.task }}"
             git push
           fi
