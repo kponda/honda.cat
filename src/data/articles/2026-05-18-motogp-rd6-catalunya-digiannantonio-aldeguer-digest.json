@@ -20,10 +20,27 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "Circuit de Barcelona-Catalunya Official & MotoGP™",
-      "handle": "@Circuitcat_cat / @MotoGP",
+      "accountName": "Circuit de Barcelona-Catalunya",
+      "handle": "@Circuitcat_cat",
       "url": "https://x.com/Circuitcat_cat",
-      "publishedDate": "2026-05-17 (Gran Premi de Catalunya Official Results)",
+      "postUrl": "https://x.com/Circuitcat_cat/status/2119831877620015603",
+      "quotedPostText": {
+        "ja": "【2026 MotoGP 第6戦 カタルーニャGP（モンメロ）公式結果】土曜スプリントは地元カタルーニャ出身のアレックス・マルケス（Gresini Racing）が優勝！日曜決勝グランプリはファビオ・ディ・ジャンナントニオ（Pertamina VR46 Ducati）が優勝！ジョアン・ミル（Honda）が2位でチェッカーを受ける大健闘を見せるもレース後のタイヤ空気圧規定違反ペナルティにより、フェルミン・アルデゲルが2位、フランチェスコ・バニャイアが3位に昇格。",
+        "ca": "【Resultats Oficials GP de Catalunya 2026 a Montmeló】Dissabte: Victòria a casa d'Àlex Márquez a l'Sprint! Diumenge: Victòria de Fabio Di Giannantonio (VR46), seguit de Fermín Aldeguer (2n) i Pecco Bagnaia (3r) després de la penalització per pressió de pneumàtics a Joan Mir (que havia creuat la meta 2n amb l'Honda)!",
+        "en": "[Official Results: 2026 MotoGP Catalan GP at Montmeló] Home hero Álex Márquez wins Saturday's Sprint! Fabio Di Giannantonio (VR46) wins Sunday's Grand Prix ahead of Fermín Aldeguer (2nd) and Francesco Bagnaia (3rd) after Joan Mir (who crossed the line 2nd on the Honda) received a post-race tire pressure penalty!"
+      },
+      "editorialCommentary": {
+        "ja": "モンメロ公式X（@Circuitcat_cat）およびMotoGP公式（@MotoGP）が報じた2026年カタルーニャGP最大のドラマは2つありました。1つは土曜スプリントでの地元セルベラ出身アレックス・マルケス選手の凱旋勝利。そしてもう1つは日曜決勝でホンダワークスのジョアン・ミル選手が驚異的なペースで2位チェッカーを受けたものの、レース後の最低タイヤ空気圧規定違反（タイムペナルティ）により表彰台を逃した一件です。当サイトの整備連載でも解説している通り、気温・スリップストリーム状況による温間空気圧のわずか数kPaの差がMotoGPの表彰台すら左右することを痛感させる史実となりました。",
+        "ca": "Les cròniques oficials de @Circuitcat_cat i @MotoGP destaquen tant l'eufòria dissabte amb la victòria d'Àlex Márquez a l'Sprint com el drama tècnic de diumenge, on Joan Mir va creuar la meta segon però va perdre el podi per la normativa de pressió mínima dels pneumàtics.",
+        "en": "Official reports from @Circuitcat_cat and @MotoGP spotlight both Álex Márquez's emotional Saturday Sprint win in front of his home Catalan crowd and Sunday's technical heartbreak for Joan Mir, who crossed the finish line 2nd before a tire-pressure penalty promoted Fermín Aldeguer and Francesco Bagnaia."
+      }
+    },
+    {
+      "platform": "Instagram",
+      "accountName": "VR46 Racing Team Official",
+      "handle": "@vr46racingteam",
+      "url": "https://www.instagram.com/vr46racingteam/",
+      "postUrl": "https://www.instagram.com/p/DfkLYtXjOEi/",
       "quotedPostText": {
         "ja": "【2026 MotoGP 第6戦 カタルーニャGP（モンメロ）公式結果】土曜スプリントは地元カタルーニャ出身のアレックス・マルケス（Gresini Racing）が優勝！日曜決勝グランプリはファビオ・ディ・ジャンナントニオ（Pertamina VR46 Ducati）が優勝！ジョアン・ミル（Honda）が2位でチェッカーを受ける大健闘を見せるもレース後のタイヤ空気圧規定違反ペナルティにより、フェルミン・アルデゲルが2位、フランチェスコ・バニャイアが3位に昇格。",
         "ca": "【Resultats Oficials GP de Catalunya 2026 a Montmeló】Dissabte: Victòria a casa d'Àlex Márquez a l'Sprint! Diumenge: Victòria de Fabio Di Giannantonio (VR46), seguit de Fermín Aldeguer (2n) i Pecco Bagnaia (3r) després de la penalització per pressió de pneumàtics a Joan Mir (que havia creuat la meta 2n amb l'Honda)!",

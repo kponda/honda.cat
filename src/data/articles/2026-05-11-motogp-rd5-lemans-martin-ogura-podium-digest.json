@@ -22,7 +22,24 @@
       "accountName": "MotoGP™ Official",
       "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "publishedDate": "2026-05-10 (French GP Le Mans Official Results)",
+      "postUrl": "https://x.com/MotoGP/status/2120213528980103246",
+      "quotedPostText": {
+        "ja": "【2026 MotoGP 第5戦 フランスGP（ル・マン）公式結果】ホルヘ・マルティン（Aprilia Racing）が土曜スプリント＆日曜決勝グランプリを完全制覇！日曜決勝2位にマルコ・ベッツェッキ（Aprilia Racing）、そして3位に日本人ライダー・小椋藍（Trackhouse Racing / Aprilia）が入り表彰台獲得！",
+        "ca": "【Resultats Oficials GP de França 2026 a Le Mans】Jorge Martín (Aprilia Racing) fa el doblet d'Sprint i Gran Premi! Triplet històric d'Aprilia al podi de diumenge amb Marco Bezzecchi (2n) i el japonès Ai Ogura (3r, Trackhouse Racing)!",
+        "en": "[Official Results: 2026 MotoGP French GP at Le Mans] Jorge Martín (Aprilia Racing) sweeps the Saturday Sprint and Sunday Grand Prix! Marco Bezzecchi takes 2nd and Japan's Ai Ogura (Trackhouse Racing) charges to 3rd for an all-Aprilia Sunday podium!"
+      },
+      "editorialCommentary": {
+        "ja": "MotoGP公式X（@MotoGP）が配信したル・マン決勝後のパルクフェルメ映像では、スプリントと決勝のダブルウィンを達成したホルヘ・マルティン選手、2位のマルコ・ベッツェッキ選手とともに、3位表彰台に飛び込んだ小椋藍選手（Trackhouse Racing）のクールな笑顔が世界中から絶賛されています。このル・マンでの3位表彰台が、6月のチェコGP（2位）そしてアッセンでの歴史的初優勝への大きな布石となりました。",
+        "ca": "Les imatges oficials de @MotoGP a Le Mans mostren el podi de l'excampió de Moto2 Ai Ogura (formació de l'Asia Talent Cup i molt estimat pels aficionats japonesos i catalans), que va signar el tercer lloc darrere de Martín i Bezzecchi.",
+        "en": "@MotoGP's official post-race clips from Le Mans spotlight Ai Ogura's composed ride to 3rd place behind Jorge Martín and Marco Bezzecchi—foreshadowing Ogura's even bigger breakthroughs later in June."
+      }
+    },
+    {
+      "platform": "Instagram",
+      "accountName": "Trackhouse MotoGP Team",
+      "handle": "@trackhousemotogp",
+      "url": "https://www.instagram.com/trackhousemotogp/",
+      "postUrl": "https://www.instagram.com/p/DfjtkwAovGn/",
       "quotedPostText": {
         "ja": "【2026 MotoGP 第5戦 フランスGP（ル・マン）公式結果】ホルヘ・マルティン（Aprilia Racing）が土曜スプリント＆日曜決勝グランプリを完全制覇！日曜決勝2位にマルコ・ベッツェッキ（Aprilia Racing）、そして3位に日本人ライダー・小椋藍（Trackhouse Racing / Aprilia）が入り表彰台獲得！",
         "ca": "【Resultats Oficials GP de França 2026 a Le Mans】Jorge Martín (Aprilia Racing) fa el doblet d'Sprint i Gran Premi! Triplet històric d'Aprilia al podi de diumenge amb Marco Bezzecchi (2n) i el japonès Ai Ogura (3r, Trackhouse Racing)!",

@@ -22,10 +22,27 @@
   "snsCitations": [
     {
       "platform": "X",
+      "accountName": "Trackhouse MotoGP Team",
+      "handle": "@TrackhouseMoto",
+      "url": "https://x.com/TrackhouseMoto",
+      "postUrl": "https://x.com/TrackhouseMoto/status/2120101663952515273",
+      "quotedPostText": {
+        "ja": "【歴史的快挙！2026 MotoGP 第10戦 オランダGP（ダッチTT・アッセン）公式結果】土曜スプリントはラウル・フェルナンデス（Trackhouse MotoGP Team）が優勝！そして日曜決勝グランプリで日本の小椋藍（Trackhouse MotoGP Team / Aprilia）がMotoGP最高峰クラス初優勝を達成！日本人ライダーの最高峰クラス優勝は2004年の玉田誠以来22年ぶり！2位にフェルナンデスでTrackhouseが1-2フィニッシュ、3位にホルヘ・マルティン（Aprilia Racing）でアプリリア勢が表彰台を独占！",
+        "ca": "【HISTÒRIA A ASSEN! Resultats Oficials TT dels Països Baixos 2026】Dissabte: Victòria de Raúl Fernández a l'Sprint! Diumenge: Ai Ogura (Trackhouse MotoGP Team / Aprilia) aconsegueix la seva primera victòria a la categoria reina de MotoGP (primer guanyador japonès des de Makoto Tamada el 2004)! 2n Raúl Fernández per a un doblet 1-2 de Trackhouse i 3r Jorge Martín (Aprilia Racing) completant el triplete d'Aprilia!",
+        "en": "[HISTORY MADE AT ASSEN! Official Results: 2026 MotoGP Dutch TT] Raúl Fernández wins Saturday's Sprint! On Sunday, Ai Ogura (Trackhouse MotoGP Team / Aprilia) wins the Dutch TT to claim his maiden MotoGP premier-class victory—the first by a Japanese rider since Makoto Tamada in 2004! Teammate Raúl Fernández finishes 2nd for a Trackhouse 1–2, with Jorge Martín (Aprilia Racing) 3rd for an all-Aprilia podium lock-out!"
+      },
+      "editorialCommentary": {
+        "ja": "MotoGP公式X（@MotoGP）およびTrackhouse MotoGP公式（@TrackhouseMoto）が世界中に発信したアッセンのフィニッシュシーンは、2026年シーズン最大のハイライトとなりました！第5戦ル・マン3位、第9戦ブルノ2位と階段を上ってきた小椋藍選手が、聖地アッセン（全長4,542m）の高速コーナーと最終GTシケインを完璧に制し、日本人ライダーとして22年ぶりとなる最高峰クラス優勝を成し遂げました。",
+        "ca": "Les publicacions oficials de @MotoGP i @TrackhouseMoto recullen el moment històric en què Ai Ogura creua la meta de la Catedral d'Assen (4.542m) en primera posició, culminant la seva progressió (3r a Le Mans, 2n a Brno i 1r a Assen) al capdavant d'un 1-2-3 d'Aprilia.",
+        "en": "Official posts from @MotoGP and @TrackhouseMoto capture the unforgettable moment Ai Ogura crossed the stripe at the Cathedral of Speed (4,542m) to complete his podium progression (3rd at Le Mans, 2nd at Brno, 1st at Assen) at the head of an all-Aprilia 1–2–3."
+      }
+    },
+    {
+      "platform": "Instagram",
       "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
-      "url": "https://x.com/MotoGP",
-      "publishedDate": "2026-06-28 (Dutch TT Assen Official Results)",
+      "handle": "@motogp",
+      "url": "https://www.instagram.com/motogp/",
+      "postUrl": "https://www.instagram.com/p/DfkfTBqibtd/",
       "quotedPostText": {
         "ja": "【歴史的快挙！2026 MotoGP 第10戦 オランダGP（ダッチTT・アッセン）公式結果】土曜スプリントはラウル・フェルナンデス（Trackhouse MotoGP Team）が優勝！そして日曜決勝グランプリで日本の小椋藍（Trackhouse MotoGP Team / Aprilia）がMotoGP最高峰クラス初優勝を達成！日本人ライダーの最高峰クラス優勝は2004年の玉田誠以来22年ぶり！2位にフェルナンデスでTrackhouseが1-2フィニッシュ、3位にホルヘ・マルティン（Aprilia Racing）でアプリリア勢が表彰台を独占！",
         "ca": "【HISTÒRIA A ASSEN! Resultats Oficials TT dels Països Baixos 2026】Dissabte: Victòria de Raúl Fernández a l'Sprint! Diumenge: Ai Ogura (Trackhouse MotoGP Team / Aprilia) aconsegueix la seva primera victòria a la categoria reina de MotoGP (primer guanyador japonès des de Makoto Tamada el 2004)! 2n Raúl Fernández per a un doblet 1-2 de Trackhouse i 3r Jorge Martín (Aprilia Racing) completant el triplete d'Aprilia!",

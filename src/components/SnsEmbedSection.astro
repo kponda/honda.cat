@@ -10,45 +10,76 @@ interface Props {
 const { citations = [], lang } = Astro.props;
 
 const sectionTitle: Record<Lang, string> = {
-  ja: '📱 公式SNSポスト引用＆現地ディテール深掘り（著作権クリーン公式引用）',
-  ca: '📱 Citacions de Xarxes Socials Oficials i Anàlisi en Detall',
-  en: '📱 Official SNS Post Citations & In-Depth Paddock Breakdown'
-};
-
-const sectionNote: Record<Lang, string> = {
-  ja: '※インターネット上の写真・画像の無断転載は一切行わず、各レース主催者・公式サーキット・公式チームのSNS（X / Instagram / YouTube）および公式発表ポストを正当に引用・埋め込みリンクし、その投稿内容を詳細に解説しています。',
-  ca: '*Cap imatge d\'internet s\'utilitza sense permís. Citem i enllacem directament les publicacions oficials de X (Twitter), Instagram i YouTube dels circuits i campionats per analitzar-ne tots els detalls.',
-  en: '*Zero unauthorized web images are used. We strictly cite and embed-link official X (Twitter), Instagram, and YouTube posts from race organizers and circuits with detailed editorial commentary.'
+  ja: '📱 公式SNSポスト ＆ 猫編集部のディテール解説',
+  ca: '📱 Publicacions Oficials de Xarxes Socials i Anàlisi en Detall',
+  en: '📱 Official Social Media Posts & Paddock Breakdown'
 };
 
 const commentaryLabel: Record<Lang, string> = {
-  ja: '🐾 猫編集部のポスト深掘り解説',
-  ca: '🐾 Anàlisi detallada de la publicació',
-  en: '🐾 Editorial Deep-Dive on this Post'
+  ja: '🐾 猫編集部のポスト解説',
+  ca: '🐾 Anàlisi de la publicació',
+  en: '🐾 Paddock Notes on this Post'
 };
 
 const viewPostLabel: Record<Lang, string> = {
-  ja: '公式SNSで元の投稿・写真/動画を見る ↗',
-  ca: 'Veure la publicació original (fotos/vídeo) a la xarxa oficial ↗',
-  en: 'View Original Post & Media on Official SNS ↗'
+  ja: '公式SNSで開く ↗',
+  ca: 'Obrir a la xarxa oficial ↗',
+  en: 'Open on Official SNS ↗'
 };
 
 function getPlatformBadge(platform: SnsCiteItem['platform']) {
   switch (platform) {
     case 'X':
-      return { icon: '𝕏', label: 'X (Twitter) Official Post', color: '#1d9bf0', bg: 'rgba(29, 155, 240, 0.14)' };
+      return { icon: '𝕏', label: 'X (Twitter)', color: '#1d9bf0', bg: 'rgba(29, 155, 240, 0.14)' };
     case 'Instagram':
-      return { icon: '📸', label: 'Instagram Official Dispatch', color: '#e1306c', bg: 'rgba(225, 48, 108, 0.14)' };
+      return { icon: '📸', label: 'Instagram', color: '#e1306c', bg: 'rgba(225, 48, 108, 0.14)' };
     case 'YouTube':
-      return { icon: '▶️', label: 'YouTube Official Broadcast', color: '#ff0000', bg: 'rgba(255, 0, 0, 0.14)' };
+      return { icon: '▶️', label: 'YouTube', color: '#ff0000', bg: 'rgba(255, 0, 0, 0.14)' };
     default:
-      return { icon: '🌐', label: 'Official Press Dispatch', color: '#ffb703', bg: 'rgba(255, 183, 3, 0.14)' };
+      return { icon: '🌐', label: 'Official SNS', color: '#ffb703', bg: 'rgba(255, 183, 3, 0.14)' };
   }
 }
 
-function isTweetStatusUrl(url?: string): boolean {
-  if (!url) return false;
-  return /^https?:\/\/(twitter\.com|x\.com)\/[^/]+\/status\/\d+/.test(url);
+function getXStatusUrl(url?: string): string | null {
+  if (!url) return null;
+  const m = url.match(/^https?:\/\/(?:www\.)?(?:twitter\.com|x\.com)\/([^/]+)\/status\/(\d+)/i);
+  if (!m) return null;
+  // twitter-tweet widget requires twitter.com or x.com status URL
+  return `https://twitter.com/${m[1]}/status/${m[2]}`;
+}
+
+function getXProfileUrl(url?: string, handle?: string): string | null {
+  if (url) {
+    const m = url.match(/^https?:\/\/(?:www\.)?(?:twitter\.com|x\.com)\/([A-Za-z0-9_]+)\/?$/i);
+    if (m) return `https://twitter.com/${m[1]}`;
+  }
+  if (handle) {
+    const m2 = handle.match(/@([A-Za-z0-9_]+)/);
+    if (m2) return `https://twitter.com/${m2[1]}`;
+  }
+  return null;
+}
+
+function getInstagramEmbedUrl(url?: string): string | null {
+  if (!url) return null;
+  const postMatch = url.match(/instagram\.com\/(?:p|reel)\/([A-Za-z0-9_-]+)/i);
+  if (postMatch) {
+    return `https://www.instagram.com/p/${postMatch[1]}/embed/captioned/`;
+  }
+  const profMatch = url.match(/instagram\.com\/([A-Za-z0-9_.]+)\/?$/i);
+  if (profMatch && !['p', 'reel', 'explore', 'stories'].includes(profMatch[1].toLowerCase())) {
+    return `https://www.instagram.com/${profMatch[1]}/embed/`;
+  }
+  return null;
+}
+
+function getYouTubeEmbedUrl(url?: string): string | null {
+  if (!url) return null;
+  const watchMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([A-Za-z0-9_-]{11})/i);
+  if (watchMatch) {
+    return `https://www.youtube.com/embed/${watchMatch[1]}`;
+  }
+  return null;
 }
 ---
 
@@ -56,14 +87,16 @@ function isTweetStatusUrl(url?: string): boolean {
   <section class="sns-citations-section">
     <div class="sns-section-header">
       <h3 class="sns-section-title">{sectionTitle[lang]}</h3>
-      <p class="sns-section-note">{sectionNote[lang]}</p>
     </div>
 
     <div class="sns-cards-grid">
       {citations.map((item) => {
         const badge = getPlatformBadge(item.platform);
-        const targetUrl = item.postUrl || item.url;
-        const hasStatusEmbed = isTweetStatusUrl(item.postUrl);
+        const rawTargetUrl = item.postUrl || item.url;
+        const xStatusUrl = getXStatusUrl(item.postUrl) || getXStatusUrl(item.url);
+        const igEmbedUrl = getInstagramEmbedUrl(item.postUrl) || getInstagramEmbedUrl(item.url);
+        const ytEmbedUrl = getYouTubeEmbedUrl(item.postUrl) || getYouTubeEmbedUrl(item.url);
+        const xProfileUrl = !xStatusUrl && item.platform === 'X' ? getXProfileUrl(rawTargetUrl, item.handle) : null;
 
         return (
           <div class="sns-cite-card">
@@ -74,47 +107,73 @@ function isTweetStatusUrl(url?: string): boolean {
                 </span>
                 <div>
                   <div class="sns-account-name">{item.accountName}</div>
-                  <a href={item.url} target="_blank" rel="noopener noreferrer" class="sns-handle racing-font">
+                  <a href={rawTargetUrl} target="_blank" rel="noopener noreferrer" class="sns-handle racing-font">
                     {item.handle}
                   </a>
                 </div>
               </div>
 
-              <div class="sns-platform-tag" style={`background: ${badge.bg}; color: ${badge.color};`}>
-                <span>{badge.icon}</span>
-                <span>{badge.label}</span>
+              <div class="sns-top-right">
+                <div class="sns-platform-tag" style={`background: ${badge.bg}; color: ${badge.color};`}>
+                  <span>{badge.icon}</span>
+                  <span>{badge.label}</span>
+                </div>
+                <a href={rawTargetUrl} target="_blank" rel="noopener noreferrer" class="sns-action-link racing-font">
+                  {viewPostLabel[lang]}
+                </a>
               </div>
             </div>
 
-            {/* Official Quote Block (Supports official Twitter/X widgets.js if status URL is present) */}
-            {hasStatusEmbed ? (
-              <div class="sns-official-embed-wrapper">
-                <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true">
-                  <p>{item.quotedPostText[lang]}</p>
-                  &mdash; {item.accountName} ({item.handle}) <a href={item.postUrl}>{item.publishedDate || 'Official Post'}</a>
-                </blockquote>
-              </div>
-            ) : (
-              <blockquote class="sns-quote-block" cite={targetUrl}>
-                <div class="quote-mark">“</div>
-                <p class="sns-quoted-text">{item.quotedPostText[lang]}</p>
-                {item.publishedDate && (
-                  <footer class="sns-quote-footer racing-font">
-                    📅 {item.publishedDate} · {item.handle}
-                  </footer>
-                )}
-              </blockquote>
-            )}
+            {/* Embedded Rich Social Post Media (X Post Widget, Instagram Post Embed, or YouTube Player) */}
+            <div class="sns-embed-stage">
+              {xStatusUrl ? (
+                <div class="sns-x-tweet-embed">
+                  <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-align="center">
+                    <a href={xStatusUrl}></a>
+                  </blockquote>
+                </div>
+              ) : igEmbedUrl ? (
+                <div class="sns-ig-embed">
+                  <iframe
+                    src={igEmbedUrl}
+                    class="ig-embed-iframe"
+                    frameborder="0"
+                    scrolling="no"
+                    allowtransparency="true"
+                    loading="lazy"
+                    title={`${item.accountName} Instagram Post`}
+                  ></iframe>
+                </div>
+              ) : ytEmbedUrl ? (
+                <div class="sns-yt-embed">
+                  <iframe
+                    src={ytEmbedUrl}
+                    class="yt-embed-iframe"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy"
+                    title={`${item.accountName} YouTube Video`}
+                  ></iframe>
+                </div>
+              ) : xProfileUrl ? (
+                <div class="sns-x-timeline-embed">
+                  <a
+                    class="twitter-timeline"
+                    data-theme="dark"
+                    data-height="460"
+                    data-chrome="noheader nofooter"
+                    href={xProfileUrl}
+                  >
+                    Posts by {item.handle}
+                  </a>
+                </div>
+              ) : null}
+            </div>
 
             <div class="sns-editorial-box">
               <div class="editorial-label">{commentaryLabel[lang]}</div>
               <p class="editorial-text">{item.editorialCommentary[lang]}</p>
-            </div>
-
-            <div class="sns-card-actions">
-              <a href={targetUrl} target="_blank" rel="noopener noreferrer" class="sns-action-link racing-font">
-                {viewPostLabel[lang]}
-              </a>
             </div>
           </div>
         );
@@ -134,35 +193,29 @@ function isTweetStatusUrl(url?: string): boolean {
   }
 
   .sns-section-header {
-    margin-bottom: 1.35rem;
+    margin-bottom: 1.25rem;
     border-bottom: 1px solid var(--border-subtle);
-    padding-bottom: 0.95rem;
+    padding-bottom: 0.75rem;
   }
 
   .sns-section-title {
-    font-size: 1.18rem;
+    font-size: 1.2rem;
     font-weight: 800;
     color: #fff;
-    margin-bottom: 0.4rem;
-  }
-
-  .sns-section-note {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    line-height: 1.55;
   }
 
   .sns-cards-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.35rem;
+    align-items: start;
   }
 
   .sns-cite-card {
-    background: rgba(13, 15, 20, 0.72);
+    background: rgba(13, 15, 20, 0.78);
     border: 1px solid var(--border-subtle);
-    border-radius: 0.85rem;
-    padding: 1.25rem;
+    border-radius: 0.9rem;
+    padding: 1.2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -212,6 +265,13 @@ function isTweetStatusUrl(url?: string): boolean {
     text-underline-offset: 2px;
   }
 
+  .sns-top-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
   .sns-platform-tag {
     display: inline-flex;
     align-items: center;
@@ -222,35 +282,51 @@ function isTweetStatusUrl(url?: string): boolean {
     font-weight: 700;
   }
 
-  .sns-quote-block {
-    position: relative;
-    background: rgba(255, 255, 255, 0.035);
-    border-left: 3px solid #1d9bf0;
-    padding: 0.95rem 1.15rem 0.95rem 2.2rem;
-    border-radius: 0 0.65rem 0.65rem 0;
+  .sns-embed-stage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0.75rem;
   }
 
-  .quote-mark {
-    position: absolute;
-    top: 0.35rem;
-    left: 0.65rem;
-    font-size: 1.8rem;
-    line-height: 1;
-    color: rgba(29, 155, 240, 0.55);
-    font-family: Georgia, serif;
+  .sns-x-tweet-embed,
+  .sns-x-timeline-embed {
+    width: 100%;
+    max-width: 550px;
+    min-height: 220px;
+    display: flex;
+    justify-content: center;
   }
 
-  .sns-quoted-text {
-    font-size: 0.92rem;
-    color: var(--text-primary);
-    line-height: 1.7;
-    font-style: italic;
+  .sns-ig-embed {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
   }
 
-  .sns-quote-footer {
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-    color: var(--text-muted);
+  .ig-embed-iframe {
+    width: 100%;
+    min-height: 580px;
+    display: block;
+    border: 0;
+  }
+
+  .sns-yt-embed {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .yt-embed-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 
   .sns-editorial-box {
@@ -274,19 +350,14 @@ function isTweetStatusUrl(url?: string): boolean {
     line-height: 1.7;
   }
 
-  .sns-card-actions {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .sns-action-link {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
     color: #58a6ff;
     background: rgba(29, 155, 240, 0.12);
     border: 1px solid rgba(29, 155, 240, 0.3);
-    padding: 0.45rem 0.9rem;
-    border-radius: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
     transition: all 0.15s ease;
   }
 

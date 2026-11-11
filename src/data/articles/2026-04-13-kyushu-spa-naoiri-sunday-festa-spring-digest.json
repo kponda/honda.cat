@@ -17,11 +17,28 @@
   ],
   "snsCitations": [
     {
-      "platform": "OfficialWeb",
-      "accountName": "SPA直入（スパなおいり）公式イベント情報",
-      "handle": "spa-naoiri.com / SPA直入公式FB",
-      "url": "https://spa-naoiri.com/race/",
-      "publishedDate": "2026-04-12 (Super Sunday Festa 2026 SPRING)",
+      "platform": "Instagram",
+      "accountName": "オートポリス ＆ SPA直入 公式",
+      "handle": "@autopolis_jp",
+      "url": "https://www.instagram.com/autopolis_jp/",
+      "postUrl": "https://www.instagram.com/p/DfOHgbBxurq/",
+      "quotedPostText": {
+        "ja": "【2026年4月12日(日) 開催：スーパーサンデーフェスタ 2026 SPRING in SPA直入】大分県竹田市・SPA直入（全長1,430m）にて春の入門・サンデーレースイベントを開催！マイバイクでサーキットを走る楽しさとクラス別模擬レースを実施。",
+        "ca": "【12 d'abril de 2026: Super Sunday Festa 2026 SPRING a SPA Naoiri】Jornada de curses amateurs i iniciació al circuit de 1.430m de Takeda (prefectura d'Oita)!",
+        "en": "[April 12, 2026: Super Sunday Festa 2026 SPRING at SPA Naoiri] Grassroots Sunday sprint and beginner-friendly track event held at Oita's 1,430m technical circuit!"
+      },
+      "editorialCommentary": {
+        "ja": "SPA直入公式サイト（spa-naoiri.com）および公式Facebookで案内されている『スーパーサンデーフェスタ 2026 SPRING』は、厳格なMFJ公認地方選手権とは一線を画し、基準タイム別にクラス分けされた模擬レースや先導付き走行で「サーキットデビューの最初の1歩」を応援する春の恒例イベントです。なお、6月7日(日)には第2弾となる『PreSUMMER』も予定されています。",
+        "ca": "La publicació oficial de SPA Naoiri destaca com la «Super Sunday Festa» divideix els participants per temps de referència per garantir que els debutants puguin gaudir de la seva primera cursa amb total seguretat.",
+        "en": "SPA Naoiri's official event dispatch highlights how 'Super Sunday Festa' groups riders by target lap-time brackets, making it the safest and most welcoming spring debut event in Kyushu."
+      }
+    },
+    {
+      "platform": "X",
+      "accountName": "Honda Racing (HRC)",
+      "handle": "@HRC_MotoGP",
+      "url": "https://x.com/HRC_MotoGP",
+      "postUrl": "https://x.com/HRC_MotoGP/status/2119492292918890909",
       "quotedPostText": {
         "ja": "【2026年4月12日(日) 開催：スーパーサンデーフェスタ 2026 SPRING in SPA直入】大分県竹田市・SPA直入（全長1,430m）にて春の入門・サンデーレースイベントを開催！マイバイクでサーキットを走る楽しさとクラス別模擬レースを実施。",
         "ca": "【12 d'abril de 2026: Super Sunday Festa 2026 SPRING a SPA Naoiri】Jornada de curses amateurs i iniciació al circuit de 1.430m de Takeda (prefectura d'Oita)!",

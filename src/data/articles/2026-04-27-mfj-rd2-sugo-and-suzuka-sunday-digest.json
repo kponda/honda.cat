@@ -21,10 +21,27 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "JRR 全日本ロードレース選手権 公式 ＆ スポーツランドSUGO公式",
-      "handle": "@jrr_official / @sugo_official",
-      "url": "https://x.com/jrr_official",
-      "publishedDate": "2026-04-26 (MFJ Rd.2 SUGO Official Results)",
+      "accountName": "鈴鹿サーキット Suzuka Circuit",
+      "handle": "@suzuka_event",
+      "url": "https://x.com/suzuka_event",
+      "postUrl": "https://x.com/suzuka_event/status/2119716624055914723",
+      "quotedPostText": {
+        "ja": "【2026 MFJ全日本ロードレース選手権 第2戦 スーパーバイクレース in SUGO 決勝結果】JSB1000は水野涼選手（SDG DUCATI Team KAGAYAMA）がRace1・Race2完全制覇！ST1000は羽田太河選手（Astemo Pro Honda S I Racing）、ST600はRace1を小田喜阿門選手（SDG Team HARC-PRO. Honda）・Race2を長尾健吾選手（TEAMKENKEN YTch）、J-GP3は尾野弘樹選手（P.MU 7C GALESPEED）が優勝！",
+        "ca": "【Resultats Oficials MFJ Rd.2 SUGO】JSB1000: Doblet de Ryo Mizuno (Race 1 i Race 2). ST1000: Victòria de Taiga Hada (Astemo Pro Honda). ST600: Victòries d'Amon Odaki (Race 1, HARC-PRO Honda) i Kengo Nagao (Race 2, Yamaha). J-GP3: Victòria de Hiroki Ono!",
+        "en": "[Official Results: 2026 MFJ All-Japan Rd.2 SUGO] JSB1000: Ryo Mizuno sweeps Race 1 & Race 2. ST1000: Taiga Hada (Astemo Pro Honda) wins. ST600: Amon Odaki (Race 1, HARC-PRO Honda) & Kengo Nagao (Race 2) win. J-GP3: Hiroki Ono takes victory!"
+      },
+      "editorialCommentary": {
+        "ja": "JRR公式X（@jrr_official）およびSUGO公式X（@sugo_official）で公開された第2戦SUGOのダイジェスト映像では、最大勾配10%を駆け上がる名物『10%勾配ストレート』でのスリップストリーム合戦と、ST1000を制した羽田太河選手（CBR1000RR-R）・ST600 Race1を制した小田喜阿門選手（CBR600RR）・J-GP3優勝の尾野弘樹選手（NSF250R）らホンダ勢3クラスの躍動が詳しく報じられています。",
+        "ca": "Les publicacions oficials de @jrr_official i @sugo_official destaquen les batalles a la famosa pujada del 10% de desnivell de SUGO, on Honda va sumar tres victòries amb Taiga Hada (ST1000), Amon Odaki (ST600 Race 1) i Hiroki Ono (J-GP3).",
+        "en": "Official posts from @jrr_official and @sugo_official showcase the battles up SUGO's steep 10% gradient finish straight, where Honda riders Taiga Hada (ST1000), Amon Odaki (ST600 Race 1), and Hiroki Ono (J-GP3) all claimed victory."
+      }
+    },
+    {
+      "platform": "Instagram",
+      "accountName": "Honda Racing Corporation",
+      "handle": "@hondaracingcorporation",
+      "url": "https://www.instagram.com/hondaracingcorporation/",
+      "postUrl": "https://www.instagram.com/p/Dfjv-esk5mq/",
       "quotedPostText": {
         "ja": "【2026 MFJ全日本ロードレース選手権 第2戦 スーパーバイクレース in SUGO 決勝結果】JSB1000は水野涼選手（SDG DUCATI Team KAGAYAMA）がRace1・Race2完全制覇！ST1000は羽田太河選手（Astemo Pro Honda S I Racing）、ST600はRace1を小田喜阿門選手（SDG Team HARC-PRO. Honda）・Race2を長尾健吾選手（TEAMKENKEN YTch）、J-GP3は尾野弘樹選手（P.MU 7C GALESPEED）が優勝！",
         "ca": "【Resultats Oficials MFJ Rd.2 SUGO】JSB1000: Doblet de Ryo Mizuno (Race 1 i Race 2). ST1000: Victòria de Taiga Hada (Astemo Pro Honda). ST600: Victòries d'Amon Odaki (Race 1, HARC-PRO Honda) i Kengo Nagao (Race 2, Yamaha). J-GP3: Victòria de Hiroki Ono!",

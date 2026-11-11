@@ -204,10 +204,10 @@ const {
     <div class="checkered-stripe"></div>
     <slot />
 
-    <!-- Official X (Twitter) Widget Loader for Embedded Official Posts (Loaded only when blockquote.twitter-tweet is present) -->
+    <!-- Official X (Twitter) Widget Loader for Embedded Official Posts & Timelines -->
     <script is:inline>
       document.addEventListener('DOMContentLoaded', () => {
-        if (document.querySelector('blockquote.twitter-tweet')) {
+        if (document.querySelector('blockquote.twitter-tweet, a.twitter-timeline')) {
           const s = document.createElement('script');
           s.src = 'https://platform.twitter.com/widgets.js';
           s.async = true;

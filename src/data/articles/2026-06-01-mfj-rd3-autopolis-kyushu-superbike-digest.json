@@ -21,11 +21,28 @@
   ],
   "snsCitations": [
     {
+      "platform": "Instagram",
+      "accountName": "オートポリス (AUTOPOLIS) 公式",
+      "handle": "@autopolis_jp",
+      "url": "https://www.instagram.com/autopolis_jp/",
+      "postUrl": "https://www.instagram.com/p/DfI72GtGvuq/",
+      "quotedPostText": {
+        "ja": "【2026 MFJ全日本ロードレース選手権 第3戦 スーパーバイクレース in 九州（オートポリス）正式結果】JSB1000は水野涼（SDG DUCATI Team KAGAYAMA）がRace1・Race2を制し開幕5連勝！ST1000は赤旗再スタートの8周決戦を羽田太河（Astemo Pro Honda S I Racing）が制しホンダ勢1-2-3独占！ST600は小山知良（日本郵便 Honda Dream TP）が優勝！そしてJ-GP3は高杉奈緒子（TEAM NAOKO KTM）が感動の全日本初優勝！",
+        "ca": "【Resultats Oficials MFJ Rd.3 Superbike Race in Kyushu a Autopolis】JSB1000: Doblet de Ryo Mizuno (5 victòries seguides) davant Nakasuga i Nagashima! ST1000: Triplet d'Honda amb victòria de Taiga Hada davant Kunimine i Nagoe! ST600: Victòria de Tomoyoshi Koyama! J-GP3: Primera victòria històrica de Naoko Takasugi al Campionat del Japó!",
+        "en": "[Official Results: 2026 MFJ All-Japan Rd.3 Superbike Race in Kyushu at Autopolis] JSB1000: Ryo Mizuno sweeps Race 1 & Race 2 (5 straight wins) ahead of Nakasuga & Nagashima! ST1000: Taiga Hada leads an all-Honda 1–2–3 with Kunimine & Nagoe! ST600: Tomoyoshi Koyama wins! J-GP3: Naoko Takasugi claims her maiden All-Japan victory!"
+      },
+      "editorialCommentary": {
+        "ja": "オートポリス公式X（@autopolis2005）およびJRR公式（@jrr_official）の投稿で日本中のモータースポーツファンに大きな感動を呼んだのが、J-GP3クラスでの高杉奈緒子選手（TEAM NAOKO KTM）の全日本初優勝です。トップチェッカーを受けた車両がレース後の車両規則違反で失格となり繰り上がりでの初優勝となりましたが、長年にわたりハンディキャップを乗り越えて全日本と鈴鹿8耐に挑み続けてきた高杉選手と、3位に入った岡崎静夏選手のダブル女性ライダー表彰台は九州ラウンド屈指の名場面となりました。",
+        "ca": "Les xarxes oficials de @autopolis2005 i @jrr_official van destacar especialment el podi de J-GP3 a Oita, on Naoko Takasugi va aconseguir la seva primera victòria al Campionat del Japó acompanyada al podi per Kotaro Togashi (2n) i Shizuka Okazaki (3a).",
+        "en": "Official dispatches from @autopolis2005 and @jrr_official celebrated Naoko Takasugi's historic maiden All-Japan J-GP3 victory at Autopolis alongside 2nd-place Kotaro Togashi and 3rd-place Shizuka Okazaki, as well as Honda's dominant podium lockouts in ST1000 and ST600."
+      }
+    },
+    {
       "platform": "X",
-      "accountName": "オートポリス (AUTOPOLIS) 公式 ＆ JRR 全日本ロードレース公式",
-      "handle": "@autopolis2005 / @jrr_official",
-      "url": "https://x.com/autopolis2005",
-      "publishedDate": "2026-05-31 (MFJ Rd.3 Superbike Race in Kyushu Official Results)",
+      "accountName": "Ducati Official",
+      "handle": "@DucatiMotor",
+      "url": "https://x.com/DucatiMotor",
+      "postUrl": "https://x.com/DucatiMotor/status/2119311071047520628",
       "quotedPostText": {
         "ja": "【2026 MFJ全日本ロードレース選手権 第3戦 スーパーバイクレース in 九州（オートポリス）正式結果】JSB1000は水野涼（SDG DUCATI Team KAGAYAMA）がRace1・Race2を制し開幕5連勝！ST1000は赤旗再スタートの8周決戦を羽田太河（Astemo Pro Honda S I Racing）が制しホンダ勢1-2-3独占！ST600は小山知良（日本郵便 Honda Dream TP）が優勝！そしてJ-GP3は高杉奈緒子（TEAM NAOKO KTM）が感動の全日本初優勝！",
         "ca": "【Resultats Oficials MFJ Rd.3 Superbike Race in Kyushu a Autopolis】JSB1000: Doblet de Ryo Mizuno (5 victòries seguides) davant Nakasuga i Nagashima! ST1000: Triplet d'Honda amb victòria de Taiga Hada davant Kunimine i Nagoe! ST600: Victòria de Tomoyoshi Koyama! J-GP3: Primera victòria històrica de Naoko Takasugi al Campionat del Japó!",

@@ -23,7 +23,24 @@
       "accountName": "MotoGP™ Official",
       "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "publishedDate": "2026-05-31 (Italian GP Mugello Official Results)",
+      "postUrl": "https://x.com/MotoGP/status/2120177303896334684",
+      "quotedPostText": {
+        "ja": "【2026 MotoGP 第7戦 イタリアGP（ムジェロ）公式結果】土曜スプリントはラウル・フェルナンデス（Trackhouse Racing）が優勝！日曜決勝グランプリは母国イタリアのマルコ・ベッツェッキ（Aprilia Racing）が優勝！2位にホルヘ・マルティン（Aprilia Racing）、3位にフランチェスコ・バニャイア（Ducati Lenovo Team）！",
+        "ca": "【Resultats Oficials GP d'Itàlia 2026 a Mugello】Dissabte: Victòria de Raúl Fernández a l'Sprint! Diumenge: Triomf a casa de Marco Bezzecchi (Aprilia Racing) seguit del seu company Jorge Martín (2n) i de Pecco Bagnaia (3r, Ducati Lenovo)!",
+        "en": "[Official Results: 2026 MotoGP Italian GP at Mugello] Raúl Fernández wins Saturday's Sprint! Home hero Marco Bezzecchi (Aprilia Racing) wins Sunday's Grand Prix ahead of teammate Jorge Martín (2nd) and Francesco Bagnaia (3rd)!"
+      },
+      "editorialCommentary": {
+        "ja": "MotoGP公式X（@MotoGP）が投稿したムジェロのオンボード＆表彰台映像では、時速360km/h超に達する1,141mのメインストレートからサン・ドナート（Turn 1）へのブレーキング競争と、土曜スプリントを制したラウル・フェルナンデス選手、そして日曜決勝で母国ファンを熱狂させたマルコ・ベッツェッキ選手＆ホルヘ・マルティン選手のアプリリアワークス1-2フィニッシュが鮮やかに記録されています。",
+        "ca": "Els vídeos oficials de @MotoGP a Mugello mostren la velocitat punta a la recta d'1,141 km i l'exhibició de Marco Bezzecchi per donar a Aprilia un històric doblet (1r i 2n amb Jorge Martín) a la seva cursa de casa a Itàlia.",
+        "en": "@MotoGP's official Mugello clips capture the 360+ km/h slipstream battles into San Donato (Turn 1) as Marco Bezzecchi and Jorge Martín delivered a historic 1–2 finish for Aprilia on Italian soil."
+      }
+    },
+    {
+      "platform": "Instagram",
+      "accountName": "Aprilia Official",
+      "handle": "@aprilia",
+      "url": "https://www.instagram.com/aprilia/",
+      "postUrl": "https://www.instagram.com/p/DfjvuSHDtF-/",
       "quotedPostText": {
         "ja": "【2026 MotoGP 第7戦 イタリアGP（ムジェロ）公式結果】土曜スプリントはラウル・フェルナンデス（Trackhouse Racing）が優勝！日曜決勝グランプリは母国イタリアのマルコ・ベッツェッキ（Aprilia Racing）が優勝！2位にホルヘ・マルティン（Aprilia Racing）、3位にフランチェスコ・バニャイア（Ducati Lenovo Team）！",
         "ca": "【Resultats Oficials GP d'Itàlia 2026 a Mugello】Dissabte: Victòria de Raúl Fernández a l'Sprint! Diumenge: Triomf a casa de Marco Bezzecchi (Aprilia Racing) seguit del seu company Jorge Martín (2n) i de Pecco Bagnaia (3r, Ducati Lenovo)!",

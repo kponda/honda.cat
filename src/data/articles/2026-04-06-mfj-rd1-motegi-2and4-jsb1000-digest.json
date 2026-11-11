@@ -19,10 +19,27 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "JRR 全日本ロードレース選手権 公式",
-      "handle": "@jrr_official",
-      "url": "https://x.com/jrr_official",
-      "publishedDate": "2026-04-05 (Rd.1 Motegi JSB1000 Official Result)",
+      "accountName": "モビリティリゾートもてぎ 公式",
+      "handle": "@motegi_official",
+      "url": "https://x.com/motegi_official",
+      "postUrl": "https://x.com/motegi_official/status/2120065945813303321",
+      "quotedPostText": {
+        "ja": "【2026 MFJ全日本ロードレース選手権シリーズ 第1戦 もてぎ2&4レース JSB1000 決勝正式結果】優勝：#3 水野 涼（SDG DUCATI Team KAGAYAMA）、2位：#30 長島 哲太（DUNLOP Racing Team with YAHAGI）、3位：#36 國井 勇輝（SDG Team HARC-PRO. Honda）。",
+        "ca": "【Resultat Oficial JSB1000 Rd.1 Motegi 2&4】1r: #3 Ryo Mizuno (SDG DUCATI Team KAGAYAMA), 2n: #30 Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI), 3r: #36 Yuki Kunii (SDG Team HARC-PRO. Honda).",
+        "en": "[Official Result: 2026 MFJ All-Japan Rd.1 Motegi 2&4 JSB1000 Final] 1st: #3 Ryo Mizuno (SDG DUCATI Team KAGAYAMA), 2nd: #30 Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI), 3rd: #36 Yuki Kunii (SDG Team HARC-PRO. Honda)."
+      },
+      "editorialCommentary": {
+        "ja": "JRR公式X（@jrr_official）および公式YouTube『motoバトルLIVE』で公開された開幕戦もてぎの表彰台ショットとハイライト映像では、ドゥカティPanigale V4 Rを駆る水野涼選手の鋭い90度コーナー進入と、ダンロップ開発を牽引する長島哲太選手（CBR1000RR-R）、ハルク・プロの國井勇輝選手（CBR1000RR-R）が並んだメーカー＆タイヤ戦争の最前線が克明に捉えられています。",
+        "ca": "Les publicacions oficials de @jrr_official mostren el podi inaugural a Motegi, on la Panigale V4 R de Ryo Mizuno va superar les Honda CBR1000RR-R de Tetsuta Nagashima (amb pneumàtics Dunlop en desenvolupament) i del jove Yuki Kunii.",
+        "en": "Official @jrr_official paddock posts capture the opening-round podium at Motegi, highlighting the fierce tire and manufacturer battle between Ryo Mizuno's Ducati Panigale V4 R and the Honda CBR1000RR-R machines of Tetsuta Nagashima and Yuki Kunii."
+      }
+    },
+    {
+      "platform": "Instagram",
+      "accountName": "Ducati Corse Official",
+      "handle": "@ducaticorse",
+      "url": "https://www.instagram.com/ducaticorse/",
+      "postUrl": "https://www.instagram.com/p/DfkoWibDXi9/",
       "quotedPostText": {
         "ja": "【2026 MFJ全日本ロードレース選手権シリーズ 第1戦 もてぎ2&4レース JSB1000 決勝正式結果】優勝：#3 水野 涼（SDG DUCATI Team KAGAYAMA）、2位：#30 長島 哲太（DUNLOP Racing Team with YAHAGI）、3位：#36 國井 勇輝（SDG Team HARC-PRO. Honda）。",
         "ca": "【Resultat Oficial JSB1000 Rd.1 Motegi 2&4】1r: #3 Ryo Mizuno (SDG DUCATI Team KAGAYAMA), 2n: #30 Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI), 3r: #36 Yuki Kunii (SDG Team HARC-PRO. Honda).",

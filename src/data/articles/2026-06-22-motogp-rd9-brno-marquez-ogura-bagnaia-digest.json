@@ -23,7 +23,24 @@
       "accountName": "MotoGP™ Official",
       "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "publishedDate": "2026-06-21 (Czech GP Brno Official Results)",
+      "postUrl": "https://x.com/MotoGP/status/2120161038129938650",
+      "quotedPostText": {
+        "ja": "【2026 MotoGP 第9戦 チェコGP（ブルノ）公式結果】土曜スプリントはフランチェスコ・バニャイア（Ducati Lenovo Team）が優勝！日曜決勝グランプリはマルク・マルケス（Ducati Lenovo Team）が制し、日本の小椋藍（Trackhouse Racing / Aprilia）が自己最高位を更新する圧巻の2位表彰台！3位にバニャイア！",
+        "ca": "【Resultats Oficials GP de la República Txeca 2026 a Brno】Dissabte: Victòria de Francesco Bagnaia a l'Sprint! Diumenge: Marc Márquez (Ducati Lenovo Team) guanya el Gran Premi per davant d'un sensacional Ai Ogura (2n, Trackhouse Racing) i de Bagnaia (3r)!",
+        "en": "[Official Results: 2026 MotoGP Czech GP at Brno] Francesco Bagnaia wins Saturday's Sprint! On Sunday, Marc Márquez (Ducati Lenovo Team) triumphs in the Czech Grand Prix ahead of a sensational 2nd place for Japan's Ai Ogura (Trackhouse Racing) and 3rd for Bagnaia!"
+      },
+      "editorialCommentary": {
+        "ja": "MotoGP公式X（@MotoGP）が配信したブルノ（全長5,403m）のハイライト映像では、高低差70m超のアップダウンを駆け抜ける最終セクターの登り坂シケインで、マルク・マルケス選手の鋭いブレーキングと、ドゥカティワークス2台の間に割って入った小椋藍選手（Trackhouse Racing）の抜群のコーナリングスピードが鮮やかに捉えられています。",
+        "ca": "Els vídeos oficials de @MotoGP a Brno (5.403m) mostren com Marc Márquez va dominar les frenades en baixada i com Ai Ogura (Trackhouse Racing) es va intercalar entre les dues Ducati oficials amb un pas per corba impecable.",
+        "en": "@MotoGP's official Brno highlights showcase Marc Márquez's downhill braking mastery and Ai Ogura's (Trackhouse Racing) sublime mid-corner speed to split the two factory Lenovo Ducatis on the podium."
+      }
+    },
+    {
+      "platform": "Instagram",
+      "accountName": "Ducati Corse Official",
+      "handle": "@ducaticorse",
+      "url": "https://www.instagram.com/ducaticorse/",
+      "postUrl": "https://www.instagram.com/p/DfkbYCHtICX/",
       "quotedPostText": {
         "ja": "【2026 MotoGP 第9戦 チェコGP（ブルノ）公式結果】土曜スプリントはフランチェスコ・バニャイア（Ducati Lenovo Team）が優勝！日曜決勝グランプリはマルク・マルケス（Ducati Lenovo Team）が制し、日本の小椋藍（Trackhouse Racing / Aprilia）が自己最高位を更新する圧巻の2位表彰台！3位にバニャイア！",
         "ca": "【Resultats Oficials GP de la República Txeca 2026 a Brno】Dissabte: Victòria de Francesco Bagnaia a l'Sprint! Diumenge: Marc Márquez (Ducati Lenovo Team) guanya el Gran Premi per davant d'un sensacional Ai Ogura (2n, Trackhouse Racing) i de Bagnaia (3r)!",

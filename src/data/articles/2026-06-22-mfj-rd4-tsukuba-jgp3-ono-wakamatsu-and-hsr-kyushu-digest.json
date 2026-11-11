@@ -21,10 +21,27 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "全日本ロードレース選手権 (JRR Official)",
-      "handle": "@jrr_official",
-      "url": "https://x.com/jrr_official",
-      "publishedDate": "2026-06-21 (MFJ All-Japan Rd.4 Tsukuba J-GP3 Official Results)",
+      "accountName": "筑波サーキット 公式",
+      "handle": "@tsukuba_circuit",
+      "url": "https://x.com/tsukuba_circuit",
+      "postUrl": "https://x.com/tsukuba_circuit/status/2120322156940984759",
+      "quotedPostText": {
+        "ja": "【2026 MFJ全日本ロードレース選手権 第4戦 筑波大会（6月21日・1Day開催）J-GP3公式結果】午前の予選では岡崎静夏（日本郵便 Honda Dream TP）が自身初の全日本ポールポジションを獲得！午後の決勝（25周）は13番グリッドから追い上げた尾野弘樹（P.MU 7C GALESPEED）と若松怜（日本郵便 docomo Business TP2）が『25分09秒539（差0.000秒）』の同着フィニッシュ！最高速規定により尾野が優勝、2位若松、3位に高杉奈緒子（TEAM NAOKO KTM）！",
+        "ca": "【Resultats Oficials MFJ All-Japan Rd.4 Tsukuba J-GP3 (21 de juny)】Shizuka Okazaki aconsegueix la seva primera Pole Position al matí! A la final de 25 voltes, Hiroki Ono (remuntant des del 13è lloc) i Rei Wakamatsu creuen la meta amb el mateix temps exacte (25:09.539, +0.000s)! Victòria per a Ono per velocitat punta, 2n Wakamatsu i 3a Naoko Takasugi (TEAM NAOKO KTM)!",
+        "en": "[Official Results: 2026 MFJ All-Japan Rd.4 Tsukuba J-GP3 (June 21)] Shizuka Okazaki claims her maiden All-Japan Pole Position in morning qualifying! In the 25-lap final, Hiroki Ono (charging from P13) and Rei Wakamatsu cross the line in an identical 25:09.539 (+0.000s dead heat)! Ono takes the win on tie-break top speed ahead of 2nd Wakamatsu and 3rd Naoko Takasugi (TEAM NAOKO KTM)!"
+      },
+      "editorialCommentary": {
+        "ja": "JRR全日本公式X（@jrr_official）およびmotoバトルLIVEが伝えた筑波第4戦のフィニッシュ映像は、まさに鳥肌ものでした！岡崎静夏選手の初ポールポジションに続き、決勝では13番手発進の尾野弘樹選手と若松怜選手が1000分の1秒まで同タイム（0.000秒差）でコントロールラインを通過し、3位には前戦オートポリス覇者の高杉奈緒子選手が入る歴史的名勝負となりました。",
+        "ca": "Les imatges oficials de @jrr_official a Tsukuba mostren tant la històrica primera pole de Shizuka Okazaki com l'increïble final de foto-finish a 0.000 segons entre Hiroki Ono i Rei Wakamatsu, amb Naoko Takasugi completant el podi.",
+        "en": "@jrr_official's Tsukuba footage captures both Shizuka Okazaki's emotional maiden pole and the astonishing 0.000-second photo finish between Hiroki Ono and Rei Wakamatsu, with Naoko Takasugi taking her second straight podium in 3rd."
+      }
+    },
+    {
+      "platform": "Instagram",
+      "accountName": "Honda Racing Corporation",
+      "handle": "@hondaracingcorporation",
+      "url": "https://www.instagram.com/hondaracingcorporation/",
+      "postUrl": "https://www.instagram.com/p/Dfgub20CRat/",
       "quotedPostText": {
         "ja": "【2026 MFJ全日本ロードレース選手権 第4戦 筑波大会（6月21日・1Day開催）J-GP3公式結果】午前の予選では岡崎静夏（日本郵便 Honda Dream TP）が自身初の全日本ポールポジションを獲得！午後の決勝（25周）は13番グリッドから追い上げた尾野弘樹（P.MU 7C GALESPEED）と若松怜（日本郵便 docomo Business TP2）が『25分09秒539（差0.000秒）』の同着フィニッシュ！最高速規定により尾野が優勝、2位若松、3位に高杉奈緒子（TEAM NAOKO KTM）！",
         "ca": "【Resultats Oficials MFJ All-Japan Rd.4 Tsukuba J-GP3 (21 de juny)】Shizuka Okazaki aconsegueix la seva primera Pole Position al matí! A la final de 25 voltes, Hiroki Ono (remuntant des del 13è lloc) i Rei Wakamatsu creuen la meta amb el mateix temps exacte (25:09.539, +0.000s)! Victòria per a Ono per velocitat punta, 2n Wakamatsu i 3a Naoko Takasugi (TEAM NAOKO KTM)!",

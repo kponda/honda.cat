@@ -19,10 +19,10 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "鈴鹿サーキット Suzuka Circuit Official",
+      "accountName": "鈴鹿サーキット Suzuka Circuit",
       "handle": "@suzuka_event",
       "url": "https://x.com/suzuka_event",
-      "publishedDate": "2026-06-07 (Suzuka Sunday Road Race Rd.2 Official Report)",
+      "postUrl": "https://x.com/suzuka_event/status/2119996063335813201",
       "quotedPostText": {
         "ja": "【2026 鈴鹿サンデーロードレース 第2戦（6月6日〜7日・フルコース 5,821m）】開幕戦の東コースから舞台をフルコースへ移し、インターJSB1000・ST1000・ST600・JP250・CBR250RR Dream Cupの各クラスで夏を見据えた熱いスリップストリームバトルが展開されました！",
         "ca": "【Suzuka Sunday Road Race 2026 Rd.2 (6-7 de juny · Circuit Complet 5.821m)】Després d'obrir la temporada al traçat Est, la 2a cita ha disputat curses vibrants al circuit complet en Inter JSB1000, ST1000, ST600 i JP250!",
@@ -35,11 +35,11 @@
       }
     },
     {
-      "platform": "Official Facebook / Web",
-      "accountName": "SPA直入（スパ直入）Official",
-      "handle": "SPA直入公式 (@spanaoiri)",
-      "url": "https://spa-naoiri.com/schedule/",
-      "publishedDate": "2026-06-07 (Super Sunday Festa 2026 PreSUMMER)",
+      "platform": "Instagram",
+      "accountName": "鈴鹿サーキット 公式 Instagram",
+      "handle": "@suzukacircuit_official",
+      "url": "https://www.instagram.com/suzukacircuit_official/",
+      "postUrl": "https://www.instagram.com/p/DfZc1vWh0mq/",
       "quotedPostText": {
         "ja": "【SPA直入 スーパーサンデーフェスタ 2026 PreSUMMER（6月7日開催）】4月のSPRING大会に続く今季第2弾！大分県竹田市のSPA直入（全長1,430m）でクラス別スポーツ走行枠とグリッドスタート形式の模擬レースが開催されました。",
         "ca": "【SPA Naoiri Super Sunday Festa 2026 PreSUMMER (7 de juny)】Segona cita de la temporada a Takeda, Oita (1.430m) després de l'edició SPRING d'abril, amb mànegues per nivells i curses sprint simulades!",
