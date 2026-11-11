@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T12:55:00+09:00",
+  "lastUpdated": "2026-11-11T21:10:00+09:00",
   "season": 2026,
   "collectionMethod": "Weekly Official Calendar Database Sync (Dec–Feb Off-Season Full-Year Ingestion + Weekly Differential Check)",
   "events": [
@@ -666,6 +666,776 @@
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-29-motogp-rd10-assen-ai-ogura-maiden-win-digest",
         "lastCheckedAt": "2026-06-29T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-07-03-ewc-rd3-suzuka-8hours-47th",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM世界耐久選手権（EWC）第3戦 “コカ・コーラ” 鈴鹿8時間耐久ロードレース 第47回大会",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-05",
+      "circuit": {
+        "ja": "鈴鹿サーキット（三重県鈴鹿市・全長5,821m）",
+        "ca": "Circuit de Suzuka (Mie, Japó · 5.821m)",
+        "en": "Suzuka Circuit (Mie, Japan · 5,821m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM EWC 第3戦 “コカ・コーラ” 鈴鹿8時間耐久ロードレース 第47回大会",
+        "ca": "FIM EWC 2026 Rd.3 47a edició de les 8 Hores de Suzuka «Coca-Cola»",
+        "en": "2026 FIM EWC Rd.3 47th 'Coca-Cola' Suzuka 8 Hours Endurance Race"
+      },
+      "scheduleWindow": {
+        "ja": "2026年7月3日(金)〜7月5日(日) 決勝8時間耐久（#30 Honda HRC 大会5連覇・高橋巧通算8勝目）",
+        "ca": "3-5 de juliol de 2026 (5a victòria consecutiva d'Honda HRC #30 i 8è triomf rècord de Takumi Takahashi)",
+        "en": "July 3–5, 2026 (#30 Honda HRC 5th straight win & Takumi Takahashi's record 8th victory)"
+      },
+      "classes": "Formula EWC / Superstock (SST) / Experimental (EXP)",
+      "officialWebUrl": "https://www.suzukacircuit.jp/8tai/",
+      "circuitWebUrl": "https://www.fimewc.com/en/calendar",
+      "snsHandle": "@suzuka_event / @FIM_EWC",
+      "snsUrl": "https://x.com/suzuka_event",
+      "verifiedSource": "鈴鹿サーキット公式 (suzukacircuit.jp) ＆ FIM EWC Official",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-07-06-ewc-rd3-suzuka-8hours-hrc-5peat-takahashi-digest",
+        "lastCheckedAt": "2026-07-06T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-07-10-motogp-rd11-sachsenring-germany",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第11戦 ドイツGP（ザクセンリンク）",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-12",
+      "circuit": {
+        "ja": "ザクセンリンク（ドイツ・ケムニッツ近郊・全長3,671m）",
+        "ca": "Sachsenring (Alemanya · 3.671m)",
+        "en": "Sachsenring (Germany · 3,671m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第11戦 ドイツGP（ザクセンリンク）",
+        "ca": "FIM MotoGP 2026 Rd.11 Gran Premi d'Alemanya (Sachsenring)",
+        "en": "2026 FIM MotoGP Rd.11 German Grand Prix (Sachsenring)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年7月10日(金)〜7月12日(日) スプリント＆決勝（M.マルケス優勝＆Trackhouse 2-3ダブル表彰台）",
+        "ca": "10-12 de juliol de 2026 (Victòria de Marc Márquez davant Raúl Fernández i Ai Ogura)",
+        "en": "July 10–12, 2026 (Marc Márquez wins ahead of Trackhouse duo Raúl Fernández & Ai Ogura)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.adac-motorsport.de/motogp-sachsenring/",
+      "snsHandle": "@MotoGP",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-07-13-motogp-rd11-sachsenring-marquez-fernandez-ogura-digest",
+        "lastCheckedAt": "2026-07-13T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-07-12-hsr-kyushu-trophy-rd3-summer",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 Trophy ロードレース選手権 第3戦 ＆ ドリームカップフェスティバル",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-12",
+      "circuit": {
+        "ja": "HSR九州（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 HSR九州 Trophy ロードレース選手権 第3戦 ＆ ドリームカップフェスティバル",
+        "ca": "HSR Kyushu Trophy Road Race Rd.3 i Dream Cup Festival",
+        "en": "2026 HSR Kyushu Trophy Road Race Rd.3 & Dream Cup Festival"
+      },
+      "scheduleWindow": {
+        "ja": "2026年7月12日(日) 1Day開催（HSR九州）",
+        "ca": "12 de juliol de 2026 (HSR Kyushu, Kumamoto)",
+        "en": "July 12, 2026 (HSR Kyushu, Kumamoto)"
+      },
+      "classes": "ST1000 / ST600 / JP250 / ドリームカップ各クラス",
+      "officialWebUrl": "https://www.hsr.jp/race/",
+      "circuitWebUrl": "https://www.hsr.jp/schedule/",
+      "snsHandle": "@hsr_kyushu",
+      "snsUrl": "https://www.instagram.com/hsr_kyushu/",
+      "verifiedSource": "HSR九州公式 (hsr.jp) ＆ MFJ九州公式",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-07-13-hsr-kyushu-trophy-rd3-and-dreamcup-summer-digest",
+        "lastCheckedAt": "2026-07-13T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-08-07-motogp-rd12-silverstone-great-britain",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第12戦 イギリスGP（シルバーストン）",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-09",
+      "circuit": {
+        "ja": "シルバーストン・サーキット（イギリス・全長5,900m）",
+        "ca": "Circuit de Silverstone (Regne Unit · 5.900m)",
+        "en": "Silverstone Circuit (United Kingdom · 5,900m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第12戦 イギリスGP（シルバーストン）",
+        "ca": "FIM MotoGP 2026 Rd.12 Gran Premi de la Gran Bretanya (Silverstone)",
+        "en": "2026 FIM MotoGP Rd.12 British Grand Prix (Silverstone)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年8月7日(金)〜8月9日(日) スプリント＆決勝（R.フェルナンデス優勝＆アプリリア1-2-3独占）",
+        "ca": "7-9 d'agost de 2026 (Victòria de Raúl Fernández i ple 1-2-3 d'Aprilia amb Martín i Bezzecchi)",
+        "en": "August 7–9, 2026 (Raúl Fernández wins to lead an Aprilia 1-2-3 with Martín & Bezzecchi)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.silverstone.co.uk/",
+      "snsHandle": "@MotoGP / @TrackhouseMoto",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com) & Silverstone Official",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-08-10-motogp-rd12-silverstone-raul-fernandez-aprilia-123-digest",
+        "lastCheckedAt": "2026-08-10T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-08-23-hsr-kyushu-trophy-rd4-finale",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 Trophy ロードレース選手権 第4戦（最終戦）＆ ドリームカップフェスティバル",
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-23",
+      "circuit": {
+        "ja": "HSR九州（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 HSR九州 Trophy ロードレース選手権 第4戦（最終戦）＆ ドリームカップフェスティバル",
+        "ca": "HSR Kyushu Trophy Road Race Rd.4 (Final) i Dream Cup Festival",
+        "en": "2026 HSR Kyushu Trophy Road Race Rd.4 (Season Finale) & Dream Cup Festival"
+      },
+      "scheduleWindow": {
+        "ja": "2026年8月23日(日) 1Day開催（HSR九州 Trophy最終戦）",
+        "ca": "23 d'agost de 2026 (Final del campionat HSR Kyushu Trophy)",
+        "en": "August 23, 2026 (HSR Kyushu Trophy Season Finale)"
+      },
+      "classes": "ST1000 / ST600 / JP250 / ドリームカップ各クラス",
+      "officialWebUrl": "https://www.hsr.jp/race/",
+      "circuitWebUrl": "https://www.hsr.jp/schedule/",
+      "snsHandle": "@hsr_kyushu",
+      "snsUrl": "https://www.instagram.com/hsr_kyushu/",
+      "verifiedSource": "HSR九州公式 (hsr.jp)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-08-24-hsr-kyushu-trophy-rd4-season-finale-digest",
+        "lastCheckedAt": "2026-08-24T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-08-28-motogp-rd13-aragon-motorland",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第13戦 アラゴンGP（モーターランド・アラゴン）",
+      "startDate": "2026-08-28",
+      "endDate": "2026-08-30",
+      "circuit": {
+        "ja": "モーターランド・アラゴン（スペイン・アルカニス・全長5,077m）",
+        "ca": "MotorLand Aragón (Alcanyís, Espanya · 5.077m)",
+        "en": "MotorLand Aragón (Alcañiz, Spain · 5,077m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第13戦 アラゴンGP（モーターランド・アラゴン）",
+        "ca": "FIM MotoGP 2026 Rd.13 Gran Premi d'Aragó (MotorLand Aragón)",
+        "en": "2026 FIM MotoGP Rd.13 Aragon Grand Prix (MotorLand Aragón)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年8月28日(金)〜8月30日(日) スプリント＆決勝（M.マルケスがアラゴン3年連続完全制覇）",
+        "ca": "28-30 d'agost de 2026 (Marc Márquez completa el seu tercer doblet consecutiu a MotorLand)",
+        "en": "August 28–30, 2026 (Marc Márquez sweeps Sprint & GP at MotorLand for the 3rd straight year)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.motorlandaragon.com/",
+      "snsHandle": "@MotoGP / @AragonMotorLand",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-08-31-motogp-rd13-aragon-marquez-acosta-bezzecchi-digest",
+        "lastCheckedAt": "2026-08-31T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-08-29-mfj-rd5-motegi-superbike",
+      "scope": "japan",
+      "category": "all-japan",
+      "series": "MFJ 全日本ロードレース選手権 第5戦 スーパーバイクレース in もてぎ",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-30",
+      "circuit": {
+        "ja": "モビリティリゾートもてぎ（栃木県芳賀郡茂木町・全長4,801m）",
+        "ca": "Mobility Resort Motegi (Tochigi · 4.801m)",
+        "en": "Mobility Resort Motegi (Tochigi · 4,801m)"
+      },
+      "eventName": {
+        "ja": "2026 MFJ全日本ロードレース選手権 第5戦 スーパーバイクレース in もてぎ",
+        "ca": "MFJ All-Japan Rd.5 Superbike Race in Motegi",
+        "en": "2026 MFJ All-Japan Rd.5 Superbike Race in Motegi"
+      },
+      "scheduleWindow": {
+        "ja": "2026年8月29日(土)〜8月30日(日) JSB1000 2レース制（水野涼2連勝）＆ 全クラス開催",
+        "ca": "29-30 d'agost de 2026 (Doblet de Ryo Mizuno a JSB1000 i victòria de Taiga Hada a ST1000)",
+        "en": "August 29–30, 2026 (Ryo Mizuno sweeps JSB1000 Races 1 & 2; Taiga Hada wins ST1000)"
+      },
+      "classes": "JSB1000 (2レース) / ST1000 / ST600 / J-GP3",
+      "officialWebUrl": "https://www.superbike.jp/result/",
+      "circuitWebUrl": "https://www.mr-motegi.jp/superbike_m/",
+      "snsHandle": "@jrr_official / @motegi_official",
+      "snsUrl": "https://x.com/jrr_official",
+      "verifiedSource": "MFJ / JRR全日本公式 (superbike.jp) ＆ モビリティリゾートもてぎ公式",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-08-31-mfj-rd5-motegi-mizuno-double-hada-fujita-chishiki-digest",
+        "lastCheckedAt": "2026-08-31T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-09-05-polispa-rd3-spa-naoiri-and-hsr-dreamcup-4h",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 POLISPAロードレース選手権 第3戦・スーパーサンデーフェスタ AUTUMN（SPA直入）＆ HSR九州 ドリームカップ4時間耐久",
+      "startDate": "2026-09-05",
+      "endDate": "2026-09-06",
+      "circuit": {
+        "ja": "SPA直入（大分県竹田市・全長1,430m）／ HSR九州（熊本県大津町・全長2,350m）",
+        "ca": "Circuit SPA Naoiri (Oita · 1.430m) i HSR Kyushu (Kumamoto · 2.350m)",
+        "en": "SPA Naoiri Circuit (Oita · 1,430m) & HSR Kyushu (Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 POLISPAロードレース選手権 第3戦・スーパーサンデーフェスタ AUTUMN（SPA直入 / Ninja Team Green Cup併催）＆ HSR九州 ドリームカップ 4時間耐久",
+        "ca": "Campionat POLISPA Rd.3 / Super Sunday Festa AUTUMN a SPA Naoiri i 4 Hores Dream Cup a HSR Kyushu",
+        "en": "2026 POLISPA Road Race Rd.3 / Super Sunday Festa AUTUMN at SPA Naoiri & HSR Kyushu Dream Cup 4h"
+      },
+      "scheduleWindow": {
+        "ja": "2026年9月5日(土) Ninja Team Green Cup ／ 9月6日(日) POLISPA第3戦（SPA直入）＆ HSR九州4耐",
+        "ca": "5-6 de setembre de 2026 (SPA Naoiri i HSR Kyushu)",
+        "en": "September 5–6, 2026 (SPA Naoiri & HSR Kyushu)"
+      },
+      "classes": "POLISPA (JSB1000 / ST1000 / ST600 / JP-SPORT) / Ninja Team Green Cup / HSR九州ドリームカップ4耐",
+      "officialWebUrl": "https://spa-naoiri.com/schedule/",
+      "circuitWebUrl": "https://www.hsr.jp/race/",
+      "snsHandle": "SPA直入公式FB / @autopolis2005 / @hsr_kyushu",
+      "snsUrl": "https://x.com/autopolis2005",
+      "verifiedSource": "SPA直入公式 (spa-naoiri.com) ＆ HSR九州公式 (hsr.jp)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-09-07-polispa-rd3-spa-naoiri-autumn-and-hsr-4h-digest",
+        "lastCheckedAt": "2026-09-07T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-09-11-motogp-rd14-misano-san-marino",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第14戦 サンマリノ＆リミニ・リヴィエラGP（ミサノ）",
+      "startDate": "2026-09-11",
+      "endDate": "2026-09-13",
+      "circuit": {
+        "ja": "ミサノ・ワールド・サーキット・マルコ・シモンチェリ（イタリア・全長4,226m）",
+        "ca": "Misano World Circuit Marco Simoncelli (Itàlia · 4.226m)",
+        "en": "Misano World Circuit Marco Simoncelli (Italy · 4,226m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第14戦 サンマリノ＆リミニ・リヴィエラGP（ミサノ）",
+        "ca": "FIM MotoGP 2026 Rd.14 Gran Premi de San Marino i de la Riviera de Rímini (Misano)",
+        "en": "2026 FIM MotoGP Rd.14 San Marino and Rimini Riviera Grand Prix (Misano)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年9月11日(金)〜9月13日(日) スプリント＆決勝（マルケス兄弟1-2＆M.マルケスがランキング首位奪取）",
+        "ca": "11-13 de setembre de 2026 (Doblet 1-2 dels germans Marc i Àlex Márquez i liderat del Mundial per a Marc)",
+        "en": "September 11–13, 2026 (Marc & Álex Márquez 1-2 as Marc takes the World Championship lead)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.misanocircuit.com/",
+      "snsHandle": "@MotoGP",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-09-14-motogp-rd14-misano-marquez-brothers-1-2-acosta-digest",
+        "lastCheckedAt": "2026-09-14T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-09-18-motogp-rd15-austria-red-bull-ring",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第15戦 オーストリアGP（レッドブル・リンク）",
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-20",
+      "circuit": {
+        "ja": "レッドブル・リンク（オーストリア・シュピールベルク・全長4,348m）",
+        "ca": "Red Bull Ring (Spielberg, Àustria · 4.348m)",
+        "en": "Red Bull Ring (Spielberg, Austria · 4,348m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第15戦 オーストリアGP（レッドブル・リンク）",
+        "ca": "FIM MotoGP 2026 Rd.15 Gran Premi d'Àustria (Red Bull Ring)",
+        "en": "2026 FIM MotoGP Rd.15 Austrian Grand Prix (Red Bull Ring)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年9月18日(金)〜9月20日(日) スプリント＆決勝（ペドロ・アコスタがKTMの母国GPで歴史的優勝！）",
+        "ca": "18-20 de setembre de 2026 (Victòria històrica de Pedro Acosta per a KTM al Red Bull Ring!)",
+        "en": "September 18–20, 2026 (Pedro Acosta claims a historic GP victory for KTM at Red Bull Ring!)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.redbullring.com/",
+      "snsHandle": "@MotoGP / @KTM_Racing",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com) & KTM Factory Racing",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-09-21-motogp-rd15-austria-pedro-acosta-ktm-home-victory-digest",
+        "lastCheckedAt": "2026-09-21T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-09-19-hsr-kyushu-tetsuma-kessen",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "HSR九州「2026 鉄馬 with TSK 決戦の日」（4気筒スプリント特別大会）",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-20",
+      "circuit": {
+        "ja": "HSR九州（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 鉄馬 with TSK 「決戦の日」 in HSR九州",
+        "ca": "Festival «2026 Tetsuma with TSK: Dia de la Batalla Decisiva» a HSR Kyushu",
+        "en": "2026 Tetsuma with TSK 'Day of Decisive Battle' at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年9月19日(土)〜9月20日(日) 4気筒鉄フレーム中心のスプリント決戦",
+        "ca": "19-20 de setembre de 2026 (Curses Sprint de 4 cilindres amb xassís de ferro a HSR Kyushu)",
+        "en": "September 19–20, 2026 (4-Cylinder Iron Frame Sprint Festival at HSR Kyushu)"
+      },
+      "classes": "アイアン4気筒各クラス（ACS / WCS / ACT17 / ACT18 / SUPER IRON 他）",
+      "officialWebUrl": "https://www.tetsuma.jp/",
+      "circuitWebUrl": "https://www.hsr.jp/race/",
+      "snsHandle": "@tetsuma_with_b / @hsr_kyushu",
+      "snsUrl": "https://x.com/tetsuma_with_b",
+      "verifiedSource": "鉄馬実行委員会公式 (tetsuma.jp) ＆ HSR九州公式 (hsr.jp)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-09-21-hsr-kyushu-tetsuma-kessen-no-hi-september-digest",
+        "lastCheckedAt": "2026-09-21T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-09-26-mfj-rd6-okayama-superbike",
+      "scope": "japan",
+      "category": "all-japan",
+      "series": "MFJ 全日本ロードレース選手権 第6戦 スーパーバイクレース in 岡山",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-27",
+      "circuit": {
+        "ja": "岡山国際サーキット（岡山県美作市・全長3,703m）",
+        "ca": "Circuit Internacional d'Okayama (Mimasaka, Okayama · 3.703m)",
+        "en": "Okayama International Circuit (Mimasaka, Okayama · 3,703m)"
+      },
+      "eventName": {
+        "ja": "2026 MFJ全日本ロードレース選手権 第6戦 スーパーバイクレース in 岡山",
+        "ca": "MFJ All-Japan Rd.6 Superbike Race in Okayama",
+        "en": "2026 MFJ All-Japan Rd.6 Superbike Race in Okayama"
+      },
+      "scheduleWindow": {
+        "ja": "2026年9月26日(土)〜9月27日(日) 雨のウエット決戦で長島哲太がJSB1000初優勝！",
+        "ca": "26-27 de setembre de 2026 (Primera victòria de Tetsuta Nagashima a JSB1000 sota la pluja)",
+        "en": "September 26–27, 2026 (Tetsuta Nagashima claims maiden JSB1000 victory in the wet)"
+      },
+      "classes": "JSB1000 / ST1000 / ST600 / J-GP3",
+      "officialWebUrl": "https://www.superbike.jp/result/",
+      "circuitWebUrl": "https://www.okayama-international-circuit.jp/",
+      "snsHandle": "@jrr_official",
+      "snsUrl": "https://x.com/jrr_official",
+      "verifiedSource": "MFJ / JRR全日本公式 (superbike.jp) ＆ 岡山国際サーキット公式",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-09-28-mfj-rd6-okayama-nagashima-maiden-jsb1000-win-digest",
+        "lastCheckedAt": "2026-09-28T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-10-02-motogp-rd16-japan-motegi",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第16戦 日本GP（モビリティリゾートもてぎ）",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-04",
+      "circuit": {
+        "ja": "モビリティリゾートもてぎ（栃木県芳賀郡茂木町・全長4,801m）",
+        "ca": "Mobility Resort Motegi (Tochigi, Japó · 4.801m)",
+        "en": "Mobility Resort Motegi (Tochigi, Japan · 4,801m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第16戦 日本GP（モビリティリゾートもてぎ）",
+        "ca": "FIM MotoGP 2026 Rd.16 Gran Premi del Japó (Mobility Resort Motegi)",
+        "en": "2026 FIM MotoGP Rd.16 Japanese Grand Prix (Mobility Resort Motegi)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月2日(金)〜10月4日(日) M.マルケスが日本GP優勝＆2026年MotoGPワールドチャンピオン決定！",
+        "ca": "2-4 d'octubre de 2026 (Marc Márquez guanya a Motegi i es proclama Campió del Món de MotoGP 2026!)",
+        "en": "October 2–4, 2026 (Marc Márquez wins at Motegi to clinch the 2026 MotoGP World Championship!)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.mr-motegi.jp/motogp/",
+      "snsHandle": "@MotoGP / @motegi_official",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com) ＆ モビリティリゾートもてぎ公式",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-10-05-motogp-rd16-japan-motegi-marc-marquez-2026-champion-digest",
+        "lastCheckedAt": "2026-10-05T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-10-04-polispa-rd4-autopolis-finale",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 POLISPAロードレース選手権 第4戦（最終戦）＆ スーパーサンデーフェスタ AUTOPOLIS大会",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "circuit": {
+        "ja": "オートポリス（大分県日田市上津江町・全長4,674m）",
+        "ca": "Circuit Internacional Autopolis (Hita, Oita · 4.674m)",
+        "en": "Autopolis International Racing Course (Hita, Oita · 4,674m)"
+      },
+      "eventName": {
+        "ja": "2026 POLISPAロードレース選手権 第4戦（最終戦）＆ スーパーサンデーフェスタ 2026 AUTOPOLIS大会",
+        "ca": "Campionat POLISPA Rd.4 (Final) i Super Sunday Festa 2026 a Autopolis",
+        "en": "2026 POLISPA Road Race Rd.4 (Finale) & Super Sunday Festa AUTOPOLIS"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月4日(日) オートポリス1Day開催（POLISPAシリーズ最終戦）",
+        "ca": "4 d'octubre de 2026 a Autopolis (Final del campionat POLISPA 2026)",
+        "en": "October 4, 2026 at Autopolis (2026 POLISPA Series Finale)"
+      },
+      "classes": "POLISPA (JSB1000 / ST1000 / ST600 / JP-SPORT) / サンデーフェスタ (S80 / Q250 / SST250)",
+      "officialWebUrl": "https://autopolis.jp/ap/motorsports/result/",
+      "circuitWebUrl": "https://autopolis.jp/ap/event/",
+      "snsHandle": "@autopolis2005",
+      "snsUrl": "https://x.com/autopolis2005",
+      "verifiedSource": "オートポリス公式 (autopolis.jp) ＆ MFJ九州公式",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-10-05-polispa-rd4-autopolis-finale-and-sunday-festa-digest",
+        "lastCheckedAt": "2026-10-05T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-10-09-motogp-rd17-indonesia-mandalika",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第17戦 インドネシアGP（マンダリカ）",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-11",
+      "circuit": {
+        "ja": "プルタミナ・マンダリカ・インターナショナル・サーキット（インドネシア・ロンボク島・全長4,301m）",
+        "ca": "Pertamina Mandalika International Circuit (Indonèsia · 4.301m)",
+        "en": "Pertamina Mandalika International Circuit (Indonesia · 4,301m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第17戦 インドネシアGP（マンダリカ）",
+        "ca": "FIM MotoGP 2026 Rd.17 Gran Premi d'Indonèsia (Mandalika)",
+        "en": "2026 FIM MotoGP Rd.17 Indonesian Grand Prix (Mandalika)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月9日(金)〜10月11日(日) スプリント＆決勝（ベッツェッキ優勝＆アプリリア1-2-3表彰台独占！）",
+        "ca": "9-11 d'octubre de 2026 (Victòria de Marco Bezzecchi encapçalant un nou 1-2-3 d'Aprilia amb Fernández i Martín)",
+        "en": "October 9–11, 2026 (Marco Bezzecchi wins to lead an Aprilia 1-2-3 with Fernández & Martín)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.themandalikagp.com/",
+      "snsHandle": "@MotoGP",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-10-12-motogp-rd17-indonesia-mandalika-bezzecchi-aprilia-123-digest",
+        "lastCheckedAt": "2026-10-12T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-10-11-brows-odai-r3-sonic-park-ajimu",
+      "scope": "japan",
+      "category": "endurance-fun",
+      "series": "ブラウズ主催「お題付耐久『草』レース R-3（最終戦）」in ソニックパーク安心院",
+      "startDate": "2026-10-11",
+      "endDate": "2026-10-11",
+      "circuit": {
+        "ja": "ソニックパーク安心院（大分県宇佐市安心院町）",
+        "ca": "Sonic Park Ajimu (Usa, Oita)",
+        "en": "Sonic Park Ajimu (Usa, Oita)"
+      },
+      "eventName": {
+        "ja": "飲酒運転撲滅チャリティー ブラウズ主催「お題付耐久『草』レース R-3（最終戦）」in ソニックパーク安心院",
+        "ca": "BROW'S «Odai-tsuki Endurance R-3 (Final)» a Sonic Park Ajimu (Usa, Oita)",
+        "en": "BROW'S 'Odai-tsuki Endurance R-3 (Finale)' at Sonic Park Ajimu (Usa, Oita)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月11日(日) 1Day開催（ソニックパーク安心院・シリーズ最終戦）",
+        "ca": "11 d'octubre de 2026 (Sonic Park Ajimu · Final de temporada)",
+        "en": "October 11, 2026 (Sonic Park Ajimu · Season Finale)"
+      },
+      "classes": "お題付90分耐久（かめさん/うさぎさん/らいおんさん）・10周スプリント（チーターさん）",
+      "officialWebUrl": "https://brow-s.jp/",
+      "circuitWebUrl": "http://www.sonicpark.jp/",
+      "snsHandle": "BROW'S公式 (brow-s.jp)",
+      "snsUrl": "https://brow-s.jp/",
+      "verifiedSource": "ライダーズファンショップ ブラウズ公式 (brow-s.jp)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-10-12-kyushu-brows-odai-r3-sonic-park-ajimu-finale-digest",
+        "lastCheckedAt": "2026-10-12T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-10-23-motogp-rd18-australia-phillip-island",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第18戦 オーストラリアGP（フィリップ・アイランド）",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-25",
+      "circuit": {
+        "ja": "フィリップ・アイランド・グランプリ・サーキット（オーストラリア・全長4,448m）",
+        "ca": "Phillip Island Grand Prix Circuit (Austràlia · 4.448m)",
+        "en": "Phillip Island Grand Prix Circuit (Australia · 4,448m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第18戦 オーストラリアGP（フィリップ・アイランド）",
+        "ca": "FIM MotoGP 2026 Rd.18 Gran Premi d'Austràlia (Phillip Island)",
+        "en": "2026 FIM MotoGP Rd.18 Australian Grand Prix (Phillip Island)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月23日(金)〜10月25日(日) 土曜スプリントはM.マルケス優勝／日曜決勝は暴風雨により安全中止",
+        "ca": "23-25 d'octubre de 2026 (Marc Márquez guanya l'Sprint; cursa de diumenge cancel·lada per temporal)",
+        "en": "October 23–25, 2026 (Marc Márquez wins Saturday Sprint; Sunday main race cancelled due to gale-force weather)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.phillipislandcircuit.com.au/",
+      "snsHandle": "@MotoGP / @AusMotoGP",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-10-26-motogp-rd18-australia-phillip-island-marquez-sprint-weather-digest",
+        "lastCheckedAt": "2026-10-26T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-10-24-mfj-rd7-suzuka-mfj-gp-finale",
+      "scope": "japan",
+      "category": "all-japan",
+      "series": "MFJ 全日本ロードレース選手権 第7戦（最終戦）第58回 MFJグランプリ スーパーバイクレース in 鈴鹿",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "circuit": {
+        "ja": "鈴鹿サーキット（三重県鈴鹿市・全長5,821m）",
+        "ca": "Circuit de Suzuka (Mie · 5.821m)",
+        "en": "Suzuka Circuit (Mie · 5,821m)"
+      },
+      "eventName": {
+        "ja": "2026 MFJ全日本ロードレース選手権 第7戦（最終戦）第58回 MFJグランプリ スーパーバイクレース in 鈴鹿",
+        "ca": "MFJ All-Japan Rd.7 (Final) 58è MFJ Grand Prix Superbike Race in Suzuka",
+        "en": "2026 MFJ All-Japan Rd.7 (Finale) 58th MFJ Grand Prix Superbike Race in Suzuka"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月24日(土)〜10月25日(日) 水野涼が外国車初のJSB1000王座戴冠＆中須賀克行が引退最終レース2で有終の優勝！",
+        "ca": "24-25 d'octubre de 2026 (Ryo Mizuno campió JSB1000 amb Ducati i victòria de comiat de Katsuyuki Nakasuga a la Race 2!)",
+        "en": "October 24–25, 2026 (Ryo Mizuno clinches historic Ducati JSB1000 title; Katsuyuki Nakasuga wins farewell Race 2!)"
+      },
+      "classes": "JSB1000 (2レース) / ST1000 / ST600 / J-GP3 / JP250",
+      "officialWebUrl": "https://www.superbike.jp/result/",
+      "circuitWebUrl": "https://www.suzukacircuit.jp/mfjgp/",
+      "snsHandle": "@jrr_official / @suzuka_event",
+      "snsUrl": "https://x.com/jrr_official",
+      "verifiedSource": "MFJ / JRR全日本公式 (superbike.jp) ＆ 鈴鹿サーキット公式 (suzukacircuit.jp)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-10-26-mfj-rd7-suzuka-mfjgp-mizuno-ducati-title-nakasuga-farewell-digest",
+        "lastCheckedAt": "2026-10-26T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-10-30-motogp-rd19-malaysia-sepang",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第19戦 マレーシアGP（セパン）",
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-01",
+      "circuit": {
+        "ja": "セパン・インターナショナル・サーキット（マレーシア・全長5,543m）",
+        "ca": "Sepang International Circuit (Malàisia · 5.543m)",
+        "en": "Sepang International Circuit (Malaysia · 5,543m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第19戦 マレーシアGP（セパン）",
+        "ca": "FIM MotoGP 2026 Rd.19 Gran Premi de Malàisia (Sepang)",
+        "en": "2026 FIM MotoGP Rd.19 Malaysian Grand Prix (Sepang)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月30日(金)〜11月1日(日) 決勝（1位 M.マルケス ／ 2位 P.アコスタ ／ 3位 A.マルケス）",
+        "ca": "30 d'octubre - 1 de novembre de 2026 (1r Marc Márquez, 2n Pedro Acosta, 3r Àlex Márquez)",
+        "en": "October 30 – November 1, 2026 (1st Marc Márquez, 2nd Pedro Acosta, 3rd Álex Márquez)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.sepangcircuit.com/",
+      "snsHandle": "@MotoGP / @sepangcircuit",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-11-02-motogp-rd19-malaysia-sepang-marquez-acosta-alex-digest",
+        "lastCheckedAt": "2026-11-02T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-11-06-motogp-rd20-qatar-lusail",
+      "scope": "world",
+      "category": "world",
+      "series": "FIM MotoGP 世界選手権 第20戦 カタールGP（ルサイル）",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-08",
+      "circuit": {
+        "ja": "ルサイル・インターナショナル・サーキット（カタール・全長5,380m）",
+        "ca": "Lusail International Circuit (Qatar · 5.380m)",
+        "en": "Lusail International Circuit (Qatar · 5,380m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第20戦 カタールGP（ルサイル・ナイトレース）",
+        "ca": "FIM MotoGP 2026 Rd.20 Gran Premi de Qatar (Lusail Night Race)",
+        "en": "2026 FIM MotoGP Rd.20 Qatar Grand Prix (Lusail Night Race)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月6日(金)〜11月8日(日) 決勝（1位 M.ベッツェッキ ／ 2位 M.マルケス ／ 3位 R.フェルナンデス）",
+        "ca": "6-8 de novembre de 2026 (1r Marco Bezzecchi, 2n Marc Márquez, 3r Raúl Fernández)",
+        "en": "November 6–8, 2026 (1st Marco Bezzecchi, 2nd Marc Márquez, 3rd Raúl Fernández)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/ja/calendar",
+      "circuitWebUrl": "https://www.lcsc.qa/",
+      "snsHandle": "@MotoGP",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP Official (motogp.com) & Lusail Circuit Official",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-11-09-motogp-rd20-qatar-lusail-bezzecchi-marquez-fernandez-digest",
+        "lastCheckedAt": "2026-11-09T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-11-07-tot-kaguraduki-tsukuba",
+      "scope": "japan",
+      "category": "all-japan",
+      "series": "2026 テイスト・オブ・ツクバ KAGURADUKI STAGE（筑波サーキット）",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-08",
+      "circuit": {
+        "ja": "筑波サーキット（茨城県下妻市・全長2,045m）",
+        "ca": "Circuit de Tsukuba (Shimotsuma, Ibaraki · 2.045m)",
+        "en": "Tsukuba Circuit (Shimotsuma, Ibaraki · 2,045m)"
+      },
+      "eventName": {
+        "ja": "2026 テイスト・オブ・ツクバ（T.O.T）KAGURADUKI STAGE",
+        "ca": "2026 Taste of Tsukuba (T.O.T) KAGURADUKI STAGE",
+        "en": "2026 Taste of Tsukuba (T.O.T) KAGURADUKI STAGE"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月7日(土)〜11月8日(日) 開催（HERCULES優勝：加賀山就臣 / KATANA 1000R）",
+        "ca": "7-8 de novembre de 2026 (Victòria de Yukio Kagayama amb la KATANA 1000R a HERCULES)",
+        "en": "November 7–8, 2026 (Yukio Kagayama wins HERCULES aboard the KATANA 1000R)"
+      },
+      "classes": "HERCULES / SUPER MONSTER Evo. / HYDRA / D.O.B.A.R. 各クラス",
+      "officialWebUrl": "https://www.tsukuba-circuit.jp/race/withme/index.html",
+      "circuitWebUrl": "https://www.tsukuba-circuit.jp/",
+      "snsHandle": "@tsukuba_circuit",
+      "snsUrl": "https://x.com/tsukuba_circuit",
+      "verifiedSource": "筑波サーキット公式 (tsukuba-circuit.jp)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-11-09-kyushu-endurance-festa-spa-naoiri-and-tot-kaguraduki-digest",
+        "lastCheckedAt": "2026-11-09T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-11-08-kyushu-endurance-festa-spa-naoiri",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 九州エンデュランスフェスタ「GO!GO! 5耐」in SPA直入",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "circuit": {
+        "ja": "SPA直入（大分県竹田市直入町・全長1,430m）",
+        "ca": "Circuit SPA Naoiri (Takeda, Oita · 1.430m)",
+        "en": "SPA Naoiri Circuit (Takeda, Oita · 1,430m)"
+      },
+      "eventName": {
+        "ja": "2026 九州エンデュランスフェスタ「GO!GO! 5耐（5時間耐久）」in SPA直入",
+        "ca": "2026 Kyushu Endurance Festa «GO!GO! 5 Hores» a SPA Naoiri",
+        "en": "2026 Kyushu Endurance Festa 'GO!GO! 5-Hour Endurance' at SPA Naoiri"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月8日(日) 1Day開催（SPA直入・250cc以下5時間耐久）",
+        "ca": "8 de novembre de 2026 (SPA Naoiri · Resistència de 5 hores fins a 250cc)",
+        "en": "November 8, 2026 (SPA Naoiri · Under-250cc 5-Hour Endurance)"
+      },
+      "classes": "5時間耐久（250cc以下各クラス・クラブマン＆エンジョイ枠）",
+      "officialWebUrl": "https://spa-naoiri.com/schedule/",
+      "circuitWebUrl": "https://spa-naoiri.com/race/",
+      "snsHandle": "SPA直入公式FB / @autopolis2005",
+      "snsUrl": "https://www.facebook.com/spanaoiri",
+      "verifiedSource": "SPA直入公式 (spa-naoiri.com) ＆ オートポリス公式 (autopolis.jp)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-11-09-kyushu-endurance-festa-spa-naoiri-and-tot-kaguraduki-digest",
+        "lastCheckedAt": "2026-11-09T09:00:00+09:00"
       }
     }
   ]

@@ -83,11 +83,14 @@ interface CalendarMonth {
   eventCount: number;
 }
 
-const MONTH_LABELS: Record<number, { ja: string; ca: string; en: string }> = {
-  4: { ja: '2026年 4月', ca: 'Abril 2026', en: 'April 2026' },
-  5: { ja: '2026年 5月', ca: 'Maig 2026', en: 'May 2026' },
-  6: { ja: '2026年 6月', ca: 'Juny 2026', en: 'June 2026' },
-};
+const CA_MONTHS = ['Gener', 'Febrer', 'Març', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Setembre', 'Octubre', 'Novembre', 'Desembre'];
+const EN_MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const MONTH_LABELS: Record<number, { ja: string; ca: string; en: string }> = Object.fromEntries(
+  Array.from({ length: 12 }, (_, i) => [
+    i + 1,
+    { ja: `2026年 ${i + 1}月`, ca: `${CA_MONTHS[i]} 2026`, en: `${EN_MONTHS[i]} 2026` },
+  ])
+);
 
 function buildCalendarMonths(year: number, months: number[]): CalendarMonth[] {
   return months.map((month) => {
@@ -149,7 +152,23 @@ function buildCalendarMonths(year: number, months: number[]): CalendarMonth[] {
   });
 }
 
-const calendarMonths = buildCalendarMonths(2026, [4, 5, 6]);
+// Derive the month range from schedule data (first event month .. last event month)
+const allMonthNums = enrichedEvents.flatMap((ev) => [
+  Number(ev.startDate.slice(5, 7)),
+  Number(ev.endDate.slice(5, 7)),
+]);
+const firstMonth = Math.min(...allMonthNums);
+const lastMonth = Math.max(...allMonthNums);
+const calendarMonths = buildCalendarMonths(
+  2026,
+  Array.from({ length: lastMonth - firstMonth + 1 }, (_, i) => firstMonth + i)
+);
+const defaultMonthKey = calendarMonths[calendarMonths.length - 1]?.key || 'all';
+const allTabLabel = {
+  ja: `すべて表示 (${firstMonth}月〜${lastMonth}月)`,
+  ca: `Tots (${CA_MONTHS[firstMonth - 1].slice(0, 3)}–${CA_MONTHS[lastMonth - 1].slice(0, 3)})`,
+  en: `All Months (${EN_MONTHS[firstMonth - 1].slice(0, 3)}–${EN_MONTHS[lastMonth - 1].slice(0, 3)})`,
+};
 const weekdays = [
   { ja: '月', ca: 'DL', en: 'MON', isWeekend: false },
   { ja: '火', ca: 'DT', en: 'TUE', isWeekend: false },
@@ -211,13 +230,13 @@ const weekdays = [
         </div>
 
         <div class="calendar-month-tabs" role="tablist" aria-label="Calendar Month Filter">
-          <button type="button" class="cal-month-tab active" data-month-filter="all">
-            <span data-i18n="ja">すべて表示 (4月〜6月)</span>
-            <span data-i18n="ca">Tots (Abr–Jun)</span>
-            <span data-i18n="en">All Months (Apr–Jun)</span>
+          <button type="button" class="cal-month-tab" data-month-filter="all">
+            <span data-i18n="ja">{allTabLabel.ja}</span>
+            <span data-i18n="ca">{allTabLabel.ca}</span>
+            <span data-i18n="en">{allTabLabel.en}</span>
           </button>
           {calendarMonths.map((m) => (
-            <button type="button" class="cal-month-tab" data-month-filter={m.key}>
+            <button type="button" class={`cal-month-tab ${m.key === defaultMonthKey ? 'active' : ''}`} data-month-filter={m.key}>
               <span data-i18n="ja">{m.label.ja}</span>
               <span data-i18n="ca">{m.label.ca}</span>
               <span data-i18n="en">{m.label.en}</span>
@@ -679,30 +698,30 @@ const weekdays = [
     const scheduleCards = document.querySelectorAll('[data-event-month]');
     const calendarGrid = document.getElementById('calendar-months-grid');
 
+    function applyMonthFilter(selected) {
+      monthTabs.forEach((t) => t.classList.toggle('active', t.getAttribute('data-month-filter') === selected));
+      if (calendarGrid) {
+        calendarGrid.classList.toggle('single-month-mode', selected !== 'all');
+      }
+      monthCards.forEach((card) => {
+        const show = selected === 'all' || card.getAttribute('data-month-card') === selected;
+        card.style.display = show ? '' : 'none';
+      });
+      scheduleCards.forEach((sc) => {
+        const show = selected === 'all' || sc.getAttribute('data-event-month') === selected;
+        sc.style.display = show ? '' : 'none';
+      });
+    }
+
     monthTabs.forEach((tab) => {
       tab.addEventListener('click', () => {
-        const selected = tab.getAttribute('data-month-filter') || 'all';
         hideTooltip();
-
-        monthTabs.forEach((t) => t.classList.toggle('active', t === tab));
-
-        if (calendarGrid) {
-          calendarGrid.classList.toggle('single-month-mode', selected !== 'all');
-        }
-
-        monthCards.forEach((card) => {
-          const cardMonth = card.getAttribute('data-month-card');
-          const show = selected === 'all' || cardMonth === selected;
-          card.style.display = show ? '' : 'none';
-        });
-
-        scheduleCards.forEach((sc) => {
-          const evMonth = sc.getAttribute('data-event-month');
-          const show = selected === 'all' || evMonth === selected;
-          sc.style.display = show ? '' : 'none';
-        });
+        applyMonthFilter(tab.getAttribute('data-month-filter') || 'all');
       });
     });
+
+    const initialTab = document.querySelector('.cal-month-tab.active');
+    applyMonthFilter(initialTab ? initialTab.getAttribute('data-month-filter') || 'all' : 'all');
   })();
 </script>
 
