@@ -482,8 +482,12 @@ def finalize_article_record(data: dict[str, Any], today_str: str) -> dict[str, A
     }
 
 
-def run_schedule_driven_mode(mode: str, custom_topic: str | None = None) -> int:
-    today = dt.date.today()
+def run_schedule_driven_mode(
+    mode: str,
+    custom_topic: str | None = None,
+    ref_date_override: dt.date | None = None,
+) -> int:
+    today = ref_date_override or dt.date.today()
     today_str = today.isoformat()
     db = load_schedule_db()
 
@@ -675,6 +679,30 @@ def validate_existing_articles() -> int:
     return 0
 
 
+def run_backfill_window(start_date_str: str, end_date_str: str) -> int:
+    """Iterate day-by-day over [start_date, end_date] and trigger the exact Thu/Fri/Mon/Wed schedule state machine."""
+    start_d = dt.date.fromisoformat(start_date_str)
+    end_d = dt.date.fromisoformat(end_date_str)
+    cur = start_d
+    print(f"🗓️ Running Schedule-Driven Backfill State Machine from {start_d} to {end_d}...")
+    while cur <= end_d:
+        wd = cur.weekday()  # 0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun
+        if wd == 3:  # Thursday -> preview_world
+            print(f"\n--- [{cur.isoformat()} (Thu)] Checking `preview_world` ---")
+            run_schedule_driven_mode("preview_world", ref_date_override=cur)
+        elif wd == 4:  # Friday -> preview_japan
+            print(f"\n--- [{cur.isoformat()} (Fri)] Checking `preview_japan` ---")
+            run_schedule_driven_mode("preview_japan", ref_date_override=cur)
+        elif wd == 0:  # Monday -> digest_monday
+            print(f"\n--- [{cur.isoformat()} (Mon)] Checking `digest_monday` ---")
+            run_schedule_driven_mode("digest_monday", ref_date_override=cur)
+        elif wd == 2:  # Wednesday -> digest_wednesday
+            print(f"\n--- [{cur.isoformat()} (Wed)] Checking `digest_wednesday` ---")
+            run_schedule_driven_mode("digest_wednesday", ref_date_override=cur)
+        cur += dt.timedelta(days=1)
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Schedule-driven trilingual article pipeline for honda.cat")
     parser.add_argument(
@@ -686,10 +714,14 @@ def main() -> int:
             "digest_wednesday",
             "maintenance",
             "custom",
+            "backfill",
         ],
         default="preview_world",
         help="Schedule-driven execution mode",
     )
+    parser.add_argument("--date", type=str, default=None, help="Override execution date (YYYY-MM-DD) for retroactive runs")
+    parser.add_argument("--start-date", type=str, default="2026-04-01", help="Start date for --mode backfill (YYYY-MM-DD)")
+    parser.add_argument("--end-date", type=str, default="2026-06-30", help="End date for --mode backfill (YYYY-MM-DD)")
     parser.add_argument("--topic", type=str, default=None, help="Custom topic for manual dispatch")
     parser.add_argument(
         "--dry-run",
@@ -704,7 +736,11 @@ def main() -> int:
             print("ℹ️ GEMINI_API_KEY not set in environment; running local Fact-Check & Schedule State Audit.")
         return validate_existing_articles()
 
-    return run_schedule_driven_mode(mode=args.mode, custom_topic=args.topic)
+    if args.mode == "backfill":
+        return run_backfill_window(args.start_date, args.end_date)
+
+    ref_date = dt.date.fromisoformat(args.date) if args.date else None
+    return run_schedule_driven_mode(mode=args.mode, custom_topic=args.topic, ref_date_override=ref_date)
 
 
 if __name__ == "__main__":

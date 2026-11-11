@@ -1,0 +1,238 @@
+{
+  "id": "2026-04-27-motogp-rd4-jerez-alex-marquez-victory-digest",
+  "slug": "motogp-2026-rd4-spanish-gp-jerez-alex-marquez-marc-sprint-digest",
+  "publishedAt": "2026-04-27",
+  "category": "world",
+  "articleType": "digest",
+  "circuit": "Circuito de Jerez – Ángel Nieto（スペイン・全長4,423m）",
+  "region": "World (Jerez, Spain / Catalunya)",
+  "featuredCat": "marc",
+  "heroImage": "/images/cats/marc.png",
+  "tags": [
+    "MotoGP",
+    "スペインGP",
+    "ヘレス",
+    "アレックス・マルケス",
+    "マルク・マルケス",
+    "カタルーニャ"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "MotoGP™ Official",
+      "handle": "@MotoGP",
+      "url": "https://x.com/MotoGP",
+      "publishedDate": "2026-04-26 (Spanish GP Jerez Official Results)",
+      "quotedPostText": {
+        "ja": "【2026 MotoGP 第4戦 スペインGP（ヘレス）公式結果】土曜スプリント優勝：#93 マルク・マルケス（Ducati Lenovo Team）！日曜決勝グランプリ優勝：#73 アレックス・マルケス（Gresini Racing）、2位：マルコ・ベッツェッキ（Aprilia Racing）、3位：ファビオ・ディ・ジャンナントニオ（VR46 Racing Team）！",
+        "ca": "【Resultats Oficials GP d'Espanya 2026 a Jerez】Guanyador de l'Sprint de dissabte: #93 Marc Márquez! Guanyador del Gran Premi de diumenge: #73 Àlex Márquez (Gresini Racing), seguit de Marco Bezzecchi (2n, Aprilia) i Fabio Di Giannantonio (3r, VR46)!",
+        "en": "[Official Results: 2026 MotoGP Spanish GP at Jerez] Saturday Sprint Winner: #93 Marc Márquez! Sunday Grand Prix Winner: #73 Álex Márquez (Gresini Racing), 2nd: Marco Bezzecchi (Aprilia Racing), 3rd: Fabio Di Giannantonio (VR46)!"
+      },
+      "editorialCommentary": {
+        "ja": "MotoGP公式X（@MotoGP）が投稿したヘレスのパルクフェルメ映像では、土曜のスプリントを制した兄マルク・マルケス選手に続き、日曜の決勝レースを制した弟アレックス・マルケス選手（ともにカタルーニャ州セルベラ出身）が抱き合う感動的な瞬間が公開されています。また2位に食い込んだマルコ・ベッツェッキ選手（アプリリア）の高速コーナーでのコーナリングスピードも公式オンボード比較で大きな注目を集めました。",
+        "ca": "Les imatges oficials compartides per @MotoGP des del parc tancat de Jerez mostren l'abraçada històrica entre els dos germans de Cervera (Catalunya): Marc Márquez guanyador de l'Sprint de dissabte i Àlex Márquez triomfador de la cursa llarga de diumenge!",
+        "en": "@MotoGP's official parc fermé clips from Jerez capture the emotional celebration between Cervera's Márquez brothers after Marc won Saturday's Sprint and Álex triumphed in Sunday's main Grand Prix."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "2026年4月24日〜26日にスペインのヘレス・サーキット＝アンヘル・ニエトで開催された「2026 FIM MotoGP世界選手権 第4戦 スペインGP」の公式結果（土曜スプリント優勝：マルク・マルケス、日曜決勝優勝：アレックス・マルケス／Gresini Racing、2位：マルコ・ベッツェッキ／Aprilia Racing、3位：ファビオ・ディ・ジャンナントニオ／VR46 Racing Team）に基づき検証済み。",
+      "ca": "Verificat amb els resultats oficials del GP d'Espanya de MotoGP 2026 a Jerez (24-26 d'abril de 2026): victòria de Marc Márquez a l'Sprint i victòria d'Àlex Márquez al Gran Premi per davant de Marco Bezzecchi (2n) i Fabio Di Giannantonio (3r).",
+      "en": "Verified against official 2026 FIM MotoGP Rd.4 Spanish Grand Prix (Jerez, April 24–26, 2026) results: Sprint won by Marc Márquez; Grand Prix won by Álex Márquez (Gresini), 2nd Marco Bezzecchi (Aprilia), 3rd Fabio Di Giannantonio (VR46)."
+    },
+    "sources": [
+      {
+        "title": "FIM MotoGP Official Results: 2026 Spanish GP (motogp.com)",
+        "url": "https://www.motogp.com/en/gp-results"
+      },
+      {
+        "title": "Circuito de Jerez – Ángel Nieto Official Website",
+        "url": "https://www.circuitodejerez.com/"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-04-24 - 2026-04-26 (Monday Digest 1 - World)",
+    "venue": {
+      "ja": "ヘレス・サーキット＝アンヘル・ニエト（スペイン・全長4,423m）",
+      "ca": "Circuito de Jerez – Ángel Nieto (Espanya · 4.423m)",
+      "en": "Circuito de Jerez – Ángel Nieto (Spain · 4,423m)"
+    },
+    "weather": {
+      "ja": "快晴・ドライ / 欧州ラウンド開幕戦・大観衆のヘレス",
+      "ca": "Assolellat i sec / Inici de la gira europea a Jerez",
+      "en": "Sunny & Dry / European Season Opener at Jerez"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【2026年4月第4週 MotoGP結果ダイジェスト】第4戦スペインGP（ヘレス）：土曜スプリントはマルク・マルケス、日曜決勝は弟アレックス・マルケスが制しセルベラ兄弟が週末制覇！",
+      "subtitle": "2位ベッツェッキ（アプリリア）、3位ディ・ジャンナントニオ！熱狂のヘレス戦をマルク編集長がレポート",
+      "summary": "2026年4月24日〜26日、スペインのヘレス・サーキットでMotoGP第4戦スペインGPが開催されました。土曜のスプリントはマルク・マルケス選手が優勝し、日曜の決勝グランプリでは弟のアレックス・マルケス選手（Gresini Racing）が優勝！2位にマルコ・ベッツェッキ選手（Aprilia Racing）、3位にファビオ・ディ・ジャンナントニオ選手（VR46 Racing Team）が入りました。",
+      "highlightPoint": "カタルーニャ州セルベラ出身のマルケス兄弟がヘレスを席巻！土曜スプリントは兄マルク、日曜決勝は弟アレックスが優勝を果たす快挙！",
+      "sections": [
+        {
+          "heading": "土曜スプリントは兄マルク、日曜決勝は弟アレックス！ヘレスを沸かせた兄弟制覇",
+          "body": "ヨーロッパラウンドの本格幕開けを告げる伝統の第4戦スペインGP（ヘレス・全長4,423m）。土曜日のスプリントレースではマルク・マルケス選手が鋭いブレーキングで主導権を握りトップチェッカーを受けました。\n\nそして迎えた日曜日の決勝レースでは、Gresini Racingのアレックス・マルケス選手が序盤から完璧なタイヤマネジメントと安定したコーナリングワークを披露して見事優勝！カタルーニャ州セルベラ出身の兄弟で土曜・日曜の勝利を分け合う歴史的な週末となりました。"
+        },
+        {
+          "heading": "ベッツェッキ（2位）＆ディ・ジャンナントニオ（3位）の表彰台争いと翌日の公式テスト",
+          "body": "決勝2位にはアプリリアワークス（Aprilia Racing）のマルコ・ベッツェッキ選手が入り、ヘレスの高速右コーナー（フェラーリ〜クラッチローコーナー）におけるRS-GPの高い旋回性能を証明。3位にはVR46のファビオ・ディ・ジャンナントニオ選手が続きました。レース翌日の月曜にはヘレス公式テストも実施され、5月のル・マンおよびカタルーニャGP（モンメロ）に向けた新パーツ検証が行われました。"
+        }
+      ],
+      "resultTableTitle": "2026 FIM MotoGP 第4戦 スペインGP（ヘレス・4月25日〜26日）公式結果",
+      "results": [
+        {
+          "pos": "GP 1st 🏆",
+          "riderOrTeam": "アレックス・マルケス (#73 Gresini Racing)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "日曜決勝グランプリ優勝！完璧なペース配分でヘレスを制覇"
+        },
+        {
+          "pos": "GP 2nd 🥈",
+          "riderOrTeam": "マルコ・ベッツェッキ (#72 Aprilia Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "2位表彰台！高速セクターでの旋回スピードが光る"
+        },
+        {
+          "pos": "GP 3rd 🥉",
+          "riderOrTeam": "ファビオ・ディ・ジャンナントニオ (#49 VR46 Racing Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "終盤のタイヤ温存が功を奏し3位表彰台を獲得"
+        },
+        {
+          "pos": "Sprint 1st ⚡",
+          "riderOrTeam": "マルク・マルケス (#93 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "土曜スプリントレース優勝！兄弟で週末の勝利を独占"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "アミーゴ！カタルーニャ州セルベラ出身のマルケス兄弟が、土曜スプリント（マルク）と日曜決勝（アレックス）を両方勝つなんて最高すぎる週末だニャ！セルベラの街中がお祭り騒ぎだニャ！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "MotoGP公式X（@MotoGP）で公開されたパルクフェルメでの兄弟ハグの映像、本当に素敵でしたね！そして同じ週末に日本国内で行われた全日本第2戦SUGOも別記事でたっぷりお届けしますよ📸"
+        },
+        {
+          "speaker": "naomi",
+          "text": "ヘレスは午後の決勝になると路面温度が一気に上がってフロントタイヤが厳しくなるコースよ。そこで最後までペースを落とさず走り切ったアレックス選手のセッティング、メカニックの腕も大したものね…"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Resum Abril Setmana 4 · MotoGP] Festa catalana a Jerez! Marc Márquez guanya l'Sprint i el seu germà Àlex Márquez triomfa al Gran Premi d'Espanya!",
+      "subtitle": "Els germans de Cervera dominen el cap de setmana a Jerez amb Marco Bezzecchi (2n) i Di Giannantonio (3r) al podi",
+      "summary": "El Gran Premi d'Espanya de MotoGP 2026 (24-26 d'abril a Jerez) va viure un cap de setmana històric per al motociclisme català: Marc Márquez es va adjudicar l'Sprint de dissabte i Àlex Márquez (Gresini Racing) va guanyar la cursa llarga de diumenge davant Marco Bezzecchi (Aprilia) i Fabio Di Giannantonio (VR46).",
+      "highlightPoint": "Històric doblet dels germans de Cervera (Catalunya) a Jerez: Marc Márquez guanya dissabte a l'Sprint i Àlex Márquez guanya diumenge el Gran Premi!",
+      "sections": [
+        {
+          "heading": "Cervera mana a Jerez: Marc guanya dissabte i Àlex regna diumenge",
+          "body": "L'arribada del Mundial de MotoGP 2026 a Europa al Circuito de Jerez – Ángel Nieto (4.423m) va tenir accent català de principi a fi. Dissabte, Marc Márquez es va imposar a la cursa Sprint, i diumenge el seu germà Àlex Márquez (Gresini Racing) va fer una cursa magistral per emportar-se la victòria al Gran Premi d'Espanya, acompanyat al podi per Marco Bezzecchi (Aprilia Racing, 2n) i Fabio Di Giannantonio (VR46, 3r)."
+        }
+      ],
+      "resultTableTitle": "Resultats Oficials: FIM MotoGP Rd.4 GP d'Espanya (Jerez · 25-26 d'abril de 2026)",
+      "results": [
+        {
+          "pos": "GP 1r 🏆",
+          "riderOrTeam": "Àlex Márquez (#73 Gresini Racing)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "Guanyador del Gran Premi d'Espanya de diumenge!"
+        },
+        {
+          "pos": "GP 2n 🥈",
+          "riderOrTeam": "Marco Bezzecchi (#72 Aprilia Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "2n lloc al podi amb un gran ritme de cursa"
+        },
+        {
+          "pos": "GP 3r 🥉",
+          "riderOrTeam": "Fabio Di Giannantonio (#49 VR46 Racing Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "3r classificat completant el podi de Jerez"
+        },
+        {
+          "pos": "Sprint 1r ⚡",
+          "riderOrTeam": "Marc Márquez (#93 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "Guanyador de la cursa Sprint de dissabte"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Quina alegria més gran per a Catalunya, miau! Els dos germans de Cervera repartint-se l'Sprint de dissabte i el Gran Premi de diumenge a Jerez!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "I tal com marca la nostra regla de publicació de dilluns, hem separat aquest resum de MotoGP de la crònica nacional del Campionat del Japó a SUGO perquè pugueu llegir totes dues amb detall! 📸"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Gestionar el pneumàtic davanter amb la calor de Jerez a la tarda no és gens fàcil. L'equip tècnic de l'Àlex ha clavat la posada a punt!"
+        }
+      ]
+    },
+    "en": {
+      "title": "[April Week 4 MotoGP Digest] Spanish GP at Jerez: Marc Márquez Wins the Sprint Before Brother Álex Márquez Triumphs on Sunday!",
+      "subtitle": "Cervera's Márquez brothers sweep Jerez as Marco Bezzecchi (Aprilia) and Fabio Di Giannantonio complete the podium",
+      "summary": "Round 4 of the 2026 MotoGP World Championship at Circuito de Jerez – Ángel Nieto (April 24–26) saw Marc Márquez win Saturday's Sprint before his brother Álex Márquez (Gresini Racing) captured Sunday's Grand Prix ahead of Marco Bezzecchi (Aprilia Racing) and Fabio Di Giannantonio (VR46).",
+      "highlightPoint": "Catalonia's Márquez brothers swept the Jerez weekend—Marc winning Saturday's Sprint and Álex taking Sunday's Grand Prix victory!",
+      "sections": [
+        {
+          "heading": "A Catalan Family Sweep at Jerez: Marc Takes Saturday, Álex Owns Sunday",
+          "body": "At the European opener in Jerez (4,423m), Marc Márquez set the tone by winning Saturday's Sprint race. On Sunday, Álex Márquez (Gresini Racing) delivered a masterclass in hot-track tire management to win the Spanish Grand Prix ahead of Aprilia Racing's Marco Bezzecchi in 2nd and VR46's Fabio Di Giannantonio in 3rd."
+        }
+      ],
+      "resultTableTitle": "Official Results: 2026 FIM MotoGP Rd.4 Spanish GP (Jerez · April 25–26, 2026)",
+      "results": [
+        {
+          "pos": "GP 1st 🏆",
+          "riderOrTeam": "Álex Márquez (#73 Gresini Racing)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "Sunday Grand Prix Winner at Jerez!"
+        },
+        {
+          "pos": "GP 2nd 🥈",
+          "riderOrTeam": "Marco Bezzecchi (#72 Aprilia Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "2nd place podium for factory Aprilia"
+        },
+        {
+          "pos": "GP 3rd 🥉",
+          "riderOrTeam": "Fabio Di Giannantonio (#49 VR46 Racing Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "3rd place podium with strong late-race pace"
+        },
+        {
+          "pos": "Sprint 1st ⚡",
+          "riderOrTeam": "Marc Márquez (#93 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "Saturday Sprint Race Winner"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "What a weekend for Cervera and Catalonia, meow! Marc winning Saturday's Sprint and Álex winning Sunday's Grand Prix at Jerez is pure history!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "And following our Monday two-article split rule, we have published a separate dedicated digest for Japan's MFJ Round 2 at SUGO and Suzuka Sunday Round 1! 📸"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Keeping the front tire alive on scorching Jerez asphalt takes serious chassis balance. Hats off to Álex's garage crew!"
+        }
+      ]
+    }
+  },
+  "scheduleEventIds": [
+    "2026-04-24-motogp-rd4-jerez-spain"
+  ]
+}

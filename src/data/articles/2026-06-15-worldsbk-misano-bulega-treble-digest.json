@@ -1,0 +1,220 @@
+{
+  "id": "2026-06-15-worldsbk-misano-bulega-treble-digest",
+  "slug": "worldsbk-2026-rd6-misano-emilia-romagna-nicolo-bulega-treble-digest",
+  "publishedAt": "2026-06-15",
+  "category": "world",
+  "articleType": "digest",
+  "circuit": "Misano World Circuit Marco Simoncelli（イタリア・ミサノ・全長4,226m）",
+  "region": "World (Misano Adriatico, Italy)",
+  "featuredCat": "marc",
+  "heroImage": "/images/cats/marc.png",
+  "tags": [
+    "WorldSBK",
+    "ミサノ",
+    "エミリア・ロマーニャ大会",
+    "ニコロ・ブレガ",
+    "Ducati",
+    "ハットトリック"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "WorldSBK Official",
+      "handle": "@WorldSBK",
+      "url": "https://x.com/WorldSBK",
+      "publishedDate": "2026-06-14 (Emilia-Romagna Round Misano Official Results)",
+      "quotedPostText": {
+        "ja": "【2026 FIM WorldSBK エミリア・ロマーニャ大会（ミサノ）公式結果】母国イタリアのニコロ・ブレガ（Aruba.it Racing - Ducati）が土曜Race 1、日曜Superpole Race、そしてRace 2の3レースすべてを制し、圧巻の3連勝（ハットトリック）を達成！",
+        "ca": "【Resultats Oficials WorldSBK 2026 Emilia-Romagna Round a Misano】Triplet perfecte a casa per a Nicolò Bulega (Aruba.it Racing - Ducati), guanyador de la Race 1, la Superpole Race i la Race 2 al Misano World Circuit Marco Simoncelli!",
+        "en": "[Official Results: 2026 WorldSBK Emilia-Romagna Round at Misano] Home hero Nicolò Bulega (Aruba.it Racing - Ducati) sweeps Race 1, the Superpole Race, and Race 2 at Misano World Circuit Marco Simoncelli to complete a commanding hat-trick!"
+      },
+      "editorialCommentary": {
+        "ja": "WorldSBK公式X（@WorldSBK）が公開したミサノの総集編映像では、アドリア海沿岸の高温路面でニコロ・ブレガ選手が超高速右コーナー『クルヴォーネ（Curvone）』をいかに安定したフロント荷重で駆け抜け、4月のアッセン大会に続く3連勝ハットトリックを達成したかが詳しく紹介されています。",
+        "ca": "Els vídeos oficials de @WorldSBK mostren el pas per corba impecable de Nicolò Bulega pel rapidíssim revolt del Curvone a Misano per repetir el triplet que ja havia aconseguit a Assen a l'abril.",
+        "en": "@WorldSBK's official Misano highlights capture Nicolò Bulega's rock-solid front-end confidence through the fast right-hand Curvone as he repeated his April Assen treble on home Italian soil."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "2026年6月12日〜14日にイタリアのミサノ・ワールド・サーキット・マルコ・シモンチェリ（全長4,226m）で開催された「2026 FIMスーパーバイク世界選手権（WorldSBK）エミリア・ロマーニャ大会」の公式結果（ニコロ・ブレガ／Aruba.it Racing - DucatiがRace 1・Superpole Race・Race 2の3レース完全制覇＝ハットトリック達成）に基づき検証済み。",
+      "ca": "Verificat amb els resultats oficials de la ronda d'Emília-Romanya de WorldSBK 2026 a Misano (12-14 de juny de 2026): Nicolò Bulega (Aruba.it Racing - Ducati) guanya la Race 1, la Superpole Race i la Race 2.",
+      "en": "Verified against official 2026 FIM Superbike World Championship (WorldSBK) Emilia-Romagna Round results at Misano World Circuit Marco Simoncelli (June 12–14, 2026): Nicolò Bulega (Aruba.it Racing - Ducati) won Race 1, Superpole Race, and Race 2."
+    },
+    "sources": [
+      {
+        "title": "FIM WorldSBK Official Website & Results (worldsbk.com)",
+        "url": "https://www.worldsbk.com/"
+      },
+      {
+        "title": "Misano World Circuit Marco Simoncelli Official Website",
+        "url": "https://www.misanocircuit.com/"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-06-12 - 2026-06-14 (Monday Digest)",
+    "venue": {
+      "ja": "ミサノ・ワールド・サーキット・マルコ・シモンチェリ（イタリア・全長4,226m）",
+      "ca": "Misano World Circuit Marco Simoncelli (Itàlia · 4.226m)",
+      "en": "Misano World Circuit Marco Simoncelli (Italy · 4,226m)"
+    },
+    "weather": {
+      "ja": "晴れ・高温ドライ / アドリア海沿岸を真紅に染めた大観衆",
+      "ca": "Assolellat i calorós / Graderies tenyides de vermell Ducati a l'Adriàtic",
+      "en": "Hot & Sunny Adriatic Tarmac / Grandstands Packed with Ducati Tifosi"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【2026年6月第2週 WorldSBK結果ダイジェスト】エミリア・ロマーニャ大会（ミサノ）：ニコロ・ブレガが母国で圧巻の3連勝ハットトリック達成！",
+      "subtitle": "Race 1・Superpole Race・Race 2を完全制覇し、4月アッセン大会に続くトリプルウィンで選手権リードを拡大",
+      "summary": "2026年6月12日〜14日、イタリアのミサノ・ワールド・サーキット・マルコ・シモンチェリ（全長4,226m）でFIMスーパーバイク世界選手権（WorldSBK）エミリア・ロマーニャ大会が開催されました。Aruba.it Racing - Ducatiのニコロ・ブレガ選手が土曜のRace 1、日曜午前のSuperpole Race、日曜午後のRace 2の3レースすべてで優勝し、母国ファンを前に完璧なハットトリック（3連勝）を達成しました。",
+      "highlightPoint": "ドゥカティのお膝元ミサノでニコロ・ブレガが週末3レース完全制覇！高温路面でも終盤までラップタイムを落とさない異次元のタイヤマネジメントを披露！",
+      "sections": [
+        {
+          "heading": "ミサノを真紅に染めたニコロ・ブレガの3連勝（Race 1・Superpole Race・Race 2）",
+          "body": "ボローニャのボルゴ・パニガーレからほど近いミサノ・ワールド・サーキット・マルコ・シモンチェリ（全長4,226m）は、ドゥカティとイタリア人ライダーにとって特別な聖地です。6月13日（土）のRace 1で序盤からハイペースを刻んで快勝したニコロ・ブレガ選手（Aruba.it Racing - Ducati）は、翌6月14日（日）午前の10周スプリント『Superpole Race』でも首位を譲らず連勝。\n\nさらに日曜午後のRace 2でも、暑さで路面温度が上昇する厳しいコンディションのなか後続を引き離してトップチェッカー！4月の第3戦オランダ大会（アッセン）に続き、1週末の3レースすべてを制するハットトリック（通算7度目のトリプルウィン）を母国ミサノで成し遂げました。"
+        },
+        {
+          "heading": "超高速右コーナー『クルヴォーネ』での接地感とスムースなスロットルワーク",
+          "body": "ミサノ後半の名物である超高速右コーナー『クルヴォーネ（Curvone）』では、フロントタイヤへの信頼感と車体の安定性がすべてを決めます。WorldSSP王者を経験して培われたブレガ選手の滑らかなコーナリングは、急激なスライドやタイヤ表面のオーバーヒートを抑え込み、21周の長丁場でも最後までライバルに付け入る隙を与えませんでした。"
+        }
+      ],
+      "resultTableTitle": "2026 FIM WorldSBK エミリア・ロマーニャ大会（ミサノ・6月13日〜14日）公式結果",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (#11 Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "土曜 Race 1（21周）優勝！"
+        },
+        {
+          "pos": "SP Race ⚡",
+          "riderOrTeam": "ニコロ・ブレガ (#11 Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "日曜午前 Superpole Race（10周）優勝！"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (#11 Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "日曜午後 Race 2（21周）優勝！週末3連勝ハットトリック達成"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "4月のアッセンに続いて、母国ミサノでも3レース全勝のハットトリックだニャ！クルヴォーネを全開で駆け抜けるブレガ選手とパニガーレV4 Rのコンビネーション、まさに芸術的だったニャ！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "真紅のフラッグで埋め尽くされたミサノのグランドスタンド、写真で見ても熱気が伝わってきますね！そして翌週（6月21日）はいよいよ全日本ロード第4戦・筑波大会とHSR九州トロフィー第2戦がやってきます📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "路面温度が高いミサノで3レースとも終盤のペースが落ちないのは、スロットルの開け始めが本当に丁寧だからよ。力任せに開けてリヤを空転させない走り、みんなもよく見習いなさいよね。"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Resum Juny Setmana 2 · WorldSBK] Ronda d'Emília-Romanya a Misano: Nicolò Bulega signa un triplet magistral a casa!",
+      "subtitle": "Victòries a la Race 1, Superpole Race i Race 2 per consolidar el liderat del Mundial de Superbike 2026",
+      "summary": "Del 12 al 14 de juny de 2026 es va disputar al Misano World Circuit Marco Simoncelli (4.226m) la ronda d'Emília-Romanya del Mundial de Superbike (WorldSBK). L'italià Nicolò Bulega (Aruba.it Racing - Ducati) va guanyar les tres curses del cap de setmana (Race 1, Superpole Race i Race 2) davant l'afició de Ducati.",
+      "highlightPoint": "Nicolò Bulega repeteix l'exhibició d'Assen i suma un nou hat-trick (3 victòries en 3 curses) a la pista de casa a Misano!",
+      "sections": [
+        {
+          "heading": "Ple de victòries de Nicolò Bulega sota la calor adriàtica de Misano",
+          "body": "Al traçat de 4.226m de Misano, Nicolò Bulega i l'equip Aruba.it Racing - Ducati no van deixar cap opció als seus rivals. Tant a la Race 1 de dissabte com a la Superpole Race i la Race 2 de diumenge, Bulega va gestionar a la perfecció el desgast dels pneumàtics Pirelli en el ràpid revolt del Curvone per signar el seu setè triplet a WorldSBK."
+        }
+      ],
+      "resultTableTitle": "Resultats Oficials: FIM WorldSBK Emilia-Romagna Round (Misano · 13-14 de juny de 2026)",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "Nicolò Bulega (#11 Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Guanyador de la Race 1 de dissabte a Misano"
+        },
+        {
+          "pos": "SP Race ⚡",
+          "riderOrTeam": "Nicolò Bulega (#11 Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Guanyador de la Superpole Race de diumenge al matí"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "Nicolò Bulega (#11 Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Guanyador de la Race 2 de diumenge (Hat-trick complet)"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Un altre triplet de Nicolò Bulega després del que ja va fer a Assen, miau! Quina finor al Curvone de Misano!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "I la setmana vinent (21 de juny) tornen tant MotoGP a Brno com el Campionat del Japó MFJ a Tsukuba i el Trofeu HSR Kyushu! 📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Acariciar el gas sobre l'asfalt roent sense cremar la goma del darrere: aquesta és la diferència entre guanyar una mànega o guanyar-les totes tres."
+        }
+      ]
+    },
+    "en": {
+      "title": "[June Week 2 WorldSBK Digest] Emilia-Romagna Round at Misano: Nicolò Bulega Completes Commanding Home Hat-Trick!",
+      "subtitle": "Sweeping Race 1, the Superpole Race, and Race 2 aboard the Aruba.it Racing - Ducati Panigale V4 R",
+      "summary": "Over June 12–14, 2026, the FIM Superbike World Championship (WorldSBK) visited Italy's Misano World Circuit Marco Simoncelli (4,226m) for the Emilia-Romagna Round. Championship leader Nicolò Bulega (Aruba.it Racing - Ducati) delivered a flawless home treble, winning Saturday's Race 1, Sunday morning's Superpole Race, and Sunday afternoon's Race 2.",
+      "highlightPoint": "Echoing his April sweep at Assen, Nicolò Bulega won all three races at Misano in front of the passionate Ducati tifosi!",
+      "sections": [
+        {
+          "heading": "Three From Three for Bulega on Sun-Baked Misano Tarmac",
+          "body": "At Ducati's home circuit of Misano (4,226m), Nicolò Bulega proved untouchable across all three races. Carrying sublime corner speed through the fast right-hand Curvone while keeping rear Pirelli temperatures in check, Bulega captured Saturday's Race 1, Sunday's 10-lap Superpole sprint, and Sunday afternoon's Race 2 feature to seal his seventh career WorldSBK hat-trick."
+        }
+      ],
+      "resultTableTitle": "Official Results: 2026 FIM WorldSBK Emilia-Romagna Round (Misano · June 13–14, 2026)",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "Nicolò Bulega (#11 Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Saturday Race 1 Winner at Misano"
+        },
+        {
+          "pos": "SP Race ⚡",
+          "riderOrTeam": "Nicolò Bulega (#11 Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Sunday Morning Superpole Race Winner"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "Nicolò Bulega (#11 Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Sunday Afternoon Race 2 Winner (Completed Weekend Hat-Trick)"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Another clean treble for Nicolò Bulega to match his April sweep at Assen, meow! Watching him fly through the Curvone at Misano was pure poetry!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "And next weekend (June 19–21) brings a huge double header: MotoGP returns at Brno while Japan hosts MFJ All-Japan Rd.4 at Tsukuba and HSR Kyushu Trophy Rd.2! 📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Keeping rear-tire spin under control on baking-hot Misano asphalt across three races takes a silky right wrist—every track-day rider can learn from that."
+        }
+      ]
+    }
+  },
+  "scheduleEventIds": [
+    "2026-06-12-worldsbk-misano-emilia-romagna"
+  ]
+}

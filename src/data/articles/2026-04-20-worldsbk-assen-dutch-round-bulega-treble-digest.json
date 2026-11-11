@@ -1,0 +1,219 @@
+{
+  "id": "2026-04-20-worldsbk-assen-dutch-round-bulega-treble-digest",
+  "slug": "worldsbk-2026-assen-dutch-round-bulega-lecuona-digest",
+  "publishedAt": "2026-04-20",
+  "category": "world",
+  "articleType": "digest",
+  "circuit": "TT Circuit Assen（オランダ・全長4,542m）",
+  "region": "World (Assen, Netherlands)",
+  "featuredCat": "marc",
+  "heroImage": "/images/cats/marc.png",
+  "tags": [
+    "WorldSBK",
+    "アッセン",
+    "ニコロ・ブレガ",
+    "イケル・レクオナ",
+    "オランダ大会"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "WorldSBK Official",
+      "handle": "@WorldSBK",
+      "url": "https://x.com/WorldSBK",
+      "publishedDate": "2026-04-19 (Dutch Round Assen Official Results)",
+      "quotedPostText": {
+        "ja": "【2026 FIM WorldSBK オランダ大会（アッセン）公式結果】ニコロ・ブレガ（Aruba.it Racing - Ducati）がRace 1（終盤の雨の中でチームメイトのイケル・レクオナを抑え切る）・Superpole Race・Race 2の3レース完全制覇（ハットトリック）を達成！",
+        "ca": "【Resultats Oficials WorldSBK Assen 2026】Nicolò Bulega (Aruba.it Racing - Ducati) aconsegueix el triplet (Race 1 davant del seu company Iker Lecuona sota l'amenaça de pluja, Superpole Race i Race 2) al TT Circuit Assen!",
+        "en": "[Official Results: 2026 WorldSBK Dutch Round at Assen] Nicolò Bulega (Aruba.it Racing - Ducati) completes a dominant treble across Race 1 (holding off teammate Iker Lecuona in late rain), Superpole Race, and Race 2!"
+      },
+      "editorialCommentary": {
+        "ja": "WorldSBK公式X（@WorldSBK）が公開したアッセン戦のハイライト動画では、土曜のRace 1終盤に冷たい雨粒が落ち始める難しいコンディションの中、ニコロ・ブレガ選手とスペイン・バレンシア出身のチームメイト、イケル・レクオナ選手が繰り広げたスリリングなトップ争いが収められています。伝統の最終シケイン（Geert Timmer Bocht）でのライン取りの駆け引きは必見です。",
+        "ca": "Els vídeos oficials de @WorldSBK mostren com Nicolò Bulega i Iker Lecuona van gestionar les primeres gotes de pluja a la Race 1 d'Assen, decidint la victòria a l'emblemàtica chicane final.",
+        "en": "@WorldSBK's official race clips highlight how Nicolò Bulega and teammate Iker Lecuona braved late-race rain drops on slick tires in Race 1 at Assen's iconic final chicane."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "2026年4月17日〜19日にオランダ・TTサーキット・アッセンで開催された「2026 FIMスーパーバイク世界選手権（WorldSBK）オランダ大会」の公式結果（ニコロ・ブレガ選手がRace 1・Superpole Race・Race 2の3冠ハットトリックを達成、Race 1ではイケル・レクオナ選手との終盤の接戦を制覇）に基づき検証済み。",
+      "ca": "Verificat amb els resultats oficials de la ronda holandesa de FIM WorldSBK a Assen (17-19 d'abril de 2026): triplet de victòries de Nicolò Bulega (Race 1 davant d'Iker Lecuona, Superpole Race i Race 2).",
+      "en": "Verified against official 2026 FIM WorldSBK Dutch Round (TT Circuit Assen, April 17–19, 2026) results: Nicolò Bulega won Race 1 (holding off teammate Iker Lecuona), the Superpole Race, and Race 2."
+    },
+    "sources": [
+      {
+        "title": "FIM WorldSBK Official Results & Standings (worldsbk.com)",
+        "url": "https://www.worldsbk.com/en/results%20statistics"
+      },
+      {
+        "title": "TT Circuit Assen Official Website",
+        "url": "https://www.ttcircuit.com/"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-04-17 - 2026-04-19 (Monday Digest 1)",
+    "venue": {
+      "ja": "TTサーキット・アッセン（オランダ・全長4,542m）",
+      "ca": "TT Circuit Assen (Països Baixos · 4.542m)",
+      "en": "TT Circuit Assen (Netherlands · 4,542m)"
+    },
+    "weather": {
+      "ja": "曇り一時小雨（アッセン特有の変わりやすい春の天候）",
+      "ca": "Núvols i gotes de pluja a final de cursa (Clima típic d'Assen)",
+      "en": "Cloudy with Late-Race Rain Drops (Classic Assen Spring Weather)"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【2026年4月第3週 世界戦結果ダイジェスト】WorldSBKオランダ大会（アッセン）：ニコロ・ブレガが圧巻の3連勝ハットトリック！Race 1ではレクオナとの雨粒バトルを制す",
+      "subtitle": "「モータースポーツの大聖堂」アッセンで見せた高速コーナーの車体安定性をマルク編集長が分析",
+      "summary": "2026年4月17日〜19日、オランダのTTサーキット・アッセンでFIMスーパーバイク世界選手権（WorldSBK）が開催されました。Aruba.it Racing - Ducatiのニコロ・ブレガ選手がRace 1、Superpole Race、Race 2のすべてを制するハットトリックを達成。土曜のRace 1終盤には雨がぱらつく中、チームメイトのイケル・レクオナ選手との接近戦を制しました。",
+      "highlightPoint": "アッセンの高速流れるレイアウトでニコロ・ブレガが週末3冠（Race 1 / Superpole Race / Race 2）を達成！Race 1ではイケル・レクオナと迫力のトップ争い！",
+      "sections": [
+        {
+          "heading": "Race 1の雨粒の罠と、ブレガ vs レクオナの緊迫した終盤戦",
+          "body": "「大聖堂（The Cathedral of Speed）」の異名を持つオランダ・アッセン（全長4,542m）は、4月の春先になると北海からの冷たい風と突然の通り雨がライダーを試します。土曜日のRace 1終盤、スリックタイヤで全開走行するトップ集団のバイザーに雨粒が当たり始める中、ニコロ・ブレガ選手は後ろから猛追するチームメイトのイケル・レクオナ選手を冷静に抑え切り、まずは1勝目を挙げました。"
+        },
+        {
+          "heading": "日曜のSuperpole Race＆Race 2も完全制覇！2026年シーズンの主役へ",
+          "body": "勢いに乗るブレガ選手は、日曜午前の10周スプリント『Superpole Race』、そして午後の『Race 2』でも一切の隙を見せずトップチェッカー。アッセン名物の高速連続コーナーから最終シケインまで終始安定したペースを刻み、週末3連勝（ハットトリック）を成し遂げました。"
+        }
+      ],
+      "resultTableTitle": "2026 FIM WorldSBK オランダ大会（アッセン・4月17日〜19日）公式決勝結果",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "優勝！終盤の小雨の中でチームメイトのイケル・レクオナを抑え切る"
+        },
+        {
+          "pos": "Superpole 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "10周スプリントを制しRace 2のポールグリッドを獲得"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "週末3冠（ハットトリック）達成で選手権リードを拡大！"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "アッセンの高速コーナーでスリックタイヤのまま雨粒が落ちてくる瞬間ほど、ライダーの肝が冷える場面はないニャ！そこでブレガ選手とレクオナ選手が見せたバトルはまさに世界最高峰だったニャ！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "来週はいよいよMotoGPがスペイン・ヘレスへ、そして日本国内では全日本ロード第2戦SUGOと鈴鹿サンデー開幕戦が同時開催されますね！"
+        },
+        {
+          "speaker": "naomi",
+          "text": "スリックで路面が濡れ始めた時に転ばないのは、日頃からタイヤの接地感を掌とステップから正確に感じ取ってるからよ。あんたたちも天気が怪しい日は無理して突っ込まずにピットに戻ってきなさいよ…"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Resum Abril Setmana 3 · WorldSBK] Triplet imperial de Nicolò Bulega a la Catedral d'Assen amb duel sota la pluja davant Iker Lecuona!",
+      "subtitle": "El nostre redactor en cap Marc analitza les tres victòries consecutives de Bulega als Països Baixos",
+      "summary": "Del 17 al 19 d'abril de 2026, el TT Circuit Assen va acollir la ronda holandesa del Mundial de Superbikes (WorldSBK). Nicolò Bulega (Aruba.it Racing - Ducati) va signar el triplet guanyant la Race 1 (resistent a l'atac del seu company Iker Lecuona quan començava a ploure), la Superpole Race i la Race 2.",
+      "highlightPoint": "Nicolò Bulega domina les tres curses a Assen (Race 1, Superpole Race i Race 2) en un cap de setmana marcat pel duel amb Iker Lecuona!",
+      "sections": [
+        {
+          "heading": "Nervis d'acer amb pneumàtics llisos a la Race 1 i domini total diumenge",
+          "body": "A la Catedral d'Assen (4.542m), les últimes voltes de la Race 1 de dissabte es van complicar amb l'aparició de la pluja. Nicolò Bulega va mantenir la sang freda per contenir el valencià Iker Lecuona i, l'endemà, va rematar el cap de setmana imposant-se també a la Superpole Race i a la Race 2."
+        }
+      ],
+      "resultTableTitle": "Resultats Oficials: FIM WorldSBK Dutch Round (Assen · 17-19 d'abril de 2026)",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Victòria davant d'Iker Lecuona amb les primeres gotes de pluja"
+        },
+        {
+          "pos": "Superpole 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Victòria a la cursa sprint de 10 voltes"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Completa el triplet del cap de setmana a Assen"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Roda a roda a la chicane d'Assen amb pneumàtics slick quan comença a ploure! Quin espectacle ens han ofert Bulega i Lecuona, miau!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "I la setmana vinent tenim doble cita gegant: el GP d'Espanya de MotoGP a Jerez i la 2a ronda del Campionat del Japó a SUGO!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Quan cauen quatre gotes sobre l'asfalt fred, el tacte amb el gas ho és tot. Més val perdre mig segon que tornar al garatge amb els carenats trencats!"
+        }
+      ]
+    },
+    "en": {
+      "title": "[April Week 3 World Digest] WorldSBK Assen: Nicolò Bulega Completes Historic Dutch Treble After Late-Rain Duel with Iker Lecuona!",
+      "subtitle": "Marc breaks down Bulega's three-race sweep at the Cathedral of Speed in the Netherlands",
+      "summary": "At TT Circuit Assen on April 17–19, 2026, Aruba.it Racing - Ducati's Nicolò Bulega swept Race 1, the Superpole Race, and Race 2. Saturday's opener featured a tense late-race battle on slicks in spotting rain against teammate Iker Lecuona.",
+      "highlightPoint": "Nicolò Bulega sweeps all three WorldSBK races at Assen, fending off teammate Iker Lecuona in a damp Race 1 thriller!",
+      "sections": [
+        {
+          "heading": "Slicks in the Rain: Bulega Holds Off Lecuona Before Sweeping Sunday",
+          "body": "Assen's rapid 4,542m layout delivered classic Dutch spring drama in Saturday's Race 1 when rain began falling in the closing laps. Nicolò Bulega kept his nerve on slick tires to hold off teammate Iker Lecuona, then returned on Sunday to win both the 10-lap Superpole Race and Race 2 for a commanding hat-trick."
+        }
+      ],
+      "resultTableTitle": "Official Results: 2026 FIM WorldSBK Dutch Round (Assen · April 17–19, 2026)",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "1st place holding off teammate Iker Lecuona in late rain"
+        },
+        {
+          "pos": "Superpole 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "1st place in the 10-lap Sunday morning sprint"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "1st place to complete the Assen weekend treble"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Riding on slicks at Assen when rain hits the visor takes nerves of titanium! What a battle between Bulega and Lecuona, meow!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "And next week brings both the MotoGP Spanish GP at Jerez and MFJ All-Japan Round 2 at Sportsland SUGO!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Smooth throttle control when the track turns damp is what keeps a bike out of the gravel trap. Take notes, everyone!"
+        }
+      ]
+    }
+  },
+  "scheduleEventIds": [
+    "2026-04-17-worldsbk-assen-dutch-round"
+  ]
+}

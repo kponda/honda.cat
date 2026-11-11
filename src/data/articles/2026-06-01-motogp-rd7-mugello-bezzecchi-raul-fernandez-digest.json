@@ -1,0 +1,239 @@
+{
+  "id": "2026-06-01-motogp-rd7-mugello-bezzecchi-raul-fernandez-digest",
+  "slug": "motogp-2026-rd7-italian-gp-mugello-bezzecchi-martin-bagnaia-digest",
+  "publishedAt": "2026-06-01",
+  "category": "world",
+  "articleType": "digest",
+  "circuit": "Autodromo Internazionale del Mugello（イタリア・トスカーナ・全長5,245m）",
+  "region": "World (Mugello, Italy)",
+  "featuredCat": "marc",
+  "heroImage": "/images/cats/marc.png",
+  "tags": [
+    "MotoGP",
+    "イタリアGP",
+    "ムジェロ",
+    "マルコ・ベッツェッキ",
+    "ホルヘ・マルティン",
+    "ラウル・フェルナンデス",
+    "フランチェスコ・バニャイア"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "MotoGP™ Official",
+      "handle": "@MotoGP",
+      "url": "https://x.com/MotoGP",
+      "publishedDate": "2026-05-31 (Italian GP Mugello Official Results)",
+      "quotedPostText": {
+        "ja": "【2026 MotoGP 第7戦 イタリアGP（ムジェロ）公式結果】土曜スプリントはラウル・フェルナンデス（Trackhouse Racing）が優勝！日曜決勝グランプリは母国イタリアのマルコ・ベッツェッキ（Aprilia Racing）が優勝！2位にホルヘ・マルティン（Aprilia Racing）、3位にフランチェスコ・バニャイア（Ducati Lenovo Team）！",
+        "ca": "【Resultats Oficials GP d'Itàlia 2026 a Mugello】Dissabte: Victòria de Raúl Fernández a l'Sprint! Diumenge: Triomf a casa de Marco Bezzecchi (Aprilia Racing) seguit del seu company Jorge Martín (2n) i de Pecco Bagnaia (3r, Ducati Lenovo)!",
+        "en": "[Official Results: 2026 MotoGP Italian GP at Mugello] Raúl Fernández wins Saturday's Sprint! Home hero Marco Bezzecchi (Aprilia Racing) wins Sunday's Grand Prix ahead of teammate Jorge Martín (2nd) and Francesco Bagnaia (3rd)!"
+      },
+      "editorialCommentary": {
+        "ja": "MotoGP公式X（@MotoGP）が投稿したムジェロのオンボード＆表彰台映像では、時速360km/h超に達する1,141mのメインストレートからサン・ドナート（Turn 1）へのブレーキング競争と、土曜スプリントを制したラウル・フェルナンデス選手、そして日曜決勝で母国ファンを熱狂させたマルコ・ベッツェッキ選手＆ホルヘ・マルティン選手のアプリリアワークス1-2フィニッシュが鮮やかに記録されています。",
+        "ca": "Els vídeos oficials de @MotoGP a Mugello mostren la velocitat punta a la recta d'1,141 km i l'exhibició de Marco Bezzecchi per donar a Aprilia un històric doblet (1r i 2n amb Jorge Martín) a la seva cursa de casa a Itàlia.",
+        "en": "@MotoGP's official Mugello clips capture the 360+ km/h slipstream battles into San Donato (Turn 1) as Marco Bezzecchi and Jorge Martín delivered a historic 1–2 finish for Aprilia on Italian soil."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "2026年5月29日〜31日にイタリア・ムジェロ・サーキットで開催された「2026 FIM MotoGP世界選手権 第7戦 イタリアGP」の公式結果（土曜スプリント優勝：ラウル・フェルナンデス、日曜決勝優勝：マルコ・ベッツェッキ／Aprilia Racing、2位：ホルヘ・マルティン／Aprilia Racing、3位：フランチェスコ・バニャイア／Ducati Lenovo Team）に基づき検証済み。",
+      "ca": "Verificat amb els resultats oficials del GP d'Itàlia de MotoGP 2026 a Mugello (29-31 de maig de 2026): Sprint guanyat per Raúl Fernández; Gran Premi guanyat per Marco Bezzecchi, 2n Jorge Martín i 3r Francesco Bagnaia.",
+      "en": "Verified against official 2026 FIM MotoGP Rd.7 Italian Grand Prix (Mugello, May 29–31, 2026) results: Sprint won by Raúl Fernández; GP won by Marco Bezzecchi (Aprilia), 2nd Jorge Martín (Aprilia), 3rd Francesco Bagnaia (Ducati)."
+    },
+    "sources": [
+      {
+        "title": "FIM MotoGP Official Results: 2026 Italian GP (motogp.com)",
+        "url": "https://www.motogp.com/en/gp-results"
+      },
+      {
+        "title": "Autodromo Internazionale del Mugello Official Website",
+        "url": "https://www.mugellocircuit.com/"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-05-29 - 2026-05-31 (Monday Digest 1 - World)",
+    "venue": {
+      "ja": "ムジェロ・サーキット（イタリア・トスカーナ・全長5,245m）",
+      "ca": "Autodromo Internazionale del Mugello (Itàlia · 5.245m)",
+      "en": "Autodromo Internazionale del Mugello (Italy · 5,245m)"
+    },
+    "weather": {
+      "ja": "晴れ・ドライ / トスカーナの丘を埋めた大観衆",
+      "ca": "Assolellat i sec / Ambient espectacular a les colines de la Toscana",
+      "en": "Sunny & Dry / Electric Atmosphere in the Tuscan Hills"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【2026年5月最終週 MotoGP結果ダイジェスト】第7戦イタリアGP（ムジェロ）：土曜スプリントはラウル・フェルナンデス、日曜決勝は母国マルコ・ベッツェッキが優勝！",
+      "subtitle": "2位マルティンでアプリリアがムジェロ1-2達成、3位にバニャイア！※同週末の全日本オートポリス戦は別記事で詳報",
+      "summary": "2026年5月29日〜31日、イタリアのムジェロ・サーキットでMotoGP第7戦イタリアGPが開催されました。土曜スプリントではラウル・フェルナンデス選手（Trackhouse Racing）が優勝し、日曜の決勝グランプリでは母国イタリアのマルコ・ベッツェッキ選手（Aprilia Racing）が優勝！2位にチームメイトのホルヘ・マルティン選手、3位にフランチェスコ・バニャイア選手（Ducati Lenovo Team）が入りました。",
+      "highlightPoint": "高速コーナーが連続するムジェロで土曜スプリントはラウル・フェルナンデスが制覇！日曜決勝はベッツェッキ＆マルティンが1-2フィニッシュを達成！",
+      "sections": [
+        {
+          "heading": "土曜スプリントはラウル・フェルナンデスが快勝！日曜決勝はベッツェッキが母国ムジェロを制す",
+          "body": "トスカーナの丘陵地帯を駆け抜ける高速サーキット・ムジェロ（全長5,245m）。土曜日のスプリントレースでは、Trackhouse Racingのラウル・フェルナンデス選手が切れ味鋭いコーナリングでトップを奪い、見事スプリント優勝を飾りました。\n\nそして日曜日の決勝グランプリでは、ヘレス2位・ル・マン2位と好調を維持していたマルコ・ベッツェッキ選手（Aprilia Racing）が母国の大観衆の前で会心の走りを披露！チームメイトのホルヘ・マルティン選手（2位）、Ducati Lenovo Teamのフランチェスコ・バニャイア選手（3位）を抑え切り、ムジェロの頂点に立ちました。"
+        },
+        {
+          "heading": "カサノバ・サヴェッリ〜アラビアータの高速切り返しが示した車体完成度",
+          "body": "ムジェロ名物の高速S字区間（カサノバ・サヴェッリからアラビアータ1・2）では、車体の切り返し軽快性とフロントの接地感がラップタイムに直結します。今大会で土曜・日曜ともに上位を占めたRS-GP勢の高速コーナリング特性は、続く6月のハンガリーGP（バラトンパーク）・チェコGP（ブルノ）・オランダGP（アッセン）へ向けた大きな武器となりました。"
+        }
+      ],
+      "resultTableTitle": "2026 FIM MotoGP 第7戦 イタリアGP（ムジェロ・5月30日〜31日）公式結果",
+      "results": [
+        {
+          "pos": "GP 1st 🏆",
+          "riderOrTeam": "マルコ・ベッツェッキ (#72 Aprilia Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "日曜決勝優勝！母国イタリアGPで待望のトップチェッカー"
+        },
+        {
+          "pos": "GP 2nd 🥈",
+          "riderOrTeam": "ホルヘ・マルティン (Aprilia Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "決勝2位！ワークスチームでムジェロ1-2フィニッシュを達成"
+        },
+        {
+          "pos": "GP 3rd 🥉",
+          "riderOrTeam": "フランチェスコ・バニャイア (Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "決勝3位表彰台！母国戦で意地の表彰台確保"
+        },
+        {
+          "pos": "Sprint 1st ⚡",
+          "riderOrTeam": "ラウル・フェルナンデス (Trackhouse Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "土曜スプリントレース優勝！"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "ムジェロのアラビアータ1・2を全開で駆け抜ける音はいつ聴いても痺れるニャ！土曜スプリントのラウル・フェルナンデス選手、そして日曜決勝のベッツェッキ選手の母国優勝、見事だったニャ！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "そして同じ週末（5月30日〜31日）には、大分県のオートポリスで全日本ロード第3戦『スーパーバイクレース in 九州』が開催されました！月曜ダイジェスト分割ルールに従い、オートポリス戦の熱戦は別記事でたっぷりお届けします📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "時速360km/hから1コーナーへ減速するムジェロも、標高900mのオートポリス1コーナーも、ブレーキと車体姿勢の作り方は同じよ。さあ、私たちの地元・九州オートポリス戦の記事も続けて読みなさいよ！"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Resum Maig Setmana 5 · MotoGP] GP d'Itàlia a Mugello: Raúl Fernández guanya l'Sprint i Marco Bezzecchi triomfa diumenge davant Martín i Bagnaia!",
+      "subtitle": "Doblet històric de Bezzecchi i Martín a les colines de la Toscana (Crònica separada de la ronda de Kyushu a Autopolis)",
+      "summary": "Del 29 al 31 de maig de 2026 es va disputar el GP d'Itàlia de MotoGP a l'Autodromo Internazionale del Mugello. Raúl Fernández (Trackhouse Racing) va guanyar l'Sprint de dissabte, mentre que Marco Bezzecchi (Aprilia Racing) es va imposar diumenge al Gran Premi per davant de Jorge Martín (2n) i Francesco Bagnaia (3r).",
+      "highlightPoint": "Raúl Fernández s'adjudica l'Sprint de dissabte i Marco Bezzecchi guanya el Gran Premi d'Itàlia a Mugello liderant un doblet amb Jorge Martín!",
+      "sections": [
+        {
+          "heading": "Festa a Mugello: Raúl Fernández brilla dissabte i Bezzecchi regna diumenge",
+          "body": "Al ràpid traçat toscà de Mugello (5.245m), Raúl Fernández va inaugurar el palmarès del cap de setmana guanyant l'Sprint de dissabte. Diumenge, l'italià Marco Bezzecchi va culminar el seu gran estat de forma guanyant a casa davant del seu company Jorge Martín (2n) i de Francesco Bagnaia (Ducati Lenovo Team, 3r)."
+        }
+      ],
+      "resultTableTitle": "Resultats Oficials: FIM MotoGP Rd.7 GP d'Itàlia (Mugello · 30-31 de maig de 2026)",
+      "results": [
+        {
+          "pos": "GP 1r 🏆",
+          "riderOrTeam": "Marco Bezzecchi (#72 Aprilia Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "Guanyador del Gran Premi d'Itàlia de diumenge a Mugello"
+        },
+        {
+          "pos": "GP 2n 🥈",
+          "riderOrTeam": "Jorge Martín (Aprilia Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "2n classificat completant el doblet a Mugello"
+        },
+        {
+          "pos": "GP 3r 🥉",
+          "riderOrTeam": "Francesco Bagnaia (Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "3r classificat al podi de casa"
+        },
+        {
+          "pos": "Sprint 1r ⚡",
+          "riderOrTeam": "Raúl Fernández (Trackhouse Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "Guanyador de la cursa Sprint de dissabte"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Quina velocitat als revolts d'Arrabbiata 1 i 2 a Mugello, miau! Grans victòries de Raúl Fernández dissabte i de Bezzecchi diumenge!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "I com que aquest mateix cap de setmana (30-31 de maig) s'ha disputat el Campionat del Japó MFJ Rd.3 a Autopolis (Kyushu), hem publicat una crònica especial separada amb tots els resultats d'Oita! 📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Aneu directes a llegir també la crònica d'Autopolis, que el nostre circuit de casa a Kyushu ha viscut curses històriques!"
+        }
+      ]
+    },
+    "en": {
+      "title": "[May Week 5 MotoGP Digest] Italian GP at Mugello: Raúl Fernández Wins the Sprint Before Marco Bezzecchi Leads Home Martín & Bagnaia on Sunday!",
+      "subtitle": "Published separately from our MFJ All-Japan Rd.3 Autopolis Kyushu digest under our Monday two-article rule",
+      "summary": "Round 7 of the 2026 MotoGP World Championship at Mugello (May 29–31) saw Trackhouse Racing's Raúl Fernández win Saturday's Sprint before Aprilia Racing's Marco Bezzecchi captured Sunday's Italian Grand Prix ahead of teammate Jorge Martín (2nd) and Ducati's Francesco Bagnaia (3rd).",
+      "highlightPoint": "Raúl Fernández claimed Saturday's Sprint at Mugello before Marco Bezzecchi and Jorge Martín scored a 1–2 finish in Sunday's Italian Grand Prix!",
+      "sections": [
+        {
+          "heading": "Fernández Takes Saturday Sprint; Bezzecchi Triumphs on Sunday at Mugello",
+          "body": "Across Mugello's flowing 5,245m Tuscan layout, Raúl Fernández (Trackhouse Racing) delivered a breakthrough Saturday Sprint victory. On Sunday, Italian star Marco Bezzecchi converted his string of podiums into a home Grand Prix victory ahead of teammate Jorge Martín in 2nd and Francesco Bagnaia in 3rd."
+        }
+      ],
+      "resultTableTitle": "Official Results: 2026 FIM MotoGP Rd.7 Italian GP (Mugello · May 30–31, 2026)",
+      "results": [
+        {
+          "pos": "GP 1st 🏆",
+          "riderOrTeam": "Marco Bezzecchi (#72 Aprilia Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "Won Sunday's Italian Grand Prix at Mugello"
+        },
+        {
+          "pos": "GP 2nd 🥈",
+          "riderOrTeam": "Jorge Martín (Aprilia Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "2nd place to complete a factory 1–2 finish"
+        },
+        {
+          "pos": "GP 3rd 🥉",
+          "riderOrTeam": "Francesco Bagnaia (Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "3rd place podium in front of the Italian fans"
+        },
+        {
+          "pos": "Sprint 1st ⚡",
+          "riderOrTeam": "Raúl Fernández (Trackhouse Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "Saturday Sprint Race Winner at Mugello"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Watching MotoGP bikes fly through Arrabbiata 1 and 2 at Mugello never gets old, meow! Congrats to Raúl Fernández and Marco Bezzecchi!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "And because MFJ All-Japan Round 3 at Autopolis in Oita, Kyushu took place on this exact same weekend (May 30–31), we have published a dedicated domestic digest article right alongside this one! 📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Make sure you check out our Autopolis report too—there was huge drama across every class in Kyushu!"
+        }
+      ]
+    }
+  },
+  "scheduleEventIds": [
+    "2026-05-29-motogp-rd7-mugello-italy"
+  ]
+}

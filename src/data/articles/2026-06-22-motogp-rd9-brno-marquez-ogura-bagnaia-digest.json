@@ -1,0 +1,239 @@
+{
+  "id": "2026-06-22-motogp-rd9-brno-marquez-ogura-bagnaia-digest",
+  "slug": "motogp-2026-rd9-czech-gp-brno-marc-marquez-win-ai-ogura-2nd-digest",
+  "publishedAt": "2026-06-22",
+  "category": "world",
+  "articleType": "digest",
+  "circuit": "Automotodrom Brno（チェコ共和国・ブルノ・全長5,403m）",
+  "region": "World (Brno, Czechia)",
+  "featuredCat": "marc",
+  "heroImage": "/images/cats/marc.png",
+  "tags": [
+    "MotoGP",
+    "チェコGP",
+    "ブルノ",
+    "マルク・マルケス",
+    "小椋藍",
+    "フランチェスコ・バニャイア",
+    "Trackhouse Racing"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "MotoGP™ Official",
+      "handle": "@MotoGP",
+      "url": "https://x.com/MotoGP",
+      "publishedDate": "2026-06-21 (Czech GP Brno Official Results)",
+      "quotedPostText": {
+        "ja": "【2026 MotoGP 第9戦 チェコGP（ブルノ）公式結果】土曜スプリントはフランチェスコ・バニャイア（Ducati Lenovo Team）が優勝！日曜決勝グランプリはマルク・マルケス（Ducati Lenovo Team）が制し、日本の小椋藍（Trackhouse Racing / Aprilia）が自己最高位を更新する圧巻の2位表彰台！3位にバニャイア！",
+        "ca": "【Resultats Oficials GP de la República Txeca 2026 a Brno】Dissabte: Victòria de Francesco Bagnaia a l'Sprint! Diumenge: Marc Márquez (Ducati Lenovo Team) guanya el Gran Premi per davant d'un sensacional Ai Ogura (2n, Trackhouse Racing) i de Bagnaia (3r)!",
+        "en": "[Official Results: 2026 MotoGP Czech GP at Brno] Francesco Bagnaia wins Saturday's Sprint! On Sunday, Marc Márquez (Ducati Lenovo Team) triumphs in the Czech Grand Prix ahead of a sensational 2nd place for Japan's Ai Ogura (Trackhouse Racing) and 3rd for Bagnaia!"
+      },
+      "editorialCommentary": {
+        "ja": "MotoGP公式X（@MotoGP）が配信したブルノ（全長5,403m）のハイライト映像では、高低差70m超のアップダウンを駆け抜ける最終セクターの登り坂シケインで、マルク・マルケス選手の鋭いブレーキングと、ドゥカティワークス2台の間に割って入った小椋藍選手（Trackhouse Racing）の抜群のコーナリングスピードが鮮やかに捉えられています。",
+        "ca": "Els vídeos oficials de @MotoGP a Brno (5.403m) mostren com Marc Márquez va dominar les frenades en baixada i com Ai Ogura (Trackhouse Racing) es va intercalar entre les dues Ducati oficials amb un pas per corba impecable.",
+        "en": "@MotoGP's official Brno highlights showcase Marc Márquez's downhill braking mastery and Ai Ogura's (Trackhouse Racing) sublime mid-corner speed to split the two factory Lenovo Ducatis on the podium."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "2026年6月19日〜21日にチェコ共和国のブルノ・サーキット（Automotodrom Brno / 全長5,403m）で開催された「2026 FIM MotoGP世界選手権 第9戦 チェコGP」の公式結果（土曜スプリント優勝：フランチェスコ・バニャイア、日曜決勝優勝：マルク・マルケス／Ducati Lenovo Team、2位：小椋藍／Trackhouse Racing、3位：フランチェスコ・バニャイア／Ducati Lenovo Team）に基づき検証済み。",
+      "ca": "Verificat amb els resultats oficials del GP de la República Txeca de MotoGP 2026 a l'Automotodrom Brno (19-21 de juny de 2026): Sprint guanyat per Francesco Bagnaia; Gran Premi guanyat per Marc Márquez, 2n Ai Ogura (Trackhouse Racing) i 3r Francesco Bagnaia.",
+      "en": "Verified against official 2026 FIM MotoGP Rd.9 Czech Republic Grand Prix (Automotodrom Brno, June 19–21, 2026) results: Saturday Sprint won by Francesco Bagnaia; Sunday GP won by Marc Márquez (Ducati Lenovo Team), 2nd Ai Ogura (Trackhouse Racing), 3rd Francesco Bagnaia (Ducati Lenovo Team)."
+    },
+    "sources": [
+      {
+        "title": "FIM MotoGP Official Results: 2026 Czech GP at Brno (motogp.com)",
+        "url": "https://www.motogp.com/en/gp-results"
+      },
+      {
+        "title": "Automotodrom Brno Official Website",
+        "url": "https://www.automotodrombrno.cz/"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-06-19 - 2026-06-21 (Monday Digest 1 - World)",
+    "venue": {
+      "ja": "ブルノ・サーキット（チェコ共和国・アウトモトドローム・ブルノ・全長5,403m）",
+      "ca": "Automotodrom Brno (República Txeca · 5.403m)",
+      "en": "Automotodrom Brno (Czechia · 5,403m)"
+    },
+    "weather": {
+      "ja": "晴れ・ドライ / 森に囲まれたブルノの丘陵を埋めた大観衆",
+      "ca": "Assolellat i sec / Graderies plenes a les colines boscoses de Brno",
+      "en": "Sunny & Dry / Huge Crowds Across Brno's Forested Hillsides"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【2026年6月第3週 MotoGP結果ダイジェスト】第9戦チェコGP（ブルノ）：土曜スプリントはバニャイア、日曜決勝はマルク・マルケスが優勝＆小椋藍が圧巻の2位表彰台！",
+      "subtitle": "ル・マン3位に続き小椋藍（Trackhouse Racing）がドゥカティワークス勢に割って入る準優勝！※同日の全日本筑波J-GP3＆HSR九州は別記事で詳報",
+      "summary": "2026年6月19日〜21日、チェコ共和国のブルノ・サーキット（全長5,403m）でMotoGP第9戦チェコGPが開催されました。土曜スプリントはフランチェスコ・バニャイア選手（Ducati Lenovo Team）が制し、日曜の決勝グランプリではマルク・マルケス選手（Ducati Lenovo Team）が優勝！そして2位には日本の小椋藍選手（Trackhouse Racing / Aprilia）が飛び込み、3位にバニャイア選手が入りました。",
+      "highlightPoint": "伝統の高速アップダウンコース・ブルノでマルク・マルケスが決勝制覇！小椋藍（Trackhouse Racing）がバニャイアを抑えて決勝2位表彰台を獲得し、翌週アッセンでの歴史的快挙へ王手！",
+      "sections": [
+        {
+          "heading": "土曜スプリントはバニャイアが快勝、日曜決勝はマルク・マルケスが勝負強さを発揮！",
+          "body": "森に囲まれた自然地形を活かした名門コース・ブルノ（全長5,403m）は、広いコース幅と70mを超える高低差が特徴です。6月20日（土）のスプリントレースでは、フランチェスコ・バニャイア選手（Ducati Lenovo Team）がブルノのワイドな路面をフルに使った美しいコーナリングでトップを守り切り、スプリント優勝を飾りました。\n\n迎えた6月21日（日）の決勝グランプリ（21周）では、前戦ハンガリーGPから連勝を狙うマルク・マルケス選手（Ducati Lenovo Team）が下りブレーキング区間で鋭く主導権を掌握。最後までハイペースを緩めることなくトップチェッカーを受け、見事チェコGP決勝を制しました。"
+        },
+        {
+          "heading": "小椋藍（Trackhouse Racing）がドゥカティワークス2台の間に割って入る決勝2位！",
+          "body": "そして日曜決勝で最大の注目を集めたのが、日本の小椋藍選手（Trackhouse Racing / Aprilia）の快走でした。5月の第5戦フランスGP（ル・マン）で3位表彰台を獲得していた小椋選手は、ブルノの流れるような中高速コーナーと最終セクターの上り坂シケインでアプリリアRS-GPの旋回性能を100%引き出し、スプリント勝者のバニャイア選手（3位）を抑え切って堂々の決勝2位でフィニッシュ！次戦アッセンへ向けた最高のステップを刻みました。"
+        }
+      ],
+      "resultTableTitle": "2026 FIM MotoGP 第9戦 チェコGP（ブルノ・6月20日〜21日）公式結果",
+      "results": [
+        {
+          "pos": "GP 1st 🏆",
+          "riderOrTeam": "マルク・マルケス (#93 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "日曜決勝優勝！ハンガリーGPに続く連勝を達成"
+        },
+        {
+          "pos": "GP 2nd 🥈",
+          "riderOrTeam": "小椋 藍 (#79 Trackhouse Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "日曜決勝2位表彰台！ル・マン3位を上回る圧巻の準優勝"
+        },
+        {
+          "pos": "GP 3rd 🥉",
+          "riderOrTeam": "フランチェスコ・バニャイア (#63 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "日曜決勝3位表彰台！（土曜スプリント優勝と合わせダブル表彰台）"
+        },
+        {
+          "pos": "Sprint 1st ⚡",
+          "riderOrTeam": "フランチェスコ・バニャイア (#63 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "土曜スプリントレース優勝！"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "ブルノの急勾配『馬の背』を駆け上がるバトル、最高に熱かったニャ！マルク・マルケス選手の優勝はもちろん、バニャイア選手を抑えて2位に飛び込んだ小椋藍選手の走りにパドック中が驚嘆していたニャ！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "しかも同じ6月21日（日）には、日本の筑波サーキットで行われた全日本ロード第4戦J-GP3で『タイム差0.000秒』の同着写真判定決着が生まれ、熊本ではHSR九州トロフィー第2戦も開催されました！国内編の記事も今すぐ読んでくださいね📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "ル・マンで3位、ブルノで2位……小椋藍とRS-GPの仕上がり方を見れば、次の高速コース・アッセンで何が起きるか、メカニックの勘でピンとくるわよ……ふふっ。"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Resum Juny Setmana 3 · MotoGP] GP de la República Txeca a Brno: Bagnaia guanya l'Sprint, Marc Márquez triomfa diumenge i Ai Ogura brilla amb un 2n lloc!",
+      "subtitle": "Ai Ogura (Trackhouse Racing) s'intercala entre les dues Ducati oficials al clàssic traçat de Brno (Crònica separada per a MFJ Tsukuba i HSR Kyushu)",
+      "summary": "Del 19 al 21 de juny de 2026 es va celebrar la 9a cita del Mundial de MotoGP a l'Automotodrom Brno (5.403m). Francesco Bagnaia (Ducati Lenovo Team) va guanyar l'Sprint de dissabte, mentre que Marc Márquez (Ducati Lenovo Team) es va imposar diumenge al Gran Premi per davant del japonès Ai Ogura (2n, Trackhouse Racing) i del mateix Bagnaia (3r).",
+      "highlightPoint": "Marc Márquez conquereix Brno diumenge mentre Ai Ogura aconsegueix una espectacular 2a posició superant el guanyador de l'Sprint, Francesco Bagnaia!",
+      "sections": [
+        {
+          "heading": "Bagnaia domina dissabte; Marc Márquez guanya diumenge amb Ai Ogura en un històric 2n calaix",
+          "body": "Als desnivells clàssics de 5.403m de Brno, Francesco Bagnaia va aprofitar l'amplada de pista per adjudicar-se l'Sprint de dissabte. Diumenge, Marc Márquez va imposar el seu ritme en les frenades en baixada per endur-se la victòria al Gran Premi, mentre que Ai Ogura (Trackhouse Racing / Aprilia) va gestionar els pneumàtics amb mestria per acabar 2n per davant de Bagnaia (3r)."
+        }
+      ],
+      "resultTableTitle": "Resultats Oficials: FIM MotoGP Rd.9 GP de la República Txeca (Brno · 20-21 de juny de 2026)",
+      "results": [
+        {
+          "pos": "GP 1r 🏆",
+          "riderOrTeam": "Marc Márquez (#93 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "Guanyador del Gran Premi de la República Txeca de diumenge"
+        },
+        {
+          "pos": "GP 2n 🥈",
+          "riderOrTeam": "Ai Ogura (#79 Trackhouse Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "2n classificat al Gran Premi després d'una gestió de cursa impecable"
+        },
+        {
+          "pos": "GP 3r 🥉",
+          "riderOrTeam": "Francesco Bagnaia (#63 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "3r classificat diumenge (i guanyador de l'Sprint de dissabte)"
+        },
+        {
+          "pos": "Sprint 1r ⚡",
+          "riderOrTeam": "Francesco Bagnaia (#63 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "Guanyador de la cursa Sprint de dissabte a Brno"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Quina cursa a les pujades i baixades de Brno, miau! Victòria de Marc Márquez i un 2n lloc d'Ai Ogura que avisa del que pot passar la setmana vinent a Assen!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "I no us perdeu la crònica japonesa d'aquest mateix dilluns: a Tsukuba s'ha viscut un empat a 0.000 segons a J-GP3 i a Kumamoto s'ha disputat el Trofeu HSR Kyushu! 📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "3r a Le Mans, 2n a Brno... com a mecànica us dic que el xassís de l'Aprilia d'Ogura està a punt per fer història a Assen."
+        }
+      ]
+    },
+    "en": {
+      "title": "[June Week 3 MotoGP Digest] Czech GP at Brno: Bagnaia Wins Saturday's Sprint Before Marc Márquez Triumphs on Sunday Ahead of 2nd-Place Ai Ogura!",
+      "subtitle": "Published separately from our MFJ All-Japan Rd.4 Tsukuba & HSR Kyushu Rd.2 report under our Monday World/Japan split rule",
+      "summary": "Round 9 of the 2026 MotoGP World Championship at the 5,403m Automotodrom Brno (June 19–21) saw Francesco Bagnaia (Ducati Lenovo Team) win Saturday's Sprint before teammate Marc Márquez captured Sunday's Czech Grand Prix ahead of a sensational 2nd-place finish by Japan's Ai Ogura (Trackhouse Racing) and 3rd for Bagnaia.",
+      "highlightPoint": "Marc Márquez conquered Sunday's Czech GP at Brno while Trackhouse Racing's Ai Ogura split the factory Lenovo Ducatis in 2nd place—setting the stage for Assen one week later!",
+      "sections": [
+        {
+          "heading": "Bagnaia Takes the Sprint; Márquez Wins Sunday's GP as Ai Ogura Storms to 2nd",
+          "body": "Across Brno's wide tarmac and dramatic 70-meter elevation changes, Francesco Bagnaia (Ducati Lenovo Team) claimed Saturday's 10-lap Sprint victory. In Sunday's 21-lap Grand Prix, Marc Márquez seized control on the downhill braking zones to secure back-to-back GP wins, while Japan's Ai Ogura (Trackhouse Racing / Aprilia) built on his May Le Mans podium (3rd) by fending off Bagnaia over the closing laps for a career-best 2nd place."
+        }
+      ],
+      "resultTableTitle": "Official Results: 2026 FIM MotoGP Rd.9 Czech GP (Brno · June 20–21, 2026)",
+      "results": [
+        {
+          "pos": "GP 1st 🏆",
+          "riderOrTeam": "Marc Márquez (#93 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "Won Sunday's Czech Grand Prix at Brno"
+        },
+        {
+          "pos": "GP 2nd 🥈",
+          "riderOrTeam": "Ai Ogura (#79 Trackhouse Racing)",
+          "machine": "Aprilia RS-GP",
+          "timeOrNote": "2nd place in Sunday's Grand Prix, splitting the factory Ducatis"
+        },
+        {
+          "pos": "GP 3rd 🥉",
+          "riderOrTeam": "Francesco Bagnaia (#63 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "3rd place on Sunday (plus Saturday Sprint winner)"
+        },
+        {
+          "pos": "Sprint 1st ⚡",
+          "riderOrTeam": "Francesco Bagnaia (#63 Ducati Lenovo Team)",
+          "machine": "Ducati Desmosedici GP",
+          "timeOrNote": "Saturday Sprint Race Winner at Brno"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "What a battle up Brno's Horsepower Hill, meow! Marc Márquez takes the win and Ai Ogura climbs to 2nd right between the two factory Ducatis!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "And on that exact same Sunday (June 21), MFJ All-Japan Rd.4 at Tsukuba produced an unbelievable 0.000-second dead-heat finish in J-GP3 alongside HSR Kyushu Trophy Rd.2! Check out our companion Japan Digest right now! 📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "3rd at Le Mans, 2nd at Brno... you don't need a crystal ball in the garage to see what Ai Ogura and that Aprilia chassis are about to do at Assen next week."
+        }
+      ]
+    }
+  },
+  "scheduleEventIds": [
+    "2026-06-19-motogp-rd9-brno-czechia"
+  ]
+}

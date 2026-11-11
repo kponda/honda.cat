@@ -1,0 +1,219 @@
+{
+  "id": "2026-05-04-hsr-kyushu-tetsuma-kassen-digest",
+  "slug": "hsr-kyushu-2026-tetsuma-with-tsk-kassen-may-digest",
+  "publishedAt": "2026-05-04",
+  "category": "kyushu",
+  "articleType": "digest",
+  "circuit": "HSR九州（熊本県菊池郡大津町・全長2,350m）",
+  "region": "Kyushu (Ozu, Kumamoto)",
+  "featuredCat": "naomi",
+  "heroImage": "/images/cats/naomi.png",
+  "tags": [
+    "HSR九州",
+    "鉄馬",
+    "Tetsuma",
+    "熊本",
+    "九州"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "鉄馬（Tetsuma）公式 ＆ HSR九州公式",
+      "handle": "@tetsuma_with_b / @hsr_kyushu",
+      "url": "https://x.com/tetsuma_with_b",
+      "publishedDate": "2026-05-03 (2026 Tetsuma with TSK: Day of Battle)",
+      "quotedPostText": {
+        "ja": "【2026 鉄馬 with TSK 合戦の日 in HSR九州（5月2日〜3日）】鉄フレーム車両の祭典『鉄馬』2026年開幕戦（合戦の日）！アイアンACS（空冷シングル）・WCS（水冷シングル）・ACT17（空冷ツイン17インチ）・ACT18（18インチ）・WCT・ネオクラシック350の全クラスを開催！",
+        "ca": "【2026 Tetsuma with TSK: Dia de la Batalla a HSR Kyushu (2-3 de maig)】Primera cita de l'any del festival de motos amb xassís de ferro a Kumamoto amb totes les classes: Iron ACS, WCS, ACT17, ACT18, WCT i Neo Classic 350!",
+        "en": "[2026 Tetsuma with TSK 'Day of Battle' at HSR Kyushu (May 2–3)] Round 1 of the 2026 iron-frame motorcycle festival in Kumamoto featuring all classes: Iron ACS, WCS, ACT17, ACT18, WCT, and Neo Classic 350!"
+      },
+      "editorialCommentary": {
+        "ja": "鉄馬公式X（@tetsuma_with_b）およびHSR九州公式Instagram（@hsr_kyushu）では、5月2日の予選から5月3日の決勝にかけて、悪天候によるタイムスケジュール変更や一部パレードラン中止を乗り越えてHSR九州（全長2,350m）を駆け抜けた空冷・水冷鉄フレームレーサーたちの雄姿が発信されています。なお2026年シリーズは9月19〜20日に『決戦の日』、11月21〜22日に『乱戦の日』が予定されています。",
+        "ca": "Les xarxes oficials de @tetsuma_with_b i @hsr_kyushu mostren com l'organització i els equips van adaptar els horaris del diumenge 3 de maig davant la meteorologia adversa per completar les curses d'aquest festival únic.",
+        "en": "Official posts from @tetsuma_with_b and @hsr_kyushu highlight how riders and officials adapted Sunday's May 3 schedule around challenging weather conditions to complete the opening round of the 2026 Tetsuma series."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-11",
+    "basis": {
+      "ja": "2026年5月2日(土)〜5月3日(日)に熊本県菊池郡大津町のHSR九州（全長2,350m）で開催された「2026 鉄馬 with TSK 合戦の日」（年間3戦の第1戦：アイアンACS、WCS、ACT17、ACT18、WCT、ネオクラシック350の全クラス開催、5月3日は悪天候に伴いスケジュール変更・一部併催パレード中止のうえで実施）の公式開催事実に基づき検証済み。",
+      "ca": "Verificat segons les dades oficials de «2026 Tetsuma with TSK: Dia de la Batalla» celebrat el 2 i 3 de maig de 2026 a HSR Kyushu (Ozu, Kumamoto, 2.350m).",
+      "en": "Verified against official event records for '2026 Tetsuma with TSK: Day of Battle' held May 2–3, 2026 at HSR Kyushu (Ozu, Kumamoto, 2,350m)."
+    },
+    "sources": [
+      {
+        "title": "鉄馬（Tetsuma）公式サイト・スケジュール＆リザルト",
+        "url": "https://www.tetsuma.jp/"
+      },
+      {
+        "title": "HSR九州 公式レーススケジュール＆リザルト",
+        "url": "https://www.hsr.jp/race/result/"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-05-02 - 2026-05-03 (Monday Digest 1)",
+    "venue": {
+      "ja": "HSR九州（熊本県菊池郡大津町・全長2,350m）",
+      "ca": "HSR Kyushu (Ozu, Kumamoto · 2.350m)",
+      "en": "HSR Kyushu Circuit (Ozu, Kumamoto · 2,350m)"
+    },
+    "weather": {
+      "ja": "5/2 予選：ドライ ／ 5/3 決勝：悪天候に伴うスケジュール変更対応",
+      "ca": "2 maig: Sec / 3 maig: Horari adaptat per meteorologia adversa",
+      "en": "May 2: Dry / May 3: Schedule adapted due to adverse weather"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【2026年5月第1週 九州レースダイジェスト】熊本・HSR九州「2026 鉄馬 with TSK 合戦の日」開催！鉄フレームの咆哮がゴールデンウィークの阿蘇麓に響く",
+      "subtitle": "5月2日〜3日にHSR九州で開催された「鉄馬」開幕戦をガレージ担当ナオミがレポート！",
+      "summary": "2026年5月2日(土)〜3日(日)、熊本県大津町のHSR九州（全長2,350m）にて鉄フレーム車両限定の祭典『2026 鉄馬 with TSK 合戦の日』が開催されました。年間3戦で行われる2026年シリーズの第1戦として、アイアンACS・WCS・ACT17・ACT18・WCT・ネオクラシック350の全クラスが実施されました。",
+      "highlightPoint": "2026年の「鉄馬」は5月『合戦の日』・9月『決戦の日』・11月『乱戦の日』の年3戦！第1戦は日曜の悪天候によるスケジュール変更を乗り越えて熱戦を展開！",
+      "sections": [
+        {
+          "heading": "全クラス集結の開幕戦「合戦の日」：空冷・水冷シングル＆ツインからネオクラシックまで",
+          "body": "ホンダ熊本製作所に隣接するHSR九州（全長2,350m）の名物イベント『鉄馬（Tetsuma）』。2026年シーズンの幕開けとなる5月2日〜3日の『2026 鉄馬 with TSK 合戦の日』は、全カテゴリーが一堂に会する春のビッグイベントとして開催されました。\n\n実施されたクラスは、空冷シングルの『アイアンACS』、水冷シングルの『アイアンWCS』、17インチホイールの空冷ツイン『アイアンACT17』、18インチの『アイアンACT18』、水冷ツインの『アイアンWCT』、そして人気急上昇中の『ネオクラシック350』など多彩なラインナップ。土曜日の練習走行・公式予選に続き、日曜日の決勝日は悪天候の影響で併催パレードランの中止やタイムスケジュールの大幅な変更が行われましたが、運営陣とエントラントの協力により熱いレースが繰り広げられました。"
+        },
+        {
+          "heading": "翌週の筑波「テイスト・オブ・ツクバ」へと繋がる鉄フレームのバトン",
+          "body": "九州・熊本で5月2日〜3日に『鉄馬 合戦の日』が開催された直後の翌週末（5月9日〜10日）には、関東・筑波サーキットで『テイスト・オブ・ツクバ SATSUKI STAGE』が開催されます。西の鉄馬、東のテイスト・オブ・ツクバという日本の2大鉄フレームレーサー文化が5月のゴールデンウィークからリレー形式で盛り上がるのも2026年春の見どころです。"
+        }
+      ],
+      "resultTableTitle": "2026 鉄馬 with TSK in HSR九州 年間スケジュール＆「合戦の日」開催クラス",
+      "results": [
+        {
+          "pos": "第1戦 5/2-3",
+          "riderOrTeam": "2026 鉄馬 with TSK 「合戦の日」",
+          "machine": "HSR九州（熊本・大津 2,350m）",
+          "timeOrNote": "開催完了！ACS / WCS / ACT17 / ACT18 / WCT / ネオクラシック350 全クラス実施"
+        },
+        {
+          "pos": "第2戦 9/19-20",
+          "riderOrTeam": "2026 鉄馬 「決戦の日」",
+          "machine": "HSR九州（4気筒クラス中心）",
+          "timeOrNote": "秋の4気筒メインラウンドとして公式カレンダー掲載"
+        },
+        {
+          "pos": "第3戦 11/21-22",
+          "riderOrTeam": "2026 鉄馬 「乱戦の日」",
+          "machine": "HSR九州（シングル＆ツイン＋全クラス走行会）",
+          "timeOrNote": "晩秋のシーズン最終戦として公式カレンダー掲載"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "5月3日の決勝日はあいにくの天気でスケジュール変更もあったけど、鉄フレームのマシンを愛する連中の情熱は雨風くらいじゃ消えないわね！キャブレターのセッティング変更に追われたメカニックたち、本当にお疲れさまよ！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "空冷シングルやツインの重低音サウンドがHSR九州のバックストレートに響き渡る瞬間、何度聴いても痺れますね！公式X（@tetsuma_with_b）のフォトレポートも必見です📸✨"
+        },
+        {
+          "speaker": "naomi",
+          "text": "雨の中を走った鉄フレーム車は、帰ったらすぐにハーネスのカプラーとチェーンの水分を飛ばして防錆スプレー吹いときなさいよ！…め、面倒ならうちのガレージに持ってきなさい、エアブローくらいしてあげるから…"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Resum Maig Setmana 1 · Kyushu] Celebrat el festival «2026 Tetsuma with TSK: Dia de la Batalla» al circuit HSR Kyushu de Kumamoto!",
+      "subtitle": "La mecànica Naomi repassa la primera gran cita de l'any per a les motos de xassís de ferro a Kumamoto",
+      "summary": "El 2 i 3 de maig de 2026, el circuit HSR Kyushu (Ozu, Kumamoto) va acollir el «2026 Tetsuma with TSK: Dia de la Batalla», la primera de les tres cites anuals del famós festival de motos amb xassís de ferro.",
+      "highlightPoint": "Totes les categories Iron (ACS, WCS, ACT17, ACT18, WCT i Neo Classic 350) van competir a HSR Kyushu superant els canvis d'horari per la pluja de diumenge!",
+      "sections": [
+        {
+          "heading": "Passió pels xassissos de ferro sota qualsevol cel a Kumamoto",
+          "body": "El festival «Tetsuma» (Cavall de Ferro) a HSR Kyushu (2.350m) va obrir el seu calendari 2026 els dies 2 i 3 de maig amb el «Dia de la Batalla». Tot i que el mal temps de diumenge 3 de maig va obligar a modificar els horaris i cancel·lar algunes activitats paral·leles, els pilots de les classes Iron ACS, WCS, ACT17, ACT18, WCT i Neo Classic 350 van oferir un espectacle inoblidable."
+        }
+      ],
+      "resultTableTitle": "Calendari Anual 2026 del Festival «Tetsuma» a HSR Kyushu",
+      "results": [
+        {
+          "pos": "Rd.1 (2-3 Maig)",
+          "riderOrTeam": "2026 Tetsuma with TSK «Dia de la Batalla»",
+          "machine": "HSR Kyushu (Kumamoto · 2.350m)",
+          "timeOrNote": "Celebrat! Totes les categories Iron i Neo Classic 350"
+        },
+        {
+          "pos": "Rd.2 (19-20 Set)",
+          "riderOrTeam": "2026 Tetsuma «Dia Decisiu»",
+          "machine": "HSR Kyushu (Especial 4 cilindres)",
+          "timeOrNote": "Segona cita anual programada al setembre"
+        },
+        {
+          "pos": "Rd.3 (21-22 Nov)",
+          "riderOrTeam": "2026 Tetsuma «Dia de la Mêlée»",
+          "machine": "HSR Kyushu (Monocilíndriques, Twin i Tandes)",
+          "timeOrNote": "Tancament de la temporada al novembre"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "Ajustar els carburadors quan canvia el temps de cop a Kumamoto és feina d'artesans! Felicitats a tots els mecànics i pilots que van córrer el dia 3 a HSR Kyushu!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "I el proper cap de setmana (9 i 10 de maig) el relleu de les motos clàssiques passa al Taste of Tsukuba mentre a Oita comença el campionat POLISPA a Autopolis! 📸"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Després de córrer amb humitat, eixugueu bé el xassís de ferro i greixeu la cadena de seguida... Si no teniu compressor d'aire, passeu pel meu garatge, va..."
+        }
+      ]
+    },
+    "en": {
+      "title": "[May Week 1 Kyushu Digest] HSR Kyushu Hosts '2026 Tetsuma with TSK: Day of Battle' Iron-Frame Festival in Kumamoto!",
+      "subtitle": "Garage chief Naomi reviews the Golden Week opener of Kyushu's premier iron-frame racing series",
+      "summary": "On May 2–3, 2026, HSR Kyushu in Ozu, Kumamoto hosted '2026 Tetsuma with TSK: Day of Battle', the opening round of the three-event iron-frame racing calendar featuring Iron ACS, WCS, ACT17, ACT18, WCT, and Neo Classic 350 classes.",
+      "highlightPoint": "All Iron Frame classes competed at HSR Kyushu on May 2–3, overcoming Sunday weather schedule adjustments to kick off the 2026 Tetsuma season!",
+      "sections": [
+        {
+          "heading": "Iron-Frame Thunder at HSR Kyushu's 'Day of Battle'",
+          "body": "Held across May 2 (practice and qualifying) and May 3 (finals) at HSR Kyushu's 2,350m course in Kumamoto, '2026 Tetsuma with TSK: Day of Battle' brought together air-cooled and water-cooled singles and twins alongside the Neo Classic 350 class. Despite adverse Sunday weather forcing schedule adjustments and canceling a side parade run, the racing action delivered pure heritage excitement."
+        }
+      ],
+      "resultTableTitle": "2026 'Tetsuma' Official Annual Schedule at HSR Kyushu",
+      "results": [
+        {
+          "pos": "Rd.1 May 2–3",
+          "riderOrTeam": "2026 Tetsuma with TSK 'Day of Battle'",
+          "machine": "HSR Kyushu (Kumamoto · 2,350m)",
+          "timeOrNote": "Completed! Iron ACS, WCS, ACT17, ACT18, WCT & Neo Classic 350"
+        },
+        {
+          "pos": "Rd.2 Sep 19–20",
+          "riderOrTeam": "2026 Tetsuma 'Day of Decision'",
+          "machine": "HSR Kyushu (4-Cylinder Focus)",
+          "timeOrNote": "Autumn showcase on the official calendar"
+        },
+        {
+          "pos": "Rd.3 Nov 21–22",
+          "riderOrTeam": "2026 Tetsuma 'Day of Melee'",
+          "machine": "HSR Kyushu (Singles, Twins & Track Sessions)",
+          "timeOrNote": "Season finale on the official calendar"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "Re-jetting carburetors when Sunday weather turns nasty in Kumamoto is real old-school wrenching! Huge respect to every rider and mechanic at HSR Kyushu!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "And next weekend (May 9–10), the heritage baton passes to Tsukuba's 'Taste of Tsukuba' while Autopolis hosts Round 1 of the POLISPA Road Race Championship! 📸"
+        },
+        {
+          "speaker": "naomi",
+          "text": "If you rode your steel-frame beauty in the wet on Sunday, blow out the electrical connectors and lube your chain right away... Bring it to my garage if you need an air hose..."
+        }
+      ]
+    }
+  },
+  "scheduleEventIds": [
+    "2026-05-02-hsr-kyushu-tetsuma-kassen"
+  ]
+}
