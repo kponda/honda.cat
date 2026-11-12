@@ -3,7 +3,7 @@ import Header from './Header.astro';
 import ArticleCard from './ArticleCard.astro';
 import Footer from './Footer.astro';
 import type { ArticleData } from '../data/articles';
-import { UI_TEXT } from '../data/i18n';
+import { UI_TEXT, type Lang } from '../data/i18n';
 
 interface Props {
   articles: ArticleData[];
@@ -11,6 +11,12 @@ interface Props {
   totalPages: number;
   totalCount: number;
   pageSize?: number;
+  activeCategory?: string;
+  activeTag?: string;
+  customTitle?: Record<Lang, string>;
+  customSubtitle?: Record<Lang, string>;
+  customBadge?: Record<Lang, string>;
+  basePaginationPath?: string;
 }
 
 const {
@@ -18,17 +24,79 @@ const {
   currentPage,
   totalPages,
   totalCount,
-  pageSize = 12
+  pageSize = 12,
+  activeCategory = 'all',
+  activeTag,
+  customTitle,
+  customSubtitle,
+  customBadge,
+  basePaginationPath
 } = Astro.props;
 
 const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'all-japan', 'spotlight'] as const;
 
-const startItem = (currentPage - 1) * pageSize + 1;
+const isCategoryView = activeCategory && activeCategory !== 'all' && !activeTag;
+const isTagView = Boolean(activeTag);
+
+const currentCatLabel = isCategoryView && activeCategory in UI_TEXT.categories
+  ? UI_TEXT.categories[activeCategory as keyof typeof UI_TEXT.categories]
+  : null;
+
+const bannerBadge: Record<Lang, string> = customBadge || (
+  isTagView
+    ? UI_TEXT.archive.tagArchiveBadge
+    : isCategoryView
+      ? UI_TEXT.archive.categoryArchiveBadge
+      : UI_TEXT.archive.badge
+);
+
+const bannerTitle: Record<Lang, string> = customTitle || (
+  isTagView
+    ? {
+        ja: `🏷️ #${activeTag} の記事一覧`,
+        ca: `🏷️ Articles de #${activeTag}`,
+        en: `🏷️ Dispatches tagged #${activeTag}`
+      }
+    : isCategoryView && currentCatLabel
+      ? {
+          ja: `${currentCatLabel.ja} の記事一覧`,
+          ca: `Articles de ${currentCatLabel.ca}`,
+          en: `Dispatches: ${currentCatLabel.en}`
+        }
+      : UI_TEXT.archive.title
+);
+
+const bannerSubtitle: Record<Lang, string> = customSubtitle || (
+  isTagView
+    ? {
+        ja: `タグ「#${activeTag}」が付けられたレースレポート・プレビュー・整備解説記事一覧（全 ${totalCount} 件）`,
+        ca: `Cròniques, prèvies i guies tècniques amb l'etiqueta «#${activeTag}» (${totalCount} articles en total)`,
+        en: `Race previews, official reports, and technical guides tagged with "#${activeTag}" (${totalCount} total dispatches)`
+      }
+    : isCategoryView && currentCatLabel
+      ? {
+          ja: `${currentCatLabel.ja} に関する公式ダイジェスト、プレビュー、技術解説記事一覧（全 ${totalCount} 件）`,
+          ca: `Cròniques oficials, prèvies i anàlisi de ${currentCatLabel.ca} (${totalCount} articles)`,
+          en: `Official reports, previews, and technical analyses for ${currentCatLabel.en} (${totalCount} total)`
+        }
+      : UI_TEXT.archive.subtitle
+);
+
+const startItem = totalCount > 0 ? (currentPage - 1) * pageSize + 1 : 0;
 const endItem = Math.min(currentPage * pageSize, totalCount);
 
 function getPageUrl(pageNum: number): string {
-  if (pageNum === 1) return '/articles/';
-  return `/articles/page/${pageNum}/`;
+  const basePath = basePaginationPath
+    ? (basePaginationPath.endsWith('/') ? basePaginationPath : `${basePaginationPath}/`)
+    : (isCategoryView ? `/articles/category/${activeCategory}/` : isTagView ? `/articles/tag/${encodeURIComponent(activeTag!)}/` : '/articles/');
+
+  if (pageNum === 1) return basePath;
+  return `${basePath}page/${pageNum}/`;
+}
+
+function getCategoryUrl(catKey: string): string {
+  if (catKey === 'all') return '/articles/';
+  return `/articles/category/${catKey}/`;
 }
 
 const prevUrl = currentPage > 1 ? getPageUrl(currentPage - 1) : null;
@@ -42,36 +110,59 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
   <!-- Archive Header Banner -->
   <section class="archive-banner">
     <div class="container">
-      <div class="breadcrumb">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="/">
           <span data-i18n="ja">{UI_TEXT.archive.backToHome.ja}</span>
           <span data-i18n="ca">{UI_TEXT.archive.backToHome.ca}</span>
           <span data-i18n="en">{UI_TEXT.archive.backToHome.en}</span>
         </a>
-      </div>
+        {(isCategoryView || isTagView) && (
+          <>
+            <span class="bc-sep">/</span>
+            <a href="/articles/">
+              <span data-i18n="ja">記事一覧</span>
+              <span data-i18n="ca">Cròniques</span>
+              <span data-i18n="en">Articles</span>
+            </a>
+            <span class="bc-sep">/</span>
+            <span class="bc-current" aria-current="page">
+              {isTagView && <span>#{activeTag}</span>}
+              {isCategoryView && currentCatLabel && (
+                <>
+                  <span data-i18n="ja">{currentCatLabel.ja}</span>
+                  <span data-i18n="ca">{currentCatLabel.ca}</span>
+                  <span data-i18n="en">{currentCatLabel.en}</span>
+                </>
+              )}
+            </span>
+          </>
+        )}
+      </nav>
 
       <div class="banner-content">
         <div class="badge-row">
           <span class="badge hero-badge">
-            <span data-i18n="ja">{UI_TEXT.archive.badge.ja}</span>
-            <span data-i18n="ca">{UI_TEXT.archive.badge.ca}</span>
-            <span data-i18n="en">{UI_TEXT.archive.badge.en}</span>
+            <span data-i18n="ja">{bannerBadge.ja}</span>
+            <span data-i18n="ca">{bannerBadge.ca}</span>
+            <span data-i18n="en">{bannerBadge.en}</span>
           </span>
-          <span class="badge count-badge racing-font">
-            PAGE {currentPage} / {totalPages}
-          </span>
+          {totalPages > 1 && (
+            <span class="badge count-badge racing-font">
+              PAGE {currentPage} / {totalPages}
+            </span>
+          )}
         </div>
 
         <h1 class="archive-title">
-          <span data-i18n="ja">{UI_TEXT.archive.title.ja}</span>
-          <span data-i18n="ca">{UI_TEXT.archive.title.ca}</span>
-          <span data-i18n="en">{UI_TEXT.archive.title.en}</span>
+          <span data-i18n="ja">{bannerTitle.ja}</span>
+          <span data-i18n="ca">{bannerTitle.ca}</span>
+          <span data-i18n="en">{bannerTitle.en}</span>
         </h1>
 
         <p class="archive-subtitle">
-          <span data-i18n="ja">{UI_TEXT.archive.subtitle.ja}</span>
-          <span data-i18n="ca">{UI_TEXT.archive.subtitle.ca}</span>
-          <span data-i18n="en">{UI_TEXT.archive.subtitle.en}</span>
+          <span data-i18n="ja">{bannerSubtitle.ja}</span>
+          <span data-i18n="ca">{bannerSubtitle.ca}</span>
+          <span data-i18n="en">{bannerSubtitle.en}</span>
         </p>
 
         <div class="archive-metrics">
@@ -79,14 +170,18 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
             <strong class="racing-font">TOTAL DISPATCHES</strong>
             <span>全 {totalCount} 件</span>
           </div>
-          <div class="metric-pill">
-            <strong class="racing-font">SHOWING</strong>
-            <span>{startItem}〜{endItem} 件目</span>
-          </div>
-          <div class="metric-pill">
-            <strong class="racing-font">CURRENT PAGE</strong>
-            <span>{currentPage} / {totalPages} ページ</span>
-          </div>
+          {totalCount > 0 && (
+            <div class="metric-pill">
+              <strong class="racing-font">SHOWING</strong>
+              <span>{startItem}〜{endItem} 件目</span>
+            </div>
+          )}
+          {totalPages > 1 && (
+            <div class="metric-pill">
+              <strong class="racing-font">CURRENT PAGE</strong>
+              <span>{currentPage} / {totalPages} ページ</span>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -96,27 +191,47 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
   <section class="archive-list-section">
     <div class="container">
       <div class="filter-bar">
+        {isTagView && (
+          <div class="tag-active-pill">
+            <span class="tag-indicator-label">🏷️ 選択中のタグ:</span>
+            <span class="tag-indicator-val">#{activeTag}</span>
+            <a href="/articles/" class="tag-reset-link">すべての記事を見る ×</a>
+          </div>
+        )}
+
         <div class="category-filters" role="tablist" aria-label="Category Filter">
-          {categories.map((catKey, idx) => (
-            <button
-              type="button"
-              class={`filter-btn ${idx === 0 ? 'active' : ''}`}
-              data-filter-category={catKey}
-            >
-              <span data-i18n="ja">{UI_TEXT.categories[catKey].ja}</span>
-              <span data-i18n="ca">{UI_TEXT.categories[catKey].ca}</span>
-              <span data-i18n="en">{UI_TEXT.categories[catKey].en}</span>
-            </button>
-          ))}
+          {categories.map((catKey) => {
+            const isSelected = isCategoryView ? activeCategory === catKey : (!isTagView && catKey === 'all');
+            return (
+              <a
+                href={getCategoryUrl(catKey)}
+                class={`filter-btn ${isSelected ? 'active' : ''}`}
+                data-filter-category={catKey}
+                role="tab"
+                aria-selected={isSelected}
+              >
+                <span data-i18n="ja">{UI_TEXT.categories[catKey].ja}</span>
+                <span data-i18n="ca">{UI_TEXT.categories[catKey].ca}</span>
+                <span data-i18n="en">{UI_TEXT.categories[catKey].en}</span>
+              </a>
+            );
+          })}
         </div>
       </div>
 
       <!-- Articles Grid -->
-      <div class="articles-grid" id="articles-grid">
-        {articles.map((article) => (
-          <ArticleCard article={article} />
-        ))}
-      </div>
+      {articles.length > 0 ? (
+        <div class="articles-grid" id="articles-grid">
+          {articles.map((article) => (
+            <ArticleCard article={article} />
+          ))}
+        </div>
+      ) : (
+        <div class="no-articles-card">
+          <p class="no-articles-text">該当する記事はまだありません。</p>
+          <a href="/articles/" class="btn-back-all">全記事一覧へ戻る</a>
+        </div>
+      )}
 
       <!-- Pagination Component -->
       {totalPages > 1 && (
@@ -173,29 +288,7 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
 <Footer />
 
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('[data-filter-category]');
-    const articleCards = document.querySelectorAll('.article-card[data-category]');
 
-    filterButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const selected = btn.getAttribute('data-filter-category');
-        filterButtons.forEach((b) => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        articleCards.forEach((card) => {
-          const cat = card.getAttribute('data-category');
-          if (selected === 'all' || cat === selected) {
-            card.style.display = 'flex';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
-  });
-</script>
 
 <style>
   .archive-main {
@@ -211,6 +304,10 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
   .breadcrumb {
     margin-bottom: 1.25rem;
     font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    flex-wrap: wrap;
   }
 
   .breadcrumb a {
@@ -219,11 +316,22 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
     align-items: center;
     gap: 0.35rem;
     transition: color 0.15s ease;
+    text-decoration: none;
   }
 
   .breadcrumb a:hover {
     color: #fff;
     text-decoration: underline;
+  }
+
+  .bc-sep {
+    color: var(--text-muted);
+    opacity: 0.6;
+  }
+
+  .bc-current {
+    color: var(--text-secondary);
+    font-weight: 600;
   }
 
   .badge-row {
@@ -294,6 +402,46 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   .filter-bar {
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tag-active-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: rgba(255, 183, 3, 0.1);
+    border: 1px solid rgba(255, 183, 3, 0.35);
+    padding: 0.45rem 0.95rem;
+    border-radius: 999px;
+    width: fit-content;
+    font-size: 0.85rem;
+  }
+
+  .tag-indicator-label {
+    color: var(--text-muted);
+  }
+
+  .tag-indicator-val {
+    color: var(--accent-gold);
+    font-weight: 700;
+  }
+
+  .tag-reset-link {
+    color: #ff758f;
+    font-size: 0.78rem;
+    text-decoration: none;
+    margin-left: 0.35rem;
+    padding: 0.1rem 0.45rem;
+    border-radius: 4px;
+    background: rgba(230, 57, 70, 0.15);
+    transition: all 0.15s ease;
+  }
+
+  .tag-reset-link:hover {
+    background: rgba(230, 57, 70, 0.3);
+    color: #fff;
   }
 
   .category-filters {
@@ -312,18 +460,56 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
     font-weight: 700;
     cursor: pointer;
     font-family: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
     transition: all 0.15s ease;
   }
 
   .filter-btn:hover {
     color: #fff;
     border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-1px);
   }
 
   .filter-btn.active {
     background: var(--accent-gold);
     color: #0d0f14;
     border-color: var(--accent-gold);
+    box-shadow: 0 4px 12px rgba(255, 183, 3, 0.3);
+  }
+
+  .no-articles-card {
+    background: var(--bg-card);
+    border: 1px dashed var(--border-subtle);
+    border-radius: 1rem;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .no-articles-text {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .btn-back-all {
+    display: inline-flex;
+    align-items: center;
+    background: var(--accent-gold);
+    color: #0d0f14;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 0.55rem 1.25rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: transform 0.15s ease, filter 0.15s ease;
+  }
+
+  .btn-back-all:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
   }
 
   .articles-grid {

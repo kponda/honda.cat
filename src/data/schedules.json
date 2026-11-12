@@ -1439,12 +1439,12 @@
       }
     },
     {
-      "id": "2026-11-20-motogp-rd21-portimao-portugal",
+      "id": "2026-11-13-motogp-rd21-portimao-portugal",
       "scope": "world",
       "category": "world",
       "series": "2026 FIM MotoGP 世界選手権 第21戦 ポルトガルGP (ポルティマオ)",
-      "startDate": "2026-11-20",
-      "endDate": "2026-11-22",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-15",
       "circuit": {
         "ja": "アウトードロモ・インテルナシオナル・ド・アルガルヴェ（ポルトガル・ポルティマオ・全長4,592m）",
         "ca": "Autódromo Internacional do Algarve (Portimão, Portugal · 4.592 m)",
@@ -1456,9 +1456,9 @@
         "en": "2026 MotoGP Rd.21 Grande Prémio de Portugal (Portimão)"
       },
       "scheduleWindow": {
-        "ja": "2026年11月20日(金)〜11月22日(日) 開催（欧州終盤2連戦初戦・高低差ジェットコースター決戦）",
-        "ca": "20-22 de novembre de 2026 (Muntanya russa d'Algarve)",
-        "en": "November 20–22, 2026 (Rollercoaster elevation showdown at Portimão)"
+        "ja": "2026年11月13日(金)〜11月15日(日) 開催（欧州終盤2連戦初戦・高低差ジェットコースター決戦）",
+        "ca": "13-15 de novembre de 2026 (Muntanya russa d'Algarve)",
+        "en": "November 13–15, 2026 (Rollercoaster elevation showdown at Portimão)"
       },
       "classes": "MotoGP / Moto2 / Moto3",
       "officialWebUrl": "https://www.motogp.com/en/calendar",
@@ -1474,33 +1474,33 @@
       }
     },
     {
-      "id": "2026-11-21-suzuka-sunday-ngk-cup-finale",
+      "id": "2026-11-14-hsr-kyushu-enjoy-4h-endurance",
       "scope": "japan",
-      "category": "all-japan",
-      "series": "2026 鈴鹿サンデーロードレース最終戦 第59回 NGKスパークプラグ杯",
-      "startDate": "2026-11-21",
-      "endDate": "2026-11-22",
+      "category": "kyushu",
+      "series": "2026 HSR九州 エンジョイ4時間耐久レース練習会＆レース",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
       "circuit": {
-        "ja": "鈴鹿サーキット国際レーシングコース（三重県鈴鹿市・フルコース 5.821km）",
-        "ca": "Circuit de Suzuka (Prefectura de Mie · Curs complet 5.821 km)",
-        "en": "Suzuka Circuit International Racing Course (Mie · Full Course 5.821km)"
+        "ja": "HSR九州ロードコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "Circuit HSR Kyushu (Ozu, Kumamoto · 2.350 m)",
+        "en": "HSR Kyushu Road Course (Ozu, Kumamoto · 2,350m)"
       },
       "eventName": {
-        "ja": "2026 鈴鹿サンデーロードレース最終戦 第59回 NGKスパークプラグ杯 鈴鹿2&4/ロードレース",
-        "ca": "Gran Final de Suzuka Sunday Road Race 2026 · 59è Trofeu NGK Spark Plug",
-        "en": "2026 Suzuka Sunday Road Race Finale: 59th NGK Spark Plug Cup"
+        "ja": "2026 エンジョイ4時間耐久レース練習会＆レース【HSR九州(熊本)】",
+        "ca": "2026 Cursa i entrenaments de 4 hores de resistència Enjoy a HSR Kyushu",
+        "en": "2026 Enjoy 4-Hour Endurance Practice & Race at HSR Kyushu"
       },
       "scheduleWindow": {
-        "ja": "2026年11月21日(土)〜11月22日(日) 開催（国内トップライダー多数参戦の伝統の最終戦）",
-        "ca": "21-22 de novembre de 2026 (Històric trofeu de cloenda a Suzuka)",
-        "en": "November 21–22, 2026 (Suzuka Traditional Season-Ending Trophy Race)"
+        "ja": "2026年11月14日(土)練習会・11月15日(日)決勝（阿蘇の麓で駆けるミニバイク4時間耐久）",
+        "ca": "14-15 de novembre de 2026 (Resistència de minibikes de 4 hores a HSR Kyushu)",
+        "en": "November 14–15, 2026 (Minibike 4-hour endurance at HSR Kyushu)"
       },
-      "classes": "JSB1000 / ST1000 / ST600 / JP250 / CBR250R Dream Cup",
-      "officialWebUrl": "https://www.suzukacircuit.jp/sundayr/",
-      "circuitWebUrl": "https://www.suzukacircuit.jp/",
-      "snsHandle": "@suzuka_event",
-      "snsUrl": "https://x.com/suzuka_event",
-      "verifiedSource": "鈴鹿サーキット公式 (suzukacircuit.jp)",
+      "classes": "ミニバイク（〜125cc MT / GROM / NSR50 / XR100等）",
+      "officialWebUrl": "https://event.webike.net/event/4469/",
+      "circuitWebUrl": "https://www.hsr.jp/",
+      "snsHandle": "@Webike_net / @hsr_kyushu",
+      "snsUrl": "https://x.com/Webike_net",
+      "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4469/) ＆ HSR九州公式",
       "publicationState": {
         "previewPublished": false,
         "resultStatus": "pending",
@@ -1509,12 +1509,187 @@
       }
     },
     {
-      "id": "2026-11-27-motogp-rd22-valencia-spain-finale",
+      "id": "2026-11-14-sugo-jp-sport-and-open-4h-endurance",
+      "scope": "japan",
+      "category": "all-japan",
+      "series": "2026 SUGO JP-SPORT 4時間耐久レース／SUGO OPEN 4時間耐久レース",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "circuit": {
+        "ja": "スポーツランドSUGO 国際レーシングコース（宮城県柴田郡村田町・全長3,586m）",
+        "ca": "Sportsland SUGO (Murata, Miyagi · 3.586 m)",
+        "en": "Sportsland SUGO International Racing Course (Miyagi · 3,586m)"
+      },
+      "eventName": {
+        "ja": "2026 SUGO JP-SPORT 4時間耐久レース／2026 SUGO OPEN 4時間耐久レース",
+        "ca": "2026 SUGO JP-SPORT i OPEN Resistència de 4 Hores a Sportsland SUGO",
+        "en": "2026 SUGO JP-SPORT & OPEN 4-Hour Endurance Race"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月14日(土) 1Day開催（SUGO国際レーシングコース秋の4時間耐久）",
+        "ca": "14 de novembre de 2026 (Resistència de 4 hores a Sportsland SUGO)",
+        "en": "November 14, 2026 (Autumn 4-hour road race endurance at Sportsland SUGO)"
+      },
+      "classes": "JP-SPORT / SUGO OPEN 各クラス",
+      "officialWebUrl": "https://event.webike.net/event/4146/",
+      "circuitWebUrl": "https://www.sportsland-sugo.co.jp/",
+      "snsHandle": "@Webike_net / @sugo_official",
+      "snsUrl": "https://x.com/sugo_official",
+      "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4146/) ＆ スポーツランドSUGO公式",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-11-15-hsr-kyushu-saga-cup-rd4",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 SAGA CUP R-4 in HSR九州",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "circuit": {
+        "ja": "HSR九州ロードコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "Circuit HSR Kyushu (Ozu, Kumamoto · 2.350 m)",
+        "en": "HSR Kyushu Road Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 SAGA CUP R-4【HSR九州(熊本)】",
+        "ca": "2026 SAGA CUP R-4 a HSR Kyushu (Kumamoto)",
+        "en": "2026 SAGA CUP R-4 at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月15日(日) 1Day開催（九州ミニバイクスプリント＆耐久シリーズ第4戦）",
+        "ca": "15 de novembre de 2026 (Cursa de minibikes a HSR Kyushu)",
+        "en": "November 15, 2026 (Kyushu minibike sprint & endurance Round 4)"
+      },
+      "classes": "ミニバイク（〜125cc MT / スクーター / ノービス各クラス）",
+      "officialWebUrl": "https://event.webike.net/event/4480/",
+      "circuitWebUrl": "https://www.hsr.jp/",
+      "snsHandle": "@Webike_net / @hsr_kyushu",
+      "snsUrl": "https://x.com/hsr_kyushu",
+      "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4480/) ＆ HSR九州公式",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-11-15-lets-rentai-chunihon-rd6-akechi",
+      "scope": "japan",
+      "category": "endurance-fun",
+      "series": "2026 Let'sレン耐 中日本シリーズ第6戦 KIJIMA杯",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "circuit": {
+        "ja": "明智ヒルトップサーキット（岐阜県恵那市明智町・全長800m）",
+        "ca": "Akechi Hilltop Circuit (Ena, Gifu · 800 m)",
+        "en": "Akechi Hilltop Circuit (Ena, Gifu · 800m)"
+      },
+      "eventName": {
+        "ja": "2026 Let'sレン耐 中日本シリーズ第6戦 KIJIMA杯 明智 初心者60分&4時間耐久",
+        "ca": "Let's Rentai! 2026 Copa KIJIMA a Akechi Hilltop (60 min i 4 hores)",
+        "en": "2026 Let's Rentai Central Japan Rd.6 KIJIMA Cup at Akechi Hilltop"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月15日(日) 1Day開催（青木拓磨プロデュース レンタルGromで戦う初心者歓迎耐久）",
+        "ca": "15 de novembre de 2026 (Resistència amb motos de lloguer Grom a Akechi)",
+        "en": "November 15, 2026 (Rental Grom endurance produced by Takuma Aoki)"
+      },
+      "classes": "新型Grom125 4時間耐久 / 初心者60分耐久",
+      "officialWebUrl": "https://event.webike.net/event/4645/",
+      "circuitWebUrl": "http://rentai.takuma-gp.com/",
+      "snsHandle": "@rentai_official",
+      "snsUrl": "https://x.com/rentai_official",
+      "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4645/) ＆ レン耐公式",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-11-15-okayama-road-race-and-motorevolution-rd5",
+      "scope": "japan",
+      "category": "all-japan",
+      "series": "2026 OKAYAMA ロードレースシリーズ・地方選手権／モトレボリューション Round5",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "circuit": {
+        "ja": "岡山国際サーキット（岡山県美作市滝宮・全長3,703m）",
+        "ca": "Circuit Internacional d'Okayama (Mimasaka, Okayama · 3.703 m)",
+        "en": "Okayama International Circuit (Mimasaka, Okayama · 3,703m)"
+      },
+      "eventName": {
+        "ja": "2026 OKAYAMA ロードレースシリーズ・地方選手権／モトレボリューション Rd.5",
+        "ca": "Campionat Regional d'Okayama i Moto Revolution 2026 · Ronda 5",
+        "en": "2026 OKAYAMA Road Race Series & Moto Revolution Rd.5"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月15日(日) 1Day開催（西日本の名門テクニカルコース・地方選シーズン最終戦）",
+        "ca": "15 de novembre de 2026 (Final del campionat regional a Okayama)",
+        "en": "November 15, 2026 (Okayama regional road race season finale)"
+      },
+      "classes": "地方選手権各クラス（JSB1000 / ST600 / JP250等）＆ モトレボリューション",
+      "officialWebUrl": "https://event.webike.net/event/4424/",
+      "circuitWebUrl": "https://www.okayama-international-circuit.jp/",
+      "snsHandle": "@Webike_net",
+      "snsUrl": "https://x.com/Webike_net",
+      "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4424/) ＆ 岡山国際サーキット公式",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-11-15-sugo-mini-bike-6h-and-st150-endurance",
+      "scope": "japan",
+      "category": "all-japan",
+      "series": "2026 SUGO MINI BIKE 6時間耐久レース／SUGO ST150 6時間耐久レース",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "circuit": {
+        "ja": "スポーツランドSUGO 国際レーシングコース（宮城県柴田郡村田町・全長3,586m）",
+        "ca": "Sportsland SUGO (Murata, Miyagi · 3.586 m)",
+        "en": "Sportsland SUGO International Racing Course (Miyagi · 3,586m)"
+      },
+      "eventName": {
+        "ja": "2026 SUGO MINI BIKE 6時間耐久レース／2026 SUGO ST150 6時間耐久レース",
+        "ca": "2026 SUGO Mini Bike i ST150 Resistència de 6 Hores",
+        "en": "2026 SUGO Mini Bike & ST150 6-Hour Endurance Race"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月15日(日) 1Day開催（国際公認レーシングコースで競うミニバイク6耐）",
+        "ca": "15 de novembre de 2026 (Resistència de minibikes de 6 hores a SUGO)",
+        "en": "November 15, 2026 (6-hour minibike & ST150 endurance on SUGO international track)"
+      },
+      "classes": "MINI BIKE / ST150 各クラス",
+      "officialWebUrl": "https://event.webike.net/event/4147/",
+      "circuitWebUrl": "https://www.sportsland-sugo.co.jp/",
+      "snsHandle": "@Webike_net / @sugo_official",
+      "snsUrl": "https://x.com/sugo_official",
+      "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4147/) ＆ スポーツランドSUGO公式",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-11-20-motogp-rd22-valencia-spain-finale",
       "scope": "world",
       "category": "world",
       "series": "2026 FIM MotoGP 世界選手権 第22戦（シーズン最終戦）バレンシアGP",
-      "startDate": "2026-11-27",
-      "endDate": "2026-11-29",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-22",
       "circuit": {
         "ja": "サーキット・リカルド・トルモ（スペイン・バレンシア・チェステ / 全長4,005m）",
         "ca": "Circuit Ricardo Tormo (Xest, País Valencià · 4.005 m)",
@@ -1526,9 +1701,9 @@
         "en": "2026 MotoGP Rd.22 Gran Premio Motul de la Comunitat Valenciana (Season Finale)"
       },
       "scheduleWindow": {
-        "ja": "2026年11月27日(金)〜11月29日(日) 開催（MotoGP 2026 シーズン閉幕・年間表彰式）",
-        "ca": "27-29 de novembre de 2026 (Gran Final de la Temporada MotoGP 2026)",
-        "en": "November 27–29, 2026 (MotoGP 2026 Season Finale & FIM Awards)"
+        "ja": "2026年11月20日(金)〜11月22日(日) 開催（MotoGP 2026 シーズン閉幕・年間表彰式）",
+        "ca": "20-22 de novembre de 2026 (Gran Final de la Temporada MotoGP 2026)",
+        "en": "November 20–22, 2026 (MotoGP 2026 Season Finale & FIM Awards)"
       },
       "classes": "MotoGP / Moto2 / Moto3",
       "officialWebUrl": "https://www.motogp.com/en/calendar",
@@ -1544,33 +1719,33 @@
       }
     },
     {
-      "id": "2026-11-28-motegi-road-race-rd4-finale",
+      "id": "2026-11-21-tsukuba-tourist-trophy-november",
       "scope": "japan",
       "category": "all-japan",
-      "series": "2026 もてぎロードレース選手権 第4戦（シーズン最終戦）",
-      "startDate": "2026-11-28",
-      "endDate": "2026-11-29",
+      "series": "2026 筑波ツーリスト・トロフィー in NOVEMBER",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
       "circuit": {
-        "ja": "モビリティリゾートもてぎ（栃木県芳賀郡茂木町・ロードコース 4.801km）",
-        "ca": "Mobility Resort Motegi (Prefectura de Tochigi · 4.801 km)",
-        "en": "Mobility Resort Motegi Road Course (Tochigi · 4.801km)"
+        "ja": "筑波サーキット（茨城県下妻市・コース2000・全長2,070m）",
+        "ca": "Circuit de Tsukuba (Shimotsuma, Ibaraki · Curs 2000 · 2.070 m)",
+        "en": "Tsukuba Circuit Course 2000 (Shimotsuma, Ibaraki · 2,070m)"
       },
       "eventName": {
-        "ja": "2026 もてぎロードレース選手権 第4戦（グランドファイナル）",
-        "ca": "Campionat de Motegi Road Race 2026 · Ronda 4 (Gran Final)",
-        "en": "2026 Motegi Road Race Championship Rd.4 (Grand Finale)"
+        "ja": "2026 筑波ツーリスト・トロフィー in NOVEMBER (筑波TT最終戦)",
+        "ca": "Tsukuba Tourist Trophy al Novembre 2026",
+        "en": "2026 Tsukuba Tourist Trophy in NOVEMBER"
       },
       "scheduleWindow": {
-        "ja": "2026年11月28日(土)〜11月29日(日) 開催（東日本エリアの年間チャンピオン決定戦）",
-        "ca": "28-29 de novembre de 2026 (Decisió dels campionats de la regió oriental)",
-        "en": "November 28–29, 2026 (Eastern Japan Regional Championship Title Decider)"
+        "ja": "2026年11月21日(土) 1Day開催（ビギナーからリターンライダーまで集う名門アマチュアレース）",
+        "ca": "21 de novembre de 2026 (Cursa clàssica per a pilots aficionats a Tsukuba)",
+        "en": "November 21, 2026 (Popular amateur clubman road racing at Tsukuba Course 2000)"
       },
-      "classes": "JSB1000インター/ノービス / ST1000 / ST600 / JP250 / J-GP3",
-      "officialWebUrl": "https://www.mr-motegi.jp/mrr/",
-      "circuitWebUrl": "https://www.mr-motegi.jp/",
-      "snsHandle": "@motegi_official",
-      "snsUrl": "https://x.com/motegi_official",
-      "verifiedSource": "モビリティリゾートもてぎ公式 (mr-motegi.jp)",
+      "classes": "B-SPORT / Frontier / NS2 / KTM RC390 / 各クラス",
+      "officialWebUrl": "https://event.webike.net/event/4232/",
+      "circuitWebUrl": "https://www.tsukuba-circuit.jp/",
+      "snsHandle": "@tsukuba_circuit",
+      "snsUrl": "https://x.com/tsukuba_circuit",
+      "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4232/) ＆ 筑波サーキット公式",
       "publicationState": {
         "previewPublished": false,
         "resultStatus": "pending",
@@ -1579,33 +1754,33 @@
       }
     },
     {
-      "id": "2026-11-29-hsr-kyushu-iron-mini-6h-endurance",
+      "id": "2026-11-22-kyushu-spa-naoiri-super-sunday-festa-winter",
       "scope": "japan",
       "category": "kyushu",
-      "series": "2026 HSR九州 アイアンミニ 6時間耐久レース（ミニバイク冬期耐久）",
-      "startDate": "2026-11-29",
-      "endDate": "2026-11-29",
+      "series": "2026 SPA直入 スーパーサンデーフェスタ WINTER",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
       "circuit": {
-        "ja": "HSR九州ロードコース（熊本県菊池郡大津町・全長2,350m）",
-        "ca": "Circuit HSR Kyushu (Ozu, Prefectura de Kumamoto · 2.350 m)",
-        "en": "HSR Kyushu Road Course (Ozu, Kumamoto · 2,350m)"
+        "ja": "SPA直入（大分県竹田市直入町・全長1,430m）",
+        "ca": "Circuit SPA Naoiri (Takeda, Oita · 1.430 m)",
+        "en": "SPA Naoiri Circuit (Takeda, Oita · 1,430m)"
       },
       "eventName": {
-        "ja": "2026 HSR九州 アイアンミニ 6時間耐久ロードレース（冬の祭典）",
-        "ca": "2026 HSR Kyushu Iron Mini Resistència de 6 Hores d'Hivern",
-        "en": "2026 HSR Kyushu Iron Mini 6-Hour Winter Endurance Race"
+        "ja": "2026 SPA直入 スーパーサンデーフェスタ WINTER（2輪アマチュアレース）",
+        "ca": "Super Sunday Festa WINTER 2026 a SPA Naoiri",
+        "en": "2026 SPA Naoiri Super Sunday Festa WINTER"
       },
       "scheduleWindow": {
-        "ja": "2026年11月29日(日) 1Day開催（阿蘇の麓で競う6時間ミニバイク耐久の頂上決戦）",
-        "ca": "29 de novembre de 2026 (Resistència de minibikes de 6 hores als peus d'Aso)",
-        "en": "November 29, 2026 (6-hour minibike endurance at the foot of Mt. Aso)"
+        "ja": "2026年11月22日(日) 1Day開催（直入のすり鉢コースで走るシーズン締めくくりのサンデーレース）",
+        "ca": "22 de novembre de 2026 (Cursa amateur per tancar la temporada a Naoiri)",
+        "en": "November 22, 2026 (Season-closing amateur racing at SPA Naoiri bowl)"
       },
-      "classes": "GROM / NSR50 / XR100 / Openミニ 各クラス",
-      "officialWebUrl": "https://www.hsr.jp/race/",
-      "circuitWebUrl": "https://www.hsr.jp/",
-      "snsHandle": "@hsr_kyushu",
-      "snsUrl": "https://x.com/hsr_kyushu",
-      "verifiedSource": "HSR九州公式 (hsr.jp)",
+      "classes": "ST250 / Ninja250 / CBR250RR / サンデー初心者枠",
+      "officialWebUrl": "https://spa-naoiri.com/schedule/",
+      "circuitWebUrl": "https://spa-naoiri.com/",
+      "snsHandle": "SPA直入公式FB / @autopolis2005",
+      "snsUrl": "https://www.facebook.com/spanaoiri",
+      "verifiedSource": "SPA直入公式カレンダー (spa-naoiri.com)",
       "publicationState": {
         "previewPublished": false,
         "resultStatus": "pending",
@@ -1614,12 +1789,47 @@
       }
     },
     {
-      "id": "2026-12-01-motogp-valencia-official-test",
+      "id": "2026-11-22-lets-rentai-rd20-sev-cup-tsukuba1000",
+      "scope": "japan",
+      "category": "endurance-fun",
+      "series": "2026 Let'sレン耐 第20戦 SEV杯 筑波変則4時間耐久",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "circuit": {
+        "ja": "筑波サーキット コース1000（茨城県下妻市・全長1,039m）",
+        "ca": "Circuit de Tsukuba Curs 1000 (Shimotsuma, Ibaraki · 1.039 m)",
+        "en": "Tsukuba Circuit Course 1000 (Shimotsuma, Ibaraki · 1,039m)"
+      },
+      "eventName": {
+        "ja": "2026 Let'sレン耐 第20戦 SEV杯 筑波変則4時間耐久【筑波コース1000】",
+        "ca": "Let's Rentai! 2026 Ronda 20 Copa SEV a Tsukuba Curs 1000 (4 hores)",
+        "en": "2026 Let's Rentai Rd.20 SEV Cup at Tsukuba Course 1000 (4-Hour Endurance)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月22日(日) 1Day開催（手ぶらでレーサー体験できる大人気レンタルバイク耐久）",
+        "ca": "22 de novembre de 2026 (Resistència de 4 hores amb motos de lloguer)",
+        "en": "November 22, 2026 (Fun 4-hour rental bike endurance at Tsukuba Course 1000)"
+      },
+      "classes": "Grom125 4時間耐久クラス / 初心者クラス",
+      "officialWebUrl": "https://event.webike.net/event/4646/",
+      "circuitWebUrl": "http://rentai.takuma-gp.com/",
+      "snsHandle": "@rentai_official",
+      "snsUrl": "https://x.com/rentai_official",
+      "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4646/) ＆ レン耐公式",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-11-24-motogp-valencia-official-test",
       "scope": "world",
       "category": "world",
       "series": "2026-2027 FIM MotoGP バレンシア公式テスト",
-      "startDate": "2026-12-01",
-      "endDate": "2026-12-01",
+      "startDate": "2026-11-24",
+      "endDate": "2026-11-24",
       "circuit": {
         "ja": "サーキット・リカルド・トルモ（スペイン・バレンシア・チェステ）",
         "ca": "Circuit Ricardo Tormo (Xest, País Valencià)",
@@ -1631,9 +1841,9 @@
         "en": "2027 MotoGP Valencia Official Test (First Pre-Season Test)"
       },
       "scheduleWindow": {
-        "ja": "2026年12月1日(火) 1Day開催（移籍ライダー初乗り＆新型プロトタイプ初走行）",
-        "ca": "1 de desembre de 2026 (Primer contacte amb les noves motos i canvis d'equip)",
-        "en": "December 1, 2026 (First shakedown of 2027 prototypes & rider team debuts)"
+        "ja": "2026年11月24日(火) 1Day開催（最終戦直後・移籍ライダー初乗り＆新型プロトタイプ初走行）",
+        "ca": "24 de novembre de 2026 (Primer contacte amb les noves motos i canvis d'equip)",
+        "en": "November 24, 2026 (First shakedown of 2027 prototypes & rider team debuts)"
       },
       "classes": "MotoGP Premier Class",
       "officialWebUrl": "https://www.motogp.com/en/calendar",
@@ -1649,278 +1859,33 @@
       }
     },
     {
-      "id": "2026-12-06-spa-naoiri-thanksgiving-festa-2h",
-      "scope": "japan",
-      "category": "kyushu",
-      "series": "2026 SPA直入 年末感謝祭＆2時間耐久ファンライド",
-      "startDate": "2026-12-06",
-      "endDate": "2026-12-06",
-      "circuit": {
-        "ja": "SPA直入（大分県竹田市直入町・全長1,430m）",
-        "ca": "Circuit SPA Naoiri (Takeda, Oita · 1.430 m)",
-        "en": "SPA Naoiri Circuit (Takeda, Oita · 1,430m)"
-      },
-      "eventName": {
-        "ja": "2026 SPA直入 年末感謝祭＆2時間耐久ファンライド・サンデー走行会",
-        "ca": "Festa d'Acció de Gràcies de Final d'Any i Resistència de 2 Hores a SPA Naoiri 2026",
-        "en": "2026 SPA Naoiri Year-End Thanksgiving Festa & 2-Hour Endurance Fan Ride"
-      },
-      "scheduleWindow": {
-        "ja": "2026年12月6日(日) 1Day開催（直入のすり鉢コースで走る走り納め耐久＆模擬レース）",
-        "ca": "6 de desembre de 2026 (Resistència i rodatge de final d'any al bowl de Naoiri)",
-        "en": "December 6, 2026 (Year-end track day & 2-hour fun endurance at SPA Naoiri bowl)"
-      },
-      "classes": "ST250 / Ninja250 / CBR250RR / クラブマン2時間耐久",
-      "officialWebUrl": "https://spa-naoiri.com/schedule/",
-      "circuitWebUrl": "https://spa-naoiri.com/",
-      "snsHandle": "SPA直入公式FB / @autopolis2005",
-      "snsUrl": "https://www.facebook.com/spanaoiri",
-      "verifiedSource": "SPA直入公式 (spa-naoiri.com)",
-      "publicationState": {
-        "previewPublished": false,
-        "resultStatus": "pending",
-        "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
-      }
-    },
-    {
-      "id": "2026-12-13-mfj-champions-awards-and-fan-day",
+      "id": "2026-11-28-suzuka-fun-and-run-2wheels",
       "scope": "japan",
       "category": "all-japan",
-      "series": "2026 MFJ モーターサイクルスポーツ全日本選手権 表彰式＆ファン感謝デイ",
-      "startDate": "2026-12-13",
-      "endDate": "2026-12-13",
+      "series": "2026 鈴鹿サーキット FUN&RUN! 2-Wheels（フルコース）",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-29",
       "circuit": {
-        "ja": "鈴鹿サーキット（三重県鈴鹿市）",
-        "ca": "Circuit de Suzuka (Prefectura de Mie)",
-        "en": "Suzuka Circuit (Mie)"
+        "ja": "鈴鹿サーキット国際レーシングコース（三重県鈴鹿市・フルコース 5.821km）",
+        "ca": "Circuit de Suzuka (Prefectura de Mie · Curs complet 5.821 km)",
+        "en": "Suzuka Circuit International Racing Course (Mie · Full Course 5.821km)"
       },
       "eventName": {
-        "ja": "2026 MFJ 年間ランキング表彰式・全日本チャンピオン記念セレモニー",
-        "ca": "Gala de Campions MFJ 2026 i Cerimònia de Premis de Road Race del Japó",
-        "en": "2026 MFJ Championship Awards Gala & All-Japan Road Race Ceremony"
+        "ja": "2026 鈴鹿 FUN&RUN! 2-Wheels フルコース（シーズン最終戦）",
+        "ca": "FUN&RUN! 2-Wheels a Suzuka 2026 (Curs complet)",
+        "en": "2026 Suzuka FUN&RUN! 2-Wheels Full Course Finale"
       },
       "scheduleWindow": {
-        "ja": "2026年12月13日(日) 開催（2026年チャンピオン・水野涼、中須賀克行選手ラストラン表彰など）",
-        "ca": "13 de desembre de 2026 (Homenatge a Ryo Mizuno, comiat de Katsuyuki Nakasuga)",
-        "en": "December 13, 2026 (Honoring 2026 JSB1000 Champion Ryo Mizuno & Nakasuga farewell)"
+        "ja": "2026年11月28日(土)〜11月29日(日) 開催（鈴鹿フルコースを走る伝統の2輪アマチュアレースの祭典）",
+        "ca": "28-29 de novembre de 2026 (Festa del motociclisme amateur al curs complet de Suzuka)",
+        "en": "November 28–29, 2026 (Suzuka full course amateur motorcycle road race festival)"
       },
-      "classes": "MFJ全日本全カテゴリー（JSB1000 / ST1000 / ST600 / J-GP3）",
-      "officialWebUrl": "https://www.mfj.or.jp/",
+      "classes": "Road Man / Neo Standard / TT-Formula",
+      "officialWebUrl": "https://www.suzukacircuit.jp/funrun_s/",
       "circuitWebUrl": "https://www.suzukacircuit.jp/",
-      "snsHandle": "@jrr_official",
-      "snsUrl": "https://x.com/jrr_official",
-      "verifiedSource": "MFJ公式 (mfj.or.jp)",
-      "publicationState": {
-        "previewPublished": false,
-        "resultStatus": "pending",
-        "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
-      }
-    },
-    {
-      "id": "2026-12-20-brows-odai-special-endurance-ajimu",
-      "scope": "japan",
-      "category": "endurance-fun",
-      "series": "2026 BROW'S お題付耐久『草』レース 年末スペシャル耐久",
-      "startDate": "2026-12-20",
-      "endDate": "2026-12-20",
-      "circuit": {
-        "ja": "ソニックパーク安心院（大分県宇佐市安心院町・全長1,080m）",
-        "ca": "Sonic Park Ajimu (Usa, Oita · 1.080 m)",
-        "en": "Sonic Park Ajimu (Usa, Oita · 1,080m)"
-      },
-      "eventName": {
-        "ja": "2026 第3回 BROW'S お題付耐久『草』レース 年末クリスマスSP in 安心院",
-        "ca": "2026 BROW'S Cursa de Resistència Grassroots Especial de Nadal a Sonic Park Ajimu",
-        "en": "2026 BROW'S Grassroots Mission Endurance Christmas Special at Sonic Park Ajimu"
-      },
-      "scheduleWindow": {
-        "ja": "2026年12月20日(日) 1Day開催（恒例の爆笑ミッション付き草耐久・走り納めSP）",
-        "ca": "20 de desembre de 2026 (Resistència lúdica amb missions divertides per tancar l'any)",
-        "en": "December 20, 2026 (Fun-filled grassroots endurance with hilarious pit missions)"
-      },
-      "classes": "125cc以下スクーター / カブ / ミニバイク各クラス",
-      "officialWebUrl": "https://brow-s.jp/",
-      "circuitWebUrl": "https://brow-s.jp/",
-      "snsHandle": "BROW'S公式FB",
-      "snsUrl": "https://www.facebook.com/brows.racing",
-      "verifiedSource": "BROW'S公式 (brow-s.jp)",
-      "publicationState": {
-        "previewPublished": false,
-        "resultStatus": "pending",
-        "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
-      }
-    },
-    {
-      "id": "2027-02-05-motogp-official-sepang-test",
-      "scope": "world",
-      "category": "world",
-      "series": "2027 FIM MotoGP 公式プレシーズンテスト (Sepang Official Test)",
-      "startDate": "2027-02-05",
-      "endDate": "2027-02-07",
-      "circuit": {
-        "ja": "ペトロナス・セパン・インターナショナル・サーキット（マレーシア・クアラルンプール・全長5,543m）",
-        "ca": "Circuit Internacional de Sepang (Malàisia · 5.543 m)",
-        "en": "Petronas Sepang International Circuit (Malaysia · 5,543m)"
-      },
-      "eventName": {
-        "ja": "2027 FIM MotoGP 公式セパン・オフィシャルテスト (3Days)",
-        "ca": "Test Oficial de MotoGP a Sepang 2027 (3 dies)",
-        "en": "2027 FIM MotoGP Sepang Official Test (3 Days)"
-      },
-      "scheduleWindow": {
-        "ja": "2027年2月5日(金)〜2月7日(日) 開催（2027年シーズン全レギュラーライダー参加の初走行）",
-        "ca": "5-7 de febrer de 2027 (Tots els pilots oficials arrenquen l'any a Malàisia)",
-        "en": "February 5–7, 2027 (Full grid official pre-season test)"
-      },
-      "classes": "MotoGP Premier Class",
-      "officialWebUrl": "https://www.motogp.com/en/calendar",
-      "circuitWebUrl": "https://www.sepangcircuit.com/",
-      "snsHandle": "@MotoGP",
-      "snsUrl": "https://x.com/MotoGP",
-      "verifiedSource": "FIM MotoGP 公式 (motogp.com)",
-      "publicationState": {
-        "previewPublished": false,
-        "resultStatus": "pending",
-        "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
-      }
-    },
-    {
-      "id": "2027-02-14-motogp-official-buriram-test",
-      "scope": "world",
-      "category": "world",
-      "series": "2027 FIM MotoGP 公式ブリーラムテスト (Buriram Official Test)",
-      "startDate": "2027-02-14",
-      "endDate": "2027-02-15",
-      "circuit": {
-        "ja": "チャン・インターナショナル・サーキット（タイ・ブリーラム・全長4,554m）",
-        "ca": "Circuit Internacional de Chang (Buriram, Tailàndia · 4.554 m)",
-        "en": "Chang International Circuit (Buriram, Thailand · 4,554m)"
-      },
-      "eventName": {
-        "ja": "2027 FIM MotoGP 公式ブリーラム・オフィシャルテスト (2Days)",
-        "ca": "Test Oficial de MotoGP a Buriram 2027",
-        "en": "2027 FIM MotoGP Buriram Official Test"
-      },
-      "scheduleWindow": {
-        "ja": "2027年2月14日(土)〜2月15日(日) 開催（開幕戦直前の最終セッティング検証）",
-        "ca": "14-15 de febrer de 2027 (Darrera posada a punt abans de la inauguració)",
-        "en": "February 14–15, 2027 (Final pre-season shakedown before the season opener)"
-      },
-      "classes": "MotoGP Premier Class",
-      "officialWebUrl": "https://www.motogp.com/en/calendar",
-      "circuitWebUrl": "https://www.bric.co.th/",
-      "snsHandle": "@MotoGP",
-      "snsUrl": "https://x.com/MotoGP",
-      "verifiedSource": "FIM MotoGP 公式 (motogp.com)",
-      "publicationState": {
-        "previewPublished": false,
-        "resultStatus": "pending",
-        "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
-      }
-    },
-    {
-      "id": "2027-02-26-motogp-rd1-thailand-buriram",
-      "scope": "world",
-      "category": "world",
-      "series": "2027 FIM MotoGP 世界選手権 開幕戦 タイGP",
-      "startDate": "2027-02-26",
-      "endDate": "2027-02-28",
-      "circuit": {
-        "ja": "チャン・インターナショナル・サーキット（タイ・ブリーラム・全長4,554m）",
-        "ca": "Circuit Internacional de Chang (Buriram, Tailàndia · 4.554 m)",
-        "en": "Chang International Circuit (Buriram, Thailand · 4,554m)"
-      },
-      "eventName": {
-        "ja": "2027 FIM MotoGP 開幕戦 PT グランプリ・オブ・タイランド (タイGP)",
-        "ca": "2027 Gran Premi PT de Tailàndia de MotoGP (Inauguració de Temporada)",
-        "en": "2027 MotoGP Rd.1 PT Grand Prix of Thailand (Season Opener)"
-      },
-      "scheduleWindow": {
-        "ja": "2027年2月26日(金)〜2月28日(日) 開催（2027年シーズン開幕戦）",
-        "ca": "26-28 de febrer de 2027 (Cursa inaugural del Mundial 2027)",
-        "en": "February 26–28, 2027 (2027 Championship Season Opener)"
-      },
-      "classes": "MotoGP / Moto2 / Moto3",
-      "officialWebUrl": "https://www.motogp.com/en/calendar",
-      "circuitWebUrl": "https://www.bric.co.th/",
-      "snsHandle": "@MotoGP",
-      "snsUrl": "https://x.com/MotoGP",
-      "verifiedSource": "FIM MotoGP 公式 (motogp.com)",
-      "publicationState": {
-        "previewPublished": false,
-        "resultStatus": "pending",
-        "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
-      }
-    },
-    {
-      "id": "2027-03-06-kyushu-road-race-spring-test-autopolis",
-      "scope": "japan",
-      "category": "kyushu",
-      "series": "2027 九州ロードレース選手権＆ゴールドカップ 春季公式合同テスト",
-      "startDate": "2027-03-06",
-      "endDate": "2027-03-07",
-      "circuit": {
-        "ja": "オートポリス（大分県日田市・インターナショナルコース 4,674m）",
-        "ca": "Circuit d'Autopolis (Hita, Oita · 4.674 m)",
-        "en": "Autopolis International Racing Course (Hita, Oita · 4,674m)"
-      },
-      "eventName": {
-        "ja": "2027 オートポリス＆SPA直入 九州二輪スプリング合同公式テスト",
-        "ca": "Test Oficial Conjunt de Primavera de Motociclisme a Autopolis 2027",
-        "en": "2027 Autopolis & SPA Naoiri Spring Official Joint Test"
-      },
-      "scheduleWindow": {
-        "ja": "2027年3月6日(土)〜3月7日(日) 開催（2027年九州シーズン開幕に向けた合同タイムアタック）",
-        "ca": "6-7 de març de 2027 (Test de pretemporada per a les copes regionals de Kyushu)",
-        "en": "March 6–7, 2027 (Kyushu regional pre-season joint time attacks)"
-      },
-      "classes": "JSB1000 / ST600 / JP250 / AP250 / 各種地方選手権クラス",
-      "officialWebUrl": "https://autopolis.jp/ap/schedule/",
-      "circuitWebUrl": "https://autopolis.jp/",
-      "snsHandle": "@autopolis2005",
-      "snsUrl": "https://x.com/autopolis2005",
-      "verifiedSource": "オートポリス公式 (autopolis.jp)",
-      "publicationState": {
-        "previewPublished": false,
-        "resultStatus": "pending",
-        "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
-      }
-    },
-    {
-      "id": "2027-04-03-mfj-rd1-motegi-2and4",
-      "scope": "japan",
-      "category": "all-japan",
-      "series": "2027 MFJ全日本ロードレース選手権シリーズ 第1戦 もてぎ2&4レース",
-      "startDate": "2027-04-03",
-      "endDate": "2027-04-04",
-      "circuit": {
-        "ja": "モビリティリゾートもてぎ（栃木県芳賀郡茂木町・ロードコース 4.801km）",
-        "ca": "Mobility Resort Motegi (Prefectura de Tochigi · 4.801 km)",
-        "en": "Mobility Resort Motegi Road Course (Tochigi · 4.801km)"
-      },
-      "eventName": {
-        "ja": "2027 MFJ全日本ロードレース選手権 第1戦 もてぎ2&4レース (JSB1000開幕戦)",
-        "ca": "Campionat del Japó MFJ de Road Race 2027 · Ronda 1 Motegi 2&4",
-        "en": "2027 MFJ All-Japan Road Race Championship Rd.1 Motegi 2&4 Race"
-      },
-      "scheduleWindow": {
-        "ja": "2027年4月3日(土)〜4月4日(日) 開催（全日本JSB1000クラス 2027年シーズン開幕戦）",
-        "ca": "3-4 d'abril de 2027 (Inauguració de la categoria reina JSB1000)",
-        "en": "April 3–4, 2027 (All-Japan JSB1000 Premier Class Season Opener)"
-      },
-      "classes": "JSB1000 (全日本ロードレース開幕戦 / スーパーフォーミュラ併催)",
-      "officialWebUrl": "https://www.superbike.jp/calendar/",
-      "circuitWebUrl": "https://www.mr-motegi.jp/",
-      "snsHandle": "@jrr_official",
-      "snsUrl": "https://x.com/jrr_official",
-      "verifiedSource": "MFJ公式 (mfj.or.jp) ＆ 全日本ロードレース公式 (superbike.jp)",
+      "snsHandle": "@suzuka_event",
+      "snsUrl": "https://x.com/suzuka_event",
+      "verifiedSource": "鈴鹿サーキット公式 (suzukacircuit.jp)",
       "publicationState": {
         "previewPublished": false,
         "resultStatus": "pending",

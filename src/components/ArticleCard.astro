@@ -13,79 +13,101 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
 ---
 
 <article class="article-card" data-category={article.category}>
-  <a href={`/articles/${article.slug}/`} class="card-link">
-    <div class="card-media">
+  <div class="card-media">
+    <a href={`/articles/${article.slug}/`} class="media-link" tabindex="-1" aria-hidden="true">
       <img src={article.heroImage} alt={article.locales.ja.title} class="card-img" loading="lazy" />
-      <div class="card-badges">
-        <span class="badge cat-badge" style={`background: ${cat.badgeColor}; color: #fff;`}>
-          <span data-i18n="ja">{catLabel.ja}</span>
-          <span data-i18n="ca">{catLabel.ca}</span>
-          <span data-i18n="en">{catLabel.en}</span>
-        </span>
-        <span class="badge type-badge">
-          <span data-i18n="ja">{typeLabel.ja}</span>
-          <span data-i18n="ca">{typeLabel.ca}</span>
-          <span data-i18n="en">{typeLabel.en}</span>
-        </span>
-      </div>
+    </a>
+    <div class="card-badges">
+      <a
+        href={`/articles/category/${article.category}/`}
+        class="badge cat-badge cat-badge-link"
+        style={`background: ${cat.badgeColor}; color: #fff;`}
+        title={`${catLabel.ja} の記事一覧を見る`}
+      >
+        <span data-i18n="ja">{catLabel.ja}</span>
+        <span data-i18n="ca">{catLabel.ca}</span>
+        <span data-i18n="en">{catLabel.en}</span>
+      </a>
+      <span class="badge type-badge">
+        <span data-i18n="ja">{typeLabel.ja}</span>
+        <span data-i18n="ca">{typeLabel.ca}</span>
+        <span data-i18n="en">{typeLabel.en}</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <div class="card-meta">
+      <span class="meta-date racing-font">📅 {article.publishedAt}</span>
+      <span class="meta-circuit">📍 {article.circuit}</span>
     </div>
 
-    <div class="card-content">
-      <div class="card-meta">
-        <span class="meta-date racing-font">📅 {article.publishedAt}</span>
-        <span class="meta-circuit">📍 {article.circuit}</span>
-      </div>
-
-      <h3 class="card-title">
+    <h3 class="card-title">
+      <a href={`/articles/${article.slug}/`} class="stretched-link">
         <span data-i18n="ja">{article.locales.ja.title}</span>
         <span data-i18n="ca">{article.locales.ca.title}</span>
         <span data-i18n="en">{article.locales.en.title}</span>
-      </h3>
+      </a>
+    </h3>
 
-      <p class="card-summary">
-        <span data-i18n="ja">{article.locales.ja.summary}</span>
-        <span data-i18n="ca">{article.locales.ca.summary}</span>
-        <span data-i18n="en">{article.locales.en.summary}</span>
+    <p class="card-summary">
+      <span data-i18n="ja">{article.locales.ja.summary}</span>
+      <span data-i18n="ca">{article.locales.ca.summary}</span>
+      <span data-i18n="en">{article.locales.en.summary}</span>
+    </p>
+
+    <div class="card-highlight">
+      <span class="hl-icon">⚡</span>
+      <p class="hl-text">
+        <span data-i18n="ja">{article.locales.ja.highlightPoint}</span>
+        <span data-i18n="ca">{article.locales.ca.highlightPoint}</span>
+        <span data-i18n="en">{article.locales.en.highlightPoint}</span>
       </p>
-
-      <div class="card-highlight">
-        <span class="hl-icon">⚡</span>
-        <p class="hl-text">
-          <span data-i18n="ja">{article.locales.ja.highlightPoint}</span>
-          <span data-i18n="ca">{article.locales.ca.highlightPoint}</span>
-          <span data-i18n="en">{article.locales.en.highlightPoint}</span>
-        </p>
-      </div>
-
-      <div class="card-footer">
-        <div class="reporter-chip">
-          <img src={cat.image} alt={cat.name.en} class="reporter-avatar" />
-          <div class="reporter-info">
-            <span class="reporter-label">
-              <span data-i18n="ja">担当猫記者</span>
-              <span data-i18n="ca">Redactor felí</span>
-              <span data-i18n="en">Cat Reporter</span>
-            </span>
-            <span class="reporter-name">
-              <span data-i18n="ja">{cat.name.ja}</span>
-              <span data-i18n="ca">{cat.name.ca}</span>
-              <span data-i18n="en">{cat.name.en}</span>
-            </span>
-          </div>
-        </div>
-
-        <span class="read-more racing-font">
-          <span data-i18n="ja">記事を読む →</span>
-          <span data-i18n="ca">Llegir més →</span>
-          <span data-i18n="en">Read Report →</span>
-        </span>
-      </div>
     </div>
-  </a>
+
+    {article.tags && article.tags.length > 0 && (
+      <div class="card-tags">
+        {article.tags.slice(0, 3).map((tag) => (
+          <a
+            href={`/articles/tag/${encodeURIComponent(tag)}/`}
+            class="card-tag-pill"
+            title={`#${tag} の記事一覧を見る`}
+          >
+            #{tag}
+          </a>
+        ))}
+      </div>
+    )}
+
+    <div class="card-footer">
+      <div class="reporter-chip">
+        <img src={cat.image} alt={cat.name.en} class="reporter-avatar" />
+        <div class="reporter-info">
+          <span class="reporter-label">
+            <span data-i18n="ja">担当猫記者</span>
+            <span data-i18n="ca">Redactor felí</span>
+            <span data-i18n="en">Cat Reporter</span>
+          </span>
+          <span class="reporter-name">
+            <span data-i18n="ja">{cat.name.ja}</span>
+            <span data-i18n="ca">{cat.name.ca}</span>
+            <span data-i18n="en">{cat.name.en}</span>
+          </span>
+        </div>
+      </div>
+
+      <a href={`/articles/${article.slug}/`} class="read-more-btn racing-font">
+        <span data-i18n="ja">記事を読む →</span>
+        <span data-i18n="ca">Llegir més →</span>
+        <span data-i18n="en">Read Report →</span>
+      </a>
+    </div>
+  </div>
 </article>
 
 <style>
   .article-card {
+    position: relative;
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: 1rem;
@@ -101,17 +123,17 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
     box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
   }
 
-  .card-link {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
   .card-media {
     position: relative;
     height: 210px;
     overflow: hidden;
     background: #10131a;
+  }
+
+  .media-link {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   .card-img {
@@ -135,9 +157,31 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
     flex-wrap: wrap;
     gap: 0.4rem;
     justify-content: space-between;
+    pointer-events: none;
+  }
+
+  .card-badges > * {
+    pointer-events: auto;
+  }
+
+  .cat-badge-link {
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  }
+
+  .cat-badge-link:hover {
+    transform: translateY(-2px) scale(1.04);
+    filter: brightness(1.2);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
   }
 
   .type-badge {
+    position: relative;
+    z-index: 2;
     background: rgba(13, 15, 20, 0.85);
     backdrop-filter: blur(6px);
     color: var(--accent-gold);
@@ -167,31 +211,30 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
     font-weight: 600;
   }
 
-  .meta-verified {
-    color: #4ecdc4;
-    background: rgba(42, 157, 143, 0.16);
-    border: 1px solid rgba(42, 157, 143, 0.4);
-    padding: 0.1rem 0.45rem;
-    border-radius: 999px;
-    font-size: 0.7rem;
-    font-weight: 700;
-  }
-
-  .meta-sns {
-    color: #58a6ff;
-    background: rgba(29, 155, 240, 0.14);
-    border: 1px solid rgba(29, 155, 240, 0.38);
-    padding: 0.1rem 0.45rem;
-    border-radius: 999px;
-    font-size: 0.7rem;
-    font-weight: 700;
-  }
-
   .card-title {
     font-size: 1.15rem;
     font-weight: 800;
     line-height: 1.45;
     color: var(--text-primary);
+  }
+
+  .stretched-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: '';
+  }
+
+  .stretched-link:hover {
+    color: var(--accent-gold);
   }
 
   .card-summary {
@@ -213,6 +256,33 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
     color: #ffe599;
   }
 
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    position: relative;
+    z-index: 2;
+    padding-top: 0.25rem;
+  }
+
+  .card-tag-pill {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+
+  .card-tag-pill:hover {
+    color: var(--accent-gold);
+    border-color: rgba(255, 183, 3, 0.45);
+    background: rgba(255, 183, 3, 0.12);
+    transform: translateY(-1px);
+  }
+
   .card-footer {
     display: flex;
     align-items: center;
@@ -220,6 +290,8 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
     padding-top: 0.85rem;
     margin-top: 0.25rem;
     border-top: 1px solid var(--border-subtle);
+    position: relative;
+    z-index: 2;
   }
 
   .reporter-chip {
@@ -252,9 +324,18 @@ const typeLabel = UI_TEXT.articleTypes[article.articleType];
     font-weight: 700;
   }
 
-  .read-more {
+  .read-more-btn {
     font-size: 0.82rem;
     font-weight: 700;
     color: var(--accent-red);
+    text-decoration: none;
+    transition: color 0.15s ease, transform 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .read-more-btn:hover {
+    color: #ff758f;
+    transform: translateX(2px);
   }
 </style>

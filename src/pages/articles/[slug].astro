@@ -52,6 +52,12 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
           <span data-i18n="en">Articles</span>
         </a>
         <span class="bc-sep">/</span>
+        <a href={`/articles/category/${article.category}/`}>
+          <span data-i18n="ja">{catLabel.ja}</span>
+          <span data-i18n="ca">{catLabel.ca}</span>
+          <span data-i18n="en">{catLabel.en}</span>
+        </a>
+        <span class="bc-sep">/</span>
         <span class="bc-current" aria-current="page">
           <span data-i18n="ja">{article.locales.ja.title}</span>
           <span data-i18n="ca">{article.locales.ca.title}</span>
@@ -65,9 +71,15 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
           <article class="article-detail" data-i18n={lang}>
             <header class="detail-header">
               <div class="detail-badges">
-                <span class="badge" style={`background: ${cat.badgeColor}; color: #fff;`}>
-                  {catLabel[lang]}
-                </span>
+                <a
+                  href={`/articles/category/${article.category}/`}
+                  class="badge cat-badge-link"
+                  style={`background: ${cat.badgeColor}; color: #fff;`}
+                  title={`${catLabel[lang]} の記事一覧を見る`}
+                >
+                  <span class="badge-icon">🏷️</span>
+                  <span>{catLabel[lang]}</span>
+                </a>
                 <span class="badge" style="background: rgba(255, 183, 3, 0.16); color: var(--accent-gold);">
                   {typeLabel[lang]}
                 </span>
@@ -145,6 +157,30 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
             <CatDialogueBox dialogues={content.catDialogues} lang={lang} />
 
             <ChuruSupportCard variant="card" />
+
+            {article.tags && article.tags.length > 0 && (
+              <div class="article-tags-section">
+                <div class="tags-header">
+                  <span class="tags-icon">🏷️</span>
+                  <span class="tags-title">
+                    {lang === 'ja' && 'この記事の関連タグ'}
+                    {lang === 'ca' && 'Etiquetes relacionades'}
+                    {lang === 'en' && 'Related Tags'}
+                  </span>
+                </div>
+                <div class="tags-cloud">
+                  {article.tags.map((tag) => (
+                    <a
+                      href={`/articles/tag/${encodeURIComponent(tag)}/`}
+                      class="tag-chip"
+                      title={`#${tag} の記事一覧を見る`}
+                    >
+                      #{tag}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {article.factCheck?.sources && article.factCheck.sources.length > 0 && (
               <aside class="related-links-box">
@@ -401,5 +437,73 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
     color: var(--accent-gold);
     text-decoration: underline;
     text-underline-offset: 3px;
+  }
+
+  .cat-badge-link {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .cat-badge-link:hover {
+    transform: translateY(-2px) scale(1.04);
+    filter: brightness(1.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .badge-icon {
+    font-size: 0.85em;
+  }
+
+  .article-tags-section {
+    margin: 2.25rem 0 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.85rem;
+    padding: 1.15rem 1.35rem;
+  }
+
+  .tags-header {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.85rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+  }
+
+  .tags-icon {
+    font-size: 1rem;
+  }
+
+  .tags-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag-chip {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.82rem;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+
+  .tag-chip:hover {
+    color: var(--accent-gold);
+    border-color: rgba(255, 183, 3, 0.45);
+    background: rgba(255, 183, 3, 0.12);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 </style>

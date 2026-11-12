@@ -346,6 +346,28 @@
         { "platform": "OfficialWeb", "handle": "Let's レン耐！公式サイト", "url": "http://rentai.takuma-gp.com/" }
       ],
       "hashtags": ["#レン耐", "#Letsレン耐", "#青木拓磨"]
+    },
+    {
+      "id": "webike-event-navi-race",
+      "scope": "japan",
+      "category": "endurance-fun",
+      "region": "Nationwide Japan (全国サーキット・レース・草耐久・走行会)",
+      "name": {
+        "ja": "Webike（ウェビック）イベントNAVI レースカレンダー公式",
+        "ca": "Webike Event NAVI Calendari Oficial de Curses",
+        "en": "Webike Event NAVI Official Motorcycle Race Calendar"
+      },
+      "calendarUrls": [
+        "https://event.webike.net/event?type=8"
+      ],
+      "resultUrls": [
+        "https://event.webike.net/event?type=8"
+      ],
+      "sns": [
+        { "platform": "X", "handle": "@Webike_net", "url": "https://x.com/Webike_net" },
+        { "platform": "OfficialWeb", "handle": "WebikeイベントNAVI (event.webike.net)", "url": "https://event.webike.net/event?type=8" }
+      ],
+      "hashtags": ["#Webike", "#ウェビック", "#WebikeイベントNAVI"]
     }
   ]
 }

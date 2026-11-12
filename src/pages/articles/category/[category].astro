@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticlesArchiveView from '../../../components/ArticlesArchiveView.astro';
+import { ALL_CATEGORIES, getArticlesByCategory, type ArticleCategory, type ArticleData } from '../../../data/articles';
+import { UI_TEXT } from '../../../data/i18n';
+
+export function getStaticPaths() {
+  return ALL_CATEGORIES.map((category) => {
+    const categoryArticles = getArticlesByCategory(category);
+    return {
+      params: { category },
+      props: {
+        category,
+        articles: categoryArticles
+      }
+    };
+  });
+}
+
+interface Props {
+  category: ArticleCategory;
+  articles: ArticleData[];
+}
+
+const { category, articles } = Astro.props;
+const catLabel = UI_TEXT.categories[category] || { ja: category, ca: category, en: category };
+const totalCount = articles.length;
+---
+
+<BaseLayout
+  title={`${catLabel.ja} の記事一覧 | HONDA.CAT`}
+  description={`${catLabel.ja} に関する公式レースレポート・予選ダイジェスト・技術解説記事一覧`}
+  initialLang="ja"
+  canonicalPath={`/articles/category/${category}/`}
+>
+  <ArticlesArchiveView
+    articles={articles}
+    currentPage={1}
+    totalPages={1}
+    totalCount={totalCount}
+    pageSize={Math.max(totalCount, 12)}
+    activeCategory={category}
+  />
+</BaseLayout>

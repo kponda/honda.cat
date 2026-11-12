@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticlesArchiveView from '../../../components/ArticlesArchiveView.astro';
+import { getAllTags, getArticlesByTag, type ArticleData } from '../../../data/articles';
+
+export function getStaticPaths() {
+  const tags = getAllTags();
+  return tags.map((tag) => {
+    const articles = getArticlesByTag(tag);
+    return {
+      params: { tag },
+      props: {
+        tag,
+        articles
+      }
+    };
+  });
+}
+
+interface Props {
+  tag: string;
+  articles: ArticleData[];
+}
+
+const { tag, articles } = Astro.props;
+const totalCount = articles.length;
+---
+
+<BaseLayout
+  title={`#${tag} の関連記事一覧 | HONDA.CAT`}
+  description={`タグ「#${tag}」に関連する二輪レースレポート・プレビュー・サーキット整備解説記事の一覧です。`}
+  initialLang="ja"
+  canonicalPath={`/articles/tag/${encodeURIComponent(tag)}/`}
+>
+  <ArticlesArchiveView
+    articles={articles}
+    currentPage={1}
+    totalPages={1}
+    totalCount={totalCount}
+    pageSize={Math.max(totalCount, 12)}
+    activeTag={tag}
+  />
+</BaseLayout>

@@ -199,6 +199,26 @@ export const UI_TEXT = {
       ja: '← トップページへ戻る',
       ca: '← Tornar a la portada',
       en: '← Back to Home'
+    },
+    backToArchive: {
+      ja: '← 記事一覧（全件）へ',
+      ca: '← Tornar a l\'arxiu complet',
+      en: '← Back to All Articles'
+    },
+    categoryArchiveBadge: {
+      ja: 'CATEGORY ARCHIVE',
+      ca: 'ARXIU DE CATEGORIA',
+      en: 'CATEGORY ARCHIVE'
+    },
+    tagArchiveBadge: {
+      ja: 'TAG ARCHIVE',
+      ca: 'ARXIU D\'ETIQUETES',
+      en: 'TAG ARCHIVE'
+    },
+    relatedTagsTitle: {
+      ja: '🏷️ この記事のタグ',
+      ca: '🏷️ Etiquetes de l\'article',
+      en: '🏷️ Article Tags'
     }
   },
   categories: {
