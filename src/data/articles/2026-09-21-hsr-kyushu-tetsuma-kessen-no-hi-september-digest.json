@@ -7,7 +7,7 @@
   "circuit": "HSR九州（熊本県菊池郡大津町・全長2,350m）",
   "region": "Kyushu (Ozu, Kumamoto)",
   "featuredCat": "naomi",
-  "heroImage": "/images/cats/naomi.png",
+  "heroImage": "/images/articles/hsr-kyushu-2026-september-tetsuma-with-tsk-kessen-no-hi-4cyl-sprint-digest.webp",
   "tags": [
     "HSR九州",
     "鉄馬",
@@ -18,37 +18,57 @@
   ],
   "snsCitations": [
     {
-      "platform": "Instagram",
-      "accountName": "AUTOPOLIS / Kyushu Motorsport",
-      "handle": "@autopolis_jp",
-      "url": "https://www.instagram.com/autopolis_jp/",
-      "postUrl": "https://www.instagram.com/p/DfJVNX_m-lj/",
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "鉄馬 with TSK 公式 ＆ ハッシュタグハブ",
+      "handle": "@tetsuma_with_b / #鉄馬",
+      "url": "https://x.com/tetsuma_with_b",
+      "postUrl": "https://x.com/hashtag/鉄馬",
       "quotedPostText": {
-        "ja": "【2026年9月19日(土)〜20日(日) 開催：2026 鉄馬 with TSK『決戦の日』in HSR九州】5月の『合戦の日』に続く2026年鉄馬シリーズ第2幕！熊本県大津町のHSR九州（全長2,350m）に全国から空冷・水冷4気筒鉄フレームモンスターが集結し、大迫力のスプリント決戦が繰り広げられました！",
-        "ca": "【19-20 de setembre de 2026: «2026 Tetsuma with TSK: Dia de la Batalla Decisiva» a HSR Kyushu】Les motos clàssiques i preparades de 4 cilindres amb xassís de ferro fan vibrar Kumamoto!",
-        "en": "[September 19–20, 2026: '2026 Tetsuma with TSK: Day of Decisive Battle' at HSR Kyushu] Four-cylinder iron-frame superbikes roar across Kumamoto's HSR Kyushu (2,350m) for the autumn sprint showdown!"
+        "ja": "【2026 鉄馬 with TSK 決戦の日 in HSR九州】秋空の熊本に響く4気筒鉄フレームの咆哮！CB-F・Z・刀・XJR・ZRXのモンスターマシンたちが集結し、魂のフルバンクバトル！",
+        "ca": "【2026 Tetsuma: Dia de la Batalla Decisiva a HSR Kyushu】El bram dels motors de 4 cilindres amb xassís d'acer ressona a Kumamoto sota el cel de tardor!",
+        "en": "[2026 Tetsuma with TSK: Day of Decisive Battle at HSR Kyushu] Roaring four-cylinder steel-frame monsters (CB-F, Z, Katana, XJR, ZRX) battle at full lean in autumn Kumamoto!"
       },
       "editorialCommentary": {
-        "ja": "2026年の『鉄馬 with TSK』は5月の『合戦の日』、9月19日〜20日の『決戦の日』（4気筒モデル中心のスプリント）、そして11月21日〜22日の『乱戦の日』（シングル＆ツイン系＋スワップミート）の3部作として開催。9月の『決戦の日』では、CB-F・Z・刀・XJR・ZRXなどの4気筒鉄フレーム車両が阿蘇の秋空に快音を響かせました。",
-        "ca": "La cita de setembre del festival Tetsuma («Kessen no Hi») es centra en les categories reina de 4 cilindres amb xassís d'acer a HSR Kyushu.",
-        "en": "September's 'Day of Decisive Battle' (Kessen no Hi) at HSR Kyushu spotlights four-cylinder air- and water-cooled iron-frame machines."
+        "ja": "鉄馬公式（@tetsuma_with_b）および「#鉄馬」タグでは、大迫力の4気筒鉄フレームマシンのウォームアップ走行動画や美麗なマシンディテール写真が続々と投稿されています。",
+        "ca": "El compte oficial @tetsuma_with_b i l'etiqueta #鉄馬 ofereixen vídeos i fotografies espectaculars de les preparacions de 4 cilindres.",
+        "en": "Official dispatches from @tetsuma_with_b and #鉄馬 posts showcase stunning warm-up clips and intricate custom engineering."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "HSR九州 鉄馬公式チャンネル",
+      "handle": "HSR九州",
+      "url": "https://www.youtube.com/watch?v=XaR8vN4Gvvc",
+      "postUrl": "https://www.youtube.com/watch?v=XaR8vN4Gvvc",
+      "quotedPostText": {
+        "ja": "HSR九州公式：鉄馬 with TSK 9月決戦の日 決勝ダイジェスト！カスタムネイキッド＆往年の名車たちが阿蘇の麓で激走！",
+        "ca": "Canal Oficial HSR Kyushu: El festival de clàssiques i motos personalitzades «Tetsuma» en la seva màxima esplendor!",
+        "en": "HSR Kyushu Official: Tetsuma with TSK big-twin and four-cylinder custom clash in the September showdown!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
       }
     },
     {
       "platform": "X",
-      "accountName": "Honda MotoGP / HRC",
-      "handle": "@HRC_MotoGP",
-      "url": "https://x.com/HRC_MotoGP",
-      "postUrl": "https://x.com/HRC_MotoGP/status/2119475554617606397",
+      "citationType": "official_channel",
+      "accountName": "HSR九州 公式",
+      "handle": "@hsr_kyushu / #HSR九州",
+      "url": "https://x.com/hsr_kyushu",
+      "postUrl": "https://x.com/hashtag/HSR九州",
       "quotedPostText": {
-        "ja": "【2026年9月19日(土)〜20日(日) 開催：2026 鉄馬 with TSK『決戦の日』in HSR九州】5月の『合戦の日』に続く2026年鉄馬シリーズ第2幕！熊本県大津町のHSR九州（全長2,350m）に全国から空冷・水冷4気筒鉄フレームモンスターが集結し、大迫力のスプリント決戦が繰り広げられました！",
-        "ca": "【19-20 de setembre de 2026: «2026 Tetsuma with TSK: Dia de la Batalla Decisiva» a HSR Kyushu】Les motos clàssiques i preparades de 4 cilindres amb xassís de ferro fan vibrar Kumamoto!",
-        "en": "[September 19–20, 2026: '2026 Tetsuma with TSK: Day of Decisive Battle' at HSR Kyushu] Four-cylinder iron-frame superbikes roar across Kumamoto's HSR Kyushu (2,350m) for the autumn sprint showdown!"
+        "ja": "HSR九州公式：本日の『鉄馬 決戦の日』は秋晴れの絶好のレース日和！多くのご来場・ご参加ありがとうございます！全クラス無事にチェッカーを受けました！",
+        "ca": "HSR Kyushu Oficial: jornada assolellada perfecta per a les curses de Tetsuma. Gràcies a tots els pilots i aficionats!",
+        "en": "HSR Kyushu Official: Crisp autumn sunshine welcomed record grids for Tetsuma's autumn round. Thank you to all competitors and fans!"
       },
       "editorialCommentary": {
-        "ja": "2026年の『鉄馬 with TSK』は5月の『合戦の日』、9月19日〜20日の『決戦の日』（4気筒モデル中心のスプリント）、そして11月21日〜22日の『乱戦の日』（シングル＆ツイン系＋スワップミート）の3部作として開催。9月の『決戦の日』では、CB-F・Z・刀・XJR・ZRXなどの4気筒鉄フレーム車両が阿蘇の秋空に快音を響かせました。",
-        "ca": "La cita de setembre del festival Tetsuma («Kessen no Hi») es centra en les categories reina de 4 cilindres amb xassís d'acer a HSR Kyushu.",
-        "en": "September's 'Day of Decisive Battle' (Kessen no Hi) at HSR Kyushu spotlights four-cylinder air- and water-cooled iron-frame machines."
+        "ja": "HSR九州公式X（@hsr_kyushu）が伝える現地コンディション通りのドライ路面で、各クラスコースレコードに迫るハイペースなバトルが成立しました。",
+        "ca": "L'excel·lent estat de la pista comunicat per @hsr_kyushu va afavorir temps per volta propers als rècords del circuit.",
+        "en": "Track updates from @hsr_kyushu confirmed pristine dry tarmac conditions that produced near-record lap times."
       }
     }
   ],

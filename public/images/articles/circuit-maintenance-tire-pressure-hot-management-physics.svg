@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c10" />
+      <stop offset="50%" stop-color="#141824" />
+      <stop offset="100%" stop-color="#0d0f14" />
+    </linearGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGrad3)" />
+
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="315" x2="1200" y2="315" />
+    <line x1="0" y1="420" x2="1200" y2="420" />
+    <line x1="0" y1="525" x2="1200" y2="525" />
+    <line x1="200" y1="0" x2="200" y2="630" />
+    <line x1="400" y1="0" x2="400" y2="630" />
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="800" y1="0" x2="800" y2="630" />
+    <line x1="1000" y1="0" x2="1000" y2="630" />
+  </g>
+
+  <circle cx="950" cy="300" r="260" fill="#ffb703" opacity="0.12" filter="url(#glow3)" />
+  <circle cx="280" cy="220" r="200" fill="#4895ef" opacity="0.08" filter="url(#glow3)" />
+
+  <!-- Typography -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="220" height="34" rx="6" fill="#c77dff" opacity="0.2" stroke="#c77dff" stroke-width="1.5" />
+    <text x="110" y="22" text-anchor="middle" fill="#c77dff" font-family="'Chakra Petch', sans-serif" font-size="14" font-weight="700" letter-spacing="2">NAOMI'S WORKSHOP #3</text>
+
+    <text x="0" y="90" fill="#ffffff" font-family="'Noto Sans JP', sans-serif" font-size="44" font-weight="900" letter-spacing="1">温間タイヤ空気圧の熱力学</text>
+    <text x="0" y="145" fill="#ffb703" font-family="'Chakra Petch', sans-serif" font-size="28" font-weight="700">GAY-LUSSAC'S LAW &amp; WARMER THERMAL SOAK</text>
+    <text x="0" y="195" fill="#a8b3cf" font-family="'Noto Sans JP', sans-serif" font-size="18">温度+10℃で+7〜10kPa上昇 · 80℃ウォーマー45分通電 · ピットイン即計測</text>
+
+    <!-- Checklist -->
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="460" height="150" rx="10" fill="#151922" stroke="#ffb703" stroke-width="1.5" opacity="0.9" />
+      <text x="25" y="38" fill="#ffb703" font-family="'Chakra Petch', sans-serif" font-size="16" font-weight="700">THERMODYNAMIC FORMULA</text>
+      
+      <circle cx="35" cy="72" r="5" fill="#4895ef" />
+      <text x="50" y="77" fill="#f4f6fb" font-size="15">Gay-Lussac: P₁/T₁ = P₂/T₂ (定積変化)</text>
+
+      <circle cx="35" cy="104" r="5" fill="#ffb703" />
+      <text x="50" y="109" fill="#f4f6fb" font-size="15">Thermal Soak: 80℃ Warmer 最低45〜60分</text>
+
+      <circle cx="35" cy="134" r="5" fill="#2a9d8f" />
+      <text x="50" y="139" fill="#f4f6fb" font-size="15">Target: 走行直後30秒以内に温間実測アジャスト</text>
+    </g>
+  </g>
+
+  <!-- Right Graphic: Tire & Pressure Gauge -->
+  <g transform="translate(870, 315)">
+    <!-- Racing Slick Tire Cross-section -->
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#222838" stroke-width="45" />
+    <!-- Warmer orange band -->
+    <circle cx="0" cy="0" r="172" fill="none" stroke="#ffb703" stroke-width="14" stroke-dasharray="14,8" opacity="0.9" />
+    <!-- Alloy Rim Core -->
+    <circle cx="0" cy="0" r="95" fill="#151922" stroke="#4895ef" stroke-width="6" />
+
+    <!-- Center Pressure Dial -->
+    <circle cx="0" cy="0" r="60" fill="#0d0f14" stroke="#ffb703" stroke-width="3" />
+    <text x="0" y="-15" text-anchor="middle" fill="#ffb703" font-family="'Chakra Petch', sans-serif" font-size="14" font-weight="700">HOT TARGET</text>
+    <text x="0" y="18" text-anchor="middle" fill="#ffffff" font-family="'Chakra Petch', sans-serif" font-size="32" font-weight="900">235</text>
+    <text x="0" y="38" text-anchor="middle" fill="#a8b3cf" font-family="'Chakra Petch', sans-serif" font-size="12">kPa (ゲージ圧)</text>
+
+    <!-- Temperature Badge -->
+    <g transform="translate(110, -110)">
+      <rect x="0" y="0" width="120" height="45" rx="6" fill="#151922" stroke="#ffb703" stroke-width="2" />
+      <text x="60" y="28" text-anchor="middle" fill="#ffb703" font-family="'Chakra Petch', sans-serif" font-size="18" font-weight="900">80°C SOAK</text>
+    </g>
+  </g>
+
+  <text x="80" y="580" fill="#707d9c" font-family="'Chakra Petch', sans-serif" font-size="14" letter-spacing="1">HONDA.CAT · NAOMI'S CIRCUIT MAINTENANCE CLINIC · ISSUE #3</text>
+</svg>

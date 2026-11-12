@@ -7,7 +7,7 @@
   "circuit": "セパン・インターナショナル・サーキット（マレーシア・全長5,543m）",
   "region": "World (Sepang, Malaysia)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd19-malaysian-gp-sepang-marc-marquez-win-acosta-alex-marquez-digest.webp",
   "tags": [
     "MotoGP",
     "マレーシアGP",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #MalaysianGP Hub",
+      "handle": "@MotoGP / #MalaysianGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2119472556121973145",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第19戦 マレーシアGP（セパン）公式結果】灼熱のセパン・インターナショナル・サーキット（全長5,543m）で王者マルク・マルケス（Ducati Lenovo Team）が優勝！2位にペドロ・アコスタ（Red Bull KTM Factory Racing）、3位に弟アレックス・マルケス（BK8 Gresini Racing MotoGP）が入り、ミサノと同じ顔ぶれの3人が表彰台に登壇！",
-        "ca": "【Resultats Oficials GP de Malàisia 2026 a Sepang】Marc Márquez (Ducati Lenovo Team) s'imposa a la calor extrema de Sepang (5.543m) davant Pedro Acosta (2n, Red Bull KTM) i el seu germà Àlex Márquez (3r, BK8 Gresini Racing)!",
-        "en": "[Official Results: 2026 MotoGP Malaysian GP at Sepang] World Champion Marc Márquez (Ducati Lenovo Team) conquers the tropical heat of Sepang (5,543m) ahead of Pedro Acosta (2nd, Red Bull KTM Factory Racing) and brother Álex Márquez (3rd, BK8 Gresini Racing MotoGP)!"
+        "ja": "【2026 MotoGP 第19戦 マレーシアGP（セパン）公式結果】熱帯スコールと路面温度55℃の過酷なセパンでマルク・マルケスが独走優勝！2位ペドロ・アコスタ、3位アレックス・マルケス！",
+        "ca": "【GP de Malàisia 2026 a Sepang】Marc Márquez s'imposa a la calor asfixiant de Sepang! Pedro Acosta (2n) i Àlex Márquez (3r) completen el podi!",
+        "en": "[2026 MotoGP Malaysian GP at Sepang] Marc Márquez conquers stifling tropical humidity and 55°C track temperatures at Sepang! Acosta 2nd, Álex Márquez 3rd!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とDucati公式（@ducaticorse）が伝えたセパンの激闘！2本の長いストレートとテクニカルな低速〜高速コーナーが組み合わさるセパン（全長5,543m）で、マルク・マルケス選手がタイトル決定後も変わらぬ勝負強さで優勝。2位にペドロ・アコスタ選手、3位にアレックス・マルケス選手が入りました。",
-        "ca": "Les publicacions de @MotoGP i @ducaticorse mostren el nou triomf de Marc Márquez a Sepang compartint podi amb Pedro Acosta i el seu germà Àlex.",
-        "en": "Posts from @MotoGP and @ducaticorse highlight Marc Márquez's Sepang victory alongside podium finishers Pedro Acosta and Álex Márquez."
+        "ja": "MotoGP公式（@MotoGP）および「#MalaysianGP」では、セパンの2本の超長大なバックストレートとタイトヘアピンで繰り広げられたタイヤ摩耗との極限バトルが注目を集めています。",
+        "ca": "El compte oficial @MotoGP destaca la resistència física dels pilots suportant temperatures extremes a les rectes de Sepang.",
+        "en": "Official social updates celebrate the extraordinary physical stamina required to survive 20 punishing laps in Sepang's sauna-like conditions."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Ducati Corse Official",
-      "handle": "@ducaticorse",
-      "url": "https://www.instagram.com/ducaticorse/",
-      "postUrl": "https://www.instagram.com/p/DfkbYCHtICX/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第19戦 マレーシアGP（セパン）公式結果】灼熱のセパン・インターナショナル・サーキット（全長5,543m）で王者マルク・マルケス（Ducati Lenovo Team）が優勝！2位にペドロ・アコスタ（Red Bull KTM Factory Racing）、3位に弟アレックス・マルケス（BK8 Gresini Racing MotoGP）が入り、ミサノと同じ顔ぶれの3人が表彰台に登壇！",
-        "ca": "【Resultats Oficials GP de Malàisia 2026 a Sepang】Marc Márquez (Ducati Lenovo Team) s'imposa a la calor extrema de Sepang (5.543m) davant Pedro Acosta (2n, Red Bull KTM) i el seu germà Àlex Márquez (3r, BK8 Gresini Racing)!",
-        "en": "[Official Results: 2026 MotoGP Malaysian GP at Sepang] World Champion Marc Márquez (Ducati Lenovo Team) conquers the tropical heat of Sepang (5,543m) ahead of Pedro Acosta (2nd, Red Bull KTM Factory Racing) and brother Álex Márquez (3rd, BK8 Gresini Racing MotoGP)!"
+        "ja": "MotoGP Official：セパン決勝ハイライト＆最終ヘアピン（ターン15）でのマルケス対アコスタの激突寸前ブレーキングバトル！",
+        "ca": "Canal Oficial MotoGP: Resum de Malàisia i duel apassionant a la darrera forquilla de Sepang!",
+        "en": "MotoGP Official Channel: Malaysian GP highlights and the knife-edge braking duel into Turn 15's final hairpin!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とDucati公式（@ducaticorse）が伝えたセパンの激闘！2本の長いストレートとテクニカルな低速〜高速コーナーが組み合わさるセパン（全長5,543m）で、マルク・マルケス選手がタイトル決定後も変わらぬ勝負強さで優勝。2位にペドロ・アコスタ選手、3位にアレックス・マルケス選手が入りました。",
-        "ca": "Les publicacions de @MotoGP i @ducaticorse mostren el nou triomf de Marc Márquez a Sepang compartint podi amb Pedro Acosta i el seu germà Àlex.",
-        "en": "Posts from @MotoGP and @ducaticorse highlight Marc Márquez's Sepang victory alongside podium finishers Pedro Acosta and Álex Márquez."
+        "ja": "公式ハイライト動画では、熱ダレしたフロントタイヤで深くバンク角を保ちながら立ち上がるマルケス選手の類稀なスロットルワークが鮮明に確認できます。",
+        "ca": "El vídeo oficial permet analitzar com Márquez va gestionar el desgast del pneumàtic davanter a les frenades de final de recta.",
+        "en": "Official video highlights showcase Márquez's uncanny throttle delicacy managing heavily worn front tyre rubber through the final laps."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第19戦マレーシアGP（セパン）決勝順位（1位マルク・マルケス、2位アコスタ、3位アレックス・マルケス）。",
+        "ca": "Resultats oficials GP de Malàisia: 1r Marc Márquez, 2n Pedro Acosta, 3r Àlex Márquez.",
+        "en": "MotoGP.com Official Classification: 1st Marc Márquez, 2nd Pedro Acosta, 3rd Álex Márquez."
+      },
+      "editorialCommentary": {
+        "ja": "公式リザルトにより、マルク・マルケス選手が今季通算勝星を二桁に乗せ、歴史的な圧倒的シーズンを更新したことが記録されています。",
+        "ca": "La web oficial confirma la desena victòria de la temporada per a Marc Márquez en un any absolutament irrepetible.",
+        "en": "Official records show Marc Márquez recording his tenth victory of a truly historic, record-shattering 2026 campaign."
       }
     }
   ],

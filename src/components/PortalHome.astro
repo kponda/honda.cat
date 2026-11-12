@@ -5,7 +5,10 @@ import Footer from './Footer.astro';
 import { getAllArticles } from '../data/articles';
 import { UI_TEXT } from '../data/i18n';
 
-const articles = getAllArticles();
+const allArticles = getAllArticles();
+const TOP_LIMIT = 12;
+const articles = allArticles.slice(0, TOP_LIMIT);
+const totalCount = allArticles.length;
 const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'all-japan', 'spotlight'] as const;
 ---
 
@@ -91,14 +94,26 @@ const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'a
     <div class="container">
       <div class="articles-header">
         <div>
-          <span class="badge" style="background: rgba(42, 157, 143, 0.16); color: #4ecdc4;">
-            PADDOCK DISPATCH & RACE DIGEST
-          </span>
+          <div class="articles-badge-row">
+            <span class="badge" style="background: rgba(42, 157, 143, 0.16); color: #4ecdc4;">
+              PADDOCK DISPATCH & RACE DIGEST
+            </span>
+            <span class="badge count-badge racing-font">
+              <span data-i18n="ja">最新 {TOP_LIMIT} 件（全 {totalCount} 件）</span>
+              <span data-i18n="ca">Últimes {TOP_LIMIT} (de {totalCount})</span>
+              <span data-i18n="en">Latest {TOP_LIMIT} of {totalCount}</span>
+            </span>
+          </div>
           <h2 class="section-heading">
             <span data-i18n="ja">🏁 最新レース開催プレビュー・結果ダイジェスト・技術解説＆整備情報</span>
             <span data-i18n="ca">🏁 Últimes Cròniques, Prèvies, Resultats i Manteniment de Circuit</span>
             <span data-i18n="en">🏁 Latest Race Previews, Results Digests, Super Saves & Track Maintenance</span>
           </h2>
+          <p class="articles-subnote">
+            <span data-i18n="ja">トップページでは最新12件を表示しています。過去記事は<a href="/articles/">全記事一覧・バックナンバー</a>からご覧いただけます。</span>
+            <span data-i18n="ca">Mostrant les últimes 12 cròniques. Podeu consultar l'històric complet a l'<a href="/articles/">arxiu de cròniques</a>.</span>
+            <span data-i18n="en">Displaying the latest 12 dispatches. Browse the <a href="/articles/">complete archive</a> for older race reports.</span>
+          </p>
         </div>
 
         <div class="category-filters" role="tablist" aria-label="Category Filter">
@@ -120,6 +135,25 @@ const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'a
         {articles.map((article) => (
           <ArticleCard article={article} />
         ))}
+      </div>
+
+      <div class="articles-archive-cta">
+        <a href="/articles/" class="archive-cta-card">
+          <div class="cta-left">
+            <span class="cta-badge racing-font">ALL ARCHIVE</span>
+            <strong class="cta-title">
+              <span data-i18n="ja">すべての記事・バックナンバーを見る（全{totalCount}件） →</span>
+              <span data-i18n="ca">Veure totes les cròniques i l'històric ({totalCount} articles) →</span>
+              <span data-i18n="en">View All Articles & Archive ({totalCount} Total) →</span>
+            </strong>
+            <p class="cta-desc">
+              <span data-i18n="ja">MotoGP・世界SBK・全日本ロードレース・地方選・九州サーキット・ナオミの整備解説まで全記事を網羅</span>
+              <span data-i18n="ca">Exploreu l'arxiu complet amb totes les cròniques, campionats de Kyushu i mecànica</span>
+              <span data-i18n="en">Explore our complete chronological archive of race reports, regional series, and technical clinics</span>
+            </p>
+          </div>
+          <span class="cta-arrow racing-font">VIEW ARCHIVE ➔</span>
+        </a>
       </div>
     </div>
   </section>
@@ -289,15 +323,125 @@ const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'a
     border-color: var(--accent-gold);
   }
 
+  .articles-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .count-badge {
+    background: rgba(255, 183, 3, 0.14);
+    color: var(--accent-gold);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    font-size: 0.76rem;
+  }
+
+  .articles-subnote {
+    margin-top: 0.45rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .articles-subnote a {
+    color: var(--accent-gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .articles-subnote a:hover {
+    color: #fff;
+  }
+
   .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 1.6rem;
   }
 
+  .articles-archive-cta {
+    margin-top: 2.75rem;
+  }
+
+  .archive-cta-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, rgba(27, 32, 44, 0.95), rgba(21, 25, 34, 0.95));
+    border: 1px solid rgba(255, 183, 3, 0.35);
+    border-radius: 1rem;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+
+  .archive-cta-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 12px 30px rgba(255, 183, 3, 0.15);
+    background: linear-gradient(135deg, rgba(34, 40, 56, 0.98), rgba(25, 30, 42, 0.98));
+  }
+
+  .cta-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .cta-badge {
+    align-self: flex-start;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--accent-gold);
+    background: rgba(255, 183, 3, 0.12);
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+
+  .cta-title {
+    font-size: 1.15rem;
+    color: #fff;
+  }
+
+  .cta-desc {
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+  }
+
+  .cta-arrow {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    padding: 0.65rem 1.1rem;
+    background: rgba(255, 183, 3, 0.12);
+    border: 1px solid rgba(255, 183, 3, 0.3);
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+  }
+
+  .archive-cta-card:hover .cta-arrow {
+    background: var(--accent-gold);
+    color: #0d0f14;
+  }
+
   @media (max-width: 960px) {
     .hero-grid {
       grid-template-columns: 1fr;
+    }
+
+    .archive-cta-card {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.25rem 1.4rem;
+    }
+
+    .cta-arrow {
+      align-self: stretch;
+      text-align: center;
     }
   }
 </style>

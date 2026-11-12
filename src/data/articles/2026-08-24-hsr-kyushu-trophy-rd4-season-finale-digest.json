@@ -7,7 +7,7 @@
   "circuit": "HSR九州（熊本県菊池郡大津町・全長2,350m）",
   "region": "Kyushu (Ozu, Kumamoto)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/hsr-kyushu-2026-august-trophy-road-race-rd4-season-finale-digest.webp",
   "tags": [
     "HSR九州",
     "HSR九州Trophy",
@@ -18,37 +18,57 @@
   ],
   "snsCitations": [
     {
-      "platform": "Instagram",
-      "accountName": "AUTOPOLIS / Kyushu Motorsport",
-      "handle": "@autopolis_jp",
-      "url": "https://www.instagram.com/autopolis_jp/",
-      "postUrl": "https://www.instagram.com/p/DfJVNX_m-lj/",
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "HSR九州 公式 ＆ ハッシュタグハブ",
+      "handle": "@hsr_kyushu / #HSR九州",
+      "url": "https://x.com/hsr_kyushu",
+      "postUrl": "https://x.com/hashtag/HSR九州",
       "quotedPostText": {
-        "ja": "【2026年8月23日(日) 開催：2026 HSR九州 Trophy ロードレース選手権 第4戦（シリーズ最終戦）＆ ドリームカップフェスティバル】3月開幕から全4戦で争われた2026年のHSR九州 Trophyシリーズが熊本県大津町のHSR九州（全長2,350m）でついにクライマックス！ST1000・ST600・JP250各クラスの年間王者が決定しました！",
-        "ca": "【23 d'agost de 2026: Gran Final (Rd.4) de l'HSR Kyushu Trophy Road Race i Dream Cup Festival】El campionat de 4 proves a HSR Kyushu (Kumamoto · 2.350m) corona els seus campions 2026 en ST1000, ST600 i JP250!",
-        "en": "[August 23, 2026: HSR Kyushu Trophy Road Race Rd.4 Season Finale & Dream Cup] The four-round 2026 HSR Kyushu Trophy series concludes in Ozu, Kumamoto (2,350m), crowning the season champions across ST1000, ST600, and JP250!"
+        "ja": "【2026 HSR九州 Trophy 第4戦（シリーズ最終戦）】3月開幕から全4戦で戦われたTrophyシリーズがフィナーレ！ST1000・ST600・JP250の年間王者が熊本・HSR九州で決定！熱い戦いを繰り広げた全エントラントに拍手！",
+        "ca": "【HSR Kyushu Trophy Rd.4 Gran Final】Punt i final a la temporada 2026 amb la coronació dels campions de ST1000, ST600 i JP250 a Kumamoto!",
+        "en": "[2026 HSR Kyushu Trophy Rd.4 Season Finale] The four-round season concludes at Kumamoto, crowning 2026 champions across ST1000, ST600, and JP250!"
       },
       "editorialCommentary": {
-        "ja": "3月15日の第1戦、6月21日の第2戦、7月12日の第3戦を経て迎えた8月23日の『2026 HSR九州 Trophy ロードレース選手権 第4戦（最終戦）』。熊本の晩夏の陽射しの中、年間タイトルを懸けた最終ヒートとドリームカップのスプリントが開催されました。",
-        "ca": "Després de les cites de març, juny i juliol, el 23 d'agost es va tancar el campionat HSR Kyushu Trophy 2026 amb les finals de totes les categories.",
-        "en": "Following rounds in March, June, and July, August 23 marked the championship-deciding Round 4 finale of the 2026 HSR Kyushu Trophy Road Race series."
+        "ja": "HSR九州公式（@hsr_kyushu）およびハッシュタグ「#HSR九州」では、年間チャンピオンを獲得したライダーたちの表彰台スナップやシャンパンファイトの笑顔が発信されています。",
+        "ca": "El compte oficial @hsr_kyushu i l'etiqueta #HSR九州 mostren les celebracions al podi dels nous campions 2026.",
+        "en": "Official dispatches from @hsr_kyushu and community posts capture podium celebrations and season-ending camaraderie."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "HSR九州 ドリームカップ公式",
+      "handle": "HSR九州",
+      "url": "https://www.youtube.com/watch?v=ETev6UnAghQ",
+      "postUrl": "https://www.youtube.com/watch?v=ETev6UnAghQ",
+      "quotedPostText": {
+        "ja": "HSR九州公式：HSR九州ロードレースTrophy 第4戦 最終戦 決勝ダイジェスト！シーズン王者を決める劇的なチェッカーフラッグ！",
+        "ca": "Canal Oficial HSR Kyushu: Final de temporada del Trophy Road Race decidint els campions de l'any!",
+        "en": "HSR Kyushu Official: Trophy Road Race season finale showdown crowning the 2026 champions at Kumamoto!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
       }
     },
     {
       "platform": "X",
-      "accountName": "Honda MotoGP / HRC",
-      "handle": "@HRC_MotoGP",
-      "url": "https://x.com/HRC_MotoGP",
-      "postUrl": "https://x.com/HRC_MotoGP/status/2119492292918890909",
+      "citationType": "hashtag_hub",
+      "accountName": "HSR九州 Trophy ハッシュタグハブ",
+      "handle": "#HSR九州Trophy",
+      "url": "https://x.com/hashtag/HSR九州Trophy",
+      "postUrl": "https://x.com/hashtag/HSR九州Trophy",
       "quotedPostText": {
-        "ja": "【2026年8月23日(日) 開催：2026 HSR九州 Trophy ロードレース選手権 第4戦（シリーズ最終戦）＆ ドリームカップフェスティバル】3月開幕から全4戦で争われた2026年のHSR九州 Trophyシリーズが熊本県大津町のHSR九州（全長2,350m）でついにクライマックス！ST1000・ST600・JP250各クラスの年間王者が決定しました！",
-        "ca": "【23 d'agost de 2026: Gran Final (Rd.4) de l'HSR Kyushu Trophy Road Race i Dream Cup Festival】El campionat de 4 proves a HSR Kyushu (Kumamoto · 2.350m) corona els seus campions 2026 en ST1000, ST600 i JP250!",
-        "en": "[August 23, 2026: HSR Kyushu Trophy Road Race Rd.4 Season Finale & Dream Cup] The four-round 2026 HSR Kyushu Trophy series concludes in Ozu, Kumamoto (2,350m), crowning the season champions across ST1000, ST600, and JP250!"
+        "ja": "【HSR九州 Trophy ロードレース】九州屈指の高速レイアウト（全長2,350m）を舞台にした本格地方選シリーズ。年間を通じたポイント争いが最終戦のチェッカーまで激戦となりました！",
+        "ca": "【HSR Kyushu Trophy Road Race】El campionat regional de referència a Kumamoto decideix els seus títols a l'última volta!",
+        "en": "[HSR Kyushu Trophy Road Race] Kyushu's premier regional road race series delivered title-deciding drama right down to the final lap!"
       },
       "editorialCommentary": {
-        "ja": "3月15日の第1戦、6月21日の第2戦、7月12日の第3戦を経て迎えた8月23日の『2026 HSR九州 Trophy ロードレース選手権 第4戦（最終戦）』。熊本の晩夏の陽射しの中、年間タイトルを懸けた最終ヒートとドリームカップのスプリントが開催されました。",
-        "ca": "Després de les cites de març, juny i juliol, el 23 d'agost es va tancar el campionat HSR Kyushu Trophy 2026 amb les finals de totes les categories.",
-        "en": "Following rounds in March, June, and July, August 23 marked the championship-deciding Round 4 finale of the 2026 HSR Kyushu Trophy Road Race series."
+        "ja": "Xの「#HSR九州Trophy」タグでは、各エントラントや参加ショップが投稿したシーズン総括レポートやマシンのセッティングデータが数多く寄せられています。",
+        "ca": "Els equips locals comparteixen resums de la temporada i dades de posada a punt a través de l'etiqueta #HSR九州Trophy.",
+        "en": "Competitors and tuning shops share season reviews and mechanical setups under the #HSR九州Trophy community tag."
       }
     }
   ],

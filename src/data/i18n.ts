@@ -120,7 +120,8 @@ export const UI_TEXT = {
     en: 'From MotoGP & WorldSBK to MFJ All-Japan, nationwide regional series, Kyushu circuits & track maintenance! Feline motorsport journalism in 3 languages.'
   },
   nav: {
-    home: { ja: '最新記事', ca: 'Notícies i Cròniques', en: 'Latest Articles' },
+    home: { ja: 'ホーム', ca: 'Inici', en: 'Home' },
+    articles: { ja: '記事一覧', ca: 'Arxiu de Cròniques', en: 'All Articles' },
     schedule: { ja: '🗓️ 全国＆世界スケジュール', ca: '🗓️ Calendari Oficial', en: '🗓️ Official Schedule' },
     kyushu: { ja: '九州サーキットガイド', ca: 'Circuits de Kyushu', en: 'Kyushu Circuits' },
     cats: { ja: '猫編集部紹介', ca: 'Redacció Felina', en: 'Cat Editorial Team' },
@@ -151,6 +152,53 @@ export const UI_TEXT = {
       ja: '🗓️ 公式スケジュールを見る',
       ca: '🗓️ Veure el Calendari Oficial',
       en: '🗓️ View Official Schedule'
+    }
+  },
+  archive: {
+    badge: {
+      ja: 'ARCHIVE & BACK NUMBERS',
+      ca: 'ARXIU I HISTÒRIC DE CURSES',
+      en: 'ARCHIVE & BACK NUMBERS'
+    },
+    title: {
+      ja: '🏁 全記事一覧・バックナンバーアーカイブ',
+      ca: '🏁 Arxiu Complet de Cròniques i Manteniment',
+      en: '🏁 All Race Reports & Technical Maintenance Archive'
+    },
+    subtitle: {
+      ja: 'MotoGP・世界SBK・全日本ロードレース・九州サーキット・整備解説まで、これまで配信されたすべての記事アーカイブです。',
+      ca: 'Llistat complet de totes les prèvies, cròniques de cursa i articles tècnics publicats.',
+      en: 'Complete historical archive of all race previews, results digests, and track maintenance clinics.'
+    },
+    viewAllBtn: {
+      ja: 'すべての記事・バックナンバーを見る ({count}件) →',
+      ca: 'Veure totes les cròniques i l\'arxiu ({count}) →',
+      en: 'View All Articles & Historical Archive ({count}) →'
+    },
+    showingCount: {
+      ja: '全{total}件中 {start}〜{end}件目を表示（ページ {current} / {totalPages}）',
+      ca: 'Mostrant {start}–{end} de {total} articles (Pàgina {current} de {totalPages})',
+      en: 'Showing {start}–{end} of {total} articles (Page {current} of {totalPages})'
+    },
+    topPageShowingBadge: {
+      ja: '最新{limit}件を表示（全{total}件）',
+      ca: 'Últimes {limit} cròniques (de {total})',
+      en: 'Showing latest {limit} of {total} articles'
+    },
+    prevPage: {
+      ja: '← 前のページ',
+      ca: '← Pàgina anterior',
+      en: '← Previous'
+    },
+    nextPage: {
+      ja: '次のページ →',
+      ca: 'Pàgina següent →',
+      en: 'Next →'
+    },
+    backToHome: {
+      ja: '← トップページへ戻る',
+      ca: '← Tornar a la portada',
+      en: '← Back to Home'
     }
   },
   categories: {
@@ -264,6 +312,38 @@ export const UI_TEXT = {
       en: 'honda.cat proudly supports the Fundació .cat mission by publishing every motorsport report and technical guide in Catalan (Català), Japanese, and English. Catalonia and Japan share one of the world’s deepest two-wheel racing bonds—from Circuit de Barcelona-Catalunya (Montmeló) to Suzuka and circuits across Japan.'
     }
   },
+  churuSupport: {
+    badge: {
+      ja: '🐾 PADDOCK SUPPORT',
+      ca: '🐾 SUPORT AL PÀDOC',
+      en: '🐾 PADDOCK SUPPORT'
+    },
+    title: {
+      ja: '猫編集部にチュールをおごる 🐾',
+      ca: 'Convida la redacció felina a un xuru 🐾',
+      en: 'Buy the Cat Paddock a Churu 🐾'
+    },
+    subtitle: {
+      ja: 'マルク・スズカ・ナオミのサーキット取材＆草レース活動を応援！',
+      ca: 'Dona suport a la cobertura del pàdoc i guies de circuit de Marc, Suzuka i Naomi!',
+      en: "Fuel Marc, Suzuka & Naomi's paddock reports and circuit guides!"
+    },
+    buttonText: {
+      ja: 'チュールをおごる（Buy Me a Coffee） ↗',
+      ca: 'Regala un xuru a Buy Me a Coffee ↗',
+      en: 'Buy a Churu on Buy Me a Coffee ↗'
+    },
+    footerButton: {
+      ja: '🐾 猫たちにチュールをおごる',
+      ca: '🐾 Convida els gats a un xuru',
+      en: '🐾 Buy the Cats a Churu'
+    },
+    note: {
+      ja: '※Apple Pay / Google Pay / クレジットカード対応（アカウント登録不要）',
+      ca: '*Targeta, Apple Pay i Google Pay (ràpid i segur sense registre obligatori)',
+      en: '*Supports Credit Cards, Apple Pay & Google Pay (Fast & secure, no sign-up needed)'
+    }
+  },
   footer: {
     disclaimer: {
       ja: '※免責事項：当サイト（honda.cat）は二輪モータースポーツおよびサーキット文化を愛する独立系ファン＆AIメディアであり、本田技研工業株式会社（Honda Motor Co., Ltd.）および関連企業の公式ウェブサイトではありません。',
@@ -274,6 +354,16 @@ export const UI_TEXT = {
       ja: '💾 選択した表示言語はブラウザ（localStorage）に自動保存され、次回アクセス時も維持されます。',
       ca: '💾 L\'idioma seleccionat es desa automàticament al navegador (localStorage) per a futures visites.',
       en: '💾 Your selected language is automatically saved in browser storage (localStorage) for future visits.'
+    },
+    operatorLabel: {
+      ja: '運営：',
+      ca: 'Operat per: ',
+      en: 'Operated by: '
+    },
+    operatorName: {
+      ja: '本田電脳相談合同会社 (HONDA DENNO)',
+      ca: 'HONDA DENNO LLC (本田電脳相談合同会社)',
+      en: 'HONDA DENNO LLC'
     }
   }
 };

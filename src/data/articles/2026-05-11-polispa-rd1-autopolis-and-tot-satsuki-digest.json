@@ -7,7 +7,7 @@
   "circuit": "オートポリス（大分県日田市・4,674m）／ 筑波サーキット（茨城県・2,045m）",
   "region": "Kyushu (Hita, Oita) & Kanto (Ibaraki)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/kyushu-polispa-rd1-autopolis-and-taste-of-tsukuba-satsuki-digest.webp",
   "tags": [
     "オートポリス",
     "POLISPAロードレース",
@@ -18,37 +18,57 @@
   ],
   "snsCitations": [
     {
-      "platform": "Instagram",
-      "accountName": "オートポリス (AUTOPOLIS) 公式",
-      "handle": "@autopolis_jp",
-      "url": "https://www.instagram.com/autopolis_jp/",
-      "postUrl": "https://www.instagram.com/p/DfJHV_fmxF5/",
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "オートポリス公式 ＆ 九州ロードレースハブ",
+      "handle": "@autopolis2005 / #オートポリス",
+      "url": "https://x.com/autopolis2005",
+      "postUrl": "https://x.com/hashtag/オートポリス",
       "quotedPostText": {
-        "ja": "【2026年5月10日(日) 開催：2026 POLISPAロードレース選手権シリーズ 第1戦（Presented by MARUMAE）in オートポリス】JSB1000・ST1000・ST600・JP-SPORT各クラス、および併催のNinja Team Green Cup・ONE&TWOフェスティバル春の大会を開催！公式2輪リザルトを公開しました。",
-        "ca": "【10 de maig de 2026: Campionat POLISPA de Velocitat Rd.1 a Autopolis】Celebrada la primera ronda de JSB1000, ST1000, ST600 i JP-SPORT juntament amb la Ninja Team Green Cup i el ONE&TWO Festival de primavera a Oita!",
-        "en": "[May 10, 2026: 2026 POLISPA Road Race Championship Rd.1 at Autopolis] JSB1000, ST1000, ST600, and JP-SPORT season opener held alongside the Ninja Team Green Cup and Spring ONE&TWO Festival in Hita, Oita!"
+        "ja": "【オートポリス 2026 POLISPAロードレース開幕戦】阿蘇の大自然に抱かれたインターナショナルコース（全長4,674m）で九州のトップライダーが集結！新緑の上津江で熱戦開幕！",
+        "ca": "【Inici del campionat POLISPA 2026 a Autopolis】Els millors pilots de Kyushu competeixen al traçat internacional de 4.674m sota el verd primaveral d'Oita!",
+        "en": "[2026 POLISPA Season Opener at Autopolis] Kyushu's top riders gather at the 4,674m international racing course in Kamitsue for the spring opener!"
       },
       "editorialCommentary": {
-        "ja": "オートポリス公式X（@autopolis2005）および公式リザルトページでは、5月30日〜31日の全日本第3戦『スーパーバイクレース in 九州』のちょうど3週間前に行われた地方選手権『2026 POLISPAロードレース選手権 第1戦』の各クラス熱戦がレポートされています。旧・九州ロードレース選手権の流れを汲みオートポリスとSPA直入を舞台に競われるシリーズで、地元九州勢の仕上がりを占う重要な一戦となりました。",
-        "ca": "Les publicacions de @autopolis2005 mostren l'ambient de la 1a ronda del campionat regional POLISPA (que pren el relleu de l'històric Campionat de Kyushu entre Autopolis i SPA Naoiri) a tres setmanes de la visita del Campionat del Japó.",
-        "en": "@autopolis2005's official coverage highlights Round 1 of the POLISPA Road Race Championship—the regional series uniting Autopolis and SPA Naoiri—serving as the key dress rehearsal three weeks before MFJ All-Japan Round 3."
+        "ja": "オートポリス公式（@autopolis2005）および「#オートポリス」では、標高900mの阿蘇外輪山特有の気圧変化に対応したキャブ・ECUセッティングに挑むピットの様子が伝えられています。",
+        "ca": "El compte oficial @autopolis2005 reflecteix el repte tècnic d'ajustar la injecció a 900m d'altitud a la muntanya d'Aso.",
+        "en": "Updates from @autopolis2005 highlight the engine mapping challenges of competing at 900m elevation in the Aso caldera."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "オートポリス公式チャンネル",
+      "handle": "オートポリス",
+      "url": "https://www.youtube.com/watch?v=yQ5QUfTiHEg",
+      "postUrl": "https://www.youtube.com/watch?v=yQ5QUfTiHEg",
+      "quotedPostText": {
+        "ja": "オートポリス公式：ポリスパRd.1＆九州ロードレース選手権 決勝ハイライト！高低差50mの難関レイアウトを攻めるライダーたちのオンボード映像！",
+        "ca": "Canal Oficial Autopolis: Resum de la cursa Polispa Rd.1 i campionat regional de Kyushu amb càmeres a bord!",
+        "en": "Autopolis Official: Polispa Rd.1 and Kyushu road race championship highlights across the challenging 50m elevation profile!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
       }
     },
     {
       "platform": "X",
-      "accountName": "筑波サーキット 公式",
-      "handle": "@tsukuba_circuit",
+      "citationType": "hashtag_hub",
+      "accountName": "筑波サーキット ＆ テイスト・オブ・ツクバ公式",
+      "handle": "@tsukuba_circuit / #テイストオブツクバ",
       "url": "https://x.com/tsukuba_circuit",
-      "postUrl": "https://x.com/tsukuba_circuit/status/2118518842519617848",
+      "postUrl": "https://x.com/hashtag/テイストオブツクバ",
       "quotedPostText": {
-        "ja": "【2026年5月9日(土)〜10日(日) 開催：テイスト・オブ・ツクバ SATSUKI STAGE】今大会より最速カテゴリーが再編され、キャブレター車中心の『HERCULES（ハーキュリーズ）』に加え、インジェクションや最新スポーツエンジン・オリジナルフレームも視野に入れた新クラス『HYDRA（ヒュドラー）』が誕生！",
-        "ca": "【9-10 de maig de 2026: Taste of Tsukuba SATSUKI STAGE】Estrena històrica de la nova classe reina «HYDRA» (oberta a injecció i xassissos especials) al costat de la clàssica «HERCULES» de carburació al Circuit de Tsukuba!",
-        "en": "[May 9–10, 2026: Taste of Tsukuba SATSUKI STAGE] Historic debut of the newly created 'HYDRA' class alongside carburetor-focused 'HERCULES', plus ZERO-1 through ZERO-5, MONSTER, and D.O.B.A.R.!"
+        "ja": "【テイスト・オブ・ツクバ SATSUKI STAGE】鉄フレーム＆空水冷モンスターの聖地・筑波！全国の旧車・カスタムファンが詰めかけ、熱気渦巻く名物バトルが繰り広げられました！",
+        "ca": "【Taste of Tsukuba SATSUKI STAGE】El temple dels xassís clàssics i les grans preparacions fa vibrar Tsukuba amb milers d'aficionats!",
+        "en": "[Taste of Tsukuba SATSUKI STAGE] The ultimate sanctuary for tuned steel-frame monsters packed Tsukuba with passionate enthusiasts!"
       },
       "editorialCommentary": {
-        "ja": "筑波サーキット公式X（@tsukuba_circuit）および公式サイトの2026年5月10日リザルトページでは、従来のHERCULESクラスに加えて新設された『HYDRA（ヒュドラー）』クラスの初代ウイナー争いが大きく取り上げられています。キャブ車の美学を守るHERCULESと、FI（フューエルインジェクション）化やモダンスーパーバイク系エンジン搭載車を許容するHYDRAの棲み分けは、カスタムレーサー界の大きな転換点です。",
-        "ca": "El compte oficial @tsukuba_circuit destaca la divisió entre HERCULES i la nova categoria HYDRA, un pas clau en l'evolució tècnica del festival de motos clàssiques i modificades més famós del Japó.",
-        "en": "@tsukuba_circuit's official posts spotlight the technical evolution of Taste of Tsukuba with the launch of the 'HYDRA' class alongside 'HERCULES'."
+        "ja": "筑波サーキット公式（@tsukuba_circuit）および「#TOT」タグでは、ハーキュリーズやスーパーモンスターエボリューションの異次元の加速サウンドが動画で共有されています。",
+        "ca": "L'etiqueta #TOT recull vídeos de l'espectacular so dels motors preparats a la recta de meta de Tsukuba.",
+        "en": "Posts under #TOT showcase the thunderous exhaust notes and extreme bespoke engineering down Tsukuba's front straight."
       }
     }
   ],

@@ -7,7 +7,7 @@
   "circuit": "モビリティリゾートもてぎ（栃木県・全長4,801m）",
   "region": "Kanto (Tochigi / Nationwide Japan)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/mfj-rd1-motegi-2and4-mizuno-nagashima-kunii-digest.webp",
   "tags": [
     "全日本ロードレース",
     "JSB1000",
@@ -19,36 +19,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "モビリティリゾートもてぎ 公式",
-      "handle": "@motegi_official",
-      "url": "https://x.com/motegi_official",
-      "postUrl": "https://x.com/motegi_official/status/2120065945813303321",
+      "citationType": "hashtag_hub",
+      "accountName": "全日本ロードレース選手権公式 ＆ ハッシュタグハブ",
+      "handle": "@jrr_official / #全日本ロードレース",
+      "url": "https://x.com/jrr_official",
+      "postUrl": "https://x.com/hashtag/全日本ロードレース",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権シリーズ 第1戦 もてぎ2&4レース JSB1000 決勝正式結果】優勝：#3 水野 涼（SDG DUCATI Team KAGAYAMA）、2位：#30 長島 哲太（DUNLOP Racing Team with YAHAGI）、3位：#36 國井 勇輝（SDG Team HARC-PRO. Honda）。",
-        "ca": "【Resultat Oficial JSB1000 Rd.1 Motegi 2&4】1r: #3 Ryo Mizuno (SDG DUCATI Team KAGAYAMA), 2n: #30 Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI), 3r: #36 Yuki Kunii (SDG Team HARC-PRO. Honda).",
-        "en": "[Official Result: 2026 MFJ All-Japan Rd.1 Motegi 2&4 JSB1000 Final] 1st: #3 Ryo Mizuno (SDG DUCATI Team KAGAYAMA), 2nd: #30 Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI), 3rd: #36 Yuki Kunii (SDG Team HARC-PRO. Honda)."
+        "ja": "【2026 MFJ全日本ロードレース選手権 第1戦 もてぎ2&4レース】開幕戦JSB1000決勝！水野涼（DUCATI Team KAGAYAMA）が開幕ポール・トゥ・ウィン！ドゥカティ パニガーレV4 Rが歴史的開幕勝利！",
+        "ca": "【Campionat del Japó MFJ Rd.1 Motegi 2&4】Ryo Mizuno (DUCATI Team KAGAYAMA) aconsegueix una victòria històrica de principi a fi amb la Ducati Panigale V4 R a la cursa inaugural de JSB1000!",
+        "en": "[MFJ All-Japan Rd.1 Motegi 2&4] Ryo Mizuno (DUCATI Team KAGAYAMA) secures a historic lights-to-flag season opener victory aboard the Ducati Panigale V4 R in JSB1000!"
       },
       "editorialCommentary": {
-        "ja": "JRR公式X（@jrr_official）および公式YouTube『motoバトルLIVE』で公開された開幕戦もてぎの表彰台ショットとハイライト映像では、ドゥカティPanigale V4 Rを駆る水野涼選手の鋭い90度コーナー進入と、ダンロップ開発を牽引する長島哲太選手（CBR1000RR-R）、ハルク・プロの國井勇輝選手（CBR1000RR-R）が並んだメーカー＆タイヤ戦争の最前線が克明に捉えられています。",
-        "ca": "Les publicacions oficials de @jrr_official mostren el podi inaugural a Motegi, on la Panigale V4 R de Ryo Mizuno va superar les Honda CBR1000RR-R de Tetsuta Nagashima (amb pneumàtics Dunlop en desenvolupament) i del jove Yuki Kunii.",
-        "en": "Official @jrr_official paddock posts capture the opening-round podium at Motegi, highlighting the fierce tire and manufacturer battle between Ryo Mizuno's Ducati Panigale V4 R and the Honda CBR1000RR-R machines of Tetsuta Nagashima and Yuki Kunii."
+        "ja": "全日本ロードレース公式（@jrr_official）およびX上の「#全日本ロードレース」「#JSB1000」では、水野涼選手とドゥカティが魅せた圧巻の開幕戦オープニングラップの走りがファンの間で熱く議論されています。",
+        "ca": "El compte oficial @jrr_official i l'etiqueta #JSB1000 destaquen l'arrencada aclaparadora de Mizuno i el debut victoriós de Ducati al campionat japonès.",
+        "en": "Official dispatches from @jrr_official and community posts under #JSB1000 celebrate Ryo Mizuno and Ducati's commanding season-opening display."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Ducati Corse Official",
-      "handle": "@ducaticorse",
-      "url": "https://www.instagram.com/ducaticorse/",
-      "postUrl": "https://www.instagram.com/p/DfkoWibDXi9/",
+      "platform": "X",
+      "citationType": "official_channel",
+      "accountName": "モビリティリゾートもてぎ 公式",
+      "handle": "@motegi_official / #モビリティリゾートもてぎ",
+      "url": "https://x.com/motegi_official",
+      "postUrl": "https://x.com/hashtag/モビリティリゾートもてぎ",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権シリーズ 第1戦 もてぎ2&4レース JSB1000 決勝正式結果】優勝：#3 水野 涼（SDG DUCATI Team KAGAYAMA）、2位：#30 長島 哲太（DUNLOP Racing Team with YAHAGI）、3位：#36 國井 勇輝（SDG Team HARC-PRO. Honda）。",
-        "ca": "【Resultat Oficial JSB1000 Rd.1 Motegi 2&4】1r: #3 Ryo Mizuno (SDG DUCATI Team KAGAYAMA), 2n: #30 Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI), 3r: #36 Yuki Kunii (SDG Team HARC-PRO. Honda).",
-        "en": "[Official Result: 2026 MFJ All-Japan Rd.1 Motegi 2&4 JSB1000 Final] 1st: #3 Ryo Mizuno (SDG DUCATI Team KAGAYAMA), 2nd: #30 Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI), 3rd: #36 Yuki Kunii (SDG Team HARC-PRO. Honda)."
+        "ja": "モビリティリゾートもてぎ公式：2&4レース決勝日は春晴れ！国内最高峰2輪JSB1000と4輪全日本スーパーフォーミュラが同日開催。熱気あふれるパドック風景をお届けします！",
+        "ca": "Mobility Resort Motegi Oficial: Dia radiant per al 2&4 amb les categories màximes de 2 i 4 rodes (JSB1000 i Super Formula) compartint el circuit!",
+        "en": "Mobility Resort Motegi Official: Beautiful spring weather for the 2&4 weekend, uniting Japan's pinnacle two- and four-wheel racing (JSB1000 & Super Formula)!"
       },
       "editorialCommentary": {
-        "ja": "JRR公式X（@jrr_official）および公式YouTube『motoバトルLIVE』で公開された開幕戦もてぎの表彰台ショットとハイライト映像では、ドゥカティPanigale V4 Rを駆る水野涼選手の鋭い90度コーナー進入と、ダンロップ開発を牽引する長島哲太選手（CBR1000RR-R）、ハルク・プロの國井勇輝選手（CBR1000RR-R）が並んだメーカー＆タイヤ戦争の最前線が克明に捉えられています。",
-        "ca": "Les publicacions oficials de @jrr_official mostren el podi inaugural a Motegi, on la Panigale V4 R de Ryo Mizuno va superar les Honda CBR1000RR-R de Tetsuta Nagashima (amb pneumàtics Dunlop en desenvolupament) i del jove Yuki Kunii.",
-        "en": "Official @jrr_official paddock posts capture the opening-round podium at Motegi, highlighting the fierce tire and manufacturer battle between Ryo Mizuno's Ducati Panigale V4 R and the Honda CBR1000RR-R machines of Tetsuta Nagashima and Yuki Kunii."
+        "ja": "モビリティリゾートもてぎ公式X（@motegi_official）が速報する2&4ならではの華やかなパドックの様子。ロードコースのテクニカルなダウンヒルストレートでの最高速バトルが注目を集めました。",
+        "ca": "Les publicacions oficials de Motegi reflecteixen l'ambient vibrant del pàdoc que uneix el motociclisme i l'automobilisme d'elit.",
+        "en": "Trackside updates from @motegi_official capture the electric joint paddock atmosphere of the Motegi 2&4 classic."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "motoバトルLIVE 公式チャンネル",
+      "handle": "motoバトルLIVE",
+      "url": "https://www.youtube.com/@motobattlelive",
+      "postUrl": "https://www.youtube.com/watch?v=oeXqKAoCcPw",
+      "quotedPostText": {
+        "ja": "motoバトルLIVE：全日本ロードレース選手権 第1戦 もてぎ2&4レース 予選・決勝ライブ配信アーカイブを公開中！JSB1000オープニングバトルの全ラップを高画質映像でプレイバック！",
+        "ca": "motoバトルLIVE: Retransmissió completa i millors moments de la ronda 1 de JSB1000 a Motegi disponibles al canal oficial!",
+        "en": "motoバトルLIVE: Full race replay and highlights from the All-Japan JSB1000 season opener at Motegi now streaming on the official channel!"
+      },
+      "editorialCommentary": {
+        "ja": "MFJ全日本ロードレースの全セッションを高画質ライブ配信する『motoバトルLIVE』。もてぎの90度コーナーでのブレーキング攻防やオンボードカメラ映像が読者にも大好評です。",
+        "ca": "El canal oficial de retransmissions motoバトルLIVE permet analitzar cada revolt i les càmeres onboard de la cursa de Motegi.",
+        "en": "The official broadcast channel motoバトルLIVE provides superb HD race replays and onboard angles through Motegi's critical 90-degree corner."
       }
     }
   ],

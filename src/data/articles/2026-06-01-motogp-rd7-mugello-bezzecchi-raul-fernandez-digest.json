@@ -7,7 +7,7 @@
   "circuit": "Autodromo Internazionale del Mugello（イタリア・トスカーナ・全長5,245m）",
   "region": "World (Mugello, Italy)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd7-italian-gp-mugello-bezzecchi-martin-bagnaia-digest.webp",
   "tags": [
     "MotoGP",
     "イタリアGP",
@@ -20,36 +20,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #ItalianGP Hub",
+      "handle": "@MotoGP / #ItalianGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2120177303896334684",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第7戦 イタリアGP（ムジェロ）公式結果】土曜スプリントはラウル・フェルナンデス（Trackhouse Racing）が優勝！日曜決勝グランプリは母国イタリアのマルコ・ベッツェッキ（Aprilia Racing）が優勝！2位にホルヘ・マルティン（Aprilia Racing）、3位にフランチェスコ・バニャイア（Ducati Lenovo Team）！",
-        "ca": "【Resultats Oficials GP d'Itàlia 2026 a Mugello】Dissabte: Victòria de Raúl Fernández a l'Sprint! Diumenge: Triomf a casa de Marco Bezzecchi (Aprilia Racing) seguit del seu company Jorge Martín (2n) i de Pecco Bagnaia (3r, Ducati Lenovo)!",
-        "en": "[Official Results: 2026 MotoGP Italian GP at Mugello] Raúl Fernández wins Saturday's Sprint! Home hero Marco Bezzecchi (Aprilia Racing) wins Sunday's Grand Prix ahead of teammate Jorge Martín (2nd) and Francesco Bagnaia (3rd)!"
+        "ja": "【2026 MotoGP 第7戦 イタリアGP（ムジェロ）公式結果】マルコ・ベッツェッキ（Aprilia Racing）が母国ムジェロで劇的勝利！トスカーナの丘をアプリリアの咆哮が揺らす！2位マルティン、3位バニャイア！",
+        "ca": "【GP d'Itàlia 2026 a Mugello】Victòria èpica de Marco Bezzecchi (Aprilia Racing) a casa seva davant d'una marea de «tifosi» a la Toscana!",
+        "en": "[2026 MotoGP Italian GP at Mugello] Marco Bezzecchi (Aprilia Racing) storms to an emotional home triumph amidst ecstatic Italian fans in Tuscany!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式X（@MotoGP）が投稿したムジェロのオンボード＆表彰台映像では、時速360km/h超に達する1,141mのメインストレートからサン・ドナート（Turn 1）へのブレーキング競争と、土曜スプリントを制したラウル・フェルナンデス選手、そして日曜決勝で母国ファンを熱狂させたマルコ・ベッツェッキ選手＆ホルヘ・マルティン選手のアプリリアワークス1-2フィニッシュが鮮やかに記録されています。",
-        "ca": "Els vídeos oficials de @MotoGP a Mugello mostren la velocitat punta a la recta d'1,141 km i l'exhibició de Marco Bezzecchi per donar a Aprilia un històric doblet (1r i 2n amb Jorge Martín) a la seva cursa de casa a Itàlia.",
-        "en": "@MotoGP's official Mugello clips capture the 360+ km/h slipstream battles into San Donato (Turn 1) as Marco Bezzecchi and Jorge Martín delivered a historic 1–2 finish for Aprilia on Italian soil."
+        "ja": "MotoGP公式（@MotoGP）および「#ItalianGP」では、ムジェロの超ロングストレート（1,141m）を時速360km超で駆け抜けるアプリリアRS-GPの最高速バトルが熱く共有されています。",
+        "ca": "El compte oficial @MotoGP destaca la velocitat punta de més de 360 km/h d'Aprilia a la recta de Mugello.",
+        "en": "Official posts from @MotoGP and #ItalianGP celebrate Bezzecchi's sensational top speed runs exceeding 360 km/h."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Aprilia Official",
-      "handle": "@aprilia",
-      "url": "https://www.instagram.com/aprilia/",
-      "postUrl": "https://www.instagram.com/p/DfjvuSHDtF-/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第7戦 イタリアGP（ムジェロ）公式結果】土曜スプリントはラウル・フェルナンデス（Trackhouse Racing）が優勝！日曜決勝グランプリは母国イタリアのマルコ・ベッツェッキ（Aprilia Racing）が優勝！2位にホルヘ・マルティン（Aprilia Racing）、3位にフランチェスコ・バニャイア（Ducati Lenovo Team）！",
-        "ca": "【Resultats Oficials GP d'Itàlia 2026 a Mugello】Dissabte: Victòria de Raúl Fernández a l'Sprint! Diumenge: Triomf a casa de Marco Bezzecchi (Aprilia Racing) seguit del seu company Jorge Martín (2n) i de Pecco Bagnaia (3r, Ducati Lenovo)!",
-        "en": "[Official Results: 2026 MotoGP Italian GP at Mugello] Raúl Fernández wins Saturday's Sprint! Home hero Marco Bezzecchi (Aprilia Racing) wins Sunday's Grand Prix ahead of teammate Jorge Martín (2nd) and Francesco Bagnaia (3rd)!"
+        "ja": "MotoGP Official：ムジェロ決勝ハイライト＆アラビアータ1・2（Arrabbiata 1 & 2）の超高速フルバンク映像を公開！",
+        "ca": "Canal Oficial MotoGP: Resum de Mugello i càmeres lentes espectaculars a les mítiques Arrabbiata 1 i 2!",
+        "en": "MotoGP Official Channel: Mugello race highlights and super slow-motion masterclasses through Arrabbiata 1 and 2!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式X（@MotoGP）が投稿したムジェロのオンボード＆表彰台映像では、時速360km/h超に達する1,141mのメインストレートからサン・ドナート（Turn 1）へのブレーキング競争と、土曜スプリントを制したラウル・フェルナンデス選手、そして日曜決勝で母国ファンを熱狂させたマルコ・ベッツェッキ選手＆ホルヘ・マルティン選手のアプリリアワークス1-2フィニッシュが鮮やかに記録されています。",
-        "ca": "Els vídeos oficials de @MotoGP a Mugello mostren la velocitat punta a la recta d'1,141 km i l'exhibició de Marco Bezzecchi per donar a Aprilia un històric doblet (1r i 2n amb Jorge Martín) a la seva cursa de casa a Itàlia.",
-        "en": "@MotoGP's official Mugello clips capture the 360+ km/h slipstream battles into San Donato (Turn 1) as Marco Bezzecchi and Jorge Martín delivered a historic 1–2 finish for Aprilia on Italian soil."
+        "ja": "公式ハイライトでは、トスカーナのブラインドクレスト「サン・ドナート」でのハードブレーキングとベッツェッキ選手の鮮やかな切り返しが堪能できます。",
+        "ca": "El resum en vídeo mostra el punt de frenada extrem a San Donato i el suport del públic italià a Aprilia.",
+        "en": "Video replays emphasize the jaw-dropping crest jump and braking zone into San Donato."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第7戦イタリアGP（ムジェロ）決勝正式順位およびトップスピード記録表。",
+        "ca": "Resultats oficials Mugello: classificació completa i registre de velocitats màximes de la cursa.",
+        "en": "MotoGP.com Official Classification: Race results and top speed traps for the Italian Grand Prix at Mugello."
+      },
+      "editorialCommentary": {
+        "ja": "公式リザルトの速度トラップデータでは、アプリリアとドゥカティがトップスピードで互角の数値を叩き出したことが実証されています。",
+        "ca": "Les dades oficials de motogp.com confirmen la paritat màxima de velocitat punta entre Ducati i Aprilia a la recta toscana.",
+        "en": "Official speed trap metrics verify Aprilia matching Ducati punch-for-punch down the longest straight on the calendar."
       }
     }
   ],

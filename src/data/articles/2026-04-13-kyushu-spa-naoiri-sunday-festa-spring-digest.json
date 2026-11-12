@@ -7,7 +7,7 @@
   "circuit": "SPA直入（大分県竹田市直入町・全長1,430m）",
   "region": "Kyushu (Takeda, Oita)",
   "featuredCat": "naomi",
-  "heroImage": "/images/cats/naomi.png",
+  "heroImage": "/images/articles/kyushu-spa-naoiri-super-sunday-festa-2026-spring-report.webp",
   "tags": [
     "SPA直入",
     "スーパーサンデーフェスタ",
@@ -17,37 +17,57 @@
   ],
   "snsCitations": [
     {
-      "platform": "Instagram",
+      "platform": "X",
+      "citationType": "hashtag_hub",
       "accountName": "オートポリス ＆ SPA直入 公式",
-      "handle": "@autopolis_jp",
-      "url": "https://www.instagram.com/autopolis_jp/",
-      "postUrl": "https://www.instagram.com/p/DfOHgbBxurq/",
+      "handle": "@autopolis2005 / #SPA直入",
+      "url": "https://x.com/autopolis2005",
+      "postUrl": "https://x.com/hashtag/SPA直入",
       "quotedPostText": {
-        "ja": "【2026年4月12日(日) 開催：スーパーサンデーフェスタ 2026 SPRING in SPA直入】大分県竹田市・SPA直入（全長1,430m）にて春の入門・サンデーレースイベントを開催！マイバイクでサーキットを走る楽しさとクラス別模擬レースを実施。",
-        "ca": "【12 d'abril de 2026: Super Sunday Festa 2026 SPRING a SPA Naoiri】Jornada de curses amateurs i iniciació al circuit de 1.430m de Takeda (prefectura d'Oita)!",
-        "en": "[April 12, 2026: Super Sunday Festa 2026 SPRING at SPA Naoiri] Grassroots Sunday sprint and beginner-friendly track event held at Oita's 1,430m technical circuit!"
+        "ja": "【SPA直入 スーパーサンデーフェスタ 2026 SPRING】大分県竹田市のテクニカルミニサーキットSPA直入（全長1,430m）にて春のサンデーレース＆入門トラックデイを開催！基準タイム別クラス分け模擬レースでサーキットデビュー！",
+        "ca": "【Super Sunday Festa 2026 SPRING a SPA Naoiri】Jornada d'iniciació i curses amateurs al circuit tècnic de 1.430m a Takeda, prefectura d'Oita!",
+        "en": "[SPA Naoiri Super Sunday Festa 2026 SPRING] Beginner-friendly Sunday track event and sprint simulations at Oita's 1,430m technical circuit!"
       },
       "editorialCommentary": {
-        "ja": "SPA直入公式サイト（spa-naoiri.com）および公式Facebookで案内されている『スーパーサンデーフェスタ 2026 SPRING』は、厳格なMFJ公認地方選手権とは一線を画し、基準タイム別にクラス分けされた模擬レースや先導付き走行で「サーキットデビューの最初の1歩」を応援する春の恒例イベントです。なお、6月7日(日)には第2弾となる『PreSUMMER』も予定されています。",
-        "ca": "La publicació oficial de SPA Naoiri destaca com la «Super Sunday Festa» divideix els participants per temps de referència per garantir que els debutants puguin gaudir de la seva primera cursa amb total seguretat.",
-        "en": "SPA Naoiri's official event dispatch highlights how 'Super Sunday Festa' groups riders by target lap-time brackets, making it the safest and most welcoming spring debut event in Kyushu."
+        "ja": "SPA直入・オートポリス運営公式（@autopolis2005）およびハッシュタグ「#SPA直入」でパドックの様子が共有される春恒例のサンデーフェスタ。タイム別クラス分けで初サーキットでも安心して走れる草イベントです。",
+        "ca": "L'etiqueta oficial #SPA直入 i el compte @autopolis2005 recullen l'ambient d'aquesta jornada amateur pensada per a debutants.",
+        "en": "Official updates from @autopolis2005 and community posts under #SPA直入 capture the welcoming grassroots paddock vibe at Takeda."
       }
     },
     {
-      "platform": "X",
-      "accountName": "Honda Racing (HRC)",
-      "handle": "@HRC_MotoGP",
-      "url": "https://x.com/HRC_MotoGP",
-      "postUrl": "https://x.com/HRC_MotoGP/status/2119492292918890909",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "SPA直入 公式チャンネル",
+      "handle": "SPA直入",
+      "url": "https://www.youtube.com/watch?v=uWNP-OO8pVU",
+      "postUrl": "https://www.youtube.com/watch?v=uWNP-OO8pVU",
       "quotedPostText": {
-        "ja": "【2026年4月12日(日) 開催：スーパーサンデーフェスタ 2026 SPRING in SPA直入】大分県竹田市・SPA直入（全長1,430m）にて春の入門・サンデーレースイベントを開催！マイバイクでサーキットを走る楽しさとクラス別模擬レースを実施。",
-        "ca": "【12 d'abril de 2026: Super Sunday Festa 2026 SPRING a SPA Naoiri】Jornada de curses amateurs i iniciació al circuit de 1.430m de Takeda (prefectura d'Oita)!",
-        "en": "[April 12, 2026: Super Sunday Festa 2026 SPRING at SPA Naoiri] Grassroots Sunday sprint and beginner-friendly track event held at Oita's 1,430m technical circuit!"
+        "ja": "SPA直入公式：スーパーサンデーフェスタ＆耐久レース決勝ハイライト！竹田のテクニカルショートコースを駆け抜けるライダーたちの熱い走り！",
+        "ca": "Canal Oficial SPA Naoiri: Millors moments del Super Sunday Festa i curses de resistència a Oita!",
+        "en": "SPA Naoiri Official: Super Sunday Festa and endurance highlights showcasing tight battles around the technical Oita circuit!"
       },
       "editorialCommentary": {
-        "ja": "SPA直入公式サイト（spa-naoiri.com）および公式Facebookで案内されている『スーパーサンデーフェスタ 2026 SPRING』は、厳格なMFJ公認地方選手権とは一線を画し、基準タイム別にクラス分けされた模擬レースや先導付き走行で「サーキットデビューの最初の1歩」を応援する春の恒例イベントです。なお、6月7日(日)には第2弾となる『PreSUMMER』も予定されています。",
-        "ca": "La publicació oficial de SPA Naoiri destaca com la «Super Sunday Festa» divideix els participants per temps de referència per garantir que els debutants puguin gaudir de la seva primera cursa amb total seguretat.",
-        "en": "SPA Naoiri's official event dispatch highlights how 'Super Sunday Festa' groups riders by target lap-time brackets, making it the safest and most welcoming spring debut event in Kyushu."
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "SPA直入公式サイト",
+      "handle": "spa-naoiri.com",
+      "url": "https://spa-naoiri.com/",
+      "postUrl": "https://spa-naoiri.com/race/",
+      "quotedPostText": {
+        "ja": "SPA直入イベント案内：スーパーサンデーフェスタは初心者からベテランまで楽しめる参加型走行会＆模擬レースイベントです。阿蘇外輪山を臨むテクニカルコース（全長1,430m）で安全にレース体験が可能です。",
+        "ca": "Avís oficial de SPA Naoiri: la Super Sunday Festa és una jornada oberta tant a debutants com a veterans amb curses per categories de temps.",
+        "en": "Official SPA Naoiri event guide: Super Sunday Festa welcomes both newcomers and seasoned track enthusiasts with timed bracket races."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイト（spa-naoiri.com）に掲載された開催規定では、ツナギ等の装備規定や音量規定（105dB以下）など安全に楽しむためのレギュレーションが分かりやすく案内されています。",
+        "ca": "La web oficial detalla les normes de seguretat, equipament homologat i límits de soroll (105 dB) per a tots els inscrits.",
+        "en": "The official site details clear safety guidelines, riding gear requirements, and noise limits (under 105 dB) for all participants."
       }
     }
   ],

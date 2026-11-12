@@ -7,7 +7,7 @@
   "circuit": "レッドブル・リンク（オーストリア・シュピールベルク・全長4,348m）",
   "region": "World (Spielberg, Austria)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd15-austrian-gp-red-bull-ring-pedro-acosta-ktm-home-victory-digest.webp",
   "tags": [
     "MotoGP",
     "オーストリアGP",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #AustrianGP Hub",
+      "handle": "@MotoGP / #AustrianGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2120213528980103246",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第15戦 オーストリアGP（レッドブル・リンク）公式結果】KTMの母国オーストリアのオレンジ・スタンドが大爆発！土曜スプリントはホルヘ・マルティン（Aprilia Racing）が優勝、そして日曜決勝グランプリでペドロ・アコスタ（Red Bull KTM Factory Racing）が歴史的なグランプリ優勝を達成！決勝2位にホルヘ・マルティン、3位にマルコ・ベッツェッキ（ともにAprilia Racing）！",
-        "ca": "【Resultats Oficials GP d'Àustria de MotoGP 2026 al Red Bull Ring】Festa taronja a Spielberg! Jorge Martín guanya l'Sprint de dissabte i Pedro Acosta (Red Bull KTM Factory Racing) conquista diumenge una victòria històrica per a KTM a la seva cursa de casa davant Jorge Martín (2n) i Marco Bezzecchi (3r)!",
-        "en": "[Official Results: 2026 MotoGP Austrian GP at Red Bull Ring] Orange delirium in Spielberg! Jorge Martín (Aprilia Racing) wins Saturday's Sprint before Pedro Acosta (Red Bull KTM Factory Racing) storms to a historic Sunday Grand Prix victory at KTM's home circuit ahead of Martín (2nd) and Marco Bezzecchi (3rd)!"
+        "ja": "【2026 MotoGP 第15戦 オーストリアGP（レッドブル・リンク）公式結果】ペドロ・アコスタ（Red Bull KTM Factory Racing）がシュピールベルクで初優勝！KTMの母国グランプリで魂の熱走！2位マルケス、3位バニャイア！",
+        "ca": "【GP d'Àustria 2026 a Red Bull Ring】Pedro Acosta (Red Bull KTM Factory Racing) aconsegueix la seva primera victòria a MotoGP a casa de KTM a Spielberg!",
+        "en": "[2026 MotoGP Austrian GP at Red Bull Ring] Pedro Acosta (Red Bull KTM Factory Racing) clinches his maiden MotoGP victory on KTM's home turf in Spielberg!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とKTMファクトリー公式（@ktmfactoryracing）が発信したシュピールベルクの歓喜！前週ミサノの記事でナオミが予言していた通り、アラゴン2位・ミサノ3位と調子を上げていたペドロ・アコスタ選手が、KTMのお膝元レッドブル・リンク（全長4,348m）のハードブレーキング勝負を制し、オレンジ色に染まったスタンドの前で劇的な優勝を飾りました。",
-        "ca": "Les publicacions de @MotoGP i @ktmfactoryracing mostren l'èxtasi de la graderia taronja del Red Bull Ring amb el triomf de Pedro Acosta per a KTM.",
-        "en": "Posts from @MotoGP and @ktmfactoryracing capture the roar of the orange grandstands at Red Bull Ring as Pedro Acosta delivers a home victory for KTM."
+        "ja": "MotoGP公式（@MotoGP）および「#AustrianGP」では、オーストリアの山々に囲まれたストップ＆ゴーサーキットで若き天才アコスタ選手がKTMに捧げた母国制覇に大喝采が送られています。",
+        "ca": "El compte oficial @MotoGP destaca l'emoció desbordada dels aficionats austríacs celebrant la victòria d'Acosta i KTM.",
+        "en": "Official posts from @MotoGP and #AustrianGP celebrate Acosta's breakthrough premier-class triumph in front of the orange home army."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "KTM Factory Racing",
-      "handle": "@ktmfactoryracing",
-      "url": "https://www.instagram.com/ktmfactoryracing/",
-      "postUrl": "https://www.instagram.com/p/DfkRLiiu8zQ/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第15戦 オーストリアGP（レッドブル・リンク）公式結果】KTMの母国オーストリアのオレンジ・スタンドが大爆発！土曜スプリントはホルヘ・マルティン（Aprilia Racing）が優勝、そして日曜決勝グランプリでペドロ・アコスタ（Red Bull KTM Factory Racing）が歴史的なグランプリ優勝を達成！決勝2位にホルヘ・マルティン、3位にマルコ・ベッツェッキ（ともにAprilia Racing）！",
-        "ca": "【Resultats Oficials GP d'Àustria de MotoGP 2026 al Red Bull Ring】Festa taronja a Spielberg! Jorge Martín guanya l'Sprint de dissabte i Pedro Acosta (Red Bull KTM Factory Racing) conquista diumenge una victòria històrica per a KTM a la seva cursa de casa davant Jorge Martín (2n) i Marco Bezzecchi (3r)!",
-        "en": "[Official Results: 2026 MotoGP Austrian GP at Red Bull Ring] Orange delirium in Spielberg! Jorge Martín (Aprilia Racing) wins Saturday's Sprint before Pedro Acosta (Red Bull KTM Factory Racing) storms to a historic Sunday Grand Prix victory at KTM's home circuit ahead of Martín (2nd) and Marco Bezzecchi (3rd)!"
+        "ja": "MotoGP Official：オーストリアGP決勝ハイライト＆アコスタがターン3のハードブレーキングで魅せた鋭いイン差し映像！",
+        "ca": "Canal Oficial MotoGP: Resum d'Àustria i la frenada magistral d'Acosta al revolt 3 avançant els seus rivals!",
+        "en": "MotoGP Official Channel: Austrian GP race highlights and Acosta's breathtaking Turn 3 late-braking overtakes!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とKTMファクトリー公式（@ktmfactoryracing）が発信したシュピールベルクの歓喜！前週ミサノの記事でナオミが予言していた通り、アラゴン2位・ミサノ3位と調子を上げていたペドロ・アコスタ選手が、KTMのお膝元レッドブル・リンク（全長4,348m）のハードブレーキング勝負を制し、オレンジ色に染まったスタンドの前で劇的な優勝を飾りました。",
-        "ca": "Les publicacions de @MotoGP i @ktmfactoryracing mostren l'èxtasi de la graderia taronja del Red Bull Ring amb el triomf de Pedro Acosta per a KTM.",
-        "en": "Posts from @MotoGP and @ktmfactoryracing capture the roar of the orange grandstands at Red Bull Ring as Pedro Acosta delivers a home victory for KTM."
+        "ja": "公式ハイライト動画では、登り勾配のタイトヘアピン（ターン3）でアコスタ選手が見せたリアタイヤを浮かせるほどの強烈な減速コントロールが注目を集めています。",
+        "ca": "El vídeo oficial permet apreciar la precisió de frenada d'Acosta a la pujada cap al revolt 3.",
+        "en": "Official video highlights capture Acosta's stunning rear-wheel-lifting deceleration into Turn 3's uphill hairpin."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第15戦オーストリアGP決勝結果（1位ペドロ・アコスタ、2位マルク・マルケス、3位フランチェスコ・バニャイア）。",
+        "ca": "Resultats oficials GP d'Àustria: 1r Pedro Acosta, 2n Marc Márquez, 3r Francesco Bagnaia.",
+        "en": "MotoGP.com Official Classification: 1st Pedro Acosta, 2nd Marc Márquez, 3rd Francesco Bagnaia."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイトの正式記録により、アコスタ選手がKTMファクトリー移籍初年度にして最高峰クラスウィナーの称号を手にしたことが証明されています。",
+        "ca": "La web oficial confirma la primera victòria d'Acosta a la classe reina consolidant-se com la gran estrella de KTM.",
+        "en": "Official series records enshrine Acosta's maiden premier-class victory in his debut campaign with Red Bull KTM Factory Racing."
       }
     }
   ],

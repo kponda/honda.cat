@@ -127,6 +127,53 @@ import { UI_TEXT } from '../data/i18n';
           </div>
         </section>
       </div>
+
+      <!-- 4. Site Operator & Company Info -->
+      <section class="policy-card operator-card">
+        <div class="policy-body">
+          <span class="badge" style="background: rgba(230, 57, 70, 0.16); color: #ff758f;">
+            SITE OPERATOR & ORGANIZATION
+          </span>
+          <h2>
+            <span data-i18n="ja">🏢 運営会社について（本田電脳相談合同会社 / HONDA DENNO）</span>
+            <span data-i18n="ca">🏢 Organització i Operador (HONDA DENNO LLC / 本田電脳相談合同会社)</span>
+            <span data-i18n="en">🏢 Site Operator & Organization (HONDA DENNO LLC)</span>
+          </h2>
+          <p>
+            <span data-i18n="ja">
+              当サイト（honda.cat）は、<strong>本田電脳相談合同会社 (HONDA DENNO)</strong> が企画・開発・運営を行っています。二輪モータースポーツの魅力と技術カルチャーの発信を通じて、二輪ファンと国内外のサーキットコミュニティの発展を応援しています。
+            </span>
+            <span data-i18n="ca">
+              El lloc web honda.cat està desenvolupat i gestionat per <strong>HONDA DENNO LLC (本田電脳相談合同会社)</strong>. Donem suport al desenvolupament de la comunitat del motociclisme i la passió pel motor entre Catalunya i el Japó.
+            </span>
+            <span data-i18n="en">
+              honda.cat is planned, developed, and operated by <strong>HONDA DENNO LLC (本田電脳相談合同会社)</strong>. We actively support the two-wheel racing community and motorsport culture.
+            </span>
+          </p>
+          <div class="operator-profile-box">
+            <a
+              href="https://honda.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="operator-site-link"
+            >
+              <img
+                src="/images/honda-denno-logo.png"
+                alt="HONDA DENNO logo"
+                class="operator-site-logo"
+                width="24"
+                height="21"
+                loading="lazy"
+              />
+              <span class="operator-site-name">
+                <span data-i18n="ja">本田電脳相談合同会社 公式サイト (honda.dev) ↗</span>
+                <span data-i18n="ca">Lloc web oficial de HONDA DENNO (honda.dev) ↗</span>
+                <span data-i18n="en">HONDA DENNO LLC Official Website (honda.dev) ↗</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 
@@ -216,5 +263,41 @@ import { UI_TEXT } from '../data/i18n';
     flex-wrap: wrap;
     gap: 0.75rem;
     margin-top: 0.4rem;
+  }
+
+  .operator-card {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .operator-profile-box {
+    margin-top: 0.5rem;
+  }
+
+  .operator-site-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.55rem 1.15rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-primary);
+    font-size: 0.88rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+  }
+
+  .operator-site-link:hover {
+    background: rgba(255, 183, 3, 0.12);
+    border-color: rgba(255, 183, 3, 0.4);
+    color: var(--accent-gold);
+    transform: translateY(-1px);
+  }
+
+  .operator-site-logo {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
   }
 </style>

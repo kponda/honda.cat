@@ -7,7 +7,7 @@
   "circuit": "SPA直入（大分県竹田市・全長1,430m）／ 筑波サーキット（茨城県下妻市・全長2,045m）",
   "region": "Kyushu (Takeda, Oita) & Kanto (Shimotsuma, Ibaraki)",
   "featuredCat": "naomi",
-  "heroImage": "/images/cats/naomi.png",
+  "heroImage": "/images/articles/japan-2026-november-spa-naoiri-kyushu-endurance-5h-and-taste-of-tsukuba-kaguraduki-digest.webp",
   "tags": [
     "SPA直入",
     "九州エンデュランスフェスタ",
@@ -20,36 +20,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "筑波サーキット公式",
-      "handle": "@tsukuba_circuit",
-      "url": "https://x.com/tsukuba_circuit",
-      "postUrl": "https://x.com/tsukuba_circuit/status/2120322156940984759",
+      "citationType": "hashtag_hub",
+      "accountName": "オートポリス ＆ SPA直入 公式",
+      "handle": "@autopolis2005 / #SPA直入",
+      "url": "https://x.com/autopolis2005",
+      "postUrl": "https://x.com/hashtag/SPA直入",
       "quotedPostText": {
-        "ja": "【2026年11月7日(土)〜8日(日) 国内・九州レース結果】大分・SPA直入では11月8日(日)に秋の恒例250cc以下耐久『2026 九州エンデュランスフェスタ（GO!GO! 5耐）』が開催！そして茨城・筑波サーキットでは『2026 テイスト・オブ・ツクバ KAGURADUKI STAGE』が開催され、最高峰HERCULESクラス決勝で加賀山就臣（Team KAGAYAMA / KATANA 1000R）が優勝！混走のSUPER MONSTER Evo.クラスは坂本弘正（北海道ブラビッシモ / XJR1200）が優勝！",
-        "ca": "【7-8 de novembre de 2026: «Kyushu Endurance Festa GO!GO! 5 Hores» a SPA Naoiri i «Taste of Tsukuba KAGURADUKI STAGE»】A Oita es disputen les 5 Hores de resistència fins a 250cc a SPA Naoiri, mentre que a Tsukuba Yukio Kagayama (Team KAGAYAMA / KATANA 1000R) guanya la final reina HERCULES!",
-        "en": "[November 7–8, 2026: '2026 Kyushu Endurance Festa GO!GO! 5-Hour' at SPA Naoiri & 'Taste of Tsukuba KAGURADUKI STAGE'] Under-250cc teams tackle 5 hours of endurance at SPA Naoiri in Oita, while Yukio Kagayama (Team KAGAYAMA / KATANA 1000R) wins the flagship HERCULES final at Tsukuba!"
+        "ja": "【SPA直入 2026 九州エンデュランスフェスタ『Go!Go! 5時間耐久』】秋の大分・SPA直入（全長1,430m）で開催された5時間耐久レース！初心者からベテランまで仲間とタスキをつないだ感動のチェッカー！",
+        "ca": "【5 Hores de Resistència a SPA Naoiri】Gran festa del motociclisme a Takeda amb equips amateurs completant 5 hores d'estratègia i passió!",
+        "en": "[SPA Naoiri 'Go!Go! 5-Hour Endurance Festa'] Grassroots endurance passion at Oita's 1,430m technical circuit! Teamwork and camaraderie right to the chequered flag!"
       },
       "editorialCommentary": {
-        "ja": "先週末（11月7日〜8日）の国内二輪シーンは、大分県竹田市のSPA直入で開催された250cc以下5時間耐久『2026 九州エンデュランスフェスタ（GO!GO! 5耐）』と、茨城県・筑波サーキットで開催された『2026 テイスト・オブ・ツクバ KAGURADUKI STAGE』が同時開催！全日本JSB1000で水野涼選手と共に監督として歴史的タイトルを獲得したばかりの加賀山就臣選手が、自らステアリングを握るKATANA 1000Rでテイスト・オブ・ツクバ最高峰HERCULESクラスを制しました。",
-        "ca": "Les publicacions de @tsukuba_circuit i @autopolis_jp recullen les 5 Hores de SPA Naoiri i la victòria de Yukio Kagayama amb la KATANA 1000R a Tsukuba.",
-        "en": "Official posts from @tsukuba_circuit and @autopolis_jp highlight SPA Naoiri's 5-Hour Endurance Festa alongside Yukio Kagayama's HERCULES triumph aboard the KATANA 1000R at Tsukuba."
+        "ja": "SPA直入公式（@autopolis2005）およびハッシュタグ「#SPA直入」では、晩秋の阿蘇外輪山を背景に繰り広げられた給油ピットインとチームの歓喜が共有されています。",
+        "ca": "L'etiqueta #SPA直入 recull les fotografies dels relleus a box i l'ambient càlid entre tots els equips participants.",
+        "en": "Posts under #SPA直入 capture the family-like pit-lane atmosphere and triumphant celebrations completing 5 demanding hours."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "AUTOPOLIS / SPA Naoiri",
-      "handle": "@autopolis_jp",
-      "url": "https://www.instagram.com/autopolis_jp/",
-      "postUrl": "https://www.instagram.com/p/De1MY0ABszb/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "SPA直入 公式チャンネル",
+      "handle": "SPA直入",
+      "url": "https://www.youtube.com/watch?v=uWNP-OO8pVU",
+      "postUrl": "https://www.youtube.com/watch?v=uWNP-OO8pVU",
       "quotedPostText": {
-        "ja": "【2026年11月7日(土)〜8日(日) 国内・九州レース結果】大分・SPA直入では11月8日(日)に秋の恒例250cc以下耐久『2026 九州エンデュランスフェスタ（GO!GO! 5耐）』が開催！そして茨城・筑波サーキットでは『2026 テイスト・オブ・ツクバ KAGURADUKI STAGE』が開催され、最高峰HERCULESクラス決勝で加賀山就臣（Team KAGAYAMA / KATANA 1000R）が優勝！混走のSUPER MONSTER Evo.クラスは坂本弘正（北海道ブラビッシモ / XJR1200）が優勝！",
-        "ca": "【7-8 de novembre de 2026: «Kyushu Endurance Festa GO!GO! 5 Hores» a SPA Naoiri i «Taste of Tsukuba KAGURADUKI STAGE»】A Oita es disputen les 5 Hores de resistència fins a 250cc a SPA Naoiri, mentre que a Tsukuba Yukio Kagayama (Team KAGAYAMA / KATANA 1000R) guanya la final reina HERCULES!",
-        "en": "[November 7–8, 2026: '2026 Kyushu Endurance Festa GO!GO! 5-Hour' at SPA Naoiri & 'Taste of Tsukuba KAGURADUKI STAGE'] Under-250cc teams tackle 5 hours of endurance at SPA Naoiri in Oita, while Yukio Kagayama (Team KAGAYAMA / KATANA 1000R) wins the flagship HERCULES final at Tsukuba!"
+        "ja": "SPA直入公式：九州耐久フェスタ 5時間耐久 決勝ハイライト！秋晴れのSPA直入で繰り広げられた感動のチェッカー！",
+        "ca": "Canal Oficial SPA Naoiri: Resum de les 5 Hores de Resistència de Kyushu tancant la temporada amb gran emoció!",
+        "en": "SPA Naoiri Official: Kyushu 5-Hour Endurance Festa season closer highlights under glorious autumn skies!"
       },
       "editorialCommentary": {
-        "ja": "先週末（11月7日〜8日）の国内二輪シーンは、大分県竹田市のSPA直入で開催された250cc以下5時間耐久『2026 九州エンデュランスフェスタ（GO!GO! 5耐）』と、茨城県・筑波サーキットで開催された『2026 テイスト・オブ・ツクバ KAGURADUKI STAGE』が同時開催！全日本JSB1000で水野涼選手と共に監督として歴史的タイトルを獲得したばかりの加賀山就臣選手が、自らステアリングを握るKATANA 1000Rでテイスト・オブ・ツクバ最高峰HERCULESクラスを制しました。",
-        "ca": "Les publicacions de @tsukuba_circuit i @autopolis_jp recullen les 5 Hores de SPA Naoiri i la victòria de Yukio Kagayama amb la KATANA 1000R a Tsukuba.",
-        "en": "Official posts from @tsukuba_circuit and @autopolis_jp highlight SPA Naoiri's 5-Hour Endurance Festa alongside Yukio Kagayama's HERCULES triumph aboard the KATANA 1000R at Tsukuba."
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "筑波サーキット ＆ テイスト・オブ・ツクバ公式",
+      "handle": "@tsukuba_circuit / #テイストオブツクバ",
+      "url": "https://x.com/tsukuba_circuit",
+      "postUrl": "https://x.com/hashtag/テイストオブツクバ",
+      "quotedPostText": {
+        "ja": "【テイスト・オブ・ツクバ KAGURADUKI STAGE】秋の鉄フレームの祭典・神楽月ステージ！ハーキュリーズやモンスタークラスの名車たちが筑波の空に轟音を響かせました！",
+        "ca": "【Taste of Tsukuba KAGURADUKI STAGE】La gran cita de tardor a Tsukuba amb les màquines clàssiques i preparades més brutals del Japó!",
+        "en": "[Taste of Tsukuba KAGURADUKI STAGE] Autumn celebration of tuned superbikes and steel-frame beasts packing the Tsukuba circuit!"
+      },
+      "editorialCommentary": {
+        "ja": "筑波公式X（@tsukuba_circuit）および「#TOT」タグでは、最終コーナーの脱出スピードを競い合う空冷大排気量マシンの勇姿が発信されています。",
+        "ca": "El compte oficial @tsukuba_circuit mostra les imatges més destacades dels monstres de 4 cilindres a la recta de Tsukuba.",
+        "en": "Official dispatches from @tsukuba_circuit celebrate the extraordinary power and craftsmanship of Hercules class machines."
       }
     }
   ],

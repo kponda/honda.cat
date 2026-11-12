@@ -1,0 +1,289 @@
+{
+  "id": "2026-10-07-circuit-maintenance-naomi-clinic-01-safety-wire-locking",
+  "slug": "circuit-maintenance-wire-locking-safety-wire-technique",
+  "publishedAt": "2026-10-07",
+  "category": "maintenance",
+  "articleType": "maintenance",
+  "circuit": "全サーキット共通 (MFJ技術規則・JIS規格準拠)",
+  "region": "Garage & Paddock Tech",
+  "featuredCat": "naomi",
+  "heroImage": "/images/articles/circuit-maintenance-wire-locking-safety-wire-technique.webp",
+  "tags": [
+    "メンテナンス",
+    "ナオミのサーキット整備塾",
+    "ワイヤリング",
+    "車検対策",
+    "安全整備"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "鈴鹿サーキット Suzuka Circuit",
+      "handle": "@suzuka_event",
+      "url": "https://x.com/suzuka_event",
+      "postUrl": "https://x.com/suzuka_event/status/2119354245585699238",
+      "quotedPostText": {
+        "ja": "MFJ国内競技規則（ロードレース技術仕様）：オイルドレンボルト、オイルフィラーキャップ、オイルフィルター等のオイル経路ボルト類は、緩み防止のためロックワイヤー（ワイヤリング）を確実に施すこと。",
+        "ca": "Reglament Tècnic Oficial MFJ de Velocitat: tots els cargols de buidatge d'oli, taps d'ompliment i filtres d'oli han d'estar degudament assegurats amb filferro de bloqueig (wire-locking) per superar la verificació tècnica.",
+        "en": "MFJ Domestic Road Racing Technical Regulations: All oil drain plugs, filler caps, and oil filter bolts must be positively secured with safety lock wire to pass pre-race technical inspection."
+      },
+      "editorialCommentary": {
+        "ja": "各サーキットの公式車検（Tech Inspection）で車検員が最も厳しくチェックするのが、ドレンボルトやフィラーキャップのワイヤリングが『締まる方向（時計回り）』にピンと張られているかです。緩む方向に引っ張られていると即再検査となります。",
+        "ca": "A les verificacions tècniques oficials de circuit, els comissaris comproven amb màxim rigor que el filferro d'assegurament tiri en sentit horari (d'estrènyer). Si estira en sentit d'afluixar, es rebutja a l'instant.",
+        "en": "At official pre-race scrutineering, technical inspectors rigorously check that safety wire pulls strictly in the clockwise tightening direction. Any reverse tension results in an immediate failure."
+      }
+    },
+    {
+      "platform": "Instagram",
+      "accountName": "オートポリス (AUTOPOLIS) 公式",
+      "handle": "@autopolis_jp",
+      "url": "https://www.instagram.com/autopolis_jp/",
+      "postUrl": "https://www.instagram.com/p/De1MY0ABszb/",
+      "quotedPostText": {
+        "ja": "オートポリス公式車検：コース上でのオイル漏れは後続車の多重クラッシュを引き起こします。ボルトの締まる方向にテンションがかかる正しいワイヤリングと、アンダーカウル（受皿）の確認を徹底してください。",
+        "ca": "Verificació tècnica d'Autopolis: qualsevol fuita d'oli a pista pot provocar caigudes múltiples greus. Assegureu-vos que el filferro exerceix tensió en sentit de collar i reviseu la safata inferior de la quilla.",
+        "en": "Autopolis Official Scrutineering: Oil on track leads to severe multi-bike pile-ups. Ensure lock wire pulls in the tightening direction and inspect belly-pan catch basins thoroughly."
+      },
+      "editorialCommentary": {
+        "ja": "国際レーシングコースでは1滴のオイル漏れが命取りになります。ワイヤリングは単なる規則遵守ではなく、自分とコース上の仲間全員の命を守るための絶対的な基礎作業です。",
+        "ca": "Als circuits internacionals, una sola gota d'oli pot ser mortal. El frenat amb filferro no és només burocràcia: és un pacte de seguretat entre tots els pilots de la graella.",
+        "en": "On high-speed international tracks, a single drop of leaked oil is catastrophic. Safety wiring is not mere bureaucracy—it is a sacred safety pact among all competitors."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-10-07",
+    "basis": {
+      "ja": "MFJ国内競技規則（ロードレース技術仕様・付則4 安全ワイヤリング規定）、FIM Road Racing Technical Regulations、およびJIS G 4309（ステンレス鋼線 SUS304 / SUS316）に基づき技術基準を検証済み。",
+      "ca": "Normativa tècnica verificada segons el Reglament Tècnic MFJ/FIM de Velocitat (Apèndix de Frenat amb Filferro) i la norma JIS G 4309 per a filferro d'acer inoxidable austenític SUS304/SUS316.",
+      "en": "Technical specifications verified against MFJ Road Racing Technical Regulations (Appendix on Safety Wiring), FIM Technical Rules, and JIS G 4309 stainless steel wire standards (SUS304 / SUS316)."
+    },
+    "sources": [
+      {
+        "title": "MFJ 国内競技規則書（ロードレース技術仕様・ワイヤリング規定）",
+        "url": "https://www.mfj.or.jp/rule/"
+      },
+      {
+        "title": "JIS G 4309 ステンレス鋼線規格 (SUS304 / SUS316)",
+        "url": "https://www.jisc.go.jp/"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-10-07",
+    "venue": {
+      "ja": "ナオミのガレージ整備塾（週1連載・サーキット走行メンテナンス編 #1）",
+      "ca": "Taller de Pàdoc de la Naomi (Sèrie Setmanal de Manteniment #1)",
+      "en": "Naomi's Paddock Garage Clinic (Weekly Track Maintenance Series #1)"
+    },
+    "weather": {
+      "ja": "適用範囲：スポーツ走行・草耐久・地方選手権 車検対応",
+      "ca": "Aplicació: Tandes lliures, resistència amateur i verificacions tècniques",
+      "en": "Scope: Track Days, Grassroots Endurance & Official Tech Inspection"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【ナオミのサーキット整備塾 #1】車検をパスする「安全ワイヤリング」の絶対力学！締まり方向テンション・SUS304線径・ピッグテール端末処理の極意",
+      "subtitle": "緩み促進ワイヤーは即失格！なぜ右ネジには時計回りテンションなのか？物理と工具の扱いで解くレース車検の超基本",
+      "summary": "黒猫メカニック・ナオミが贈る週1回サーキットメンテナンス講座がスタート！記念すべき第1回のテーマは、車検で最も厳しく審査される『安全ワイヤリング（ロックワイヤー）』の完全マスター。なぜ締まる方向にテンションを掛けるのか、SUS304ステンレス線の適正線径、ツイスターのピッチ管理、そして怪我を防ぐピッグテール処理まで徹底解説します。",
+      "highlightPoint": "ワイヤーは必ず右ネジが締まる『時計回り方向』へ45°〜60°の角度でテンションを掛ける！適正ピッチは1インチあたり6〜8ツイスト。先端は必ず5mm残して内側に丸め込むピッグテール処理が鉄則！",
+      "sections": [
+        {
+          "heading": "1. なぜワイヤリングが義務なのか？振動とオイル漏れの摩擦力学",
+          "body": "MFJ公認レースや全国のサンデーレース、ミニバイク草耐久、さらには各サーキット（鈴鹿・もてぎ・オートポリス・SPA直入・HSR九州等）のスポーツ走行会でも強く推奨されるのが、オイル経路ボルトの『安全ワイヤリング（Safety Wire-Locking）』です。高回転・高振動に晒されるレーシングエンジンでは、熱膨張とクランクシャフトの微小振動によって、規定トルクで締めたボルトであっても微小回転を起こすリスクを常に孕んでいます。\n\nもしコース上でオイルドレンボルトやオイルフィルターが緩んでオイルが路面に撒かれると、アスファルトの摩擦係数μは一瞬にして0.8前後から0.05（濡れた氷上と同等）まで急落します。後続車は減速もコーナリングもできず、大クラッシュを引き起こしてしまいます。ワイヤリングはボルトの脱落を防ぐだけでなく、『微小な回転緩みすら物理的に許さない』ための命綱なのです。"
+        },
+        {
+          "heading": "2. 「締まり方向」の引張幾何学とワイヤー線径・ピッチ管理",
+          "body": "車検員が最も注視するポイント、それが『テンションの向き』です。通常のM10〜M14ドレンボルト（右ネジ）の場合、緩む方向は反時計回りです。したがって、ワイヤーは必ず【ボルトを時計回り（締め付け方向）に引っ張る角度】でステーや隣のボルトへ繋がなければなりません。万が一、緩む方向（反時計回り）にワイヤーを引いてしまうと、振動でボルトが緩もうとする力をワイヤーが補助してしまう『緩め促進ワイヤー』になってしまい、車検は一発で不合格となります。\n\n使用するワイヤーは、耐食性と引張強度に優れるJIS G 4309準拠の『SUS304（またはSUS316）ステンレス鋼線』。ドレンボルトやオイルフィルターバンドには 線径 0.8mm、ブレーキキャリパーボルトや小径ボルトには 線径 0.6mm を使い分けるのがベストです。ワイヤーツイスターを使用する際は、1インチ（約25.4mm）あたり 6〜8ツイスト が理想的な撚りピッチ。撚りすぎ（オーバーツイスト）は金属疲労を招き、コース上の振動で破断する原因になるので注意が必要です。"
+        },
+        {
+          "heading": "3. 穴あけ加工のコツとプロの美学「ピッグテール処理」",
+          "body": "ボルト頭部への穴あけ加工は、コバルトハイス鋼のドリル刃（1.5mm〜2.0mm径）を使用し、卓上ボール盤とVブロック（またはボルト穴あけ専用ジグ）を使ってセンターを正確に出します。ステンレスボルトや六角ボルトのフランジ角部を貫通させる際は、切削油（タッピングペースト）を注油しながら低速回転で押し当て、刃の焼き付きと折れ込みを防ぎます。\n\nそして最後に忘れてはならないのが『ピッグテール（豚の尻尾）処理』です。ワイヤーを結び終えた後、ニッパーで切断したままの切り口は注射針のように鋭利で、タイヤ交換やオイル交換時にメカニックやライダーの手、高価なレーシンググローブを突き刺して大怪我をさせます。端末は5〜8mmほど残してラジオペンチで内側（エンジン側）にクルッと半円状に丸め込み、決して外側に突起を出さないのがプロのピットの鉄則です。"
+        }
+      ],
+      "resultTableTitle": "【安全ワイヤリング】適正仕様・作業基準リファレンス表",
+      "results": [
+        {
+          "pos": "線径 0.8mm (SUS304)",
+          "riderOrTeam": "エンジンオイルドレン / フィルターバンド",
+          "machine": "MFJロードレース技術仕様",
+          "timeOrNote": "大きな加振力と油圧を受ける主要ドレン部に必須の太さ"
+        },
+        {
+          "pos": "線径 0.6mm (SUS304)",
+          "riderOrTeam": "キャリパーボルト / フィラーキャップ / レバーピン",
+          "machine": "汎用・狭小箇所用",
+          "timeOrNote": "小径穴（1.5mm）に通しやすく、細かい取り回しに最適"
+        },
+        {
+          "pos": "撚りピッチ (Twist Pitch)",
+          "riderOrTeam": "6〜8回 / インチ (25.4mm)",
+          "machine": "ワイヤーツイスター適正値",
+          "timeOrNote": "撚りすぎは金属疲労破断を招くため締め込みすぎ厳禁"
+        },
+        {
+          "pos": "引張方向 (Tension)",
+          "riderOrTeam": "時計回り（締まり方向）45°〜60°",
+          "machine": "ボルト中心線に対する作用角",
+          "timeOrNote": "緩み方向への配線は車検即不合格・重大事故の元"
+        },
+        {
+          "pos": "端末処理 (Pigtail)",
+          "riderOrTeam": "先端5〜8mmを残して内側へ巻き込み",
+          "machine": "安全・負傷防止基準",
+          "timeOrNote": "切りっぱなしの針状突起は整備作業中の裂傷事故を招くため厳禁"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "いいかい！車検の前日に慌ててワイヤー通して、緩む方向に引っ張ってくるんじゃないわよ！それじゃ『緩み止め』じゃなくて『緩め促進ワイヤー』だろ！車検員に笑われる前に、うちのガレージで右回りのテンションを骨の髄まで叩き込んであげるわ！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "オートポリスや鈴鹿の公式車検でも、車検員さんがドレンボルトのワイヤーを指で弾いて向きと張りを真っ先にチェックしてますよね！逆巻きだと即アウトでピットに戻されちゃいます。"
+        },
+        {
+          "speaker": "naomi",
+          "text": "当たり前よ！1滴のオイルで後続車が何台転ぶと思ってるの！？…それに、このピッグテール先端！丸めずに尖らせたままにしとくと、ピット作業でメカの手が血だらけになるでしょ…。ほ、ほら、怪我なんかされたら…心配で走りに集中できないじゃないのよ…バカ。"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Taller de Circuit de la Naomi #1] La Física del «Wire-Locking»: Tensió d'Estrènyer, Acer SUS304 i Acabat Pigtail",
+      "subtitle": "Un filferro que afluixa és desqualificació immediata! Per què el sentit horari és sagrat a les verificacions de circuit",
+      "summary": "Arrenquem la secció setmanal de manteniment de circuit amb la gata mecànica Naomi! En aquest primer lliurament dominarem el frenat de seguretat amb filferro (Safety Wire-Locking). Analitzem la mecànica de tracció en sentit horari, els diàmetres òptims d'acer SUS304 (0,6mm i 0,8mm), el pas de torsió ideal i com doblegar la punta final («pigtail») per evitar ferides als boxs.",
+      "highlightPoint": "El filferro sempre ha d'estirar en el sentit d'estrènyer la rosca (sentit horari) amb un angle de 45° a 60°! El pas de torsió òptim és de 6 a 8 voltes per polzada i cal doblegar la punta cap a dins!",
+      "sections": [
+        {
+          "heading": "1. Per què el frenat amb filferro és obligatori? Física de les vibracions i l'oli",
+          "body": "Tant als campionats nacionals MFJ i FIM com a les curses de resistència amateur i tandes de circuit, assegurar els cargols del circuit d'oli amb filferro de bloqueig és d'obligat compliment. A un motor de competició girant a més de 14.000 rpm, les vibracions d'alta freqüència i les dilatacions tèrmiques poden afluixar fins i tot els cargols collats amb clau dinamomètrica.\n\nSi un tap de buidatge o filtre d'oli es desprèn a pista, el coeficient de fricció de l'asfalt cau de μ=0,8 a menys de 0,05 (equivalent a gel humit), causant caigudes múltiples devastadores. El filferro no només impedeix que el cargol caigui: bloqueja qualsevol micro-rotació des del primer grau."
+        },
+        {
+          "heading": "2. La geometria de tensió positiva i el diàmetre d'acer inoxidable",
+          "body": "La regla número u de qualsevol comissari tècnic és el sentit de tracció. En rosques dretes convencionals, afluixar és antihorari. Per tant, el filferro ha d'estirar SEMPRE en sentit horari (d'estrènyer). Si es lliga al revés, les vibracions aprofitaran la tensió del filferro per desenroscar el cargol ràpidament («filferro d'afluixar»), resultant en no-apte immediat.\n\nEl material reglamentari és l'acer inoxidable austenític SUS304 o SUS316 (norma JIS G 4309). Utilitzeu diàmetre de 0,8 mm per a taps de buidatge i abraçadores de filtre d'oli, i 0,6 mm per a cargols de pinces de fre. Amb les alicates de frenar cargols (wire twister), el pas correcte és de 6 a 8 trenes per polzada (25,4 mm); un excés de trenat debilita el metall per fatiga i pot trencar-se amb la vibració."
+        },
+        {
+          "heading": "3. Perforació de cargols i l'acabat professional «Pigtail»",
+          "body": "Per foradar els caps de cargol s'utilitzen broques de cobalt de 1,5 a 2,0 mm amb suport en V o plantilla específica, emprant lubricant de tall i revolucions moderades per no destrempar la broca.\n\nL'últim detall que distingeix un professional és el remat «Pigtail» (cua de porc). La punta tallada del filferro queda tan afilada com una agulla hipodèrmica. Si es deixa lliure, punxarà les mans o trencarà els guants dels mecànics durant un canvi ràpid de pneumàtic. Deixeu sempre 5-8 mm de cua i doblegueu-la amb alicates planes cap a l'interior del motor."
+        }
+      ],
+      "resultTableTitle": "Taula de referència tècnica per a frenat de seguretat (Wire-Locking)",
+      "results": [
+        {
+          "pos": "Diàmetre 0,8 mm (SUS304)",
+          "riderOrTeam": "Tap de buidatge / Filtre d'oli",
+          "machine": "Reglament FIM / MFJ Velocitat",
+          "timeOrNote": "Diàmetre obligatori per a passos d'oli crítics sotmesos a gran pressió"
+        },
+        {
+          "pos": "Diàmetre 0,6 mm (SUS304)",
+          "riderOrTeam": "Pinces de fre / Taps de farcit / Manetes",
+          "machine": "Components secundaris i espais reduïts",
+          "timeOrNote": "Més mal·leable, ideal per a forats fins d'1,5 mm"
+        },
+        {
+          "pos": "Pas de torsió (Twist Pitch)",
+          "riderOrTeam": "6 a 8 trenes per polzada (25,4 mm)",
+          "machine": "Alicates automàtiques de filferro",
+          "timeOrNote": "Mai sobre-trenar per no causar microfissures per fatiga del metall"
+        },
+        {
+          "pos": "Sentit de tracció",
+          "riderOrTeam": "Horari (d'estrènyer) amb angle de 45°-60°",
+          "machine": "Geometria de bloqueig mecànic",
+          "timeOrNote": "La tracció antihorària suposa el rebuig immediat a la verificació"
+        },
+        {
+          "pos": "Remat de seguretat (Pigtail)",
+          "riderOrTeam": "5-8 mm plegats cap a l'interior",
+          "machine": "Protecció laboral a boxs",
+          "timeOrNote": "Evita talls i perforacions a les mans dels mecànics i pilots"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "Escolteu-me bé! Que no us vegi venir a la verificació amb el filferro estirant cap a l'esquerra! Això no és un bloqueig de seguretat, és una trampa per afluixar el carter a final de recta! Al meu taller s'aprèn a frenar cargols com Déu mana!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "Als campionats nacionals i a les 8 Hores de Suzuka els comissaris proven cada filferro amb el dit. Si té joc o estira al revés, no et posen l'adhesiu de verificació ni de broma!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "I tant que no! Una gota d'oli i se'n van tres motos a terra! I mireu-me aquesta punta de filferro: si no la doblegueu cap a dins us clavareu el filferro fins a l'os canviant la roda... N-no és que em preocupi per vosaltres, és que no vull sang al terra del box, entesos?!"
+        }
+      ]
+    },
+    "en": {
+      "title": "[Naomi's Track Garage Clinic #1] The Absolute Physics of Safety Wire-Locking: Clockwise Tension, SUS304 Diameters & Pigtail Safety",
+      "subtitle": "Loosening wire means instant DQ! Why positive clockwise pull is scrutineering law, explained through workshop mechanics",
+      "summary": "Welcome to the first chapter of our weekly track maintenance clinic with black-cat mechanic Naomi! Issue #1 is dedicated to mastering safety wire-locking. Learn why positive clockwise tension prevents high-RPM bolt walk, how to select 0.6mm vs 0.8mm SUS304 wire, how to set a clean 6–8 twists-per-inch pitch, and why folding inward pigtails is the mark of a true pro.",
+      "highlightPoint": "Always pull wire in the clockwise tightening direction at a 45°–60° vector! Target 6–8 twists per inch with a wire twister, and always fold the 5–8mm pigtail tip inward to prevent severe hand punctures!",
+      "sections": [
+        {
+          "heading": "1. Why Is Safety Wiring Mandatory? Vibration & Oil Friction Physics",
+          "body": "Across FIM world championships, MFJ road racing, and grassroots track days, safety wire-locking on all oil passages is strictly enforced. In racing engines screaming beyond 14,000 RPM, severe harmonics and thermal cycling can back out even properly torqued fasteners.\n\nShould an oil drain bolt or filter work loose, engine oil sprayed onto track tarmac drops the tire friction coefficient from μ≈0.8 to under 0.05 (slick wet ice). Trailing riders cannot steer or brake, resulting in devastating multi-bike crashes. Safety wiring does not merely catch a fallen bolt—it mechanically prohibits even fractional degrees of rotational looseness."
+        },
+        {
+          "heading": "2. Positive Clockwise Tension Geometry & Wire Diameter Selection",
+          "body": "The single most critical check made by technical scrutineers is wire tension direction. Standard right-hand threads (M10–M14 drain plugs) loosen counterclockwise. Therefore, safety wire must pull positively in the CLOCKWISE (tightening) direction toward its anchor point. Routing wire counterclockwise assists fastener unthreading under vibration—creating a 'loosening wire' that fails tech inspection immediately.\n\nAlways specify austenitic stainless steel wire (SUS304 / SUS316 under JIS G 4309). Use 0.8mm (0.032\") wire for high-mass, high-vibration components like drain plugs and oil filter clamps; use 0.6mm (0.025\") wire for brake caliper mount bolts and small pins. When using wire twisters, aim for 6 to 8 twists per inch (25.4mm). Over-twisting induces work-hardening and fatigue cracking, causing the wire to snap under track stress."
+        },
+        {
+          "heading": "3. Precision Drilling & The Workshop Pigtail Rule",
+          "body": "Drilling hex bolt heads requires cobalt high-speed steel (HSS-Co) drill bits (1.5mm to 2.0mm) seated in a dedicated bolt drilling jig or V-block. Use cutting fluid and moderate drill speed to prevent bit binding and work-hardening of stainless fasteners.\n\nNever forget the 'pigtail' finish. A cut stainless wire end behaves like a hypodermic needle, easily lacerating mechanics' knuckles or piercing expensive race gloves during rushed pit stops. Always leave 5 to 8mm of pigtail, fold it cleanly into a loop with pliers, and tuck it back against the engine casting."
+        }
+      ],
+      "resultTableTitle": "Safety Wire-Locking Standards & Technical Quick-Reference",
+      "results": [
+        {
+          "pos": "0.8mm Wire (SUS304)",
+          "riderOrTeam": "Oil Drain Plugs / Filter Band Clamps",
+          "machine": "FIM / MFJ Road Race Spec",
+          "timeOrNote": "Mandatory heavy-gauge wire for high-vibration fluid passages"
+        },
+        {
+          "pos": "0.6mm Wire (SUS304)",
+          "riderOrTeam": "Brake Caliper Bolts / Filler Caps",
+          "machine": "Secondary & Compact Fasteners",
+          "timeOrNote": "High flexibility for tight clearances and 1.5mm drill holes"
+        },
+        {
+          "pos": "Twist Pitch",
+          "riderOrTeam": "6–8 Twists per Inch (25.4mm)",
+          "machine": "Safety Wire Twister Guideline",
+          "timeOrNote": "Avoid over-twisting to prevent embrittlement and fatigue fracture"
+        },
+        {
+          "pos": "Tension Direction",
+          "riderOrTeam": "Clockwise (Tightening) at 45°–60°",
+          "machine": "Mechanical Lock Geometry",
+          "timeOrNote": "Counterclockwise pull is an immediate scrutineering rejection"
+        },
+        {
+          "pos": "Pigtail Termination",
+          "riderOrTeam": "5–8mm folded inward toward engine",
+          "machine": "Paddock Safety Standard",
+          "timeOrNote": "Exposed sharp ends puncture mechanics' hands during tire changes"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "Listen up! Don't you dare roll into tech inspection with your drain bolt safety wire pulling counterclockwise! That's not a safety lock, that's an unthreading assist wire! Get your bike over here and let me drill positive-tension habits into your head!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "Scrutineers at Suzuka and Autopolis test every safety wire with their fingers! If it has slack or pulls in reverse, you get sent straight back to your paddock tent with no inspection pass sticker!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Exactly! One drop of oil puts half the grid into the gravel! And tuck that pigtail tip in! If you leave sharp wire sticking out, you'll slice your fingers open during the next wheel swap... I-it's not like I'm worried about you or anything, I just don't want blood on my garage floor, okay?!"
+        }
+      ]
+    }
+  }
+}

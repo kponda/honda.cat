@@ -1,0 +1,422 @@
+---
+import Header from './Header.astro';
+import ArticleCard from './ArticleCard.astro';
+import Footer from './Footer.astro';
+import type { ArticleData } from '../data/articles';
+import { UI_TEXT } from '../data/i18n';
+
+interface Props {
+  articles: ArticleData[];
+  currentPage: number;
+  totalPages: number;
+  totalCount: number;
+  pageSize?: number;
+}
+
+const {
+  articles,
+  currentPage,
+  totalPages,
+  totalCount,
+  pageSize = 12
+} = Astro.props;
+
+const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'all-japan', 'spotlight'] as const;
+
+const startItem = (currentPage - 1) * pageSize + 1;
+const endItem = Math.min(currentPage * pageSize, totalCount);
+
+function getPageUrl(pageNum: number): string {
+  if (pageNum === 1) return '/articles/';
+  return `/articles/page/${pageNum}/`;
+}
+
+const prevUrl = currentPage > 1 ? getPageUrl(currentPage - 1) : null;
+const nextUrl = currentPage < totalPages ? getPageUrl(currentPage + 1) : null;
+const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
+---
+
+<Header activeNav="articles" />
+
+<main class="archive-main">
+  <!-- Archive Header Banner -->
+  <section class="archive-banner">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">
+          <span data-i18n="ja">{UI_TEXT.archive.backToHome.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.archive.backToHome.ca}</span>
+          <span data-i18n="en">{UI_TEXT.archive.backToHome.en}</span>
+        </a>
+      </div>
+
+      <div class="banner-content">
+        <div class="badge-row">
+          <span class="badge hero-badge">
+            <span data-i18n="ja">{UI_TEXT.archive.badge.ja}</span>
+            <span data-i18n="ca">{UI_TEXT.archive.badge.ca}</span>
+            <span data-i18n="en">{UI_TEXT.archive.badge.en}</span>
+          </span>
+          <span class="badge count-badge racing-font">
+            PAGE {currentPage} / {totalPages}
+          </span>
+        </div>
+
+        <h1 class="archive-title">
+          <span data-i18n="ja">{UI_TEXT.archive.title.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.archive.title.ca}</span>
+          <span data-i18n="en">{UI_TEXT.archive.title.en}</span>
+        </h1>
+
+        <p class="archive-subtitle">
+          <span data-i18n="ja">{UI_TEXT.archive.subtitle.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.archive.subtitle.ca}</span>
+          <span data-i18n="en">{UI_TEXT.archive.subtitle.en}</span>
+        </p>
+
+        <div class="archive-metrics">
+          <div class="metric-pill">
+            <strong class="racing-font">TOTAL DISPATCHES</strong>
+            <span>全 {totalCount} 件</span>
+          </div>
+          <div class="metric-pill">
+            <strong class="racing-font">SHOWING</strong>
+            <span>{startItem}〜{endItem} 件目</span>
+          </div>
+          <div class="metric-pill">
+            <strong class="racing-font">CURRENT PAGE</strong>
+            <span>{currentPage} / {totalPages} ページ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles List Section with Category Filter -->
+  <section class="archive-list-section">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="category-filters" role="tablist" aria-label="Category Filter">
+          {categories.map((catKey, idx) => (
+            <button
+              type="button"
+              class={`filter-btn ${idx === 0 ? 'active' : ''}`}
+              data-filter-category={catKey}
+            >
+              <span data-i18n="ja">{UI_TEXT.categories[catKey].ja}</span>
+              <span data-i18n="ca">{UI_TEXT.categories[catKey].ca}</span>
+              <span data-i18n="en">{UI_TEXT.categories[catKey].en}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="articles-grid" id="articles-grid">
+        {articles.map((article) => (
+          <ArticleCard article={article} />
+        ))}
+      </div>
+
+      <!-- Pagination Component -->
+      {totalPages > 1 && (
+        <nav class="pagination-nav" aria-label="Article Archive Pages">
+          <div class="pagination-container">
+            {prevUrl ? (
+              <a href={prevUrl} class="page-btn page-arrow" rel="prev">
+                <span data-i18n="ja">{UI_TEXT.archive.prevPage.ja}</span>
+                <span data-i18n="ca">{UI_TEXT.archive.prevPage.ca}</span>
+                <span data-i18n="en">{UI_TEXT.archive.prevPage.en}</span>
+              </a>
+            ) : (
+              <span class="page-btn page-arrow disabled" aria-disabled="true">
+                <span data-i18n="ja">{UI_TEXT.archive.prevPage.ja}</span>
+                <span data-i18n="ca">{UI_TEXT.archive.prevPage.ca}</span>
+                <span data-i18n="en">{UI_TEXT.archive.prevPage.en}</span>
+              </span>
+            )}
+
+            <div class="page-numbers">
+              {pageNumbers.map((num) => {
+                const isCurrent = num === currentPage;
+                return isCurrent ? (
+                  <span class="page-num active racing-font" aria-current="page">
+                    {num}
+                  </span>
+                ) : (
+                  <a href={getPageUrl(num)} class="page-num racing-font">
+                    {num}
+                  </a>
+                );
+              })}
+            </div>
+
+            {nextUrl ? (
+              <a href={nextUrl} class="page-btn page-arrow" rel="next">
+                <span data-i18n="ja">{UI_TEXT.archive.nextPage.ja}</span>
+                <span data-i18n="ca">{UI_TEXT.archive.nextPage.ca}</span>
+                <span data-i18n="en">{UI_TEXT.archive.nextPage.en}</span>
+              </a>
+            ) : (
+              <span class="page-btn page-arrow disabled" aria-disabled="true">
+                <span data-i18n="ja">{UI_TEXT.archive.nextPage.ja}</span>
+                <span data-i18n="ca">{UI_TEXT.archive.nextPage.ca}</span>
+                <span data-i18n="en">{UI_TEXT.archive.nextPage.en}</span>
+              </span>
+            )}
+          </div>
+        </nav>
+      )}
+    </div>
+  </section>
+</main>
+
+<Footer />
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('[data-filter-category]');
+    const articleCards = document.querySelectorAll('.article-card[data-category]');
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const selected = btn.getAttribute('data-filter-category');
+        filterButtons.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        articleCards.forEach((card) => {
+          const cat = card.getAttribute('data-category');
+          if (selected === 'all' || cat === selected) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .archive-main {
+    padding-bottom: 4rem;
+  }
+
+  .archive-banner {
+    padding: 2.5rem 0 3rem;
+    border-bottom: 1px solid var(--border-subtle);
+    background: linear-gradient(180deg, rgba(21, 25, 34, 0.6) 0%, transparent 100%);
+  }
+
+  .breadcrumb {
+    margin-bottom: 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  .breadcrumb a {
+    color: var(--accent-gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: color 0.15s ease;
+  }
+
+  .breadcrumb a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .badge-row {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-bottom: 0.85rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-badge {
+    background: rgba(230, 57, 70, 0.16);
+    color: #ff758f;
+    border: 1px solid rgba(230, 57, 70, 0.35);
+  }
+
+  .count-badge {
+    background: rgba(255, 183, 3, 0.15);
+    color: var(--accent-gold);
+    border: 1px solid rgba(255, 183, 3, 0.35);
+  }
+
+  .archive-title {
+    font-size: clamp(1.65rem, 3.2vw, 2.45rem);
+    font-weight: 900;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+
+  .archive-subtitle {
+    font-size: 0.98rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.75rem;
+    max-width: 820px;
+    line-height: 1.65;
+  }
+
+  .archive-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .metric-pill {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.65rem;
+    padding: 0.55rem 0.95rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .metric-pill strong {
+    font-size: 0.72rem;
+    color: var(--accent-gold);
+    letter-spacing: 0.05em;
+  }
+
+  .metric-pill span {
+    font-size: 0.82rem;
+    color: var(--text-primary);
+  }
+
+  .archive-list-section {
+    padding: 2.75rem 0 2rem;
+  }
+
+  .filter-bar {
+    margin-bottom: 2rem;
+  }
+
+  .category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    padding: 0.5rem 0.95rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s ease;
+  }
+
+  .filter-btn:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .filter-btn.active {
+    background: var(--accent-gold);
+    color: #0d0f14;
+    border-color: var(--accent-gold);
+  }
+
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.6rem;
+  }
+
+  .pagination-nav {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+  }
+
+  .page-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.15rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    transition: all 0.18s ease;
+  }
+
+  .page-btn:not(.disabled):hover {
+    background: var(--accent-gold);
+    color: #0d0f14;
+    border-color: var(--accent-gold);
+  }
+
+  .page-btn.disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .page-numbers {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .page-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.4rem;
+    height: 2.4rem;
+    padding: 0 0.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    transition: all 0.18s ease;
+  }
+
+  .page-num:hover:not(.active) {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.35);
+  }
+
+  .page-num.active {
+    background: var(--accent-gold);
+    color: #0d0f14;
+    border-color: var(--accent-gold);
+  }
+
+  @media (max-width: 640px) {
+    .pagination-container {
+      gap: 0.5rem;
+    }
+
+    .page-btn {
+      padding: 0.5rem 0.85rem;
+      font-size: 0.8rem;
+    }
+
+    .page-num {
+      min-width: 2.1rem;
+      height: 2.1rem;
+      font-size: 0.85rem;
+    }
+  }
+</style>

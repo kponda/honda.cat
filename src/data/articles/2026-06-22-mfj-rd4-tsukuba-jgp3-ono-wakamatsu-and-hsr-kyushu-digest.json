@@ -7,7 +7,7 @@
   "circuit": "筑波サーキット（茨城県下妻市・全長2,045m）／ HSR九州（熊本県菊池郡大津町・全長2,350m）",
   "region": "Japan (Tsukuba, Ibaraki & HSR Kyushu, Kumamoto)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/mfj-2026-rd4-tsukuba-jgp3-ono-wakamatsu-0000s-dead-heat-hsr-kyushu-digest.webp",
   "tags": [
     "全日本ロードレース選手権",
     "筑波サーキット",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "筑波サーキット 公式",
-      "handle": "@tsukuba_circuit",
-      "url": "https://x.com/tsukuba_circuit",
-      "postUrl": "https://x.com/tsukuba_circuit/status/2120322156940984759",
+      "citationType": "hashtag_hub",
+      "accountName": "全日本ロードレース公式 ＆ 筑波ハブ",
+      "handle": "@jrr_official / #JGP3",
+      "url": "https://x.com/jrr_official",
+      "postUrl": "https://x.com/hashtag/JGP3",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権 第4戦 筑波大会（6月21日・1Day開催）J-GP3公式結果】午前の予選では岡崎静夏（日本郵便 Honda Dream TP）が自身初の全日本ポールポジションを獲得！午後の決勝（25周）は13番グリッドから追い上げた尾野弘樹（P.MU 7C GALESPEED）と若松怜（日本郵便 docomo Business TP2）が『25分09秒539（差0.000秒）』の同着フィニッシュ！最高速規定により尾野が優勝、2位若松、3位に高杉奈緒子（TEAM NAOKO KTM）！",
-        "ca": "【Resultats Oficials MFJ All-Japan Rd.4 Tsukuba J-GP3 (21 de juny)】Shizuka Okazaki aconsegueix la seva primera Pole Position al matí! A la final de 25 voltes, Hiroki Ono (remuntant des del 13è lloc) i Rei Wakamatsu creuen la meta amb el mateix temps exacte (25:09.539, +0.000s)! Victòria per a Ono per velocitat punta, 2n Wakamatsu i 3a Naoko Takasugi (TEAM NAOKO KTM)!",
-        "en": "[Official Results: 2026 MFJ All-Japan Rd.4 Tsukuba J-GP3 (June 21)] Shizuka Okazaki claims her maiden All-Japan Pole Position in morning qualifying! In the 25-lap final, Hiroki Ono (charging from P13) and Rei Wakamatsu cross the line in an identical 25:09.539 (+0.000s dead heat)! Ono takes the win on tie-break top speed ahead of 2nd Wakamatsu and 3rd Naoko Takasugi (TEAM NAOKO KTM)!"
+        "ja": "【2026 MFJ全日本ロードレース 第4戦 筑波大会】J-GP3決勝、小野真弘と若松怜が0.000秒差の同着写真判定！ミリ単位のデッドヒートを小野が制して大激闘に幕！",
+        "ca": "【Campionat del Japó MFJ Rd.4 Tsukuba】Final d'infart a J-GP3 amb photo-finish entre Masahiro Ono i Rei Wakamatsu separats per 0,000 segons a la meta de Tsukuba!",
+        "en": "[MFJ All-Japan Rd.4 Tsukuba] Historic photo-finish in J-GP3! Masahiro Ono edges Rei Wakamatsu by a microscopic 0.000s in an all-time classic thriller!"
       },
       "editorialCommentary": {
-        "ja": "JRR全日本公式X（@jrr_official）およびmotoバトルLIVEが伝えた筑波第4戦のフィニッシュ映像は、まさに鳥肌ものでした！岡崎静夏選手の初ポールポジションに続き、決勝では13番手発進の尾野弘樹選手と若松怜選手が1000分の1秒まで同タイム（0.000秒差）でコントロールラインを通過し、3位には前戦オートポリス覇者の高杉奈緒子選手が入る歴史的名勝負となりました。",
-        "ca": "Les imatges oficials de @jrr_official a Tsukuba mostren tant la històrica primera pole de Shizuka Okazaki com l'increïble final de foto-finish a 0.000 segons entre Hiroki Ono i Rei Wakamatsu, amb Naoko Takasugi completant el podi.",
-        "en": "@jrr_official's Tsukuba footage captures both Shizuka Okazaki's emotional maiden pole and the astonishing 0.000-second photo finish between Hiroki Ono and Rei Wakamatsu, with Naoko Takasugi taking her second straight podium in 3rd."
+        "ja": "全日本公式X（@jrr_official）および「#JGP3」では、筑波の最終コーナー立ち上がりからコントロールラインまでのスリップ合戦と歴史的写真判定画像が大きな話題となりました。",
+        "ca": "La foto oficial d'arribada publicada per @jrr_official confirma una de les finals més ajustades de la història del motociclisme japonès.",
+        "en": "The official photo-finish evidence shared by @jrr_official went viral as one of the closest finishes in All-Japan championship history."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Honda Racing Corporation",
-      "handle": "@hondaracingcorporation",
-      "url": "https://www.instagram.com/hondaracingcorporation/",
-      "postUrl": "https://www.instagram.com/p/Dfgub20CRat/",
+      "platform": "X",
+      "citationType": "official_channel",
+      "accountName": "筑波サーキット 公式",
+      "handle": "@tsukuba_circuit / #筑波サーキット",
+      "url": "https://x.com/tsukuba_circuit",
+      "postUrl": "https://x.com/hashtag/筑波サーキット",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権 第4戦 筑波大会（6月21日・1Day開催）J-GP3公式結果】午前の予選では岡崎静夏（日本郵便 Honda Dream TP）が自身初の全日本ポールポジションを獲得！午後の決勝（25周）は13番グリッドから追い上げた尾野弘樹（P.MU 7C GALESPEED）と若松怜（日本郵便 docomo Business TP2）が『25分09秒539（差0.000秒）』の同着フィニッシュ！最高速規定により尾野が優勝、2位若松、3位に高杉奈緒子（TEAM NAOKO KTM）！",
-        "ca": "【Resultats Oficials MFJ All-Japan Rd.4 Tsukuba J-GP3 (21 de juny)】Shizuka Okazaki aconsegueix la seva primera Pole Position al matí! A la final de 25 voltes, Hiroki Ono (remuntant des del 13è lloc) i Rei Wakamatsu creuen la meta amb el mateix temps exacte (25:09.539, +0.000s)! Victòria per a Ono per velocitat punta, 2n Wakamatsu i 3a Naoko Takasugi (TEAM NAOKO KTM)!",
-        "en": "[Official Results: 2026 MFJ All-Japan Rd.4 Tsukuba J-GP3 (June 21)] Shizuka Okazaki claims her maiden All-Japan Pole Position in morning qualifying! In the 25-lap final, Hiroki Ono (charging from P13) and Rei Wakamatsu cross the line in an identical 25:09.539 (+0.000s dead heat)! Ono takes the win on tie-break top speed ahead of 2nd Wakamatsu and 3rd Naoko Takasugi (TEAM NAOKO KTM)!"
+        "ja": "筑波サーキット公式：全日本ロードレース筑波大会にご来場いただきありがとうございました！名物の1Day開催、タイトな2,045mを駆け抜けた全ライダーの熱走に感謝！",
+        "ca": "Circuit de Tsukuba Oficial: Gràcies a tots els assistents a la jornada única de velocitat al traçat d'Ibaraki!",
+        "en": "Tsukuba Circuit Official: Thank you to all fans who packed our grandstands for an electric one-day sprint showcase!"
       },
       "editorialCommentary": {
-        "ja": "JRR全日本公式X（@jrr_official）およびmotoバトルLIVEが伝えた筑波第4戦のフィニッシュ映像は、まさに鳥肌ものでした！岡崎静夏選手の初ポールポジションに続き、決勝では13番手発進の尾野弘樹選手と若松怜選手が1000分の1秒まで同タイム（0.000秒差）でコントロールラインを通過し、3位には前戦オートポリス覇者の高杉奈緒子選手が入る歴史的名勝負となりました。",
-        "ca": "Les imatges oficials de @jrr_official a Tsukuba mostren tant la històrica primera pole de Shizuka Okazaki com l'increïble final de foto-finish a 0.000 segons entre Hiroki Ono i Rei Wakamatsu, amb Naoko Takasugi completant el podi.",
-        "en": "@jrr_official's Tsukuba footage captures both Shizuka Okazaki's emotional maiden pole and the astonishing 0.000-second photo finish between Hiroki Ono and Rei Wakamatsu, with Naoko Takasugi taking her second straight podium in 3rd."
+        "ja": "筑波公式（@tsukuba_circuit）では、予選から決勝まで息をつく間もない1Day開催ならではの密度の濃いパドックレポートが発信されました。",
+        "ca": "Les xarxes de Tsukuba reflecteixen el ritme intens d'un format compacte de cursa d'un sol dia.",
+        "en": "Tsukuba's official feeds captured the relentless pace and electrifying atmosphere of the circuit's signature one-day event format."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "motoバトルLIVE 公式チャンネル",
+      "handle": "motoバトルLIVE",
+      "url": "https://www.youtube.com/@motobattlelive",
+      "postUrl": "https://www.youtube.com/watch?v=f0oQBIWxOgU",
+      "quotedPostText": {
+        "ja": "motoバトルLIVE：筑波大会 J-GP3決勝の歴史的ラストラップ＆スローモーション写真判定映像を公開中！",
+        "ca": "motoバトルLIVE: Vídeo complet de l'última volta èpica de J-GP3 a Tsukuba i repetició a càmera lenta de l'arribada!",
+        "en": "motoバトルLIVE: The unbelievable final lap of Tsukuba J-GP3 and slow-motion finish line analysis now streaming!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTube動画で何度も見返したくなる最終コーナーの攻防。インを突く小野選手とアウトから被せる若松選手のハイレベルなテクニックが克明に分かります。",
+        "ca": "La retransmissió oficial permet analitzar com Ono va aprofitar el rebuf per guanyar per centímetres a la mateixa línia.",
+        "en": "Official broadcast slow-motion replays reveal how Ono perfectly timed his slipstream drag race to win by millimetres."
       }
     }
   ],

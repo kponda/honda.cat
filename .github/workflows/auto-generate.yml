@@ -41,6 +41,7 @@ on:
           - digest_monday
           - digest_wednesday
           - maintenance
+          - generate_hero_images
       topic:
         description: "カスタムお題（手動実行時：任意のトピックを指定して1クリック生成）"
         required: false
@@ -48,13 +49,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   run-scheduled-pipeline:
     runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.commit_step.outputs.has_changes }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
@@ -93,6 +100,8 @@ jobs:
           echo "Running pipeline task: $TASK"
           if [ "$TASK" = "sync_schedule" ]; then
             python3 scripts/collect_schedules.py
+          elif [ "$TASK" = "generate_hero_images" ]; then
+            python3 scripts/generate_articles.py --generate-hero-images
           elif [ -n "${{ inputs.topic }}" ]; then
             python3 scripts/generate_articles.py --mode "$TASK" --topic "${{ inputs.topic }}"
           else
@@ -105,13 +114,50 @@ jobs:
           python3 scripts/generate_articles.py --dry-run
 
       - name: Commit & Push If Schedule DB or New Articles Were Generated
+        id: commit_step
         run: |
           git config user.name "honda-cat-editorial-bot"
           git config user.email "bot@honda.cat"
-          git add src/data/schedules.json src/data/articles/*.json
+          git add src/data/schedules.json src/data/articles/*.json public/images/articles/
           if git diff --staged --quiet; then
             echo "⏭️ No changes or skipped task (${{ steps.resolve_task.outputs.task }}); nothing to commit."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
           else
             git commit -m "chore(pipeline): automated update via ${{ steps.resolve_task.outputs.task }}"
             git push
+            echo "has_changes=true" >> $GITHUB_OUTPUT
           fi
+
+  deploy-autonomous-site:
+    needs: run-scheduled-pipeline
+    if: needs.run-scheduled-pipeline.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout latest published code
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install && node node_modules/esbuild/install.js
+
+      - name: Build Astro static site
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

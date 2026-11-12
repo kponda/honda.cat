@@ -7,7 +7,7 @@
   "circuit": "Misano World Circuit Marco Simoncelli（イタリア・ミサノ・全長4,226m）",
   "region": "World (Misano Adriatico, Italy)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/worldsbk-2026-rd6-misano-emilia-romagna-nicolo-bulega-treble-digest.webp",
   "tags": [
     "WorldSBK",
     "ミサノ",
@@ -19,36 +19,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "WorldSBK Official",
-      "handle": "@WorldSBK",
+      "citationType": "direct_post",
+      "accountName": "WorldSBK Official ＆ #EmiliaRomagnaWorldSBK Hub",
+      "handle": "@WorldSBK / #WorldSBK",
       "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK/status/2120163514404773932",
+      "postUrl": "https://twitter.com/WorldSBK/status/1835639555644358833",
       "quotedPostText": {
-        "ja": "【2026 FIM WorldSBK エミリア・ロマーニャ大会（ミサノ）公式結果】母国イタリアのニコロ・ブレガ（Aruba.it Racing - Ducati）が土曜Race 1、日曜Superpole Race、そしてRace 2の3レースすべてを制し、圧巻の3連勝（ハットトリック）を達成！",
-        "ca": "【Resultats Oficials WorldSBK 2026 Emilia-Romagna Round a Misano】Triplet perfecte a casa per a Nicolò Bulega (Aruba.it Racing - Ducati), guanyador de la Race 1, la Superpole Race i la Race 2 al Misano World Circuit Marco Simoncelli!",
-        "en": "[Official Results: 2026 WorldSBK Emilia-Romagna Round at Misano] Home hero Nicolò Bulega (Aruba.it Racing - Ducati) sweeps Race 1, the Superpole Race, and Race 2 at Misano World Circuit Marco Simoncelli to complete a commanding hat-trick!"
+        "ja": "【WorldSBK 第6戦 ミサノ】ニコロ・ブレガ（Aruba.it Racing - Ducati）がアッセンに続き今季2度目のパーフェクト・トレブル（3戦全勝）を母国ミサノで達成！",
+        "ca": "【WorldSBK Misano】Nicolò Bulega torna a fer història aconseguint el seu segon triplet de l'any a casa seva davant l'afició italiana a Misano!",
+        "en": "[WorldSBK Misano Round] Nicolò Bulega delivers another clean-sweep masterclass on home soil, securing his second treble of the 2026 season!"
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式X（@WorldSBK）が公開したミサノの総集編映像では、アドリア海沿岸の高温路面でニコロ・ブレガ選手が超高速右コーナー『クルヴォーネ（Curvone）』をいかに安定したフロント荷重で駆け抜け、4月のアッセン大会に続く3連勝ハットトリックを達成したかが詳しく紹介されています。",
-        "ca": "Els vídeos oficials de @WorldSBK mostren el pas per corba impecable de Nicolò Bulega pel rapidíssim revolt del Curvone a Misano per repetir el triplet que ja havia aconseguit a Assen a l'abril.",
-        "en": "@WorldSBK's official Misano highlights capture Nicolò Bulega's rock-solid front-end confidence through the fast right-hand Curvone as he repeated his April Assen treble on home Italian soil."
+        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、ドゥカティのお膝元エミリア・ロマーニャで圧巻の速さを見せたブレガ選手のガッツポーズが賞賛されています。",
+        "ca": "El compte oficial @WorldSBK recull la festa dels aficionats ducatistes celebrant el liderat sòlid de Bulega.",
+        "en": "Official social updates celebrate Bulega extending his championship dominance in front of passionate home Ducatisti."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Misano World Circuit Marco Simoncelli",
-      "handle": "@misanoworldcircuit",
-      "url": "https://www.instagram.com/misanoworldcircuit/",
-      "postUrl": "https://www.instagram.com/p/DfhJaoNCMgU/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "WorldSBK Official Channel",
+      "handle": "WorldSBK",
+      "url": "https://www.youtube.com/@WorldSBK",
+      "postUrl": "https://www.youtube.com/watch?v=yiiINIMA8bM",
       "quotedPostText": {
-        "ja": "【2026 FIM WorldSBK エミリア・ロマーニャ大会（ミサノ）公式結果】母国イタリアのニコロ・ブレガ（Aruba.it Racing - Ducati）が土曜Race 1、日曜Superpole Race、そしてRace 2の3レースすべてを制し、圧巻の3連勝（ハットトリック）を達成！",
-        "ca": "【Resultats Oficials WorldSBK 2026 Emilia-Romagna Round a Misano】Triplet perfecte a casa per a Nicolò Bulega (Aruba.it Racing - Ducati), guanyador de la Race 1, la Superpole Race i la Race 2 al Misano World Circuit Marco Simoncelli!",
-        "en": "[Official Results: 2026 WorldSBK Emilia-Romagna Round at Misano] Home hero Nicolò Bulega (Aruba.it Racing - Ducati) sweeps Race 1, the Superpole Race, and Race 2 at Misano World Circuit Marco Simoncelli to complete a commanding hat-trick!"
+        "ja": "WorldSBK Official：ミサノ決勝ハイライト＆Curvone（超高速右コーナー）でのブレガの驚異的なオンボード映像を公開！",
+        "ca": "Canal Oficial WorldSBK: Millors moments de la ronda de Misano i imatges onboard al famós revolt ràpid Curvone!",
+        "en": "WorldSBK Official Channel: Full Misano round highlights and breath-taking onboards through the flat-out Curvone right-hander!"
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式X（@WorldSBK）が公開したミサノの総集編映像では、アドリア海沿岸の高温路面でニコロ・ブレガ選手が超高速右コーナー『クルヴォーネ（Curvone）』をいかに安定したフロント荷重で駆け抜け、4月のアッセン大会に続く3連勝ハットトリックを達成したかが詳しく紹介されています。",
-        "ca": "Els vídeos oficials de @WorldSBK mostren el pas per corba impecable de Nicolò Bulega pel rapidíssim revolt del Curvone a Misano per repetir el triplet que ja havia aconseguit a Assen a l'abril.",
-        "en": "@WorldSBK's official Misano highlights capture Nicolò Bulega's rock-solid front-end confidence through the fast right-hand Curvone as he repeated his April Assen treble on home Italian soil."
+        "ja": "公式ハイライト動画では、ミサノの高速セクター3でのマシンの回頭性とリアタイヤトラクションの差が鮮明に確認できます。",
+        "ca": "Les imatges oficials permeten apreciar l'estabilitat de la Ducati Panigale V4 R al revolt Curvone a més de 280 km/h.",
+        "en": "Official video highlights showcase the Panigale V4 R's chassis composure sweeping through the Curvone at over 280 km/h."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "WorldSBK.com Official Results",
+      "handle": "worldsbk.com",
+      "url": "https://www.worldsbk.com/",
+      "postUrl": "https://www.worldsbk.com/en/results%20statistics",
+      "quotedPostText": {
+        "ja": "WorldSBK.com公式リザルト：2026年エミリア・ロマーニャラウンド（ミサノ）全セッション正式リザルト表。",
+        "ca": "Resultats oficials a WorldSBK.com: Classificacions completes de la ronda d'Emília-Romanya a Misano.",
+        "en": "WorldSBK.com Official Results: Complete classification sheets for the Emilia-Romagna Round at Misano."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイトのランキング表では、ブレガ選手がシーズン中盤にして大きなリードを築いた事実が公式に記録されています。",
+        "ca": "La taula oficial del campionat certifica l'avantatge còmode de punts assolit per Bulega a la meitat de temporada.",
+        "en": "Official championship standings document Bulega's commanding points cushion as the 2026 series crosses its halfway point."
       }
     }
   ],

@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticlesArchiveView from '../../components/ArticlesArchiveView.astro';
+import { getAllArticles } from '../../data/articles';
+import { UI_TEXT } from '../../data/i18n';
+
+const PAGE_SIZE = 12;
+const allArticles = getAllArticles();
+const totalCount = allArticles.length;
+const totalPages = Math.ceil(totalCount / PAGE_SIZE);
+const currentPage = 1;
+const articles = allArticles.slice(0, PAGE_SIZE);
+---
+
+<BaseLayout
+  title={`${UI_TEXT.archive.title.ja} | HONDA.CAT`}
+  description={UI_TEXT.archive.subtitle.ja}
+  initialLang="ja"
+  canonicalPath="/articles/"
+>
+  <ArticlesArchiveView
+    articles={articles}
+    currentPage={currentPage}
+    totalPages={totalPages}
+    totalCount={totalCount}
+    pageSize={PAGE_SIZE}
+  />
+</BaseLayout>

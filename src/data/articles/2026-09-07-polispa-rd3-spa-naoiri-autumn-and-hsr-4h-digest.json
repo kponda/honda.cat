@@ -7,7 +7,7 @@
   "circuit": "SPA直入（大分県竹田市・全長1,430m）／ HSR九州（熊本県大津町・全長2,350m）",
   "region": "Kyushu (Takeda, Oita & Ozu, Kumamoto)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/kyushu-2026-september-polispa-rd3-spa-naoiri-autumn-and-hsr-dreamcup-4h-digest.webp",
   "tags": [
     "SPA直入",
     "POLISPA",
@@ -18,37 +18,57 @@
   ],
   "snsCitations": [
     {
-      "platform": "Instagram",
-      "accountName": "AUTOPOLIS / SPA Naoiri",
-      "handle": "@autopolis_jp",
-      "url": "https://www.instagram.com/autopolis_jp/",
-      "postUrl": "https://www.instagram.com/p/DfOHgbBxurq/",
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "オートポリス ＆ SPA直入 公式",
+      "handle": "@autopolis2005 / #SPA直入",
+      "url": "https://x.com/autopolis2005",
+      "postUrl": "https://x.com/hashtag/SPA直入",
       "quotedPostText": {
-        "ja": "【2026年9月5日(土)〜6日(日) 開催：SPA直入『スーパーサンデーフェスタ 2026 AUTUMN / POLISPAロードレース選手権 第3戦（Ninja Team Green Cup併催）』＆ HSR九州『ドリームカップフェスティバル 4時間耐久レース』】大分・SPA直入と熊本・HSR九州で秋の九州二輪シーズンが一斉開幕！",
-        "ca": "【5-6 de setembre de 2026: POLISPA Rd.3 / Super Sunday Festa AUTUMN a SPA Naoiri i 4 Hores Dream Cup a HSR Kyushu】Cap de setmana doble als circuits d'Oita i Kumamoto per encetar la temporada de tardor a Kyushu!",
-        "en": "[September 5–6, 2026: POLISPA Rd.3 / Super Sunday Festa AUTUMN at SPA Naoiri & Dream Cup 4-Hour Endurance at HSR Kyushu] Autumn motorcycle racing kicks off simultaneously across Oita and Kumamoto!"
+        "ja": "【SPA直入 POLISPA 第3戦 ＆ サンデーフェスタ AUTUMN】大分県竹田市のSPA直入にて秋のシリーズ戦を開催！併催のNinja Team Green Cupとともに熱いバトルが展開されました！",
+        "ca": "【POLISPA Rd.3 i Super Sunday Festa AUTUMN a SPA Naoiri】Gran cap de setmana de velocitat a Oita amb la Ninja Team Green Cup!",
+        "en": "[SPA Naoiri POLISPA Rd.3 & Sunday Festa AUTUMN] Autumn series round at Oita featuring technical sprint battles alongside the Ninja Team Green Cup!"
       },
       "editorialCommentary": {
-        "ja": "9月第1週の九州は、大分県竹田市のSPA直入で土曜に『Ninja Team Green Cup』、日曜に『POLISPAロードレース選手権 第3戦 / スーパーサンデーフェスタ 2026 AUTUMN』が開催され、同日熊本県大津町のHSR九州では『ドリームカップ 4時間耐久レース』が開催される豪華ダブルヘッダーとなりました。",
-        "ca": "El primer cap de setmana de setembre a Kyushu va reunir l'esprint tècnic de SPA Naoiri (1.430m) amb les 4 Hores de resistència d'HSR Kyushu (2.350m).",
-        "en": "September's opening weekend in Kyushu paired technical sprint action at SPA Naoiri (1,430m) with the 4-Hour Dream Cup Endurance at HSR Kyushu (2,350m)."
+        "ja": "SPA直入公式（@autopolis2005）およびハッシュタグ「#SPA直入」では、阿蘇の初秋の風が吹く中で開催された各クラスの表彰台スナップが発信されています。",
+        "ca": "El compte oficial @autopolis2005 i l'etiqueta #SPA直入 recullen les fotos de podi sota l'ambient agradable de setembre a Oita.",
+        "en": "Official dispatches from @autopolis2005 and community posts under #SPA直入 capture podium presentations and crisp autumn racing."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "SPA直入 公式チャンネル",
+      "handle": "SPA直入",
+      "url": "https://www.youtube.com/watch?v=uWNP-OO8pVU",
+      "postUrl": "https://www.youtube.com/watch?v=uWNP-OO8pVU",
+      "quotedPostText": {
+        "ja": "SPA直入公式：秋のポリスパRd.3 決勝ハイライト！涼風吹き抜ける高原コースでのクリーンで熱いバトル！",
+        "ca": "Canal Oficial SPA Naoiri: Ronda de tardor de Polispa Rd.3 amb duels apassionants al circuit d'Oita!",
+        "en": "SPA Naoiri Official: Autumn Polispa Rd.3 highlights featuring razor-close battles in pristine track conditions!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
       }
     },
     {
       "platform": "X",
-      "accountName": "Honda MotoGP / HRC",
-      "handle": "@HRC_MotoGP",
-      "url": "https://x.com/HRC_MotoGP",
-      "postUrl": "https://x.com/HRC_MotoGP/status/2119492292918890909",
+      "citationType": "hashtag_hub",
+      "accountName": "HSR九州 公式 ＆ ドリームカップ",
+      "handle": "@hsr_kyushu / #ドリームカップ",
+      "url": "https://x.com/hsr_kyushu",
+      "postUrl": "https://x.com/hashtag/ドリームカップ",
       "quotedPostText": {
-        "ja": "【2026年9月5日(土)〜6日(日) 開催：SPA直入『スーパーサンデーフェスタ 2026 AUTUMN / POLISPAロードレース選手権 第3戦（Ninja Team Green Cup併催）』＆ HSR九州『ドリームカップフェスティバル 4時間耐久レース』】大分・SPA直入と熊本・HSR九州で秋の九州二輪シーズンが一斉開幕！",
-        "ca": "【5-6 de setembre de 2026: POLISPA Rd.3 / Super Sunday Festa AUTUMN a SPA Naoiri i 4 Hores Dream Cup a HSR Kyushu】Cap de setmana doble als circuits d'Oita i Kumamoto per encetar la temporada de tardor a Kyushu!",
-        "en": "[September 5–6, 2026: POLISPA Rd.3 / Super Sunday Festa AUTUMN at SPA Naoiri & Dream Cup 4-Hour Endurance at HSR Kyushu] Autumn motorcycle racing kicks off simultaneously across Oita and Kumamoto!"
+        "ja": "【HSR九州 ドリームカップ 4時間耐久】熊本・HSR九州で開催された名物ミニバイク4耐！チーム全員でタスキをつなぐ耐久レースの醍醐味が詰まった感動のチェッカー！",
+        "ca": "【4 Hores Dream Cup a HSR Kyushu】Cursa clàssica de resistència per a minimotos a Kumamoto amb una gran participació per equips!",
+        "en": "[HSR Kyushu Dream Cup 4-Hour Endurance] Popular mini-bike endurance at Kumamoto, delivering high drama and teamwork right to the chequered flag!"
       },
       "editorialCommentary": {
-        "ja": "9月第1週の九州は、大分県竹田市のSPA直入で土曜に『Ninja Team Green Cup』、日曜に『POLISPAロードレース選手権 第3戦 / スーパーサンデーフェスタ 2026 AUTUMN』が開催され、同日熊本県大津町のHSR九州では『ドリームカップ 4時間耐久レース』が開催される豪華ダブルヘッダーとなりました。",
-        "ca": "El primer cap de setmana de setembre a Kyushu va reunir l'esprint tècnic de SPA Naoiri (1.430m) amb les 4 Hores de resistència d'HSR Kyushu (2.350m).",
-        "en": "September's opening weekend in Kyushu paired technical sprint action at SPA Naoiri (1,430m) with the 4-Hour Dream Cup Endurance at HSR Kyushu (2,350m)."
+        "ja": "HSR九州公式（@hsr_kyushu）および「#ドリームカップ」タグでは、4時間にわたる給油・ライダー交代戦略やピットクルーの歓喜の瞬間が伝えられています。",
+        "ca": "Les publicacions mostren l'estratègia de relleus i la celebració de tots els equips que van completar les 4 hores.",
+        "en": "Community and track posts highlight pit-stop strategies, rider change handoffs, and jubilant team finishes across 4 hours."
       }
     }
   ],

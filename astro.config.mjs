@@ -5,5 +5,8 @@ export default defineConfig({
   output: 'static',
   build: {
     format: 'directory'
+  },
+  redirects: {
+    '/articles/circuit-maintenance-wire-locking-brake-fluid-tire-pressure': '/articles/circuit-maintenance-wire-locking-safety-wire-technique/'
   }
 });

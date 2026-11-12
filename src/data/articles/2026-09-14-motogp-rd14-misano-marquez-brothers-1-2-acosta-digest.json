@@ -7,7 +7,7 @@
   "circuit": "ミサノ・ワールド・サーキット・マルコ・シモンチェリ（イタリア・全長4,226m）",
   "region": "World (Misano, Italy)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd14-san-marino-gp-misano-marc-alex-marquez-1-2-acosta-digest.webp",
   "tags": [
     "MotoGP",
     "サンマリノGP",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #SanMarinoGP Hub",
+      "handle": "@MotoGP / #SanMarinoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2119472556121973145",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第14戦 サンマリノGP（ミサノ）公式結果】マルク・マルケス（Ducati Lenovo Team）がスプリントと決勝を完全制覇し、ついに2026年チャンピオンシップのランキング首位を奪取！決勝2位に弟アレックス・マルケス（BK8 Gresini Racing MotoGP）が入りマルケス兄弟1-2フィニッシュ！3位はペドロ・アコスタ（Red Bull KTM Factory Racing）！",
-        "ca": "【Resultats Oficials GP de San Marino 2026 a Misano】Doblet històric dels germans de Cervera! Marc Márquez (1r, Ducati Lenovo Team) guanya l'Sprint i el GP per situar-se líder del Mundial 2026 davant el seu germà Àlex Márquez (2n, BK8 Gresini Racing) i Pedro Acosta (3r, KTM)!",
-        "en": "[Official Results: 2026 MotoGP San Marino GP at Misano] Marc Márquez (Ducati Lenovo Team) sweeps the Sprint and Grand Prix to seize the 2026 World Championship lead! Brother Álex Márquez (BK8 Gresini Racing MotoGP) takes 2nd for a Márquez brothers 1–2 ahead of 3rd-place Pedro Acosta (KTM)!"
+        "ja": "【2026 MotoGP 第14戦 サンマリノGP（ミサノ）公式結果】アドリア海のミサノでマルケス兄弟が歴史的1-2フィニッシュ！兄マルク優勝、弟アレックス2位、3位にペドロ・アコスタ！",
+        "ca": "【GP de San Marino 2026 a Misano】Doblet històric dels germans Márquez! Marc Márquez guanya la cursa per davant d'Àlex Márquez (2n) i Pedro Acosta (3r) a Misano!",
+        "en": "[2026 MotoGP San Marino GP at Misano] Historic 1-2 finish for the Márquez brothers! Marc takes victory ahead of younger brother Álex (2nd) with Pedro Acosta in 3rd!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とGresini公式（@gresiniracing）が伝えたセルベラ出身のマルケス兄弟によるミサノ1-2フィニッシュ！前戦アラゴンに続く連勝を飾ったマルク・マルケス選手がついにポイントランキング首位に浮上し、2位のアレックス・マルケス選手とともに表彰台の中央と隣を分け合いました。",
-        "ca": "Les publicacions de @MotoGP i @gresiniracing celebren l'1-2 català dels germans Marc i Àlex Márquez a Misano i l'assalt de Marc al liderat del Mundial.",
-        "en": "Official posts from @MotoGP and @gresiniracing celebrate the Catalan Márquez brothers' 1–2 finish at Misano as Marc takes over top spot in the standings."
+        "ja": "MotoGP公式（@MotoGP）および「#SanMarinoGP」では、最高峰クラスの決勝で実の兄弟が1位・2位を独占した歴史的ポディウムに世界中から大反響が寄せられています。",
+        "ca": "El compte oficial @MotoGP celebra el doblet familiar dels Márquez amb fotos emocionants al podi de la costa adriàtica.",
+        "en": "Official dispatches from @MotoGP and #SanMarinoGP celebrate an extraordinary family milestone on the Adriatic coast."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Gresini Racing Official",
-      "handle": "@gresiniracing",
-      "url": "https://www.instagram.com/gresiniracing/",
-      "postUrl": "https://www.instagram.com/p/DffXQwHjHIr/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第14戦 サンマリノGP（ミサノ）公式結果】マルク・マルケス（Ducati Lenovo Team）がスプリントと決勝を完全制覇し、ついに2026年チャンピオンシップのランキング首位を奪取！決勝2位に弟アレックス・マルケス（BK8 Gresini Racing MotoGP）が入りマルケス兄弟1-2フィニッシュ！3位はペドロ・アコスタ（Red Bull KTM Factory Racing）！",
-        "ca": "【Resultats Oficials GP de San Marino 2026 a Misano】Doblet històric dels germans de Cervera! Marc Márquez (1r, Ducati Lenovo Team) guanya l'Sprint i el GP per situar-se líder del Mundial 2026 davant el seu germà Àlex Márquez (2n, BK8 Gresini Racing) i Pedro Acosta (3r, KTM)!",
-        "en": "[Official Results: 2026 MotoGP San Marino GP at Misano] Marc Márquez (Ducati Lenovo Team) sweeps the Sprint and Grand Prix to seize the 2026 World Championship lead! Brother Álex Márquez (BK8 Gresini Racing MotoGP) takes 2nd for a Márquez brothers 1–2 ahead of 3rd-place Pedro Acosta (KTM)!"
+        "ja": "MotoGP Official：ミサノ決勝ハイライト＆マルケス兄弟がパルクフェルメで抱き合う感動のノーカット映像！",
+        "ca": "Canal Oficial MotoGP: Resum de Misano i l'abraçada inoblidable entre Marc i Àlex Márquez al parc tancat!",
+        "en": "MotoGP Official Channel: Misano race highlights and the emotional parc fermé celebrations between Marc and Álex Márquez!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とGresini公式（@gresiniracing）が伝えたセルベラ出身のマルケス兄弟によるミサノ1-2フィニッシュ！前戦アラゴンに続く連勝を飾ったマルク・マルケス選手がついにポイントランキング首位に浮上し、2位のアレックス・マルケス選手とともに表彰台の中央と隣を分け合いました。",
-        "ca": "Les publicacions de @MotoGP i @gresiniracing celebren l'1-2 català dels germans Marc i Àlex Márquez a Misano i l'assalt de Marc al liderat del Mundial.",
-        "en": "Official posts from @MotoGP and @gresiniracing celebrate the Catalan Márquez brothers' 1–2 finish at Misano as Marc takes over top spot in the standings."
+        "ja": "公式ハイライトでは、ミサノの高速右コーナー「クルボーネ」で兄弟揃って時速290km超で進入していく鳥肌もののオンボード映像が収められています。",
+        "ca": "El vídeo oficial permet viure la velocitat esfereïdora al revolt Curvone amb les càmeres dels dos germans.",
+        "en": "Official onboard edits capture the breathtaking commitment of both brothers slicing through the Curvone at over 290 km/h."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第14戦サンマリノGP決勝結果（1位マルク・マルケス、2位アレックス・マルケス、3位ペドロ・アコスタ）。",
+        "ca": "Resultats oficials GP de San Marino: 1r Marc Márquez, 2n Àlex Márquez, 3r Pedro Acosta.",
+        "en": "MotoGP.com Official Classification: 1st Marc Márquez, 2nd Álex Márquez, 3rd Pedro Acosta."
+      },
+      "editorialCommentary": {
+        "ja": "公式記録により、兄弟が同一レースでワンツーフィニッシュを飾ったグランプリ史上極めて稀な記録が正式認定されました。",
+        "ca": "La web oficial cataloga la cursa com una de les pàgines més daurades de la història del campionat del món.",
+        "en": "Official series archives enshrine this result as one of the rarest and most cherished sibling 1-2 finishes in GP history."
       }
     }
   ],

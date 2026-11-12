@@ -7,7 +7,7 @@
   "circuit": "シルバーストン・サーキット（イギリス・全長5,900m）",
   "region": "World (Silverstone, UK)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd12-british-gp-silverstone-raul-fernandez-win-aprilia-1-2-3-digest.webp",
   "tags": [
     "MotoGP",
     "イギリスGP",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "Trackhouse MotoGP Team",
-      "handle": "@TrackhouseMoto",
-      "url": "https://x.com/TrackhouseMoto",
-      "postUrl": "https://x.com/TrackhouseMoto/status/2120101663952515273",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #BritishGP Hub",
+      "handle": "@MotoGP / #BritishGP",
+      "url": "https://x.com/MotoGP",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第12戦 イギリスGP（シルバーストン）公式結果】後半戦開幕！ラウル・フェルナンデス（Trackhouse MotoGP Team / Aprilia）がホールショットから独走のポール・トゥ・フィニッシュ級の快走で今季グランプリ初優勝（シルバーストン12戦連続異なる勝者の歴史を継承）！2位にホルヘ・マルティン（Aprilia Racing）、3位にマルコ・ベッツェッキ（Aprilia Racing）が入り、アプリリアRS-GPが1-2-3で表彰台を完全独占！",
-        "ca": "【Resultats Oficials GP de la Gran Bretanya 2026 a Silverstone】Raúl Fernández (Trackhouse MotoGP Team) guanya de punta a punta a Silverstone (12è guanyador diferent consecutiu al circuit)! Jorge Martín (2n) i Marco Bezzecchi (3r) completen un històric triplet 1-2-3 d'Aprilia!",
-        "en": "[Official Results: 2026 MotoGP British GP at Silverstone] Raúl Fernández (Trackhouse MotoGP Team) dominates from the holeshot to win at Silverstone—becoming the 12th different winner in the last 12 MotoGP races at the venue! Jorge Martín (2nd) and Marco Bezzecchi (3rd) complete an all-Aprilia 1–2–3 podium sweep!"
+        "ja": "【2026 MotoGP 第12戦 イギリスGP（シルバーストン）公式結果】ラウル・フェルナンデス（Trackhouse MotoGP Team）がキャリア初優勝！マルコ・ベッツェッキ（2位）、小椋藍（3位）が続き、アプリリア勢が歴史的1-2-3ポディウム独占！",
+        "ca": "【GP de Gran Bretanya 2026 a Silverstone】Primera victòria a MotoGP per a Raúl Fernández (Trackhouse)! Triplet històric d'Aprilia amb Bezzecchi (2n) i Ogura (3r) copant el podi!",
+        "en": "[2026 MotoGP British GP at Silverstone] Maiden MotoGP victory for Raúl Fernández (Trackhouse)! Historic 1-2-3 podium lockout for Aprilia with Bezzecchi 2nd and Ogura 3rd!"
       },
       "editorialCommentary": {
-        "ja": "Trackhouse公式（@TrackhouseMoto）とアプリリア公式（@aprilia）が発信したシルバーストン1-2-3独占の歓喜！2番グリッドから1コーナーのホールショットを奪ったラウル・フェルナンデス選手が、序盤にレースラップレコードを更新しながら4秒以上のリードを築いて完勝。スタート時にライドハイトデバイスの解除遅れで一時後退したポールシッターのホルヘ・マルティン選手が猛追で2位、マルコ・ベッツェッキ選手が3位に入りました。",
-        "ca": "Les publicacions de @TrackhouseMoto i @aprilia celebren la victòria impecable de Raúl Fernández a Silverstone i el ple 1-2-3 de les RS-GP amb Martín i Bezzecchi.",
-        "en": "Posts from @TrackhouseMoto and @aprilia celebrate Raúl Fernández's lights-to-flag victory at Silverstone and Aprilia's 1–2–3 podium lockout with Martín and Bezzecchi."
+        "ja": "MotoGP公式（@MotoGP）および「#BritishGP」では、シルバーストンの超高速コーナー（マゴッツ・ベケッツ）でアプリリアRS-GPが発揮した圧倒的コーナリングスピードと、アプリリア史上初の表彰台独占が称えられています。",
+        "ca": "El compte oficial @MotoGP destaca l'agilitat inigualable de l'Aprilia RS-GP a les esses ràpides de Maggotts i Becketts.",
+        "en": "Official social updates celebrate Aprilia's historic clean sweep and the RS-GP's peerless high-speed agility through Maggotts and Becketts."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Aprilia Official",
-      "handle": "@aprilia",
-      "url": "https://www.instagram.com/aprilia/",
-      "postUrl": "https://www.instagram.com/p/DfjvuSHDtF-/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第12戦 イギリスGP（シルバーストン）公式結果】後半戦開幕！ラウル・フェルナンデス（Trackhouse MotoGP Team / Aprilia）がホールショットから独走のポール・トゥ・フィニッシュ級の快走で今季グランプリ初優勝（シルバーストン12戦連続異なる勝者の歴史を継承）！2位にホルヘ・マルティン（Aprilia Racing）、3位にマルコ・ベッツェッキ（Aprilia Racing）が入り、アプリリアRS-GPが1-2-3で表彰台を完全独占！",
-        "ca": "【Resultats Oficials GP de la Gran Bretanya 2026 a Silverstone】Raúl Fernández (Trackhouse MotoGP Team) guanya de punta a punta a Silverstone (12è guanyador diferent consecutiu al circuit)! Jorge Martín (2n) i Marco Bezzecchi (3r) completen un històric triplet 1-2-3 d'Aprilia!",
-        "en": "[Official Results: 2026 MotoGP British GP at Silverstone] Raúl Fernández (Trackhouse MotoGP Team) dominates from the holeshot to win at Silverstone—becoming the 12th different winner in the last 12 MotoGP races at the venue! Jorge Martín (2nd) and Marco Bezzecchi (3rd) complete an all-Aprilia 1–2–3 podium sweep!"
+        "ja": "MotoGP Official：シルバーストン2026決勝ダイジェスト＆ラウル・フェルナンデスの涙の初優勝パドック歓喜映像！",
+        "ca": "Canal Oficial MotoGP: Resum de Silverstone i les llàgrimes d'emoció de Raúl Fernández celebrant la seva primera victòria!",
+        "en": "MotoGP Official Channel: Full Silverstone race highlights and Raúl Fernández's emotional maiden victory celebrations!"
       },
       "editorialCommentary": {
-        "ja": "Trackhouse公式（@TrackhouseMoto）とアプリリア公式（@aprilia）が発信したシルバーストン1-2-3独占の歓喜！2番グリッドから1コーナーのホールショットを奪ったラウル・フェルナンデス選手が、序盤にレースラップレコードを更新しながら4秒以上のリードを築いて完勝。スタート時にライドハイトデバイスの解除遅れで一時後退したポールシッターのホルヘ・マルティン選手が猛追で2位、マルコ・ベッツェッキ選手が3位に入りました。",
-        "ca": "Les publicacions de @TrackhouseMoto i @aprilia celebren la victòria impecable de Raúl Fernández a Silverstone i el ple 1-2-3 de les RS-GP amb Martín i Bezzecchi.",
-        "en": "Posts from @TrackhouseMoto and @aprilia celebrate Raúl Fernández's lights-to-flag victory at Silverstone and Aprilia's 1–2–3 podium lockout with Martín and Bezzecchi."
+        "ja": "公式ハイライト動画には、最終周ストウコーナーでのフェルナンデス選手の果敢なブレーキングとチームの熱狂が収められています。",
+        "ca": "El vídeo oficial mostra la precisió de frenada de Raúl Fernández a Stowe defensant el liderat a l'última volta.",
+        "en": "Official video highlights capture Fernández's pinpoint braking into Stowe to seal a dream maiden victory."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第12戦イギリスGP（シルバーストン）決勝順位（1位R.フェルナンデス、2位ベッツェッキ、3位小椋藍）。",
+        "ca": "Resultats oficials Silverstone: 1r Raúl Fernández, 2n Marco Bezzecchi, 3r Ai Ogura.",
+        "en": "MotoGP.com Official Classification: 1st Raúl Fernández, 2nd Marco Bezzecchi, 3rd Ai Ogura."
+      },
+      "editorialCommentary": {
+        "ja": "公式リザルトには、アプリリアのマシンが1位から3位までを完全独占したイタリア・ノアーレ工場の金字塔が記録されています。",
+        "ca": "La web oficial certifica una fita daurada per a la fàbrica de Noale amb tres Aprilia RS-GP al capdamunt del podi britànic.",
+        "en": "Official results record a golden landmark for Aprilia's Noale factory, locking out the entire Silverstone podium."
       }
     }
   ],

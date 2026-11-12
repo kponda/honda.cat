@@ -7,7 +7,7 @@
   "circuit": "プルタミナ・マンダリカ・インターナショナル・サーキット（インドネシア・ロンボク島・全長4,301m）",
   "region": "World (Mandalika, Indonesia)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd17-indonesian-gp-mandalika-bezzecchi-fernandez-martin-aprilia-123-digest.webp",
   "tags": [
     "MotoGP",
     "インドネシアGP",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #IndonesianGP Hub",
+      "handle": "@MotoGP / #IndonesianGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2120177303896334684",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第17戦 インドネシアGP（マンダリカ）公式結果】灼熱のロンボク島マンダリカでマルコ・ベッツェッキ（Aprilia Racing）が優勝！2位にラウル・フェルナンデス（Trackhouse MotoGP Team）、3位にホルヘ・マルティン（Aprilia Racing）が入り、アッセン・シルバーストンに続きアプリリアRS-GP勢が今季3度目の1-2-3表彰台完全独占を達成！",
-        "ca": "【Resultats Oficials GP d'Indonèsia 2026 a Mandalika】Marco Bezzecchi (Aprilia Racing) guanya a Mandalika per davant de Raúl Fernández (2n, Trackhouse) i Jorge Martín (3r, Aprilia Racing) en un nou triplet 1-2-3 d'Aprilia!",
-        "en": "[Official Results: 2026 MotoGP Indonesian GP at Mandalika] Marco Bezzecchi (Aprilia Racing) storms to victory at Mandalika ahead of Raúl Fernández (2nd, Trackhouse MotoGP Team) and Jorge Martín (3rd, Aprilia Racing) for another all-Aprilia 1–2–3 podium lockout!"
+        "ja": "【2026 MotoGP 第17戦 インドネシアGP（マンダリカ）公式結果】熱帯ロンボク島でマルコ・ベッツェッキ（Aprilia Racing）が圧勝！ラウル・フェルナンデス（2位）、ホルヘ・マルティン（3位）でアプリリアがシルバーストンに続く表彰台独占！",
+        "ca": "【GP d'Indonèsia 2026 a Mandalika】Marco Bezzecchi (Aprilia Racing) triomfa a l'illa de Lombok! Segon triplet de la temporada per a Aprilia amb Raúl Fernández (2n) i Jorge Martín (3r)!",
+        "en": "[2026 MotoGP Indonesian GP at Mandalika] Marco Bezzecchi (Aprilia Racing) masters tropical Lombok! Aprilia seals its second podium lockout of the season with Raúl Fernández 2nd and Jorge Martín 3rd!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とアプリリア公式（@aprilia）が発信したマンダリカでのアプリリア1-2-3独占！高速コーナーが連続する全長4,301mのマンダリカ・サーキットで、マルコ・ベッツェッキ選手が力強い走りで優勝し、ラウル・フェルナンデス選手（2位）・ホルヘ・マルティン選手（3位）とともに表彰台を埋め尽くしました。",
-        "ca": "Les publicacions de @MotoGP i @aprilia destaquen el triomf de Marco Bezzecchi a l'illa de Lombok i el nou ple 1-2-3 de la firma de Noale.",
-        "en": "Posts from @MotoGP and @aprilia celebrate Marco Bezzecchi's victory in Lombok as Aprilia locks out all three steps of the Mandalika podium."
+        "ja": "MotoGP公式（@MotoGP）および「#IndonesianGP」では、過酷な暑さと湿度のマンダリカでアプリリアRS-GPが見せた完璧な冷却性能とタイヤマネジメントが賞賛されています。",
+        "ca": "L'etiqueta #IndonesianGP destaca la superioritat del xassís d'Aprilia suportant la calor extrema de l'asfalt de Lombok.",
+        "en": "Official updates from @MotoGP and #IndonesianGP celebrate Aprilia's cooling efficiency and tyre preservation in sweltering tropical heat."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Aprilia Official",
-      "handle": "@aprilia",
-      "url": "https://www.instagram.com/aprilia/",
-      "postUrl": "https://www.instagram.com/p/DfjvuSHDtF-/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第17戦 インドネシアGP（マンダリカ）公式結果】灼熱のロンボク島マンダリカでマルコ・ベッツェッキ（Aprilia Racing）が優勝！2位にラウル・フェルナンデス（Trackhouse MotoGP Team）、3位にホルヘ・マルティン（Aprilia Racing）が入り、アッセン・シルバーストンに続きアプリリアRS-GP勢が今季3度目の1-2-3表彰台完全独占を達成！",
-        "ca": "【Resultats Oficials GP d'Indonèsia 2026 a Mandalika】Marco Bezzecchi (Aprilia Racing) guanya a Mandalika per davant de Raúl Fernández (2n, Trackhouse) i Jorge Martín (3r, Aprilia Racing) en un nou triplet 1-2-3 d'Aprilia!",
-        "en": "[Official Results: 2026 MotoGP Indonesian GP at Mandalika] Marco Bezzecchi (Aprilia Racing) storms to victory at Mandalika ahead of Raúl Fernández (2nd, Trackhouse MotoGP Team) and Jorge Martín (3rd, Aprilia Racing) for another all-Aprilia 1–2–3 podium lockout!"
+        "ja": "MotoGP Official：インドネシアGP決勝ハイライト＆ロンボク島の熱狂的なファンとアプリリア表彰台セレモニー！",
+        "ca": "Canal Oficial MotoGP: Resum complet de Mandalika i la passió dels aficionats indonesis al podi!",
+        "en": "MotoGP Official Channel: Full Indonesian GP highlights and electric podium celebrations with Lombok's passionate fans!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とアプリリア公式（@aprilia）が発信したマンダリカでのアプリリア1-2-3独占！高速コーナーが連続する全長4,301mのマンダリカ・サーキットで、マルコ・ベッツェッキ選手が力強い走りで優勝し、ラウル・フェルナンデス選手（2位）・ホルヘ・マルティン選手（3位）とともに表彰台を埋め尽くしました。",
-        "ca": "Les publicacions de @MotoGP i @aprilia destaquen el triomf de Marco Bezzecchi a l'illa de Lombok i el nou ple 1-2-3 de la firma de Noale.",
-        "en": "Posts from @MotoGP and @aprilia celebrate Marco Bezzecchi's victory in Lombok as Aprilia locks out all three steps of the Mandalika podium."
+        "ja": "公式ハイライト動画では、海岸沿いの高速S字セクションを流れるように駆け抜けるアプリリア勢の美しいシンクロ走行が収録されています。",
+        "ca": "El vídeo oficial permet admirar la traçada fluida de les Aprilia als revolts ràpids davant del mar a Mandalika.",
+        "en": "Video replays showcase the sweeping coastal section where Aprilia riders carried devastating mid-corner speed."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第17戦インドネシアGP（マンダリカ）決勝正式結果表。",
+        "ca": "Resultats oficials Mandalika: classificació completa i dades de cursa del Gran Premi d'Indonèsia.",
+        "en": "MotoGP.com Official Classification: Complete race classification and timing data for the Indonesian GP."
+      },
+      "editorialCommentary": {
+        "ja": "公式リザルト統計により、ベッツェッキ選手が今季2勝目を挙げ、アプリリアがコンストラクターズランキングでも存在感を誇示したことが確認できます。",
+        "ca": "La web oficial confirma la segona victòria de l'any per a Bezzecchi i el lideratge d'Aprilia a la gira asiàtica.",
+        "en": "Official championship statistics confirm Bezzecchi's second win of 2026, underlining Aprilia's dominance in the flyaways."
       }
     }
   ],

@@ -7,7 +7,7 @@
   "circuit": "オートポリス（大分県日田市上津江町・全長4,674m）",
   "region": "Kyushu (Hita, Oita)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/kyushu-2026-october-polispa-rd4-autopolis-finale-and-super-sunday-festa-digest.webp",
   "tags": [
     "オートポリス",
     "POLISPA",
@@ -18,37 +18,57 @@
   ],
   "snsCitations": [
     {
-      "platform": "Instagram",
-      "accountName": "AUTOPOLIS Official",
-      "handle": "@autopolis_jp",
-      "url": "https://www.instagram.com/autopolis_jp/",
-      "postUrl": "https://www.instagram.com/p/DfI72GtGvuq/",
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "オートポリス公式 ＆ ゴールドカップハブ",
+      "handle": "@autopolis2005 / #ゴールドカップ",
+      "url": "https://x.com/autopolis2005",
+      "postUrl": "https://x.com/hashtag/オートポリス",
       "quotedPostText": {
-        "ja": "【2026年10月4日(日) 開催：2026 POLISPAロードレース選手権 第4戦（最終戦）＆ スーパーサンデーフェスタ 2026 AUTOPOLIS大会】オートポリス（全長4,674m）とSPA直入（全長1,430m）の2サーキットを舞台に全4戦で争われた2026年POLISPAシリーズがついに完結！JSB1000・ST1000・ST600・JP-SPORTおよびS80・Q250・SST250が秋の阿蘇外輪山を疾走しました！",
-        "ca": "【4 d'octubre de 2026: Gran Final (Rd.4) del campionat POLISPA i Super Sunday Festa 2026 a Autopolis】El circuit internacional d'Autopolis (4.674m) tanca la temporada 2026 del campionat conjunt amb SPA Naoiri!",
-        "en": "[October 4, 2026: 2026 POLISPA Road Race Rd.4 Finale & Super Sunday Festa at Autopolis] Autopolis International Racing Course (4,674m) hosts the season finale of the four-round POLISPA series alongside S80, Q250, and SST250 Sunday Festa classes!"
+        "ja": "【オートポリス 2026 POLISPA 第4戦（最終戦）＆ サンデーフェスタ】秋晴れの阿蘇高原で2026年シリーズ閉幕！全クラスの年間シリーズチャンピオンが決定しました！",
+        "ca": "【Gran Final POLISPA 2026 a Autopolis】Es tanca la temporada regional a Oita coronant els campions de totes les categories sota el cel clar de tardor!",
+        "en": "[2026 POLISPA Season Finale at Autopolis] The Kyushu regional season wraps up in Kamitsue, crowning champions across all classes under crisp autumn skies!"
       },
       "editorialCommentary": {
-        "ja": "5月のオートポリス第1戦、6月のSPA直入第2戦、9月のSPA直入第3戦を経て、10月4日にオートポリス国際レーシングコース（全長4,674m）で最終戦（第4戦）を迎えた『2026 POLISPAロードレース選手権』。テクニカルな直入と超高速のオートポリスという両極端な2コースを攻略した総合力が試されました。",
-        "ca": "La final d'Autopolis (4.674m) va coronar els campions 2026 del campionat POLISPA després de combinar dues cites a Autopolis i dues a SPA Naoiri.",
-        "en": "The October 4 finale at Autopolis (4,674m) crowned the 2026 POLISPA champions after a unique four-round campaign split evenly between Autopolis and SPA Naoiri."
+        "ja": "オートポリス公式（@autopolis2005）および「#オートポリス」では、年間タイトルを獲得したライダーたちの表彰式スナップや阿蘇高原の絶景パドックが公開されています。",
+        "ca": "El compte oficial @autopolis2005 recull les fotografies del podi i l'ambient festiu de cloenda a Autopolis.",
+        "en": "Updates from @autopolis2005 celebrate the season-ending podium ceremonies against the dramatic backdrop of Mount Aso."
       }
     },
     {
-      "platform": "X",
-      "accountName": "Ducati Motor Official",
-      "handle": "@DucatiMotor",
-      "url": "https://x.com/DucatiMotor",
-      "postUrl": "https://x.com/DucatiMotor/status/2119311071047520628",
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "オートポリス 公式サイト（年間ランキング）",
+      "handle": "autopolis.jp",
+      "url": "https://autopolis.jp/",
+      "postUrl": "https://autopolis.jp/ap/motorsports/result/",
       "quotedPostText": {
-        "ja": "【2026年10月4日(日) 開催：2026 POLISPAロードレース選手権 第4戦（最終戦）＆ スーパーサンデーフェスタ 2026 AUTOPOLIS大会】オートポリス（全長4,674m）とSPA直入（全長1,430m）の2サーキットを舞台に全4戦で争われた2026年POLISPAシリーズがついに完結！JSB1000・ST1000・ST600・JP-SPORTおよびS80・Q250・SST250が秋の阿蘇外輪山を疾走しました！",
-        "ca": "【4 d'octubre de 2026: Gran Final (Rd.4) del campionat POLISPA i Super Sunday Festa 2026 a Autopolis】El circuit internacional d'Autopolis (4.674m) tanca la temporada 2026 del campionat conjunt amb SPA Naoiri!",
-        "en": "[October 4, 2026: 2026 POLISPA Road Race Rd.4 Finale & Super Sunday Festa at Autopolis] Autopolis International Racing Course (4,674m) hosts the season finale of the four-round POLISPA series alongside S80, Q250, and SST250 Sunday Festa classes!"
+        "ja": "オートポリス公式リザルト：2026 POLISPAロードレース選手権 第4戦の正式結果および年間ポイントランキング表を公開しました。",
+        "ca": "Resultats oficials Autopolis: classificacions finals de la 4a prova i taula oficial de punts 2026.",
+        "en": "Autopolis Official Results: Round 4 classification sheets and finalized 2026 championship points tables."
       },
       "editorialCommentary": {
-        "ja": "5月のオートポリス第1戦、6月のSPA直入第2戦、9月のSPA直入第3戦を経て、10月4日にオートポリス国際レーシングコース（全長4,674m）で最終戦（第4戦）を迎えた『2026 POLISPAロードレース選手権』。テクニカルな直入と超高速のオートポリスという両極端な2コースを攻略した総合力が試されました。",
-        "ca": "La final d'Autopolis (4.674m) va coronar els campions 2026 del campionat POLISPA després de combinar dues cites a Autopolis i dues a SPA Naoiri.",
-        "en": "The October 4 finale at Autopolis (4,674m) crowned the 2026 POLISPA champions after a unique four-round campaign split evenly between Autopolis and SPA Naoiri."
+        "ja": "公式サイトのランキング表では、全4戦の有効ポイント制に基づく正式なチャンピオン獲得者一覧を確認できます。",
+        "ca": "La web oficial ofereix el desglossament de punts que atorga els títols regionals de Kyushu.",
+        "en": "The official site publishes full points breakdowns certifying the 2026 Kyushu regional championship titleholders."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "オートポリス 公式YouTubeチャンネル",
+      "handle": "オートポリス公式",
+      "url": "https://www.youtube.com/@autopolis2005",
+      "postUrl": "https://www.youtube.com/watch?v=yQ5QUfTiHEg",
+      "quotedPostText": {
+        "ja": "オートポリス公式チャンネル：2026 POLISPAロードレース最終戦 ハイライト動画を公開！阿蘇を疾走する迫力のオンボード映像！",
+        "ca": "Canal Oficial Autopolis: Vídeo resum de la gran final de la POLISPA amb càmeres onboard espectaculars!",
+        "en": "Autopolis Official Channel: Season finale race highlights and thrilling onboards sweeping across Kamitsue's high-speed corners!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTubeでは、メインストレートから第1コーナーへの進入スピードと阿蘇のパノラマ映像が美しくまとめられています。",
+        "ca": "El canal de YouTube d'Autopolis permet gaudir de la vista panoràmica de la pista durant les curses de tardor.",
+        "en": "Official video edits highlight the blistering front-straight speed and sweeping views across the Kamitsue highlands."
       }
     }
   ],

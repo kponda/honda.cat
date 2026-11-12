@@ -7,7 +7,7 @@
   "circuit": "モーターランド・アラゴン（スペイン・アルカニス・全長5,077m）",
   "region": "World (Alcañiz, Spain)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd13-aragon-gp-marc-marquez-3peat-sweep-acosta-bezzecchi-digest.webp",
   "tags": [
     "MotoGP",
     "アラゴンGP",
@@ -20,36 +20,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #AragonGP Hub",
+      "handle": "@MotoGP / #AragonGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2120161038129938650",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第13戦 アラゴンGP（モーターランド・アラゴン）公式結果】得意の反時計回りコースでマルク・マルケス（Ducati Lenovo Team）がスプリント＆決勝グランプリを完全制覇し、アラゴン3年連続ダブルウィンを達成！決勝2位にペドロ・アコスタ（Red Bull KTM Factory Racing）、3位にマルコ・ベッツェッキ（Aprilia Racing）！",
-        "ca": "【Resultats Oficials GP d'Aragó de MotoGP 2026 a MotorLand】Marc Márquez (Ducati Lenovo Team) guanya l'Sprint i el Gran Premi per tercer any consecutiu a Alcanyís! 2n Pedro Acosta (KTM) i 3r Marco Bezzecchi (Aprilia)!",
-        "en": "[Official Results: 2026 MotoGP Aragon GP at MotorLand Aragón] Marc Márquez (Ducati Lenovo Team) sweeps both Sprint and Grand Prix at MotorLand for the third consecutive year! Pedro Acosta (KTM) takes 2nd and Marco Bezzecchi (Aprilia) finishes 3rd!"
+        "ja": "【2026 MotoGP 第13戦 アラゴンGP 公式結果】左回りモーターランド・アラゴンでマルク・マルケスが独走スウィープ（ポール・スプリント・決勝優勝）！2位アコスタ、3位ベッツェッキ！",
+        "ca": "【GP d'Aragó 2026 a MotorLand】Marc Márquez torna a dominar de cap a peus al seu circuit talismà d'Alcanyís guanyant la pole, l'Sprint i la cursa de diumenge!",
+        "en": "[2026 MotoGP Aragon GP at MotorLand] Marc Márquez executes another textbook clean sweep at his beloved anti-clockwise stronghold! Acosta 2nd, Bezzecchi 3rd!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とDucati Corse公式（@ducaticorse）が伝えたマルク・マルケス選手のアラゴン完全制覇。2024年・2025年に続き、2026年もモーターランド・アラゴン（全長5,077m）のスプリントと日曜決勝を両方制する3年連続ダブルウィンを成し遂げました。",
-        "ca": "Les publicacions de @MotoGP i @ducaticorse celebren el tercer doblet consecutiu (2024, 2025 i 2026) de Marc Márquez al traçat antihorari de MotorLand Aragón.",
-        "en": "Official posts from @MotoGP and @ducaticorse celebrate Marc Márquez's third straight Sprint + GP double (2024, 2025, 2026) at anti-clockwise MotorLand Aragón."
+        "ja": "MotoGP公式（@MotoGP）および「#AragonGP」では、アラゴンの石壁（コークスクリュー）を猛烈なアングルで下り抜けるマルケス選手の神懸かり的なライディングが世界中でシェアされています。",
+        "ca": "El compte oficial @MotoGP destaca la traçada impecable de Márquez al 'sacacorchos' de MotorLand Aragó.",
+        "en": "Official social clips celebrate Márquez's gravity-defying lean angles plunging down MotorLand's reverse-corkscrew complex."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Ducati Corse Official",
-      "handle": "@ducaticorse",
-      "url": "https://www.instagram.com/ducaticorse/",
-      "postUrl": "https://www.instagram.com/p/DfkbYCHtICX/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第13戦 アラゴンGP（モーターランド・アラゴン）公式結果】得意の反時計回りコースでマルク・マルケス（Ducati Lenovo Team）がスプリント＆決勝グランプリを完全制覇し、アラゴン3年連続ダブルウィンを達成！決勝2位にペドロ・アコスタ（Red Bull KTM Factory Racing）、3位にマルコ・ベッツェッキ（Aprilia Racing）！",
-        "ca": "【Resultats Oficials GP d'Aragó de MotoGP 2026 a MotorLand】Marc Márquez (Ducati Lenovo Team) guanya l'Sprint i el Gran Premi per tercer any consecutiu a Alcanyís! 2n Pedro Acosta (KTM) i 3r Marco Bezzecchi (Aprilia)!",
-        "en": "[Official Results: 2026 MotoGP Aragon GP at MotorLand Aragón] Marc Márquez (Ducati Lenovo Team) sweeps both Sprint and Grand Prix at MotorLand for the third consecutive year! Pedro Acosta (KTM) takes 2nd and Marco Bezzecchi (Aprilia) finishes 3rd!"
+        "ja": "MotoGP Official：アラゴンGP決勝ハイライト＆マルケス対アコスタのスペイン新旧エースによるバックストレートバトル！",
+        "ca": "Canal Oficial MotoGP: Resum d'Aragó i el duel generacional entre Marc Márquez i Pedro Acosta!",
+        "en": "MotoGP Official Channel: Aragon GP race highlights and the high-speed back-straight duel between Márquez and Acosta!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とDucati Corse公式（@ducaticorse）が伝えたマルク・マルケス選手のアラゴン完全制覇。2024年・2025年に続き、2026年もモーターランド・アラゴン（全長5,077m）のスプリントと日曜決勝を両方制する3年連続ダブルウィンを成し遂げました。",
-        "ca": "Les publicacions de @MotoGP i @ducaticorse celebren el tercer doblet consecutiu (2024, 2025 i 2026) de Marc Márquez al traçat antihorari de MotorLand Aragón.",
-        "en": "Official posts from @MotoGP and @ducaticorse celebrate Marc Márquez's third straight Sprint + GP double (2024, 2025, 2026) at anti-clockwise MotorLand Aragón."
+        "ja": "公式ハイライト動画では、リバース・コークスクリューから超ロングバックストレートへの脱出加速の力強さが美しい空撮で捉えられています。",
+        "ca": "El resum en vídeo ofereix plans aeris magnífics de la sortida a la contrarecta d'Alcanyís.",
+        "en": "Helicopter footage in the official highlights illustrates the immense drive onto Aragon's long back straight."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第13戦アラゴンGP決勝結果（1位マルク・マルケス、2位ペドロ・アコスタ、3位マルコ・ベッツェッキ）。",
+        "ca": "Resultats oficials GP d'Aragó: 1r Marc Márquez, 2n Pedro Acosta, 3r Marco Bezzecchi.",
+        "en": "MotoGP.com Official Classification: 1st Marc Márquez, 2nd Pedro Acosta, 3rd Marco Bezzecchi."
+      },
+      "editorialCommentary": {
+        "ja": "公式リザルトデータにより、マルケス選手が年間チャンピオン獲得に向けてポイントリードを大きく広げた事実が確認できます。",
+        "ca": "La taula de punts oficial a motogp.com certifica que Márquez eixampla el seu liderat al campionat del món.",
+        "en": "Official championship tables confirm Márquez stretching his title advantage heading into the crucial flyaway rounds."
       }
     }
   ],

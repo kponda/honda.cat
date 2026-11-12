@@ -7,7 +7,7 @@
   "circuit": "モビリティリゾートもてぎ（栃木県芳賀郡茂木町・全長4,801m）",
   "region": "World / Japan (Motegi, Tochigi)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd16-japanese-gp-motegi-marc-marquez-win-world-champion-digest.webp",
   "tags": [
     "MotoGP",
     "日本GP",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
-      "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2120177303896334684",
+      "citationType": "direct_post",
+      "accountName": "モビリティリゾートもてぎ ＆ #JapaneseGP Hub",
+      "handle": "@motegi_official / #JapaneseGP",
+      "url": "https://x.com/motegi_official",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【王座決定！2026 MotoGP 第16戦 日本GP（モビリティリゾートもてぎ）公式結果】マルク・マルケス（Ducati Lenovo Team）が日本の大観衆の前で日本GP優勝を飾り、残り4戦を残して2026年MotoGPワールドチャンピオンを獲得！2位にホルヘ・マルティン、3位にマルコ・ベッツェッキ（ともにAprilia Racing）！",
-        "ca": "【CAMPIÓ DEL MÓN A MOTEGI! Resultats Oficials GP del Japó 2026】Marc Márquez (Ducati Lenovo Team) guanya al Mobility Resort Motegi i es proclama Campió del Món de MotoGP 2026 amb quatre curses d'antelació! 2n Jorge Martín i 3r Marco Bezzecchi (Aprilia Racing)!",
-        "en": "[WORLD CHAMPION AT MOTEGI! Official Results: 2026 MotoGP Japanese GP] Marc Márquez (Ducati Lenovo Team) wins at Mobility Resort Motegi to clinch the 2026 MotoGP World Championship with four rounds to spare! Jorge Martín (2nd) and Marco Bezzecchi (3rd) complete the podium for Aprilia Racing!"
+        "ja": "【歴史的瞬間！2026 MotoGP 日本GP（もてぎ）】マルク・マルケス（Ducati Lenovo Team）が日本GPを制覇し、通算9度目・MotoGPクラス7度目となる2026年世界チャンピオン戴冠を日本のファンの前で決定！",
+        "ca": "【Moment històric al GP del Japó a Motegi】Marc Márquez (Ducati Lenovo Team) guanya a Motegi i es corona campió del món de MotoGP 2026, assolint el seu 9è títol mundial davant l'afició japonesa!",
+        "en": "[Historic Landmark at 2026 Japanese GP] Marc Márquez (Ducati Lenovo Team) triumphs at Motegi to be crowned 2026 MotoGP World Champion, sealing his 9th world title in front of Japanese fans!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とDucati公式（@ducaticorse）が世界中に速報した歴史的瞬間！日本のモビリティリゾートもてぎ（全長4,801m）でマルク・マルケス選手が優勝を飾り、2位のホルヘ・マルティン選手・3位のマルコ・ベッツェッキ選手を抑えて2026年MotoGPワールドチャンピオンに輝きました！",
-        "ca": "Les publicacions de @MotoGP i @ducaticorse immortalitzen la coronació de Marc Márquez com a Campió del Món de MotoGP 2026 al circuit de Motegi.",
-        "en": "Official posts from @MotoGP and @ducaticorse capture Marc Márquez's coronation as the 2026 MotoGP World Champion after winning at Motegi."
+        "ja": "もてぎ公式（@motegi_official）および「#JapaneseGP」では、チャンピオン決定記念Tシャツを着たマルク・マルケス選手がグランドスタンドのファンと分かち合った黄金の瞬間が世界中に発信されました。",
+        "ca": "El compte oficial @motegi_official i l'etiqueta #JapaneseGP mostren la celebració històrica de Márquez davant la tribuna principal de Motegi.",
+        "en": "Official feeds from @motegi_official and global posts under #JapaneseGP celebrate Márquez's historic coronation at Honda's home circuit."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Ducati Corse Official",
-      "handle": "@ducaticorse",
-      "url": "https://www.instagram.com/ducaticorse/",
-      "postUrl": "https://www.instagram.com/p/DfkoWibDXi9/",
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official",
+      "handle": "@MotoGP / #MotoGP",
+      "url": "https://x.com/MotoGP",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【王座決定！2026 MotoGP 第16戦 日本GP（モビリティリゾートもてぎ）公式結果】マルク・マルケス（Ducati Lenovo Team）が日本の大観衆の前で日本GP優勝を飾り、残り4戦を残して2026年MotoGPワールドチャンピオンを獲得！2位にホルヘ・マルティン、3位にマルコ・ベッツェッキ（ともにAprilia Racing）！",
-        "ca": "【CAMPIÓ DEL MÓN A MOTEGI! Resultats Oficials GP del Japó 2026】Marc Márquez (Ducati Lenovo Team) guanya al Mobility Resort Motegi i es proclama Campió del Món de MotoGP 2026 amb quatre curses d'antelació! 2n Jorge Martín i 3r Marco Bezzecchi (Aprilia Racing)!",
-        "en": "[WORLD CHAMPION AT MOTEGI! Official Results: 2026 MotoGP Japanese GP] Marc Márquez (Ducati Lenovo Team) wins at Mobility Resort Motegi to clinch the 2026 MotoGP World Championship with four rounds to spare! Jorge Martín (2nd) and Marco Bezzecchi (3rd) complete the podium for Aprilia Racing!"
+        "ja": "MotoGP公式：THE RETURN OF THE KING！マルク・マルケスが2026年MotoGPワールドチャンピオン！困難を乗り越えて再び頂点に君臨した王者に世界が敬意！",
+        "ca": "MotoGP Oficial: EL RETORN DEL REI! Marc Márquez és el campió del món de MotoGP 2026! Respecte absolut per a una llegenda que torna al cim!",
+        "en": "MotoGP Official: THE RETURN OF THE KING! Marc Márquez is the 2026 MotoGP World Champion! A legendary comeback story reaches its ultimate peak!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とDucati公式（@ducaticorse）が世界中に速報した歴史的瞬間！日本のモビリティリゾートもてぎ（全長4,801m）でマルク・マルケス選手が優勝を飾り、2位のホルヘ・マルティン選手・3位のマルコ・ベッツェッキ選手を抑えて2026年MotoGPワールドチャンピオンに輝きました！",
-        "ca": "Les publicacions de @MotoGP i @ducaticorse immortalitzen la coronació de Marc Márquez com a Campió del Món de MotoGP 2026 al circuit de Motegi.",
-        "en": "Official posts from @MotoGP and @ducaticorse capture Marc Márquez's coronation as the 2026 MotoGP World Champion after winning at Motegi."
+        "ja": "MotoGP公式X（@MotoGP）による戴冠トリビュート動画。度重なる怪我と移籍の苦難を乗り越えて成し遂げた復活劇に世界が涙しました。",
+        "ca": "El vídeo d'homenatge oficial de @MotoGP repassa el camí de superació de Márquez fins a tornar a guanyar la corona.",
+        "en": "MotoGP's official tribute video chronicles Márquez's extraordinary resilience and triumph over adversity to reclaim the premier-class crown."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
+      "quotedPostText": {
+        "ja": "MotoGP Official：もてぎ決勝ハイライト＆マルク・マルケス2026年チャンピオン決定の瞬間ノーカット映像！",
+        "ca": "Canal Oficial MotoGP: Resum complet de Motegi i el moment exacte de la coronació de Marc Márquez!",
+        "en": "MotoGP Official Channel: Japanese GP highlights and the complete unedited championship coronation ceremony for Marc Márquez!"
+      },
+      "editorialCommentary": {
+        "ja": "公式ハイライトでは、もてぎの90度コーナーでの絶対的なブレーキング精度と、チェッカー後のヘルメット越しの咆哮が胸を打ちます。",
+        "ca": "El resum oficial mostra la precisió quirúrgica de Márquez a la frenada del revolt de 90 graus camí del títol.",
+        "en": "Official video highlights capture Márquez's laser-guided braking through the 90-degree corner en route to championship glory."
       }
     }
   ],

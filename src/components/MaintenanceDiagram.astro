@@ -1,0 +1,1019 @@
+---
+import type { Lang } from '../data/i18n';
+import type { LocalizedDiagram } from '../data/articles';
+
+interface Props {
+  slug: string;
+  lang: Lang;
+  contentDiagram?: LocalizedDiagram;
+}
+
+const { slug, lang, contentDiagram } = Astro.props;
+
+const staticSlugs = [
+  'circuit-maintenance-wire-locking-safety-wire-technique',
+  'circuit-maintenance-brake-fluid-boiling-point-vapor-lock',
+  'circuit-maintenance-tire-pressure-hot-management-physics',
+  'circuit-maintenance-drive-chain-slack-suspension-geometry',
+  'circuit-maintenance-torque-wrench-bolt-tension-mechanics',
+  'circuit-maintenance-race-coolant-pure-water-mfj-rules'
+];
+const isStatic = staticSlugs.includes(slug);
+---
+
+{slug === 'circuit-maintenance-wire-locking-safety-wire-technique' && (
+  <figure class="tech-diagram-figure" data-i18n={lang}>
+    <div class="diagram-header">
+      <span class="diagram-tag racing-font">🔧 TECHNICAL ILLUSTRATION</span>
+      <h3 class="diagram-title">
+        {lang === 'ja' && '【図解】安全ワイヤリングの締まり方向力学とピッグテール端末処理'}
+        {lang === 'ca' && '【Esquema Tècnic】Física de Tracció Horària i Acabat Pigtail de Seguretat'}
+        {lang === 'en' && '【Technical Diagram】Positive Tightening Tension Vector & Pigtail Safety Termination'}
+      </h3>
+      <p class="diagram-caption">
+        {lang === 'ja' && 'ボルトが緩もうとする回転力を物理的に即座に抑え込む「時計回りテンション」の幾何学と端末処理'}
+        {lang === 'ca' && 'Geometria de bloqueig mecànic que impedeix el gir antihorari del cargol i protecció a boxs'}
+        {lang === 'en' && 'Mechanical lock geometry that counteracts unthreading torque with positive clockwise tension'}
+      </p>
+    </div>
+
+    <div class="diagram-grid">
+      <!-- Panel 1: Correct Tension -->
+      <div class="diagram-card good-card">
+        <div class="card-status good-status">
+          <span class="status-icon">⭕</span>
+          <strong>
+            {lang === 'ja' && '合格：時計回り（締まり方向）'}
+            {lang === 'ca' && 'Correcte: Sentit Horari'}
+            {lang === 'en' && 'PASS: Clockwise Tension'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Background grid -->
+          <defs>
+            <radialGradient id="goodGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#2a9d8f" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#2a9d8f" stop-opacity="0"/>
+            </radialGradient>
+            <marker id="arrowGood" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#2a9d8f" />
+            </marker>
+          </defs>
+          <circle cx="110" cy="110" r="85" fill="url(#goodGlow)" />
+          
+          <!-- Bolt Hexagon Head -->
+          <polygon points="110,45 166,77 166,143 110,175 54,143 54,77" fill="#1b202c" stroke="#4895ef" stroke-width="4" />
+          <circle cx="110" cy="110" r="28" fill="#151922" stroke="#4895ef" stroke-width="2" />
+          <!-- Drill hole -->
+          <circle cx="140" cy="85" r="5" fill="#ffd166" stroke="#fff" stroke-width="1.5" />
+          <text x="110" y="115" text-anchor="middle" fill="#f4f6fb" font-size="12" font-family="'Chakra Petch', sans-serif" font-weight="700">M12 DRAIN</text>
+
+          <!-- Rotation Direction -->
+          <path d="M 70,60 A 60 60 0 0 1 150,60" fill="none" stroke="#ffb703" stroke-width="2.5" stroke-dasharray="4,4" marker-end="url(#arrowGood)" />
+          <text x="110" y="40" text-anchor="middle" fill="#ffb703" font-size="11" font-weight="700">↻ TIGHTEN (締結方向)</text>
+
+          <!-- Safety Wire Vector (45-60 deg) -->
+          <path d="M 140,85 Q 210,80 290,105" fill="none" stroke="#2a9d8f" stroke-width="4" stroke-linecap="round" />
+          <!-- Twisted wire marks -->
+          <path d="M 170,82 L 176,90 M 190,83 L 196,91 M 210,85 L 216,93 M 230,88 L 236,96 M 250,92 L 256,100 M 270,97 L 276,105" stroke="#a8b3cf" stroke-width="2" />
+          
+          <!-- Anchor Post -->
+          <rect x="285" y="90" width="16" height="30" rx="3" fill="#3a4055" stroke="#f4f6fb" stroke-width="2" />
+          <text x="293" y="135" text-anchor="middle" fill="#a8b3cf" font-size="10">STAY / ANCHOR</text>
+
+          <!-- Tension label -->
+          <text x="215" y="70" text-anchor="middle" fill="#2a9d8f" font-size="11" font-weight="700">TENSION 45°〜60°</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && 'ボルトが反時計回りに緩もうとすると、ワイヤーが即座に引かれて回転を強力に物理阻止。車検合格の基本形！'}
+          {lang === 'ca' && 'Si el cargol intenta afluixar-se (antihorari), el filferro s\'estira i bloqueja la rotació immediatament. Inspecció apta!'}
+          {lang === 'en' && 'If the fastener attempts to unthread counterclockwise, wire tension physically counteracts it immediately. Scrutineering pass!'}
+        </p>
+      </div>
+
+      <!-- Panel 2: Incorrect Reverse Tension -->
+      <div class="diagram-card bad-card">
+        <div class="card-status bad-status">
+          <span class="status-icon">❌</span>
+          <strong>
+            {lang === 'ja' && '不合格：反時計回り（緩め方向）'}
+            {lang === 'ca' && 'Rebutjat: Sentit Antihorari'}
+            {lang === 'en' && 'REJECT: Counterclockwise'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="badGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#e63946" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#e63946" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="110" cy="110" r="85" fill="url(#badGlow)" />
+          
+          <!-- Bolt Hexagon Head -->
+          <polygon points="110,45 166,77 166,143 110,175 54,143 54,77" fill="#1b202c" stroke="#e63946" stroke-width="4" />
+          <circle cx="110" cy="110" r="28" fill="#151922" stroke="#e63946" stroke-width="2" />
+          <!-- Drill hole on opposite side -->
+          <circle cx="80" cy="135" r="5" fill="#ffd166" stroke="#fff" stroke-width="1.5" />
+          <text x="110" y="115" text-anchor="middle" fill="#f4f6fb" font-size="12" font-family="'Chakra Petch', sans-serif" font-weight="700">M12 DRAIN</text>
+
+          <!-- Safety Wire Pulling in LOOSENING direction -->
+          <path d="M 80,135 Q 180,170 290,130" fill="none" stroke="#e63946" stroke-width="4" stroke-dasharray="6,4" stroke-linecap="round" />
+          <rect x="285" y="115" width="16" height="30" rx="3" fill="#3a4055" stroke="#f4f6fb" stroke-width="2" />
+
+          <!-- Warning text -->
+          <text x="195" y="185" text-anchor="middle" fill="#ff758f" font-size="11" font-weight="700">⚠️ 緩み促進ワイヤー！</text>
+          <text x="195" y="202" text-anchor="middle" fill="#ff758f" font-size="9">LOOSENING ASSIST VECTOR</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '反時計回りに引っ張ると、エンジンの高回転振動でボルトが緩む力をワイヤーが手助けしてしまいます。車検一発失格！'}
+          {lang === 'ca' && 'Estirar cap a l\'esquerra acompanya el cargol a afluixar-se amb les vibracions. No apte immediat!'}
+          {lang === 'en' && 'Routing counterclockwise assists unthreading under engine vibration, creating a dangerous loosening hazard.'}
+        </p>
+      </div>
+
+      <!-- Panel 3: Pitch & Pigtail -->
+      <div class="diagram-card detail-card">
+        <div class="card-status detail-status">
+          <span class="status-icon">📐</span>
+          <strong>
+            {lang === 'ja' && 'ピッチ規格＆ピッグテール端末'}
+            {lang === 'ca' && 'Pas de Torsió i Remat Pigtail'}
+            {lang === 'en' && 'Twist Pitch & Safe Pigtail'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- 1-Inch Guideline -->
+          <line x1="40" y1="50" x2="200" y2="50" stroke="#ffb703" stroke-width="2" />
+          <line x1="40" y1="42" x2="40" y2="58" stroke="#ffb703" stroke-width="2" />
+          <line x1="200" y1="42" x2="200" y2="58" stroke="#ffb703" stroke-width="2" />
+          <text x="120" y="38" text-anchor="middle" fill="#ffb703" font-size="11" font-weight="700">1 INCH (25.4mm)</text>
+          
+          <!-- Twisted wire with 7 twists -->
+          <g transform="translate(40, 70)">
+            <path d="M 0,15 Q 12,5 24,15 T 48,15 T 72,15 T 96,15 T 120,15 T 144,15 T 160,15" fill="none" stroke="#f4f6fb" stroke-width="3" />
+            <path d="M 0,15 Q 12,25 24,15 T 48,15 T 72,15 T 96,15 T 120,15 T 144,15 T 160,15" fill="none" stroke="#4895ef" stroke-width="3" />
+          </g>
+          <text x="120" y="110" text-anchor="middle" fill="#a8b3cf" font-size="11">理想ピッチ：6〜8 twists / inch</text>
+
+          <!-- Pigtail folding diagram -->
+          <g transform="translate(180, 130)">
+            <rect x="0" y="0" width="120" height="70" rx="6" fill="#151922" stroke="#c77dff" stroke-width="1.5" />
+            <text x="60" y="20" text-anchor="middle" fill="#c77dff" font-size="10" font-weight="700">PIGTAIL (豚の尻尾)</text>
+            <!-- Inward curled wire -->
+            <path d="M 20,45 Q 60,45 80,45 Q 95,45 95,35 Q 95,25 80,30" fill="none" stroke="#2a9d8f" stroke-width="3" stroke-linecap="round" />
+            <circle cx="80" cy="30" r="3" fill="#ffd166" />
+            <text x="60" y="62" text-anchor="middle" fill="#f4f6fb" font-size="9">先端5mmを内側へ巻き込む</text>
+          </g>
+
+          <text x="90" y="155" fill="#f4f6fb" font-size="11" font-weight="700">線径規格 (SUS304)</text>
+          <text x="90" y="175" fill="#a8b3cf" font-size="10">・0.8mm: オイルドレン/フィルター</text>
+          <text x="90" y="195" fill="#a8b3cf" font-size="10">・0.6mm: キャリパー/小径ボルト</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '撚りすぎは金属疲労破断の元。切断端部は必ず5mm残して内側に丸め、メカの手の裂傷事故をゼロに！'}
+          {lang === 'ca' && 'El sobre-trenat causa microfissures. Doblegueu la punta 5 mm cap a dins per evitar punxades greus.'}
+          {lang === 'en' && 'Over-twisting causes work-hardening fatigue. Always fold the 5mm tip inward to protect hands from punctures.'}
+        </p>
+      </div>
+    </div>
+  </figure>
+)}
+
+{slug === 'circuit-maintenance-brake-fluid-boiling-point-vapor-lock' && (
+  <figure class="tech-diagram-figure" data-i18n={lang}>
+    <div class="diagram-header">
+      <span class="diagram-tag racing-font">🔧 TECHNICAL ILLUSTRATION</span>
+      <h3 class="diagram-title">
+        {lang === 'ja' && '【図解】ブレーキフルード沸点低下とベーパーロックのメカニズム'}
+        {lang === 'ca' && '【Esquema Tècnic】Caiguda del Punt d\'Ebullició i Física del Vapor Lock'}
+        {lang === 'en' && '【Technical Diagram】Brake Fluid Boiling Thresholds & Hydraulic Vapor Lock Mechanism'}
+      </h3>
+      <p class="diagram-caption">
+        {lang === 'ja' && '水分わずか3.7%で沸点が75℃急落！キャリパー内200℃の極限熱と気泡圧縮による油圧喪失の全貌'}
+        {lang === 'ca' && 'Com un 3,7% d\'humitat fa caure el punt d\'ebullició en 75°C per sota de la temperatura de la pinça'}
+        {lang === 'en' && 'How 3.7% moisture drops boiling resistance by 75°C below caliper operating temperatures'}
+      </p>
+    </div>
+
+    <div class="diagram-grid">
+      <!-- Thermometer Boiling Points -->
+      <div class="diagram-card detail-card">
+        <div class="card-status detail-status">
+          <span class="status-icon">🌡️</span>
+          <strong>
+            {lang === 'ja' && 'JIS K 2233 / DOT4 沸点メーター'}
+            {lang === 'ca' && 'Escala de Punts d\'Ebullició'}
+            {lang === 'en' && 'Boiling Point Spectrum'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Thermometer scale background -->
+          <rect x="50" y="25" width="220" height="24" rx="4" fill="#1b202c" stroke="#3a4055" />
+          <rect x="50" y="75" width="220" height="24" rx="4" fill="#1b202c" stroke="#3a4055" />
+          <rect x="50" y="125" width="220" height="24" rx="4" fill="#1b202c" stroke="#3a4055" />
+          <rect x="50" y="175" width="220" height="24" rx="4" fill="#1b202c" stroke="#3a4055" />
+
+          <!-- Filled indicator bars -->
+          <rect x="50" y="25" width="210" height="24" rx="4" fill="#7209b7" opacity="0.85" />
+          <rect x="50" y="75" width="165" height="24" rx="4" fill="#2a9d8f" opacity="0.85" />
+          <rect x="50" y="125" width="145" height="24" rx="4" fill="#ffb703" opacity="0.85" />
+          <rect x="50" y="175" width="95" height="24" rx="4" fill="#e63946" opacity="0.85" />
+
+          <!-- Values and Labels -->
+          <text x="60" y="41" fill="#fff" font-size="11" font-weight="700">328℃: Racing DOT4 (水分0% 新品)</text>
+          <text x="60" y="91" fill="#fff" font-size="11" font-weight="700">230℃: DOT4 ドライ沸点 (JIS規格基準)</text>
+          <text x="60" y="141" fill="#1b202c" font-size="11" font-weight="900">180〜220℃: キャリパー実測温度 ⚠️</text>
+          <text x="60" y="191" fill="#fff" font-size="11" font-weight="700">155℃: DOT4 ウェット沸点 (水分3.7%) 💥</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '吸湿したフルードは沸点が155℃まで落ち、キャリパーの過熱領域（200℃）を大幅に下回って一瞬で沸騰します！'}
+          {lang === 'ca' && 'Amb un 3,7% d\'humitat la resistència cau a 155°C, molt per sota dels 200°C de la pinça en frenades fortes!'}
+          {lang === 'en' && 'Moisture-degraded fluid boils at 155°C—well below caliper peak heat (180–220°C)—triggering instant vapor lock!'}
+        </p>
+      </div>
+
+      <!-- Vapor Lock Physics -->
+      <div class="diagram-card bad-card">
+        <div class="card-status bad-status">
+          <span class="status-icon">💥</span>
+          <strong>
+            {lang === 'ja' && 'ベーパーロックのメカニズム'}
+            {lang === 'ca' && 'Mecànica del Vapor Lock'}
+            {lang === 'en' && 'Vapor Lock Mechanics'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Brake Line Tube -->
+          <rect x="30" y="60" width="260" height="35" rx="6" fill="#151922" stroke="#4895ef" stroke-width="2" />
+          <text x="160" y="50" text-anchor="middle" fill="#a8b3cf" font-size="10">BRAKE LINE & CALIPER BORE</text>
+
+          <!-- Normal Liquid vs Steam Bubbles -->
+          <rect x="35" y="65" width="130" height="25" fill="#4895ef" opacity="0.6" />
+          <text x="100" y="81" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">非圧縮性液体 (油圧伝達)</text>
+
+          <!-- Boiling Bubble Zone -->
+          <rect x="175" y="65" width="110" height="25" fill="#e63946" opacity="0.4" />
+          <circle cx="195" cy="77" r="7" fill="#ffd166" stroke="#e63946" stroke-width="1.5" />
+          <circle cx="215" cy="74" r="5" fill="#ffd166" stroke="#e63946" stroke-width="1.5" />
+          <circle cx="235" cy="80" r="8" fill="#ffd166" stroke="#e63946" stroke-width="1.5" />
+          <circle cx="255" cy="73" r="6" fill="#ffd166" stroke="#e63946" stroke-width="1.5" />
+          <circle cx="272" cy="78" r="4" fill="#ffd166" stroke="#e63946" stroke-width="1.5" />
+
+          <!-- Lever force vs collapse -->
+          <path d="M 40,130 L 140,130" stroke="#2a9d8f" stroke-width="4" marker-end="url(#arrowGood)" />
+          <text x="90" y="120" text-anchor="middle" fill="#2a9d8f" font-size="11" font-weight="700">正常時：ピストンへ100%直結</text>
+
+          <path d="M 180,130 Q 230,150 280,130" stroke="#e63946" stroke-width="4" stroke-dasharray="4,4" />
+          <text x="235" y="165" text-anchor="middle" fill="#ff758f" font-size="11" font-weight="700">気泡が縮むだけ (レバー底づき)</text>
+          <text x="235" y="180" text-anchor="middle" fill="#ff758f" font-size="9">COMPRESSIBLE VAPOR BUBBLES</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '気体は容易に圧縮されるため、レバーをいくら握っても気泡が縮むだけでピストンに油圧が届かず制動力がゼロになります。'}
+          {lang === 'ca' && 'El vapor de gas és altament compressible: la maneta s\'enfonsa al manillar sense moure les pastilles de fre.'}
+          {lang === 'en' && 'Gas vapors compress like a soft sponge: lever force is wasted squishing bubbles, delivering zero clamp force.'}
+        </p>
+      </div>
+
+      <!-- Bleeding Procedure -->
+      <div class="diagram-card good-card">
+        <div class="card-status good-status">
+          <span class="status-icon">💧</span>
+          <strong>
+            {lang === 'ja' && '確実なエア抜きプロトコル'}
+            {lang === 'ca' && 'Protocol de Purga'}
+            {lang === 'en' && 'Bleeding Cadence'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Flow steps -->
+          <g transform="translate(20, 30)">
+            <rect x="0" y="0" width="280" height="42" rx="6" fill="#1b202c" stroke="#2a9d8f" stroke-width="1.5" />
+            <text x="20" y="26" fill="#ffb703" font-size="13" font-weight="900">①</text>
+            <text x="45" y="25" fill="#f4f6fb" font-size="11" font-weight="700">マスターシリンダー頂点から開始</text>
+            <text x="45" y="37" fill="#a8b3cf" font-size="9">最上部のエア溜まりを最初に追い出す</text>
+          </g>
+          <g transform="translate(20, 85)">
+            <rect x="0" y="0" width="280" height="42" rx="6" fill="#1b202c" stroke="#2a9d8f" stroke-width="1.5" />
+            <text x="20" y="26" fill="#ffb703" font-size="13" font-weight="900">②</text>
+            <text x="45" y="25" fill="#f4f6fb" font-size="11" font-weight="700">キャリパー（遠い側 → 近い側）</text>
+            <text x="45" y="37" fill="#a8b3cf" font-size="9">ダブルディスク車は配管が長い側から順に</text>
+          </g>
+          <g transform="translate(20, 140)">
+            <rect x="0" y="0" width="280" height="55" rx="6" fill="#151922" stroke="#ffb703" stroke-width="1.5" />
+            <text x="20" y="32" fill="#ffb703" font-size="13" font-weight="900">③</text>
+            <text x="45" y="25" fill="#ffb703" font-size="11" font-weight="700">レバー操作は「ゆっくり深く保持」</text>
+            <text x="45" y="40" fill="#f4f6fb" font-size="9">パカパカ速く握らない！（微細気泡化・エマルジョン防止）</text>
+            <text x="45" y="51" fill="#a8b3cf" font-size="8">Slow, steady strokes prevent fluid aeration</text>
+          </g>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '高所エア抜きから始め、レバーをゆっくり操作するのが鉄則。ワンウェイバルブで逆流を完全遮断！'}
+          {lang === 'ca' && 'Començar sempre pel punt més alt i accionar lentament la maneta per no emulsionar el fluid.'}
+          {lang === 'en' && 'Bleed top-down with disciplined, deliberate lever strokes to prevent whipping fluid into micro-foam.'}
+        </p>
+      </div>
+    </div>
+  </figure>
+)}
+
+{slug === 'circuit-maintenance-tire-pressure-hot-management-physics' && (
+  <figure class="tech-diagram-figure" data-i18n={lang}>
+    <div class="diagram-header">
+      <span class="diagram-tag racing-font">🔧 TECHNICAL ILLUSTRATION</span>
+      <h3 class="diagram-title">
+        {lang === 'ja' && '【図解】ゲイ＝リュサックの法則による温間空気圧上昇とウォーマー熱浸透'}
+        {lang === 'ca' && '【Esquema Tècnic】Termodinàmica de la Pressió en Calent i Escalfadors'}
+        {lang === 'en' && '【Technical Diagram】Gay-Lussac\'s Pressure Physics & Tire Warmer Rim Heat Soak'}
+      </h3>
+      <p class="diagram-caption">
+        {lang === 'ja' && '温度+10℃で約+7〜10kPa上昇！冷間と温間のギャップと、リムまで均一に温める最低45分の物理'}
+        {lang === 'ca' && 'Augment de 7 a 10 kPa per cada 10°C i per què calen 45 minuts per escalfar la massa d\'alumini'}
+        {lang === 'en' && 'Calculating ~7–10 kPa pressure rise per 10°C thermal jump and why alloy rims need 45 minutes to soak'}
+      </p>
+    </div>
+
+    <div class="diagram-grid">
+      <!-- Pressure vs Temp Graph -->
+      <div class="diagram-card detail-card">
+        <div class="card-status detail-status">
+          <span class="status-icon">📈</span>
+          <strong>
+            {lang === 'ja' && 'ゲイ＝リュサックの法則グラフ'}
+            {lang === 'ca' && 'Gràfica Pressió - Temperatura'}
+            {lang === 'en' && 'P-T Linear Expansion'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Graph axes -->
+          <line x1="40" y1="180" x2="290" y2="180" stroke="#3a4055" stroke-width="2" />
+          <line x1="40" y1="30" x2="40" y2="180" stroke="#3a4055" stroke-width="2" />
+          
+          <!-- Axis labels -->
+          <text x="290" y="200" text-anchor="end" fill="#a8b3cf" font-size="10">温度 TEMP (℃)</text>
+          <text x="35" y="25" text-anchor="start" fill="#a8b3cf" font-size="10">内圧 kPa</text>
+
+          <!-- Pressure Line (Cold 15C 180kPa -> Hot 75C 235kPa) -->
+          <line x1="55" y1="165" x2="260" y2="55" stroke="#ffb703" stroke-width="3.5" />
+          
+          <!-- Cold Point -->
+          <circle cx="55" cy="165" r="5" fill="#4895ef" stroke="#fff" stroke-width="2" />
+          <text x="65" y="160" fill="#4895ef" font-size="10" font-weight="700">朝の冷間 15℃ (180 kPa)</text>
+
+          <!-- Warmer Point -->
+          <circle cx="210" cy="85" r="5" fill="#ffb703" stroke="#fff" stroke-width="2" />
+          <text x="180" y="75" fill="#ffb703" font-size="10" font-weight="700">ウォーマー 80℃ (225 kPa)</text>
+
+          <!-- Hot Track Point -->
+          <circle cx="260" cy="55" r="5" fill="#e63946" stroke="#fff" stroke-width="2" />
+          <text x="260" y="45" text-anchor="end" fill="#e63946" font-size="10" font-weight="700">走行直後温間 75℃ (235 kPa)</text>
+
+          <!-- Formula callout -->
+          <rect x="55" y="95" width="130" height="38" rx="4" fill="#151922" stroke="#2a9d8f" stroke-width="1.5" />
+          <text x="120" y="110" text-anchor="middle" fill="#2a9d8f" font-size="10" font-weight="700">P₁ / T₁ = P₂ / T₂</text>
+          <text x="120" y="125" text-anchor="middle" fill="#f4f6fb" font-size="9">+10℃ あたり +7〜10 kPa</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && 'タイヤ内部体積が一定のため、走行発熱で内圧は+50kPa以上跳ね上がります。「温間」こそが真の基準！'}
+          {lang === 'ca' && 'El volum constant fa augmentar la pressió més de 0,5 bar a pista. La pressió en calent és la clau!'}
+          {lang === 'en' && 'Fixed carcass volume drives pressure up by 50+ kPa under track heat. Target the HOT reading!'}
+        </p>
+      </div>
+
+      <!-- Thermal Soak Timeline -->
+      <div class="diagram-card good-card">
+        <div class="card-status good-status">
+          <span class="status-icon">⏱️</span>
+          <strong>
+            {lang === 'ja' && 'ウォーマー熱浸透タイムライン'}
+            {lang === 'ca' && 'Penetració Tèrmica a la Llanta'}
+            {lang === 'en' && 'Warmer Heat Soak Timeline'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- 20 min vs 60 min comparison -->
+          <g transform="translate(20, 25)">
+            <rect x="0" y="0" width="280" height="75" rx="6" fill="#1b202c" stroke="#e63946" stroke-width="1.5" />
+            <text x="15" y="22" fill="#ff758f" font-size="11" font-weight="700">❌ 通電 20分（表面のみ加熱）</text>
+            <!-- Cross section mock -->
+            <rect x="15" y="32" width="250" height="12" rx="3" fill="#e63946" />
+            <text x="20" y="41" fill="#fff" font-size="8">トレッド表面ゴム: 80℃ (温かい)</text>
+            <rect x="15" y="48" width="250" height="16" rx="3" fill="#3a4055" />
+            <text x="20" y="60" fill="#a8b3cf" font-size="8">内部空気＆アルミリム: 25℃ (冷たいまま！内圧が安定しない)</text>
+          </g>
+
+          <g transform="translate(20, 115)">
+            <rect x="0" y="0" width="280" height="85" rx="6" fill="#1b202c" stroke="#2a9d8f" stroke-width="1.5" />
+            <text x="15" y="22" fill="#2a9d8f" font-size="11" font-weight="700">⭕ 通電 45〜60分（芯まで熱平衡）</text>
+            <rect x="15" y="32" width="250" height="14" rx="3" fill="#ffb703" />
+            <text x="20" y="42" fill="#1b202c" font-size="9" font-weight="700">トレッドゴム: 80℃ 均一</text>
+            <rect x="15" y="50" width="250" height="24" rx="3" fill="#2a9d8f" opacity="0.85" />
+            <text x="20" y="65" fill="#fff" font-size="9" font-weight="700">内部空気・カーカス・アルミホイールリム: 75〜80℃ 均一到達！</text>
+          </g>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '巨大な放熱板であるアルミホイールまで熱を行き渡らせて初めて、内圧が走行中もビシッと安定します。'}
+          {lang === 'ca' && 'L\'alumini de la llanta necessita 45-60 minuts per acumular calor i mantenir la pressió constant.'}
+          {lang === 'en' && 'Aluminum rims act as giant heat sinks. Only after 45–60 minutes does core internal air stabilize.'}
+        </p>
+      </div>
+
+      <!-- Moisture trap -->
+      <div class="diagram-card detail-card">
+        <div class="card-status detail-status">
+          <span class="status-icon">🎯</span>
+          <strong>
+            {lang === 'ja' && '水蒸気トラップ＆ピットイン計測'}
+            {lang === 'ca' && 'Humitat i Mesura Ràpida'}
+            {lang === 'en' && 'Moisture & Pit-Lane Routine'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <g transform="translate(20, 30)">
+            <rect x="0" y="0" width="280" height="70" rx="6" fill="#151922" stroke="#4895ef" stroke-width="1.5" />
+            <text x="15" y="22" fill="#4895ef" font-size="11" font-weight="700">💧 コンプレッサーの水分トラップ</text>
+            <text x="15" y="40" fill="#f4f6fb" font-size="10">水滴混入 → 高温で水蒸気（気体）へ相変化</text>
+            <text x="15" y="58" fill="#ffd166" font-size="9">蒸気圧が加算され内圧上昇が予測不能に暴走！</text>
+          </g>
+
+          <g transform="translate(20, 115)">
+            <rect x="0" y="0" width="280" height="80" rx="6" fill="#151922" stroke="#ffb703" stroke-width="1.5" />
+            <text x="15" y="24" fill="#ffb703" font-size="11" font-weight="700">⏱️ ピットイン直後30秒ルール</text>
+            <text x="15" y="44" fill="#f4f6fb" font-size="10">ヘルメットを脱ぐ前に真っ先にエアゲージを当てる！</text>
+            <text x="15" y="62" fill="#a8b3cf" font-size="9">パドック風で急冷する前の「本当の温間」を記録</text>
+          </g>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '除湿ドライエアで膨張ブレを排除し、ピットイン直後30秒以内に計測するのがプロのルーティン！'}
+          {lang === 'ca' && 'L\'aire sec evita el vapor impredictible. Mesureu la pressió abans de treure-vos el casc!'}
+          {lang === 'en' && 'Dry air eliminates erratic steam spikes. Measure within 30 seconds of rolling off track!'}
+        </p>
+      </div>
+    </div>
+  </figure>
+)}
+
+{slug === 'circuit-maintenance-drive-chain-slack-suspension-geometry' && (
+  <figure class="tech-diagram-figure" data-i18n={lang}>
+    <div class="diagram-header">
+      <span class="diagram-tag racing-font">🔧 TECHNICAL ILLUSTRATION</span>
+      <h3 class="diagram-title">
+        {lang === 'ja' && '【図解】スイングアーム幾何学とチェーン最大張りポイント'}
+        {lang === 'ca' && '【Esquema Tècnic】Cinemàtica de Basculant i Tensió Màxima de Cadena'}
+        {lang === 'en' && '【Technical Diagram】Swingarm Arc Kinematics & Maximum Chain Span Alignment'}
+      </h3>
+      <p class="diagram-caption">
+        {lang === 'ja' && 'スプロケ・ピボット・アクスルが並ぶ一直線の瞬間を計算せよ！サスストローク拘束と軸受粉砕を防ぐ幾何学'}
+        {lang === 'ca' && 'Quan els 3 eixos s\'alineen la distància és màxima: eviteu el bloqueig de la suspensió'}
+        {lang === 'en' && 'Countershaft, pivot, and rear axle align in a straight line under compression: dynamic slack mechanics'}
+      </p>
+    </div>
+
+    <div class="diagram-grid">
+      <!-- Swingarm Kinematics Diagram -->
+      <div class="diagram-card detail-card" style="grid-column: span 2;">
+        <div class="card-status detail-status">
+          <span class="status-icon">📐</span>
+          <strong>
+            {lang === 'ja' && '3軸一直線の「幾何学的最大張り」メカニズム'}
+            {lang === 'ca' && 'Alineació dels Tres Eixos'}
+            {lang === 'en' && 'Three-Axis Straight-Line Alignment Point'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 660 220" class="diagram-svg" aria-hidden="true">
+          <!-- Drive Sprocket -->
+          <circle cx="80" cy="110" r="32" fill="#1b202c" stroke="#4895ef" stroke-width="3" />
+          <circle cx="80" cy="110" r="8" fill="#4895ef" />
+          <text x="80" y="70" text-anchor="middle" fill="#4895ef" font-size="11" font-weight="700">① DRIVE SPROCKET (エンジン)</text>
+
+          <!-- Swingarm Pivot -->
+          <circle cx="210" cy="110" r="16" fill="#151922" stroke="#ffb703" stroke-width="3" />
+          <circle cx="210" cy="110" r="6" fill="#ffb703" />
+          <text x="210" y="80" text-anchor="middle" fill="#ffb703" font-size="11" font-weight="700">② PIVOT SHAFT (支点)</text>
+
+          <!-- Straight-Line Guideline (Max stretch) -->
+          <line x1="80" y1="110" x2="560" y2="110" stroke="#e63946" stroke-width="2" stroke-dasharray="6,4" />
+          <text x="360" y="100" text-anchor="middle" fill="#ff758f" font-size="11" font-weight="700">★ フルボトム時：3点が同一直線上に並びスプロケ間距離が最大（最長）になる！</text>
+
+          <!-- Swingarm body in straight position -->
+          <polygon points="210,105 560,95 560,125 210,115" fill="#2a9d8f" opacity="0.3" stroke="#2a9d8f" stroke-width="2" />
+
+          <!-- Rear Axle & Sprocket (Horizontal line) -->
+          <circle cx="560" cy="110" r="48" fill="#1b202c" stroke="#2a9d8f" stroke-width="3" />
+          <circle cx="560" cy="110" r="10" fill="#2a9d8f" />
+          <text x="560" y="52" text-anchor="middle" fill="#2a9d8f" font-size="11" font-weight="700">③ REAR AXLE (最大張り位置)</text>
+
+          <!-- Dropped Swingarm (1G Sag on Stand) -->
+          <path d="M 210,110 L 530,175" stroke="#707d9c" stroke-width="4" stroke-linecap="round" />
+          <circle cx="530" cy="175" r="40" fill="none" stroke="#707d9c" stroke-width="2" stroke-dasharray="4,4" />
+          <circle cx="530" cy="175" r="6" fill="#707d9c" />
+          <text x="530" y="215" text-anchor="middle" fill="#a8b3cf" font-size="10">静止1G状態 (アクスルが下がりチェーンがたるむ)</text>
+
+          <!-- Slack Indicator -->
+          <path d="M 112,110 Q 320,135 512,110" fill="none" stroke="#ffd166" stroke-width="3" />
+          <text x="320" y="150" text-anchor="middle" fill="#ffd166" font-size="11" font-weight="700">↕ たわみ量 25〜35mm が沈み込み時のマージン！</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && 'スイングアームが沈み込んで3点が水平に並ぶ瞬間に距離が最大化します。スタンド上で遊びがないと、フルボトム時にチェーンが突っ張ってサスペンションが動かなくなります！'}
+          {lang === 'ca' && 'Quan el basculant s\'enfonsa i pinyó, pivot i eix s\'alineen, la distància és màxima. Una cadena tensa bloqueja l\'amortidor.'}
+          {lang === 'en' && 'Maximum span occurs when all three centers align horizontally under squat. Zero slack on the stand locks the shock solid!'}
+        </p>
+      </div>
+
+      <!-- 520 Narrow Conversion & Rivet Flare -->
+      <div class="diagram-card detail-card">
+        <div class="card-status detail-status">
+          <span class="status-icon">⚙️</span>
+          <strong>
+            {lang === 'ja' && '520コンバート＆カシメ管理'}
+            {lang === 'ca' && 'Pas 520 i Reblat'}
+            {lang === 'en' && '520 Chain & Caliper Rivet'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Width comparison -->
+          <rect x="30" y="30" width="70" height="25" rx="3" fill="#3a4055" />
+          <text x="65" y="47" text-anchor="middle" fill="#fff" font-size="10">530 (9.53mm)</text>
+          
+          <rect x="115" y="30" width="60" height="25" rx="3" fill="#3a4055" />
+          <text x="145" y="47" text-anchor="middle" fill="#fff" font-size="10">525 (7.94mm)</text>
+
+          <rect x="190" y="30" width="50" height="25" rx="3" fill="#c77dff" />
+          <text x="215" y="47" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">520 (6.35mm)</text>
+
+          <text x="160" y="75" text-anchor="middle" fill="#c77dff" font-size="11" font-weight="700">⚡ 回転マス半減で後輪+1.5〜3ps向上！</text>
+
+          <!-- Rivet measurement -->
+          <g transform="translate(30, 95)">
+            <rect x="0" y="0" width="260" height="95" rx="6" fill="#151922" stroke="#ffb703" stroke-width="1.5" />
+            <text x="130" y="24" text-anchor="middle" fill="#ffb703" font-size="11" font-weight="700">デジタルノギスによるカシメ測定</text>
+            <text x="130" y="45" text-anchor="middle" fill="#f4f6fb" font-size="10">ピン先端フレア径：規定値 ±0.1mm 厳守</text>
+            <text x="130" y="65" text-anchor="middle" fill="#ff758f" font-size="9">・カシメ不足 → プレート脱落（チェーン切損）</text>
+            <text x="130" y="80" text-anchor="middle" fill="#ff758f" font-size="9">・過大カシメ → Xリング圧壊・リンク固着（キンク）</text>
+          </g>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '520化でフリクションを劇的に低減。カシメは目分量厳禁、ノギスで0.1mm単位で測定管理します。'}
+          {lang === 'ca' && 'Pas 520 per estalviar fricció i 3 CV a la roda. Reblar sempre amb peu de rei a ±0,1 mm.'}
+          {lang === 'en' && '520 racing narrow chains free up 1.5–3 hp. Measure master link rivet flare with digital calipers.'}
+        </p>
+      </div>
+    </div>
+  </figure>
+)}
+
+{slug === 'circuit-maintenance-torque-wrench-bolt-tension-mechanics' && (
+  <figure class="tech-diagram-figure" data-i18n={lang}>
+    <div class="diagram-header">
+      <span class="diagram-tag racing-font">🔧 TECHNICAL ILLUSTRATION</span>
+      <h3 class="diagram-title">
+        {lang === 'ja' && '【図解】トルクの90%は摩擦に消える！締結力学と二度締めNGの力学'}
+        {lang === 'ca' && '【Esquema Tècnic】Fricció del 90%, Parell vs Tensió Axial i la Clau Dinamomètrica'}
+        {lang === 'en' && '【Technical Diagram】90% Friction Loss, Axial Fastener Clamp Force & Click Mechanics'}
+      </h3>
+      <p class="diagram-caption">
+        {lang === 'ja' && 'トルク＝軸力ではない！ドライ指定ボルトに油を塗ると軸力が2倍に暴走する恐怖とカチッの瞬間の脱力'}
+        {lang === 'ca' && 'Com l\'oli duplica la tensió d\'un cargol sec i per què el doble clic trenca les rosques d\'alumini'}
+        {lang === 'en' && 'Lubing dry-spec threads spikes bolt tension by 200%: the physics of Hooke\'s law and zero-torque storage'}
+      </p>
+    </div>
+
+    <div class="diagram-grid">
+      <!-- 90% Friction Donut Chart -->
+      <div class="diagram-card detail-card">
+        <div class="card-status detail-status">
+          <span class="status-icon">🍩</span>
+          <strong>
+            {lang === 'ja' && 'トルクの分配比率（T = k・d・F）'}
+            {lang === 'ca' && 'Distribució del Parell'}
+            {lang === 'en' && 'Torque Effort Breakdown'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Donut chart segments -->
+          <circle cx="110" cy="110" r="65" fill="none" stroke="#e63946" stroke-width="32" stroke-dasharray="204 408" stroke-dashoffset="0" />
+          <circle cx="110" cy="110" r="65" fill="none" stroke="#ffb703" stroke-width="32" stroke-dasharray="163 408" stroke-dashoffset="-204" />
+          <circle cx="110" cy="110" r="65" fill="none" stroke="#2a9d8f" stroke-width="32" stroke-dasharray="41 408" stroke-dashoffset="-367" />
+          <text x="110" y="105" text-anchor="middle" fill="#fff" font-size="13" font-weight="900">FRICTION</text>
+          <text x="110" y="122" text-anchor="middle" fill="#ffb703" font-size="11" font-weight="700">~90%</text>
+
+          <!-- Legend -->
+          <g transform="translate(195, 55)">
+            <rect x="0" y="0" width="12" height="12" fill="#e63946" />
+            <text x="18" y="11" fill="#f4f6fb" font-size="10">ネジ山摩擦 (50%)</text>
+            
+            <rect x="0" y="30" width="12" height="12" fill="#ffb703" />
+            <text x="18" y="41" fill="#f4f6fb" font-size="10">ボルト座面摩擦 (40%)</text>
+
+            <rect x="0" y="60" width="12" height="12" fill="#2a9d8f" />
+            <text x="18" y="71" fill="#2a9d8f" font-size="11" font-weight="700">有効軸力 (10%) ✨</text>
+          </g>
+          <text x="250" y="165" text-anchor="middle" fill="#a8b3cf" font-size="9">締める力（軸力）になるのは</text>
+          <text x="250" y="180" text-anchor="middle" fill="#ffd166" font-size="10" font-weight="700">全体のたった1割！</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && 'レンチで回すトルクの約90%は摩擦に食い殺されています。純粋に物を挟み込む軸力になるのはわずか10%！'}
+          {lang === 'ca' && 'El 90% de la força es perd per fregament als filets i el cap; només el 10% manté unides les peces.'}
+          {lang === 'en' && 'Roughly 90% of wrench effort is lost to friction. Only 10% generates actual clamping retention.'}
+        </p>
+      </div>
+
+      <!-- Dry vs Wet Tension Spike -->
+      <div class="diagram-card bad-card">
+        <div class="card-status bad-status">
+          <span class="status-icon">⚠️</span>
+          <strong>
+            {lang === 'ja' && '脱脂 vs 給油：軸力暴走の罠'}
+            {lang === 'ca' && 'La Trampa de Sec vs Oli'}
+            {lang === 'en' && 'The Lubed-Thread Tension Spike'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Dry Bar (Normal 100%) -->
+          <text x="30" y="45" fill="#2a9d8f" font-size="11" font-weight="700">【脱脂・ドライ指定】正常</text>
+          <rect x="30" y="55" width="130" height="28" rx="4" fill="#2a9d8f" />
+          <text x="170" y="74" fill="#f4f6fb" font-size="11" font-weight="700">設計軸力 100% (安全域)</text>
+
+          <!-- Wet Bar (200% Tension) -->
+          <text x="30" y="115" fill="#ff758f" font-size="11" font-weight="700">【ドライ指定に油塗布】異常！</text>
+          <rect x="30" y="125" width="240" height="28" rx="4" fill="#e63946" />
+          <text x="210" y="144" fill="#fff" font-size="11" font-weight="900">軸力 200% へ暴走！💥</text>
+
+          <!-- Yield Point Line -->
+          <line x1="160" y1="35" x2="160" y2="175" stroke="#ffb703" stroke-width="2" stroke-dasharray="4,4" />
+          <text x="160" y="195" text-anchor="middle" fill="#ffb703" font-size="10">ボルト材料の降伏点限界</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '乾式指定ボルトに油を塗ると摩擦が激減し、同じトルクでも軸力が2倍に跳ね上がってネジ山を削り落とします！'}
+          {lang === 'ca' && 'Posar oli en un cargol sec duplica la tensió axial amb el mateix parell, arrencant la rosca d\'alumini.'}
+          {lang === 'en' && 'Oiling dry-spec fasteners cuts friction, spiking clamping tension to 200% and stripping threads clean.'}
+        </p>
+      </div>
+
+      <!-- Click & Storage Rules -->
+      <div class="diagram-card good-card">
+        <div class="card-status good-status">
+          <span class="status-icon">🔧</span>
+          <strong>
+            {lang === 'ja' && '操作作法＆ゼロトルク保管'}
+            {lang === 'ca' && 'Protocol de la Clau'}
+            {lang === 'en' && 'Click Discipline & Storage'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <g transform="translate(20, 25)">
+            <rect x="0" y="0" width="280" height="75" rx="6" fill="#151922" stroke="#e63946" stroke-width="1.5" />
+            <text x="15" y="24" fill="#ff758f" font-size="11" font-weight="700">🚫「カチッ」の後の二度締め厳禁！</text>
+            <text x="15" y="44" fill="#f4f6fb" font-size="10">カチッと鳴った瞬間に0.1秒で脱力する！</text>
+            <text x="15" y="62" fill="#a8b3cf" font-size="9">追い締めは慣性と衝撃で+15〜20%オーバーになる</text>
+          </g>
+
+          <g transform="translate(20, 115)">
+            <rect x="0" y="0" width="280" height="75" rx="6" fill="#151922" stroke="#2a9d8f" stroke-width="1.5" />
+            <text x="15" y="24" fill="#2a9d8f" font-size="11" font-weight="700">📦 使用後は必ず「最低目盛」に戻す</text>
+            <text x="15" y="44" fill="#f4f6fb" font-size="10">内部スプリングを圧縮したまま放置すると</text>
+            <text x="15" y="62" fill="#ffd166" font-size="9">バネが永久疲労（へたり）して測定値が狂う！</text>
+          </g>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && 'カチッで即脱力。使い終わったら最低目盛に戻してバネを休ませるのが、メカニックの道具への敬意！'}
+          {lang === 'ca' && 'Un sol clic net i tornar sempre al zero abans de desar l\'eina per no destensar la molla.'}
+          {lang === 'en' && 'Stop instantly at the click. Unwind the micrometer sleeve to zero to preserve spring calibration.'}
+        </p>
+      </div>
+    </div>
+  </figure>
+)}
+
+{slug === 'circuit-maintenance-race-coolant-pure-water-mfj-rules' && (
+  <figure class="tech-diagram-figure" data-i18n={lang}>
+    <div class="diagram-header">
+      <span class="diagram-tag racing-font">🔧 TECHNICAL ILLUSTRATION</span>
+      <h3 class="diagram-title">
+        {lang === 'ja' && '【図解】クーラント（LLC）禁止の理由と純水の熱交換性能・凍結膨張'}
+        {lang === 'ca' && '【Esquema Tècnic】Prohibició de l\'Etilenglicol, Calor de l\'Aigua Pura i Congelació'}
+        {lang === 'en' && '【Technical Diagram】Ethylene Glycol Track Friction Loss, Pure Water Heat Capacity & Freeze Split'}
+      </h3>
+      <p class="diagram-caption">
+        {lang === 'ja' && 'エチレングリコールの油膜化と路面摩擦激減、純水が水温を3〜5℃下げる比熱の科学、冬の+9%凍結破壊'}
+        {lang === 'ca' && 'Com el refrigerant comercial rellisca com l\'oli a l\'asfalt i per què l\'aigua pura refreda un 20% més'}
+        {lang === 'en' && 'Why street antifreeze creates ice-slick asphalt, how pure water drops temperatures, and 0°C block cracking'}
+      </p>
+    </div>
+
+    <div class="diagram-grid">
+      <!-- Track Friction Comparison -->
+      <div class="diagram-card bad-card">
+        <div class="card-status bad-status">
+          <span class="status-icon">⚠️</span>
+          <strong>
+            {lang === 'ja' && '路面流出時の挙動比較'}
+            {lang === 'ca' && 'Comportament a l\'Asfalt'}
+            {lang === 'en' && 'Track Surface Spill Behavior'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- LLC on Asphalt -->
+          <g transform="translate(20, 25)">
+            <rect x="0" y="0" width="280" height="75" rx="6" fill="#1b202c" stroke="#e63946" stroke-width="1.5" />
+            <text x="15" y="22" fill="#ff758f" font-size="11" font-weight="700">❌ 市販クーラント (エチレングリコール)</text>
+            <text x="15" y="42" fill="#f4f6fb" font-size="10">アスファルト骨材に粘液が浸透し油膜化！</text>
+            <text x="15" y="60" fill="#ffd166" font-size="9">摩擦係数 μ ≒ 0.05 (氷上並み) → 多重クラッシュ・赤旗中断</text>
+          </g>
+
+          <!-- Pure Water on Asphalt -->
+          <g transform="translate(20, 115)">
+            <rect x="0" y="0" width="280" height="75" rx="6" fill="#1b202c" stroke="#2a9d8f" stroke-width="1.5" />
+            <text x="15" y="22" fill="#2a9d8f" font-size="11" font-weight="700">⭕ レース用純水 ＋ 専用防錆剤</text>
+            <text x="15" y="42" fill="#f4f6fb" font-size="10">油分ゼロ。路面で速やかに気化・自然乾燥！</text>
+            <text x="15" y="60" fill="#a8b3cf" font-size="9">清掃迅速・セッション即時再開可能（安全マナーの基本）</text>
+          </g>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && 'エチレングリコールは水洗しても路面に残り大クラッシュを誘発。真水なら乾燥して安全に復旧できます。'}
+          {lang === 'ca' && 'L\'etilenglicol no es neteja amb aigua i provoca caigudes en cadena. L\'aigua pura s\'asseca sense perill.'}
+          {lang === 'en' && 'Ethylene glycol leaves a slick residue water cannot dissolve. Pure water simply evaporates clean.'}
+        </p>
+      </div>
+
+      <!-- Specific Heat Capacity Comparison -->
+      <div class="diagram-card good-card">
+        <div class="card-status good-status">
+          <span class="status-icon">❄️</span>
+          <strong>
+            {lang === 'ja' && '比熱容量と冷却熱交換性能'}
+            {lang === 'ca' && 'Capacitat Calorífica Específica'}
+            {lang === 'en' && 'Specific Heat Capacity (Cooling)'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Pure Water Bar -->
+          <text x="30" y="40" fill="#2a9d8f" font-size="11" font-weight="700">純水 (H2O): 4.184 J/g・K</text>
+          <rect x="30" y="50" width="250" height="26" rx="4" fill="#2a9d8f" />
+          <text x="150" y="68" text-anchor="middle" fill="#fff" font-size="11" font-weight="900">冷却熱容量：約 120% (最強) ✨</text>
+
+          <!-- LLC 50% Bar -->
+          <text x="30" y="105" fill="#a8b3cf" font-size="11">市販LLC 50%水溶液: 約 3.4 J/g・K</text>
+          <rect x="30" y="115" width="200" height="26" rx="4" fill="#707d9c" />
+          <text x="130" y="133" text-anchor="middle" fill="#fff" font-size="10">冷却熱容量：約 100% (基準)</text>
+
+          <!-- Ethylene Glycol Pure Bar -->
+          <text x="30" y="165" fill="#e63946" font-size="10">エチレングリコール原液: 2.4 J/g・K</text>
+          <rect x="30" y="175" width="140" height="22" rx="4" fill="#e63946" opacity="0.7" />
+
+          <!-- Temp drop badge -->
+          <rect x="185" y="160" width="105" height="42" rx="6" fill="#151922" stroke="#ffb703" stroke-width="1.5" />
+          <text x="237" y="178" text-anchor="middle" fill="#ffb703" font-size="10" font-weight="700">水温 3〜5℃ 低下</text>
+          <text x="237" y="193" text-anchor="middle" fill="#f4f6fb" font-size="8">優れた熱交換効率</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '純水は比熱が約20%高く、同じ流量でより多くの熱をエンジンから奪えるため、過酷なレースでも水温が下がります！'}
+          {lang === 'ca' && 'L\'aigua pura absorbeix un 20% més de calor per volum, rebaixant la temperatura del motor entre 3°C i 5°C.'}
+          {lang === 'en' && 'Pure water absorbs ~20% more heat per unit volume than 50/50 LLC, consistently dropping coolant temperatures.'}
+        </p>
+      </div>
+
+      <!-- Winter Freeze Expansion Split -->
+      <div class="diagram-card bad-card">
+        <div class="card-status bad-status">
+          <span class="status-icon">🧊</span>
+          <strong>
+            {lang === 'ja' && '0℃凍結膨張（+9%）の破壊力'}
+            {lang === 'ca' && 'Dilatació del 9% a 0°C'}
+            {lang === 'en' && '0°C Freeze Expansion Split (+9%)'}
+          </strong>
+        </div>
+        <svg viewBox="0 0 320 220" class="diagram-svg" aria-hidden="true">
+          <!-- Cylinder Block Water Jacket Cross section -->
+          <rect x="40" y="30" width="240" height="110" rx="8" fill="#151922" stroke="#ff758f" stroke-width="2" />
+          <text x="160" y="52" text-anchor="middle" fill="#ff758f" font-size="11" font-weight="700">CYLINDER BLOCK & RADIATOR</text>
+
+          <!-- Expansion arrows -->
+          <circle cx="160" cy="95" r="32" fill="#4895ef" opacity="0.4" stroke="#e63946" stroke-width="2" stroke-dasharray="4,4" />
+          <text x="160" y="93" text-anchor="middle" fill="#fff" font-size="12" font-weight="900">ICE (氷)</text>
+          <text x="160" y="108" text-anchor="middle" fill="#ffd166" font-size="10" font-weight="700">体積 +9% 膨張！</text>
+
+          <!-- Crack lines -->
+          <path d="M 125,75 L 110,60 M 195,75 L 210,60 M 160,127 L 160,140" stroke="#e63946" stroke-width="3" stroke-linecap="round" />
+          <text x="160" y="165" text-anchor="middle" fill="#ff758f" font-size="11" font-weight="700">⚠️ シリンダーブロック真っ二つ！</text>
+          <text x="160" y="185" text-anchor="middle" fill="#a8b3cf" font-size="9">オフシーズン保管時は必ず水抜き・保管LLCへ！</text>
+        </svg>
+        <p class="card-desc">
+          {lang === 'ja' && '純水は0℃で凍結し9%膨張します。冬場の阿蘇や夜間のトランポで放置するとエンジン全損！オフ期の水抜きは絶対です。'}
+          {lang === 'ca' && 'A 0°C l\'aigua pura es congela i augmenta el seu volum un 9%, esquerdant blocs i radiadors. Buidar a l\'hivern!'}
+          {lang === 'en' && 'Pure water expands 9% upon freezing. Sub-zero paddock nights split aluminum castings—always drain before winter!'}
+        </p>
+      </div>
+    </div>
+  </figure>
+)}
+
+{!isStatic && contentDiagram && (
+  <figure class="tech-diagram-figure" data-i18n={lang}>
+    <div class="diagram-header">
+      <span class="diagram-tag racing-font">{contentDiagram.tag || '🔧 TECHNICAL ILLUSTRATION'}</span>
+      <h3 class="diagram-title">{contentDiagram.title}</h3>
+      <p class="diagram-caption">{contentDiagram.caption}</p>
+    </div>
+
+    <div class="diagram-grid">
+      {contentDiagram.panels.map((panel) => (
+        <div class={`diagram-card ${panel.statusType === 'good' ? 'good-card' : panel.statusType === 'bad' ? 'bad-card' : 'detail-card'}`}>
+          <div class={`card-status ${panel.statusType === 'good' ? 'good-status' : panel.statusType === 'bad' ? 'bad-status' : 'detail-status'}`}>
+            <span class="status-icon">
+              {panel.statusType === 'good' ? '⭕' : panel.statusType === 'bad' ? '❌' : '📐'}
+            </span>
+            <strong>{panel.statusLabel}</strong>
+          </div>
+          
+          <div class="dynamic-panel-body">
+            <h4 class="dynamic-panel-title">{panel.title}</h4>
+            {panel.keyMetric && (
+              <div class="dynamic-metric-badge racing-font">{panel.keyMetric}</div>
+            )}
+            <p class="card-desc">{panel.caption}</p>
+          </div>
+
+          {panel.badge && (
+            <div class="dynamic-panel-footer">
+              <span class="panel-sub-tag">{panel.badge}</span>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </figure>
+)}
+
+<style>
+  .tech-diagram-figure {
+    margin: 2.5rem 0;
+    padding: 1.8rem;
+    background: linear-gradient(145deg, rgba(21, 25, 34, 0.95), rgba(13, 15, 20, 0.98));
+    border: 1px solid rgba(199, 125, 255, 0.25);
+    border-radius: 14px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+  }
+
+  .diagram-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 1rem;
+  }
+
+  .diagram-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--accent-naomi, #c77dff);
+    background: rgba(199, 125, 255, 0.12);
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(199, 125, 255, 0.3);
+  }
+
+  .diagram-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #f4f6fb;
+    margin: 0.3rem 0;
+    line-height: 1.4;
+  }
+
+  .diagram-caption {
+    font-size: 0.92rem;
+    color: var(--text-secondary, #a8b3cf);
+    margin: 0;
+  }
+
+  .diagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .diagram-card {
+    background: #151922;
+    border-radius: 10px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .diagram-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .good-card {
+    border: 1px solid rgba(42, 157, 143, 0.35);
+  }
+
+  .good-card:hover {
+    box-shadow: 0 6px 20px rgba(42, 157, 143, 0.15);
+  }
+
+  .bad-card {
+    border: 1px solid rgba(230, 57, 70, 0.35);
+  }
+
+  .bad-card:hover {
+    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.15);
+  }
+
+  .detail-card {
+    border: 1px solid rgba(255, 183, 3, 0.3);
+  }
+
+  .detail-card:hover {
+    box-shadow: 0 6px 20px rgba(255, 183, 3, 0.12);
+  }
+
+  .card-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .good-status strong {
+    color: #2a9d8f;
+  }
+
+  .bad-status strong {
+    color: #e63946;
+  }
+
+  .detail-status strong {
+    color: #ffb703;
+  }
+
+  .diagram-svg {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    background: #0d0f14;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 0.85rem;
+  }
+
+  .card-desc {
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: var(--text-secondary, #a8b3cf);
+    margin: 0;
+  }
+
+  .dynamic-panel-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .dynamic-panel-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #f4f6fb;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .dynamic-metric-badge {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.35rem 0.75rem;
+    background: rgba(255, 183, 3, 0.14);
+    border: 1px solid rgba(255, 183, 3, 0.4);
+    color: var(--accent-gold, #ffb703);
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+
+  .dynamic-panel-footer {
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .panel-sub-tag {
+    font-size: 0.75rem;
+    color: var(--text-muted, #707d9c);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 768px) {
+    .diagram-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .detail-card {
+      grid-column: span 1 !important;
+    }
+  }
+</style>

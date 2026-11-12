@@ -7,7 +7,7 @@
   "circuit": "スポーツランドSUGO（宮城県・3,586m）／ 鈴鹿サーキット（三重県・5,821m）",
   "region": "Tohoku & Chubu (Miyagi / Mie)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/mfj-2026-rd2-sugo-mizuno-hada-odaki-nagao-ono-digest.webp",
   "tags": [
     "全日本ロードレース",
     "スポーツランドSUGO",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "鈴鹿サーキット Suzuka Circuit",
-      "handle": "@suzuka_event",
-      "url": "https://x.com/suzuka_event",
-      "postUrl": "https://x.com/suzuka_event/status/2119716624055914723",
+      "citationType": "hashtag_hub",
+      "accountName": "全日本ロードレース公式 ＆ SUGOハブ",
+      "handle": "@jrr_official / #全日本ロードレース",
+      "url": "https://x.com/jrr_official",
+      "postUrl": "https://x.com/hashtag/全日本ロードレース",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権 第2戦 スーパーバイクレース in SUGO 決勝結果】JSB1000は水野涼選手（SDG DUCATI Team KAGAYAMA）がRace1・Race2完全制覇！ST1000は羽田太河選手（Astemo Pro Honda S I Racing）、ST600はRace1を小田喜阿門選手（SDG Team HARC-PRO. Honda）・Race2を長尾健吾選手（TEAMKENKEN YTch）、J-GP3は尾野弘樹選手（P.MU 7C GALESPEED）が優勝！",
-        "ca": "【Resultats Oficials MFJ Rd.2 SUGO】JSB1000: Doblet de Ryo Mizuno (Race 1 i Race 2). ST1000: Victòria de Taiga Hada (Astemo Pro Honda). ST600: Victòries d'Amon Odaki (Race 1, HARC-PRO Honda) i Kengo Nagao (Race 2, Yamaha). J-GP3: Victòria de Hiroki Ono!",
-        "en": "[Official Results: 2026 MFJ All-Japan Rd.2 SUGO] JSB1000: Ryo Mizuno sweeps Race 1 & Race 2. ST1000: Taiga Hada (Astemo Pro Honda) wins. ST600: Amon Odaki (Race 1, HARC-PRO Honda) & Kengo Nagao (Race 2) win. J-GP3: Hiroki Ono takes victory!"
+        "ja": "【2026 MFJ全日本ロードレース 第2戦 SUGO大会】杜の都スポーツランドSUGOでJSB1000決勝！水野涼（DUCATI Team KAGAYAMA）がもてぎに続く2連勝を達成！",
+        "ca": "【Campionat del Japó MFJ Rd.2 SUGO】Ryo Mizuno (DUCATI Team KAGAYAMA) suma la seva segona victòria consecutiva a JSB1000 al circuit de Sportsland SUGO!",
+        "en": "[MFJ All-Japan Rd.2 SUGO] Ryo Mizuno (DUCATI Team KAGAYAMA) claims back-to-back victories in JSB1000, conquering the challenging Sportsland SUGO circuit!"
       },
       "editorialCommentary": {
-        "ja": "JRR公式X（@jrr_official）およびSUGO公式X（@sugo_official）で公開された第2戦SUGOのダイジェスト映像では、最大勾配10%を駆け上がる名物『10%勾配ストレート』でのスリップストリーム合戦と、ST1000を制した羽田太河選手（CBR1000RR-R）・ST600 Race1を制した小田喜阿門選手（CBR600RR）・J-GP3優勝の尾野弘樹選手（NSF250R）らホンダ勢3クラスの躍動が詳しく報じられています。",
-        "ca": "Les publicacions oficials de @jrr_official i @sugo_official destaquen les batalles a la famosa pujada del 10% de desnivell de SUGO, on Honda va sumar tres victòries amb Taiga Hada (ST1000), Amon Odaki (ST600 Race 1) i Hiroki Ono (J-GP3).",
-        "en": "Official posts from @jrr_official and @sugo_official showcase the battles up SUGO's steep 10% gradient finish straight, where Honda riders Taiga Hada (ST1000), Amon Odaki (ST600 Race 1), and Hiroki Ono (J-GP3) all claimed victory."
+        "ja": "全日本ロードレース公式（@jrr_official）および「#全日本ロードレース」では、SUGO名物の10%勾配バックストレッチを駆け上がるドゥカティV4 Rの加速性能が大きな注目を集めています。",
+        "ca": "L'etiqueta #全日本ロードレース destaca la potència de la Ducati Panigale V4 R superant la famosa pujada del 10% de SUGO.",
+        "en": "Community discussion under #全日本ロードレース centers around the Ducati V4 R's formidable drive climbing SUGO's famous 10% uphill straight."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Honda Racing Corporation",
-      "handle": "@hondaracingcorporation",
-      "url": "https://www.instagram.com/hondaracingcorporation/",
-      "postUrl": "https://www.instagram.com/p/Dfjv-esk5mq/",
+      "platform": "X",
+      "citationType": "official_channel",
+      "accountName": "スポーツランドSUGO 公式",
+      "handle": "@sugo_official / #スポーツランドSUGO",
+      "url": "https://x.com/sugo_official",
+      "postUrl": "https://x.com/hashtag/スポーツランドSUGO",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権 第2戦 スーパーバイクレース in SUGO 決勝結果】JSB1000は水野涼選手（SDG DUCATI Team KAGAYAMA）がRace1・Race2完全制覇！ST1000は羽田太河選手（Astemo Pro Honda S I Racing）、ST600はRace1を小田喜阿門選手（SDG Team HARC-PRO. Honda）・Race2を長尾健吾選手（TEAMKENKEN YTch）、J-GP3は尾野弘樹選手（P.MU 7C GALESPEED）が優勝！",
-        "ca": "【Resultats Oficials MFJ Rd.2 SUGO】JSB1000: Doblet de Ryo Mizuno (Race 1 i Race 2). ST1000: Victòria de Taiga Hada (Astemo Pro Honda). ST600: Victòries d'Amon Odaki (Race 1, HARC-PRO Honda) i Kengo Nagao (Race 2, Yamaha). J-GP3: Victòria de Hiroki Ono!",
-        "en": "[Official Results: 2026 MFJ All-Japan Rd.2 SUGO] JSB1000: Ryo Mizuno sweeps Race 1 & Race 2. ST1000: Taiga Hada (Astemo Pro Honda) wins. ST600: Amon Odaki (Race 1, HARC-PRO Honda) & Kengo Nagao (Race 2) win. J-GP3: Hiroki Ono takes victory!"
+        "ja": "スポーツランドSUGO公式：全日本ロードレース選手権SUGO大会にご来場いただきありがとうございました！新緑の宮城で熱戦を繰り広げた全ライダーに大きな拍手を！",
+        "ca": "Sportsland SUGO Oficial: Gràcies a tots els aficionats per omplir les grades en aquest gran cap de setmana de velocitat a Miyagi!",
+        "en": "Sportsland SUGO Official: Thank you to all fans who joined us in Miyagi for an unforgettable weekend of premier All-Japan racing!"
       },
       "editorialCommentary": {
-        "ja": "JRR公式X（@jrr_official）およびSUGO公式X（@sugo_official）で公開された第2戦SUGOのダイジェスト映像では、最大勾配10%を駆け上がる名物『10%勾配ストレート』でのスリップストリーム合戦と、ST1000を制した羽田太河選手（CBR1000RR-R）・ST600 Race1を制した小田喜阿門選手（CBR600RR）・J-GP3優勝の尾野弘樹選手（NSF250R）らホンダ勢3クラスの躍動が詳しく報じられています。",
-        "ca": "Les publicacions oficials de @jrr_official i @sugo_official destaquen les batalles a la famosa pujada del 10% de desnivell de SUGO, on Honda va sumar tres victòries amb Taiga Hada (ST1000), Amon Odaki (ST600 Race 1) i Hiroki Ono (J-GP3).",
-        "en": "Official posts from @jrr_official and @sugo_official showcase the battles up SUGO's steep 10% gradient finish straight, where Honda riders Taiga Hada (ST1000), Amon Odaki (ST600 Race 1), and Hiroki Ono (J-GP3) all claimed victory."
+        "ja": "SUGO公式X（@sugo_official）は、最終コーナー（馬の背からシケイン）での激しいブレーキング勝負の写真をリアルタイムで発信しました。",
+        "ca": "El compte oficial @sugo_official comparteix les millors fotografies de la forta frenada abans de la xicana final.",
+        "en": "Official track updates from @sugo_official highlight the fierce deceleration battles entering the final chicane."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "motoバトルLIVE 公式チャンネル",
+      "handle": "motoバトルLIVE",
+      "url": "https://www.youtube.com/@motobattlelive",
+      "postUrl": "https://www.youtube.com/watch?v=qJrrUtsbesM",
+      "quotedPostText": {
+        "ja": "motoバトルLIVE：全日本ロードレース 第2戦 SUGO決勝フルレース動画を公開！JSB1000・ST1000・ST600・J-GP3の全バトルをアーカイブでチェック！",
+        "ca": "motoバトルLIVE: Curses completes i resums en vídeo de la segona cita de l'any a Sportsland SUGO disponibles al canal!",
+        "en": "motoバトルLIVE: Full race replay archives for JSB1000, ST1000, ST600, and J-GP3 from SUGO now streaming online!"
+      },
+      "editorialCommentary": {
+        "ja": "公式配信アーカイブでは、SUGO特有のマイクロクライメイト（天候急変）と路面温度変化に対する各チームのタイヤ選択が詳しく解説されています。",
+        "ca": "La retransmissió oficial detalla la tria estratègica de pneumàtics davant els canvis de temperatura de l'asfalt a SUGO.",
+        "en": "The official broadcast replay offers masterclass insights into tyre compound selection amidst fluctuating track temperatures."
       }
     }
   ],

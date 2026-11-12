@@ -7,7 +7,7 @@
   "circuit": "モビリティリゾートもてぎ（栃木県芳賀郡茂木町・全長4,801m）",
   "region": "Japan (Motegi, Tochigi)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/mfj-2026-rd5-motegi-mizuno-double-win-hada-fujita-chishiki-digest.webp",
   "tags": [
     "全日本ロードレース選手権",
     "モビリティリゾートもてぎ",
@@ -20,36 +20,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "モビリティリゾートもてぎ公式",
-      "handle": "@motegi_official",
-      "url": "https://x.com/motegi_official",
-      "postUrl": "https://x.com/motegi_official/status/2120065945813303321",
+      "citationType": "hashtag_hub",
+      "accountName": "全日本ロードレース公式 ＆ もてぎハブ",
+      "handle": "@jrr_official / #全日本ロードレース",
+      "url": "https://x.com/jrr_official",
+      "postUrl": "https://x.com/hashtag/全日本ロードレース",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権 第5戦 スーパーバイクレース in もてぎ 公式結果】JSB1000クラスは水野涼（SDG DUCATI Team KAGAYAMA）が土曜レース1・日曜レース2ともに制して2連勝を達成しランキング首位を独走！ST1000（レース2）は羽田太河（Astemo Pro Honda SI Racing）が優勝、ST600は藤田哲弥が優勝、J-GP3は知識隼和（TN45 MIRAI Racing with Astemo）が優勝！",
-        "ca": "【Resultats Oficials MFJ All-Japan Rd.5 Superbike Race in Motegi】Ryo Mizuno (SDG DUCATI Team KAGAYAMA) firma el doblet a les dues curses de JSB1000! Victòries de Taiga Hada a ST1000, Tetsuya Fujita a ST600 i Hayato Chishiki a J-GP3!",
-        "en": "[Official Results: 2026 MFJ All-Japan Rd.5 Superbike Race in Motegi] Ryo Mizuno (SDG DUCATI Team KAGAYAMA) sweeps both JSB1000 Race 1 and Race 2! Taiga Hada wins ST1000 Race 2, Tetsuya Fujita wins ST600, and Hayato Chishiki triumphs in J-GP3!"
+        "ja": "【2026 MFJ全日本ロードレース 第5戦 もてぎ大会】JSB1000レース1＆レース2ともに水野涼（DUCATI Team KAGAYAMA）が優勝！もてぎ2連勝の完全制覇でタイトル争いを大きくリード！",
+        "ca": "【Campionat del Japó MFJ Rd.5 Motegi】Doblet imperial de Ryo Mizuno (DUCATI Team KAGAYAMA) guanyant la Cursa 1 i la Cursa 2 de JSB1000 a Motegi!",
+        "en": "[MFJ All-Japan Rd.5 Motegi] Commanding double victory for Ryo Mizuno (DUCATI Team KAGAYAMA), sweeping Race 1 and Race 2 in JSB1000 at Motegi!"
       },
       "editorialCommentary": {
-        "ja": "もてぎ公式（@motegi_official）とドゥカティ公式（@ducaticorse）が伝えた全日本第5戦もてぎの快進撃。4月の開幕戦2&4に続き、水野涼選手（SDG DUCATI Team KAGAYAMA）がモビリティリゾートもてぎのストップ＆ゴーレイアウトで圧倒的なブレーキングと立ち上がり加速を見せつけ、JSB1000の2レースを完全制覇しました。",
-        "ca": "Les publicacions de @motegi_official i @ducaticorse destaquen el doblet de Ryo Mizuno a Motegi en JSB1000 i les victòries de Hada, Fujita i Chishiki.",
-        "en": "Posts from @motegi_official and @ducaticorse highlight Ryo Mizuno's JSB1000 double victory at Motegi alongside wins for Hada, Fujita, and Chishiki."
+        "ja": "全日本公式X（@jrr_official）および「#全日本ロードレース」「#JSB1000」では、ストップ＆ゴーのもてぎでドゥカティの強烈な脱出加速と水野選手のブレーキング安定性が話題です。",
+        "ca": "El compte oficial @jrr_official destaca l'acceleració impressionant de la Ducati Panigale V4 R a la sortida dels revolts lents de Motegi.",
+        "en": "Official updates from @jrr_official celebrate Mizuno's crushing traction and brake stability powering out of Motegi's hairpins."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Ducati Corse Official",
-      "handle": "@ducaticorse",
-      "url": "https://www.instagram.com/ducaticorse/",
-      "postUrl": "https://www.instagram.com/p/DfkoWibDXi9/",
+      "platform": "X",
+      "citationType": "official_channel",
+      "accountName": "モビリティリゾートもてぎ 公式",
+      "handle": "@motegi_official / #モビリティリゾートもてぎ",
+      "url": "https://x.com/motegi_official",
+      "postUrl": "https://x.com/hashtag/モビリティリゾートもてぎ",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権 第5戦 スーパーバイクレース in もてぎ 公式結果】JSB1000クラスは水野涼（SDG DUCATI Team KAGAYAMA）が土曜レース1・日曜レース2ともに制して2連勝を達成しランキング首位を独走！ST1000（レース2）は羽田太河（Astemo Pro Honda SI Racing）が優勝、ST600は藤田哲弥が優勝、J-GP3は知識隼和（TN45 MIRAI Racing with Astemo）が優勝！",
-        "ca": "【Resultats Oficials MFJ All-Japan Rd.5 Superbike Race in Motegi】Ryo Mizuno (SDG DUCATI Team KAGAYAMA) firma el doblet a les dues curses de JSB1000! Victòries de Taiga Hada a ST1000, Tetsuya Fujita a ST600 i Hayato Chishiki a J-GP3!",
-        "en": "[Official Results: 2026 MFJ All-Japan Rd.5 Superbike Race in Motegi] Ryo Mizuno (SDG DUCATI Team KAGAYAMA) sweeps both JSB1000 Race 1 and Race 2! Taiga Hada wins ST1000 Race 2, Tetsuya Fujita wins ST600, and Hayato Chishiki triumphs in J-GP3!"
+        "ja": "モビリティリゾートもてぎ公式：全日本ロードレース選手権もてぎ大会2日間終了！真夏の熱気の中、素晴らしいバトルを披露したライダーの皆様に感謝！",
+        "ca": "Mobility Resort Motegi Oficial: Cap de setmana brillant de curses sota la calor d'agost. Gràcies a tots els equips i aficionats!",
+        "en": "Mobility Resort Motegi Official: Two fantastic days of All-Japan superbike racing concluded under the August sun. Thank you to all competitors!"
       },
       "editorialCommentary": {
-        "ja": "もてぎ公式（@motegi_official）とドゥカティ公式（@ducaticorse）が伝えた全日本第5戦もてぎの快進撃。4月の開幕戦2&4に続き、水野涼選手（SDG DUCATI Team KAGAYAMA）がモビリティリゾートもてぎのストップ＆ゴーレイアウトで圧倒的なブレーキングと立ち上がり加速を見せつけ、JSB1000の2レースを完全制覇しました。",
-        "ca": "Les publicacions de @motegi_official i @ducaticorse destaquen el doblet de Ryo Mizuno a Motegi en JSB1000 i les victòries de Hada, Fujita i Chishiki.",
-        "en": "Posts from @motegi_official and @ducaticorse highlight Ryo Mizuno's JSB1000 double victory at Motegi alongside wins for Hada, Fujita, and Chishiki."
+        "ja": "もてぎ公式（@motegi_official）では、表彰台での水野選手、羽田選手、藤田選手の爽やかな笑顔とパドックファンサービスの様子が発信されています。",
+        "ca": "Les xarxes de Motegi recullen les imatges del podi amb Mizuno, Hada i Fujita celebrant amb els aficionats.",
+        "en": "Trackside photos from @motegi_official capture podium celebrations and warm interactions between riders and fans."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "motoバトルLIVE 公式チャンネル",
+      "handle": "motoバトルLIVE",
+      "url": "https://www.youtube.com/@motobattlelive",
+      "postUrl": "https://www.youtube.com/watch?v=oeXqKAoCcPw",
+      "quotedPostText": {
+        "ja": "motoバトルLIVE：もてぎ大会 JSB1000 レース1・レース2 決勝フルアーカイブ＆ハイライト配信中！",
+        "ca": "motoバトルLIVE: Curses completes 1 i 2 de JSB1000 a Motegi i millors avançaments disponibles en alta definició!",
+        "en": "motoバトルLIVE: Full Race 1 and Race 2 replays for JSB1000 from Motegi streaming now in crystal-clear HD!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTubeでは、ダウンヒルストレートから90度コーナーへの進入で繰り広げられた時速300kmからのハードブレーキング攻防が精密に解説されています。",
+        "ca": "La retransmissió oficial analitza la frenada a 300 km/h al revolt de 90 graus de Motegi.",
+        "en": "Broadcast replays provide superb technical breakdowns of riders decelerating from nearly 300 km/h into the 90-degree corner."
       }
     }
   ],

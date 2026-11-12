@@ -7,7 +7,7 @@
   "circuit": "ザクセンリンク（ドイツ・ケムニッツ近郊・全長3,671m）",
   "region": "World (Sachsenring, Germany)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd11-german-gp-sachsenring-marc-marquez-raul-fernandez-ai-ogura-digest.webp",
   "tags": [
     "MotoGP",
     "ドイツGP",
@@ -20,36 +20,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #GermanGP Hub",
+      "handle": "@MotoGP / #GermanGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2120173383669383355",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第11戦 ドイツGP（ザクセンリンク）公式結果】左コーナーが連続する『ザクセンキング』の聖地でマルク・マルケス（Ducati Lenovo Team）が圧倒的な強さで優勝！そして2位にラウル・フェルナンデス、3位に小椋藍（ともにTrackhouse MotoGP Team / Aprilia）が入り、前戦アッセンに続いてTrackhouseコンビが2戦連続ダブル表彰台を達成！",
-        "ca": "【Resultats Oficials GP d'Alemanya de MotoGP 2026 a Sachsenring】El «Sachsenking» Marc Márquez (Ducati Lenovo Team) domina a Alemanya per davant de la dupla de Trackhouse MotoGP Team: 2n Raúl Fernández i 3r Ai Ogura!",
-        "en": "[Official Results: 2026 MotoGP German GP at Sachsenring] 'Sachsenking' Marc Márquez (Ducati Lenovo Team) rules the anti-clockwise ring ahead of Trackhouse MotoGP Team's Raúl Fernández (2nd) and Ai Ogura (3rd) for their second straight double podium!"
+        "ja": "【2026 MotoGP 第11戦 ドイツGP（ザクセンリンク）公式結果】ザクセンリンクの絶対王者マルク・マルケスが左回りサーキットで圧勝！2位ラウル・フェルナンデス、3位小椋藍でTrackhouseがダブルポディウム！",
+        "ca": "【GP d'Alemanya 2026 a Sachsenring】Marc Márquez manté el seu regnat a Sachsenring amb una victòria impecable! Extraordinari doble podi per a Trackhouse amb Raúl Fernández (2n) i Ai Ogura (3r)!",
+        "en": "[2026 MotoGP German GP at Sachsenring] King of the Ring Marc Márquez reigns supreme around the anti-clockwise rollercoaster! Sensational double podium for Trackhouse with Raúl Fernández 2nd and Ai Ogura 3rd!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とTrackhouse公式（@trackhousemotogp）が伝えたザクセンリンクの表彰台。左10・右3の反時計回りレイアウトで無敵を誇るマルク・マルケス選手が貫禄の勝利を収め、その後ろでは前戦アッセンで1-2フィニッシュを飾ったラウル・フェルナンデス選手と小椋藍選手が2位・3位に並び、前半戦締めくくりを最高の形で飾りました。",
-        "ca": "Les publicacions de @MotoGP i @trackhousemotogp destaquen el nou triomf de Marc Márquez a Sachsenring i el segon doble podi consecutiu de Raúl Fernández i Ai Ogura.",
-        "en": "Posts from @MotoGP and @trackhousemotogp celebrate Marc Márquez's latest Sachsenring triumph alongside Raúl Fernández and Ai Ogura's back-to-back double podium."
+        "ja": "MotoGP公式（@MotoGP）および「#GermanGP」では、左コーナーが連続するザクセンリンク特有のレイアウトでマルケス選手が魅せたバンク角と、Trackhouse勢の素晴らしいタイヤ温存が話題です。",
+        "ca": "L'etiqueta #GermanGP destaca el doble podi d'Aprilia Trackhouse darrere de l'imbatible Márquez a Sachsenring.",
+        "en": "Official posts from @MotoGP and #GermanGP praise Trackhouse's sensational double podium behind Sachsenring master Márquez."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Trackhouse MotoGP Team",
-      "handle": "@trackhousemotogp",
-      "url": "https://www.instagram.com/trackhousemotogp/",
-      "postUrl": "https://www.instagram.com/p/DfjtkwAovGn/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第11戦 ドイツGP（ザクセンリンク）公式結果】左コーナーが連続する『ザクセンキング』の聖地でマルク・マルケス（Ducati Lenovo Team）が圧倒的な強さで優勝！そして2位にラウル・フェルナンデス、3位に小椋藍（ともにTrackhouse MotoGP Team / Aprilia）が入り、前戦アッセンに続いてTrackhouseコンビが2戦連続ダブル表彰台を達成！",
-        "ca": "【Resultats Oficials GP d'Alemanya de MotoGP 2026 a Sachsenring】El «Sachsenking» Marc Márquez (Ducati Lenovo Team) domina a Alemanya per davant de la dupla de Trackhouse MotoGP Team: 2n Raúl Fernández i 3r Ai Ogura!",
-        "en": "[Official Results: 2026 MotoGP German GP at Sachsenring] 'Sachsenking' Marc Márquez (Ducati Lenovo Team) rules the anti-clockwise ring ahead of Trackhouse MotoGP Team's Raúl Fernández (2nd) and Ai Ogura (3rd) for their second straight double podium!"
+        "ja": "MotoGP Official：ザクセンリンク名物「滝（ウォーターフォール）」の下り超高速右コーナー攻防戦ハイライト！",
+        "ca": "Canal Oficial MotoGP: Resum de Sachsenring i imatges espectaculars a la baixada cega del revolt 11 (The Waterfall)!",
+        "en": "MotoGP Official Channel: German GP highlights featuring hair-raising commitments down the blind Turn 11 Waterfall!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とTrackhouse公式（@trackhousemotogp）が伝えたザクセンリンクの表彰台。左10・右3の反時計回りレイアウトで無敵を誇るマルク・マルケス選手が貫禄の勝利を収め、その後ろでは前戦アッセンで1-2フィニッシュを飾ったラウル・フェルナンデス選手と小椋藍選手が2位・3位に並び、前半戦締めくくりを最高の形で飾りました。",
-        "ca": "Les publicacions de @MotoGP i @trackhousemotogp destaquen el nou triomf de Marc Márquez a Sachsenring i el segon doble podi consecutiu de Raúl Fernández i Ai Ogura.",
-        "en": "Posts from @MotoGP and @trackhousemotogp celebrate Marc Márquez's latest Sachsenring triumph alongside Raúl Fernández and Ai Ogura's back-to-back double podium."
+        "ja": "公式ハイライト動画では、名物「ウォーターフォール（11コーナー）」での度胸試しの進入スピードと各車のリアトラクションが鮮明に比較されています。",
+        "ca": "El vídeo oficial permet apreciar la valentia necessària per entrar a fons a la cascada de Sachsenring.",
+        "en": "Official race footage highlights the incredible commitment required dropping through the blind crest at over 290 km/h."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第11戦ドイツGP（ザクセンリンク）決勝順位（1位マルケス、2位フェルナンデス、3位小椋）。",
+        "ca": "Classificació oficial Sachsenring: 1r Marc Márquez, 2n Raúl Fernández, 3r Ai Ogura.",
+        "en": "MotoGP.com Official Classification: 1st Marc Márquez, 2nd Raúl Fernández, 3rd Ai Ogura."
+      },
+      "editorialCommentary": {
+        "ja": "公式データによると、小椋選手は前戦オランダ優勝に続き2戦連続の表彰台を獲得し、ランキングでもトップ3争いに浮上しました。",
+        "ca": "Les estadístiques oficials confirmen el segon podi consecutiu d'Ogura situant-se entre els millors del campionat.",
+        "en": "Official championship standings confirm Ogura's back-to-back podium finishes elevating him into the top three in the points."
       }
     }
   ],

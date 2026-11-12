@@ -1,0 +1,289 @@
+{
+  "id": "2026-10-21-circuit-maintenance-naomi-clinic-03-tire-pressure-hot-management",
+  "slug": "circuit-maintenance-tire-pressure-hot-management-physics",
+  "publishedAt": "2026-10-21",
+  "category": "maintenance",
+  "articleType": "maintenance",
+  "circuit": "全サーキット共通 (MFJ技術規則・JIS規格準拠)",
+  "region": "Garage & Paddock Tech",
+  "featuredCat": "naomi",
+  "heroImage": "/images/articles/circuit-maintenance-tire-pressure-hot-management-physics.webp",
+  "tags": [
+    "メンテナンス",
+    "ナオミのサーキット整備塾",
+    "タイヤ空気圧",
+    "温間管理",
+    "タイヤウォーマー"
+  ],
+  "snsCitations": [
+    {
+      "platform": "OfficialWeb",
+      "accountName": "ダンロップ モータースポーツ (DUNLOP Motorsport)",
+      "handle": "@dunlop_moto",
+      "url": "https://mos.dunlop.co.jp/",
+      "postUrl": "https://mos.dunlop.co.jp/tyre_clinic/pressure_guide",
+      "quotedPostText": {
+        "ja": "レーシングラジアル（KR410/α-13SP等）の性能を100%引き出すには、走行直後の『温間空気圧』管理が最も重要です。冷間圧はあくまで目安であり、走行後の内圧上昇幅を考慮して目標温間値にアジャストしてください。",
+        "ca": "Guia Dunlop Motorsport: Per extreure el màxim rendiment dels radials de competició, la pressió en calent immediatament després de pista és el valor decisiu. La pressió en fred és només una referència d'escalfador.",
+        "en": "Dunlop Motorsport Clinic: To extract maximum grip from racing radials, hot pressure measured immediately upon entering pit lane is paramount. Cold pressure is merely a staging guideline."
+      },
+      "editorialCommentary": {
+        "ja": "パドックで最速を競うライダーほど、ピットインと同時にエアゲージを当てます。走行によるタイヤ内部温度上昇に伴う内圧変化を把握することが、トラクションとタイヤライフの生命線です。",
+        "ca": "Els pilots més ràpids del pàdoc mesuren la pressió al segon d'entrar al box. Controlar com augmenta la pressió amb la temperatura és la clau de la tracció i la vida del pneumàtic.",
+        "en": "Paddock champions check hot pressures the instant they stop in pit lane. Managing the thermodynamic pressure rise from track friction is essential for edge grip and tire longevity."
+      }
+    },
+    {
+      "platform": "X",
+      "accountName": "HSR九州 (HSR Kyushu Official)",
+      "handle": "@hsrkyushu",
+      "url": "https://x.com/hsrkyushu",
+      "postUrl": "https://x.com/hsrkyushu/status/2119582109876543210",
+      "quotedPostText": {
+        "ja": "本日のHSR九州は快晴！路面温度は朝の18℃から午後には42℃まで上昇しています。気温・路面温度の変化に合わせて、タイヤ空気圧のこまめなチェックをお忘れなく！",
+        "ca": "Dia assolellat a HSR Kyushu! La temperatura d'asfalt ha pujat de 18°C al matí a 42°C a la tarda. No oblideu ajustar les pressions dels pneumàtics a mesura que canvia la temperatura ambiental!",
+        "en": "Clear skies at HSR Kyushu! Track temp jumped from 18°C morning to 42°C afternoon. Keep monitoring your tire pressures as asphalt temps rise!"
+      },
+      "editorialCommentary": {
+        "ja": "路面温度が20℃以上上がれば、タイヤ内部の空気温度も激変します。朝一の空気圧のまま走り続けると、午後のセッションでは内圧過多で接地面積が激減してしまいます。",
+        "ca": "Si la pista s'escalfa 20°C, la temperatura de l'aire intern es dispara. Mantenir la pressió del matí a la tarda redueix dràsticament la petjada del pneumàtic.",
+        "en": "A 20°C climb in track temp drastically drives up internal tire air temperature. Running morning pressures in the afternoon leads to over-inflation and a shrunken contact patch."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-10-21",
+    "basis": {
+      "ja": "気体の状態方程式（定積変化におけるゲイ＝リュサックの法則 P1/T1 = P2/T2）、JIS B 7505-1（アネロイド型圧力計規格）、および各タイヤメーカー（ダンロップ・ピレリ・ブリヂストン）推奨温間値に基づき数値を検証済み。",
+      "ca": "Càlculs termodinàmics verificats segons la llei dels gasos ideals (Llei de Gay-Lussac a volum constant), la norma JIS B 7505-1 per a manòmetres i les dades oficials de fabricants (Dunlop, Pirelli, Bridgestone).",
+      "en": "Thermodynamic calculations verified using the ideal gas law (Gay-Lussac's Law at constant volume P1/T1 = P2/T2), JIS B 7505-1 pressure gauge standards, and tire manufacturer technical specs."
+    },
+    "sources": [
+      {
+        "title": "DUNLOP レーシングタイヤ温間空気圧セッティングガイド",
+        "url": "https://mos.dunlop.co.jp/"
+      },
+      {
+        "title": "JIS B 7505-1 ブルドン管圧力計規格",
+        "url": "https://www.jisc.go.jp/"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-10-21",
+    "venue": {
+      "ja": "ナオミのガレージ整備塾（週1連載・サーキット走行メンテナンス編 #3）",
+      "ca": "Taller de Pàdoc de la Naomi (Sèrie Setmanal de Manteniment #3)",
+      "en": "Naomi's Paddock Garage Clinic (Weekly Track Maintenance Series #3)"
+    },
+    "weather": {
+      "ja": "適用範囲：スポーツ走行・草耐久・地方選手権 車検対応",
+      "ca": "Aplicació: Tandes lliures, resistència amateur i verificacions tècniques",
+      "en": "Scope: Track Days, Grassroots Endurance & Official Tech Inspection"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【ナオミのサーキット整備塾 #3】タイムとグリップを支配する「温間空気圧」の熱力学！ゲイ＝リュサックの法則・ウォーマー80℃管理・エアゲージ校正",
+      "subtitle": "冷間200kPaが走ると245kPaに化ける！？温度+10℃で+7〜10kPaの物理計算と水蒸気膨張の罠、ピット帰還即計測のルーティン",
+      "summary": "整備塾第3回は、ラップタイムと転倒防止の鍵を握る『タイヤ空気圧の科学』。冷間と温間のギャップを生む熱力学（ゲイ＝リュサックの法則）、温度10℃あたり約7〜10kPa変化の計算式、タイヤウォーマーで芯まで温める45〜60分の時間管理、コンプレッサーの水分が招く内圧のブレ、そして高精度エアゲージの校正法を黒猫ナオミがレクチャーします。",
+      "highlightPoint": "タイヤ内圧は空気温度が10℃上がると約7〜10kPa上昇する！ウォーマーは表面だけでなくホイールまで熱を行き渡らせる最低45分通電が必須。ピットイン直後5秒以内に測る『温間』こそが真の基準値！",
+      "sections": [
+        {
+          "heading": "1. 冷間と温間のギャップ：気体熱力学（ゲイ＝リュサックの法則）",
+          "body": "パドックの朝一番、外気温15℃の静止状態で測る『冷間空気圧（Cold Pressure）』と、コースを全開走行した直後に測る『温間空気圧（Hot Pressure）』。この2つを混同しているライダーは、グリップの半分をドブに捨てていると言っても過言ではありません。\n\n密閉されたタイヤ内部の体積はおおむね一定（定積変化）とみなせるため、気体の状態方程式から導かれる『ゲイ＝リュサックの法則（P₁/T₁ = P₂/T₂ ※Tは絶対温度K）』がそのまま成り立ちます。朝9時の冷間15℃（288K）で 180 kPa（ゲージ圧）に合わせたタイヤが、コース上の激しい摩擦と変形発熱で内部空気温度75℃（348K）まで熱せられると、絶対圧は 1.21倍（約60kPa増）に膨張し、温間ゲージ圧は 225〜240 kPa 前後まで跳ね上がります。現場の計算式として【内部空気温度が10℃上昇するごとに、ゲージ圧はおよそ 7〜10 kPa（0.07〜0.10 kgf/cm²）上昇する】という物理法則を必ず頭に叩き込んでおきましょう。"
+        },
+        {
+          "heading": "2. タイヤウォーマーの真実：なぜ最低45〜60分必要なのか？",
+          "body": "サーキットで多くの人が犯すミスが、『走行20分前にウォーマーのスイッチを入れて満足すること』です。タイヤウォーマーを80℃に設定しても、最初の15〜20分で温まるのはトレッド表面のゴム（厚さ数ミリ）に過ぎません。\n\nタイヤが路面でしっかりグリップし、内圧を狙い通りに安定させるには、トレッドゴムの奥にあるカーカスコード、タイヤ内部に閉じ込められた空気、そして熱を奪うアルミホイールのリムまで全体が均一に熱平衡に達する必要があります。これには最低でも 45分〜60分 の通電時間が絶対に不可欠です。芯まで温まって初めて、ウォーマーを外した直後の『温間狙い値』へと正確にエアを調整できるのです。"
+        },
+        {
+          "heading": "3. コンプレッサーの水分トラップと高精度エアゲージの校正",
+          "body": "空気圧の管理で思わぬ落とし穴となるのが『空気中の水分（水蒸気）』です。パドックのコンプレッサーから水抜きドレンを怠った湿ったエアを充填すると、タイヤ内部に侵入した液体の水が、走行中の温度上昇（60℃〜80℃超）に伴って激しく気化。水蒸気の飽和蒸気圧が加算されることで、温度変化に対する内圧上昇率が非線形に跳ね上がり、セッティングの再現性が完全に崩壊します。これを防ぐために、ドライエア（除湿フィルター付き）や高純度窒素ガスが重宝されるのです。\n\nまた、エアゲージ自体の管理も重要です。安価なゲージや過去にピットの床に落下させたゲージは平気で20〜30kPa（0.2〜0.3kgf/cm²）狂っています。JIS B 7505-1規格に準拠した高精度なアネロイド型ゲージ（またはデジタルゲージ）を選び、普段使い用とは別に『校正確認用のマスターゲージ』をガレージに1つ保管して、定期的に指針のズレをチェックする習慣をつけましょう。"
+        }
+      ],
+      "resultTableTitle": "【タイヤ空気圧・温度特性】熱力学リファレンス表",
+      "results": [
+        {
+          "pos": "ゲイ＝リュサックの法則",
+          "riderOrTeam": "温度 +10℃ あたり 約 +7〜10 kPa 上昇",
+          "machine": "定積気体膨張式 (P₁/T₁ = P₂/T₂)",
+          "timeOrNote": "外気温15℃(冷間)から走行後75℃(温間)で約+45〜60kPa膨張"
+        },
+        {
+          "pos": "ウォーマー加熱時間",
+          "riderOrTeam": "80℃設定で 最低45分〜60分通電",
+          "machine": "熱平衡（リム・カーカス・内部空気）",
+          "timeOrNote": "短時間通電は表面のみ加熱され内部空気が温まらず内圧が安定しない"
+        },
+        {
+          "pos": "温間計測タイミング",
+          "riderOrTeam": "ピット帰還後 30秒以内 (即座に計測)",
+          "machine": "走行直後実測プロトコル",
+          "timeOrNote": "パドックに戻ってグローブやメットを脱いだ後では放熱して誤差大"
+        },
+        {
+          "pos": "水蒸気混入の影響",
+          "riderOrTeam": "水分気化により内圧上昇が予測不能に暴走",
+          "machine": "コンプレッサー水抜き未施工エア",
+          "timeOrNote": "ドライエアや除湿フィルターの徹底で熱膨張のブレを完全排除"
+        },
+        {
+          "pos": "エアゲージ精度管理",
+          "riderOrTeam": "JIS B 7505-1 準拠 (マスターゲージ照合)",
+          "machine": "アネロイド型 / デジタル圧力計",
+          "timeOrNote": "落下衝撃で指針が狂うため年1回以上の精度点検を実施"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "『走行直前に冷間で200kPa入れておきました！』って胸張ってるアンタ！走り終わってピット戻ってきたら250kPaまでパンパンに膨らんで、タイヤの接地面積が名刺サイズになってるわよ！ツルツル滑ってハイサイド食らいたいのかい！？"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "HSR九州やSPA直入のピットでも、全日本のトップチームはライダーがマシンを降りる前にメカニックさんが駆け寄ってエアゲージを当ててますよね！あのスピード感が温間管理の基本なんですね！"
+        },
+        {
+          "speaker": "naomi",
+          "text": "そうよ！ピット戻ってからグローブ脱いでお茶飲んでたら、タイヤの熱なんてあっという間に逃げちゃうの！タイヤは空気のバネで路面を掴んでるんだから、温間を制する者がサーキットを制するのよ！…ほら、走行終わったら真っ先に私にバイク渡しなさい、完璧に内圧測ってあげるから！"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Taller de Circuit de la Naomi #3] Termodinàmica de la Pressió en Calent: Llei de Gay-Lussac, Escalfadors a 80°C i Calibratge de Manòmetre",
+      "subtitle": "De 2,00 bar en fred a 2,45 bar a pista?! Com +10°C augmenten fins a 0,10 bar, la trampa de la humitat i el ritual a pit-lane",
+      "summary": "Tercer lliurament del nostre taller de manteniment dedicat a la pressió dels pneumàtics: el factor número u de tracció i seguretat. Expliquem la física dels gasos (Llei de Gay-Lussac), per què cada 10°C d'augment de temperatura incrementen entre 7 i 10 kPa la pressió, la necessitat de tenir els escalfadors endollats 45-60 minuts per escalfar la llanta i el protocol de mesura instantani en entrar a box.",
+      "highlightPoint": "La pressió de l'aire augmenta de 7 a 10 kPa (0,07–0,10 bar) per cada 10°C de pujada tèrmica! Els escalfadors a 80°C necessiten un mínim de 45 minuts per escalfar l'aire interior. La pressió en calent mesurada en menys de 30 segons és l'única referència real!",
+      "sections": [
+        {
+          "heading": "1. La física entre fred i calent: la Llei de Gay-Lussac",
+          "body": "La pressió mesurada al matí amb el pneumàtic a temperatura ambient («Pressió en fred») i la que té en pista rodant al límit («Pressió en calent») són dos mons completament diferents.\n\nCom que el volum d'un pneumàtic de moto roman pràcticament constant (transformació isòcora), s'aplica la llei dels gasos ideals: P₁/T₁ = P₂/T₂ (amb la temperatura en Kelvin). Un pneumàtic ajustat a 180 kPa en fred a 15°C (288 K) pujarà fàcilment fins a 225–240 kPa quan la carcassa i l'aire intern s'escalfin a 75°C (348 K). La regla pràctica d'or per a qualsevol mecànic de competició és: per cada 10°C que augmenta la temperatura de l'aire, la pressió relativa puja entre 7 i 10 kPa (0,07 a 0,10 bar)."
+        },
+        {
+          "heading": "2. Escalfadors de pneumàtics: per què calen 45-60 minuts?",
+          "body": "Un error clàssic al pàdoc és engegar els escalfadors 20 minuts abans d'entrar a pista. En 20 minuts només s'escalfa la capa exterior de goma de la banda de rodament.\n\nPerquè el pneumàtic ofereixi un rendiment òptim i la pressió s'estabilitzi, la calor ha de penetrar les capes de la carcassa, escalfar la massa d'aire interna i arribar a l'alumini de la llanta (que actua com un gran dissipador de calor). Aquest equilibri tèrmic requereix entre 45 i 60 minuts ininterromputs a 80°C. Només llavors podreu ajustar la pressió al valor de referència abans de sortir."
+        },
+        {
+          "heading": "3. Humitat del compressor i calibratge del manòmetre",
+          "body": "Si infleu els pneumàtics amb un compressor de pàdoc que no ha estat purgat d'aigua, introduireu vapor humit a l'interior. A temperatures superiors a 70°C, aquesta aigua s'evapora i la seva pressió de vapor s'afegeix de forma no lineal, fent que la pressió es dispari de manera impredictible. L'ús d'aire sec filtrat o nitrogen elimina aquestes variacions.\n\nFinalment, comproveu el vostre manòmetre. Els manòmetres que han caigut a terra solen tenir errors de més de 20-30 kPa. Manteniu un manòmetre patró d'alta precisió (segons JIS B 7505-1) guardat al taller per contrastar periòdicament el manòmetre que porteu al circuit."
+        }
+      ],
+      "resultTableTitle": "Termodinàmica i gestió de pressions en calent",
+      "results": [
+        {
+          "pos": "Llei de Gay-Lussac",
+          "riderOrTeam": "+7 a +10 kPa per cada +10°C d'augment",
+          "machine": "Gas ideal a volum constant (P₁/T₁ = P₂/T₂)",
+          "timeOrNote": "De 15°C ambiental a 75°C en pista suposa un augment de 45 a 60 kPa"
+        },
+        {
+          "pos": "Temps d'escalfador",
+          "riderOrTeam": "Mínim 45–60 minuts a 80°C",
+          "machine": "Equilibri tèrmic (goma, aire i llanta)",
+          "timeOrNote": "Menys de 30 minuts només escalfa la superfície, deixant la llanta freda"
+        },
+        {
+          "pos": "Mesura en calent",
+          "riderOrTeam": "Menys de 30 segons després d'aturar la moto",
+          "machine": "Protocol ràpid a pit-lane",
+          "timeOrNote": "Esperar a treure's el casc dissipa la calor i falseja la mesura"
+        },
+        {
+          "pos": "Humitat a l'aire",
+          "riderOrTeam": "El vapor d'aigua descontrola l'augment de pressió",
+          "machine": "Compressors sense purga de condensació",
+          "timeOrNote": "Utilitzar filtres assecadors o nitrogen per a una dilatació lineal pura"
+        },
+        {
+          "pos": "Manòmetre de precisió",
+          "riderOrTeam": "Norma JIS B 7505-1 (Classe 1.6 o digital)",
+          "machine": "Eina de verificació de pàdoc",
+          "timeOrNote": "Revisar periòdicament amb un manòmetre mestre de taller"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "Però què feu posant 2,0 bar en fred i sortint a pista tan tranquils?! Quan torneu a box la pressió haurà pujat a 2,5 bar i la moto anirà rebotant com una pilota sobre una petjada minúscula! Voleu anar per terra?!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "Als campionats nacionals i a les curses de Kyushu, els mecànics es llencen a la roda amb el manòmetre abans fins i tot que el pilot apagui el motor! Cada segon compta abans que es refredi l'asfalt!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Exacte! Qui domina la pressió en calent domina el ritme de cursa. El pneumàtic és l'única molla d'aire que us connecta amb la pista... Vinga, quan acabeu la tanda veniu directe cap a mi sense badar, que us mesuro la pressió al mil·límetre!"
+        }
+      ]
+    },
+    "en": {
+      "title": "[Naomi's Track Garage Clinic #3] Thermodynamics of Hot Tire Pressures: Gay-Lussac's Law, 80°C Warmers & Gauge Calibration",
+      "subtitle": "How 180 kPa cold balloons to 235 kPa hot! The +7–10 kPa per 10°C formula, moisture steam pitfalls, and pit lane measurement rituals",
+      "summary": "Clinic #3 dives into the physics governing tire grip and safety: hot pressure thermodynamics. Learn Gay-Lussac's constant-volume gas law, calculate the real ~7–10 kPa (1.0–1.4 psi) pressure rise per 10°C thermal jump, discover why tire warmers require 45–60 minutes of deep rim heat soak, eliminate compressor moisture traps, and master precision gauge calibration.",
+      "highlightPoint": "Internal air pressure rises by roughly 7 to 10 kPa for every 10°C jump in internal temperature! Tire warmers set to 80°C need at least 45 minutes to soak heat into the alloy rim and core air. Measure within 30 seconds of entering pit lane!",
+      "sections": [
+        {
+          "heading": "1. The Cold vs. Hot Divide: Gay-Lussac's Thermodynamic Law",
+          "body": "Setting your tire pressure cold in the morning paddock at 15°C ambient versus measuring it scorching hot right off the racetrack are worlds apart. Conflating the two throws away massive grip.\n\nBecause a motorcycle tire's internal volume remains essentially fixed (isochoric process), Gay-Lussac's Law of ideal gases applies directly: P₁/T₁ = P₂/T₂ (where T is absolute temperature in Kelvin). A tire set to 180 kPa gauge cold at 15°C (288 K) climbs to approximately 225–240 kPa once carcass flexing and friction heat the internal air to 75°C (348 K)—a 45 to 60 kPa gain. Remember this core paddock rule of thumb: 【Every 10°C increase in internal air temperature drives gauge pressure up by roughly 7 to 10 kPa (0.07–0.10 kgf/cm² or 1.0–1.4 psi)】."
+        },
+        {
+          "heading": "2. The Tire Warmer Reality: Why You Need 45 to 60 Minutes",
+          "body": "A pervasive paddock rookie mistake is throwing warmers on 20 minutes before a session. While an 80°C warmer heats the outer tread rubber within 15 minutes, the carcass cord, internal air, and heavy aluminum wheel rim remain lukewarm.\n\nThe aluminum wheel acts as a massive thermal heat sink. For tire pressure to stabilize at track-operating equilibrium, warmers must run uninterrupted for 45 to 60 minutes. Only after deep thermal penetration can you bleed or inflate accurately to your tire manufacturer's hot target pressure."
+        },
+        {
+          "heading": "3. The Compressor Moisture Trap & Master Gauge Calibration",
+          "body": "Water vapor inside your tire destroys pressure predictability. If you inflate with shop air from a compressor that hasn't had its tank drained, liquid water enters the tire cavity. At track temperatures over 70°C, this moisture vaporizes violently; its partial steam pressure causes non-linear pressure spikes. Using dried, filtered air or dry nitrogen prevents erratic pressure runaway.\n\nFurthermore, treat your air gauge with reverence. Dropping a Bourdon-tube gauge onto concrete easily induces a 20 to 30 kPa calibration shift. Invest in a JIS B 7505-1 compliant analog or digital gauge, and maintain a protected 'master reference gauge' in your toolbox to cross-verify your trackside gauge regularly."
+        }
+      ],
+      "resultTableTitle": "Thermodynamics of Hot Tire Pressure Management",
+      "results": [
+        {
+          "pos": "Gay-Lussac's Law",
+          "riderOrTeam": "+7 to +10 kPa per +10°C internal temp rise",
+          "machine": "Isochoric Gas Expansion (P₁/T₁ = P₂/T₂)",
+          "timeOrNote": "15°C morning ambient to 75°C track temp adds 45–60 kPa gauge pressure"
+        },
+        {
+          "pos": "Warmer Soak Time",
+          "riderOrTeam": "Minimum 45–60 minutes at 80°C",
+          "machine": "Thermal Equilibrium (Tread, Air & Rim)",
+          "timeOrNote": "Sub-30 minute heating warms only the outer skin while the rim stays cold"
+        },
+        {
+          "pos": "Hot Measurement",
+          "riderOrTeam": "Within 30 seconds of rolling into pit lane",
+          "machine": "Track-Exit Measurement Protocol",
+          "timeOrNote": "Removing gloves and chatting lets heat dissipate, causing false low readings"
+        },
+        {
+          "pos": "Moisture Intrusion",
+          "riderOrTeam": "Vaporization causes erratic non-linear pressure spikes",
+          "machine": "Undrained Compressor Air",
+          "timeOrNote": "Drain tank moisture daily and use dry air / nitrogen for linear predictability"
+        },
+        {
+          "pos": "Air Gauge Calibration",
+          "riderOrTeam": "JIS B 7505-1 Class 1.6 or Precision Digital",
+          "machine": "Paddock Scrutineering Tool",
+          "timeOrNote": "Cross-check against an undropped master gauge once every season"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "naomi",
+          "text": "Don't you dare roll out after setting 200 kPa cold and thinking you're all set! By lap three you'll be bouncing around on 250 kPa with a contact patch the size of a postage stamp! Do you really want to kiss the asphalt on cold tires?!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "At All-Japan and regional rounds across Kyushu, mechanics run up with precision gauges before the bike is even on the rear stand! Every second counts before the tire cools off in the paddock breeze!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "That's how it's done! Hot pressure is the air spring that keeps you upright. Tires don't grip on cold numbers—they grip on hot physics! Now, next time you pit in, ride straight to me and let me get an instant reading before you even touch your helmet!"
+        }
+      ]
+    }
+  }
+}

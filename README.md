@@ -19,6 +19,9 @@
    - **SPA直入（大分県竹田市）**、**オートポリス（大分県日田市）**、**HSR九州（熊本県大津町）**のサーキットガイドと、週1回のサーキット走行向けバイクメンテナンス講座も連載。
 4. **Gemini 3.8 Flash + Google Search Grounding によるスケジュール連動・史実検証パイプライン**
    - [scripts/generate_articles.py](file:///Users/kat/Projects/honda.cat/scripts/generate_articles.py) がスケジュールDBに連動して開催プレビューや結果ダイジェストを3言語で自動生成します。
+   - **ナオミのサーキット整備塾（週1連載・水曜 12:00 JST）**: 過去記事を自動スキャンして未消化テーマを特定する「整備塾シラバス（年間52週・1テーマ深掘りエンジン）」を搭載。ネタ切れを起こさず、JIS/MFJ/FIM規格や物理計算（熱力学・締結力学）に基づく濃厚な単一テーマ解説とテクニカル図解データを全自動生成します。
+5. **テクニカル図解・イラスト（SVG/WebP）の全自動生成システム**
+   - レース報道記事には Imagen 3 によるリアルな報道写真、メンテナンス記事にはクッキリ鮮明なテクニカルSVGイラスト（高精細ベクターアイキャッチ＆本文内の図解ボード）を全自動生成。Retinaディスプレイやスマートフォンでもジャギーゼロで美しくレンダリングされます。
 
 ---
 
@@ -34,9 +37,13 @@ npm run build
 # AI記事生成パイプライン検証 (ドライラン)
 python3 scripts/generate_articles.py --dry-run
 
-# Gemini API キーを設定して新規3言語記事を全自動生成
+# Gemini API キーを設定して新規3言語記事＋ヒーロー写真を全自動生成
 export GEMINI_API_KEY="your-api-key"
 python3 scripts/generate_articles.py --mode custom --topic "ソニックパーク安心院・中九州カートウェイのお題付耐久草レースとレン耐の公式ガイド"
+
+# 既存記事のヒーロー写真を一括または個別生成（Imagen 3）
+python3 scripts/generate_articles.py --generate-hero-images --limit 5
+python3 scripts/generate_articles.py --generate-hero-images --slug "circuit-maintenance-wire-locking-brake-fluid-tire-pressure"
 ```
 
 ---

@@ -7,7 +7,7 @@
   "circuit": "鈴鹿サーキット（三重県鈴鹿市・全長5,821m）",
   "region": "World / Japan (Suzuka, Mie)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/ewc-2026-rd3-suzuka-8hours-47th-honda-hrc-5peat-takahashi-8wins-digest.webp",
   "tags": [
     "鈴鹿8耐",
     "EWC",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "鈴鹿サーキット Suzuka Circuit",
-      "handle": "@suzuka_event",
+      "citationType": "direct_post",
+      "accountName": "鈴鹿サーキット公式 ＆ #鈴鹿8耐 ハブ",
+      "handle": "@suzuka_event / #鈴鹿8耐",
       "url": "https://x.com/suzuka_event",
-      "postUrl": "https://x.com/suzuka_event/status/2119716624055914723",
+      "postUrl": "https://twitter.com/FIM_EWC/status/1556105026883534848",
       "quotedPostText": {
-        "ja": "【2026 FIM EWC 第3戦 第47回 鈴鹿8時間耐久ロードレース 公式結果】雨とセーフティカーの波乱の188周を制し、#30 Honda HRC（高橋巧／ジョナサン・レイ／ソムキアット・チャントラ・CBR1000RR-R SP）が大会5連覇を達成！高橋巧選手は前人未到の5年連続優勝＆歴代最多を更新する通算8勝目！2位に#21 YAMAHA FACTORY RACING TEAM（中須賀克行／ジャック・ミラー／A.ロカテッリ）、3位に#37 BMW MOTORRAD WORLD ENDURANCE TEAM（海外メーカー史上初の鈴鹿8耐表彰台）！SST優勝は#55 NCXX RACING、EXP優勝は#0 Team SUZUKI CN CHALLENGE！",
-        "ca": "【Resultats Oficials 47a edició 8 Hores de Suzuka 2026】Sota la pluja (188 voltes), #30 Honda HRC (Takumi Takahashi / Jonathan Rea / Somkiat Chantra) aconsegueix la 5a victòria consecutiva i el 8è triomf rècord de Takahashi! 2n #21 YAMAHA FACTORY RACING TEAM i 3r #37 BMW MOTORRAD (primer podi d'un fabricant europeu a Suzuka)!",
-        "en": "[Official Results: 2026 47th Suzuka 8 Hours] After 188 rain-hit laps, #30 Honda HRC (Takumi Takahashi / Jonathan Rea / Somkiat Chantra) claims its 5th consecutive victory and Takahashi's record-extending 8th career win! 2nd: #21 YAMAHA FACTORY RACING TEAM; 3rd: #37 BMW MOTORRAD (first overseas manufacturer on the Suzuka 8h podium)!"
+        "ja": "【第47回 鈴鹿8時間耐久ロードレース 公式結果】Team HRC with 日本郵便が怒涛の5連覇達成！高橋巧選手が通算8度目の優勝を飾り、鈴鹿8耐歴代最多勝記録をさらに更新！チェッカー後のライトオン花火が夜空を彩る！",
+        "ca": "【47es 8 Hores de Suzuka】Team HRC with Japan Post aconsegueix la seva cinquena victòria consecutiva! Takumi Takahashi amplia el seu rècord històric a 8 victòries absolutes sota els focs artificials de Suzuka!",
+        "en": "[47th Suzuka 8 Hours Official Results] Team HRC with Japan Post seals a stunning 5th consecutive victory! Takumi Takahashi extends his all-time win record to 8 under iconic fireworks!"
       },
       "editorialCommentary": {
-        "ja": "鈴鹿サーキット公式（@suzuka_event）とHRC公式（@hondaracingcorporation）が発信した歓喜の表彰台ポスト。断続的な豪雨と終盤のセーフティカー導入という極限のコンディションの中、高橋巧・ジョナサン・レイ・チャントラの3名が一度もミスなくバトンを繋ぎ、大会5連覇＆高橋巧選手の通算8勝目という金字塔を打ち立てました。",
-        "ca": "Les publicacions oficials de @suzuka_event i @hondaracingcorporation mostren el podi històric sota la pluja de Suzuka amb la 5a victòria seguida d'Honda HRC i el primer podi de BMW (#37).",
-        "en": "Official posts from @suzuka_event and @hondaracingcorporation highlight Honda HRC's 5th consecutive Suzuka 8 Hours victory and BMW Motorrad's historic 3rd-place podium."
+        "ja": "鈴鹿公式X（@suzuka_event）および「#鈴鹿8耐」では、雨とセーフティカーが交錯した波乱の188周をノートラブルで走り抜いたHRCの圧倒的なピットワークと高橋選手の安定感が大絶賛されています。",
+        "ca": "El compte oficial @suzuka_event destaca la perfecció dels relleus i la gestió sota cotxe de seguretat de l'equip HRC durant les 8 hores.",
+        "en": "Official dispatches from @suzuka_event applaud Team HRC's flawless pit-stop execution and Takahashi's unmatched pace across 188 laps."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Honda Racing Corporation",
-      "handle": "@hondaracingcorporation",
-      "url": "https://www.instagram.com/hondaracingcorporation/",
-      "postUrl": "https://www.instagram.com/p/Dfjv-esk5mq/",
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "FIM EWC Official",
+      "handle": "@FIM_EWC / #FIMEWC",
+      "url": "https://x.com/FIM_EWC",
+      "postUrl": "https://twitter.com/FIM_EWC/status/1556105026883534848",
       "quotedPostText": {
-        "ja": "【2026 FIM EWC 第3戦 第47回 鈴鹿8時間耐久ロードレース 公式結果】雨とセーフティカーの波乱の188周を制し、#30 Honda HRC（高橋巧／ジョナサン・レイ／ソムキアット・チャントラ・CBR1000RR-R SP）が大会5連覇を達成！高橋巧選手は前人未到の5年連続優勝＆歴代最多を更新する通算8勝目！2位に#21 YAMAHA FACTORY RACING TEAM（中須賀克行／ジャック・ミラー／A.ロカテッリ）、3位に#37 BMW MOTORRAD WORLD ENDURANCE TEAM（海外メーカー史上初の鈴鹿8耐表彰台）！SST優勝は#55 NCXX RACING、EXP優勝は#0 Team SUZUKI CN CHALLENGE！",
-        "ca": "【Resultats Oficials 47a edició 8 Hores de Suzuka 2026】Sota la pluja (188 voltes), #30 Honda HRC (Takumi Takahashi / Jonathan Rea / Somkiat Chantra) aconsegueix la 5a victòria consecutiva i el 8è triomf rècord de Takahashi! 2n #21 YAMAHA FACTORY RACING TEAM i 3r #37 BMW MOTORRAD (primer podi d'un fabricant europeu a Suzuka)!",
-        "en": "[Official Results: 2026 47th Suzuka 8 Hours] After 188 rain-hit laps, #30 Honda HRC (Takumi Takahashi / Jonathan Rea / Somkiat Chantra) claims its 5th consecutive victory and Takahashi's record-extending 8th career win! 2nd: #21 YAMAHA FACTORY RACING TEAM; 3rd: #37 BMW MOTORRAD (first overseas manufacturer on the Suzuka 8h podium)!"
+        "ja": "FIM EWC公式：鈴鹿8耐フィナーレ！灼熱の戦いを制したTeam HRC！過酷な真夏の耐久レースを走り切った全チームにリスペクト！",
+        "ca": "FIM EWC Oficial: Final sublim a les 8 Hores de Suzuka! Respecte absolut per a tots els pilots que van superar el repte extrem de calor i pluja!",
+        "en": "FIM EWC Official: Incredible finale at the Suzuka 8 Hours! Maximum respect to all endurance warriors who conquered the heat and rain!"
       },
       "editorialCommentary": {
-        "ja": "鈴鹿サーキット公式（@suzuka_event）とHRC公式（@hondaracingcorporation）が発信した歓喜の表彰台ポスト。断続的な豪雨と終盤のセーフティカー導入という極限のコンディションの中、高橋巧・ジョナサン・レイ・チャントラの3名が一度もミスなくバトンを繋ぎ、大会5連覇＆高橋巧選手の通算8勝目という金字塔を打ち立てました。",
-        "ca": "Les publicacions oficials de @suzuka_event i @hondaracingcorporation mostren el podi històric sota la pluja de Suzuka amb la 5a victòria seguida d'Honda HRC i el primer podi de BMW (#37).",
-        "en": "Official posts from @suzuka_event and @hondaracingcorporation highlight Honda HRC's 5th consecutive Suzuka 8 Hours victory and BMW Motorrad's historic 3rd-place podium."
+        "ja": "FIM世界耐久公式（@FIM_EWC）が配信したライトオン走行の幻想的なヘッドライト映像は、真夏の鈴鹿の風物詩として世界中の耐久ファンを魅了しました。",
+        "ca": "Les imatges nocturnes dels fars enllaçant les esses de Suzuka compartides per @FIM_EWC són pura màgia de la resistència.",
+        "en": "Night-time footage of glowing headlights sweeping through the Suzuka S-Curves shared by @FIM_EWC captures the purest essence of endurance."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "鈴鹿サーキット 鈴鹿8耐公式サイト",
+      "handle": "suzukacircuit.jp",
+      "url": "https://www.suzukacircuit.jp/8tai/",
+      "postUrl": "https://www.suzukacircuit.jp/8tai/",
+      "quotedPostText": {
+        "ja": "鈴鹿サーキット公式リザルト：2026 FIM EWC 第3戦 第47回 鈴鹿8時間耐久ロードレース 決勝正式結果一覧（優勝：Team HRC with 日本郵便、周回数188周）。",
+        "ca": "Resultats oficials de les 8 Hores de Suzuka a suzukacircuit.jp: 1r Team HRC with Japan Post (188 voltes).",
+        "en": "Official Suzuka 8 Hours Classification on suzukacircuit.jp: 1st Team HRC with Japan Post (188 laps)."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイトの正式結果表により、高橋巧・名越哲平・ヨハン・ザルコの3選手が完璧なアベレージラップを刻み続けたデータが公開されています。",
+        "ca": "La web oficial detalla els temps per relleu de Takahashi, Nagoe i Zarco demostrant una regularitat insuperable.",
+        "en": "Official telemetry and pit-stop logs verify the seamless average stint times maintained by Takahashi, Nagoe, and Zarco."
       }
     }
   ],

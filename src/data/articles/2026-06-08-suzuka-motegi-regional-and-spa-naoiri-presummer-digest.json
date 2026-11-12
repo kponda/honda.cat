@@ -7,7 +7,7 @@
   "circuit": "鈴鹿サーキット（5,821m）／ モビリティリゾートもてぎ（4,801m）／ SPA直入（大分県竹田市・1,430m）",
   "region": "Japan (Suzuka, Motegi & SPA Naoiri in Oita, Kyushu)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/japan-2026-june-week1-suzuka-sunday-rd2-motegi-rd2-spa-naoiri-presummer-digest.webp",
   "tags": [
     "鈴鹿サンデーロードレース",
     "もてぎロードレース選手権",
@@ -19,36 +19,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "鈴鹿サーキット Suzuka Circuit",
-      "handle": "@suzuka_event",
+      "citationType": "hashtag_hub",
+      "accountName": "鈴鹿サーキット ＆ 鈴鹿サンデーハブ",
+      "handle": "@suzuka_event / #鈴鹿サンデー",
       "url": "https://x.com/suzuka_event",
-      "postUrl": "https://x.com/suzuka_event/status/2119996063335813201",
+      "postUrl": "https://x.com/hashtag/鈴鹿サンデー",
       "quotedPostText": {
-        "ja": "【2026 鈴鹿サンデーロードレース 第2戦（6月6日〜7日・フルコース 5,821m）】開幕戦の東コースから舞台をフルコースへ移し、インターJSB1000・ST1000・ST600・JP250・CBR250RR Dream Cupの各クラスで夏を見据えた熱いスリップストリームバトルが展開されました！",
-        "ca": "【Suzuka Sunday Road Race 2026 Rd.2 (6-7 de juny · Circuit Complet 5.821m)】Després d'obrir la temporada al traçat Est, la 2a cita ha disputat curses vibrants al circuit complet en Inter JSB1000, ST1000, ST600 i JP250!",
-        "en": "[2026 Suzuka Sunday Road Race Rd.2 (June 6–7 · Full Course 5,821m)] Stepping up from the East Course opener to the full 5,821m international layout, riders across Inter JSB1000, ST1000, ST600, and JP250 delivered thrilling slipstream battles!"
+        "ja": "【鈴鹿サンデーロードレース 第2戦】鈴鹿8耐トライアウトを兼ねた真剣勝負！全国の精鋭チームが集結し、真夏の本戦出場枠を懸けた熱いスプリントバトル！",
+        "ca": "【Suzuka Sunday Road Race Rd.2】Ronda crucial de classificació per a les 8 Hores de Suzuka amb els millors equips privats del Japó!",
+        "en": "[Suzuka Sunday Road Race Rd.2] Crucial Suzuka 8 Hours trial round featuring fierce sprint battles for remaining endurance spots!"
       },
       "editorialCommentary": {
-        "ja": "鈴鹿サーキット公式（@suzuka_event）やモビリティリゾートもてぎ公式（@motegi_official）が発信した6月第1週の地方選手権レポートでは、スプーンカーブや130Rを含む鈴鹿フルコースでの高速バトルと、もてぎ第2戦でのハードブレーキング勝負が詳しく伝えられています。",
-        "ca": "Les cròniques oficials de @suzuka_event i @motegi_official destaquen el pas al traçat complet de 5.821m a Suzuka i les intenses frenades de la 2a cita del campionat de Motegi el mateix cap de setmana.",
-        "en": "Official updates from @suzuka_event and @motegi_official highlight the step up to Suzuka's full 5,821m layout through Spoon and 130R alongside simultaneous Round 2 regional action at Motegi."
+        "ja": "鈴鹿公式（@suzuka_event）および「#鈴鹿サンデー」では、梅雨前のドライコンディションの中で鈴鹿8耐進出権を手にしたプライベーターたちの歓喜が伝えられています。",
+        "ca": "El compte oficial @suzuka_event mostra les celebracions dels equips privats que aconsegueixen plaça per a les 8 Hores de Suzuka.",
+        "en": "Updates from @suzuka_event celebrate the privateer squads securing their coveted starting spots for the prestigious Suzuka 8 Hours."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "鈴鹿サーキット 公式 Instagram",
-      "handle": "@suzukacircuit_official",
-      "url": "https://www.instagram.com/suzukacircuit_official/",
-      "postUrl": "https://www.instagram.com/p/DfZc1vWh0mq/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "SPA直入 公式チャンネル",
+      "handle": "SPA直入",
+      "url": "https://www.youtube.com/watch?v=uWNP-OO8pVU",
+      "postUrl": "https://www.youtube.com/watch?v=uWNP-OO8pVU",
       "quotedPostText": {
-        "ja": "【SPA直入 スーパーサンデーフェスタ 2026 PreSUMMER（6月7日開催）】4月のSPRING大会に続く今季第2弾！大分県竹田市のSPA直入（全長1,430m）でクラス別スポーツ走行枠とグリッドスタート形式の模擬レースが開催されました。",
-        "ca": "【SPA Naoiri Super Sunday Festa 2026 PreSUMMER (7 de juny)】Segona cita de la temporada a Takeda, Oita (1.430m) després de l'edició SPRING d'abril, amb mànegues per nivells i curses sprint simulades!",
-        "en": "[SPA Naoiri Super Sunday Festa 2026 PreSUMMER (June 7)] Following April's SPRING opener, Oita's 1,430m highland circuit hosted its early-summer festival featuring lap-time-tiered sessions and grid-start mock races!"
+        "ja": "SPA直入公式：初夏ロードレースシリーズ 決勝ハイライト！最終コーナー立ち上がりからのストレート加速勝負をプレイバック！",
+        "ca": "Canal Oficial SPA Naoiri: Curses de principi d'estiu amb acceleracions vibrants a la recta principal!",
+        "en": "SPA Naoiri Official: Early summer road racing highlights featuring thrilling drag races out of the final hairpin!"
       },
       "editorialCommentary": {
-        "ja": "SPA直入公式サイト（spa-naoiri.com）の年間カレンダー通り、6月7日（日）にはコース主催イベント「スーパーサンデーフェスタ 2026 PreSUMMER」が開催されました。秋のAUTUMN（9/20）・FINAL（11/15）に向けて九州のサンデーライダーが愛車を仕上げる貴重な1日となりました。",
-        "ca": "Tal com marca el calendari oficial de SPA Naoiri (spa-naoiri.com), el diumenge 7 de juny es va celebrar l'edició PreSUMMER del seu festival oficial per als motoristes de Kyushu.",
-        "en": "Verified via SPA Naoiri's official 2026 schedule (spa-naoiri.com), the June 7 PreSUMMER festival gave Kyushu riders ideal track time ahead of the autumn rounds."
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "モビリティリゾートもてぎ ＆ もてぎロードレースハブ",
+      "handle": "@motegi_official / #もてぎロードレース",
+      "url": "https://x.com/motegi_official",
+      "postUrl": "https://x.com/hashtag/もてぎロードレース",
+      "quotedPostText": {
+        "ja": "【もてぎロードレース選手権 第2戦】ST600・CBR250R Dream Cup！若手ライダーたちがロードコースのストップ＆ゴーで腕を磨く白熱の地方選！",
+        "ca": "【Campionat Regional de Motegi Rd.2】Els joves talents japonesos competeixen a les categories ST600 i CBR250R Dream Cup!",
+        "en": "[Motegi Road Race Championship Rd.2] Future stars hone their technical racecraft across ST600 and CBR250R Dream Cup classes!"
+      },
+      "editorialCommentary": {
+        "ja": "もてぎ公式（@motegi_official）が伝える地方選の熱気。もて耐7時間耐久や全日本へステップアップを目指す若手たちの走りが光ります。",
+        "ca": "Les xarxes de Motegi destaquen el paper clau d'aquest campionat per formar els pilots del futur cap a les 7 Hores de Motetai.",
+        "en": "Motegi's official reporting highlights the championship's vital role developing tomorrow's endurance and sprint contenders."
       }
     }
   ],

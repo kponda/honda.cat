@@ -7,7 +7,7 @@
   "circuit": "TT Circuit Assen（オランダ・アッセン・全長4,542m）",
   "region": "World (Assen, Netherlands)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd10-dutch-tt-assen-ai-ogura-maiden-victory-trackhouse-1-2-digest.webp",
   "tags": [
     "MotoGP",
     "オランダGP",
@@ -22,36 +22,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "Trackhouse MotoGP Team",
-      "handle": "@TrackhouseMoto",
+      "citationType": "direct_post",
+      "accountName": "Trackhouse Moto ＆ #AiOgura Hub",
+      "handle": "@TrackhouseMoto / #AiOgura",
       "url": "https://x.com/TrackhouseMoto",
-      "postUrl": "https://x.com/TrackhouseMoto/status/2120101663952515273",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【歴史的快挙！2026 MotoGP 第10戦 オランダGP（ダッチTT・アッセン）公式結果】土曜スプリントはラウル・フェルナンデス（Trackhouse MotoGP Team）が優勝！そして日曜決勝グランプリで日本の小椋藍（Trackhouse MotoGP Team / Aprilia）がMotoGP最高峰クラス初優勝を達成！日本人ライダーの最高峰クラス優勝は2004年の玉田誠以来22年ぶり！2位にフェルナンデスでTrackhouseが1-2フィニッシュ、3位にホルヘ・マルティン（Aprilia Racing）でアプリリア勢が表彰台を独占！",
-        "ca": "【HISTÒRIA A ASSEN! Resultats Oficials TT dels Països Baixos 2026】Dissabte: Victòria de Raúl Fernández a l'Sprint! Diumenge: Ai Ogura (Trackhouse MotoGP Team / Aprilia) aconsegueix la seva primera victòria a la categoria reina de MotoGP (primer guanyador japonès des de Makoto Tamada el 2004)! 2n Raúl Fernández per a un doblet 1-2 de Trackhouse i 3r Jorge Martín (Aprilia Racing) completant el triplete d'Aprilia!",
-        "en": "[HISTORY MADE AT ASSEN! Official Results: 2026 MotoGP Dutch TT] Raúl Fernández wins Saturday's Sprint! On Sunday, Ai Ogura (Trackhouse MotoGP Team / Aprilia) wins the Dutch TT to claim his maiden MotoGP premier-class victory—the first by a Japanese rider since Makoto Tamada in 2004! Teammate Raúl Fernández finishes 2nd for a Trackhouse 1–2, with Jorge Martín (Aprilia Racing) 3rd for an all-Aprilia podium lock-out!"
+        "ja": "【歴史的快挙！2026 MotoGP 第10戦 ダッチTT（アッセン）】小椋藍（Trackhouse MotoGP Team / Aprilia）がMotoGP初優勝！日本人ライダーとして最高峰クラスで長年ぶりの勝利！チームメイトのラウル・フェルナンデスも2位でTrackhouse 1-2フィニッシュ！",
+        "ca": "【Fita històrica al Dutch TT 2026】Ai Ogura (Trackhouse MotoGP Team / Aprilia) aconsegueix la seva primera victòria a MotoGP a Assen! Doblet històric per a Trackhouse amb Raúl Fernández 2n!",
+        "en": "[Historic Triumph at 2026 Dutch TT] Ai Ogura (Trackhouse MotoGP Team / Aprilia) claims his maiden MotoGP victory at Assen! Unbelievable 1-2 finish for Trackhouse with Raúl Fernández 2nd!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式X（@MotoGP）およびTrackhouse MotoGP公式（@TrackhouseMoto）が世界中に発信したアッセンのフィニッシュシーンは、2026年シーズン最大のハイライトとなりました！第5戦ル・マン3位、第9戦ブルノ2位と階段を上ってきた小椋藍選手が、聖地アッセン（全長4,542m）の高速コーナーと最終GTシケインを完璧に制し、日本人ライダーとして22年ぶりとなる最高峰クラス優勝を成し遂げました。",
-        "ca": "Les publicacions oficials de @MotoGP i @TrackhouseMoto recullen el moment històric en què Ai Ogura creua la meta de la Catedral d'Assen (4.542m) en primera posició, culminant la seva progressió (3r a Le Mans, 2n a Brno i 1r a Assen) al capdavant d'un 1-2-3 d'Aprilia.",
-        "en": "Official posts from @MotoGP and @TrackhouseMoto capture the unforgettable moment Ai Ogura crossed the stripe at the Cathedral of Speed (4,542m) to complete his podium progression (3rd at Le Mans, 2nd at Brno, 1st at Assen) at the head of an all-Aprilia 1–2–3."
+        "ja": "Trackhouse公式X（@TrackhouseMoto）および「#DutchTT」「#AiOgura」は世界中のモータースポーツファンからの感動と祝福で溢れ返りました。伝統のアッセン最終シケインをトップで駆け抜けた小椋選手の走りは歴史に刻まれます。",
+        "ca": "Les xarxes de Trackhouse i l'etiqueta #AiOgura van esclatar d'emoció celebrant la primera victòria japonesa a la categoria reina després de molts anys.",
+        "en": "Trackhouse's official feeds and posts under #AiOgura exploded with worldwide celebration as Ogura took a long-awaited premier-class win for Japan."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "MotoGP™ Official",
-      "handle": "@motogp",
-      "url": "https://www.instagram.com/motogp/",
-      "postUrl": "https://www.instagram.com/p/DfkfTBqibtd/",
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official",
+      "handle": "@MotoGP / #MotoGP",
+      "url": "https://x.com/MotoGP",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【歴史的快挙！2026 MotoGP 第10戦 オランダGP（ダッチTT・アッセン）公式結果】土曜スプリントはラウル・フェルナンデス（Trackhouse MotoGP Team）が優勝！そして日曜決勝グランプリで日本の小椋藍（Trackhouse MotoGP Team / Aprilia）がMotoGP最高峰クラス初優勝を達成！日本人ライダーの最高峰クラス優勝は2004年の玉田誠以来22年ぶり！2位にフェルナンデスでTrackhouseが1-2フィニッシュ、3位にホルヘ・マルティン（Aprilia Racing）でアプリリア勢が表彰台を独占！",
-        "ca": "【HISTÒRIA A ASSEN! Resultats Oficials TT dels Països Baixos 2026】Dissabte: Victòria de Raúl Fernández a l'Sprint! Diumenge: Ai Ogura (Trackhouse MotoGP Team / Aprilia) aconsegueix la seva primera victòria a la categoria reina de MotoGP (primer guanyador japonès des de Makoto Tamada el 2004)! 2n Raúl Fernández per a un doblet 1-2 de Trackhouse i 3r Jorge Martín (Aprilia Racing) completant el triplete d'Aprilia!",
-        "en": "[HISTORY MADE AT ASSEN! Official Results: 2026 MotoGP Dutch TT] Raúl Fernández wins Saturday's Sprint! On Sunday, Ai Ogura (Trackhouse MotoGP Team / Aprilia) wins the Dutch TT to claim his maiden MotoGP premier-class victory—the first by a Japanese rider since Makoto Tamada in 2004! Teammate Raúl Fernández finishes 2nd for a Trackhouse 1–2, with Jorge Martín (Aprilia Racing) 3rd for an all-Aprilia podium lock-out!"
+        "ja": "MotoGP公式：歴史が作られたアッセン！小椋藍が聖地カテドラル・オブ・スピードでチェッカー！ピットレーン全員がスタンディングオベーション！",
+        "ca": "MotoGP Oficial: Història a la Catedral de la Velocitat! Ai Ogura creua la meta com a guanyador a Assen sota l'ovació de tot el pàdoc!",
+        "en": "MotoGP Official: History made at the Cathedral of Speed! Ai Ogura takes the chequered flag at Assen to a full paddock standing ovation!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式X（@MotoGP）およびTrackhouse MotoGP公式（@TrackhouseMoto）が世界中に発信したアッセンのフィニッシュシーンは、2026年シーズン最大のハイライトとなりました！第5戦ル・マン3位、第9戦ブルノ2位と階段を上ってきた小椋藍選手が、聖地アッセン（全長4,542m）の高速コーナーと最終GTシケインを完璧に制し、日本人ライダーとして22年ぶりとなる最高峰クラス優勝を成し遂げました。",
-        "ca": "Les publicacions oficials de @MotoGP i @TrackhouseMoto recullen el moment històric en què Ai Ogura creua la meta de la Catedral d'Assen (4.542m) en primera posició, culminant la seva progressió (3r a Le Mans, 2n a Brno i 1r a Assen) al capdavant d'un 1-2-3 d'Aprilia.",
-        "en": "Official posts from @MotoGP and @TrackhouseMoto capture the unforgettable moment Ai Ogura crossed the stripe at the Cathedral of Speed (4,542m) to complete his podium progression (3rd at Le Mans, 2nd at Brno, 1st at Assen) at the head of an all-Aprilia 1–2–3."
+        "ja": "MotoGP公式（@MotoGP）が投稿したパドックでの表彰式セレモニー映像。小椋選手の冷静さとチームの歓喜の対比が感動を呼びました。",
+        "ca": "El vídeo oficial de la celebració al pàdoc mostra l'emoció continguda d'Ogura i la bogeria de l'equip americà Trackhouse.",
+        "en": "Official podium footage captured the wonderful contrast between Ogura's trademark cool focus and Trackhouse's wild celebrations."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
+      "quotedPostText": {
+        "ja": "MotoGP Official：小椋藍の初優勝記念特集！アッセン最終ラップの攻防＆君が代が響くポディウム映像を完全収録！",
+        "ca": "Canal Oficial MotoGP: Edició especial de la primera victòria d'Ai Ogura amb l'última volta completa i l'himne japonès al podi d'Assen!",
+        "en": "MotoGP Official Channel: Special feature celebrating Ai Ogura's maiden MotoGP win, featuring the full final lap and podium ceremony!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTubeの特集動画は、アッセンの高速S字を一切ミスなくトレースし続けた小椋選手のライディングの美しさを証明しています。",
+        "ca": "El resum especial posa en relleu la precisió mil·limètrica d'Ogura a la part ràpida del traçat neerlandès.",
+        "en": "The official feature video demonstrates the flawless line choice and composure that carried Ogura to the top step of the podium."
       }
     }
   ],

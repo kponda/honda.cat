@@ -7,7 +7,7 @@
   "circuit": "岡山国際サーキット（岡山県美作市・全長3,703m）",
   "region": "Japan (Mimasaka, Okayama)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/mfj-2026-rd6-okayama-nagashima-maiden-jsb1000-victory-hada-matsuoka-wakamatsu-digest.webp",
   "tags": [
     "全日本ロードレース選手権",
     "岡山国際サーキット",
@@ -21,36 +21,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "鈴鹿サーキット / JRR Motor Sports",
-      "handle": "@suzuka_event",
-      "url": "https://x.com/suzuka_event",
-      "postUrl": "https://x.com/suzuka_event/status/2119996063335813201",
+      "citationType": "hashtag_hub",
+      "accountName": "全日本ロードレース公式 ＆ 岡山ハブ",
+      "handle": "@jrr_official / #全日本ロードレース",
+      "url": "https://x.com/jrr_official",
+      "postUrl": "https://x.com/hashtag/全日本ロードレース",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権 第6戦 スーパーバイクレース in 岡山 公式結果】雨のため3周減算となったJSB1000決勝で、長島哲太（DUNLOP Racing Team with YAHAGI / Honda CBR1000RR-R）が悲願のJSB1000クラス初優勝を達成！2位に國井勇輝（SDG Team HARC-PRO.Honda）でホンダ1-2、3位にポイントリーダー水野涼（SDG DUCATI Team KAGAYAMA）！ST1000は羽田太河、ST600は松岡玲、J-GP3は若松怜が優勝！",
-        "ca": "【Resultats Oficials MFJ All-Japan Rd.6 a Okayama】Sota la pluja, Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI / Honda) aconsegueix la seva primera victòria a JSB1000 davant Yuki Kunii (2n) i Ryo Mizuno (3r)! Triomfs de Taiga Hada (ST1000), Rei Matsuoka (ST600) i Rei Wakamatsu (J-GP3)!",
-        "en": "[Official Results: 2026 MFJ All-Japan Rd.6 at Okayama] In a wet JSB1000 race shortened by 3 laps, Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI / Honda) claims his maiden JSB1000 victory ahead of Yuki Kunii (2nd) and championship leader Ryo Mizuno (3rd)! Taiga Hada (ST1000), Rei Matsuoka (ST600), and Rei Wakamatsu (J-GP3) win their classes!"
+        "ja": "【2026 MFJ全日本ロードレース 第6戦 岡山国際】JSB1000決勝、長島哲太（DUNLOP Racing Team with YAHAGI）が感動のJSB1000初優勝！ダンロップタイヤとともに掴んだ執念のトップチェッカー！",
+        "ca": "【Campionat del Japó MFJ Rd.6 Okayama】Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI) aconsegueix una emocionant primera victòria a JSB1000 amb pneumàtics Dunlop a Okayama!",
+        "en": "[MFJ All-Japan Rd.6 Okayama] Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI) storms to an emotional maiden JSB1000 victory aboard Dunlop rubber at Okayama!"
       },
       "editorialCommentary": {
-        "ja": "雨の岡山国際サーキット（全長3,703m）で劇的なドラマが生まれました！ダンロップタイヤ開発を牽引してきた長島哲太選手（DUNLOP Racing Team with YAHAGI）がウエット路面で驚異的なペースを刻み、JSB1000クラス初優勝を達成！2位に國井勇輝選手、3位に水野涼選手が入りました（中須賀克行選手は転倒リタイア）。",
-        "ca": "La pluja a Okayama va propiciar la primera victòria a JSB1000 de Tetsuta Nagashima amb Dunlop i Honda, mentre Ryo Mizuno assegurava el 3r lloc de cara a la final de Suzuka.",
-        "en": "Wet conditions at Okayama International Circuit saw Tetsuta Nagashima score a breakthrough maiden JSB1000 victory for Dunlop and Honda, while Ryo Mizuno took 3rd to set up the Suzuka finale."
+        "ja": "全日本公式X（@jrr_official）および「#全日本ロードレース」「#JSB1000」では、岡山特有のテクニカルな中低速コーナーでダンロップタイヤのグリップ力を最大限に引き出した長島選手の走りが絶賛されています。",
+        "ca": "El compte oficial @jrr_official destaca el triomf històric de Dunlop i la pilotatge magistral de Nagashima a les corbes tècniques d'Okayama.",
+        "en": "Official updates from @jrr_official celebrate Nagashima extracting every ounce of grip from Dunlop's development compounds."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Honda Racing Corporation",
-      "handle": "@hondaracingcorporation",
-      "url": "https://www.instagram.com/hondaracingcorporation/",
-      "postUrl": "https://www.instagram.com/p/Dfjv-esk5mq/",
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "岡山国際サーキット ＆ ロードレースハブ",
+      "handle": "#岡山国際サーキット / 全日本ロードレース",
+      "url": "https://x.com/hashtag/岡山国際サーキット",
+      "postUrl": "https://x.com/hashtag/岡山国際サーキット",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース選手権 第6戦 スーパーバイクレース in 岡山 公式結果】雨のため3周減算となったJSB1000決勝で、長島哲太（DUNLOP Racing Team with YAHAGI / Honda CBR1000RR-R）が悲願のJSB1000クラス初優勝を達成！2位に國井勇輝（SDG Team HARC-PRO.Honda）でホンダ1-2、3位にポイントリーダー水野涼（SDG DUCATI Team KAGAYAMA）！ST1000は羽田太河、ST600は松岡玲、J-GP3は若松怜が優勝！",
-        "ca": "【Resultats Oficials MFJ All-Japan Rd.6 a Okayama】Sota la pluja, Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI / Honda) aconsegueix la seva primera victòria a JSB1000 davant Yuki Kunii (2n) i Ryo Mizuno (3r)! Triomfs de Taiga Hada (ST1000), Rei Matsuoka (ST600) i Rei Wakamatsu (J-GP3)!",
-        "en": "[Official Results: 2026 MFJ All-Japan Rd.6 at Okayama] In a wet JSB1000 race shortened by 3 laps, Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI / Honda) claims his maiden JSB1000 victory ahead of Yuki Kunii (2nd) and championship leader Ryo Mizuno (3rd)! Taiga Hada (ST1000), Rei Matsuoka (ST600), and Rei Wakamatsu (J-GP3) win their classes!"
+        "ja": "岡山国際サーキット：秋晴れの美作に響くエキゾーストノート！全日本ロードレース第6戦、全クラス熱戦が繰り広げられました！ご来場ありがとうございました！",
+        "ca": "Circuit Internacional d'Okayama: Gran cap de setmana de velocitat sota el sol de tardor a Mimasaka!",
+        "en": "Okayama International Circuit: Crisp autumn skies welcomed magnificent racing across all All-Japan categories in Mimasaka!"
       },
       "editorialCommentary": {
-        "ja": "雨の岡山国際サーキット（全長3,703m）で劇的なドラマが生まれました！ダンロップタイヤ開発を牽引してきた長島哲太選手（DUNLOP Racing Team with YAHAGI）がウエット路面で驚異的なペースを刻み、JSB1000クラス初優勝を達成！2位に國井勇輝選手、3位に水野涼選手が入りました（中須賀克行選手は転倒リタイア）。",
-        "ca": "La pluja a Okayama va propiciar la primera victòria a JSB1000 de Tetsuta Nagashima amb Dunlop i Honda, mentre Ryo Mizuno assegurava el 3r lloc de cara a la final de Suzuka.",
-        "en": "Wet conditions at Okayama International Circuit saw Tetsuta Nagashima score a breakthrough maiden JSB1000 victory for Dunlop and Honda, while Ryo Mizuno took 3rd to set up the Suzuka finale."
+        "ja": "「#岡山国際サーキット」タグでは、ヘアピンやアトウッドカーブで撮影されたライダーたちのディープバンク写真が多数共有されています。",
+        "ca": "L'etiqueta #岡山国際サーキット recull imatges espectaculars de les inclinades a la forquilla d'Attwood.",
+        "en": "Community posts under #岡山国際サーキット showcase stunning trackside photography through the famous Attwood curve."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "motoバトルLIVE 公式チャンネル",
+      "handle": "motoバトルLIVE",
+      "url": "https://www.youtube.com/@motobattlelive",
+      "postUrl": "https://www.youtube.com/watch?v=yiiINIMA8bM",
+      "quotedPostText": {
+        "ja": "motoバトルLIVE：全日本ロードレース 第6戦 岡山大会 JSB1000決勝フルアーカイブ＆長島哲太の涙の優勝インタビューを公開中！",
+        "ca": "motoバトルLIVE: Cursa completa de JSB1000 a Okayama i l'emotiva entrevista de victòria de Tetsuta Nagashima!",
+        "en": "motoバトルLIVE: Full JSB1000 race replay from Okayama and Tetsuta Nagashima's tearful victory interview streaming now!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTube動画では、長島選手が表彰台でチームクルーと抱き合い涙を流す感動のシーンが完全収録されています。",
+        "ca": "La retransmissió oficial mostra l'abraçada apassionada de Nagashima amb el seu equip al parc tancat d'Okayama.",
+        "en": "Official broadcast coverage captures Nagashima's raw emotion and embrace with his Dunlop engineering crew in parc fermé."
       }
     }
   ],

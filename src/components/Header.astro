@@ -1,7 +1,7 @@
 ---
 import { UI_TEXT } from '../data/i18n';
 
-export type NavKey = 'home' | 'schedule' | 'kyushu' | 'cats' | 'about';
+export type NavKey = 'home' | 'articles' | 'schedule' | 'kyushu' | 'cats' | 'about';
 
 interface Props {
   activeNav?: NavKey;
@@ -11,6 +11,7 @@ const { activeNav } = Astro.props;
 const pathname = Astro.url.pathname;
 
 const currentNav: NavKey = activeNav || (
+  pathname.startsWith('/articles') ? 'articles' :
   pathname.startsWith('/schedule') ? 'schedule' :
   pathname.startsWith('/kyushu') ? 'kyushu' :
   pathname.startsWith('/cats') ? 'cats' :
@@ -40,6 +41,15 @@ const currentNav: NavKey = activeNav || (
         <span data-i18n="ja">{UI_TEXT.nav.home.ja}</span>
         <span data-i18n="ca">{UI_TEXT.nav.home.ca}</span>
         <span data-i18n="en">{UI_TEXT.nav.home.en}</span>
+      </a>
+      <a
+        href="/articles/"
+        class={`nav-link ${currentNav === 'articles' ? 'nav-highlight' : ''}`}
+        aria-current={currentNav === 'articles' ? 'page' : undefined}
+      >
+        <span data-i18n="ja">{UI_TEXT.nav.articles.ja}</span>
+        <span data-i18n="ca">{UI_TEXT.nav.articles.ca}</span>
+        <span data-i18n="en">{UI_TEXT.nav.articles.en}</span>
       </a>
       <a
         href="/schedule/"

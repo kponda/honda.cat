@@ -10,9 +10,15 @@ interface Props {
 const { citations = [], lang } = Astro.props;
 
 const sectionTitle: Record<Lang, string> = {
-  ja: '📱 公式SNSポスト ＆ 猫編集部のディテール解説',
-  ca: '📱 Publicacions Oficials de Xarxes Socials i Anàlisi en Detall',
-  en: '📱 Official Social Media Posts & Paddock Breakdown'
+  ja: '📱 公式SNSポスト（写真・動画）＆ 猫編集部ディテール解説',
+  ca: '📱 Publicacions Oficials (Fotos i Vídeo) · Anàlisi en Detall',
+  en: '📱 Official Social Media Posts (Photos & Video) · Paddock Breakdown'
+};
+
+const sectionSubtitle: Record<Lang, string> = {
+  ja: '※写真・画像の無断転載防止のため、各レース主催者・サーキット・チームの公式SNS投稿（写真・映像）を正式に引用・埋め込み表示しています。',
+  ca: '*Per respectar els drets d\'imatge i evitar l\'ús no autoritzat de fotos, incrustem directament les publicacions oficials amb fotos i vídeos dels organitzadors i circuits.',
+  en: '*To prevent unauthorized photo usage and respect copyright, we directly embed official social media posts featuring genuine race photos and videos from organizers and circuits.'
 };
 
 const commentaryLabel: Record<Lang, string> = {
@@ -21,22 +27,54 @@ const commentaryLabel: Record<Lang, string> = {
   en: '🐾 Paddock Notes on this Post'
 };
 
-const viewPostLabel: Record<Lang, string> = {
-  ja: '公式SNSで開く ↗',
-  ca: 'Obrir a la xarxa oficial ↗',
-  en: 'Open on Official SNS ↗'
+const quotedLabel: Record<Lang, string> = {
+  ja: '💬 引用・公式発表ハイライト',
+  ca: '💬 Text citat / Comunicat oficial',
+  en: '💬 Quoted Post / Official Dispatch'
+};
+
+const viewActionLabels: Record<SnsCiteItem['platform'], Record<Lang, string>> = {
+  X: {
+    ja: '𝕏 で元ポスト・写真を見る ↗',
+    ca: 'Veure publicació i fotos a 𝕏 ↗',
+    en: 'View Original Post & Photos on 𝕏 ↗'
+  },
+  YouTube: {
+    ja: 'YouTube公式でフル映像を見る ↗',
+    ca: 'Veure vídeo complet a YouTube ↗',
+    en: 'Watch Full Video on YouTube ↗'
+  },
+  OfficialWeb: {
+    ja: '公式サイトで公式リザルト・写真を見る ↗',
+    ca: 'Consultar resultats i fotos a la web oficial ↗',
+    en: 'Check Official Results & Gallery ↗'
+  },
+  Facebook: {
+    ja: 'Facebook公式で写真アルバムを見る ↗',
+    ca: 'Veure àlbum de fotos a Facebook ↗',
+    en: 'View Photo Album on Facebook ↗'
+  },
+  Instagram: {
+    ja: 'Instagram公式で写真を見る ↗',
+    ca: 'Veure fotos a Instagram ↗',
+    en: 'View Photos on Instagram ↗'
+  }
 };
 
 function getPlatformBadge(platform: SnsCiteItem['platform']) {
   switch (platform) {
     case 'X':
-      return { icon: '𝕏', label: 'X (Twitter)', color: '#1d9bf0', bg: 'rgba(29, 155, 240, 0.14)' };
-    case 'Instagram':
-      return { icon: '📸', label: 'Instagram', color: '#e1306c', bg: 'rgba(225, 48, 108, 0.14)' };
+      return { icon: '𝕏', label: 'X (Twitter)', color: '#1d9bf0', bg: 'rgba(29, 155, 240, 0.12)', border: 'rgba(29, 155, 240, 0.35)' };
     case 'YouTube':
-      return { icon: '▶️', label: 'YouTube', color: '#ff0000', bg: 'rgba(255, 0, 0, 0.14)' };
+      return { icon: '▶️', label: 'YouTube Video', color: '#ff4d4d', bg: 'rgba(255, 77, 77, 0.12)', border: 'rgba(255, 77, 77, 0.35)' };
+    case 'OfficialWeb':
+      return { icon: '🌐', label: 'Official Web', color: '#00c49f', bg: 'rgba(0, 196, 159, 0.12)', border: 'rgba(0, 196, 159, 0.35)' };
+    case 'Facebook':
+      return { icon: '📘', label: 'Facebook Post', color: '#1877f2', bg: 'rgba(24, 119, 242, 0.12)', border: 'rgba(24, 119, 242, 0.35)' };
+    case 'Instagram':
+      return { icon: '📸', label: 'Instagram Photo', color: '#e1306c', bg: 'rgba(225, 48, 108, 0.12)', border: 'rgba(225, 48, 108, 0.35)' };
     default:
-      return { icon: '🌐', label: 'Official SNS', color: '#ffb703', bg: 'rgba(255, 183, 3, 0.14)' };
+      return { icon: '🏁', label: 'Official Source', color: '#ffb703', bg: 'rgba(255, 183, 3, 0.12)', border: 'rgba(255, 183, 3, 0.35)' };
   }
 }
 
@@ -44,20 +82,7 @@ function getXStatusUrl(url?: string): string | null {
   if (!url) return null;
   const m = url.match(/^https?:\/\/(?:www\.)?(?:twitter\.com|x\.com)\/([^/]+)\/status\/(\d+)/i);
   if (!m) return null;
-  // twitter-tweet widget requires twitter.com or x.com status URL
   return `https://twitter.com/${m[1]}/status/${m[2]}`;
-}
-
-function getXProfileUrl(url?: string, handle?: string): string | null {
-  if (url) {
-    const m = url.match(/^https?:\/\/(?:www\.)?(?:twitter\.com|x\.com)\/([A-Za-z0-9_]+)\/?$/i);
-    if (m) return `https://twitter.com/${m[1]}`;
-  }
-  if (handle) {
-    const m2 = handle.match(/@([A-Za-z0-9_]+)/);
-    if (m2) return `https://twitter.com/${m2[1]}`;
-  }
-  return null;
 }
 
 function getInstagramEmbedUrl(url?: string): string | null {
@@ -66,18 +91,14 @@ function getInstagramEmbedUrl(url?: string): string | null {
   if (postMatch) {
     return `https://www.instagram.com/p/${postMatch[1]}/embed/captioned/`;
   }
-  const profMatch = url.match(/instagram\.com\/([A-Za-z0-9_.]+)\/?$/i);
-  if (profMatch && !['p', 'reel', 'explore', 'stories'].includes(profMatch[1].toLowerCase())) {
-    return `https://www.instagram.com/${profMatch[1]}/embed/`;
-  }
   return null;
 }
 
 function getYouTubeEmbedUrl(url?: string): string | null {
   if (!url) return null;
-  const watchMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([A-Za-z0-9_-]{11})/i);
+  const watchMatch = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/i);
   if (watchMatch) {
-    return `https://www.youtube.com/embed/${watchMatch[1]}`;
+    return `https://www.youtube-nocookie.com/embed/${watchMatch[1]}`;
   }
   return null;
 }
@@ -86,7 +107,10 @@ function getYouTubeEmbedUrl(url?: string): string | null {
 {citations && citations.length > 0 && (
   <section class="sns-citations-section">
     <div class="sns-section-header">
-      <h3 class="sns-section-title">{sectionTitle[lang]}</h3>
+      <div class="header-main">
+        <h3 class="sns-section-title">{sectionTitle[lang]}</h3>
+        <p class="sns-section-subtitle">{sectionSubtitle[lang]}</p>
+      </div>
     </div>
 
     <div class="sns-cards-grid">
@@ -96,13 +120,14 @@ function getYouTubeEmbedUrl(url?: string): string | null {
         const xStatusUrl = getXStatusUrl(item.postUrl) || getXStatusUrl(item.url);
         const igEmbedUrl = getInstagramEmbedUrl(item.postUrl) || getInstagramEmbedUrl(item.url);
         const ytEmbedUrl = getYouTubeEmbedUrl(item.postUrl) || getYouTubeEmbedUrl(item.url);
-        const xProfileUrl = !xStatusUrl && item.platform === 'X' ? getXProfileUrl(rawTargetUrl, item.handle) : null;
+        const hasRichMedia = !!(xStatusUrl || igEmbedUrl || ytEmbedUrl);
+        const actionLabel = (viewActionLabels[item.platform] && viewActionLabels[item.platform][lang]) || '元ポストを開く ↗';
 
         return (
           <div class="sns-cite-card">
             <div class="sns-card-top">
               <div class="sns-author-meta">
-                <span class="sns-avatar-icon" style={`background: ${badge.bg}; color: ${badge.color}; border-color: ${badge.color}44;`}>
+                <span class="sns-avatar-icon" style={`background: ${badge.bg}; color: ${badge.color}; border-color: ${badge.border};`}>
                   {badge.icon}
                 </span>
                 <div>
@@ -114,66 +139,72 @@ function getYouTubeEmbedUrl(url?: string): string | null {
               </div>
 
               <div class="sns-top-right">
-                <div class="sns-platform-tag" style={`background: ${badge.bg}; color: ${badge.color};`}>
+                <div class="sns-platform-tag" style={`background: ${badge.bg}; color: ${badge.color}; border: 1px solid ${badge.border};`}>
                   <span>{badge.icon}</span>
                   <span>{badge.label}</span>
                 </div>
-                <a href={rawTargetUrl} target="_blank" rel="noopener noreferrer" class="sns-action-link racing-font">
-                  {viewPostLabel[lang]}
-                </a>
               </div>
             </div>
 
-            {/* Embedded Rich Social Post Media (X Post Widget, Instagram Post Embed, or YouTube Player) */}
-            <div class="sns-embed-stage">
-              {xStatusUrl ? (
-                <div class="sns-x-tweet-embed">
-                  <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" data-align="center">
-                    <a href={xStatusUrl}></a>
-                  </blockquote>
-                </div>
-              ) : igEmbedUrl ? (
-                <div class="sns-ig-embed">
-                  <iframe
-                    src={igEmbedUrl}
-                    class="ig-embed-iframe"
-                    frameborder="0"
-                    scrolling="no"
-                    allowtransparency="true"
-                    loading="lazy"
-                    title={`${item.accountName} Instagram Post`}
-                  ></iframe>
-                </div>
-              ) : ytEmbedUrl ? (
-                <div class="sns-yt-embed">
-                  <iframe
-                    src={ytEmbedUrl}
-                    class="yt-embed-iframe"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    loading="lazy"
-                    title={`${item.accountName} YouTube Video`}
-                  ></iframe>
-                </div>
-              ) : xProfileUrl ? (
-                <div class="sns-x-timeline-embed">
-                  <a
-                    class="twitter-timeline"
-                    data-theme="dark"
-                    data-height="460"
-                    data-chrome="noheader nofooter"
-                    href={xProfileUrl}
-                  >
-                    Posts by {item.handle}
-                  </a>
-                </div>
-              ) : null}
-            </div>
+            {/* Direct Social Post / Video / Photo Embed */}
+            {hasRichMedia && (
+              <div class="sns-embed-stage">
+                {xStatusUrl ? (
+                  <div class="sns-x-tweet-embed">
+                    <blockquote class="twitter-tweet" data-theme="dark" data-lang={lang} data-dnt="true" data-align="center">
+                      <p lang={lang} dir="ltr">{item.quotedPostText?.[lang] || ''}</p>
+                      &mdash; {item.accountName} ({item.handle}){' '}
+                      <a href={xStatusUrl}>{item.publishedDate || 'Official Post'}</a>
+                    </blockquote>
+                  </div>
+                ) : igEmbedUrl ? (
+                  <div class="sns-ig-embed">
+                    <iframe
+                      src={igEmbedUrl}
+                      class="ig-embed-iframe"
+                      frameborder="0"
+                      scrolling="no"
+                      allowtransparency="true"
+                      loading="lazy"
+                      title={`${item.accountName} Instagram Photo Post`}
+                    ></iframe>
+                  </div>
+                ) : ytEmbedUrl ? (
+                  <div class="sns-yt-embed">
+                    <iframe
+                      src={ytEmbedUrl}
+                      class="yt-embed-iframe"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                      loading="lazy"
+                      title={`${item.accountName} YouTube Video`}
+                    ></iframe>
+                  </div>
+                ) : null}
+              </div>
+            )}
 
+            {/* Quoted highlight text box (shows below media or as main content when media is not a single embeddable post) */}
+            {item.quotedPostText?.[lang] && !xStatusUrl && (
+              <div class="sns-quoted-box">
+                <div class="quoted-label">{quotedLabel[lang]}</div>
+                <blockquote class="quoted-text">“{item.quotedPostText[lang]}”</blockquote>
+              </div>
+            )}
+
+            {/* Cat editorial commentary */}
             <div class="sns-editorial-box">
               <div class="editorial-label">{commentaryLabel[lang]}</div>
               <p class="editorial-text">{item.editorialCommentary[lang]}</p>
+            </div>
+
+            {/* Action button linking directly to the official channel or post */}
+            <div class="sns-card-footer">
+              <a href={rawTargetUrl} target="_blank" rel="noopener noreferrer" class="sns-hub-action-btn racing-font" style={`--btn-color: ${badge.color}; --btn-border: ${badge.border};`}>
+                <span class="btn-icon">{badge.icon}</span>
+                <span>{actionLabel}</span>
+              </a>
             </div>
           </div>
         );
@@ -182,48 +213,83 @@ function getYouTubeEmbedUrl(url?: string): string | null {
   </section>
 )}
 
+{/* Twitter widgets.js and dynamic embed processor */}
+<script is:inline>
+  (function() {
+    function loadTwitterWidgets() {
+      if (window.twttr && window.twttr.widgets) {
+        window.twttr.widgets.load();
+      } else if (!document.getElementById('twitter-wjs')) {
+        const script = document.createElement('script');
+        script.id = 'twitter-wjs';
+        script.src = 'https://platform.twitter.com/widgets.js';
+        script.async = true;
+        script.charset = 'utf-8';
+        document.head.appendChild(script);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadTwitterWidgets);
+    } else {
+      loadTwitterWidgets();
+    }
+    document.addEventListener('astro:page-load', loadTwitterWidgets);
+  })();
+</script>
+
 <style>
   .sns-citations-section {
-    margin-top: 2.5rem;
-    background: linear-gradient(165deg, rgba(21, 25, 34, 0.95), rgba(27, 32, 44, 0.95));
-    border: 1px solid rgba(29, 155, 240, 0.32);
+    margin-top: 2.8rem;
+    background: linear-gradient(165deg, rgba(21, 25, 34, 0.96), rgba(27, 32, 44, 0.96));
+    border: 1px solid rgba(29, 155, 240, 0.35);
     border-radius: 1rem;
     padding: 1.6rem;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
   }
 
   .sns-section-header {
-    margin-bottom: 1.25rem;
-    border-bottom: 1px solid var(--border-subtle);
-    padding-bottom: 0.75rem;
+    margin-bottom: 1.35rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.85rem;
   }
 
   .sns-section-title {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: #fff;
+    margin-bottom: 0.3rem;
+  }
+
+  .sns-section-subtitle {
+    font-size: 0.82rem;
+    color: var(--text-secondary, #8b949e);
+    line-height: 1.5;
+    margin: 0;
   }
 
   .sns-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 1.35rem;
-    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 1.4rem;
+    align-items: stretch;
   }
 
   .sns-cite-card {
-    background: rgba(13, 15, 20, 0.78);
-    border: 1px solid var(--border-subtle);
-    border-radius: 0.9rem;
-    padding: 1.2rem;
+    background: rgba(13, 15, 20, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.95rem;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    transition: border-color 0.2s ease;
+    gap: 0.95rem;
+    transition: all 0.2s ease;
   }
 
   .sns-cite-card:hover {
     border-color: rgba(29, 155, 240, 0.45);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   }
 
   .sns-card-top {
@@ -232,6 +298,8 @@ function getYouTubeEmbedUrl(url?: string): string | null {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding-bottom: 0.75rem;
   }
 
   .sns-author-meta {
@@ -248,28 +316,34 @@ function getYouTubeEmbedUrl(url?: string): string | null {
     align-items: center;
     justify-content: center;
     font-weight: 900;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     border: 1px solid transparent;
+    flex-shrink: 0;
   }
 
   .sns-account-name {
     font-weight: 800;
     font-size: 0.95rem;
     color: #fff;
+    line-height: 1.3;
   }
 
   .sns-handle {
     font-size: 0.8rem;
     color: #58a6ff;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .sns-handle:hover {
+    color: #79c0ff;
     text-decoration: underline;
-    text-underline-offset: 2px;
   }
 
   .sns-top-right {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    flex-wrap: wrap;
   }
 
   .sns-platform-tag {
@@ -280,23 +354,36 @@ function getYouTubeEmbedUrl(url?: string): string | null {
     border-radius: 999px;
     font-size: 0.74rem;
     font-weight: 700;
+    letter-spacing: 0.02em;
   }
 
+  /* Embedded rich media stage */
   .sns-embed-stage {
     width: 100%;
     display: flex;
     justify-content: center;
-    overflow: hidden;
     border-radius: 0.75rem;
+    margin: 0.2rem 0;
+    background: transparent;
   }
 
-  .sns-x-tweet-embed,
-  .sns-x-timeline-embed {
+  .sns-x-tweet-embed {
     width: 100%;
     max-width: 550px;
-    min-height: 220px;
     display: flex;
     justify-content: center;
+    background: transparent;
+  }
+
+  .sns-x-tweet-embed blockquote.twitter-tweet {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    margin: 0.5rem 0;
+    color: #e6edf3;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 
   .sns-ig-embed {
@@ -310,7 +397,7 @@ function getYouTubeEmbedUrl(url?: string): string | null {
 
   .ig-embed-iframe {
     width: 100%;
-    min-height: 580px;
+    min-height: 520px;
     display: block;
     border: 0;
   }
@@ -321,6 +408,7 @@ function getYouTubeEmbedUrl(url?: string): string | null {
     border-radius: 0.75rem;
     overflow: hidden;
     background: #000;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
   }
 
   .yt-embed-iframe {
@@ -329,11 +417,37 @@ function getYouTubeEmbedUrl(url?: string): string | null {
     border: 0;
   }
 
+  /* Quoted box */
+  .sns-quoted-box {
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 3px solid #58a6ff;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 0.75rem 1rem;
+  }
+
+  .quoted-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #79c0ff;
+    margin-bottom: 0.35rem;
+    letter-spacing: 0.02em;
+  }
+
+  .quoted-text {
+    font-size: 0.86rem;
+    color: #e6edf3;
+    line-height: 1.65;
+    margin: 0;
+    font-style: italic;
+  }
+
+  /* Cat editorial box */
   .sns-editorial-box {
     background: rgba(255, 183, 3, 0.07);
     border: 1px solid rgba(255, 183, 3, 0.22);
     border-radius: 0.65rem;
     padding: 0.9rem 1.05rem;
+    flex-grow: 1;
   }
 
   .editorial-label {
@@ -350,19 +464,37 @@ function getYouTubeEmbedUrl(url?: string): string | null {
     line-height: 1.7;
   }
 
-  .sns-action-link {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: #58a6ff;
-    background: rgba(29, 155, 240, 0.12);
-    border: 1px solid rgba(29, 155, 240, 0.3);
-    padding: 0.3rem 0.7rem;
-    border-radius: 999px;
-    transition: all 0.15s ease;
+  .sns-card-footer {
+    margin-top: auto;
+    padding-top: 0.4rem;
   }
 
-  .sns-action-link:hover {
-    background: rgba(29, 155, 240, 0.22);
+  .sns-hub-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.65rem 1rem;
+    border-radius: 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 700;
     color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--btn-border, rgba(255, 255, 255, 0.15));
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .sns-hub-action-btn:hover {
+    background: var(--btn-color, #1d9bf0);
+    border-color: var(--btn-color, #1d9bf0);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+  }
+
+  .btn-icon {
+    font-size: 1rem;
   }
 </style>

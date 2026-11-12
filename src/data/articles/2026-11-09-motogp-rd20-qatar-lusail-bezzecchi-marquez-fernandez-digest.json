@@ -7,7 +7,7 @@
   "circuit": "ルサイル・インターナショナル・サーキット（カタール・全長5,380m）",
   "region": "World (Lusail, Qatar)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd20-qatar-gp-lusail-marco-bezzecchi-win-marquez-raul-fernandez-digest.webp",
   "tags": [
     "MotoGP",
     "カタールGP",
@@ -22,36 +22,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #QatarGP Hub",
+      "handle": "@MotoGP / #QatarGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2120177303896334684",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第20戦 カタールGP（ルサイル・ナイトレース）公式結果】砂漠のカクテルライトの下、マルコ・ベッツェッキ（Aprilia Racing）が会心の走りで優勝（ムジェロ・マンダリカに続く今季3勝目）！2位に2026年王者マルク・マルケス（Ducati Lenovo Team）、3位にラウル・フェルナンデス（Trackhouse MotoGP Team / Aprilia）！",
-        "ca": "【Resultats Oficials GP de Qatar 2026 a Lusail】Sota els focus del desert, Marco Bezzecchi (Aprilia Racing) aconsegueix la victòria per davant del campió Marc Márquez (2n, Ducati Lenovo Team) i Raúl Fernández (3r, Trackhouse MotoGP Team)!",
-        "en": "[Official Results: 2026 MotoGP Qatar GP at Lusail] Under the Lusail floodlights, Marco Bezzecchi (Aprilia Racing) storms to victory ahead of 2026 World Champion Marc Márquez (2nd, Ducati Lenovo Team) and Raúl Fernández (3rd, Trackhouse MotoGP Team)!"
+        "ja": "【2026 MotoGP 第20戦 カタールGP（ルサイル）公式結果】砂漠のイルミネーションに照らされたナイトレースでマルコ・ベッツェッキ（Aprilia Racing）が優勝！2位マルク・マルケス、3位ラウル・フェルナンデス！",
+        "ca": "【GP de Qatar 2026 a Lusail】Sota els focus del desert, Marco Bezzecchi (Aprilia Racing) aconsegueix la victòria per davant de Marc Márquez (2n) i Raúl Fernández (3r)!",
+        "en": "[2026 MotoGP Qatar GP at Lusail] Under the desert floodlights, Marco Bezzecchi (Aprilia Racing) powers to a magnificent night-race victory ahead of Marc Márquez (2nd) and Raúl Fernández (3rd)!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とアプリリア公式（@aprilia）が伝えた11月8日（日）のカタールGPナイトレース！1km超のメインストレートと中高速コーナーが連続するルサイル（全長5,380m）で、マルコ・ベッツェッキ選手がマルク・マルケス選手（2位）との接近戦を制して優勝し、3位にラウル・フェルナンデス選手が入りました。",
-        "ca": "Les publicacions de @MotoGP i @aprilia destaquen el triomf nocturn de Marco Bezzecchi a Lusail davant Marc Márquez (2n) i Raúl Fernández (3r).",
-        "en": "Official posts from @MotoGP and @aprilia highlight Marco Bezzecchi's floodlit victory at Lusail ahead of Marc Márquez (2nd) and Raúl Fernández (3rd)."
+        "ja": "MotoGP公式（@MotoGP）および「#QatarGP」では、ルサイルの高速トリプル右コーナー（12〜14コーナー）でアプリリアRS-GPが見せた吸い付くような旋回性能が絶賛されています。",
+        "ca": "El compte oficial @MotoGP destaca el pas per corba de Bezzecchi al triple revolt de dretes de Lusail.",
+        "en": "Official social reporting from @MotoGP and #QatarGP praises Bezzecchi's supreme mid-corner velocity through Turns 12 to 14."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Aprilia Official",
-      "handle": "@aprilia",
-      "url": "https://www.instagram.com/aprilia/",
-      "postUrl": "https://www.instagram.com/p/DfjvuSHDtF-/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第20戦 カタールGP（ルサイル・ナイトレース）公式結果】砂漠のカクテルライトの下、マルコ・ベッツェッキ（Aprilia Racing）が会心の走りで優勝（ムジェロ・マンダリカに続く今季3勝目）！2位に2026年王者マルク・マルケス（Ducati Lenovo Team）、3位にラウル・フェルナンデス（Trackhouse MotoGP Team / Aprilia）！",
-        "ca": "【Resultats Oficials GP de Qatar 2026 a Lusail】Sota els focus del desert, Marco Bezzecchi (Aprilia Racing) aconsegueix la victòria per davant del campió Marc Márquez (2n, Ducati Lenovo Team) i Raúl Fernández (3r, Trackhouse MotoGP Team)!",
-        "en": "[Official Results: 2026 MotoGP Qatar GP at Lusail] Under the Lusail floodlights, Marco Bezzecchi (Aprilia Racing) storms to victory ahead of 2026 World Champion Marc Márquez (2nd, Ducati Lenovo Team) and Raúl Fernández (3rd, Trackhouse MotoGP Team)!"
+        "ja": "MotoGP Official：カタールGPナイトレース決勝ハイライト＆カクテルライトに反射する美しいマシンのスローモーション映像！",
+        "ca": "Canal Oficial MotoGP: Resum de la cursa nocturna de Lusail i imatges a càmera lenta sota la il·luminació del desert!",
+        "en": "MotoGP Official Channel: Floodlit Qatar GP race highlights and super-slow-motion artistry under the desert lights!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）とアプリリア公式（@aprilia）が伝えた11月8日（日）のカタールGPナイトレース！1km超のメインストレートと中高速コーナーが連続するルサイル（全長5,380m）で、マルコ・ベッツェッキ選手がマルク・マルケス選手（2位）との接近戦を制して優勝し、3位にラウル・フェルナンデス選手が入りました。",
-        "ca": "Les publicacions de @MotoGP i @aprilia destaquen el triomf nocturn de Marco Bezzecchi a Lusail davant Marc Márquez (2n) i Raúl Fernández (3r).",
-        "en": "Official posts from @MotoGP and @aprilia highlight Marco Bezzecchi's floodlit victory at Lusail ahead of Marc Márquez (2nd) and Raúl Fernández (3rd)."
+        "ja": "公式ハイライト動画では、時速350km超で1kmメインストレートを駆け抜けるベッツェッキ選手とマルケス選手のテール・トゥ・ノーズが臨場感満点に収められています。",
+        "ca": "El vídeo oficial permet viure el rebuf a més de 350 km/h a la llarga recta de meta de Lusail.",
+        "en": "Official video highlights capture the slipstream battle at over 350 km/h down Lusail's 1,068m front straight."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第20戦カタールGP（ルサイル）決勝正式順位（1位ベッツェッキ、2位マルク・マルケス、3位ラウル・フェルナンデス）。",
+        "ca": "Resultats oficials Lusail: 1r Marco Bezzecchi, 2n Marc Márquez, 3r Raúl Fernández.",
+        "en": "MotoGP.com Official Classification: 1st Marco Bezzecchi, 2nd Marc Márquez, 3rd Raúl Fernández."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイトの正式結果表により、アプリリアが1位・3位を獲得し、欧州最終2連戦（ポルティマオ・バレンシア）に向けて弾みをつけたことが記録されています。",
+        "ca": "La web oficial confirma el gran moment de forma d'Aprilia encarant el final de temporada a Europa.",
+        "en": "Official championship timing confirms Aprilia's double podium finish carrying supreme momentum into the European season-ending rounds."
       }
     }
   ],

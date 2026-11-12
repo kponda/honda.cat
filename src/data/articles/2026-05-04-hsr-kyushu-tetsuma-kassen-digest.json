@@ -7,7 +7,7 @@
   "circuit": "HSR九州（熊本県菊池郡大津町・全長2,350m）",
   "region": "Kyushu (Ozu, Kumamoto)",
   "featuredCat": "naomi",
-  "heroImage": "/images/cats/naomi.png",
+  "heroImage": "/images/articles/hsr-kyushu-2026-tetsuma-with-tsk-kassen-may-digest.webp",
   "tags": [
     "HSR九州",
     "鉄馬",
@@ -17,37 +17,57 @@
   ],
   "snsCitations": [
     {
-      "platform": "Instagram",
-      "accountName": "オートポリス・九州モータースポーツ公式",
-      "handle": "@autopolis_jp",
-      "url": "https://www.instagram.com/autopolis_jp/",
-      "postUrl": "https://www.instagram.com/p/DfJVNX_m-lj/",
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "鉄馬 with TSK 公式 ＆ ハッシュタグハブ",
+      "handle": "@tetsuma_with_b / #鉄馬",
+      "url": "https://x.com/tetsuma_with_b",
+      "postUrl": "https://x.com/hashtag/鉄馬",
       "quotedPostText": {
-        "ja": "【2026 鉄馬 with TSK 合戦の日 in HSR九州（5月2日〜3日）】鉄フレーム車両の祭典『鉄馬』2026年開幕戦（合戦の日）！アイアンACS（空冷シングル）・WCS（水冷シングル）・ACT17（空冷ツイン17インチ）・ACT18（18インチ）・WCT・ネオクラシック350の全クラスを開催！",
-        "ca": "【2026 Tetsuma with TSK: Dia de la Batalla a HSR Kyushu (2-3 de maig)】Primera cita de l'any del festival de motos amb xassís de ferro a Kumamoto amb totes les classes: Iron ACS, WCS, ACT17, ACT18, WCT i Neo Classic 350!",
-        "en": "[2026 Tetsuma with TSK 'Day of Battle' at HSR Kyushu (May 2–3)] Round 1 of the 2026 iron-frame motorcycle festival in Kumamoto featuring all classes: Iron ACS, WCS, ACT17, ACT18, WCT, and Neo Classic 350!"
+        "ja": "【2026 鉄馬 with TSK 合戦の日 in HSR九州】鉄フレームマシンの祭典！空冷・水冷シングルからツインまで、こだわり抜いた名車たちがHSR九州に集結。悪天候を乗り越えて熱い合戦が繰り広げられました！",
+        "ca": "【2026 Tetsuma with TSK a HSR Kyushu】Festival de xassís de ferro a Kumamoto! Malgrat el temps advers, les motos clàssiques i preparades van oferir batalles apassionants.",
+        "en": "[2026 Tetsuma with TSK at HSR Kyushu] Iron-frame motorcycle festival in Kumamoto! Dedicated single and twin cylinder racers battled through changing track conditions."
       },
       "editorialCommentary": {
-        "ja": "鉄馬公式X（@tetsuma_with_b）およびHSR九州公式Instagram（@hsr_kyushu）では、5月2日の予選から5月3日の決勝にかけて、悪天候によるタイムスケジュール変更や一部パレードラン中止を乗り越えてHSR九州（全長2,350m）を駆け抜けた空冷・水冷鉄フレームレーサーたちの雄姿が発信されています。なお2026年シリーズは9月19〜20日に『決戦の日』、11月21〜22日に『乱戦の日』が予定されています。",
-        "ca": "Les xarxes oficials de @tetsuma_with_b i @hsr_kyushu mostren com l'organització i els equips van adaptar els horaris del diumenge 3 de maig davant la meteorologia adversa per completar les curses d'aquest festival únic.",
-        "en": "Official posts from @tetsuma_with_b and @hsr_kyushu highlight how riders and officials adapted Sunday's May 3 schedule around challenging weather conditions to complete the opening round of the 2026 Tetsuma series."
+        "ja": "鉄馬公式（@tetsuma_with_b）およびX上のハッシュタグ「#鉄馬」では、空冷CBやZ、SR、最新のGB350まで、全国から集結した鉄フレームマシンのカスタム美とパドックの熱気があふれています。",
+        "ca": "El compte oficial @tetsuma_with_b i l'etiqueta #鉄馬 recullen la bellesa de les preparacions i l'esperit del pàdoc a Kumamoto.",
+        "en": "Official dispatches from @tetsuma_with_b and #鉄馬 posts highlight the mechanical artistry of steel-frame racers and warm paddock camaraderie."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "HSR九州 鉄馬公式チャンネル",
+      "handle": "HSR九州",
+      "url": "https://www.youtube.com/watch?v=XaR8vN4Gvvc",
+      "postUrl": "https://www.youtube.com/watch?v=XaR8vN4Gvvc",
+      "quotedPostText": {
+        "ja": "HSR九州公式：鉄馬 with TSK 決戦の日 決勝レース公式映像！空冷・水冷ビッグバイクが阿蘇の麓で魅せる迫力の重低音バトル！",
+        "ca": "Canal Oficial HSR Kyushu: Retransmissió oficial de les curses Tetsuma with TSK amb motos de gran cilindrada!",
+        "en": "HSR Kyushu Official: Action-packed official stream of the Tetsuma with TSK big-bike festival at Kumamoto!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
       }
     },
     {
       "platform": "X",
-      "accountName": "Honda Racing (HRC)",
-      "handle": "@HRC_MotoGP",
-      "url": "https://x.com/HRC_MotoGP",
-      "postUrl": "https://x.com/HRC_MotoGP/status/2119475554617606397",
+      "citationType": "official_channel",
+      "accountName": "HSR九州 公式",
+      "handle": "@hsr_kyushu / #HSR九州",
+      "url": "https://x.com/hsr_kyushu",
+      "postUrl": "https://x.com/hashtag/HSR九州",
       "quotedPostText": {
-        "ja": "【2026 鉄馬 with TSK 合戦の日 in HSR九州（5月2日〜3日）】鉄フレーム車両の祭典『鉄馬』2026年開幕戦（合戦の日）！アイアンACS（空冷シングル）・WCS（水冷シングル）・ACT17（空冷ツイン17インチ）・ACT18（18インチ）・WCT・ネオクラシック350の全クラスを開催！",
-        "ca": "【2026 Tetsuma with TSK: Dia de la Batalla a HSR Kyushu (2-3 de maig)】Primera cita de l'any del festival de motos amb xassís de ferro a Kumamoto amb totes les classes: Iron ACS, WCS, ACT17, ACT18, WCT i Neo Classic 350!",
-        "en": "[2026 Tetsuma with TSK 'Day of Battle' at HSR Kyushu (May 2–3)] Round 1 of the 2026 iron-frame motorcycle festival in Kumamoto featuring all classes: Iron ACS, WCS, ACT17, ACT18, WCT, and Neo Classic 350!"
+        "ja": "HSR九州公式：本日の『鉄馬 with TSK 合戦の日』は雨天のためタイムスケジュールを変更してレース進行中。ご来場の皆様、安全運転で熱い走りをお楽しみください！",
+        "ca": "HSR Kyushu Oficial: horaris adaptats per pluja durant el Tetsuma with TSK d'avui. Gràcies a tots els participants pel seu entusiasme!",
+        "en": "HSR Kyushu Official: Adjusted track schedule underway for Tetsuma with TSK amidst rainy conditions. Thank you to all enthusiastic entrants!"
       },
       "editorialCommentary": {
-        "ja": "鉄馬公式X（@tetsuma_with_b）およびHSR九州公式Instagram（@hsr_kyushu）では、5月2日の予選から5月3日の決勝にかけて、悪天候によるタイムスケジュール変更や一部パレードラン中止を乗り越えてHSR九州（全長2,350m）を駆け抜けた空冷・水冷鉄フレームレーサーたちの雄姿が発信されています。なお2026年シリーズは9月19〜20日に『決戦の日』、11月21〜22日に『乱戦の日』が予定されています。",
-        "ca": "Les xarxes oficials de @tetsuma_with_b i @hsr_kyushu mostren com l'organització i els equips van adaptar els horaris del diumenge 3 de maig davant la meteorologia adversa per completar les curses d'aquest festival únic.",
-        "en": "Official posts from @tetsuma_with_b and @hsr_kyushu highlight how riders and officials adapted Sunday's May 3 schedule around challenging weather conditions to complete the opening round of the 2026 Tetsuma series."
+        "ja": "HSR九州公式（@hsr_kyushu）の迅速なコース状況・スケジュール案内により、悪天候でも安全に各クラスの決勝が成立。サーキット側の手厚い運営がライダーから高く評価されています。",
+        "ca": "La gestió àgil de pista per part d'@hsr_kyushu va permetre disputar les finals amb total seguretat malgrat la pluja.",
+        "en": "Swift track coordination by @hsr_kyushu ensured all class finals ran safely despite rain, earning praise from entrants."
       }
     }
   ],

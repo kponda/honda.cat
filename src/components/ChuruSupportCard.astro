@@ -1,0 +1,212 @@
+---
+import { UI_TEXT } from '../data/i18n';
+
+interface Props {
+  variant?: 'card' | 'banner';
+}
+
+const { variant = 'card' } = Astro.props;
+const supportUrl = 'https://buymeacoffee.com/honda.cat';
+---
+
+<div class={`churu-support-wrap churu-variant-${variant}`}>
+  <div class="churu-card">
+    <div class="churu-badge-bar">
+      <span class="racing-font churu-badge">
+        <span data-i18n="ja">{UI_TEXT.churuSupport.badge.ja}</span>
+        <span data-i18n="ca">{UI_TEXT.churuSupport.badge.ca}</span>
+        <span data-i18n="en">{UI_TEXT.churuSupport.badge.en}</span>
+      </span>
+      <span class="churu-cat-avatars">
+        <img src="/images/cats/marc.png" alt="Marc" class="mini-avatar" title="Marc" />
+        <img src="/images/cats/suzuka.png" alt="Suzuka" class="mini-avatar" title="Suzuka" />
+        <img src="/images/cats/naomi.png" alt="Naomi" class="mini-avatar" title="Naomi" />
+      </span>
+    </div>
+
+    <div class="churu-content">
+      <div class="churu-text">
+        <h3 class="churu-title">
+          <span data-i18n="ja">{UI_TEXT.churuSupport.title.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.churuSupport.title.ca}</span>
+          <span data-i18n="en">{UI_TEXT.churuSupport.title.en}</span>
+        </h3>
+        <p class="churu-subtitle">
+          <span data-i18n="ja">{UI_TEXT.churuSupport.subtitle.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.churuSupport.subtitle.ca}</span>
+          <span data-i18n="en">{UI_TEXT.churuSupport.subtitle.en}</span>
+        </p>
+      </div>
+
+      <div class="churu-action">
+        <a
+          href={supportUrl}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          class="churu-btn racing-font"
+        >
+          <span class="btn-icon">🍗</span>
+          <span data-i18n="ja">{UI_TEXT.churuSupport.buttonText.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.churuSupport.buttonText.ca}</span>
+          <span data-i18n="en">{UI_TEXT.churuSupport.buttonText.en}</span>
+        </a>
+        <p class="churu-note">
+          <span data-i18n="ja">{UI_TEXT.churuSupport.note.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.churuSupport.note.ca}</span>
+          <span data-i18n="en">{UI_TEXT.churuSupport.note.en}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .churu-support-wrap {
+    margin: 2.5rem 0 1.5rem;
+  }
+
+  .churu-card {
+    background: linear-gradient(135deg, rgba(255, 183, 3, 0.08) 0%, rgba(230, 57, 70, 0.06) 50%, rgba(21, 25, 34, 0.95) 100%);
+    border: 1px solid rgba(255, 183, 3, 0.35);
+    border-radius: 14px;
+    padding: 1.5rem 1.75rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .churu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-gold), var(--accent-red), var(--accent-naomi));
+  }
+
+  .churu-badge-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.85rem;
+  }
+
+  .churu-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(255, 183, 3, 0.18);
+    border: 1px solid rgba(255, 183, 3, 0.4);
+    color: var(--accent-gold);
+  }
+
+  .churu-cat-avatars {
+    display: flex;
+    align-items: center;
+  }
+
+  .mini-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0d0f14;
+    margin-left: -8px;
+    background: #1b202c;
+    transition: transform 0.2s ease;
+  }
+
+  .mini-avatar:first-child {
+    margin-left: 0;
+  }
+
+  .mini-avatar:hover {
+    transform: translateY(-2px) scale(1.1);
+    z-index: 2;
+  }
+
+  .churu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .churu-content {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  }
+
+  .churu-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .churu-subtitle {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  .churu-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 768px) {
+    .churu-action {
+      align-items: flex-end;
+    }
+  }
+
+  .churu-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #ffb703 0%, #fb8500 100%);
+    color: #0d0f14;
+    font-weight: 700;
+    font-size: 0.92rem;
+    padding: 0.65rem 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(255, 183, 3, 0.35);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    white-space: nowrap;
+  }
+
+  .churu-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 183, 3, 0.5);
+    background: linear-gradient(135deg, #ffc324 0%, #ff9514 100%);
+    color: #000;
+  }
+
+  .btn-icon {
+    font-size: 1.05rem;
+  }
+
+  .churu-note {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  /* Variant banner (wider margin for cat paddock section) */
+  .churu-variant-banner {
+    margin: 3.5rem auto 1rem;
+    max-width: 860px;
+  }
+</style>

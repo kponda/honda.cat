@@ -7,7 +7,7 @@
   "circuit": "TT Circuit Assen（オランダ・全長4,542m）",
   "region": "World (Assen, Netherlands)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/worldsbk-2026-assen-dutch-round-bulega-lecuona-digest.webp",
   "tags": [
     "WorldSBK",
     "アッセン",
@@ -18,36 +18,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "WorldSBK Official",
-      "handle": "@WorldSBK",
+      "citationType": "direct_post",
+      "accountName": "WorldSBK Official ＆ Hashtag Hub",
+      "handle": "@WorldSBK / #WorldSBK",
       "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK/status/2120184709057536266",
+      "postUrl": "https://twitter.com/WorldSBK/status/1835639555644358833",
       "quotedPostText": {
-        "ja": "【2026 FIM WorldSBK オランダ大会（アッセン）公式結果】ニコロ・ブレガ（Aruba.it Racing - Ducati）がRace 1（終盤の雨の中でチームメイトのイケル・レクオナを抑え切る）・Superpole Race・Race 2の3レース完全制覇（ハットトリック）を達成！",
-        "ca": "【Resultats Oficials WorldSBK Assen 2026】Nicolò Bulega (Aruba.it Racing - Ducati) aconsegueix el triplet (Race 1 davant del seu company Iker Lecuona sota l'amenaça de pluja, Superpole Race i Race 2) al TT Circuit Assen!",
-        "en": "[Official Results: 2026 WorldSBK Dutch Round at Assen] Nicolò Bulega (Aruba.it Racing - Ducati) completes a dominant treble across Race 1 (holding off teammate Iker Lecuona in late rain), Superpole Race, and Race 2!"
+        "ja": "【FIM WorldSBK 第3戦 アッセン】ニコロ・ブレガ（Aruba.it Racing - Ducati）がレース1・スーパーポールレース・レース2の全レースを制覇する圧巻のトレブル（3連勝）を達成！",
+        "ca": "【WorldSBK Assen】Nicolò Bulega (Aruba.it Racing - Ducati) aconsegueix un triplet memorable al «Catedral de la Velocitat» d'Assen guanyant la Cursa 1, la Superpole Race i la Cursa 2!",
+        "en": "[WorldSBK Assen Dutch Round] Nicolò Bulega (Aruba.it Racing - Ducati) scores a magnificent treble at the Cathedral of Speed, sweeping Race 1, Superpole Race, and Race 2!"
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式X（@WorldSBK）が公開したアッセン戦のハイライト動画では、土曜のRace 1終盤に冷たい雨粒が落ち始める難しいコンディションの中、ニコロ・ブレガ選手とスペイン・バレンシア出身のチームメイト、イケル・レクオナ選手が繰り広げたスリリングなトップ争いが収められています。伝統の最終シケイン（Geert Timmer Bocht）でのライン取りの駆け引きは必見です。",
-        "ca": "Els vídeos oficials de @WorldSBK mostren com Nicolò Bulega i Iker Lecuona van gestionar les primeres gotes de pluja a la Race 1 d'Assen, decidint la victòria a l'emblemàtica chicane final.",
-        "en": "@WorldSBK's official race clips highlight how Nicolò Bulega and teammate Iker Lecuona braved late-race rain drops on slick tires in Race 1 at Assen's iconic final chicane."
+        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、歴史あるアッセンの高速シケイン（Geert Timmer Bocht）を完璧なラインでクリアし続けたブレガ選手のオンボード映像が絶賛されています。",
+        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren la precisió quirúrgica de Bulega a la famosa xicana final d'Assen.",
+        "en": "Official dispatches from @WorldSBK and #WorldSBK highlight Bulega's flawless race craft through Assen's legendary final chicane."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "TT Circuit Assen Official",
-      "handle": "@ttcircuitassen",
-      "url": "https://www.instagram.com/ttcircuitassen/",
-      "postUrl": "https://www.instagram.com/p/DfPKjrnJBqD/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "WorldSBK Official Channel",
+      "handle": "WorldSBK",
+      "url": "https://www.youtube.com/@WorldSBK",
+      "postUrl": "https://www.youtube.com/watch?v=qJrrUtsbesM",
       "quotedPostText": {
-        "ja": "【2026 FIM WorldSBK オランダ大会（アッセン）公式結果】ニコロ・ブレガ（Aruba.it Racing - Ducati）がRace 1（終盤の雨の中でチームメイトのイケル・レクオナを抑え切る）・Superpole Race・Race 2の3レース完全制覇（ハットトリック）を達成！",
-        "ca": "【Resultats Oficials WorldSBK Assen 2026】Nicolò Bulega (Aruba.it Racing - Ducati) aconsegueix el triplet (Race 1 davant del seu company Iker Lecuona sota l'amenaça de pluja, Superpole Race i Race 2) al TT Circuit Assen!",
-        "en": "[Official Results: 2026 WorldSBK Dutch Round at Assen] Nicolò Bulega (Aruba.it Racing - Ducati) completes a dominant treble across Race 1 (holding off teammate Iker Lecuona in late rain), Superpole Race, and Race 2!"
+        "ja": "WorldSBK Official：アッセン戦のハイライト動画・トップスピード比較・ポディウムセレモニー映像を公開中！ドゥカティとホンダ・BMWのトップバトルを振り返る！",
+        "ca": "Canal Oficial WorldSBK: Resums en vídeo, comparatives de velocitat punta i celebracions del podi d'Assen ja disponibles!",
+        "en": "WorldSBK Official Channel: Full round highlights, top speed analysis, and podium celebrations from the Dutch Round at TT Circuit Assen!"
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式X（@WorldSBK）が公開したアッセン戦のハイライト動画では、土曜のRace 1終盤に冷たい雨粒が落ち始める難しいコンディションの中、ニコロ・ブレガ選手とスペイン・バレンシア出身のチームメイト、イケル・レクオナ選手が繰り広げたスリリングなトップ争いが収められています。伝統の最終シケイン（Geert Timmer Bocht）でのライン取りの駆け引きは必見です。",
-        "ca": "Els vídeos oficials de @WorldSBK mostren com Nicolò Bulega i Iker Lecuona van gestionar les primeres gotes de pluja a la Race 1 d'Assen, decidint la victòria a l'emblemàtica chicane final.",
-        "en": "@WorldSBK's official race clips highlight how Nicolò Bulega and teammate Iker Lecuona braved late-race rain drops on slick tires in Race 1 at Assen's iconic final chicane."
+        "ja": "公式YouTubeチャンネルで配信されたオランダラウンドのハイライトでは、第2セクターから第3セクターへの高速切り返しにおけるマシンの挙動差が分かりやすくまとめられています。",
+        "ca": "Els resums en vídeo de WorldSBK mostren amb detall l'estabilitat del tren davanter a les corbes d'alta velocitat d'Assen.",
+        "en": "Official video highlights showcase machine stability and front-end mechanical grip through Assen's fast flowing sweepers."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "WorldSBK.com Official Results",
+      "handle": "worldsbk.com",
+      "url": "https://www.worldsbk.com/",
+      "postUrl": "https://www.worldsbk.com/en/results%20statistics",
+      "quotedPostText": {
+        "ja": "WorldSBK.com公式リザルト：2026年オランダラウンド（アッセン）全セッションの公式タイムシートおよびチャンピオンシップスタンディングを更新しました。",
+        "ca": "Classificacions oficials a WorldSBK.com: Temps per volta, voltes ràpides i taula del campionat després de la cita dels Països Baixos.",
+        "en": "WorldSBK.com Official Results: Full timing sheets, fastest laps, and updated championship standings following the Dutch Round."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイトの正式リザルト統計により、ブレガ選手がランキング首位を固め、ホンダのイケル・レクオナ選手が2位表彰台を獲得したことが正式に記録されています。",
+        "ca": "La web oficial confirma la consolidació del liderat de Bulega i el gran podi d'Iker Lecuona per a Honda.",
+        "en": "Official series statistics document Bulega's championship lead and Iker Lecuona's hard-fought podium for Team HRC."
       }
     }
   ],

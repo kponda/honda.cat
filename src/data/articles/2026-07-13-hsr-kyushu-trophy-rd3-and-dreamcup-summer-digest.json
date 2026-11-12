@@ -7,7 +7,7 @@
   "circuit": "HSR九州（熊本県菊池郡大津町・全長2,350m）",
   "region": "Kyushu (Ozu, Kumamoto)",
   "featuredCat": "naomi",
-  "heroImage": "/images/cats/naomi.png",
+  "heroImage": "/images/articles/hsr-kyushu-2026-july-trophy-road-race-rd3-and-dream-cup-summer-digest.webp",
   "tags": [
     "HSR九州",
     "HSR九州Trophy",
@@ -19,37 +19,57 @@
   ],
   "snsCitations": [
     {
-      "platform": "Instagram",
-      "accountName": "Honda Racing Corporation",
-      "handle": "@hondaracingcorporation",
-      "url": "https://www.instagram.com/hondaracingcorporation/",
-      "postUrl": "https://www.instagram.com/p/Dfgub20CRat/",
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "HSR九州 公式 ＆ ハッシュタグハブ",
+      "handle": "@hsr_kyushu / #HSR九州",
+      "url": "https://x.com/hsr_kyushu",
+      "postUrl": "https://x.com/hashtag/HSR九州",
       "quotedPostText": {
-        "ja": "【2026年7月12日(日) 開催：2026 HSR九州 Trophy ロードレース選手権 第3戦 ＆ ドリームカップフェスティバル】熊本県大津町のHSR九州（全長2,350m）で真夏の第3戦が開催！ST1000・ST600・JP250の選手権クラスから、入門者・サンデーライダーが集うドリームカップまで、猛暑の阿蘇麓で熱いバトルが繰り広げられました！",
-        "ca": "【12 de juliol de 2026: HSR Kyushu Trophy Road Race Rd.3 i Dream Cup Festival】El circuit HSR Kyushu (Kumamoto · 2.350m) celebra la 3a cita d'estiu amb les categories ST1000, ST600, JP250 i Dream Cup!",
-        "en": "[July 12, 2026: HSR Kyushu Trophy Road Race Rd.3 & Dream Cup Festival] Summer racing heats up at HSR Kyushu (Ozu, Kumamoto · 2,350m) across ST1000, ST600, JP250, and the grassroots Dream Cup classes!"
+        "ja": "【2026 HSR九州 Trophy 第3戦 ＆ ドリームカップフェスティバル】真夏の熊本・HSR九州！ST1000・ST600・JP250の選手権スプリントから、初心者歓迎のドリームカップまで炎天下の阿蘇麓で激走！",
+        "ca": "【HSR Kyushu Trophy Rd.3 i Dream Cup Festival】Resistència i velocitat d'estiu a Kumamoto sota altes temperatures!",
+        "en": "[2026 HSR Kyushu Trophy Rd.3 & Dream Cup Festival] Midsummer sprint showdowns at Kumamoto with ST1000, ST600, JP250, and grassroots Dream Cup races!"
       },
       "editorialCommentary": {
-        "ja": "HSR九州の7月恒例イベントである『HSR Trophy ロードレース選手権 第3戦』と『ドリームカップフェスティバル』。路面温度が50℃を超える夏場のHSR九州では、バックストレートエンドのブレーキング安定性とリアタイヤの熱ダレ対策が勝敗を分けました。",
-        "ca": "La cita de juliol a HSR Kyushu combina les categories oficials MFJ (ST1000, ST600, JP250) amb la festa amateur de la Dream Cup sota la calor d'estiu a Kumamoto.",
-        "en": "HSR Kyushu's mid-July round pairs regional championship classes (ST1000, ST600, JP250) with the accessible Dream Cup Festival under high track temperatures in Kumamoto."
+        "ja": "HSR九州公式（@hsr_kyushu）およびハッシュタグ「#HSR九州」では、真夏の猛暑の中でタイヤマネジメントに挑んだライダーたちの熱走とピット風景が共有されています。",
+        "ca": "Les publicacions oficials d'@hsr_kyushu mostren la gestió de pneumàtics dels pilots locals sota la intensa calor estival.",
+        "en": "Official updates from @hsr_kyushu and community posts capture the tyre management battles and spirited paddock at Kumamoto."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "HSR九州 ドリームカップ公式",
+      "handle": "HSR九州",
+      "url": "https://www.youtube.com/watch?v=ETev6UnAghQ",
+      "postUrl": "https://www.youtube.com/watch?v=ETev6UnAghQ",
+      "quotedPostText": {
+        "ja": "HSR九州公式：ドリームカップ ミニバイク真夏の4時間耐久レース 決勝ダイジェスト！ピット交代と燃費マネジメントの熱いドラマ！",
+        "ca": "Canal Oficial HSR Kyushu: Resum de les 4 hores de resistència de minimotos Dream Cup sota la calor de l'estiu!",
+        "en": "HSR Kyushu Official: Mid-summer Dream Cup 4-hour minibike endurance race recap and pit-stop strategy battle!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
       }
     },
     {
       "platform": "X",
-      "accountName": "Honda MotoGP / HRC",
-      "handle": "@HRC_MotoGP",
-      "url": "https://x.com/HRC_MotoGP",
-      "postUrl": "https://x.com/HRC_MotoGP/status/2119475554617606397",
+      "citationType": "hashtag_hub",
+      "accountName": "HSR九州 ドリームカップ ハッシュタグハブ",
+      "handle": "#ドリームカップ / HSR九州",
+      "url": "https://x.com/hashtag/ドリームカップ",
+      "postUrl": "https://x.com/hashtag/ドリームカップ",
       "quotedPostText": {
-        "ja": "【2026年7月12日(日) 開催：2026 HSR九州 Trophy ロードレース選手権 第3戦 ＆ ドリームカップフェスティバル】熊本県大津町のHSR九州（全長2,350m）で真夏の第3戦が開催！ST1000・ST600・JP250の選手権クラスから、入門者・サンデーライダーが集うドリームカップまで、猛暑の阿蘇麓で熱いバトルが繰り広げられました！",
-        "ca": "【12 de juliol de 2026: HSR Kyushu Trophy Road Race Rd.3 i Dream Cup Festival】El circuit HSR Kyushu (Kumamoto · 2.350m) celebra la 3a cita d'estiu amb les categories ST1000, ST600, JP250 i Dream Cup!",
-        "en": "[July 12, 2026: HSR Kyushu Trophy Road Race Rd.3 & Dream Cup Festival] Summer racing heats up at HSR Kyushu (Ozu, Kumamoto · 2,350m) across ST1000, ST600, JP250, and the grassroots Dream Cup classes!"
+        "ja": "【HSR九州 ドリームカップ】エントリーしやすいミニバイク＆市販スポーツ車によるフレンドリーなレース！初心者からステップアップを目指すライダーまでみんなで楽しむ真夏のサンデーフェスティバル！",
+        "ca": "【Dream Cup HSR Kyushu】Festival amateur per a minimotos i esportives de petita cilindrada pensat per aprendre i competir amb seguretat.",
+        "en": "[HSR Kyushu Dream Cup] Accessible entry-level racing for mini-bikes and lightweights, welcoming first-timers to track competition."
       },
       "editorialCommentary": {
-        "ja": "HSR九州の7月恒例イベントである『HSR Trophy ロードレース選手権 第3戦』と『ドリームカップフェスティバル』。路面温度が50℃を超える夏場のHSR九州では、バックストレートエンドのブレーキング安定性とリアタイヤの熱ダレ対策が勝敗を分けました。",
-        "ca": "La cita de juliol a HSR Kyushu combina les categories oficials MFJ (ST1000, ST600, JP250) amb la festa amateur de la Dream Cup sota la calor d'estiu a Kumamoto.",
-        "en": "HSR Kyushu's mid-July round pairs regional championship classes (ST1000, ST600, JP250) with the accessible Dream Cup Festival under high track temperatures in Kumamoto."
+        "ja": "「#ドリームカップ」タグでは、初めてレースに参加したライダーたちの興奮やパドックのバーベキューなど、九州ならではの温かいコミュニティの様子が発信されています。",
+        "ca": "Els missatges a #ドリームカップ reflecteixen el caliu del pàdoc i l'emoció dels debutants en curses a Kumamoto.",
+        "en": "Community posts under #ドリームカップ showcase the family atmosphere, paddock camaraderie, and joy of track debuts at HSR Kyushu."
       }
     }
   ],

@@ -3,6 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import CatDialogueBox from '../../components/CatDialogueBox.astro';
 import SnsEmbedSection from '../../components/SnsEmbedSection.astro';
+import MaintenanceDiagram from '../../components/MaintenanceDiagram.astro';
+import ChuruSupportCard from '../../components/ChuruSupportCard.astro';
 import Footer from '../../components/Footer.astro';
 import { getAllArticles, type ArticleData } from '../../data/articles';
 import { CAT_TEAM, UI_TEXT, type Lang } from '../../data/i18n';
@@ -37,13 +39,25 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
 
   <main class="article-main">
     <div class="container article-container">
-      <div class="breadcrumb">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="/">
-          <span data-i18n="ja">← トップページ・記事一覧へ戻る</span>
-          <span data-i18n="ca">← Tornar a l'inici i totes les cròniques</span>
-          <span data-i18n="en">← Back to Paddock Home & Articles</span>
+          <span data-i18n="ja">ホーム</span>
+          <span data-i18n="ca">Inici</span>
+          <span data-i18n="en">Home</span>
         </a>
-      </div>
+        <span class="bc-sep">/</span>
+        <a href="/articles/">
+          <span data-i18n="ja">記事一覧</span>
+          <span data-i18n="ca">Cròniques</span>
+          <span data-i18n="en">Articles</span>
+        </a>
+        <span class="bc-sep">/</span>
+        <span class="bc-current" aria-current="page">
+          <span data-i18n="ja">{article.locales.ja.title}</span>
+          <span data-i18n="ca">{article.locales.ca.title}</span>
+          <span data-i18n="en">{article.locales.en.title}</span>
+        </span>
+      </nav>
 
       {langs.map((lang) => {
         const content = article.locales[lang];
@@ -85,11 +99,16 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
             </div>
 
             <div class="detail-sections">
-              {content.sections.map((sec) => (
-                <section class="content-section">
-                  <h2>{sec.heading}</h2>
-                  <p>{sec.body}</p>
-                </section>
+              {content.sections.map((sec, idx) => (
+                <>
+                  <section class="content-section">
+                    <h2>{sec.heading}</h2>
+                    <p>{sec.body}</p>
+                  </section>
+                  {article.category === 'maintenance' && idx === 0 && (
+                    <MaintenanceDiagram slug={article.slug} lang={lang} contentDiagram={content.diagram} />
+                  )}
+                </>
               ))}
             </div>
 
@@ -124,6 +143,8 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
             <SnsEmbedSection citations={article.snsCitations} lang={lang} />
 
             <CatDialogueBox dialogues={content.catDialogues} lang={lang} />
+
+            <ChuruSupportCard variant="card" />
 
             {article.factCheck?.sources && article.factCheck.sources.length > 0 && (
               <aside class="related-links-box">
@@ -161,9 +182,35 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
 
   .breadcrumb {
     margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    color: var(--text-muted);
+  }
+
+  .breadcrumb a {
     color: var(--accent-gold);
+    transition: color 0.15s ease;
+  }
+
+  .breadcrumb a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .bc-sep {
+    color: var(--text-muted);
+    opacity: 0.6;
+  }
+
+  .bc-current {
+    color: var(--text-secondary);
+    max-width: 450px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .detail-header {
@@ -219,7 +266,7 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
     height: 100%;
     max-height: 410px;
     object-fit: cover;
-    object-position: center 25%;
+    object-position: center;
     display: block;
   }
 

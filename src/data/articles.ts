@@ -19,7 +19,8 @@ export interface ResultRow {
 }
 
 export interface SnsCiteItem {
-  platform: 'X' | 'Instagram' | 'YouTube' | 'OfficialWeb';
+  platform: 'X' | 'YouTube' | 'OfficialWeb' | 'Facebook' | 'Instagram';
+  citationType?: 'direct_post' | 'hashtag_hub' | 'official_channel' | 'official_web';
   accountName: string;
   handle: string;
   url: string;
@@ -41,6 +42,22 @@ export interface FactCheckMeta {
   sources: FactSource[];
 }
 
+export interface DiagramPanel {
+  statusType: 'good' | 'bad' | 'detail';
+  statusLabel: string;
+  title: string;
+  caption: string;
+  keyMetric?: string;
+  badge?: string;
+}
+
+export interface LocalizedDiagram {
+  tag?: string;
+  title: string;
+  caption: string;
+  panels: DiagramPanel[];
+}
+
 export interface LocalizedArticleContent {
   title: string;
   subtitle: string;
@@ -50,6 +67,7 @@ export interface LocalizedArticleContent {
   resultTableTitle?: string;
   results?: ResultRow[];
   catDialogues: CatDialogue[];
+  diagram?: LocalizedDiagram;
 }
 
 export interface ArticleData {
@@ -75,7 +93,41 @@ export interface ArticleData {
 
 const articleModules = import.meta.glob('./articles/*.json', { eager: true });
 
+export type ArticleCategory = 'world' | 'kyushu' | 'endurance-fun' | 'all-japan' | 'spotlight' | 'maintenance';
+
+export const ALL_CATEGORIES: ArticleCategory[] = [
+  'world',
+  'kyushu',
+  'endurance-fun',
+  'all-japan',
+  'spotlight',
+  'maintenance'
+];
+
 export function getAllArticles(): ArticleData[] {
   const articles = Object.values(articleModules).map((mod: any) => mod.default || mod) as ArticleData[];
   return articles.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+}
+
+export function getArticlesByCategory(category: string): ArticleData[] {
+  return getAllArticles().filter((a) => a.category === category);
+}
+
+export function getAllTags(): string[] {
+  const articles = getAllArticles();
+  const tagSet = new Set<string>();
+  articles.forEach((a) => {
+    (a.tags || []).forEach((t) => {
+      const trimmed = t.trim();
+      if (trimmed) tagSet.add(trimmed);
+    });
+  });
+  return Array.from(tagSet).sort((a, b) => a.localeCompare(b, 'ja'));
+}
+
+export function getArticlesByTag(tag: string): ArticleData[] {
+  const target = tag.trim().toLowerCase();
+  return getAllArticles().filter((a) =>
+    (a.tags || []).some((t) => t.trim().toLowerCase() === target)
+  );
 }

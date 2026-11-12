@@ -85,89 +85,99 @@ interface CalendarMonth {
 
 const CA_MONTHS = ['Gener', 'Febrer', 'Març', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Setembre', 'Octubre', 'Novembre', 'Desembre'];
 const EN_MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-const MONTH_LABELS: Record<number, { ja: string; ca: string; en: string }> = Object.fromEntries(
-  Array.from({ length: 12 }, (_, i) => [
-    i + 1,
-    { ja: `2026年 ${i + 1}月`, ca: `${CA_MONTHS[i]} 2026`, en: `${EN_MONTHS[i]} 2026` },
-  ])
-);
 
-function buildCalendarMonths(year: number, months: number[]): CalendarMonth[] {
-  return months.map((month) => {
-    const daysInMonth = new Date(year, month, 0).getDate();
-    // JS getDay(): 0 = Sun, 1 = Mon ... 6 = Sat. Convert to Monday-first: 0 = Mon ... 6 = Sun
-    const firstJsDay = new Date(year, month - 1, 1).getDay();
-    const leadingEmpty = (firstJsDay + 6) % 7;
+function buildCalendarMonth(year: number, month: number): CalendarMonth {
+  const daysInMonth = new Date(year, month, 0).getDate();
+  // JS getDay(): 0 = Sun, 1 = Mon ... 6 = Sat. Convert to Monday-first: 0 = Mon ... 6 = Sun
+  const firstJsDay = new Date(year, month - 1, 1).getDay();
+  const leadingEmpty = (firstJsDay + 6) % 7;
 
-    const cells: CalendarDayCell[] = [];
-    for (let i = 0; i < leadingEmpty; i++) {
-      cells.push({
-        day: null,
-        dateStr: null,
-        dayOfWeek: i,
-        events: [],
-      });
-    }
+  const cells: CalendarDayCell[] = [];
+  for (let i = 0; i < leadingEmpty; i++) {
+    cells.push({
+      day: null,
+      dateStr: null,
+      dayOfWeek: i,
+      events: [],
+    });
+  }
 
-    const monthPrefix = `${year}-${String(month).padStart(2, '0')}`;
-    const monthEventsSet = new Set<string>();
+  const monthPrefix = `${year}-${String(month).padStart(2, '0')}`;
+  const monthEventsSet = new Set<string>();
 
-    for (let d = 1; d <= daysInMonth; d++) {
-      const dateStr = `${monthPrefix}-${String(d).padStart(2, '0')}`;
-      const dayOfWeek = (leadingEmpty + d - 1) % 7;
-      const dayEvents = enrichedEvents.filter(
-        (ev) => ev.startDate <= dateStr && dateStr <= ev.endDate
-      );
-      dayEvents.forEach((ev) => monthEventsSet.add(ev.id));
+  for (let d = 1; d <= daysInMonth; d++) {
+    const dateStr = `${monthPrefix}-${String(d).padStart(2, '0')}`;
+    const dayOfWeek = (leadingEmpty + d - 1) % 7;
+    const dayEvents = enrichedEvents.filter(
+      (ev) => ev.startDate <= dateStr && dateStr <= ev.endDate
+    );
+    dayEvents.forEach((ev) => monthEventsSet.add(ev.id));
 
-      cells.push({
-        day: d,
-        dateStr,
-        dayOfWeek,
-        events: dayEvents,
-      });
-    }
+    cells.push({
+      day: d,
+      dateStr,
+      dayOfWeek,
+      events: dayEvents,
+    });
+  }
 
-    while (cells.length % 7 !== 0) {
-      cells.push({
-        day: null,
-        dateStr: null,
-        dayOfWeek: cells.length % 7,
-        events: [],
-      });
-    }
+  while (cells.length % 7 !== 0) {
+    cells.push({
+      day: null,
+      dateStr: null,
+      dayOfWeek: cells.length % 7,
+      events: [],
+    });
+  }
 
-    return {
-      key: monthPrefix,
-      year,
-      month,
-      label: MONTH_LABELS[month] || {
-        ja: `${year}年 ${month}月`,
-        ca: `${month}/${year}`,
-        en: `${year}-${month}`,
-      },
-      cells,
-      eventCount: monthEventsSet.size,
-    };
-  });
+  return {
+    key: monthPrefix,
+    year,
+    month,
+    label: {
+      ja: `${year}年 ${month}月`,
+      ca: `${CA_MONTHS[month - 1]} ${year}`,
+      en: `${EN_MONTHS[month - 1]} ${year}`,
+    },
+    cells,
+    eventCount: monthEventsSet.size,
+  };
 }
 
-// Derive the month range from schedule data (first event month .. last event month)
-const allMonthNums = enrichedEvents.flatMap((ev) => [
-  Number(ev.startDate.slice(5, 7)),
-  Number(ev.endDate.slice(5, 7)),
-]);
-const firstMonth = Math.min(...allMonthNums);
-const lastMonth = Math.max(...allMonthNums);
-const calendarMonths = buildCalendarMonths(
-  2026,
-  Array.from({ length: lastMonth - firstMonth + 1 }, (_, i) => firstMonth + i)
-);
-const defaultMonthKey = calendarMonths[calendarMonths.length - 1]?.key || 'all';
+// Derive month ranges spanning from earliest to latest event across years
+const allDates = enrichedEvents.flatMap((ev) => [ev.startDate, ev.endDate]).sort();
+const minDate = allDates[0] || '2026-04-01';
+const maxDate = allDates[allDates.length - 1] || '2026-11-30';
+
+const [minYear, minM] = minDate.split('-').map(Number);
+const [maxYear, maxM] = maxDate.split('-').map(Number);
+
+const yearMonthPairs: Array<{ year: number; month: number }> = [];
+let curY = minYear;
+let curM = minM;
+while (curY < maxYear || (curY === maxYear && curM <= maxM)) {
+  yearMonthPairs.push({ year: curY, month: curM });
+  curM++;
+  if (curM > 12) {
+    curM = 1;
+    curY++;
+  }
+}
+
+const calendarMonths = yearMonthPairs.map((p) => buildCalendarMonth(p.year, p.month));
+
+// Default to current month or active season month
+const now = new Date();
+const currentMonthKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
+const hasCurrentMonth = calendarMonths.some((m) => m.key === currentMonthKey);
+const defaultMonthKey = hasCurrentMonth
+  ? currentMonthKey
+  : calendarMonths[calendarMonths.length - 1]?.key || 'all';
+
 const allTabLabel = {
-  ja: `すべて表示 (${firstMonth}月〜${lastMonth}月)`,
-  ca: `Tots (${CA_MONTHS[firstMonth - 1].slice(0, 3)}–${CA_MONTHS[lastMonth - 1].slice(0, 3)})`,
-  en: `All Months (${EN_MONTHS[firstMonth - 1].slice(0, 3)}–${EN_MONTHS[lastMonth - 1].slice(0, 3)})`,
+  ja: `すべて表示 (${minYear}年${minM}月〜${maxYear}年${maxM}月)`,
+  ca: `Tots (${CA_MONTHS[minM - 1].slice(0, 3)} ${minYear} – ${CA_MONTHS[maxM - 1].slice(0, 3)} ${maxYear})`,
+  en: `All Months (${EN_MONTHS[minM - 1].slice(0, 3)} ${minYear} – ${EN_MONTHS[maxM - 1].slice(0, 3)} ${maxYear})`,
 };
 const weekdays = [
   { ja: '月', ca: 'DL', en: 'MON', isWeekend: false },

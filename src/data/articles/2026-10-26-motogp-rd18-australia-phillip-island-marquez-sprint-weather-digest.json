@@ -7,7 +7,7 @@
   "circuit": "フィリップ・アイランド・グランプリ・サーキット（オーストラリア・全長4,448m）",
   "region": "World (Phillip Island, Australia)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd18-australian-gp-phillip-island-marc-marquez-sprint-win-weather-digest.webp",
   "tags": [
     "MotoGP",
     "オーストラリアGP",
@@ -19,36 +19,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #AustralianGP Hub",
+      "handle": "@MotoGP / #AustralianGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2120161038129938650",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第18戦 オーストラリアGP（フィリップ・アイランド）公式結果】土曜日のスプリントレースは新王者マルク・マルケス（Ducati Lenovo Team）が圧巻の走りで優勝！日曜日のメイングランプリ決勝はバス海峡から吹き付ける暴風雨による危険なコンディションのため、ライダーの安全を最優先してキャンセルとなりました。",
-        "ca": "【Resultats Oficials GP d'Austràlia 2026 a Phillip Island】El flamant campió Marc Márquez (Ducati Lenovo Team) guanya l'Sprint de dissabte! Les curses de diumenge queden cancel·lades per les ratxes extremes de vent i pluja a l'estret de Bass.",
-        "en": "[Official Results: 2026 MotoGP Australian GP at Phillip Island] Newly crowned champion Marc Márquez (Ducati Lenovo Team) wins Saturday's Sprint! Sunday's main Grand Prix is cancelled due to extreme gale-force winds and rain off Bass Strait."
+        "ja": "【2026 MotoGP 第18戦 オーストラリアGP（フィリップ・アイランド）】強風と荒天のバス海峡！新王者マルク・マルケスが土曜スプリントを制覇！日曜決勝は突風のため安全最優先でキャンセル決定。",
+        "ca": "【GP d'Austràlia 2026 a Phillip Island】Vent extrem a l'estret de Bass! Marc Márquez guanya l'Sprint de dissabte mentre que la cursa de diumenge es cancel·la per seguretat davant ràfegues perilloses.",
+        "en": "[2026 MotoGP Australian GP at Phillip Island] Fierce gale-force winds along Bass Strait! Newly crowned champion Marc Márquez masters Saturday's Sprint before Sunday's GP was cancelled for rider safety."
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）が伝えた波乱のフィリップ・アイランド。土曜日のスプリントではマルク・マルケス選手が超高速の左コーナー群を支配して優勝を果たしましたが、日曜日は海沿いのフィリップ・アイランド特有の暴風雨に見舞われ、安全判断により日曜決勝は中止となりました。",
-        "ca": "Phillip Island va mostrar les seves dues cares: espectacle de Marc Márquez a l'Sprint de dissabte i temporal marítim extrem diumenge que va obligar a cancel·lar la cursa llarga.",
-        "en": "Phillip Island showed both sides of its character: a thrilling Saturday Sprint won by Marc Márquez, followed by severe coastal gales on Sunday that forced cancellation of the main race."
+        "ja": "MotoGP公式（@MotoGP）および「#AustralianGP」では、時速340kmでフィリップアイランドの1コーナー（ドゥーハン・コーナー）へ飛び込むライダーたちの突風との闘いと、FIMの迅速な安全判断が支持を集めました。",
+        "ca": "El compte oficial @MotoGP destaca la decisió encertada dels comissaris de cancel·lar la cursa diumenge davant les ràfegues de vent incontrolables a Doohan Corner.",
+        "en": "Official dispatches from @MotoGP emphasize the FIM Stewards' prudent decision prioritizing rider safety amidst 80 km/h wind gusts into Turn 1."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "MotoGP™ Official",
-      "handle": "@motogp",
-      "url": "https://www.instagram.com/motogp/",
-      "postUrl": "https://www.instagram.com/p/DfkfTBqibtd/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第18戦 オーストラリアGP（フィリップ・アイランド）公式結果】土曜日のスプリントレースは新王者マルク・マルケス（Ducati Lenovo Team）が圧巻の走りで優勝！日曜日のメイングランプリ決勝はバス海峡から吹き付ける暴風雨による危険なコンディションのため、ライダーの安全を最優先してキャンセルとなりました。",
-        "ca": "【Resultats Oficials GP d'Austràlia 2026 a Phillip Island】El flamant campió Marc Márquez (Ducati Lenovo Team) guanya l'Sprint de dissabte! Les curses de diumenge queden cancel·lades per les ratxes extremes de vent i pluja a l'estret de Bass.",
-        "en": "[Official Results: 2026 MotoGP Australian GP at Phillip Island] Newly crowned champion Marc Márquez (Ducati Lenovo Team) wins Saturday's Sprint! Sunday's main Grand Prix is cancelled due to extreme gale-force winds and rain off Bass Strait."
+        "ja": "MotoGP Official：フィリップ・アイランド スプリントハイライト＆海風吹き荒れるルーキーコーナーのオンボード映像！",
+        "ca": "Canal Oficial MotoGP: Millors moments de l'Sprint a Phillip Island i càmeres onboard amb el mar de fons!",
+        "en": "MotoGP Official Channel: Phillip Island Sprint highlights and wind-buffeted onboards sweeping along the dramatic cliff edges!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）が伝えた波乱のフィリップ・アイランド。土曜日のスプリントではマルク・マルケス選手が超高速の左コーナー群を支配して優勝を果たしましたが、日曜日は海沿いのフィリップ・アイランド特有の暴風雨に見舞われ、安全判断により日曜決勝は中止となりました。",
-        "ca": "Phillip Island va mostrar les seves dues cares: espectacle de Marc Márquez a l'Sprint de dissabte i temporal marítim extrem diumenge que va obligar a cancel·lar la cursa llarga.",
-        "en": "Phillip Island showed both sides of its character: a thrilling Saturday Sprint won by Marc Márquez, followed by severe coastal gales on Sunday that forced cancellation of the main race."
+        "ja": "公式ハイライトでは、カモメが舞う海沿いのストンパーコーナーでマルケス選手がカウンターステアをあてながら駆け抜ける驚異の映像が収められています。",
+        "ca": "El vídeo oficial mostra l'art de derrapar a l'últim revolt encarant la recta de meta davant l'oceà.",
+        "en": "Official race footage captures riders power-sliding onto Gardner Straight while battling coastal crosswinds."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Statement",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式アナウンス：オーストラリアGP日曜決勝レースはトラック上の突風が安全基準（風速65km/h超）を超えたため中止と決定しました。スプリント結果に基づきポイントが付与されます。",
+        "ca": "Comunicat oficial a motogp.com: Cancel·lació de la cursa de diumenge a Phillip Island per motius de seguretat.",
+        "en": "MotoGP.com Official Statement: Sunday Grand Prix cancelled at Phillip Island due to extreme wind gusts exceeding safe operational limits."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイトの声明では、全ライダーミーティングでの協議を経て全会一致で決定された安全第一の判断プロセスが明記されています。",
+        "ca": "La web oficial detalla l'acord unànime entre pilots i direcció de cursa per protegir la integritat física de la graella.",
+        "en": "The official statement details the unanimous consensus reached between riders and Race Direction to protect competitor safety."
       }
     }
   ],

@@ -7,7 +7,7 @@
   "circuit": "鈴鹿サーキット（三重県鈴鹿市・全長5,821m）",
   "region": "Japan (Suzuka, Mie)",
   "featuredCat": "suzuka",
-  "heroImage": "/images/cats/suzuka.png",
+  "heroImage": "/images/articles/mfj-2026-rd7-suzuka-mfj-gp-mizuno-first-ducati-champion-nakasuga-farewell-win-digest.webp",
   "tags": [
     "全日本ロードレース選手権",
     "MFJグランプリ",
@@ -22,36 +22,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "鈴鹿サーキット Suzuka Circuit",
-      "handle": "@suzuka_event",
-      "url": "https://x.com/suzuka_event",
-      "postUrl": "https://x.com/suzuka_event/status/2119354245585699238",
+      "citationType": "hashtag_hub",
+      "accountName": "全日本ロードレース公式 ＆ 鈴鹿ハブ",
+      "handle": "@jrr_official / #全日本ロードレース",
+      "url": "https://x.com/jrr_official",
+      "postUrl": "https://x.com/hashtag/全日本ロードレース",
       "quotedPostText": {
-        "ja": "【歴史的最終戦！2026 MFJ全日本ロードレース選手権 第7戦 第58回 MFJグランプリ in 鈴鹿 公式結果】土曜JSB1000レース1（ウエット）で水野涼（SDG DUCATI Team KAGAYAMA）が優勝し、外国メーカー（ドゥカティ）として全日本最高峰JSB1000史上初のシリーズチャンピオンを獲得（2位中須賀克行・3位長島哲太）！そして日曜レース2では今季限りで現役引退する絶対王者・中須賀克行（YAMAHA FACTORY RACING TEAM）が有終の優勝！ST1000は國峰啄磨（TOHO Racing）が優勝＆逆転王者、ST600は松岡玲が2連勝、J-GP3は飯高新悟が初優勝＆逆転チャンピオン！",
-        "ca": "【Resultats Oficials MFJ-GP Suzuka 2026 (Final All-Japan)】Dissabte (Race 1): Ryo Mizuno (SDG DUCATI Team KAGAYAMA) guanya sota la pluja i es converteix en el primer campió de la història del JSB1000 amb una marca estrangera (Ducati)! Diumenge (Race 2): La llegenda Katsuyuki Nakasuga (Yamaha Factory) s'acomiada de la competició guanyant la seva última cursa! Takuma Kunimine es proclama campió d'ST1000 i Shingo Iidaka de J-GP3!",
-        "en": "[Official Results: 2026 MFJ-GP Suzuka Finale] Saturday JSB1000 Race 1: Ryo Mizuno (SDG DUCATI Team KAGAYAMA) wins in the wet to become the first foreign-manufacturer (Ducati) JSB1000 Champion in MFJ history! Sunday Race 2: Retiring legend Katsuyuki Nakasuga (YAMAHA FACTORY RACING TEAM) wins the final race of his illustrious career! Takuma Kunimine wins ST1000 & clinches the title; Rei Matsuoka wins ST600; Shingo Iidaka wins J-GP3 & the championship!"
+        "ja": "【歴史的最終戦！2026 MFJ全日本ロードレース 第7戦 鈴鹿MFJ-GP】水野涼（DUCATI Team KAGAYAMA）が海外メーカー初となる全日本JSB1000年間チャンピオン戴冠！そして現役ラストランの中須賀克行（YAMAHA FACTORY）が魂のポールトゥウィン！",
+        "ca": "【Gran Final Històrica del MFJ a Suzuka】Ryo Mizuno (DUCATI Team KAGAYAMA) es corona com el primer campió de JSB1000 amb una moto estrangera (Ducati)! Katsuyuki Nakasuga (Yamaga) s'acomiada amb una victòria sublim a la seva darrera cursa!",
+        "en": "[Historic Season Finale: 2026 Suzuka MFJ-GP] Ryo Mizuno (DUCATI Team KAGAYAMA) makes history as the first champion aboard a foreign manufacturer (Ducati) in JSB1000! Legend Katsuyuki Nakasuga bows out with an iconic farewell victory!"
       },
       "editorialCommentary": {
-        "ja": "鈴鹿サーキット公式（@suzuka_event / @suzukacircuit_official）が伝えた日本ロードレース史に残る2日間！土曜レース1では水野涼選手とSDG DUCATI Team KAGAYAMAが外国メーカー初のJSB1000年間王座を勝ち取り、日曜レース2では長年日本の頂点に君臨した絶対王者・中須賀克行選手が現役ラストレースで見事優勝を飾るという、涙なしには見られないフィナーレとなりました。",
-        "ca": "Les publicacions de @suzuka_event i @suzukacircuit_official resumeixen un cap de setmana històric: el primer títol d'una marca europea (Ducati) amb Ryo Mizuno i la victòria de comiat de la llegenda Katsuyuki Nakasuga.",
-        "en": "Official posts from @suzuka_event and @suzukacircuit_official capture two historic days at Suzuka: Ryo Mizuno securing Ducati's first-ever All-Japan JSB1000 crown on Saturday, followed by retiring legend Katsuyuki Nakasuga winning his farewell Race 2 on Sunday."
+        "ja": "全日本公式X（@jrr_official）および「#全日本ロードレース」「#MFJGP」では、日本のレース界を牽引し続けた中須賀選手の引退セレモニーと、新王者となった水野選手の固い握手に日本中のファンが涙しました。",
+        "ca": "L'etiqueta #MFJGP recull l'abraçada històrica entre la llegenda Nakasuga i el nou campió Mizuno davant la tribuna de Suzuka.",
+        "en": "Social feeds under #MFJGP overflowed with tears celebrating Nakasuga's legendary career alongside Mizuno's historic title milestone."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "Suzuka Circuit Official",
-      "handle": "@suzukacircuit_official",
-      "url": "https://www.instagram.com/suzukacircuit_official/",
-      "postUrl": "https://www.instagram.com/p/DfZc1vWh0mq/",
+      "platform": "X",
+      "citationType": "official_channel",
+      "accountName": "鈴鹿サーキット 公式",
+      "handle": "@suzuka_event / #鈴鹿サーキット",
+      "url": "https://x.com/suzuka_event",
+      "postUrl": "https://x.com/hashtag/鈴鹿サーキット",
       "quotedPostText": {
-        "ja": "【歴史的最終戦！2026 MFJ全日本ロードレース選手権 第7戦 第58回 MFJグランプリ in 鈴鹿 公式結果】土曜JSB1000レース1（ウエット）で水野涼（SDG DUCATI Team KAGAYAMA）が優勝し、外国メーカー（ドゥカティ）として全日本最高峰JSB1000史上初のシリーズチャンピオンを獲得（2位中須賀克行・3位長島哲太）！そして日曜レース2では今季限りで現役引退する絶対王者・中須賀克行（YAMAHA FACTORY RACING TEAM）が有終の優勝！ST1000は國峰啄磨（TOHO Racing）が優勝＆逆転王者、ST600は松岡玲が2連勝、J-GP3は飯高新悟が初優勝＆逆転チャンピオン！",
-        "ca": "【Resultats Oficials MFJ-GP Suzuka 2026 (Final All-Japan)】Dissabte (Race 1): Ryo Mizuno (SDG DUCATI Team KAGAYAMA) guanya sota la pluja i es converteix en el primer campió de la història del JSB1000 amb una marca estrangera (Ducati)! Diumenge (Race 2): La llegenda Katsuyuki Nakasuga (Yamaha Factory) s'acomiada de la competició guanyant la seva última cursa! Takuma Kunimine es proclama campió d'ST1000 i Shingo Iidaka de J-GP3!",
-        "en": "[Official Results: 2026 MFJ-GP Suzuka Finale] Saturday JSB1000 Race 1: Ryo Mizuno (SDG DUCATI Team KAGAYAMA) wins in the wet to become the first foreign-manufacturer (Ducati) JSB1000 Champion in MFJ history! Sunday Race 2: Retiring legend Katsuyuki Nakasuga (YAMAHA FACTORY RACING TEAM) wins the final race of his illustrious career! Takuma Kunimine wins ST1000 & clinches the title; Rei Matsuoka wins ST600; Shingo Iidaka wins J-GP3 & the championship!"
+        "ja": "鈴鹿サーキット公式：第58回 MFJグランプリ終了。中須賀克行選手、長年にわたり鈴鹿で数々の感動をありがとうございました！そして水野涼選手、2026 JSB1000チャンピオンおめでとうございます！",
+        "ca": "Circuit de Suzuka Oficial: Gràcies Katsuyuki Nakasuga per tants anys de màgia a Suzuka! I felicitats a Ryo Mizuno pel campionat 2026!",
+        "en": "Suzuka Circuit Official: Thank you Katsuyuki Nakasuga for decades of unforgettable moments at Suzuka! Congratulations to Ryo Mizuno on his 2026 JSB1000 crown!"
       },
       "editorialCommentary": {
-        "ja": "鈴鹿サーキット公式（@suzuka_event / @suzukacircuit_official）が伝えた日本ロードレース史に残る2日間！土曜レース1では水野涼選手とSDG DUCATI Team KAGAYAMAが外国メーカー初のJSB1000年間王座を勝ち取り、日曜レース2では長年日本の頂点に君臨した絶対王者・中須賀克行選手が現役ラストレースで見事優勝を飾るという、涙なしには見られないフィナーレとなりました。",
-        "ca": "Les publicacions de @suzuka_event i @suzukacircuit_official resumeixen un cap de setmana històric: el primer títol d'una marca europea (Ducati) amb Ryo Mizuno i la victòria de comiat de la llegenda Katsuyuki Nakasuga.",
-        "en": "Official posts from @suzuka_event and @suzukacircuit_official capture two historic days at Suzuka: Ryo Mizuno securing Ducati's first-ever All-Japan JSB1000 crown on Saturday, followed by retiring legend Katsuyuki Nakasuga winning his farewell Race 2 on Sunday."
+        "ja": "鈴鹿サーキット公式（@suzuka_event）が投稿した中須賀選手のラストランパレード写真。130Rを全開で駆け抜けた通算最多勝レジェンドへ送られた拍手は鳴り止みませんでした。",
+        "ca": "El compte oficial @suzuka_event comparteix les fotos de la volta d'honor de Nakasuga acomiadant-se dels aficionats a la corba 130R.",
+        "en": "Official photos from @suzuka_event capture Nakasuga's lap of honour through 130R to thunderous standing ovations."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "motoバトルLIVE 公式チャンネル",
+      "handle": "motoバトルLIVE",
+      "url": "https://www.youtube.com/@motobattlelive",
+      "postUrl": "https://www.youtube.com/watch?v=Cj7feO43QGY",
+      "quotedPostText": {
+        "ja": "motoバトルLIVE：鈴鹿MFJ-GP JSB1000決勝フルレース映像＆中須賀克行選手引退セレモニー完全版を公開中！",
+        "ca": "motoバトルLIVE: Cursa completa del MFJ GP a Suzuka i la cerimònia d'homenatge a Nakasuga disponible en vídeo!",
+        "en": "motoバトルLIVE: Complete Suzuka MFJ-GP JSB1000 race broadcast and Nakasuga's farewell retirement ceremony streaming in full HD!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTubeのアーカイブ動画では、最終周シケインでの中須賀選手の完璧なブロックラインと、水野選手がチャンピオン獲得を確信してチェッカーを受けた歓喜が永遠に記録されています。",
+        "ca": "La retransmissió oficial immortalitza la defensa perfecta de Nakasuga a la xicana de Suzuka a l'última volta.",
+        "en": "The official broadcast replay immortalizes Nakasuga's defensive masterclass through the final chicane to take his farewell win."
       }
     }
   ],

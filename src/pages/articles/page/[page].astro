@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticlesArchiveView from '../../../components/ArticlesArchiveView.astro';
+import { getAllArticles, type ArticleData } from '../../../data/articles';
+import { UI_TEXT } from '../../../data/i18n';
+
+export function getStaticPaths() {
+  const PAGE_SIZE = 12;
+  const allArticles = getAllArticles();
+  const totalCount = allArticles.length;
+  const totalPages = Math.ceil(totalCount / PAGE_SIZE);
+
+  const paths = [];
+  // 2ページ目以降を生成（1ページ目は /articles/index.astro が担当）
+  for (let p = 2; p <= totalPages; p++) {
+    const start = (p - 1) * PAGE_SIZE;
+    const end = start + PAGE_SIZE;
+    paths.push({
+      params: { page: String(p) },
+      props: {
+        articles: allArticles.slice(start, end),
+        currentPage: p,
+        totalPages,
+        totalCount,
+        pageSize: PAGE_SIZE
+      }
+    });
+  }
+  return paths;
+}
+
+interface Props {
+  articles: ArticleData[];
+  currentPage: number;
+  totalPages: number;
+  totalCount: number;
+  pageSize: number;
+}
+
+const { articles, currentPage, totalPages, totalCount, pageSize } = Astro.props;
+---
+
+<BaseLayout
+  title={`${UI_TEXT.archive.title.ja} (${currentPage}/${totalPages}) | HONDA.CAT`}
+  description={UI_TEXT.archive.subtitle.ja}
+  initialLang="ja"
+  canonicalPath={`/articles/page/${currentPage}/`}
+>
+  <ArticlesArchiveView
+    articles={articles}
+    currentPage={currentPage}
+    totalPages={totalPages}
+    totalCount={totalCount}
+    pageSize={pageSize}
+  />
+</BaseLayout>

@@ -7,7 +7,7 @@
   "circuit": "中九州カートウェイ（熊本県山鹿市）／ ソニックパーク安心院（大分県宇佐市）",
   "region": "Kyushu (Yamaga, Kumamoto & Usa, Oita)",
   "featuredCat": "naomi",
-  "heroImage": "/images/cats/naomi.png",
+  "heroImage": "/images/articles/kyushu-2026-may-brows-odai-r2-nakakyushu-and-rentai-sonic-park-ajimu-digest.webp",
   "tags": [
     "お題付耐久草レース",
     "中九州カートウェイ",
@@ -18,37 +18,57 @@
   ],
   "snsCitations": [
     {
-      "platform": "Instagram",
-      "accountName": "Honda Racing Corporation",
-      "handle": "@hondaracingcorporation",
-      "url": "https://www.instagram.com/hondaracingcorporation/",
-      "postUrl": "https://www.instagram.com/p/DfhLKswkX3P/",
+      "platform": "X",
+      "citationType": "hashtag_hub",
+      "accountName": "Let's レン耐！公式 ＆ 青木拓磨",
+      "handle": "@rentai_official / #レン耐",
+      "url": "https://x.com/rentai_official",
+      "postUrl": "https://x.com/hashtag/レン耐",
       "quotedPostText": {
-        "ja": "【2026年5月17日(日) 開催：飲酒運転撲滅チャリティーイベント『お題付耐久「草」レース R-2』in 中九州カートウェイ（熊本県山鹿市）】90分お題付耐久（かめさんクラス：規定48秒・雨天51秒／うさぎさんクラス：規定46秒・雨天49秒／らいおんさんクラス：制限なし）＆10周スプリント（チーターさんクラス）を開催！",
-        "ca": "【17 de maig de 2026: Cursa benèfica «Odai-tsuki Endurance R-2» a Nakakyushu Kartway (Yamaga, Kumamoto)】Resistència de 90 minuts amb reptes a box dividida en les classes Tortuga (48s), Conill (46s) i Lleó (lliure), més l'Sprint de 10 voltes Guepard!",
-        "en": "[May 17, 2026: Anti-Drunk Driving Charity 'Odai-tsuki Endurance R-2' at Nakakyushu Kartway (Yamaga, Kumamoto)] 90-minute challenge endurance across Kame-san (48s floor), Usagi-san (46s floor), and Lion-san (open) classes plus the 10-lap Cheetah-san sprint!"
+        "ja": "【Let's レン耐！西日本シリーズ第4戦 in ソニックパーク安心院】レンタルミニバイク3時間耐久！初心者からベテランまでイコールコンディション（GROM/Monkey125）で激走。名物のお題クリアとダブルペリアハンデで大盛り上がり！",
+        "ca": "【Let's Rentai! Sèrie Oest Rd.4 a Sonic Park Ajimu】Resistència de 3 hores amb minimotos de lloguer! Grans rialles i emoció amb els reptes a box i el sistema d'handicap.",
+        "en": "[Let's Rentai! West Japan Rd.4 at Sonic Park Ajimu] 3-hour rental mini-bike endurance! Equal machinery (GROM/Monkey125), hilarious pit challenges, and dramatic handicap finishes!"
       },
       "editorialCommentary": {
-        "ja": "ブラウズ公式サイト（brow-s.jp）の2026年スケジュール通り、3月8日のR-1（ソニックパーク安心院）に続く第2戦（R-2）が5月17日(日)に熊本県山鹿市の『中九州カートウェイ』で開催されました。申込完了順で決まる耐久グリッドと、ピットインのたびにチーム全員で挑戦する「お題」、そして基準タイム（かめさん48秒／うさぎさん46秒）を破らないよう走る絶妙なペースコントロールが会場を大いに沸かせました。なお最終戦R-3は10月11日にソニックパーク安心院で開催されます。",
-        "ca": "Tal com informa la web oficial de BROW'S (brow-s.jp), la 2a cita anual es va córrer el 17 de maig a Nakakyushu Kartway (Kumamoto), mentre que la 1a (8 de març) i la 3a (11 d'octubre) tenen lloc a Sonic Park Ajimu (Oita).",
-        "en": "Per BROW'S official event page (brow-s.jp), Round 2 of the 2026 Odai-tsuki Endurance series took place on May 17 at Nakakyushu Kartway in Yamaga, Kumamoto, bookended by Round 1 (March 8) and Round 3 (October 11) at Sonic Park Ajimu in Usa, Oita."
+        "ja": "Let's レン耐！公式（@rentai_official）およびXのハッシュタグ「#レン耐」では、安心院を疾走した参加者たちの笑顔やピットインでのお題挑戦（知恵の輪やなわとび）の熱気がリアルタイムで発信されています。",
+        "ca": "El compte oficial @rentai_official i l'etiqueta #レン耐 mostren la diversió i companyonia dels equips a Sonic Park Ajimu.",
+        "en": "Official updates from @rentai_official and community posts under #レン耐 capture the fun-filled pit challenges and tight racing at Ajimu."
+      }
+    },
+    {
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "Let's レン耐！ / 青木拓磨公式チャンネル",
+      "handle": "Let's レン耐！",
+      "url": "https://www.youtube.com/watch?v=ZXNapoHpzZo",
+      "postUrl": "https://www.youtube.com/watch?v=ZXNapoHpzZo",
+      "quotedPostText": {
+        "ja": "Let's レン耐！公式：ソニックパーク安心院＆中九州カートウェイ 草耐久バトル！ミニバイクで笑顔あふれる参加者たちの激走ハイライト！",
+        "ca": "Canal Oficial Let's Rentai: Grans moments de la resistència popular de minimotos a Kyushu!",
+        "en": "Let's Rentai! Official: Joyful grassroots minibike endurance highlights from Sonic Park Ajimu and Nakakyushu Kartway!"
+      },
+      "editorialCommentary": {
+        "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
+        "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
+        "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
       }
     },
     {
       "platform": "X",
-      "accountName": "モビリティリゾートもてぎ 公式",
-      "handle": "@motegi_official",
-      "url": "https://x.com/motegi_official",
-      "postUrl": "https://x.com/motegi_official/status/2119616994777665546",
+      "citationType": "hashtag_hub",
+      "accountName": "お題付耐久「草」レース ハッシュタグハブ",
+      "handle": "#お題付耐久 / 中九州カートウェイ",
+      "url": "https://x.com/hashtag/お題付耐久",
+      "postUrl": "https://x.com/hashtag/お題付耐久",
       "quotedPostText": {
-        "ja": "【2026年5月24日(日) 開催：Let's レン耐！西日本シリーズ第4戦 in ソニックパーク安心院（大分県宇佐市）】青木拓磨プロデュースのレンタルミニバイク3時間耐久（GROM / Monkey125クラス）！伝統のル・マン式スタート、ピットイン数回ごとのお題、そしてレース中盤でハンデが決まる『ダブルペリア方式』で初心者からベテランまで大熱戦！",
-        "ca": "【24 de maig de 2026: Let's Rentai! Sèrie Oest Rd.4 a Sonic Park Ajimu (Usa, Oita)】Cursa de 3 hores de resistència amb minimotos de lloguer (GROM / Monkey125), sortida Le Mans, proves a box i sistema d'handicap Double Peria!",
-        "en": "[May 24, 2026: Let's Rentai! West Japan Series Rd.4 at Sonic Park Ajimu (Usa, Oita)] 3-hour rental mini-bike endurance (GROM / Monkey125) featuring a Le Mans start, pit-stop challenges, and the mid-race Double Peria handicap!"
+        "ja": "【飲酒運転撲滅チャリティー お題付耐久「草」レース R-2 in 中九州カートウェイ】90分耐久！かめさん（基準48秒）・うさぎさん（基準46秒）・らいおんさん・チーターさんクラス。絶妙なペース配分とお題クリアで白熱！",
+        "ca": "【Odai-tsuki Endurance R-2 a Nakakyushu Kartway】Cursa benèfica de resistència de 90 minuts amb reptes a box i límits de temps per volta segons categoria!",
+        "en": "[Charity Odai-tsuki Endurance R-2 at Nakakyushu Kartway] 90-minute grassroots endurance with pit challenges and minimum lap time rules per bracket!"
       },
       "editorialCommentary": {
-        "ja": "5月17日の中九州カートウェイ『お題付耐久 R-2』の翌週となる5月24日(日)には、大分県宇佐市の『ソニックパーク安心院』にて青木拓磨氏プロデュース『Let's レン耐！西日本シリーズ第4戦（3時間耐久）』が開催されました。主催者用意のイコールコンディション車両（GROM / Monkey125）を使い、女性ライダーを守るピンクビブス規定や転倒時5,000円支払いルールのもと、ダブルペリア方式による大逆転劇が繰り広げられました。",
-        "ca": "Una setmana després de la cita de Nakakyushu, el circuit Sonic Park Ajimu d'Oita va acollir el 24 de maig la 4a ronda de la Sèrie Oest de «Let's Rentai!» amb una cursa de 3 hores plena d'emoció.",
-        "en": "Just one week after BROW'S Round 2 in Kumamoto, Oita's Sonic Park Ajimu hosted Round 4 of the Let's Rentai! West Japan Series on May 24 with a 3-hour endurance race."
+        "ja": "Xのハッシュタグ「#お題付耐久」では、中九州カートウェイで開催された第2戦のパドック風景や、ペースを抑えつつピットのお題で大逆転を狙う参加者たちの創意工夫が共有されています。",
+        "ca": "A través de #お題付耐久, els pilots comparteixen fotos i anècdotes dels reptes a box a Nakakyushu Kartway.",
+        "en": "Entrant posts under #お題付耐久 showcase the unique pit-stop challenge strategies and family-friendly atmosphere at Nakakyushu."
       }
     }
   ],

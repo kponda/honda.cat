@@ -7,7 +7,7 @@
   "circuit": "Balaton Park Circuit（ハンガリー・バラトン湖畔・全長4,115m）",
   "region": "World (Balatonfőkajár, Hungary)",
   "featuredCat": "marc",
-  "heroImage": "/images/cats/marc.png",
+  "heroImage": "/images/articles/motogp-2026-rd8-hungarian-gp-balaton-park-marc-marquez-sweep-digest.webp",
   "tags": [
     "MotoGP",
     "ハンガリーGP",
@@ -19,36 +19,56 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "MotoGP™ Official",
-      "handle": "@MotoGP",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official ＆ #HungarianGP Hub",
+      "handle": "@MotoGP / #HungarianGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://x.com/MotoGP/status/2120173383669383355",
+      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第8戦 ハンガリーGP（バラトン・パーク）公式結果】土曜スプリントに続き日曜決勝でもマルク・マルケス（Ducati Lenovo Team）が完勝し週末を完全制覇！2位にペドロ・アコスタ（Red Bull KTM Factory Racing）、3位にフランチェスコ・バニャイア（Ducati Lenovo Team）！",
-        "ca": "【Resultats Oficials GP d'Hongria 2026 a Balaton Park】Marc Márquez (Ducati Lenovo Team) completa el doblet guanyant tant l'Sprint de dissabte com el Gran Premi de diumenge! 2n Pedro Acosta (Red Bull KTM Factory Racing) i 3r Francesco Bagnaia (Ducati Lenovo Team)!",
-        "en": "[Official Results: 2026 MotoGP Hungarian GP at Balaton Park] Marc Márquez (Ducati Lenovo Team) completes a weekend sweep, winning both Saturday's Sprint and Sunday's Grand Prix ahead of Pedro Acosta (2nd, Red Bull KTM Factory Racing) and Francesco Bagnaia (3rd, Ducati Lenovo Team)!"
+        "ja": "【2026 MotoGP 第8戦 ハンガリーGP（バラトン・パーク）公式結果】新設バラトン・パークでマルク・マルケス（Ducati Lenovo Team）が圧巻の完全勝利（ポール・スプリント・決勝ポールトゥウィン）を達成！",
+        "ca": "【GP d'Hongria 2026 a Balaton Park】Marc Márquez (Ducati Lenovo Team) signa un cap de setmana perfecte amb pole, victòria a l'Sprint i triomf de principi a fi diumenge!",
+        "en": "[2026 MotoGP Hungarian GP at Balaton Park] Marc Márquez (Ducati Lenovo Team) completes an imperious clean sweep at the brand-new circuit: Pole, Sprint, and Sunday GP victory!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式X（@MotoGP）が公開したバラトン・パーク（全長4,115m）のハイライト映像では、タイトなシケインとハードブレーキングが連続するストップ＆ゴー区間でマルク・マルケス選手がいかに正確にフロント荷重を残して旋回し、ペドロ・アコスタ選手の猛追を退けたかが鮮明に記録されています。",
-        "ca": "Els vídeos oficials de @MotoGP a Balaton Park (4.115m) mostren com Marc Márquez va dominar les fortes frenades stop-and-go i les xicanes per contenir l'atac de Pedro Acosta i aconseguir el doblet.",
-        "en": "@MotoGP's official Balaton Park highlights showcase how Marc Márquez mastered the 4,115m stop-and-go braking zones and tight chicanes to hold off Pedro Acosta and seal the Sprint/GP double."
+        "ja": "MotoGP公式（@MotoGP）および「#HungarianGP」では、初開催サーキットの習熟の早さで他を圧倒したマルク・マルケス選手の類まれな適応能力が世界中で絶賛されています。",
+        "ca": "El compte oficial @MotoGP destaca la capacitat única de Marc Márquez per trobar el límit en circuits completament nous des de la primera sessió.",
+        "en": "Official updates from @MotoGP emphasize Marc Márquez's uncanny ability to master unfamiliar asphalt from his very first lap."
       }
     },
     {
-      "platform": "Instagram",
-      "accountName": "KTM Factory Racing",
-      "handle": "@ktmfactoryracing",
-      "url": "https://www.instagram.com/ktmfactoryracing/",
-      "postUrl": "https://www.instagram.com/p/DfkRLiiu8zQ/",
+      "platform": "YouTube",
+      "citationType": "direct_post",
+      "accountName": "MotoGP Official Channel",
+      "handle": "MotoGP",
+      "url": "https://www.youtube.com/@motogp",
+      "postUrl": "https://www.youtube.com/watch?v=0CIRv1O6Ghs",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第8戦 ハンガリーGP（バラトン・パーク）公式結果】土曜スプリントに続き日曜決勝でもマルク・マルケス（Ducati Lenovo Team）が完勝し週末を完全制覇！2位にペドロ・アコスタ（Red Bull KTM Factory Racing）、3位にフランチェスコ・バニャイア（Ducati Lenovo Team）！",
-        "ca": "【Resultats Oficials GP d'Hongria 2026 a Balaton Park】Marc Márquez (Ducati Lenovo Team) completa el doblet guanyant tant l'Sprint de dissabte com el Gran Premi de diumenge! 2n Pedro Acosta (Red Bull KTM Factory Racing) i 3r Francesco Bagnaia (Ducati Lenovo Team)!",
-        "en": "[Official Results: 2026 MotoGP Hungarian GP at Balaton Park] Marc Márquez (Ducati Lenovo Team) completes a weekend sweep, winning both Saturday's Sprint and Sunday's Grand Prix ahead of Pedro Acosta (2nd, Red Bull KTM Factory Racing) and Francesco Bagnaia (3rd, Ducati Lenovo Team)!"
+        "ja": "MotoGP Official：初開催バラトン・パーク・サーキット決勝ハイライト！マルケスの超絶バンク角＆ペドロ・アコスタの猛追をチェック！",
+        "ca": "Canal Oficial MotoGP: Resum del debut de Balaton Park a MotoGP i la persecució apassionant de Pedro Acosta!",
+        "en": "MotoGP Official Channel: Highlights from Balaton Park's historic MotoGP debut featuring extreme lean angles and Pedro Acosta's pursuit!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式X（@MotoGP）が公開したバラトン・パーク（全長4,115m）のハイライト映像では、タイトなシケインとハードブレーキングが連続するストップ＆ゴー区間でマルク・マルケス選手がいかに正確にフロント荷重を残して旋回し、ペドロ・アコスタ選手の猛追を退けたかが鮮明に記録されています。",
-        "ca": "Els vídeos oficials de @MotoGP a Balaton Park (4.115m) mostren com Marc Márquez va dominar les fortes frenades stop-and-go i les xicanes per contenir l'atac de Pedro Acosta i aconseguir el doblet.",
-        "en": "@MotoGP's official Balaton Park highlights showcase how Marc Márquez mastered the 4,115m stop-and-go braking zones and tight chicanes to hold off Pedro Acosta and seal the Sprint/GP double."
+        "ja": "公式ハイライトでは、バラトン・パーク特有のタイトな複合コーナー群で60度を超えるバンク角をキープするマルケス選手の神技セーブが収録されています。",
+        "ca": "El vídeo oficial mostra la salvada característica de Márquez recolzat al colze en un dels revolts lents de Balaton.",
+        "en": "Official video highlights showcase Márquez's trademark elbow-down saves through Balaton's tricky off-camber tight sections."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "MotoGP.com Official Results",
+      "handle": "motogp.com",
+      "url": "https://www.motogp.com/",
+      "postUrl": "https://www.motogp.com/en/gp-results",
+      "quotedPostText": {
+        "ja": "MotoGP.com公式リザルト：2026年第8戦ハンガリーGP（バラトン・パーク）決勝結果（1位マルク・マルケス、2位アコスタ、3位ベッツェッキ）。",
+        "ca": "Resultats oficials GP d'Hongria: 1r Marc Márquez, 2n Pedro Acosta, 3r Marco Bezzecchi.",
+        "en": "MotoGP.com Official Classification: 1st Marc Márquez, 2nd Pedro Acosta, 3rd Marco Bezzecchi."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイトの周回チャートにより、マルケス選手が全周回でレース最速ラップを記録し続けた完璧な支配力が数字で裏付けられています。",
+        "ca": "La taula de cronometratge oficial certifica que Márquez va liderar totes les voltes de la cursa sense donar opció als seus rivals.",
+        "en": "Official lap charts confirm Márquez led every single lap from lights to flag, establishing complete command over the Hungarian GP."
       }
     }
   ],

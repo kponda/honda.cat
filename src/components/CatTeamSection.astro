@@ -1,5 +1,6 @@
 ---
 import { CAT_TEAM, UI_TEXT } from '../data/i18n';
+import ChuruSupportCard from './ChuruSupportCard.astro';
 
 const cats = [CAT_TEAM.marc, CAT_TEAM.suzuka, CAT_TEAM.naomi];
 ---
@@ -80,6 +81,8 @@ const cats = [CAT_TEAM.marc, CAT_TEAM.suzuka, CAT_TEAM.naomi];
         </article>
       ))}
     </div>
+
+    <ChuruSupportCard variant="banner" />
   </div>
 </section>
 
