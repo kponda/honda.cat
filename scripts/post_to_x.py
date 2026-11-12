@@ -46,7 +46,8 @@ ARTICLES_DIR = ROOT_DIR / "src" / "data" / "articles"
 POSTED_FILE = ROOT_DIR / "src" / "data" / "x_posted.json"
 BASE_URL = "https://honda.cat"
 
-X_API_URL = "https://api.twitter.com/2/tweets"
+# Latest X Developer Platform endpoint (api.x.com)
+X_API_URL = "https://api.x.com/2/tweets"
 
 
 # -----------------------------------------------------------------------------
@@ -105,23 +106,36 @@ def get_oauth1_header(
 
 
 def send_tweet(text: str, dry_run: bool = False) -> dict[str, Any]:
-    """Send tweet via X API v2 (POST /2/tweets)."""
+    """Send tweet via X API v2 (POST https://api.x.com/2/tweets).
+
+    Supports:
+      1. OAuth 1.0a User Context (API Key, API Secret, Access Token, Access Token Secret)
+         Recommended by X for personal automated publishing / bot accounts ("Acting as yourself")
+      2. OAuth 2.0 Bearer Token / User Access Token (Single token authorization: Bearer <token>)
+    """
     api_key = os.getenv("X_API_KEY") or os.getenv("TWITTER_API_KEY")
     api_secret = os.getenv("X_API_SECRET") or os.getenv("TWITTER_API_SECRET")
     access_token = os.getenv("X_ACCESS_TOKEN") or os.getenv("TWITTER_ACCESS_TOKEN")
     access_token_secret = os.getenv("X_ACCESS_TOKEN_SECRET") or os.getenv("TWITTER_ACCESS_TOKEN_SECRET")
+    bearer_token = os.getenv("X_BEARER_TOKEN") or os.getenv("TWITTER_BEARER_TOKEN")
 
-    if not all([api_key, api_secret, access_token, access_token_secret]):
+    # Check authentication mode
+    has_oauth1 = bool(api_key and api_secret and access_token and access_token_secret)
+    has_bearer = bool(bearer_token or (access_token and not (api_key and api_secret)))
+
+    if not has_oauth1 and not has_bearer:
         if dry_run:
             print("ℹ️ X API credentials not fully set, but running in dry-run mode.")
             return {"data": {"id": "dry_run_sample_id", "text": text}}
         raise ValueError(
-            "Missing X API credentials. Ensure X_API_KEY, X_API_SECRET, "
-            "X_ACCESS_TOKEN, and X_ACCESS_TOKEN_SECRET are set."
+            "Missing X API credentials. Please provide either:\n"
+            "  Option A (OAuth 1.0a - recommended for personal bots): X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET\n"
+            "  Option B (OAuth 2.0 User Access Token): X_BEARER_TOKEN (or X_ACCESS_TOKEN with tweet.write scope)"
         )
 
     if dry_run:
-        print("🔍 [DRY-RUN] Tweet would be posted:")
+        auth_mode = "OAuth 1.0a (User Context)" if has_oauth1 else "OAuth 2.0 (Bearer Token)"
+        print(f"🔍 [DRY-RUN] Tweet would be posted via {auth_mode} to {X_API_URL}:")
         print("--------------------------------------------------")
         print(text)
         print("--------------------------------------------------")
@@ -130,7 +144,29 @@ def send_tweet(text: str, dry_run: bool = False) -> dict[str, Any]:
 
     payload = json.dumps({"text": text}).encode("utf-8")
 
-    # Try requests_oauthlib if available
+    # Mode 1: OAuth 2.0 Bearer Token (if OAuth 1.0a is not configured)
+    if not has_oauth1 and has_bearer:
+        token = bearer_token or access_token
+        print("🔐 Authenticating with OAuth 2.0 Bearer Token...")
+        req = urllib.request.Request(
+            X_API_URL,
+            data=payload,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+                "User-Agent": "HondaCatPublisher/1.0",
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode("utf-8", errors="replace")
+            raise RuntimeError(f"X API HTTP {e.code} error: {err_body}") from e
+
+    # Mode 2: OAuth 1.0a User Context
+    print("🔐 Authenticating with OAuth 1.0a User Context (RFC 5849)...")
     try:
         from requests_oauthlib import OAuth1Session  # type: ignore
         session = OAuth1Session(
@@ -165,8 +201,7 @@ def send_tweet(text: str, dry_run: bool = False) -> dict[str, Any]:
         )
         try:
             with urllib.request.urlopen(req, timeout=20) as resp:
-                resp_data = json.loads(resp.read().decode("utf-8"))
-                return resp_data
+                return json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
             err_body = e.read().decode("utf-8", errors="replace")
             raise RuntimeError(f"X API HTTP {e.code} error: {err_body}") from e
