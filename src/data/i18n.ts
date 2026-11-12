@@ -223,12 +223,14 @@ export const UI_TEXT = {
   },
   categories: {
     all: { ja: 'すべて表示', ca: 'Totes les categories', en: 'All Categories' },
-    world: { ja: '🌍 MotoGP / SBK 世界戦', ca: '🌍 Mundial MotoGP / SBK', en: '🌍 MotoGP / SBK World' },
+    motogp: { ja: '🏍️ MotoGP 世界選手権', ca: '🏍️ Mundial de MotoGP', en: '🏍️ MotoGP World Championship' },
+    sbk: { ja: '⚡ WorldSBK スーパーバイク', ca: '⚡ Mundial WorldSBK', en: '⚡ WorldSBK Championship' },
     'all-japan': { ja: '🗾 全日本・全国地方選 (MFJ)', ca: '🗾 Campionat del Japó i Regionals', en: '🗾 All-Japan & Regional' },
     kyushu: { ja: '🔥 九州 (オートポリス・SPA直入・HSR)', ca: '🔥 Kyushu (Autopolis / SPA Naoiri / HSR)', en: '🔥 Kyushu (Autopolis / SPA Naoiri / HSR)' },
     'endurance-fun': { ja: '🏁 耐久・サンデー・クラブマン', ca: '🏁 Resistència i Clubman', en: '🏁 Endurance & Clubman' },
     spotlight: { ja: '⚡ スーパーセーブ＆技術解説', ca: '⚡ Salvades i Anàlisi Tècnica', en: '⚡ Super Saves & Spotlight' },
-    maintenance: { ja: '🔧 サーキット整備＆豆知識', ca: '🔧 Manteniment i Trucs de Circuit', en: '🔧 Track Maintenance & Tips' }
+    maintenance: { ja: '🔧 サーキット整備＆豆知識', ca: '🔧 Manteniment i Trucs de Circuit', en: '🔧 Track Maintenance & Tips' },
+    world: { ja: '🌍 MotoGP / SBK 世界戦', ca: '🌍 Mundial MotoGP / SBK', en: '🌍 MotoGP / SBK World' }
   },
   articleTypes: {
     preview: { ja: '📅 今週の開催情報＆見どころ', ca: '📅 Prèvia i Horaris', en: '📅 Weekly Race Preview' },

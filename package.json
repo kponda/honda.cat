@@ -14,7 +14,10 @@
     "generate:digest-monday": "python3 scripts/generate_articles.py --mode digest_monday",
     "generate:digest-wednesday": "python3 scripts/generate_articles.py --mode digest_wednesday",
     "generate:maintenance": "python3 scripts/generate_articles.py --mode maintenance",
-    "generate:custom": "python3 scripts/generate_articles.py --mode custom"
+    "generate:custom": "python3 scripts/generate_articles.py --mode custom",
+    "generate:favicons": "python3 scripts/generate_favicons.py",
+    "post:x": "python3 scripts/post_to_x.py",
+    "post:x:dry": "python3 scripts/post_to_x.py --dry-run"
   },
   "dependencies": {
     "astro": "^4.16.18"

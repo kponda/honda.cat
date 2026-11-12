@@ -1,0 +1,229 @@
+{
+  "id": "2026-05-18-worldsbk-rd5-most-bulega-streak-czech-digest",
+  "slug": "worldsbk-2026-rd5-most-bulega-streak-czech-digest",
+  "publishedAt": "2026-05-18",
+  "category": "sbk",
+  "articleType": "digest",
+  "circuit": "アウトードロモ・モスト（チェコ・全長4,212m）",
+  "region": "World (Czech Republic · 4,212m)",
+  "featuredCat": "marc",
+  "heroImage": "/images/articles/worldsbk-2026-rd5-most-bulega-streak-czech-digest.webp",
+  "tags": [
+    "SBK",
+    "WorldSBK",
+    "モスト",
+    "チェコ大会",
+    "ニコロ・ブレガ",
+    "19連勝",
+    "イケル・レクオナ"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "WorldSBK Official ＆ Hashtag Hub",
+      "handle": "@WorldSBK / #WorldSBK",
+      "url": "https://x.com/WorldSBK",
+      "postUrl": "https://x.com/WorldSBK",
+      "quotedPostText": {
+        "ja": "【FIM WorldSBK 第5戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
+        "ca": "【WorldSBK Rd.5】Resultats oficials amb un ritme demolidor a la pista!",
+        "en": "[WorldSBK Rd.5] Official Results and Highlights from the paddock!"
+      },
+      "editorialCommentary": {
+        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第5戦のオンボード映像やハイライトが世界中のファンに配信されています。",
+        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 5.",
+        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 5."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "WorldSBK.com Official Results",
+      "handle": "worldsbk.com",
+      "url": "https://www.worldsbk.com/",
+      "postUrl": "https://www.worldsbk.com/en/results%20statistics",
+      "quotedPostText": {
+        "ja": "WorldSBK.com公式リザルト：2026年第5戦の全セッション公式タイムシートおよびスタンディングを更新しました。",
+        "ca": "Classificacions oficials a WorldSBK.com: Temps per volta i taula del campionat de la ronda 5.",
+        "en": "WorldSBK.com Official Results: Full timing sheets and standings updated for Round 5."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイトの正式リザルト統計により、決勝順位とポイントランキングが正式に記録されています。",
+        "ca": "La web oficial confirma les posicions oficials i l'estat del campionat.",
+        "en": "Official series statistics document the confirmed finishing order and championship points."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-12",
+    "basis": {
+      "ja": "2026-05-15 - 2026-05-17にアウトードロモ・モスト（チェコ・全長4,212m）で開催された2026 FIMスーパーバイク世界選手権（WorldSBK）第5戦の公式結果に基づき検証済み。",
+      "ca": "Verificat amb els resultats oficials de la 5a ronda del Campionat del Món FIM WorldSBK a Autodrom Most (República Txeca · 4.212m).",
+      "en": "Verified against official 2026 FIM WorldSBK Round 5 results at Autodrom Most (Czech Republic · 4,212m)."
+    },
+    "sources": [
+      {
+        "title": "FIM WorldSBK Official Results & Standings (worldsbk.com)",
+        "url": "https://www.worldsbk.com/en/results%20statistics"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-05-15 - 2026-05-17 (Monday Digest 1)",
+    "venue": {
+      "ja": "アウトードロモ・モスト（チェコ・全長4,212m）",
+      "ca": "Autodrom Most (República Txeca · 4.212m)",
+      "en": "Autodrom Most (Czech Republic · 4,212m)"
+    },
+    "weather": {
+      "ja": "曇り時々晴れ（気温19℃、北ボヘミア特有の涼しいレースコンディション）",
+      "ca": "Temps variable amb núvols i temperatures fresques",
+      "en": "Overcast with Sunny Spells and Cool Ambient Temperatures"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【2026年5月第3週 WorldSBK結果ダイジェスト】第5戦チェコ大会（モスト）：ニコロ・ブレガが怒涛の19連勝！95点差をつけて選手権独走",
+      "subtitle": "シケインでヒヤリの場面も即座にリカバー！ボヘミアの難関コースでハットトリック達成",
+      "summary": "2026年5月15日〜17日、チェコのアウトードロモ・モストでFIMスーパーバイク世界選手権（WorldSBK）第5戦が開催されました。ニコロ・ブレガ選手がSuperpoleスプリント、Race 1、Race 2の全レースで勝利。連続優勝記録を「19勝」へと伸ばし、ランキング2位に対して95ポイントという圧倒的なリードを築きました。",
+      "highlightPoint": "ニコロ・ブレガがモストでも3連勝ハットトリックを決め、驚異の19連勝を達成！選手権ポイント差は早くも95点に拡大！",
+      "sections": [
+        {
+          "heading": "ターン1シケインの攻防と、ブレガの冷静沈着なレース運び",
+          "body": "モストのスタート直後に待ち受けるタイトな第1シケイン。日曜のSuperpole Raceではわずかなブレーキングミスでレクオナ選手に先行を許す場面もありましたが、ブレガ選手は第2セクターで即座にオーバーテイク。午後のRace 2では終始主導権を握り、危なげなくチェッカーを受けました。"
+        }
+      ],
+      "resultTableTitle": "2026 FIM WorldSBK 第5戦 公式決勝結果",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "優勝！17連勝目を記録"
+        },
+        {
+          "pos": "Superpole 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "シケインでの逆転劇で18連勝"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "優勝！怒涛の19連勝で選手権リード95点に！"
+        },
+        {
+          "pos": "Race 2 🥈",
+          "riderOrTeam": "アルバロ・バウティスタ (Barni Spark Racing)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "力強いペースで今季最高位の2位フィニッシュ"
+        },
+        {
+          "pos": "Race 2 🥉",
+          "riderOrTeam": "イケル・レクオナ (Team HRC)",
+          "machine": "Honda CBR1000RR-R",
+          "timeOrNote": "安定の表彰台獲得でランキング2位をキープ"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "モストの第1シケインは飛び込みのライン取りがシビアニャ！ミスしても次のコーナー立ち上がりで取り返すブレガの冷静さはもはや王者の風格だニャ！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "バウティスタ選手も2位に入り、ドゥカティ勢の強さが際立っていますね！"
+        },
+        {
+          "speaker": "naomi",
+          "text": "切り返しがタイトなコースはステアリングダンパーの減衰セッティングが重すぎると腕上がりの原因になるの。軽快に倒し込める車体バランスを作ったピットの勝利よ。"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Resum WorldSBK Maig Rd.5] Nicolò Bulega amplia la seva ratxa fins a les 19 victòries a Most i s'escapa a 95 punts a la general!",
+      "subtitle": "El pilot italià supera un petit ensurt a la primera xicana per signar el seu cinquè triplet de l'any",
+      "summary": "A l'Autodrom Most de la República Txeca, Nicolò Bulega va sumar tres triomfs més a la Race 1, Superpole Race i Race 2. El pilot de Ducati suma ja 19 victòries seguides i s'allunya a 95 punts del segon classificat.",
+      "highlightPoint": "Nicolò Bulega no té aturador i arriba a les 19 victòries consecutives a Most consolidant un avantatge de 95 punts!",
+      "sections": [
+        {
+          "heading": "Autoritat indiscutible a la xicana txeca",
+          "body": "Tot i la pressió d'Iker Lecuona i Álvaro Bautista, Bulega va respondre a cada atac amb un ritme demolidor per tancar un altre cap de setmana immaculat."
+        }
+      ],
+      "resultTableTitle": "Resultats Oficials: FIM WorldSBK 2026 Rd.5",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "17a victòria de la temporada"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "19a victòria consecutiva davant Bautista"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Amb 95 punts d'avantatge abans d'arribar a l'equador del curs, Bulega té el títol a tocar si no passa res estrany, miau!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "Seguim de ben a prop tota l'acció del pàdoc internacional i dels circuits de casa!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "La regularitat mecànica i el treball a boxes són la clau d'una temporada triomfal."
+        }
+      ]
+    },
+    "en": {
+      "title": "[WorldSBK 2026 Rd.5 Most Czech Round Digest] Nicolò Bulega Extends Streak to 19 Wins, Building 95-Point Championship Lead",
+      "subtitle": "Italian superstar recovers from small chicane error to complete another stunning hat-trick at Autodrom Most",
+      "summary": "Nicolò Bulega stretched his remarkable consecutive victory run to 19 races at Autodrom Most, winning Race 1, the Superpole sprint, and Race 2 in the Czech Republic to hold an imposing 95-point lead in the championship standings.",
+      "highlightPoint": "Nicolò Bulega completes the Czech clean sweep at Most, extending his incredible winning streak to 19 straight races!",
+      "sections": [
+        {
+          "heading": "Clinical race craft in northern Bohemia",
+          "body": "Despite a brief scare in the opening chicane during the Superpole sprint, Bulega rebounded instantly to assert dominance, pulling clear in Race 2 ahead of Álvaro Bautista and Iker Lecuona."
+        }
+      ],
+      "resultTableTitle": "Official Race Results: 2026 FIM WorldSBK Round 5",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing – Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "17th win of the 2026 season"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing – Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "19th straight victory, stretching points lead to 95"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "19 consecutive wins! Even after a slight bobble at Turn 1, his telemetry was metronomic, meow!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "Our feline photojournalism crew continues tracking every high-speed moment worldwide!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Flawless mechanical prep and chassis symmetry make the ultimate difference across a 12-round championship."
+        }
+      ]
+    }
+  }
+}

@@ -5,7 +5,8 @@ import { ALL_CATEGORIES, getArticlesByCategory, type ArticleCategory, type Artic
 import { UI_TEXT } from '../../../data/i18n';
 
 export function getStaticPaths() {
-  return ALL_CATEGORIES.map((category) => {
+  const categoriesToGenerate = [...ALL_CATEGORIES, 'world' as ArticleCategory];
+  return categoriesToGenerate.map((category) => {
     const categoryArticles = getArticlesByCategory(category);
     return {
       params: { category },

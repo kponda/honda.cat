@@ -74,7 +74,7 @@ export interface ArticleData {
   id: string;
   slug: string;
   publishedAt: string;
-  category: 'world' | 'kyushu' | 'endurance-fun' | 'all-japan' | 'spotlight' | 'maintenance';
+  category: 'motogp' | 'sbk' | 'world' | 'kyushu' | 'endurance-fun' | 'all-japan' | 'spotlight' | 'maintenance';
   articleType: 'preview' | 'digest' | 'spotlight' | 'maintenance';
   circuit: string;
   region: string;
@@ -93,10 +93,11 @@ export interface ArticleData {
 
 const articleModules = import.meta.glob('./articles/*.json', { eager: true });
 
-export type ArticleCategory = 'world' | 'kyushu' | 'endurance-fun' | 'all-japan' | 'spotlight' | 'maintenance';
+export type ArticleCategory = 'motogp' | 'sbk' | 'world' | 'kyushu' | 'endurance-fun' | 'all-japan' | 'spotlight' | 'maintenance';
 
 export const ALL_CATEGORIES: ArticleCategory[] = [
-  'world',
+  'motogp',
+  'sbk',
   'kyushu',
   'endurance-fun',
   'all-japan',
@@ -110,6 +111,9 @@ export function getAllArticles(): ArticleData[] {
 }
 
 export function getArticlesByCategory(category: string): ArticleData[] {
+  if (category === 'world') {
+    return getAllArticles().filter((a) => a.category === 'motogp' || a.category === 'sbk' || (a.category as string) === 'world');
+  }
   return getAllArticles().filter((a) => a.category === category);
 }
 

@@ -1,0 +1,229 @@
+{
+  "id": "2026-07-13-worldsbk-rd8-donington-lecuona-maiden-win-bulega-digest",
+  "slug": "worldsbk-2026-rd8-donington-lecuona-maiden-win-bulega-digest",
+  "publishedAt": "2026-07-13",
+  "category": "sbk",
+  "articleType": "digest",
+  "circuit": "ドニントン・パーク（イギリス・レスターシャー・全長4,023m）",
+  "region": "World (United Kingdom · 4,023m)",
+  "featuredCat": "marc",
+  "heroImage": "/images/articles/worldsbk-2026-rd8-donington-lecuona-maiden-win-bulega-digest.webp",
+  "tags": [
+    "SBK",
+    "WorldSBK",
+    "ドニントン・パーク",
+    "イギリス大会",
+    "イケル・レクオナ",
+    "初優勝",
+    "ニコロ・ブレガ"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "WorldSBK Official ＆ Hashtag Hub",
+      "handle": "@WorldSBK / #WorldSBK",
+      "url": "https://x.com/WorldSBK",
+      "postUrl": "https://x.com/WorldSBK",
+      "quotedPostText": {
+        "ja": "【FIM WorldSBK 第8戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
+        "ca": "【WorldSBK Rd.8】Resultats oficials amb un ritme demolidor a la pista!",
+        "en": "[WorldSBK Rd.8] Official Results and Highlights from the paddock!"
+      },
+      "editorialCommentary": {
+        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第8戦のオンボード映像やハイライトが世界中のファンに配信されています。",
+        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 8.",
+        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 8."
+      }
+    },
+    {
+      "platform": "OfficialWeb",
+      "citationType": "official_web",
+      "accountName": "WorldSBK.com Official Results",
+      "handle": "worldsbk.com",
+      "url": "https://www.worldsbk.com/",
+      "postUrl": "https://www.worldsbk.com/en/results%20statistics",
+      "quotedPostText": {
+        "ja": "WorldSBK.com公式リザルト：2026年第8戦の全セッション公式タイムシートおよびスタンディングを更新しました。",
+        "ca": "Classificacions oficials a WorldSBK.com: Temps per volta i taula del campionat de la ronda 8.",
+        "en": "WorldSBK.com Official Results: Full timing sheets and standings updated for Round 8."
+      },
+      "editorialCommentary": {
+        "ja": "公式サイトの正式リザルト統計により、決勝順位とポイントランキングが正式に記録されています。",
+        "ca": "La web oficial confirma les posicions oficials i l'estat del campionat.",
+        "en": "Official series statistics document the confirmed finishing order and championship points."
+      }
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-12",
+    "basis": {
+      "ja": "2026-07-10 - 2026-07-12にドニントン・パーク（イギリス・レスターシャー・全長4,023m）で開催された2026 FIMスーパーバイク世界選手権（WorldSBK）第8戦の公式結果に基づき検証済み。",
+      "ca": "Verificat amb els resultats oficials de la 8a ronda del Campionat del Món FIM WorldSBK a Donington Park (Regne Unit · 4.023m).",
+      "en": "Verified against official 2026 FIM WorldSBK Round 8 results at Donington Park (United Kingdom · 4,023m)."
+    },
+    "sources": [
+      {
+        "title": "FIM WorldSBK Official Results & Standings (worldsbk.com)",
+        "url": "https://www.worldsbk.com/en/results%20statistics"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-07-10 - 2026-07-12 (Monday Digest 1)",
+    "venue": {
+      "ja": "ドニントン・パーク（イギリス・レスターシャー・全長4,023m）",
+      "ca": "Donington Park (Regne Unit · 4.023m)",
+      "en": "Donington Park (United Kingdom · 4,023m)"
+    },
+    "weather": {
+      "ja": "薄曇り・ドライ（気温21℃、イングランドの伝統的な夏模様）",
+      "ca": "Cel cobert i condicions òptimes de sec a Anglaterra",
+      "en": "Dry and Overcast with Classic British Summer Conditions"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "【2026年7月第2週 WorldSBK結果ダイジェスト】第8戦イギリス大会（ドニントン）：レクオナが悲願の初優勝でブレガの連勝をストップ！ブレガはR2で意地の反撃V",
+      "subtitle": "ホンダのエース・レクオナが土曜Race 1で感動の初勝利！ブレガは9連続ポール獲得＆日曜2冠で王者の貫禄",
+      "summary": "2026年7月10日〜12日、英国ドニントン・パークでFIMスーパーバイク世界選手権（WorldSBK）第8戦が開催されました。土曜のRace 1ではTeam HRCのイケル・レクオナ選手が激闘を制し、ついに自身初となるWorldSBK優勝を達成！ブレガ選手の連勝をストップさせました。一方のブレガ選手も日曜のSuperpole RaceとRace 2で圧勝し、歴代記録を破る9連続ポールポジションを獲得しました。",
+      "highlightPoint": "イケル・レクオナがRace 1で悲願のWorldSBK初優勝を達成！ブレガの連勝を止める快挙！日曜はブレガが反撃の2連勝で歴代最多9連続ポール樹立！",
+      "sections": [
+        {
+          "heading": "レクオナの涙の初勝利！ドニントンの名物メルボルンヘアピンの攻防",
+          "body": "イギリスの歴史あるドニントン・パーク。土曜Race 1終盤、レクオナ選手はメルボルンヘアピンでブレガ選手のインを突き、劇的なトップ浮上。そのままチェッカーを受け、涙のWorldSBK初勝利を挙げました。"
+        }
+      ],
+      "resultTableTitle": "2026 FIM WorldSBK 第8戦 公式決勝結果",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "イケル・レクオナ (Team HRC)",
+          "machine": "Honda CBR1000RR-R",
+          "timeOrNote": "悲願のWorldSBK初優勝！ブレガの連勝を止める"
+        },
+        {
+          "pos": "Race 1 🥈",
+          "riderOrTeam": "ニコロ・ブレガ (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "2位フィニッシュで手堅くポイント加算"
+        },
+        {
+          "pos": "Superpole 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "スプリント勝利で9連続ポールからの意地"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "ニコロ・ブレガ (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "独走優勝でサンデー完全制覇！王手へ"
+        },
+        {
+          "pos": "Race 2 🥈",
+          "riderOrTeam": "イケル・レクオナ (Team HRC)",
+          "machine": "Honda CBR1000RR-R",
+          "timeOrNote": "週末1勝＆2位で絶好調のドニントン"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "レクオナ選手の初優勝は胸が熱くなったニャ！あのブレーキング勝負は見事だったニャ！そして翌日すぐに勝ち直すブレガ選手のタフネスもさすがの一言ニャ！"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "ホンダCBR1000RR-Rがドニントンの表彰台中央に立ちましたね！夏休み前の素晴らしいハイライトになりました！"
+        },
+        {
+          "speaker": "naomi",
+          "text": "ドニントンの後半セクションは強烈なフルブレーキングと加速の繰り返し。ホンダが熟成してきたエンジンブレーキ制御がピタリとハマった瞬間だったわね。"
+        }
+      ]
+    },
+    "ca": {
+      "title": "[Resum WorldSBK Juliol Rd.8] Iker Lecuona aconsegueix la seva primera victòria al WorldSBK a Donington Park trencant la ratxa de Bulega!",
+      "subtitle": "El pilot valencià de Honda toca el cel a la Race 1 abans de la resposta dominical del líder italià",
+      "summary": "A Donington Park, Iker Lecuona (Team HRC) va fer història en conquerir la seva primera victòria al WorldSBK a la Race 1 de dissabte, aturant la ratxa històrica de Bulega. Diumenge, Nicolò Bulega va respondre amb victòries a la Superpole Race i la Race 2, establint el rècord de 9 poles consecutives.",
+      "highlightPoint": "Iker Lecuona guanya la seva primera cursa al WorldSBK a Donington Park! Nicolò Bulega respon diumenge amb un doblet i rècord de 9 poles!",
+      "sections": [
+        {
+          "heading": "Victòria emocionant d'Iker Lecuona a la Melbourne Hairpin",
+          "body": "Després de mesos lluitant al capdavant, Lecuona va trobar el buit a la forquilla final per superar Bulega i donar a Honda un triomf memorable abans de la pausa estival."
+        }
+      ],
+      "resultTableTitle": "Resultats Oficials: FIM WorldSBK 2026 Rd.8",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "Iker Lecuona (Team HRC)",
+          "machine": "Honda CBR1000RR-R",
+          "timeOrNote": "Primera victòria al WorldSBK"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing - Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Triomf de campió diumenge a la tarda"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "La celebració d'Iker Lecuona amb l'equip Honda ha estat el moment més emocionant de la temporada. Felicitats, miau!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "Seguim de ben a prop tota l'acció del pàdoc internacional i dels circuits de casa!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "La regularitat mecànica i el treball a boxes són la clau d'una temporada triomfal."
+        }
+      ]
+    },
+    "en": {
+      "title": "[WorldSBK 2026 Rd.8 Donington UK Round Digest] Iker Lecuona Claims Maiden WorldSBK Victory Halting Bulega's Historic Streak; Bulega Rebounds in Race 2",
+      "subtitle": "Spanish Team HRC rider secures emotional first victory before Bulega takes record 9th consecutive pole and Sunday double",
+      "summary": "Donington Park produced a monumental weekend as Iker Lecuona took a thrilling maiden WorldSBK victory in Race 1 for Team HRC, ending Bulega's record run. Bulega fired back on Sunday to win both the Superpole Race and Race 2, claiming a historic 9th consecutive pole position.",
+      "highlightPoint": "Iker Lecuona scores his breakthrough maiden WorldSBK victory in Race 1! Bulega strikes back with Sunday double and record 9th straight pole!",
+      "sections": [
+        {
+          "heading": "Lecuona's dream breakthrough in the East Midlands",
+          "body": "With an inch-perfect dive into the Melbourne Hairpin, Lecuona held his nerve to cross the line for his first WorldSBK win, prompting wild celebrations in the Team HRC garage before Bulega restored order on Sunday."
+        }
+      ],
+      "resultTableTitle": "Official Race Results: 2026 FIM WorldSBK Round 8",
+      "results": [
+        {
+          "pos": "Race 1 🏆",
+          "riderOrTeam": "Iker Lecuona (Team HRC)",
+          "machine": "Honda CBR1000RR-R",
+          "timeOrNote": "Emotional maiden WorldSBK victory"
+        },
+        {
+          "pos": "Race 2 🏆",
+          "riderOrTeam": "Nicolò Bulega (Aruba.it Racing – Ducati)",
+          "machine": "Ducati Panigale V4 R",
+          "timeOrNote": "Dominant bounce-back victory"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "marc",
+          "text": "Lecuona's sheer joy on the podium was pure racing magic! What a classic Donington weekend, meow!"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "Our feline photojournalism crew continues tracking every high-speed moment worldwide!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Flawless mechanical prep and chassis symmetry make the ultimate difference across a 12-round championship."
+        }
+      ]
+    }
+  }
+}

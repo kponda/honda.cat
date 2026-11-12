@@ -4,6 +4,76 @@
   "collectionMethod": "Weekly Official Calendar Database Sync (Dec–Feb Off-Season Full-Year Ingestion + Weekly Differential Check)",
   "events": [
     {
+      "id": "2026-02-20-worldsbk-phillip-island-australian-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第1戦",
+      "startDate": "2026-02-20",
+      "endDate": "2026-02-22",
+      "circuit": {
+        "ja": "フィリップ・アイランド・サーキット（オーストラリア・全長4,448m）",
+        "ca": "Phillip Island Grand Prix Circuit (Austràlia · 4.448m)",
+        "en": "Phillip Island Grand Prix Circuit (Australia · 4,448m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第1戦 フィリップ・アイランド・サーキット",
+        "ca": "FIM WorldSBK 2026 Rd.1 Phillip Island Grand Prix Circuit",
+        "en": "2026 FIM WorldSBK Rd.1 Phillip Island Grand Prix Circuit"
+      },
+      "scheduleWindow": {
+        "ja": "2026-02-20 - 2026-02-22 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-02-20 - 2026-02-22 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-02-20 - 2026-02-22 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-02-23-worldsbk-rd1-phillip-island-bulega-sweep-digest",
+        "lastCheckedAt": "2026-02-23T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-03-27-worldsbk-portimao-portuguese-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第2戦",
+      "startDate": "2026-03-27",
+      "endDate": "2026-03-29",
+      "circuit": {
+        "ja": "アウトードロモ・インテルナシオナル・ド・アルガルヴェ（ポルトガル・ポルティマオ・全長4,592m）",
+        "ca": "Autódromo Internacional do Algarve (Portimão · 4.592m)",
+        "en": "Autódromo Internacional do Algarve (Portimão · 4,592m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第2戦 アウトードロモ・インテルナシオナル・ド・アルガルヴェ",
+        "ca": "FIM WorldSBK 2026 Rd.2 Autódromo Internacional do Algarve",
+        "en": "2026 FIM WorldSBK Rd.2 Autódromo Internacional do Algarve"
+      },
+      "scheduleWindow": {
+        "ja": "2026-03-27 - 2026-03-29 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-03-27 - 2026-03-29 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-03-27 - 2026-03-29 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-03-30-worldsbk-rd2-portimao-bulega-lecuona-digest",
+        "lastCheckedAt": "2026-03-30T09:00:00+09:00"
+      }
+    },
+    {
       "id": "2026-04-04-mfj-rd1-motegi-2and4",
       "scope": "japan",
       "category": "all-japan",
@@ -76,7 +146,7 @@
     {
       "id": "2026-04-17-worldsbk-assen-dutch-round",
       "scope": "world",
-      "category": "world",
+      "category": "sbk",
       "series": "FIM WorldSBK スーパーバイク世界選手権 第3戦 オランダ大会",
       "startDate": "2026-04-17",
       "endDate": "2026-04-19",
@@ -176,6 +246,41 @@
         "resultStatus": "published_monday",
         "resultArticleId": "2026-04-27-mfj-rd2-sugo-and-suzuka-sunday-digest",
         "lastCheckedAt": "2026-04-27T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-05-01-worldsbk-balaton-park-hungarian-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第4戦",
+      "startDate": "2026-05-01",
+      "endDate": "2026-05-03",
+      "circuit": {
+        "ja": "バラトン・パーク・サーキット（ハンガリー・全長4,115m）",
+        "ca": "Balaton Park Circuit (Hongria · 4.115m)",
+        "en": "Balaton Park Circuit (Hungary · 4,115m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第4戦 バラトン・パーク・サーキット",
+        "ca": "FIM WorldSBK 2026 Rd.4 Balaton Park Circuit",
+        "en": "2026 FIM WorldSBK Rd.4 Balaton Park Circuit"
+      },
+      "scheduleWindow": {
+        "ja": "2026-05-01 - 2026-05-03 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-05-01 - 2026-05-03 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-05-01 - 2026-05-03 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-05-04-worldsbk-rd4-balaton-park-bulega-record12wins-digest",
+        "lastCheckedAt": "2026-05-04T09:00:00+09:00"
       }
     },
     {
@@ -319,6 +424,41 @@
       }
     },
     {
+      "id": "2026-05-15-worldsbk-most-czech-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第5戦",
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-17",
+      "circuit": {
+        "ja": "アウトードロモ・モスト（チェコ・全長4,212m）",
+        "ca": "Autodrom Most (República Txeca · 4.212m)",
+        "en": "Autodrom Most (Czech Republic · 4,212m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第5戦 アウトードロモ・モスト",
+        "ca": "FIM WorldSBK 2026 Rd.5 Autodrom Most",
+        "en": "2026 FIM WorldSBK Rd.5 Autodrom Most"
+      },
+      "scheduleWindow": {
+        "ja": "2026-05-15 - 2026-05-17 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-05-15 - 2026-05-17 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-05-15 - 2026-05-17 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-05-18-worldsbk-rd5-most-bulega-streak-czech-digest",
+        "lastCheckedAt": "2026-05-18T09:00:00+09:00"
+      }
+    },
+    {
       "id": "2026-05-17-brows-odai-r2-nakakyushu",
       "scope": "japan",
       "category": "endurance-fun",
@@ -420,6 +560,41 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-01-motogp-rd7-mugello-bezzecchi-raul-fernandez-digest",
+        "lastCheckedAt": "2026-06-01T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-05-29-worldsbk-aragon-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第6戦",
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-31",
+      "circuit": {
+        "ja": "モーターランド・アラゴン（スペイン・アルカニス・全長5,077m）",
+        "ca": "MotorLand Aragón (Alcañiz · 5.077m)",
+        "en": "MotorLand Aragón (Spain · 5,077m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第6戦 モーターランド・アラゴン",
+        "ca": "FIM WorldSBK 2026 Rd.6 MotorLand Aragón",
+        "en": "2026 FIM WorldSBK Rd.6 MotorLand Aragón"
+      },
+      "scheduleWindow": {
+        "ja": "2026-05-29 - 2026-05-31 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-05-29 - 2026-05-31 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-05-29 - 2026-05-31 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-06-01-worldsbk-rd6-aragon-bulega-hattrick-digest",
         "lastCheckedAt": "2026-06-01T09:00:00+09:00"
       }
     },
@@ -531,8 +706,8 @@
     {
       "id": "2026-06-12-worldsbk-misano-emilia-romagna",
       "scope": "world",
-      "category": "world",
-      "series": "FIM WorldSBK スーパーバイク世界選手権 第6戦 エミリア・ロマーニャ大会（ミサノ）",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第7戦 エミリア・ロマーニャ大会（ミサノ）",
       "startDate": "2026-06-12",
       "endDate": "2026-06-14",
       "circuit": {
@@ -739,6 +914,41 @@
       }
     },
     {
+      "id": "2026-07-10-worldsbk-donington-uk-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第8戦",
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-12",
+      "circuit": {
+        "ja": "ドニントン・パーク（イギリス・レスターシャー・全長4,023m）",
+        "ca": "Donington Park (Regne Unit · 4.023m)",
+        "en": "Donington Park (United Kingdom · 4,023m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第8戦 ドニントン・パーク",
+        "ca": "FIM WorldSBK 2026 Rd.8 Donington Park",
+        "en": "2026 FIM WorldSBK Rd.8 Donington Park"
+      },
+      "scheduleWindow": {
+        "ja": "2026-07-10 - 2026-07-12 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-07-10 - 2026-07-12 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-07-10 - 2026-07-12 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-07-13-worldsbk-rd8-donington-lecuona-maiden-win-bulega-digest",
+        "lastCheckedAt": "2026-07-13T09:00:00+09:00"
+      }
+    },
+    {
       "id": "2026-07-12-hsr-kyushu-trophy-rd3-summer",
       "scope": "japan",
       "category": "kyushu",
@@ -914,6 +1124,41 @@
       }
     },
     {
+      "id": "2026-09-04-worldsbk-magny-cours-french-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第9戦",
+      "startDate": "2026-09-04",
+      "endDate": "2026-09-06",
+      "circuit": {
+        "ja": "シルキュイ・ド・ヌヴェール・マニクール（フランス・全長4,411m）",
+        "ca": "Circuit de Nevers Magny-Cours (França · 4.411m)",
+        "en": "Circuit de Nevers Magny-Cours (France · 4,411m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第9戦 シルキュイ・ド・ヌヴェール・マニクール",
+        "ca": "FIM WorldSBK 2026 Rd.9 Circuit de Nevers Magny-Cours",
+        "en": "2026 FIM WorldSBK Rd.9 Circuit de Nevers Magny-Cours"
+      },
+      "scheduleWindow": {
+        "ja": "2026-09-04 - 2026-09-06 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-09-04 - 2026-09-06 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-09-04 - 2026-09-06 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-09-07-worldsbk-rd9-magny-cours-bulega-10th-pole-treble-digest",
+        "lastCheckedAt": "2026-09-07T09:00:00+09:00"
+      }
+    },
+    {
       "id": "2026-09-05-polispa-rd3-spa-naoiri-and-hsr-dreamcup-4h",
       "scope": "japan",
       "category": "kyushu",
@@ -1051,6 +1296,41 @@
         "resultStatus": "published_monday",
         "resultArticleId": "2026-09-21-hsr-kyushu-tetsuma-kessen-no-hi-september-digest",
         "lastCheckedAt": "2026-09-21T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-09-25-worldsbk-cremona-italian-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第10戦",
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-27",
+      "circuit": {
+        "ja": "クレモナ・サーキット（イタリア・サン・マルティーノ・デル・ラーゴ・全長3,768m）",
+        "ca": "Cremona Circuit (Itàlia · 3.768m)",
+        "en": "Cremona Circuit (Italy · 3,768m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第10戦 クレモナ・サーキット",
+        "ca": "FIM WorldSBK 2026 Rd.10 Cremona Circuit",
+        "en": "2026 FIM WorldSBK Rd.10 Cremona Circuit"
+      },
+      "scheduleWindow": {
+        "ja": "2026-09-25 - 2026-09-27 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-09-25 - 2026-09-27 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-09-25 - 2026-09-27 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-09-28-worldsbk-rd10-cremona-bulega-champion-lecuona-win-digest",
+        "lastCheckedAt": "2026-09-28T09:00:00+09:00"
       }
     },
     {
@@ -1194,6 +1474,41 @@
       }
     },
     {
+      "id": "2026-10-09-worldsbk-estoril-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第11戦",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-11",
+      "circuit": {
+        "ja": "シルキュイト・ド・エストリル（ポルトガル・カシュカイシュ・全長4,182m）",
+        "ca": "Circuito do Estoril (Portugal · 4.182m)",
+        "en": "Circuito do Estoril (Portugal · 4,182m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第11戦 シルキュイト・ド・エストリル",
+        "ca": "FIM WorldSBK 2026 Rd.11 Circuito do Estoril",
+        "en": "2026 FIM WorldSBK Rd.11 Circuito do Estoril"
+      },
+      "scheduleWindow": {
+        "ja": "2026-10-09 - 2026-10-11 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-10-09 - 2026-10-11 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-10-09 - 2026-10-11 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-10-12-worldsbk-rd11-estoril-bulega-record-points-hattrick-digest",
+        "lastCheckedAt": "2026-10-12T09:00:00+09:00"
+      }
+    },
+    {
       "id": "2026-10-11-brows-odai-r3-sonic-park-ajimu",
       "scope": "japan",
       "category": "endurance-fun",
@@ -1226,6 +1541,41 @@
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-12-kyushu-brows-odai-r3-sonic-park-ajimu-finale-digest",
         "lastCheckedAt": "2026-10-12T09:00:00+09:00"
+      }
+    },
+    {
+      "id": "2026-10-16-worldsbk-jerez-spanish-round",
+      "scope": "world",
+      "category": "sbk",
+      "series": "FIM WorldSBK スーパーバイク世界選手権 第12戦",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-18",
+      "circuit": {
+        "ja": "シルクイート・デ・ヘレス・アンヘル・ニエト（スペイン・ヘレス・全長4,423m）",
+        "ca": "Circuito de Jerez-Ángel Nieto (Espanya · 4.423m)",
+        "en": "Circuito de Jerez-Ángel Nieto (Spain · 4,423m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM WorldSBK 第12戦 シルクイート・デ・ヘレス・アンヘル・ニエト",
+        "ca": "FIM WorldSBK 2026 Rd.12 Circuito de Jerez-Ángel Nieto",
+        "en": "2026 FIM WorldSBK Rd.12 Circuito de Jerez-Ángel Nieto"
+      },
+      "scheduleWindow": {
+        "ja": "2026-10-16 - 2026-10-18 Race 1 / Superpole Race / Race 2",
+        "ca": "2026-10-16 - 2026-10-18 (Race 1, Superpole Race i Race 2)",
+        "en": "2026-10-16 - 2026-10-18 (Race 1, Superpole Race & Race 2)"
+      },
+      "classes": "WorldSBK / WorldSSP / WorldSSP300",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.worldsbk.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-10-19-worldsbk-rd12-jerez-finale-bulega-32wins-wet-digest",
+        "lastCheckedAt": "2026-10-19T09:00:00+09:00"
       }
     },
     {

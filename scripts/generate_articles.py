@@ -202,6 +202,8 @@ ARTICLE_JSON_SCHEMA: dict[str, Any] = {
         "category": {
             "type": "string",
             "enum": [
+                "motogp",
+                "sbk",
                 "world",
                 "kyushu",
                 "endurance-fun",
@@ -505,6 +507,10 @@ def extract_relevant_sources(prompt_context: str, all_sources: list[dict[str, An
         if any(w in lower_ctx for w in ["お題", "ブラウズ", "brow", "安心院", "ソニックパーク", "中九州", "草耐久", "草レース"]) and sid == "brows-odai-endurance":
             matched.append(src)
         if any(w in lower_ctx for w in ["レン耐", "rentai", "青木拓磨"]) and sid == "takuma-gp-rentai":
+            matched.append(src)
+
+        # Webike Event NAVI / Grassroots / Endurance Series
+        if any(w in lower_ctx for w in ["webike", "ウェビック", "地方選", "走行会", "草耐久", "4耐", "6耐", "エンジョイ", "saga cup", "明智"]) and sid == "webike-event-navi-race":
             matched.append(src)
 
     # De-duplicate while preserving order
@@ -1272,29 +1278,186 @@ def update_hero_images_for_existing(
     return 0
 
 
+PUBLIC_DIR = Path(__file__).resolve().parent.parent / "public"
+
+OFFICIAL_ALLOWED_DOMAINS = [
+    # World Championships
+    "motogp.com",
+    "worldsbk.com",
+    "fimewc.com",
+    # World Circuit Hosts
+    "circuitcat.com",
+    "circuitvalencia.com",
+    "autodromodoalgarve.com",
+    "circuitodejerez.com",
+    "gpfrancemoto.com",
+    "mugellocircuit.com",
+    "misanocircuit.com",
+    "automotodrombrno.cz",
+    "ttcircuit.com",
+    "adac-motorsport.de",
+    "silverstone.co.uk",
+    "motorlandaragon.com",
+    "redbullring.com",
+    "themandalikagp.com",
+    "phillipislandcircuit.com.au",
+    "sepangcircuit.com",
+    "lcsc.qa",
+    # Japanese Sanctioning & All-Japan
+    "mfj.or.jp",
+    "superbike.jp",
+    # Nationwide Japanese Major Circuits
+    "suzukacircuit.jp",
+    "mr-motegi.jp",
+    "tsukuba-circuit.jp",
+    "sportsland-sugo.co.jp",
+    "okayama-international-circuit.jp",
+    "fsw.tv",
+    "tokachi.msf.ne.jp",
+    # Kyushu Circuits & Grassroots Endurance
+    "autopolis.jp",
+    "spa-naoiri.com",
+    "hsr.jp",
+    "tetsuma.jp",
+    "brow-s.jp",
+    "takuma-gp.com",
+    "sonicpark.jp",
+    # Official Motorcycle Event Navis & Portals
+    "event.webike.net",
+    "webike.net",
+    # Official Technical Standards & Parts Manufacturers (Maintenance Series)
+    "jisc.go.jp",
+    "iso.org",
+    "ecfr.gov",
+    "did-daido.co.jp",
+    "dunlop.co.jp",
+    "bridgestone.co.jp",
+    "honda.co.jp",
+    "global.honda",
+    "kyototool.co.jp",
+    "yamaha-motor.co.jp",
+    "suzuki.co.jp",
+    "kawasaki-motors.com",
+    # Official Platforms & Social Media
+    "x.com",
+    "twitter.com",
+    "youtube.com",
+    "youtu.be",
+    "instagram.com",
+    "facebook.com",
+]
+
+
+def is_allowed_domain(url: str) -> bool:
+    """Validate that the URL belongs to an allowed official or social media domain."""
+    if not url:
+        return False
+    match = re.search(r"^https?://([^/:]+)", url.strip(), re.IGNORECASE)
+    if not match:
+        return False
+    host = match.group(1).lower()
+    return any(host == d or host.endswith("." + d) for d in OFFICIAL_ALLOWED_DOMAINS)
+
+
 def validate_existing_articles() -> int:
+    """Strict Deterministic Fact & Integrity Gatekeeper for Honda.cat Articles."""
     existing = sorted(ARTICLES_DIR.glob("*.json"))
-    print(f"🔍 Auditing {len(existing)} trilingual articles in {ARTICLES_DIR} for fact-check compliance...")
+    print(f"🔍 Running Deterministic Fact & Integrity Audit on {len(existing)} articles in {ARTICLES_DIR}...")
+    
+    # Load schedules for cross-referencing event IDs
+    schedule_events: set[str] = set()
+    if SCHEDULES_JSON_PATH.exists():
+        try:
+            schedules_data = json.loads(SCHEDULES_JSON_PATH.read_text(encoding="utf-8"))
+            schedule_events = {ev["id"] for ev in schedules_data.get("events", []) if "id" in ev}
+        except Exception:
+            schedule_events = set()
+
+    errors: list[str] = []
+
     for path in existing:
-        doc = json.loads(path.read_text(encoding="utf-8"))
+        fname = path.name
+        try:
+            doc = json.loads(path.read_text(encoding="utf-8"))
+        except Exception as exc:
+            errors.append(f"[{fname}] Invalid JSON syntax: {exc}")
+            continue
+
+        # 1. ID matches filename
+        doc_id = doc.get("id", "")
+        if doc_id != path.stem:
+            errors.append(f"[{fname}] ID mismatch: `id` is '{doc_id}' but filename is '{path.stem}'")
+
+        # 2. Schedule Event ID cross-reference
+        sched_ids = doc.get("scheduleEventIds", [])
+        if sched_ids and schedule_events:
+            for sid in sched_ids:
+                if sid not in schedule_events:
+                    errors.append(f"[{fname}] Referencing non-existent scheduleEventId `{sid}` in schedules.json")
+
+        # 3. FactCheck completeness & Domain verification
         fc = doc.get("factCheck", {})
+        if not fc.get("verified"):
+            errors.append(f"[{fname}] `factCheck.verified` is not True")
+        sources = fc.get("sources", [])
+        if not sources or not isinstance(sources, list):
+            errors.append(f"[{fname}] `factCheck.sources` is missing or empty")
+        else:
+            for s_item in sources:
+                s_url = s_item if isinstance(s_item, str) else s_item.get("url", "")
+                if not s_url or not is_allowed_domain(s_url):
+                    errors.append(f"[{fname}] factCheck source URL `{s_url}` is not in OFFICIAL_ALLOWED_DOMAINS")
+
+        basis = fc.get("basis", {})
+        if not isinstance(basis, dict) or not all(basis.get(l) for l in ["ja", "ca", "en"]):
+            errors.append(f"[{fname}] `factCheck.basis` is missing trilingual explanation (ja, ca, en)")
+
+        # 4. SNS Citations verification
         sns_cites = doc.get("snsCitations", [])
-        if not fc.get("verified") or not fc.get("sources"):
-            print(f"❌ FAIL: {path.name} is missing verified `factCheck` metadata or `sources`!")
-            return 1
-        if not sns_cites:
-            print(f"❌ FAIL: {path.name} is missing `snsCitations` for rich official SNS post commentary!")
-            return 1
+        if not sns_cites or not isinstance(sns_cites, list):
+            errors.append(f"[{fname}] `snsCitations` is missing or empty")
+        else:
+            for idx, cite in enumerate(sns_cites, start=1):
+                post_url = cite.get("postUrl") or cite.get("url", "")
+                if post_url and not is_allowed_domain(post_url):
+                    errors.append(f"[{fname}] snsCitation #{idx} postUrl `{post_url}` is not in OFFICIAL_ALLOWED_DOMAINS")
+
+        # 5. Hero Image Physical Existence
         hero_img = doc.get("heroImage", "")
         if not hero_img:
-            print(f"❌ FAIL: {path.name} is missing `heroImage`!")
-            return 1
-        langs = list(doc.get("locales", {}).keys())
+            errors.append(f"[{fname}] Missing `heroImage` property")
+        else:
+            # Strip leading slash to check against public/
+            rel_path = hero_img.lstrip("/")
+            physical_file = PUBLIC_DIR / rel_path
+            if not physical_file.exists():
+                errors.append(f"[{fname}] heroImage `{hero_img}` does not exist on disk at {physical_file}")
+
+        # 6. Trilingual Locales Completeness
+        locales = doc.get("locales", {})
+        for lang in ["ja", "ca", "en"]:
+            loc_data = locales.get(lang, {})
+            if not loc_data:
+                errors.append(f"[{fname}] Missing locale data for language `{lang}`")
+            else:
+                for req_key in ["title", "subtitle", "summary", "sections", "catDialogues"]:
+                    if not loc_data.get(req_key):
+                        errors.append(f"[{fname}] Locale `{lang}` is missing or has empty `{req_key}`")
+
+        langs = list(locales.keys())
         print(
-            f"   ✅ {path.name} | category={doc.get('category')} | "
-            f"type={doc.get('articleType')} | hero={hero_img} | snsCitations={len(sns_cites)} | sources={len(fc.get('sources', []))} | langs={langs}"
+            f"   ✅ {fname} | category={doc.get('category')} | "
+            f"type={doc.get('articleType')} | hero={hero_img} | snsCitations={len(sns_cites)} | sources={len(sources)} | langs={langs}"
         )
-    print("✅ All articles passed historical & technical fact-check verification.")
+
+    if errors:
+        print(f"\n❌ DETERMINISTIC ARTICLE FACT AUDIT FAILED! Found {len(errors)} violation(s):")
+        for err in errors:
+            print(f"   🚨 {err}")
+        print("\n🚫 Aborting pipeline to prevent unverified or broken articles from being published!")
+        return 1
+
+    print(f"\n🎯 All {len(existing)} articles passed strict deterministic fact-check verification!")
     return 0
 
 

@@ -1,0 +1,26 @@
+{
+  "name": "HONDA.CAT",
+  "short_name": "HONDA.CAT",
+  "description": "二足歩行の猫編集部が届ける3言語二輪レース＆草耐久情報サイト",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0f14",
+  "theme_color": "#e63946",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

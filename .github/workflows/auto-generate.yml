@@ -161,3 +161,44 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  post-to-x:
+    needs: [run-scheduled-pipeline, deploy-autonomous-site]
+    if: needs.run-scheduled-pipeline.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest published code
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Post new articles to X in reporter's tone
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: |
+          python3 scripts/post_to_x.py --limit 2
+
+      - name: Commit & Push updated posted registry
+        run: |
+          git config user.name "honda-cat-editorial-bot"
+          git config user.email "bot@honda.cat"
+          git add src/data/x_posted.json
+          if git diff --staged --quiet; then
+            echo "🐾 No newly posted articles recorded; registry is clean."
+          else
+            git commit -m "chore(x): update posted article registry [skip ci]"
+            git push
+          fi
+

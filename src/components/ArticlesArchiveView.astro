@@ -33,7 +33,7 @@ const {
   basePaginationPath
 } = Astro.props;
 
-const categories = ['all', 'kyushu', 'endurance-fun', 'maintenance', 'world', 'all-japan', 'spotlight'] as const;
+const categories = ['all', 'motogp', 'sbk', 'kyushu', 'endurance-fun', 'maintenance', 'all-japan', 'spotlight'] as const;
 
 const isCategoryView = activeCategory && activeCategory !== 'all' && !activeTag;
 const isTagView = Boolean(activeTag);
