@@ -1,0 +1,53 @@
+name: "🧪 Test X (Twitter) Post"
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "テスト投稿する記事のslug（空欄なら最新未投稿記事）"
+        required: false
+        default: "motogp-2026-closing-double-header-portimao-and-valencia-preview"
+      dry_run:
+        description: "Dry-run mode (チェック時はXへ実際には投稿せずプレビューのみ)"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  test-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Execute X Post Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ -n "${{ inputs.slug }}" ]; then
+            ARGS="$ARGS --slug ${{ inputs.slug }}"
+          else
+            ARGS="$ARGS --limit 1"
+          fi
+          echo "Running: python3 scripts/post_to_x.py $ARGS"
+          python3 scripts/post_to_x.py $ARGS
