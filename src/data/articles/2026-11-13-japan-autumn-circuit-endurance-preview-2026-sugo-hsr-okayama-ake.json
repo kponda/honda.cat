@@ -1,0 +1,491 @@
+{
+  "id": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake",
+  "slug": "japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake",
+  "publishedAt": "2026-11-13",
+  "category": "endurance-fun",
+  "articleType": "preview",
+  "circuit": "sportsland-sugo",
+  "region": "Tohoku / Chubu / Chugoku / Kyushu",
+  "featuredCat": "suzuka",
+  "heroImage": "/images/articles/japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-akechi.webp",
+  "tags": [
+    "スポーツランドSUGO",
+    "HSR九州",
+    "岡山国際サーキット",
+    "明智ヒルトップサーキット",
+    "ミニバイク耐久",
+    "JP-SPORT",
+    "ST150",
+    "レン耐",
+    "モトレボリューション"
+  ],
+  "snsCitations": [
+    {
+      "platform": "X",
+      "accountName": "スポーツランドSUGO【公式】",
+      "handle": "@sugo_official",
+      "url": "https://x.com/sugo_official",
+      "quotedPostText": {
+        "ja": "スポーツランドSUGO公式Xアカウント：大会当日の天候、パドック進行、リザルト速報を発信中。",
+        "ca": "Compte oficial de X de Sportsland SUGO: actualitzacions sobre la climatologia, horaris de pàdoc i resultats en temps real.",
+        "en": "Official Sportsland SUGO X account: providing live updates on track weather, paddock schedule, and official provisional results."
+      },
+      "editorialCommentary": {
+        "ja": "晩秋のSUGOは蔵王おろしの冷風により急激に路面温度が低下します。公式Xの気象情報とピット進行の速報確認が不可欠です。",
+        "ca": "A finals de tardor, la temperatura de l'asfalt a SUGO cau en picat pel vent de Zao. El canal oficial de X és vital per seguir l'evolució de la pista.",
+        "en": "In late autumn, track temperatures at SUGO drop drastically due to mountain winds. Tracking the official X feed is essential for operational updates."
+      },
+      "citationType": "official_channel"
+    },
+    {
+      "platform": "X",
+      "accountName": "HSR九州",
+      "handle": "@hsr_kyushu",
+      "url": "https://x.com/hsr_kyushu",
+      "quotedPostText": {
+        "ja": "HSR九州公式Xアカウント：エンジョイ4時間耐久レースおよびSAGA CUPのピット割、タイムスケジュール最新情報。",
+        "ca": "Compte oficial de X d'HSR Kyushu: assignació de boxs i horaris actualitzats per a les 4 Hores Enjoy i la SAGA CUP.",
+        "en": "Official HSR Kyushu X account: pit garage allocation and updated weekend timetables for the Enjoy 4-Hour and SAGA CUP."
+      },
+      "editorialCommentary": {
+        "ja": "阿蘇の麓に位置するHSR九州のパドック熱気をリアルタイムで把握できる一次情報源です。",
+        "ca": "Font primària essencial per monitorar l'activitat al pàdoc d'HSR Kyushu als peus del volcà Aso.",
+        "en": "Primary source for real-time paddock logistics and schedules at HSR Kyushu situated below Mount Aso."
+      },
+      "citationType": "official_channel"
+    },
+    {
+      "platform": "X",
+      "accountName": "Let's レン耐！公式",
+      "handle": "@rentai_official",
+      "url": "https://x.com/rentai_official",
+      "quotedPostText": {
+        "ja": "Let's レン耐！公式X：中日本シリーズ第6戦 KIJIMA杯 明智 初心者60分＆新型Grom 4時間耐久の特別規則・エントリー案内。",
+        "ca": "Compte oficial de Let's Rentai!: informació reglamentària i d'inscrits per a la cita de 4 Hores a Akechi amb les noves Honda Grom.",
+        "en": "Let's Rentai! Official X: special regulations and entry information for the 4-Hour Grom endurance race at Akechi Hilltop Circuit."
+      },
+      "editorialCommentary": {
+        "ja": "青木拓磨氏主宰のレンタル耐久。特別規則やハンデ情報が公式SNSでアナウンスされます。",
+        "ca": "Competició de resistència 'arrive-and-drive' creada per Takuma Aoki amb reglaments d'handicap únics.",
+        "en": "Takuma Aoki's arrive-and-drive endurance event, featuring unique handicap rules and parity machinery."
+      },
+      "citationType": "official_channel"
+    },
+    {
+      "platform": "YouTube",
+      "accountName": "Sportsland SUGO Official YouTube",
+      "handle": "@sportslandsugo",
+      "url": "https://www.youtube.com/@sportslandsugo",
+      "quotedPostText": {
+        "ja": "スポーツランドSUGO公式YouTubeチャンネル：サーキット公式走行ハイライトおよびオンボード映像配信。",
+        "ca": "Canal oficial de YouTube de Sportsland SUGO: vídeos resum i càmeres a bord de les competicions al traçat internacional.",
+        "en": "Official Sportsland SUGO YouTube channel: track highlights and onboard race footage from the international circuit."
+      },
+      "editorialCommentary": {
+        "ja": "最終コーナーの急勾配登坂ストレートでのライン取りとスリップストリームの研究に最適です。",
+        "ca": "Plataforma indispensable per analitzar la traçada a la mítica pujada del 10% de desnivell cap a la recta principal.",
+        "en": "Crucial video reference for studying corner exits and slipstreaming techniques up SUGO's famous 10% gradient."
+      },
+      "citationType": "official_channel"
+    },
+    {
+      "platform": "OfficialWeb",
+      "accountName": "岡山国際サーキット レース情報",
+      "handle": "okayama-international-circuit.jp",
+      "url": "https://www.okayama-international-circuit.jp/",
+      "quotedPostText": {
+        "ja": "岡山国際サーキット公式：2026 OKAYAMAロードレースシリーズ＆モトレボリューション Rd.5 最終戦公式リザルト・公式通知。",
+        "ca": "Web oficial d'Okayama International Circuit: documents oficials i resultats de la Ronda 5 final dels Campionats Regionals i Moto Revolution.",
+        "en": "Okayama International Circuit Official: official notices and timing results for Round 5 (Finale) of Regional Championship and Moto Revolution."
+      },
+      "editorialCommentary": {
+        "ja": "西日本最高峰の地方選手権ファイナル。全日本格式に挑むトッププライベーターの公式リザルトが掲示されます。",
+        "ca": "La gran final del campionat regional a l'oest del Japó, amb el seguiment dels millors equips privats nacionals.",
+        "en": "Western Japan's premier regional road race series finale, publishing telemetry and times for top national privateers."
+      },
+      "citationType": "official_web"
+    }
+  ],
+  "factCheck": {
+    "verified": true,
+    "verifiedAt": "2026-11-13T18:00:00+09:00",
+    "basis": {
+      "ja": "2026年11月14日・15日に開催される各公認サーキット（スポーツランドSUGO、HSR九州、岡山国際サーキット、明智ヒルトップサーキット）の公式イベントスケジュールおよび特別規則書、WebikeイベントNAVIデータベースに基づき検証完了。",
+      "ca": "Verificat a partir dels calendaris oficials de competició, reglaments particulars i fonts institucionals dels circuits de Sportsland SUGO, HSR Kyushu, Okayama International Circuit i Akechi Hilltop Circuit per al 14 i 15 de novembre de 2026.",
+      "en": "Verified against official circuit schedules, supplementary regulations, and event management listings from Sportsland SUGO, HSR Kyushu, Okayama International Circuit, and Akechi Hilltop Circuit for November 14-15, 2026."
+    },
+    "sources": [
+      {
+        "title": "スポーツランドSUGO 公式サイト 大会日程",
+        "url": "https://www.sportsland-sugo.co.jp/"
+      },
+      {
+        "title": "HSR九州 公式サイト レース・イベントスケジュール",
+        "url": "https://www.hsr.jp/"
+      },
+      {
+        "title": "岡山国際サーキット レースインフォメーション",
+        "url": "https://www.okayama-international-circuit.jp/"
+      },
+      {
+        "title": "Let's レン耐！ 公式サイト",
+        "url": "http://rentai.takuma-gp.com/"
+      },
+      {
+        "title": "Webike イベントNAVI 二輪レースカレンダー",
+        "url": "https://event.webike.net/event?type=8"
+      }
+    ]
+  },
+  "eventMeta": {
+    "date": "2026-11-14 / 2026-11-15",
+    "venue": {
+      "ja": "スポーツランドSUGO / HSR九州 / 岡山国際サーキット / 明智ヒルトップサーキット",
+      "ca": "Sportsland SUGO / HSR Kyushu / Okayama International Circuit / Akechi Hilltop Circuit",
+      "en": "Sportsland SUGO / HSR Kyushu / Okayama International Circuit / Akechi Hilltop Circuit"
+    },
+    "weather": {
+      "ja": "晩秋の晴れ〜曇り、早朝の低温および突風に警戒（路面温度10℃〜18℃想定）",
+      "ca": "Tardor tardana, assolellat a variable, temperatures fredes al matí (asfalt entre 10°C i 18°C)",
+      "en": "Late autumn, clear to partly cloudy, low morning track temps (approx. 10°C-18°C) with gusty winds"
+    }
+  },
+  "locales": {
+    "ja": {
+      "title": "晩秋の日本列島を焦がす熱闘の週末！杜の都SUGO耐久フェス・阿蘇の麓HSR九州ミニバイク・名門岡山国際決戦から明智レン耐まで完全展望",
+      "subtitle": "2026年11月14日・15日開催 全国グラスルーツ＆地方選手権プレビュー",
+      "summary": "2026年11月14日(土)・15日(日)、日本各地のサーキットで注目の耐久レースと地方選手権ファイナルが一斉に開催。スポーツランドSUGOでの4時間＆6時間耐久ダブルヘッダー、阿蘇の麓HSR九州でのエンジョイ4耐とSAGA CUP、岡山国際サーキットの地方選手権＆モトレボ最終決戦、そして明智ヒルトップのLet'sレン耐まで、見どころと技術的ポイントを徹底予習します。",
+      "highlightPoint": "寒暖差の激しい晩秋路面におけるタイヤ内圧管理と、SUGOの10%登り勾配やHSR九州の風対策など、各サーキット特有のセットアップ攻略。",
+      "sections": [
+        {
+          "heading": "杜の都の耐久サバイバル：SUGO JP-SPORT 4時間＆MINI BIKE 6時間",
+          "body": "スポーツランドSUGO（全長3,586m、高低差約73m）では土曜日にJP-SPORT／OPEN 4時間耐久、日曜日にMINI BIKE／ST150 6時間耐久が連続開催されます。最大の勝負所は最大勾配10%を誇る名物の登坂メインストレート。排気量の小さいマシンほど登坂パワーロスが致命傷となるため、3コーナーからレインボーコーナーに至るインフィールドでのコーナリングスピード維持と、スリップストリームの活用が順位を分けます。気温低下に伴うオーバークール対策と、安全確実なピット作業ルーティンが不可欠です。"
+        },
+        {
+          "heading": "火の国のハイスピード合戦：HSR九州 エンジョイ4耐＆SAGA CUP",
+          "body": "阿蘇外輪山を望むホンダのお膝元、熊本県大津町のHSR九州ロードコース（全長2,350m）。土曜日の練習走行に続き、日曜日はエンジョイ4時間耐久とSAGA CUP R-4が激突します。フラットで高速なレイアウトは全開アタック率が高く、阿蘇からの吹き下ろし風によってメインストレートの追い風・向かい風が目まぐるしく変化します。ギヤ比セッティングの選択と、長丁場のタイヤマネジメントがチームの明暗を分けます。"
+        },
+        {
+          "heading": "西の聖地と中部テクニカル：岡山国際の最終戦＆明智レン耐",
+          "body": "岡山国際サーキット（全長3,703m）では、OKAYAMAロードレースシリーズおよびモトレボリューションの第5戦（最終戦）が開催。タイトルを争うトッププライベーターたちが、1コーナーからダブルヘアピンまで緻密なエッジグリップを競い合います。一方、岐阜県の明智ヒルトップサーキット（全長800m）では、青木拓磨氏主宰のLet'sレン耐 中日本シリーズ第6戦KIJIMA杯が開催。イコールコンディションのGrom125を駆り、独自の知恵の輪課題やペリアハンデを織り交ぜた知的サバイバルが繰り広げられます。"
+        }
+      ],
+      "resultTableTitle": "今週末開催 主要レーススケジュール一覧（2026年11月14日・15日）",
+      "results": [
+        {
+          "pos": "11/14(土)",
+          "riderOrTeam": "HSR九州 エンジョイ4時間耐久",
+          "machine": "ミニバイク各クラス (~125cc)",
+          "timeOrNote": "HSR九州ロードコース (練習走行＆予選)"
+        },
+        {
+          "pos": "11/14(土)",
+          "riderOrTeam": "SUGO JP-SPORT 4時間 / OPEN 4時間",
+          "machine": "JP250/CBR250RR/YZF-R25/Ninja等",
+          "timeOrNote": "スポーツランドSUGO (決勝4時間)"
+        },
+        {
+          "pos": "11/15(日)",
+          "riderOrTeam": "HSR九州 エンジョイ4時間耐久 / SAGA CUP R-4",
+          "machine": "ミニバイク/GROM/NSR50等",
+          "timeOrNote": "HSR九州ロードコース (決勝4時間＆スプリント)"
+        },
+        {
+          "pos": "11/15(日)",
+          "riderOrTeam": "SUGO MINI BIKE 6時間 / ST150 6時間",
+          "machine": "Grom/NSF100/GSX-R125等",
+          "timeOrNote": "スポーツランドSUGO (決勝6時間)"
+        },
+        {
+          "pos": "11/15(日)",
+          "riderOrTeam": "OKAYAMAロードレース＆モトレボ Rd.5 最終戦",
+          "machine": "JSB1000/ST600/JP250等",
+          "timeOrNote": "岡山国際サーキット (シリーズ最終戦)"
+        },
+        {
+          "pos": "11/15(日)",
+          "riderOrTeam": "Let's レン耐 中日本第6戦 KIJIMA杯 明智",
+          "machine": "新型Grom 125 レンタル",
+          "timeOrNote": "明智ヒルトップサーキット (60分＆4時間)"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "suzuka",
+          "text": "全国のロードレースファンのみなさん！今週末は東北SUGOの耐久ダブルヘッダーから、西日本最高峰の岡山国際最終戦、そして九州HSRまで熱い戦いが目白押しです！私は望遠レンズを担いで現場の熱気を激写してきますよ！"
+        },
+        {
+          "speaker": "marc",
+          "text": "Hola a tothom! A Europa associem la resistència a curses com les 24 Hores de Le Mans, però veure motos lleugeres com les Grom o les JP-SPORT rodant 4 o 6 hores a fons a circuits com SUGO o Okayama demostra la puresa del motorsport japonès. Gran gestió de pneumàtics en fred!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "11月中旬のサーキットを舐めたら痛い目を見るよ。朝イチの路面温度は10℃前後まで冷え込むからね。タイヤウォーマーを外してからの内圧変化と、冷えた路面での握り転けにはくれぐれも警戒すること。……あ、スズカ、大津のHSR九州に行くなら、ピット作業の合間に食べる温かい『いきなり団子』……ちゃんと2人前買っておいたからね。後で一緒に食べよう。"
+        },
+        {
+          "speaker": "suzuka",
+          "text": "わあ、ナオミちゃんありがとう！大津名物のいきなり団子、甘くて温まるからピットの力水に最高だね！"
+        },
+        {
+          "speaker": "naomi",
+          "text": "べ、別にアンタのためにわざわざ遠回りしたわけじゃないんだからね！メカニックの糖分補給用だよ！……さあ、タイヤ内圧チェックに戻るよ！"
+        }
+      ],
+      "diagram": {
+        "title": "晩秋サーキット攻略：低温路面と過酷レイアウトの技術要件",
+        "caption": "11月中旬のレースで勝敗を分ける3つの技術的チェックポイント",
+        "panels": [
+          {
+            "statusType": "bad",
+            "statusLabel": "要注意：低温路面リスク",
+            "title": "朝イチのコールドタイヤ転倒",
+            "caption": "路面温度10〜12℃の早朝走行。ウォーマー離脱後の急速冷却によるフロントからのスリップダウンを防止する内圧管理が必須。",
+            "badge": "温度管理",
+            "keyMetric": "路温 10-14℃"
+          },
+          {
+            "statusType": "detail",
+            "statusLabel": "SUGO攻略：登坂ストレート",
+            "title": "最大勾配10%の高負荷登坂",
+            "caption": "高低差73mのSUGO。小排気量車はスプロケットのファイナル選択とスリップストリームの隊列維持がラップタイムを左右。",
+            "badge": "勾配 10%",
+            "keyMetric": "高低差 73m"
+          },
+          {
+            "statusType": "good",
+            "statusLabel": "HSR九州：風向対策",
+            "title": "阿蘇おろしと全開ストレート",
+            "caption": "熊本・大津町のフラット高速コース。外輪山からの吹き下ろし風（追い風／向かい風）に応じたギヤ比選定が勝負の鍵。",
+            "badge": "コース長 2,350m",
+            "keyMetric": "高速フラット"
+          }
+        ],
+        "tag": "Technical Analysis"
+      }
+    },
+    "ca": {
+      "title": "Un cap de setmana vibrant de curses al Japó: doble cita de resistència a SUGO, batalles a HSR Kyushu, Okayama i el trofeu Rentai a Akechi",
+      "subtitle": "Previ complet de resistència i campionats regionals (14 i 15 de novembre de 2026)",
+      "summary": "Els dies 14 i 15 de novembre de 2026, el motociclisme de base i regional japonès viu un dels seus caps de setmana més intensos de la tardor. Des del doble programa de resistència de 4 i 6 hores a Sportsland SUGO, passant per les 4 Hores d'HSR Kyushu i la SAGA CUP als peus del volcà Aso, fins a la cloenda del campionat regional a Okayama i la cursa formativa Let's Rentai a Akechi.",
+      "highlightPoint": "La gestió tècnica de la pressió dels pneumàtics en asfalt fred de novembre i l'adaptació mecànica a la mítica pujada del 10% a SUGO i els vents d'Aso a HSR Kyushu.",
+      "sections": [
+        {
+          "heading": "Resistència al nord: 4H JP-SPORT i 6H MINI BIKE a Sportsland SUGO",
+          "body": "Sportsland SUGO (3.586 m, 73 m de desnivell) acull dissabte les 4 Hores JP-SPORT/OPEN i diumenge les 6 Hores MINI BIKE/ST150. El punt clau del circuit de Miyagi és la pujada cap a meta amb un desnivell del 10%. Per a les mecàniques petites com les Grom o les motos de la categoria JP250, qualsevol pèrdua d'inèrcia és fatal. Mantenir la velocitat de pas per revolt a la zona interior i sincronitzar els relleus sense refredar gomes serà decisiu."
+        },
+        {
+          "heading": "Velocitat a la terra del foc: 4 Hores Enjoy i SAGA CUP a HSR Kyushu",
+          "body": "A Ozu, Kumamoto, el traçat d'HSR Kyushu (2.350 m) propietat d'Honda posa a prova els equips de minibikes a les 4 Hores Enjoy i la quarta cita de la SAGA CUP. Es tracta d'un circuit ràpid i pla on la influència dels vents que baixen de la caldera d'Aso canvia el comportament a la recta. La relació de canvi de marxes s'ha de triar minuciosament entre dissabte i diumenge."
+        },
+        {
+          "heading": "Final a Okayama i l'esperit Rentai a Akechi",
+          "body": "Okayama International Circuit (3.703 m) acull la cinquena i última prova del campionat regional OKAYAMA Road Race i Moto Revolution, on es decideixen els títols privats de JSB1000 i ST600. Mentrestant, a la pista d'Akechi Hilltop (800 m, Gifu), se celebra la sisena ronda de la sèrie Let's Rentai organitzada per Takuma Aoki amb les noves Honda Grom 125, una cursa de 4 hores caracteritzada per les seves proves d'habilitat i reglaments d'handicap."
+        }
+      ],
+      "resultTableTitle": "Horari i competicions destacades del cap de setmana (14-15 de novembre de 2026)",
+      "results": [
+        {
+          "pos": "14/11 (Ds)",
+          "riderOrTeam": "HSR Kyushu Enjoy 4H Endurance",
+          "machine": "Minibikes fins a 125cc",
+          "timeOrNote": "HSR Kyushu (Entrenaments i classificació)"
+        },
+        {
+          "pos": "14/11 (Ds)",
+          "riderOrTeam": "SUGO JP-SPORT 4H / OPEN 4H",
+          "machine": "JP250 / CBR250RR / YZF-R25 / Ninja",
+          "timeOrNote": "Sportsland SUGO (Cursa 4 Hores)"
+        },
+        {
+          "pos": "15/11 (Dg)",
+          "riderOrTeam": "HSR Kyushu Enjoy 4H / SAGA CUP R-4",
+          "machine": "Minibikes / Grom / NSR50",
+          "timeOrNote": "HSR Kyushu (Cursa 4 Hores i Sprints)"
+        },
+        {
+          "pos": "15/11 (Dg)",
+          "riderOrTeam": "SUGO MINI BIKE 6H / ST150 6H",
+          "machine": "Grom / NSF100 / GSX-R125",
+          "timeOrNote": "Sportsland SUGO (Cursa 6 Hores)"
+        },
+        {
+          "pos": "15/11 (Dg)",
+          "riderOrTeam": "OKAYAMA Road Race & MotoRevo Rd.5",
+          "machine": "JSB1000 / ST600 / JP250",
+          "timeOrNote": "Okayama (Final del campionat)"
+        },
+        {
+          "pos": "15/11 (Dg)",
+          "riderOrTeam": "Let's Rentai Chubu Rd.6 Akechi",
+          "machine": "Honda Grom 125 monomarca",
+          "timeOrNote": "Akechi Hilltop (60 min i 4 Hores)"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "suzuka",
+          "text": "Hola a tots els aficionats al motor! Aquest cap de setmana tenim un autèntic festival de resistència des de SUGO a Miyagi fins al sud a HSR Kyushu! Portaré les meves millors lents per capturar l'acció a peu de pista!"
+        },
+        {
+          "speaker": "marc",
+          "text": "L'esperit d'endurance al Japó és admirable. Competir durant 4 o 6 hores amb motos lleugeres en pistes mundials com SUGO requereix un control finíssim del gas i una disciplina de 'salvada' quan la goma davantera perd adherència pel fred."
+        },
+        {
+          "speaker": "naomi",
+          "text": "No us confieu amb l'asfalt de mitjans de novembre. A primera hora del matí la pista estarà a uns 10 graus i els ensurts al revolt 1 són un clàssic si no es vigila la pressió en calent. ...Per cert, Suzuka, per si vas a HSR Kyushu a Ozu, he comprat uns 'Ikinari Dango' ben calents... en tinc dos, així que quan acabem la feina de boxs en mengem un juntes."
+        },
+        {
+          "speaker": "suzuka",
+          "text": "Gràcies, Naomi! Ets un encant, els pastissets d'Ikinari Dango són perfectes per recuperar forces al pàdoc!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "No t'equivoquis, eh! Només ho deia perquè ens cal sucre als mecànics per treballar, res més! Vinga, tornem a comprovar les pressions de les gomes!"
+        }
+      ],
+      "diagram": {
+        "title": "Enginyeria de resistència a finals de tardor: fred i pendents",
+        "caption": "Tres claus tècniques per als equips durant el cap de setmana del 14 i 15 de novembre",
+        "panels": [
+          {
+            "statusType": "bad",
+            "statusLabel": "Risc de temperatura",
+            "title": "Asfalt fred al matí",
+            "caption": "Pista a 10-12°C. Risc alt de tancada de direcció abans que el pneumàtic agafi pressió interna de treball.",
+            "badge": "Pressió pneumàtics",
+            "keyMetric": "Pista 10-14°C"
+          },
+          {
+            "statusType": "detail",
+            "statusLabel": "Perfil SUGO",
+            "title": "Pujada del 10% de desnivell",
+            "caption": "Amb 73 metres de desnivell acumulat, la relació secundària de transmissió i els rebufs són crítics per no perdre voltes.",
+            "badge": "Desnivell 10%",
+            "keyMetric": "73 m desnivell"
+          },
+          {
+            "statusType": "good",
+            "statusLabel": "Aerodinàmica HSR",
+            "title": "Vents variables d'Aso",
+            "caption": "Circuit ràpid i pla de 2.350 m. La combinació de vent favorable o contrari a recta obliga a ajustar els desenvolupaments.",
+            "badge": "Longitud 2.350 m",
+            "keyMetric": "Traçat pla ràpid"
+          }
+        ],
+        "tag": "Technical Preview"
+      }
+    },
+    "en": {
+      "title": "Autumn Endurance Fever Sweeps Across Japan: SUGO 4H & 6H Double-Header, HSR Kyushu Mini-Bike Battles, Okayama Finale & Akechi Rentai",
+      "subtitle": "Weekend Preview of Grassroots Endurance & Regional Championship Deciders (Nov 14-15, 2026)",
+      "summary": "On November 14-15, 2026, Japan's road racing and mini-bike endurance scene reaches fever pitch across the country. Sportsland SUGO stages its grueling 4-hour and 6-hour endurance double-header in Miyagi, HSR Kyushu hosts the Enjoy 4-Hour and SAGA CUP at the foot of Mount Aso, Okayama International Circuit crowns its regional champions, and Akechi Hilltop welcomes the tactical Let's Rentai series.",
+      "highlightPoint": "Navigating cold track temperatures (10-14°C) with precise tire pressure telemetry, while conquering SUGO's punishing 10% uphill gradient and HSR Kyushu's shifting winds.",
+      "sections": [
+        {
+          "heading": "Northern Endurance Marathon: SUGO JP-SPORT 4H & MINI BIKE 6H",
+          "body": "Sportsland SUGO (3,586 meters, 73 meters elevation change) hosts back-to-back endurance challenges: Saturday's JP-SPORT/OPEN 4-Hour and Sunday's MINI BIKE/ST150 6-Hour. The main battlefield is the 10% uphill climb leading onto the front straight. For lightweight machinery, conserving mid-corner speed through the technical in-field (Turns 3 to Rainbow Corner) and working the slipstream are vital to avoid stalling out on the hill. Radiator blanking and meticulous refueling protocol will decide the podium."
+        },
+        {
+          "heading": "High-Speed Battles in Kumamoto: HSR Kyushu Enjoy 4-Hour & SAGA CUP",
+          "body": "Nestled beneath the majestic Aso caldera, Honda's testing ground HSR Kyushu (2,350-meter road course) welcomes Saturday practice ahead of Sunday's Enjoy 4-Hour Endurance and SAGA CUP Round 4. The flat, high-speed layout demands extensive full-throttle running. Changing wind directions descending from the mountains alter top speed on the main straight, making sprocket ratios and cold-tire pressure logging the defining technical factors."
+        },
+        {
+          "heading": "Western Title Decider at Okayama & Tactical Fun at Akechi",
+          "body": "Okayama International Circuit (3,703 meters) hosts Round 5 (the season finale) of the OKAYAMA Road Race Series & Moto Revolution, featuring elite privateers fighting for JSB1000 and ST600 honors through technical sequences like the Moss S and Double Hairpin. Meanwhile, Gifu's Akechi Hilltop Circuit (800 meters) stages Round 6 of Takuma Aoki's Let's Rentai series using identical Honda Grom 125s, balancing raw track pace with pitstop puzzles and handicap systems."
+        }
+      ],
+      "resultTableTitle": "Comprehensive Weekend Race Schedule (November 14-15, 2026)",
+      "results": [
+        {
+          "pos": "Nov 14 (Sat)",
+          "riderOrTeam": "HSR Kyushu Enjoy 4-Hour Endurance",
+          "machine": "Mini-bike classes (up to 125cc)",
+          "timeOrNote": "HSR Kyushu Road Course (Practice & Qual)"
+        },
+        {
+          "pos": "Nov 14 (Sat)",
+          "riderOrTeam": "SUGO JP-SPORT 4H / OPEN 4H",
+          "machine": "JP250 / CBR250RR / YZF-R25 / Ninja",
+          "timeOrNote": "Sportsland SUGO (4-Hour Race)"
+        },
+        {
+          "pos": "Nov 15 (Sun)",
+          "riderOrTeam": "HSR Kyushu Enjoy 4H / SAGA CUP R-4",
+          "machine": "Mini-bikes / Grom / NSR50",
+          "timeOrNote": "HSR Kyushu Road Course (4-Hour & Sprints)"
+        },
+        {
+          "pos": "Nov 15 (Sun)",
+          "riderOrTeam": "SUGO MINI BIKE 6H / ST150 6H",
+          "machine": "Grom / NSF100 / GSX-R125",
+          "timeOrNote": "Sportsland SUGO (6-Hour Race)"
+        },
+        {
+          "pos": "Nov 15 (Sun)",
+          "riderOrTeam": "OKAYAMA Road Race & MotoRevo Rd.5",
+          "machine": "JSB1000 / ST600 / JP250",
+          "timeOrNote": "Okayama International Circuit (Finale)"
+        },
+        {
+          "pos": "Nov 15 (Sun)",
+          "riderOrTeam": "Let's Rentai Central Japan Rd.6 Akechi",
+          "machine": "Honda Grom 125 Spec Fleet",
+          "timeOrNote": "Akechi Hilltop Circuit (60-min & 4H)"
+        }
+      ],
+      "catDialogues": [
+        {
+          "speaker": "suzuka",
+          "text": "Hello motorsport enthusiasts! This weekend is packed with grassroots endurance action and regional championships, stretching from SUGO's mountain forest in Miyagi down to HSR Kyushu. My cameras and extra batteries are ready to capture the drama!"
+        },
+        {
+          "speaker": "marc",
+          "text": "In Europe, endurance usually evokes images of Le Mans or the Bol d'Or, but watching lightweight bikes and Groms tackle four to six continuous hours on circuits like SUGO or Okayama showcases authentic racing discipline. Managing cold tires requires delicate throttle work!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "Never underestimate mid-November track temps. Early morning asphalt drops close to 10°C, and riders tuck the front into Turn 1 every year because their tire carcass hasn't built internal pressure yet. ...By the way, Suzuka, if you're coming down to HSR Kyushu in Ozu, I bought two servings of hot Ikinari Dango sweet cakes... so once our wrenching is done, we can share them."
+        },
+        {
+          "speaker": "suzuka",
+          "text": "Naomi, thank you so much! Warm Ikinari Dango is the absolute best sweet treat to recharge our energy in the paddock!"
+        },
+        {
+          "speaker": "naomi",
+          "text": "H-Hey, don't get the wrong idea! It's just necessary glucose replenishment for mechanics, that's all! Now stop chatting and let's double-check those hot tire pressures!"
+        }
+      ],
+      "diagram": {
+        "title": "Late Autumn Track Engineering: Cold Asphalt & Circuit Demands",
+        "caption": "Three crucial technical vectors for competitive squads on November 14-15",
+        "panels": [
+          {
+            "statusType": "bad",
+            "statusLabel": "Critical Cold Hazard",
+            "title": "Morning Low Track Temp",
+            "caption": "Asphalt at 10-12°C. High risk of front-end washouts immediately after tire warmers come off unless hot pressures are dialed in.",
+            "badge": "Tire Pressures",
+            "keyMetric": "Track 10-14°C"
+          },
+          {
+            "statusType": "detail",
+            "statusLabel": "SUGO Specific",
+            "title": "10% Final Climb Gradient",
+            "caption": "Sportsland SUGO's 73-meter elevation climb demands optimized final gearing to avoid bogging down small-displacement engines.",
+            "badge": "10% Gradient",
+            "keyMetric": "73m Elevation"
+          },
+          {
+            "statusType": "good",
+            "statusLabel": "HSR Kyushu Aero",
+            "title": "Aso Downslope Winds",
+            "caption": "A 2,350m flat layout where head- and tailwinds dramatically alter top gear pull down the main straight.",
+            "badge": "2,350m Circuit",
+            "keyMetric": "High-Speed Flat"
+          }
+        ],
+        "tag": "Technical Analysis"
+      }
+    }
+  }
+}
