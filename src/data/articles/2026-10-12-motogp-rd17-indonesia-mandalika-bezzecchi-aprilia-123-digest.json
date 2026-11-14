@@ -22,19 +22,48 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #IndonesianGP Hub",
-      "handle": "@MotoGP / #IndonesianGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/1505620187319615492",
+      "publishedDate": "2022-03-20",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/FOSs_AlXMAMts1i.jpg",
+        "https://pbs.twimg.com/media/FOSs_p_XwAgE7a1.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第17戦 インドネシアGP（マンダリカ）公式結果】熱帯ロンボク島でマルコ・ベッツェッキ（Aprilia Racing）が圧勝！ラウル・フェルナンデス（2位）、ホルヘ・マルティン（3位）でアプリリアがシルバーストンに続く表彰台独占！",
-        "ca": "【GP d'Indonèsia 2026 a Mandalika】Marco Bezzecchi (Aprilia Racing) triomfa a l'illa de Lombok! Segon triplet de la temporada per a Aprilia amb Raúl Fernández (2n) i Jorge Martín (3r)!",
-        "en": "[2026 MotoGP Indonesian GP at Mandalika] Marco Bezzecchi (Aprilia Racing) masters tropical Lombok! Aprilia seals its second podium lockout of the season with Raúl Fernández 2nd and Jorge Martín 3rd!"
+        "ja": "雨を止めてくれてありがとう！😅 #IndonesianGP 🇮🇩",
+        "ca": "GRÀCIES per aturar la pluja! 😅 #IndonesianGP 🇮🇩",
+        "en": "THANK YOU for stopping the rain! 😅 #IndonesianGP 🇮🇩"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#IndonesianGP」では、過酷な暑さと湿度のマンダリカでアプリリアRS-GPが見せた完璧な冷却性能とタイヤマネジメントが賞賛されています。",
-        "ca": "L'etiqueta #IndonesianGP destaca la superioritat del xassís d'Aprilia suportant la calor extrema de l'asfalt de Lombok.",
-        "en": "Official updates from @MotoGP and #IndonesianGP celebrate Aprilia's cooling efficiency and tyre preservation in sweltering tropical heat."
+        "ja": "マンダリカのスコールはいつもデータを引っ掻き回してくれるが、ドライになった瞬間の路面グリップ変化を誰よりも早く掴んだアプリリアのセットアップがドンピシャだったな！",
+        "ca": "Els xàfecs de Mandalika sempre capgiren la telemetria, però l'ajust d'Aprilia per llegir abans que ningú el canvi d'adherència en sec va ser absolutament impecable!",
+        "en": "Mandalika's squalls always throw telemetry into chaos, but Aprilia's setup was spot-on, reading the sudden dry grip changes faster than anyone else on the grid!"
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "Ai Ogura",
+      "handle": "@AiOgura79",
+      "url": "https://x.com/AiOgura79",
+      "postUrl": "https://x.com/AiOgura79/status/2109243311202660507",
+      "publishedDate": "2026-10-11",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HUWJm2mbsAEwoMh.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "難しい週末でした。応援ありがとうございました！楽しかったです！ありがとうインドネシア！ #IndonesianGP🇮🇩 P2 / P4",
+        "ca": "Ha estat un cap de setmana complicat. Moltes gràcies pel suport! M'ho he passat molt bé! Gràcies, Indonèsia! #IndonesianGP🇮🇩 P2 / P4",
+        "en": "It was a tough weekend. Thank you for all the support! Had fun! Thank you Indonesia! #IndonesianGP🇮🇩 P2 / P4"
+      },
+      "editorialCommentary": {
+        "ja": "スプリント2位から決勝4位、タフなコンディションでもタイヤマネジメントを崩さずポイントをもぎ取る小椋の走りは本物のトップライダーの証拠だ！",
+        "ca": "De P2 a l'esprint a P4 a la cursa llarga: rascar punts decisius gestionant els pneumàtics sota condicions extremes demostra la maduresa competitiva d'Ogura!",
+        "en": "P2 in the sprint and P4 in the GP: salvaging critical points while nursing tires under brutal conditions proves Ogura has the sheer grit of an elite rider!"
       }
     },
     {

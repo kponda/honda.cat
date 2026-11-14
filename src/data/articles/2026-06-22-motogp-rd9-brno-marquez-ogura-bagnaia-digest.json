@@ -21,19 +21,24 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #CzechGP Hub",
-      "handle": "@MotoGP / #CzechGP",
-      "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "accountName": "Crash MotoGP",
+      "handle": "@crash_motogp",
+      "url": "https://x.com/crash_motogp",
+      "postUrl": "https://x.com/crash_motogp/status/2117965527675031967",
+      "publishedDate": "2026-11-04",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWSGbHEXIAAZJ4L.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第9戦 チェコGP（ブルノ）公式結果】名門ブルノの自然豊かな高速サーキットでマルク・マルケスが独走優勝！そして小椋藍が堂々の2位で今季2度目の表彰台獲得！",
-        "ca": "【GP de Txèquia 2026 a Brno】Marc Márquez s'imposa amb autoritat al retorn de Brno! Extraordinària segona posició per a Ai Ogura (Trackhouse / Aprilia)!",
-        "en": "[2026 MotoGP Czech GP at Brno] Marc Márquez dominates Brno's undulating natural amphitheatre! Magnificent 2nd-place finish for Ai Ogura (Trackhouse / Aprilia)!"
+        "ja": "MotoGPパドックのベテランであるカルロ・ペルナット氏によると、増大するPR活動への要求やスポーツの方向性の変化により、マルク・マルケスが早期引退する可能性があるとのこと。",
+        "ca": "Segons el veterà del pàdoc de MotoGP Carlo Pernat, Marc Márquez podria retirar-se abans d'hora a causa de les creixents exigències promocionals i el rumb comercial del campionat.",
+        "en": "According to MotoGP paddock veteran Carlo Pernat, Marc Marquez might retire early from MotoGP due to increasing PR demands and the sport's shifting direction."
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#CzechGP」では、復活したブルノの高速連続S字でマルク・マルケス選手が見せた完璧なマシンコントロールと、小椋選手の鋭い追い上げが賞賛されています。",
-        "ca": "El compte oficial @MotoGP destaca el ritme constant d'Ogura perseguint Márquez al retorn del campionat a terres txeques.",
-        "en": "Official dispatches from @MotoGP and #CzechGP celebrate Márquez's mastery of Brno and Ogura's brilliant charge to second."
+        "ja": "ペルナットの飛ばし節かもしれねえが、現代MotoGPの過密スケジュールとスポンサー対応がレジェンドたちの気力を削っているのは紛れもない事実だぜ！",
+        "ca": "Potser són les típiques declaracions incendiàries de Pernat, però el desgast de l'agenda mediàtica moderna sobre pilots com en Marc és un debat real!",
+        "en": "Pernat loves a dramatic headline, but the punishing modern calendar and relentless media duties undeniably take a toll on pure racers like Marc!"
       }
     },
     {

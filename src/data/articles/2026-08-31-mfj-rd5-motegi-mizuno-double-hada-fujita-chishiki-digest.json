@@ -20,38 +20,48 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "全日本ロードレース公式 ＆ もてぎハブ",
-      "handle": "@jrr_official / #全日本ロードレース",
-      "url": "https://x.com/jrr_official",
-      "postUrl": "https://x.com/hashtag/全日本ロードレース",
+      "citationType": "direct_post",
+      "accountName": "AutoRace Ube Racing Team",
+      "handle": "@autoraceube_r",
+      "url": "https://x.com/autoraceube_r",
+      "postUrl": "https://x.com/autoraceube_r/status/2111590601955381319",
+      "publishedDate": "2026-10-17",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HU3gddnbcAARFIs.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース 第5戦 もてぎ大会】JSB1000レース1＆レース2ともに水野涼（DUCATI Team KAGAYAMA）が優勝！もてぎ2連勝の完全制覇でタイトル争いを大きくリード！",
-        "ca": "【Campionat del Japó MFJ Rd.5 Motegi】Doblet imperial de Ryo Mizuno (DUCATI Team KAGAYAMA) guanyant la Cursa 1 i la Cursa 2 de JSB1000 a Motegi!",
-        "en": "[MFJ All-Japan Rd.5 Motegi] Commanding double victory for Ryo Mizuno (DUCATI Team KAGAYAMA), sweeping Race 1 and Race 2 in JSB1000 at Motegi!"
+        "ja": "オートレース宇部 Racing Team\nBMW M1000RRでのJSB1000実績\n✅表彰台フィニッシュ：6回（86%）\n\nBMW M1000RRは2025年開幕戦モビリティリゾートもてぎでいきなり3位表彰台を獲得‼️これはBMWにとって全日本ロードレースJSB1000における初めての表彰台でした。",
+        "ca": "AutoRace Ube Racing Team\nResultats a JSB1000 amb la BMW M1000RR\n✅Podis: 6 vegades (86%)\n\nLa BMW M1000RR va aconseguir un podi de 3r lloc tot just a la ronda inaugural del 2025 a Mobility Resort Motegi‼️ Aquest va ser el primer podi per a BMW a la categoria JSB1000 de l'All Japan Road Race.",
+        "en": "AutoRace Ube Racing Team\nJSB1000 Results with BMW M1000RR\n✅Podium Finish: 6 Times (86%)\n\nThe BMW M1000RR claimed a 3rd-place podium right away at the 2025 season opener at Mobility Resort Motegi‼️ This was BMW's first-ever podium in the All Japan Road Race JSB1000 class."
       },
       "editorialCommentary": {
-        "ja": "全日本公式X（@jrr_official）および「#全日本ロードレース」「#JSB1000」では、ストップ＆ゴーのもてぎでドゥカティの強烈な脱出加速と水野選手のブレーキング安定性が話題です。",
-        "ca": "El compte oficial @jrr_official destaca l'acceleració impressionant de la Ducati Panigale V4 R a la sortida dels revolts lents de Motegi.",
-        "en": "Official updates from @jrr_official celebrate Mizuno's crushing traction and brake stability powering out of Motegi's hairpins."
+        "ja": "もてぎの初表彰台から積み重ねた86%という高い表彰台獲得率には目を見張るものがありますね。ファインダー越しにもM1000RRの鋭いトラクションとチームの緻密な走りがしっかりと伝わってきます！",
+        "ca": "És admirable veure com han mantingut una ràtio de podis de l'86% d'ençà d'aquell primer podi històric a Motegi. A través del visor es pot captar la tracció impecable de la M1000RR i la maduresa de l'equip!",
+        "en": "It is remarkable to see an 86% podium rate maintained since that historic first podium at Motegi. Looking through the viewfinder, you can clearly sense the M1000RR's sharp traction and the team's relentless precision!"
       }
     },
     {
       "platform": "X",
-      "citationType": "official_channel",
-      "accountName": "モビリティリゾートもてぎ 公式",
-      "handle": "@motegi_official / #モビリティリゾートもてぎ",
-      "url": "https://x.com/motegi_official",
-      "postUrl": "https://x.com/hashtag/モビリティリゾートもてぎ",
+      "citationType": "direct_post",
+      "accountName": "kouga_matsumoto 12",
+      "handle": "@kouga_12R",
+      "url": "https://x.com/kouga_12R",
+      "postUrl": "https://x.com/kouga_12R/status/2093691442275491922",
+      "publishedDate": "2026-08-29",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HQ5JRKjbAAAy-cz.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "モビリティリゾートもてぎ公式：全日本ロードレース選手権もてぎ大会2日間終了！真夏の熱気の中、素晴らしいバトルを披露したライダーの皆様に感謝！",
-        "ca": "Mobility Resort Motegi Oficial: Cap de setmana brillant de curses sota la calor d'agost. Gràcies a tots els equips i aficionats!",
-        "en": "Mobility Resort Motegi Official: Two fantastic days of All-Japan superbike racing concluded under the August sun. Thank you to all competitors!"
+        "ja": "全日本ロードレース選手権 in もてぎ\nQF\n\n最後まとめられませんでした。\n感触は良かったので、明日の決勝やりきります。",
+        "ca": "All Japan Road Race Championship a Motegi\nQualificació\n\nAl final no he pogut arrodonir la volta.\nLes sensacions han estat bones, així que demà a la cursa ho donaré tot.",
+        "en": "All Japan Road Race Championship in Motegi\nQF\n\nCouldn't put it all together at the end.\nThe feeling was good, so I'll give it my all in tomorrow's race."
       },
       "editorialCommentary": {
-        "ja": "もてぎ公式（@motegi_official）では、表彰台での水野選手、羽田選手、藤田選手の爽やかな笑顔とパドックファンサービスの様子が発信されています。",
-        "ca": "Les xarxes de Motegi recullen les imatges del podi amb Mizuno, Hada i Fujita celebrant amb els aficionats.",
-        "en": "Trackside photos from @motegi_official capture podium celebrations and warm interactions between riders and fans."
+        "ja": "予選最後のアタックがまとまらなかった悔しさは残るものの、マシンの感触が良いというのは心強い材料ですね。決勝グリッドから果敢に前を追うアグレッシブな走りを写真に収めたいと思います！",
+        "ca": "Tot i la frustració de no haver lligat l'últim intent cronometrat, tenir bones sensacions sobre la moto és molt encoratjador per a la cursa. Espero capturar amb la meva càmera la seva remuntada des de la graella!",
+        "en": "While leaving a qualifying lap unpolished stings, having a great feeling on the bike is an encouraging sign. I look forward to capturing his aggressive charge up through the field in the race tomorrow!"
       }
     },
     {

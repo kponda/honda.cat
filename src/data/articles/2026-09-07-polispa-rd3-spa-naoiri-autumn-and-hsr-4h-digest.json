@@ -19,20 +19,53 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "オートポリス ＆ SPA直入 公式",
-      "handle": "@autopolis2005 / #SPA直入",
-      "url": "https://x.com/autopolis2005",
-      "postUrl": "https://x.com/hashtag/SPA直入",
+      "citationType": "direct_post",
+      "accountName": "SPA直入",
+      "handle": "@spa_naoiri",
+      "url": "https://x.com/spa_naoiri",
+      "postUrl": "https://x.com/spa_naoiri/status/2119386569811677518",
+      "publishedDate": "2026-11-08",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWmS2dpacAAs87r.jpg",
+        "https://pbs.twimg.com/media/HWmS2dsbcAAN0vg.jpg",
+        "https://pbs.twimg.com/media/HWmS2dpboAAh5g3.jpg",
+        "https://pbs.twimg.com/media/HWmS2dpboAEfVFB.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【SPA直入 POLISPA 第3戦 ＆ サンデーフェスタ AUTUMN】大分県竹田市のSPA直入にて秋のシリーズ戦を開催！併催のNinja Team Green Cupとともに熱いバトルが展開されました！",
-        "ca": "【POLISPA Rd.3 i Super Sunday Festa AUTUMN a SPA Naoiri】Gran cap de setmana de velocitat a Oita amb la Ninja Team Green Cup!",
-        "en": "[SPA Naoiri POLISPA Rd.3 & Sunday Festa AUTUMN] Autumn series round at Oita featuring technical sprint battles alongside the Ninja Team Green Cup!"
+        "ja": "2026年11月8日(日)\n🏍2026 九州エンデュランスフェスタ in SPA直入🏍\n\n朝の気温が6℃と急激に冷え込んだ中開催された250ccの5時間耐久レース、多くのお客様、遠くは関西からご参加いただき、大きな事故も無く無事終了いたしました。",
+        "ca": "Diumenge 8 de novembre de 2026\n🏍Kyushu Endurance Festa 2026 a SPA Naoiri🏍\n\nLa cursa de resistència de 5 hores per a 250cc s'ha celebrat sota un fred sobtat de 6°C al matí; amb molts participants vinguts fins i tot des de Kansai, ha conclòs amb èxit i sense cap accident greu.",
+        "en": "Sunday, November 8, 2026\n🏍2026 Kyushu Endurance Festa in SPA Naoiri🏍\n\nThe 250cc 5-hour endurance race, held amidst a sudden morning chill of 6°C, has safely concluded without major incidents thanks to many participants traveling from as far as Kansai."
       },
       "editorialCommentary": {
-        "ja": "SPA直入公式（@autopolis2005）およびハッシュタグ「#SPA直入」では、阿蘇の初秋の風が吹く中で開催された各クラスの表彰台スナップが発信されています。",
-        "ca": "El compte oficial @autopolis2005 i l'etiqueta #SPA直入 recullen les fotos de podi sota l'ambient agradable de setembre a Oita.",
-        "en": "Official dispatches from @autopolis2005 and community posts under #SPA直入 capture podium presentations and crisp autumn racing."
+        "ja": "朝の気温6℃という冷え込みでタイヤを温めるのも難しい状況でしたが、無事に完走を遂げた皆さんの笑顔がとても印象的でした。直入のテクニカルなコースを5時間走り抜くタフさは本当に素晴らしいですね！",
+        "ca": "Amb només 6°C al matí la temperatura de pista era crítica per escalfar gomes, però veure tothom completar les 5 hores sense ensurts omple d'alegria el pàdoc. SPA Naoiri és un traçat tècnic i exigent que posa a prova cada pilot!",
+        "en": "With a 6°C morning chill, warming up tires was undeniably tricky, but seeing everyone complete the five hours safely brought warm smiles to the paddock. Conquering SPA Naoiri's technical corners for five hours is no small feat!"
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "M's RIE",
+      "handle": "@riechi____",
+      "url": "https://x.com/riechi____",
+      "postUrl": "https://x.com/riechi____/status/2119251609289105828",
+      "publishedDate": "2026-11-08",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWkYFpgbQAAY6OZ.jpg",
+        "https://pbs.twimg.com/media/HWkYFpTagAAYX-y.jpg",
+        "https://pbs.twimg.com/media/HWkYFpea0AAqyCg.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "スタート‼︎\n今日のスタートライダーはこちら👍\n5時間耐久⏰\n#2026九州エンデュランスフェスタ\n#SPA直入 \n#カワサキプラザ松山",
+        "ca": "Comença la cursa!!\nAquest és el nostre pilot per a la sortida👍\nResistència de 5 hores⏰\n#2026九州エンデュランスフェスタ\n#SPA直入 \n#カワサキプラザ松山",
+        "en": "Start!!\nHere is our starting rider for today👍\n5-hour endurance⏰\n#2026KyushuEnduranceFesta\n#SPANaoiri \n#KawasakiPlazaMatsuyama"
+      },
+      "editorialCommentary": {
+        "ja": "5時間耐久の火ぶたが切って落とされる直前、ライダーの引き締まった表情にこちらもシャッターを切る指に力が入ります！長丁場のドラマがここから始まると思うと胸が高鳴りますね。",
+        "ca": "Just abans d'iniciar les 5 hores de resistència, la concentració reflectida al rostre del pilot fa vibrar qualsevol objectiu. És en aquests instants previs on comença la veritable màgia de les curses d'endurància!",
+        "en": "Moments before the 5-hour endurance gets underway, the rider's intense focus makes you squeeze the shutter with excitement! You can truly feel the impending drama waiting to unfold over those long hours."
       }
     },
     {
@@ -51,24 +84,6 @@
         "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
         "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
         "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
-      }
-    },
-    {
-      "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "HSR九州 公式 ＆ ドリームカップ",
-      "handle": "@hsr_kyushu / #ドリームカップ",
-      "url": "https://x.com/hsr_kyushu",
-      "postUrl": "https://x.com/hashtag/ドリームカップ",
-      "quotedPostText": {
-        "ja": "【HSR九州 ドリームカップ 4時間耐久】熊本・HSR九州で開催された名物ミニバイク4耐！チーム全員でタスキをつなぐ耐久レースの醍醐味が詰まった感動のチェッカー！",
-        "ca": "【4 Hores Dream Cup a HSR Kyushu】Cursa clàssica de resistència per a minimotos a Kumamoto amb una gran participació per equips!",
-        "en": "[HSR Kyushu Dream Cup 4-Hour Endurance] Popular mini-bike endurance at Kumamoto, delivering high drama and teamwork right to the chequered flag!"
-      },
-      "editorialCommentary": {
-        "ja": "HSR九州公式（@hsr_kyushu）および「#ドリームカップ」タグでは、4時間にわたる給油・ライダー交代戦略やピットクルーの歓喜の瞬間が伝えられています。",
-        "ca": "Les publicacions mostren l'estratègia de relleus i la celebració de tots els equips que van completar les 4 hores.",
-        "en": "Community and track posts highlight pit-stop strategies, rider change handoffs, and jubilant team finishes across 4 hours."
       }
     }
   ],

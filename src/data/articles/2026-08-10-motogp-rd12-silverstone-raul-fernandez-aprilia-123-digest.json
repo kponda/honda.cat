@@ -22,19 +22,25 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #BritishGP Hub",
-      "handle": "@MotoGP / #BritishGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2115655800089673942",
+      "publishedDate": "2026-10-29",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVxRoKCXcAA5AZH.jpg",
+        "https://pbs.twimg.com/media/HVxRr9FWoAAm54E.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第12戦 イギリスGP（シルバーストン）公式結果】ラウル・フェルナンデス（Trackhouse MotoGP Team）がキャリア初優勝！マルコ・ベッツェッキ（2位）、小椋藍（3位）が続き、アプリリア勢が歴史的1-2-3ポディウム独占！",
-        "ca": "【GP de Gran Bretanya 2026 a Silverstone】Primera victòria a MotoGP per a Raúl Fernández (Trackhouse)! Triplet històric d'Aprilia amb Bezzecchi (2n) i Ogura (3r) copant el podi!",
-        "en": "[2026 MotoGP British GP at Silverstone] Maiden MotoGP victory for Raúl Fernández (Trackhouse)! Historic 1-2-3 podium lockout for Aprilia with Bezzecchi 2nd and Ogura 3rd!"
+        "ja": "「マルティネーター」ことホルヘ・マルティンがマレーシアGPに降臨！",
+        "ca": "El 'Martinator' és aquí al GP de Malàisia!",
+        "en": "The Martinator is HERE at the Malaysian GP!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#BritishGP」では、シルバーストンの超高速コーナー（マゴッツ・ベケッツ）でアプリリアRS-GPが発揮した圧倒的コーナリングスピードと、アプリリア史上初の表彰台独占が称えられています。",
-        "ca": "El compte oficial @MotoGP destaca l'agilitat inigualable de l'Aprilia RS-GP a les esses ràpides de Maggotts i Becketts.",
-        "en": "Official social updates celebrate Aprilia's historic clean sweep and the RS-GP's peerless high-speed agility through Maggotts and Becketts."
+        "ja": "ホルヘ・マルティンの持ち味である鋭い突っ込みと爆発的なアタックラップは、いつ見てもアドレナリンが沸き立つぜ！エイペックスに向けて電光石火でバイクをねじ伏せる車体コントロールはまさに一級品だな。",
+        "ca": "L'agressivitat pura de Jorge Martín a l'entrada dels revolts i la seva explosivitat a una volta són pur espectacle! La velocitat amb què tomba la moto buscant l'àpex trenca els esquemes de qualsevol telemetria.",
+        "en": "Jorge Martín's raw entry speed and explosive one-lap aggression are always pure adrenaline to watch! The sheer violence with which he pitches the chassis onto the apex is a masterclass in modern prototype control."
       }
     },
     {

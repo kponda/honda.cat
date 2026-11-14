@@ -21,19 +21,24 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #AragonGP Hub",
-      "handle": "@MotoGP / #AragonGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2119116050352455854",
+      "publishedDate": "2026-11-07",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWic0NTXkAIt4R6.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第13戦 アラゴンGP 公式結果】左回りモーターランド・アラゴンでマルク・マルケスが独走スウィープ（ポール・スプリント・決勝優勝）！2位アコスタ、3位ベッツェッキ！",
-        "ca": "【GP d'Aragó 2026 a MotorLand】Marc Márquez torna a dominar de cap a peus al seu circuit talismà d'Alcanyís guanyant la pole, l'Sprint i la cursa de diumenge!",
-        "en": "[2026 MotoGP Aragon GP at MotorLand] Marc Márquez executes another textbook clean sweep at his beloved anti-clockwise stronghold! Acosta 2nd, Bezzecchi 3rd!"
+        "ja": "速報：ペッコ・バニャイアが右足骨折のためカタールGPを欠場へ。\nこのイタリア人ライダーはドーハの病院へ向かい、骨折部に手術が必要かどうかを判断します。ペッコの一日も早い回復を祈ります！❤️‍🩹 #MotoGP",
+        "ca": "ÚLTIMA HORA: @PeccoBagnaia és baixa per al #QatarGP 🇶🇦 a causa de fractures al peu dret.\nEl pilot italià anirà a l'Hospital de Doha per avaluar si cal operar. Et desitgem una ràpida recuperació, Pecco! ❤️‍🩹 #MotoGP",
+        "en": "BREAKING: @PeccoBagnaia sidelined from the #QatarGP 🇶🇦 with fractures in his right foot.\nThe Italian will go to Doha Hospital to determine whether the fractures require surgery. Wishing you all the best, Pecco! ❤️‍🩹 #MotoGP"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#AragonGP」では、アラゴンの石壁（コークスクリュー）を猛烈なアングルで下り抜けるマルケス選手の神懸かり的なライディングが世界中でシェアされています。",
-        "ca": "El compte oficial @MotoGP destaca la traçada impecable de Márquez al 'sacacorchos' de MotorLand Aragó.",
-        "en": "Official social clips celebrate Márquez's gravity-defying lean angles plunging down MotorLand's reverse-corkscrew complex."
+        "ja": "チャンピオンシップ争いの佳境でペッコが右足を骨折して離脱するとは痛恨極まりない！リアブレーキ操作とブレーキング時の踏ん張りを支える重要箇所だけに、無理せず確実に治して戻ってきてほしいぜ！",
+        "ca": "Quin cop més dur per al campionat veure Pecco fora de joc per fractures al peu dret en plena pugna pel títol! El peu dret és clau per al fre posterior i el suport en frenada forta, així que cal que es recuperi al cent per cent abans de pujar de nou a la Ducati!",
+        "en": "What a crushing blow to the championship fight to see Pecco sidelined with right foot fractures! That foot is vital for rear brake modulation and bracing under hard braking, so he needs to heal properly before jumping back on the bike!"
       }
     },
     {

@@ -22,54 +22,49 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "スポーツランドSUGO【公式】",
-      "handle": "@sugo_official",
-      "url": "https://x.com/sugo_official",
+      "citationType": "direct_post",
+      "accountName": "【公式】キジマ 🏕🏍💨🏍💨🏕",
+      "handle": "@kijima2167",
+      "url": "https://x.com/kijima2167",
+      "postUrl": "https://x.com/kijima2167/status/2121388163809919349",
+      "publishedDate": "2026-11-13",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HXCvSLtbwAAE3lD.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "スポーツランドSUGO公式Xアカウント：大会当日の天候、パドック進行、リザルト速報を発信中。",
-        "ca": "Compte oficial de X de Sportsland SUGO: actualitzacions sobre la climatologia, horaris de pàdoc i resultats en temps real.",
-        "en": "Official Sportsland SUGO X account: providing live updates on track weather, paddock schedule, and official provisional results."
+        "ja": "11月14日土曜日、おはバイクです！本日もスポーツランドSUGOからお届けします。2026 SUGO JP-SPORT OPEN 4時間耐久レース、予選8:45〜、決勝10:30〜。応援よろしくお願いします！",
+        "ca": "Dissabte 14 de novembre, bon dia motards! Tornem a connectar des de Sportsland SUGO. Cursa de resistència 2026 SUGO JP-SPORT OPEN 4 Hores: classificació 8:45~, cursa 10:30~. Animeu-nos!",
+        "en": "Saturday, Nov 14, morning riders! Posting from Sportsland SUGO again. 2026 SUGO JP-SPORT OPEN 4-Hour Endurance Race: Qualifying 8:45–9:15, Race 10:30–14:30. Thank you for your support!"
       },
       "editorialCommentary": {
-        "ja": "晩秋のSUGOは蔵王おろしの冷風により急激に路面温度が低下します。公式Xの気象情報とピット進行の速報確認が不可欠です。",
-        "ca": "A finals de tardor, la temperatura de l'asfalt a SUGO cau en picat pel vent de Zao. El canal oficial de X és vital per seguir l'evolució de la pista.",
-        "en": "In late autumn, track temperatures at SUGO drop drastically due to mountain winds. Tracking the official X feed is essential for operational updates."
-      },
-      "citationType": "official_channel"
+        "ja": "晩秋の澄んだSUGOの光はファインダー越しにも格別ですね。キジマKISSレーシングのピットの引き締まった緊張感をしっかり捉えたいところです。",
+        "ca": "La llum nítida de tardor a SUGO llueix preciosa pel visor. Val la pena seguir de prop la concentració al box de Kijima KISS Racing.",
+        "en": "The crisp late-autumn light at SUGO looks stunning through the viewfinder. I want to capture that sharp focus inside the Kijima KISS Racing pit."
+      }
     },
     {
       "platform": "X",
-      "accountName": "HSR九州",
-      "handle": "@hsr_kyushu",
-      "url": "https://x.com/hsr_kyushu",
+      "citationType": "direct_post",
+      "accountName": "けんけんchannel@公式さん",
+      "handle": "@kenkenchannel_",
+      "url": "https://x.com/kenkenchannel_",
+      "postUrl": "https://x.com/kenkenchannel_/status/2117591034427556348",
+      "publishedDate": "2026-11-03",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWMx0pAbMAAYGdA.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "HSR九州公式Xアカウント：エンジョイ4時間耐久レースおよびSAGA CUPのピット割、タイムスケジュール最新情報。",
-        "ca": "Compte oficial de X d'HSR Kyushu: assignació de boxs i horaris actualitzats per a les 4 Hores Enjoy i la SAGA CUP.",
-        "en": "Official HSR Kyushu X account: pit garage allocation and updated weekend timetables for the Enjoy 4-Hour and SAGA CUP."
+        "ja": "レース情報：2026 SUGO OPEN 4時間耐久レースに長尾健吾が参戦します。11/14(日) スポーツランドSUGO、TSE250&400 OPEN国際クラス、#18 YZF-R3。「あべスピ・森のくまさん＆ガレージL8」より阿部徹郎選手、渡部裕貴選手とチームを組んで挑みます。",
+        "ca": "Info de cursa: Kengo Nagao competirà a la cursa de resistència SUGO OPEN 4 Hores 2026 el diumenge 14 de novembre a Sportsland SUGO (Classe Internacional TSE250&400, #18 YZF-R3) amb Abe Speed Mori no Kumasan & Garage L8 al costat de Tetsuro Abe i Yuki Watanabe.",
+        "en": "Race Info: Kengo Nagao will enter the 2026 SUGO OPEN 4-Hour Endurance Race on Nov 14 at Sportsland SUGO. TSE250&400 OPEN International Class, #18 YZF-R3, teaming up with Tetsuro Abe and Yuki Watanabe under Abe Speed Mori no Kumasan & Garage L8."
       },
       "editorialCommentary": {
-        "ja": "阿蘇の麓に位置するHSR九州のパドック熱気をリアルタイムで把握できる一次情報源です。",
-        "ca": "Font primària essencial per monitorar l'activitat al pàdoc d'HSR Kyushu als peus del volcà Aso.",
-        "en": "Primary source for real-time paddock logistics and schedules at HSR Kyushu situated below Mount Aso."
-      },
-      "citationType": "official_channel"
-    },
-    {
-      "platform": "X",
-      "accountName": "Let's レン耐！公式",
-      "handle": "@rentai_official",
-      "url": "https://x.com/rentai_official",
-      "quotedPostText": {
-        "ja": "Let's レン耐！公式X：中日本シリーズ第6戦 KIJIMA杯 明智 初心者60分＆新型Grom 4時間耐久の特別規則・エントリー案内。",
-        "ca": "Compte oficial de Let's Rentai!: informació reglamentària i d'inscrits per a la cita de 4 Hores a Akechi amb les noves Honda Grom.",
-        "en": "Let's Rentai! Official X: special regulations and entry information for the 4-Hour Grom endurance race at Akechi Hilltop Circuit."
-      },
-      "editorialCommentary": {
-        "ja": "青木拓磨氏主宰のレンタル耐久。特別規則やハンデ情報が公式SNSでアナウンスされます。",
-        "ca": "Competició de resistència 'arrive-and-drive' creada per Takuma Aoki amb reglaments d'handicap únics.",
-        "en": "Takuma Aoki's arrive-and-drive endurance event, featuring unique handicap rules and parity machinery."
-      },
-      "citationType": "official_channel"
+        "ja": "実力派ライダーが集うSUGOの4耐、ゼッケン18のR3が秋の杜の都を駆け抜ける姿は素晴らしいシャッターチャンスになりそうです。",
+        "ca": "Una formació de luxe per a les 4 Hores de SUGO; veure la YZF-R3 #18 volar entre els boscos de tardor serà una postal fotogràfica magnífica.",
+        "en": "A potent rider lineup for the SUGO 4-Hour; watching the #18 R3 blast through Sendai's autumn foliage will make for brilliant trackside photos."
+      }
     },
     {
       "platform": "YouTube",

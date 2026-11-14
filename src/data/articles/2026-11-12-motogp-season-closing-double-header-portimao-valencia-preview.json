@@ -38,19 +38,50 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #PortugueseGP Hub",
-      "handle": "@MotoGP / #PortugueseGP",
-      "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1844000000000000001",
+      "accountName": "モトバイ｜失敗しないバイク用品ガイド",
+      "handle": "@motorbikejp",
+      "url": "https://x.com/motorbikejp",
+      "postUrl": "https://x.com/motorbikejp/status/2119797155103699012",
+      "publishedDate": "2026-11-09",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWr4t1IawAAZpRL.jpg",
+        "https://pbs.twimg.com/media/HWr4vEFakAAMFSy.png",
+        "https://pbs.twimg.com/media/HWr4wplaoAEO3mq.png",
+        "https://pbs.twimg.com/media/HWr4xwiaEAE9GOD.png"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 欧州終盤2連戦プレビュー】激動の2026シーズンも残り2戦！明日11/13開幕の高低差ジェットコースター・ポルティマオ（11/13-15）と、翌週の王者凱旋スタジアム・バレンシア（11/20-22）へ！",
-        "ca": "【Prèvia MotoGP 2026】Només queden dues cites per tancar el Mundial! Demà comença la muntanya russa de Portimão (13-15 nov.) i la setmana vinent el gran escenari de València (20-22 nov.)!",
-        "en": "[2026 MotoGP Season Finale Preview] Just two rounds remain in 2026! Action begins tomorrow at the rollercoaster of Portimão (Nov 13–15), followed next week by the grand season-closing fiesta in Valencia (Nov 20–22)!"
+        "ja": "MotoGPカタールGPの勝者と敗者。中東情勢懸念によるヤマハの安全面欠場やバニャイア、マリーニの離脱で16台出走となったが大会は無事終了。アプリリア勢の活躍でマルケスの戴冠はポルトガルGP以降へ持ち越された。",
+        "ca": "Guanyadors i perdedors del GP de Qatar de MotoGP. Amb la baixa de Yamaha per motius de seguretat a l'Orient Mitjà i les absències de Bagnaia i Marini, la graella va quedar en 16 motos, però el cap de setmana es va completar. El ritme d'Aprilia ajorna la corona de Marc Márquez fins a Portugal.",
+        "en": "MotoGP Qatar GP winners and losers. Safety concerns over the Middle East led to Yamaha sitting out alongside Bagnaia and Marini, cutting the grid to 16, yet the event ran safely. Aprilia's strong showing pushes Marc Márquez's title decider to Portimão."
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）が公開した終盤戦ティーザー動画では、ルサイル夜戦を制したアプリリア勢と年間王者を確定させたドゥカティ・マルケス兄弟の激闘ハイライトが凝縮されています。",
-        "ca": "El compte oficial @MotoGP destaca el duel entre les Aprilia en ratxa i els germans Márquez abans de l'arribada a la Península Ibèrica.",
-        "en": "Official social highlights build anticipation as in-form Aprilia take the fight to Ducati across the closing Iberian rounds."
+        "ja": "台数が絞られた波乱のルサイルを耐え抜き、舞台は起伏の激しいポルティマオへ！マルクの王座決定か、追撃劇か、テレメトリーの針が振り切れる週末になるぜ！",
+        "ca": "Després de sobreviure a un Lusail reduït i tens, arriba la muntanya russa de Portimão! Márquez es pot coronar o veurem més resistència: la telemetria traurà fum!",
+        "en": "Surviving a depleted, tense Lusail shifts the drama to the Portimão rollercoaster! Whether Márquez seals the crown or faces a dogfight, the telemetry will be electric!"
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "black pearl",
+      "handle": "@blackpearl0313",
+      "url": "https://x.com/blackpearl0313",
+      "postUrl": "https://x.com/blackpearl0313/status/2120278164165587235",
+      "publishedDate": "2026-11-10",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWy9wDFaYAA3P2V.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "おはようございます！レースウィークです！MotoGP残り2戦、第21戦ポルトガルGP。日曜を待たずに土曜のスプリントでマルケスがワールドチャンピオン獲得となるか！？",
+        "ca": "Bon dia! Setmana de curses! Queden només dues cites de MotoGP, R21 GP de Portugal. Podria Márquez proclamar-se campió del món dissabte a la cursa Sprint sense esperar diumenge?!",
+        "en": "Good morning! It's RACE WEEK! MotoGP with 2 rounds left, R21 Portuguese GP. Could Márquez clinch the World Championship as early as Saturday's Sprint?!"
+      },
+      "editorialCommentary": {
+        "ja": "土曜スプリントでの戴冠劇なら歴史的瞬間だ！ポルティマオのブラインドクレストを全開でねじ伏せるマルクの走りに全神経を集中させろ！",
+        "ca": "Tancar el títol al Sprint de dissabte seria històric! Poseu tots els sentits al pilotatge de Marc atacant els canvis de rasant cecs de Portimão!",
+        "en": "Sealing the title in Saturday's Sprint would be historic! Keep your eyes locked on Marc attacking Portimão's blind crests with sheer throttle commitment!"
       }
     },
     {

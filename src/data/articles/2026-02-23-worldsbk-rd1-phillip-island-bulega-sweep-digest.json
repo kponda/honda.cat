@@ -21,19 +21,52 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK",
+      "accountName": "Aruba.it Racing - Ducati",
+      "handle": "@ArubaRacing",
+      "url": "https://x.com/ArubaRacing",
+      "postUrl": "https://x.com/ArubaRacing/status/2024755295961100582",
+      "publishedDate": "2026-02-20",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HBlY6RSbUAETeRC.jpg",
+        "https://pbs.twimg.com/media/HBlY6ODbUAIwiv7.jpg",
+        "https://pbs.twimg.com/media/HBlY6SAbUAEojSI.jpg",
+        "https://pbs.twimg.com/media/HBlY6Q-bsAATNBR.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第1戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
-        "ca": "【WorldSBK Rd.1】Resultats oficials amb un ritme demolidor a la pista!",
-        "en": "[WorldSBK Rd.1] Official Results and Highlights from the paddock!"
+        "ja": "#AustralianWorldSBK 🔴金曜総括🔴 📰ブレガがフィリップアイランドの金曜タイムシート首位。レクオナもセッションを通じて前進し8番手。明日は2026年WorldSBKシーズンの初レース！",
+        "ca": "#AustralianWorldSBK 🔴 Resum de divendres 🔴 📰 Bulega lidera la taula de temps de divendres a Phillip Island. Lecuona progressa al llarg del dia per acabar 8è. Demà, la primera cursa de la temporada 2026 de WorldSBK.",
+        "en": "#AustralianWorldSBK 🔴 Friday's Recap 🔴 📰 Bulega tops Friday’s timesheets at Phillip Island. Lecuona makes progress throughout the day to finish P8. Tomorrow the first race in the 2026 WorldSBK season."
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第1戦のオンボード映像やハイライトが世界中のファンに配信されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 1.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 1."
+        "ja": "初日からブレガが見せたセクターごとのタイム配分と車体バランスは圧巻だったな！レクオナも初日シングルフィニッシュと順調な仕上がりを見せてくれたぜ。",
+        "ca": "El ritme i la precisió telemètrica de Bulega als sectors des de divendres han estat estratosfèrics! A més, veure en Lecuona instal·lat al top 8 d'entrada és un senyal molt prometedor.",
+        "en": "Bulega's sector splits and chassis balance right from Friday were utterly imperious! Seeing Lecuona comfortably in the top eight was also an encouraging sign for the garage."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "WorldSBK",
+      "handle": "@WorldSBK",
+      "url": "https://x.com/WorldSBK",
+      "postUrl": "https://x.com/WorldSBK/status/2025451826762420584",
+      "publishedDate": "2026-02-22",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HBvZs9UWwAESxuo.jpg",
+        "https://pbs.twimg.com/media/HBvZs99WUAA0sXc.jpg",
+        "https://pbs.twimg.com/media/HBvZs_LW4AAnPx2.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "決勝レース最終結果🏁 🥇 ニコロ・ブレガ 🥈 アクセル・バッサーニ 🥉 アルバロ・バウティスタ #AustralianWorldSBK 🇦🇺",
+        "ca": "Resultats finals de la cursa 🏁 🥇 @nbulega 🥈 @axelbassani 🥉 @19Bautista #AustralianWorldSBK 🇦🇺",
+        "en": "Race final and full results 🏁 🥇 @nbulega 🥈 @axelbassani 🥉 @19Bautista #AustralianWorldSBK 🇦🇺"
+      },
+      "editorialCommentary": {
+        "ja": "ブレガが開幕戦を制し、バッサーニとバウティスタが続く完璧なリザルトだ！トラクション管理とタイヤマネジメントでライバルを完全に封じ込めた見事な勝利だぜ。",
+        "ca": "Victòria incontestada de Bulega per inaugurar l'any, escortat al podi per Bassani i Bautista! La gestió de la tracció i el desgast dels pneumàtics han marcat la pauta a seguir.",
+        "en": "An imperious win for Bulega to start the year, shadowed onto the podium by Bassani and Bautista! His traction and tyre wear management have set the benchmark for the season."
       }
     },
     {

@@ -17,6 +17,52 @@
   ],
   "snsCitations": [
     {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "特盛",
+      "handle": "@tokumori_L5",
+      "url": "https://x.com/tokumori_L5",
+      "postUrl": "https://x.com/tokumori_L5/status/2119341380887789580",
+      "publishedDate": "2026-11-08",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWlpvZ1bsAAxVbk.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "タイヤ、保安部品、クーラントを元に戻すのに2.5時間かかった。めんどくさい！バイクに乗りたいし紅葉も見に行きたい！",
+        "ca": "He trigat dues hores i mitja a tornar a muntar pneumàtics, peces de seguretat i refrigerant. Quin pal! Vull anar en moto i veure les fulles de tardor!",
+        "en": "Took 2.5 hours to swap back tires, safety equipment, and coolant. What a pain! Just wanna ride and see the autumn foliage!"
+      },
+      "editorialCommentary": {
+        "ja": "2.5時間で戻せたなら上出来だよ、愚痴りながらもサーキット規定と公道仕様をきっちり切り替えてるのはメカとして誇っていい仕事だ。",
+        "ca": "Dues hores i mitja és una marca excel·lent; per molt que et queixis, fer la transició estricta entre circuit i carrer és feina ben feta de mecànic.",
+        "en": "Two and a half hours is solid work; complain all you want, but swapping properly between track regulations and street trim shows true mechanical pride."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "ぎゅう",
+      "handle": "@sc_staff_01",
+      "url": "https://x.com/sc_staff_01",
+      "postUrl": "https://x.com/sc_staff_01/status/2118894413367984583",
+      "publishedDate": "2026-11-07",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWfTMHRbIAAz6hS.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "BOXのクーラント交換完了。Super-ONEにも試乗してきた。今はこの紫のマシンに一番乗りたい。乗っても全く違和感なし。最近のバイク同様、モード切り替えとブーストボタンが面白い！",
+        "ca": "Canvi de refrigerant fet al box. He provat la Super-ONE. Ara mateix aquesta lila és la que més vull portar; cap sensació estranya en pilotar-la. Com a les motos modernes, el canvi de mode i el botó de boost són molt divertits!",
+        "en": "Coolant flushed in the box. Test-rode the Super-ONE. Right now this purple one is the bike I want to ride most—felt totally natural. Just like modern bikes, the mode switching and boost button are a blast!"
+      },
+      "editorialCommentary": {
+        "ja": "冷却水の交換をきっちり済ませてからの試乗、整備順序としては満点だね。電制ブーストも水回りが健全であってこそのパワーだよ。",
+        "ca": "Canviar el refrigerant abans de provar la moto és exactament l'ordre correcte de taller. El boost electrònic només brilla si la refrigeració està impecable.",
+        "en": "Flushing the coolant before hitting the test ride is textbook pit discipline. Electronic boost only pays off when your cooling circuit is rock solid."
+      }
+    },
+    {
       "platform": "OfficialWeb",
       "accountName": "MFJ 国内競技規則 (ロードレース技術仕様)",
       "handle": "@mfj_official",
@@ -31,23 +77,6 @@
         "ja": "各サーキットの公式車検では、ラジエターキャップを開けて冷却水の色（緑やピンクのLLCが入っていないか）を綿密に確認されます。エチレングリコールはオイルのように路面に残り、大事故を誘発するためです。",
         "ca": "A les verificacions oficials s'obre sempre el tap del radiador per comprovar que no hi hagi líquid verd o rosa. L'etilenglicol deixa una pel·lícula tan relliscosa com l'oli a l'asfalt.",
         "en": "Scrutineers regularly pop radiator caps to verify fluid color. Green or pink ethylene glycol leaves an oil-like film on asphalt that leads to catastrophic multi-bike crashes."
-      }
-    },
-    {
-      "platform": "X",
-      "accountName": "オートポリス (AUTOPOLIS) 公式",
-      "handle": "@autopolis_jp",
-      "url": "https://www.instagram.com/autopolis_jp/",
-      "postUrl": "https://x.com/autopolis_jp/status/2119914567890123456",
-      "quotedPostText": {
-        "ja": "オートポリス走行前のお願い：スポーツ走行枠や耐久レースではLLC（不凍液）の抜き取りと真水への交換を徹底してください。コース上へ冷却水が漏れた場合、路面復旧に長時間の赤旗中断が発生し、他のお客様の走行機会を奪うことになります。",
-        "ca": "Avís de pista a Autopolis: Per a tandes esportives i resistència cal substituir l'anticongelant per aigua. Una fuita de refrigerant convencional a pista obliga a aturar la sessió amb bandera vermella durant hores.",
-        "en": "Autopolis Track Notice: All track day and endurance competitors must flush ethylene glycol for pure water. Leaked street coolant requires hours of red-flag track scrubbing."
-      },
-      "editorialCommentary": {
-        "ja": "エチレングリコールは気化しにくく、路面の微細なアスファルトの隙間に染み込んで除去が極めて困難です。真水であれば蒸発して乾くため、コース復旧が迅速に行えます。",
-        "ca": "L'etilenglicol no s'evapora i penetra als porus de l'asfalt sent gairebé impossible de netejar amb aigua. L'aigua pura, en canvi, s'asseca ràpidament sense deixar rastre.",
-        "en": "Ethylene glycol does not readily evaporate and saturates porous asphalt aggregate. Pure water quickly dries with minimal track downtime."
       }
     }
   ],

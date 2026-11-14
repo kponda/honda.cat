@@ -20,19 +20,51 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://twitter.com/WorldSBK/status/1835639555644358833",
+      "accountName": "Aruba.it Racing - Ducati",
+      "handle": "@ArubaRacing",
+      "url": "https://x.com/ArubaRacing",
+      "postUrl": "https://x.com/ArubaRacing/status/2045193166601814461",
+      "publishedDate": "2026-04-17",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HGH4bzqWgAAzAnB.jpg",
+        "https://pbs.twimg.com/media/HGH4bzrWkAAkfno.jpg",
+        "https://pbs.twimg.com/media/HGH4fLKWgAAvWGA.jpg",
+        "https://pbs.twimg.com/media/HGH4fLla0AAgGps.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第3戦 アッセン】ニコロ・ブレガ（Aruba.it Racing - Ducati）がレース1・スーパーポールレース・レース2の全レースを制覇する圧巻のトレブル（3連勝）を達成！",
-        "ca": "【WorldSBK Assen】Nicolò Bulega (Aruba.it Racing - Ducati) aconsegueix un triplet memorable al «Catedral de la Velocitat» d'Assen guanyant la Cursa 1, la Superpole Race i la Cursa 2!",
-        "en": "[WorldSBK Assen Dutch Round] Nicolò Bulega (Aruba.it Racing - Ducati) scores a magnificent treble at the Cathedral of Speed, sweeping Race 1, Superpole Race, and Race 2!"
+        "ja": "#DutchWorldSBK 🔴 金曜総括 🔴\n📰 TTアッセン・サーキットでの金曜フリー走行を終え、Aruba.it Racing – Ducatiのブレガがトップ、レクオナが3番手につける",
+        "ca": "#DutchWorldSBK 🔴 RESUM DE DIVENDRES 🔴\n📰 Bulega lidera per a Aruba.it Racing – Ducati amb Lecuona tercer després dels entrenaments lliures de divendres al circuit TT Assen",
+        "en": "#DutchWorldSBK 🔴 Friday's RECAP 🔴\n📰 Bulega goes top for Aruba.it Racing – Ducati with Lecuona third after Friday free practice at TT Assen circuit"
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、歴史あるアッセンの高速シケイン（Geert Timmer Bocht）を完璧なラインでクリアし続けたブレガ選手のオンボード映像が絶賛されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren la precisió quirúrgica de Bulega a la famosa xicana final d'Assen.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK highlight Bulega's flawless race craft through Assen's legendary final chicane."
+        "ja": "アッセンの高速セクションでブレガの鋭いコーナリングスピードが完全に炸裂しているな！レクオナも3番手に付けており、ドゥカティ勢の週末に向けた仕上がりはテレメトリー的にも文句なしだぜ！",
+        "ca": "El ritme de pas per revolt de Bulega a la catedral d'Assen ha estat demolidor des de la primera sessió! Amb Lecuona a la tercera plaça, la telemetria de les Panigale fa por de cara al cap de setmana.",
+        "en": "Bulega's corner speed through the sweeping curves of Assen was ferocious straight out of the box! Having Lecuona up in third proves the factory Ducatis dialed in their base telemetry perfectly."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "Aruba.it Racing - Ducati",
+      "handle": "@ArubaRacing",
+      "url": "https://x.com/ArubaRacing",
+      "postUrl": "https://x.com/ArubaRacing/status/2044712714996506988",
+      "publishedDate": "2026-04-16",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HGBHMByWAAAi8AE.jpg",
+        "https://pbs.twimg.com/media/HGBHNDaWgAAEKJt.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "#DutchWorldSBK 🔴 プレビュー 🔴\n📰 象徴的なTTサーキット・アッセンで2026年WorldSBKシーズン第3戦が開催される。ブレガとレクオナは世界選手権ランキング1位と2位の座を守る準備が整っている。",
+        "ca": "#DutchWorldSBK 🔴 PRÈVIA 🔴\n📰 L'icònic TT Circuit d'Assen acollirà la tercera ronda de la temporada 2026 de WorldSBK. Bulega i Lecuona estan a punt per defensar les seves posicions de P1 i P2 a la general del Mundial.",
+        "en": "#DutchWorldSBK 🔴 PREVIEW 🔴\n📰 The iconic TT Circuit in Assen will host the third round of the 2026 WorldSBK season. Bulega and Lecuona are ready to defend their P1 and P2 positions in the World Championship standings."
+      },
+      "editorialCommentary": {
+        "ja": "ランキング1-2をガッチリ固めて聖地アッセンに乗り込むチームの勢いは本物だ！この伝統の難コースでライバル勢の追撃をどう抑え込むか、序盤のレース運びから目が離せないぞ！",
+        "ca": "Arribar a la catedral d'Assen ocupant el primer i segon lloc de la general demostra un estat de forma impecable. Serà clau veure com gestionen la pressió dels perseguidors en un traçat tan exigent.",
+        "en": "Heading into Assen defending a 1-2 championship standing gives the squad massive momentum. Keeping cool tires and tight race management will be everything against the chasing pack on this historic layout."
       }
     },
     {

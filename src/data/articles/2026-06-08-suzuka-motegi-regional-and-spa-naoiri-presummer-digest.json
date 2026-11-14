@@ -19,20 +19,54 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "鈴鹿サーキット ＆ 鈴鹿サンデーハブ",
-      "handle": "@suzuka_event / #鈴鹿サンデー",
-      "url": "https://x.com/suzuka_event",
-      "postUrl": "https://x.com/hashtag/鈴鹿サンデー",
+      "citationType": "direct_post",
+      "accountName": "maaDeft Riders Gear🏍️",
+      "handle": "@maadeft_riders",
+      "url": "https://x.com/maadeft_riders",
+      "postUrl": "https://x.com/maadeft_riders/status/2112358147411312803",
+      "publishedDate": "2026-10-20",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVCZ8TTbwAA8YQK.jpg",
+        "https://pbs.twimg.com/media/HVCZ8TPaMAA8jS_.jpg",
+        "https://pbs.twimg.com/media/HVCZ8TYaoAA0L-c.jpg",
+        "https://pbs.twimg.com/media/HVCaYWuaQAEAzMk.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【鈴鹿サンデーロードレース 第2戦】鈴鹿8耐トライアウトを兼ねた真剣勝負！全国の精鋭チームが集結し、真夏の本戦出場枠を懸けた熱いスプリントバトル！",
-        "ca": "【Suzuka Sunday Road Race Rd.2】Ronda crucial de classificació per a les 8 Hores de Suzuka amb els millors equips privats del Japó!",
-        "en": "[Suzuka Sunday Road Race Rd.2] Crucial Suzuka 8 Hours trial round featuring fierce sprint battles for remaining endurance spots!"
+        "ja": "2026もてぎロードレース第4戦ST250Fクラス、maaDeft Racing 明石のNaga選手（No.24 / カワサキNinja ZX-25R）が予選3位から決勝2位表彰台を獲得！応援ありがとうございました！",
+        "ca": "4a prova del Campionat de Motegi 2026, classe ST250F: Naga (No.24 / Kawasaki Ninja ZX-25R, maaDeft Racing Akashi) puja al 2n graó del podi després de classificar-se 3r!",
+        "en": "2026 Motegi Road Race Rd.4 ST250F class: Naga (No.24 / Kawasaki Ninja ZX-25R, maaDeft Racing Akashi) takes 2nd place on the podium from 3rd in qualifying! Thank you for the support!"
       },
       "editorialCommentary": {
-        "ja": "鈴鹿公式（@suzuka_event）および「#鈴鹿サンデー」では、梅雨前のドライコンディションの中で鈴鹿8耐進出権を手にしたプライベーターたちの歓喜が伝えられています。",
-        "ca": "El compte oficial @suzuka_event mostra les celebracions dels equips privats que aconsegueixen plaça per a les 8 Hores de Suzuka.",
-        "en": "Updates from @suzuka_event celebrate the privateer squads securing their coveted starting spots for the prestigious Suzuka 8 Hours."
+        "ja": "もてぎのテクニカルな区間でZX-25Rの甲高いエキゾーストを響かせながらの力走、予選から順位を上げた見事な表彰台獲得でしたね！",
+        "ca": "Sentir el crit del quatre en línia de la ZX-25R als trams tècnics de Motegi i veure'ls remuntar fins al podi és una autèntica meravella fotogràfica.",
+        "en": "Hearing the high-revving ZX-25R sing through Motegi's technical sections as they fought up to second made for a fantastic trackside spectacle!"
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "現場監督＠もう勉強はおなかいっぱい",
+      "handle": "@kantoku0819",
+      "url": "https://x.com/kantoku0819",
+      "postUrl": "https://x.com/kantoku0819/status/2114295319009935625",
+      "publishedDate": "2026-10-25",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVd733AbwAA-DOq.jpg",
+        "https://pbs.twimg.com/media/HVd78IgbEAAMxCz.jpg",
+        "https://pbs.twimg.com/media/HVd8CNhbcAA4Csa.jpg",
+        "https://pbs.twimg.com/media/HVd8QZXbgAATrWe.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "2026 もてぎロードレース選手権 第4戦\n●インターST1000\n佐藤家レーシングand中村エンジン\nしんいちろー！ 選手\n久しぶりの撮影！",
+        "ca": "Campionat de Motegi Road Race 2026, 4a prova\n● Inter ST1000\nSatoke Racing and Nakamura Engine\nPilot Shinichiro!\nFeia molt que no el fotografiava!",
+        "en": "2026 Motegi Road Race Championship Round 4\n● Inter ST1000\nSatoke Racing and Nakamura Engine\nRider Shinichiro!\nIt's been a while since I last shot photos of him!"
+      },
+      "editorialCommentary": {
+        "ja": "もてぎのパドックを支えるプライベーターの熱気あふれる姿を捉えた一枚ですね。地域選手権の現場で輝くライダーの真剣な眼差しは、いつ見ても胸を打たれます！",
+        "ca": "Una fotografia que capta a la perfecció la passió dels pilots privats al pàdoc de Motegi. La concentració d'aquests competidors als campionats regionals sempre resulta captivadora!",
+        "en": "A lovely shot capturing the raw passion of privateers in the Motegi paddock. The intense focus of riders competing in regional championships is always truly inspiring trackside!"
       }
     },
     {
@@ -51,24 +85,6 @@
         "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
         "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
         "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
-      }
-    },
-    {
-      "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "モビリティリゾートもてぎ ＆ もてぎロードレースハブ",
-      "handle": "@motegi_official / #もてぎロードレース",
-      "url": "https://x.com/motegi_official",
-      "postUrl": "https://x.com/hashtag/もてぎロードレース",
-      "quotedPostText": {
-        "ja": "【もてぎロードレース選手権 第2戦】ST600・CBR250R Dream Cup！若手ライダーたちがロードコースのストップ＆ゴーで腕を磨く白熱の地方選！",
-        "ca": "【Campionat Regional de Motegi Rd.2】Els joves talents japonesos competeixen a les categories ST600 i CBR250R Dream Cup!",
-        "en": "[Motegi Road Race Championship Rd.2] Future stars hone their technical racecraft across ST600 and CBR250R Dream Cup classes!"
-      },
-      "editorialCommentary": {
-        "ja": "もてぎ公式（@motegi_official）が伝える地方選の熱気。もて耐7時間耐久や全日本へステップアップを目指す若手たちの走りが光ります。",
-        "ca": "Les xarxes de Motegi destaquen el paper clau d'aquest campionat per formar els pilots del futur cap a les 7 Hores de Motetai.",
-        "en": "Motegi's official reporting highlights the championship's vital role developing tomorrow's endurance and sprint contenders."
       }
     }
   ],

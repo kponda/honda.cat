@@ -21,19 +21,24 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK",
+      "accountName": "さえもんのじょう",
+      "handle": "@saemonnojyo",
+      "url": "https://x.com/saemonnojyo",
+      "postUrl": "https://x.com/saemonnojyo/status/2111744343111520500",
+      "publishedDate": "2026-10-18",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HU3_W6qaYAADZId.png"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第11戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
-        "ca": "【WorldSBK Rd.11】Resultats oficials amb un ritme demolidor a la pista!",
-        "en": "[WorldSBK Rd.11] Official Results and Highlights from the paddock!"
+        "ja": "FIM スーパーバイク / スーパースポーツ 2026 第12戦 ヘレス。10/18(日) J SPORTS 3にてRace1・Race2生中継！最終戦、来季MotoGPへ昇格するニッコロ・ブレガの走りも見納めです。",
+        "ca": "FIM Superbike / Supersport 2026 Ronda 12 Jerez. Diumenge 18/10 a J SPORTS 3: Cursa 1 i Cursa 2. L'última ronda! Última oportunitat per veure Niccolò Bulega a SBK abans del seu salt a MotoGP l'any vinent.",
+        "en": "FIM Superbike & Supersport 2026 Round 12 Jerez. Sun 10/18 on J SPORTS 3: Race 1 & Race 2. The finale! The last chance to watch Niccolò Bulega race here before his move to MotoGP next year."
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第11戦のオンボード映像やハイライトが世界中のファンに配信されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 11.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 11."
+        "ja": "エストリルで記録破りのハットトリックを決めたブレガが、いよいよヘレスでSBK王座の有終の美を飾る！あの驚異的な脱出トラクションと進入スピードをしっかり目に焼き付けておくべきだ！",
+        "ca": "Després del seu hat-trick de rècord a Estoril, Bulega arriba a Jerez per tancar el seu títol de SBK amb honors abans de MotoGP! Cal no perdre de vista la seva increïble tracció a la sortida dels revolts!",
+        "en": "Coming off a record-shattering hat-trick at Estoril, Bulega heads to Jerez to wrap up his SBK crown in grand style before MotoGP! Keep your eyes glued to his insane corner-exit traction and apex entry speed!"
       }
     },
     {

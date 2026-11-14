@@ -17,6 +17,29 @@
   ],
   "snsCitations": [
     {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "たけのん#46",
+      "handle": "@takenonZ900RS",
+      "url": "https://x.com/takenonZ900RS",
+      "postUrl": "https://x.com/takenonZ900RS/status/2118970699755004012",
+      "publishedDate": "2026-11-07",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWgYnS5a8AAj-3A.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "GSXちゃん\nようこそ車内へ🎶\n\n排気量が小さいとは言えフルカウル付のバイク\n軽に積むには積み方が変わる\n思い出すのに四苦八苦😆\n2年ぶりやもんな🤭\n\nこいつのタイヤウォーマー持ってないからスタンドも発電機もいらん\n荷物少なくてええわ〜て思ってます\nそんな時に忘れ物するんよな\n気を付けないと😂",
+        "ca": "Benvinguda a bord, petita GSX 🎶\nTot i ser de petita cilindrada, porta carenat complet, així que carregar-la al kei-car requereix trucs diferents. M'ha costat recordar com es feia després de dos anys 😆🤭\nCom que no tinc escalfadors per a aquesta moto, m'estalvio cavallets i generador. Que bé anar lleuger d'equipatge... encara que just aquí és quan t'oblides alguna cosa important 😂",
+        "en": "Welcome into the van, little GSX 🎶\nEven with a small displacement, it's fully faired, so loading it into a kei car takes a completely different routine. Took some effort to recall after two years 😆🤭\nI don't have tire warmers for this one, so no stands or generator needed. Love traveling light—though that's usually right when you forget something crucial 😂"
+      },
+      "editorialCommentary": {
+        "ja": "ウォーマーなしで走るなら、冷間からの内圧上昇とタイヤのウォームアップには普段の倍以上気を配りなよ。荷物が減って身軽になっても、安全マージンまで削っちゃ元も子もないからね。",
+        "ca": "Si surts a pista sense escalfadors, presta el doble d'atenció a la pujada de pressió des de fred i a la temperatura de la goma. Viatjar lleuger està molt bé, però no retallis mai en marge de seguretat!",
+        "en": "If you're hitting the track without warmers, pay twice as much attention to cold-to-hot pressure rise and proper tire warm-up. Traveling light is great, but don't lighten your safety margin along with it."
+      }
+    },
+    {
       "platform": "OfficialWeb",
       "accountName": "ダンロップ モータースポーツ (DUNLOP Motorsport)",
       "handle": "@dunlop_moto",
@@ -31,23 +54,6 @@
         "ja": "パドックで最速を競うライダーほど、ピットインと同時にエアゲージを当てます。走行によるタイヤ内部温度上昇に伴う内圧変化を把握することが、トラクションとタイヤライフの生命線です。",
         "ca": "Els pilots més ràpids del pàdoc mesuren la pressió al segon d'entrar al box. Controlar com augmenta la pressió amb la temperatura és la clau de la tracció i la vida del pneumàtic.",
         "en": "Paddock champions check hot pressures the instant they stop in pit lane. Managing the thermodynamic pressure rise from track friction is essential for edge grip and tire longevity."
-      }
-    },
-    {
-      "platform": "X",
-      "accountName": "HSR九州 (HSR Kyushu Official)",
-      "handle": "@hsrkyushu",
-      "url": "https://x.com/hsrkyushu",
-      "postUrl": "https://x.com/hsrkyushu/status/2119582109876543210",
-      "quotedPostText": {
-        "ja": "本日のHSR九州は快晴！路面温度は朝の18℃から午後には42℃まで上昇しています。気温・路面温度の変化に合わせて、タイヤ空気圧のこまめなチェックをお忘れなく！",
-        "ca": "Dia assolellat a HSR Kyushu! La temperatura d'asfalt ha pujat de 18°C al matí a 42°C a la tarda. No oblideu ajustar les pressions dels pneumàtics a mesura que canvia la temperatura ambiental!",
-        "en": "Clear skies at HSR Kyushu! Track temp jumped from 18°C morning to 42°C afternoon. Keep monitoring your tire pressures as asphalt temps rise!"
-      },
-      "editorialCommentary": {
-        "ja": "路面温度が20℃以上上がれば、タイヤ内部の空気温度も激変します。朝一の空気圧のまま走り続けると、午後のセッションでは内圧過多で接地面積が激減してしまいます。",
-        "ca": "Si la pista s'escalfa 20°C, la temperatura de l'aire intern es dispara. Mantenir la pressió del matí a la tarda redueix dràsticament la petjada del pneumàtic.",
-        "en": "A 20°C climb in track temp drastically drives up internal tire air temperature. Running morning pressures in the afternoon leads to over-inflation and a shrunken contact patch."
       }
     }
   ],

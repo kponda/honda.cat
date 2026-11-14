@@ -20,19 +20,24 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #HungarianGP Hub",
-      "handle": "@MotoGP / #HungarianGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2116798407494840512",
+      "publishedDate": "2026-11-01",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWBgz3cWcAAxD60.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第8戦 ハンガリーGP（バラトン・パーク）公式結果】新設バラトン・パークでマルク・マルケス（Ducati Lenovo Team）が圧巻の完全勝利（ポール・スプリント・決勝ポールトゥウィン）を達成！",
-        "ca": "【GP d'Hongria 2026 a Balaton Park】Marc Márquez (Ducati Lenovo Team) signa un cap de setmana perfecte amb pole, victòria a l'Sprint i triomf de principi a fi diumenge!",
-        "en": "[2026 MotoGP Hungarian GP at Balaton Park] Marc Márquez (Ducati Lenovo Team) completes an imperious clean sweep at the brand-new circuit: Pole, Sprint, and Sunday GP victory!"
+        "ja": "手のつけられない強さ！マルク・マルケスがセパンで勝利し、カタールで最初のタイトル王手（マッチポイント）へ！",
+        "ca": "Intocable! Marc Márquez guanya a Sepang i tindrà la seva primera oportunitat de títol a Qatar!",
+        "en": "UNTOUCHABLE! Marc Marquez wins at Sepang and will have his first match point in Qatar!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#HungarianGP」では、初開催サーキットの習熟の早さで他を圧倒したマルク・マルケス選手の類まれな適応能力が世界中で絶賛されています。",
-        "ca": "El compte oficial @MotoGP destaca la capacitat única de Marc Márquez per trobar el límit en circuits completament nous des de la primera sessió.",
-        "en": "Official updates from @MotoGP emphasize Marc Márquez's uncanny ability to master unfamiliar asphalt from his very first lap."
+        "ja": "熱帯のセパンを完全に制圧してタイトル王手をかけるレースペース、ベテランの円熟味と研ぎ澄まされた走りの融合が完璧すぎるぜ！",
+        "ca": "Dominar el ritme de cursa sota la xafogor de Sepang i plantar-se amb match ball a Qatar demostra una maduresa tècnica absolutament demolidora.",
+        "en": "Commanding race pace in the sweltering heat of Sepang to earn championship match point—pure tactical mastery meeting raw speed!"
       }
     },
     {

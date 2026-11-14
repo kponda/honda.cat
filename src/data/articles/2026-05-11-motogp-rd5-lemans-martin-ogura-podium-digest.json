@@ -20,19 +20,53 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #FrenchGP Hub",
-      "handle": "@MotoGP / #FrenchGP",
-      "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "accountName": "KUSHITANI ONLINE",
+      "handle": "@KUSHITANIONLINE",
+      "url": "https://x.com/KUSHITANIONLINE",
+      "postUrl": "https://x.com/KUSHITANIONLINE/status/2120396159797563859",
+      "publishedDate": "2026-11-11",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HW0pEjpXsAAkj1H.jpg",
+        "https://pbs.twimg.com/media/HW0pEiiWYAABJsX.jpg",
+        "https://pbs.twimg.com/media/HW0pEieXUAAjTNe.jpg",
+        "https://pbs.twimg.com/media/HW0pEieXsAA-FA0.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第5戦 フランスGP（ル・マン）公式結果】ホルヘ・マルティンがブガッティ・サーキットを制して今季初優勝！そしてルーキー小椋藍（Trackhouse MotoGP Team / Aprilia）が圧巻の3位初表彰台！",
-        "ca": "【GP de França 2026 a Le Mans】Jorge Martín s'emporta la victòria al circuit Bugatti! Històric primer podi per a Ai Ogura (3r, Trackhouse MotoGP Team / Aprilia) a la categoria reina!",
-        "en": "[2026 MotoGP French GP at Le Mans] Jorge Martín claims victory at the Bugatti Circuit! Incredible maiden premier-class podium for Ai Ogura (3rd, Trackhouse MotoGP Team / Aprilia)!"
+        "ja": "【商品紹介】応援グッズのお問い合わせが増加中！79番Tシャツやタオル、アンブレラなどの公式アイテムを身につけ、小椋藍選手へ熱い声援を届けましょう！",
+        "ca": "Presentació de producte: Augmenten les consultes sobre material de suport! Equipa't amb samarretes oficials del #79, tovalloles o paraigües per donar suport a Ai Ogura!",
+        "en": "Product showcase: Inquiries for fan gear are surging! Grab official #79 T-shirts, towels, and umbrellas to send your passionate support to Ai Ogura!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#FrenchGP」では、日本の若きエース小椋藍選手が終盤のプレッシャーを跳ね返して獲得した最高峰クラス初ポディウムに世界中から祝福が寄せられています。",
-        "ca": "El compte oficial @MotoGP celebra el primer podi d'Ai Ogura a MotoGP després d'una cursa impecable defensant la posició fins a la bandera de quadres.",
-        "en": "Official clips from @MotoGP and global posts under #FrenchGP laud Ai Ogura's composure defending his maiden premier-class podium."
+        "ja": "最高峰クラスで表彰台に登り詰めた小椋の活躍を見れば、ファンが79番グッズを買いに走るのも当然だぜ！トラック上の気迫がそのままファンの熱量に直結してるな。",
+        "ca": "Després de conquerir el podi a la categoria reina, és completament normal que la febre pel dorsal 79 d'Ogura es dispari entre els aficionats!",
+        "en": "After clinching a premier-class podium, it's no wonder fans are rushing for #79 merch—Ogura's on-track grit translates straight into fan passion!"
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "Game Kitakyu PS Xbox",
+      "handle": "@TKitakyu",
+      "url": "https://x.com/TKitakyu",
+      "postUrl": "https://x.com/TKitakyu/status/2119472417601147042",
+      "publishedDate": "2026-11-08",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWng48kaUAAW-LX.jpg",
+        "https://pbs.twimg.com/media/HWng5rNbcAAqCiR.jpg",
+        "https://pbs.twimg.com/media/HWng6VfagAAWKr9.jpg",
+        "https://pbs.twimg.com/media/HWng7F1bwAAJ1-t.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "MotoGP カタールGP決勝：優勝ベッツェッキ、2位M.マルケス、3位R.フェルナンデス、4位小椋藍。小椋はスタート直後の第1コーナーで接触を受けながらも、中盤以降の追い上げで4位フィニッシュ。",
+        "ca": "Cursa de MotoGP a Qatar: victòria per a Bezzecchi, 2n M. Márquez, 3r R. Fernández i 4t Ai Ogura. Malgrat un contacte al revolt 1 a la sortida, Ogura va remuntar des del 6è fins al 4t lloc.",
+        "en": "MotoGP Qatar GP race results: Bezzecchi wins, M. Marquez 2nd, R. Fernandez 3rd, Ai Ogura 4th. Despite contact in Turn 1 at the start, Ogura charged from 6th to finish 4th."
+      },
+      "editorialCommentary": {
+        "ja": "1コーナーでの接触被害から立て直して4位まで挽回するレースペースは圧巻だ！タイヤマネジメントとラップごとの緻密なセクタータイムが光った走破劇だったぜ。",
+        "ca": "Una remuntada majúscula d'Ogura després del toc al primer revolt; el seu ritme de cursa i la gestió de les gomes van ser pura precisió mil·limètrica.",
+        "en": "Stellar recovery from Ogura after Turn 1 contact; his late-race pace and tire preservation showed exceptional racecraft and precision."
       }
     },
     {

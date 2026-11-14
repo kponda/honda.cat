@@ -22,38 +22,51 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "全日本ロードレース公式 ＆ 鈴鹿ハブ",
-      "handle": "@jrr_official / #全日本ロードレース",
-      "url": "https://x.com/jrr_official",
-      "postUrl": "https://x.com/hashtag/全日本ロードレース",
+      "citationType": "direct_post",
+      "accountName": "JRR 全日本ロードレース オフィシャル",
+      "handle": "@MFJ_JRR",
+      "url": "https://x.com/MFJ_JRR",
+      "postUrl": "https://x.com/MFJ_JRR/status/2108131537115865485",
+      "publishedDate": "2026-10-08",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HUFs_iKbkAAxeoT.jpg",
+        "https://pbs.twimg.com/media/HUFs_iVboAAD9Vi.jpg",
+        "https://pbs.twimg.com/media/HUFs_iQbMAAJNJh.jpg",
+        "https://pbs.twimg.com/media/HUFs_iabAAAzI4N.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【歴史的最終戦！2026 MFJ全日本ロードレース 第7戦 鈴鹿MFJ-GP】水野涼（DUCATI Team KAGAYAMA）が海外メーカー初となる全日本JSB1000年間チャンピオン戴冠！そして現役ラストランの中須賀克行（YAMAHA FACTORY）が魂のポールトゥウィン！",
-        "ca": "【Gran Final Històrica del MFJ a Suzuka】Ryo Mizuno (DUCATI Team KAGAYAMA) es corona com el primer campió de JSB1000 amb una moto estrangera (Ducati)! Katsuyuki Nakasuga (Yamaga) s'acomiada amb una victòria sublim a la seva darrera cursa!",
-        "en": "[Historic Season Finale: 2026 Suzuka MFJ-GP] Ryo Mizuno (DUCATI Team KAGAYAMA) makes history as the first champion aboard a foreign manufacturer (Ducati) in JSB1000! Legend Katsuyuki Nakasuga bows out with an iconic farewell victory!"
+        "ja": "🏁「MFJ GP SUPERBIKE RACE in SUZUKA」チケット販売中！\n\n10月24日（土）・25日（日）、鈴鹿サーキットで2026年シーズン最終戦を開催🔥\n\nJSB1000クラスでは、水野 涼選手が自身初の王座獲得に挑戦。\nそして、中須賀 克行選手にとっては全日本ロードレース最後のレースとなります。\n\nさらに、高橋",
+        "ca": "🏁 Entrades a la venda per a la 'MFJ GP SUPERBIKE RACE in SUZUKA'!\n\nEl 24 i 25 d'octubre arriba la gran final de la temporada 2026 al circuit de Suzuka 🔥\nA la categoria JSB1000, Ryo Mizuno buscarà la seva primera corona de campió, mentre que per a Katsuyuki Nakasuga serà l'última cursa al campionat All-Japan Road Race.\nI a més, Takahashi...",
+        "en": "🏁 Tickets on sale for 'MFJ GP SUPERBIKE RACE in SUZUKA'!\n\nOctober 24–25 at Suzuka Circuit hosts the 2026 season finale 🔥\nIn JSB1000, Ryo Mizuno challenges for his maiden title, while this marks Katsuyuki Nakasuga's farewell race in the All-Japan Road Race championship.\nPlus, Takahashi..."
       },
       "editorialCommentary": {
-        "ja": "全日本公式X（@jrr_official）および「#全日本ロードレース」「#MFJGP」では、日本のレース界を牽引し続けた中須賀選手の引退セレモニーと、新王者となった水野選手の固い握手に日本中のファンが涙しました。",
-        "ca": "L'etiqueta #MFJGP recull l'abraçada històrica entre la llegenda Nakasuga i el nou campió Mizuno davant la tribuna de Suzuka.",
-        "en": "Social feeds under #MFJGP overflowed with tears celebrating Nakasuga's legendary career alongside Mizuno's historic title milestone."
+        "ja": "水野選手の悲願戴冠と中須賀選手のラストランが交錯する鈴鹿MFJ-GP。ファインダー越しにもグリッドの張り詰めた空気感が伝わってきて、シャッターを切る指先まで熱くなりました…！",
+        "ca": "Una cita històrica a Suzuka on s'entrecreuaven el somni de títol de Mizuno i el comiat definitiu de Nakasuga. A través del visor es respirava una tensió elèctrica que feia bategar fort el cor a cada tret!",
+        "en": "A historic Suzuka showdown where Mizuno's title chase met Nakasuga's farewell race. Through the viewfinder, the electric tension on the grid was palpable enough to make my shutter finger tremble!"
       }
     },
     {
       "platform": "X",
-      "citationType": "official_channel",
-      "accountName": "鈴鹿サーキット 公式",
-      "handle": "@suzuka_event / #鈴鹿サーキット",
-      "url": "https://x.com/suzuka_event",
-      "postUrl": "https://x.com/hashtag/鈴鹿サーキット",
+      "citationType": "direct_post",
+      "accountName": "JRR 全日本ロードレース オフィシャル",
+      "handle": "@MFJ_JRR",
+      "url": "https://x.com/MFJ_JRR",
+      "postUrl": "https://x.com/MFJ_JRR/status/2114249716146098669",
+      "publishedDate": "2026-10-25",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVdSyGRaMAEjrkF.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "鈴鹿サーキット公式：第58回 MFJグランプリ終了。中須賀克行選手、長年にわたり鈴鹿で数々の感動をありがとうございました！そして水野涼選手、2026 JSB1000チャンピオンおめでとうございます！",
-        "ca": "Circuit de Suzuka Oficial: Gràcies Katsuyuki Nakasuga per tants anys de màgia a Suzuka! I felicitats a Ryo Mizuno pel campionat 2026!",
-        "en": "Suzuka Circuit Official: Thank you Katsuyuki Nakasuga for decades of unforgettable moments at Suzuka! Congratulations to Ryo Mizuno on his 2026 JSB1000 crown!"
+        "ja": "Round 7️⃣\n[ MFJ GP SUPERBIKE RACE in SUZUKA ]\n10月25日（日）\n\n🟨 JSB1000 Class\nRace 2\nTOP6 Riders\n\n1️⃣No.1 中須賀 克行選手\n@yamaha_race\n\n2️⃣No.30 高橋 巧選手\n@takumi13_HRC\n@HondaJP_Live\n\n3️⃣No.88 水野 涼選手\n@ryomizuno88\n@DUCATI_KAGAYAMA\n\n4️⃣No.35 ジョン・マクフィー選手\n@johnmcp17",
+        "ca": "Ronda 7️⃣\n[ MFJ GP SUPERBIKE RACE in SUZUKA ]\nDiumenge 25 d'octubre\n\n🟨 Categoria JSB1000\nCursa 2\nTOP 6 Pilots\n\n1️⃣ Nº 1 Katsuyuki Nakasuga\n2️⃣ Nº 30 Takumi Takahashi\n3️⃣ Nº 88 Ryo Mizuno\n4️⃣ Nº 35 John McPhee",
+        "en": "Round 7️⃣\n[ MFJ GP SUPERBIKE RACE in SUZUKA ]\nSunday, October 25\n\n🟨 JSB1000 Class\nRace 2\nTOP 6 Riders\n\n1️⃣ #1 Katsuyuki Nakasuga\n2️⃣ #30 Takumi Takahashi\n3️⃣ #88 Ryo Mizuno\n4️⃣ #35 John McPhee"
       },
       "editorialCommentary": {
-        "ja": "鈴鹿サーキット公式（@suzuka_event）が投稿した中須賀選手のラストランパレード写真。130Rを全開で駆け抜けた通算最多勝レジェンドへ送られた拍手は鳴り止みませんでした。",
-        "ca": "El compte oficial @suzuka_event comparteix les fotos de la volta d'honor de Nakasuga acomiadant-se dels aficionats a la corba 130R.",
-        "en": "Official photos from @suzuka_event capture Nakasuga's lap of honour through 130R to thunderous standing ovations."
+        "ja": "引退レースで見せた中須賀選手の完璧な独走劇と、クレバーに表彰台を確保して歴史的戴冠を果たした水野選手。レンズ越しに捉えた表彰台のふたりの表情、一生忘れられない名シーンです！",
+        "ca": "Una victòria d'antologia per a Nakasuga en el seu comiat i una cursa calculada de Mizuno per certificar una corona històrica. Capturar les seves mirades al podi ha estat un privilegi inoblidable!",
+        "en": "A masterclass victory by Nakasuga in his farewell race alongside Mizuno's calculated podium to seal a historic crown. Capturing their expressions on the podium was an unforgettable milestone for any motorsport photographer!"
       }
     },
     {

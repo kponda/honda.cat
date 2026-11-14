@@ -17,6 +17,53 @@
   ],
   "snsCitations": [
     {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "南海部品和歌山店",
+      "handle": "@NANKAI_WAKAYAMA",
+      "url": "https://x.com/NANKAI_WAKAYAMA",
+      "postUrl": "https://x.com/NANKAI_WAKAYAMA/status/2120694468554994174",
+      "publishedDate": "2026-11-12",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HW44Xd1awAA0PRN.jpg",
+        "https://pbs.twimg.com/media/HW44YBKbgAAJ3wT.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "先日チェーン調整した車両、昨日はチェーン交換させていただきました！リアスプロケットとタイヤも怪しくなってきたので早めの交換をオススメしてます😊 チェーンが綺麗になると気持ちいいです✨️",
+        "ca": "Vehicle al qual vam ajustar la cadena l'altre dia, ahir li vam canviar la cadena! La corona posterior i el pneumàtic també comencen a estar tocats, així que recomanem canviar-los aviat😊 Fa goig veure una cadena nova i neta✨️",
+        "en": "Adjusted the chain on this bike the other day, and yesterday we replaced it! The rear sprocket and tyre are looking worn too, so we recommended replacing them soon😊 Nothing feels better than a fresh, clean chain✨️"
+      },
+      "editorialCommentary": {
+        "ja": "スプロケとタイヤの摩耗に目を配るのは整備士として当然の目利き。新品チェーンを入れたら、アライメントと1G荷重での遊び量チェックを怠るんじゃないよ。",
+        "ca": "Fixar-se en el desgast de la corona i del pneumàtic és el mínim per a un bon mecànic. Quan munteu una cadena nova, no us oblideu d'alinear-la i verificar la folgança amb càrrega 1G!",
+        "en": "Spotting wear on the sprocket and tyre alongside the chain is what proper mechanics do. Once you fit that fresh chain, don't you dare skip checking wheel alignment and 1G slack."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "青い裏切りtype1",
+      "handle": "@1eyEOoX6gt3DieQ",
+      "url": "https://x.com/1eyEOoX6gt3DieQ",
+      "postUrl": "https://x.com/1eyEOoX6gt3DieQ/status/2116296343027437915",
+      "publishedDate": "2026-10-30",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HV6YSRVasAAe6sS.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "いろいろやる事はありますが、まずはキャブから。次はオイル＆フィルター交換とやらねば💦 あっ…チェーン調整もしないとなぁ…😅 手がかかる分、好きなバイクになります😊 本日もよろしくお願いします🙇",
+        "ca": "Tinc molta feina per fer, però començaré pels carburadors. Després tocarà canvi d'oli i filtre💦 Ah... i també he d'ajustar la cadena...😅 Com més feina dóna, més t'estimes la moto😊 Bona jornada a tothom🙇",
+        "en": "Got a lot to do, starting with the carbs. Next up is oil and filter change💦 Oh... and chain adjustment too...😅 The more work she takes, the more you love the bike😊 Have a great day everyone🙇"
+      },
+      "editorialCommentary": {
+        "ja": "キャブや油脂類に気を取られてチェーン調整を後回しにしがちだけど、張りすぎだけは絶対にダメだよ。スイングアーム軸と一直線になるフルボトム位置を意識して遊びを決めな。",
+        "ca": "És típic distreure's amb carburadors i líquids i deixar la cadena per al final, però no la tenseu mai en excés! Mesureu la folgança pensant en el punt de màxima compressió del basculant.",
+        "en": "People get so caught up in carbs and fluids that chain slack becomes an afterthought, but overtightening will kill your bearings. Always set your slack keeping the swingarm pivot alignment in mind."
+      }
+    },
+    {
       "platform": "OfficialWeb",
       "accountName": "DID (大同工業) モータースポーツ",
       "handle": "@did_chain",
@@ -31,23 +78,6 @@
         "ja": "レース車両のチェーンは一見『ゆるい』と感じるほど遊びを持たせます。スイングアームが沈み込み、ピボット・スプロケット・アクスルが一直線に並ぶ瞬間にチェーンは最も張り詰めます。",
         "ca": "A les motos de competició la cadena sembla 'massa baldera' al cavallet. Això es deu al fet que la tensió màxima es produeix quan el pivot, pinyó i eix queden exactament alineats.",
         "en": "Race bike chains often appear loose on the stand. This is intentional: maximum tension occurs dynamically when the countershaft, swingarm pivot, and rear axle form a straight line."
-      }
-    },
-    {
-      "platform": "X",
-      "accountName": "SPA直入 (SPA Naoiri Official)",
-      "handle": "@spa_naoiri",
-      "url": "https://x.com/spa_naoiri",
-      "postUrl": "https://x.com/spa_naoiri/status/2119695420112233445",
-      "quotedPostText": {
-        "ja": "SPA直入走行前チェック：下り勾配からのフル加速やタイトコーナー立ち上がりではリアサスが深くボトムします。チェーンの遊びが足りないとタイヤが跳ねて転倒の原因になります。走行前にチェーンの張りと注油の確認を！",
-        "ca": "Comprovació a SPA Naoiri: en accelerar a fons a la sortida dels revolts tancats la suspensió baixa al màxim. Si la cadena està massa tensa, la roda perd contacte i provoca caigudes.",
-        "en": "SPA Naoiri Pre-Ride Check: Hard acceleration out of downhill hairpins compresses the rear shock deeply. An over-tight chain prevents rear compliance, causing wheel hop and high-sides."
-      },
-      "editorialCommentary": {
-        "ja": "ミニバイクからリッターSSまで、コース立ち上がりのトラクション抜けやハイサイドの隠れた原因が『チェーン張りすぎ』です。サスペンションが動くための命の遊びを学びましょう。",
-        "ca": "Des de les minibikes fins a les Superbikes de 1000cc, una cadena excessivament tibada és la causa invisible de molts 'high-sides' en acceleració.",
-        "en": "From minimotos to liter Superbikes, over-tightened drive chains are the hidden culprits behind high-side crashes and lost drive grip coming out of turns."
       }
     }
   ],

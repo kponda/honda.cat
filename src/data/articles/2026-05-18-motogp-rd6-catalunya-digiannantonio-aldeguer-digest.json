@@ -21,37 +21,26 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "Circuit de Barcelona-Catalunya 公式",
-      "handle": "@Circuitcat_cat / #CatalanGP",
-      "url": "https://x.com/Circuitcat_cat",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
-      "quotedPostText": {
-        "ja": "【2026 MotoGP カタルーニャGP（モンメロ）公式結果】ファビオ・ディ・ジャンナントニオ（VR46）が日曜決勝で会心の走りを披露し優勝！土曜スプリントはアレックス・マルケスが制覇！",
-        "ca": "【GP de Catalunya 2026 al Circuit】Fabio Di Giannantonio (VR46) s'imposa a la cursa de diumenge a Montmeló després del triomf d'Àlex Márquez a l'Sprint de dissabte!",
-        "en": "[2026 MotoGP Catalan GP at Montmeló] Fabio Di Giannantonio (VR46) takes a masterful Sunday victory at Circuit de Barcelona-Catalunya following Álex Márquez's Sprint win!"
-      },
-      "editorialCommentary": {
-        "ja": "カタルーニャ・サーキット公式（@Circuitcat_cat）および「#CatalanGP」では、タイヤのグリップ低下（ミューの低い路面）を巧みにマネジメントしたマルク編集長お膝元モンメロの熱戦が伝えられています。",
-        "ca": "El compte oficial del Circuit i l'etiqueta #CatalanGP mostren l'exigència de la gestió del pneumàtic darrere al traçat de Montmeló.",
-        "en": "Official dispatches from @Circuitcat_cat highlight how riders mastered Montmeló's infamously low-grip surface across 24 laps."
-      }
-    },
-    {
-      "platform": "X",
-      "citationType": "direct_post",
-      "accountName": "MotoGP Official",
-      "handle": "@MotoGP / #MotoGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2116080185942630521",
+      "publishedDate": "2026-10-30",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HV3TmdeX0AABSGo.jpg",
+        "https://pbs.twimg.com/media/HV3TnIxWEAALWSk.jpg",
+        "https://pbs.twimg.com/media/HV3TnzJXwAAOqeX.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "MotoGP公式：モンメロの超高速ターン3＆ターン4でのスライドコントロール！ディ・ジャンナントニオがVR46チームに記念すべき勝利をもたらす！",
-        "ca": "MotoGP Oficial: Control de lliscament pur als revolts 3 i 4 de Montmeló! Triomf brillant de Di Giannantonio per a l'equip de Valentino Rossi!",
-        "en": "MotoGP Official: Pure slide control through Montmeló's sweeping Turns 3 and 4! Brilliant victory for Di Giannantonio and VR46!"
+        "ja": "MotoGPプラクティスはマルク・マルケスがトップタイム。2位アレックス・マルケス、3位に小椋藍がつけてトップ3を形成。",
+        "ca": "Marc Márquez lidera la Practice de MotoGP amb Àlex Márquez i Ai Ogura completant el top 3.",
+        "en": "Marc Marquez tops MotoGP Practice with Alex Marquez and Ai Ogura rounding out the top three."
       },
       "editorialCommentary": {
-        "ja": "マルク編集長の出身地カタルーニャ戦。ロングコーナーでリアを流しながら向きを変えるテレメトリー解説がSNSでも話題になりました。",
-        "ca": "L'equip editorial liderat per Marc analitza la tècnica de pilotatge necessària per mantenir la tracció a la sortida del revolt 14.",
-        "en": "Marc's home round editorial breaks down the precise telemetry required to rotate the bike while conserving edge grip through Turn 14."
+        "ja": "マルケス兄弟のワンツーに割って入る小椋のセクタータイムが光ったセッションだ！カタルーニャの摩擦の低いアスファルトでこのトラクションを引き出す走りは本物だぜ。",
+        "ca": "Quina sessió més intensa amb els germans Márquez al davant i Ogura colant-se al top 3; gestionar la tracció en un asfalt tan exigent com aquest té un mèrit enorme!",
+        "en": "Splitting the Marquez brothers in the top three shows just how dialed-in Ogura was; finding that level of mechanical grip on low-friction tarmac is pure class."
       }
     },
     {

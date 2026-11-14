@@ -21,19 +21,24 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #GermanGP Hub",
-      "handle": "@MotoGP / #GermanGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2116430979350904936",
+      "publishedDate": "2026-10-31",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HV8Sq5tXYAAMe9p.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第11戦 ドイツGP（ザクセンリンク）公式結果】ザクセンリンクの絶対王者マルク・マルケスが左回りサーキットで圧勝！2位ラウル・フェルナンデス、3位小椋藍でTrackhouseがダブルポディウム！",
-        "ca": "【GP d'Alemanya 2026 a Sachsenring】Marc Márquez manté el seu regnat a Sachsenring amb una victòria impecable! Extraordinari doble podi per a Trackhouse amb Raúl Fernández (2n) i Ai Ogura (3r)!",
-        "en": "[2026 MotoGP German GP at Sachsenring] King of the Ring Marc Márquez reigns supreme around the anti-clockwise rollercoaster! Sensational double podium for Trackhouse with Raúl Fernández 2nd and Ai Ogura 3rd!"
+        "ja": "ペドロ・アコスタが悪天候をものともせずセパンのスプリントレースで優勝を飾る！",
+        "ca": "Pedro Acosta desafia les inclemències meteorològiques per guanyar l'Sprint a Sepang!",
+        "en": "Pedro Acosta braves the elements to win the Sprint at Sepang!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#GermanGP」では、左コーナーが連続するザクセンリンク特有のレイアウトでマルケス選手が魅せたバンク角と、Trackhouse勢の素晴らしいタイヤ温存が話題です。",
-        "ca": "L'etiqueta #GermanGP destaca el doble podi d'Aprilia Trackhouse darrere de l'imbatible Márquez a Sachsenring.",
-        "en": "Official posts from @MotoGP and #GermanGP praise Trackhouse's sensational double podium behind Sachsenring master Márquez."
+        "ja": "雨水が浮いた路面でのアコスタのフロント接地感に対する嗅覚はまさに異次元だぜ！電子制御とリヤトラクションの連携を信じ切ってスロットルを開けていく度胸は、テレメトリーで見ても鳥肌モノだな。",
+        "ca": "El tacte d'Acosta amb el tren davanter sobre asfalt xop és d'una altra galàxia! La seva confiança per obrir gas gestionant la tracció i l'electrònica sota l'aigua posa la pell de gallina en veure la telemetria.",
+        "en": "Acosta's front-end feel in wet and greasy conditions is genuinely out of this world! His absolute confidence rolling on the throttle while leaning on electronic traction maps is breathtaking on the telemetry charts."
       }
     },
     {

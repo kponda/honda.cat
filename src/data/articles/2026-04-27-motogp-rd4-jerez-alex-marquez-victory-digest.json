@@ -20,19 +20,49 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #SpanishGP Hub",
-      "handle": "@MotoGP / #SpanishGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2047679728400708074",
+      "publishedDate": "2026-04-24",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HGrRikCW4AArTwD.jpg",
+        "https://pbs.twimg.com/media/HGrRjeJWcAEEiEu.jpg",
+        "https://pbs.twimg.com/media/HGrRkbWXIAAfNCo.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第4戦 スペインGP（ヘレス）公式結果】アレックス・マルケス（Gresini Racing）が母国ヘレスで完璧な走りを披露しMotoGP初優勝！兄マルク・マルケスは土曜スプリントを制覇！",
-        "ca": "【GP d'Espanya 2026 a Jerez】Àlex Márquez (Gresini Racing) aconsegueix una emocionantíssima primera victòria a MotoGP a Jerez! El seu germà Marc Márquez va guanyar l'Sprint de dissabte!",
-        "en": "[2026 MotoGP Spanish GP at Jerez] Álex Márquez (Gresini Racing) storms to an emotional maiden MotoGP victory on home soil at Jerez! Marc Márquez clinched Saturday's Sprint!"
+        "ja": "アレックス・マルケスにとってヘレスへの愛は絶大。MotoGPプラクティスでディ・ジャンナントニオとマルコ・ベッツェッキを抑えてトップに立つ🙌 #SpanishGP 🇪🇸",
+        "ca": "L'idil·li amb Jerez és fort per a @alexmarquez73, que lidera la Practice de #MotoGP per davant de @FabioDiggia49 i Marco Bezzecchi 🙌 #SpanishGP 🇪🇸",
+        "en": "The love for Jerez is strong for @alexmarquez73 who tops #MotoGP Practice in front of @FabioDiggia49 and Marco Bezzecchi 🙌 #SpanishGP 🇪🇸"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#SpanishGP」では、ヘレスのスタジアムセクションを埋め尽くしたファンとともに表彰台中央で涙するアレックス・マルケス選手の姿が世界中で拡散されました。",
-        "ca": "El compte oficial @MotoGP i l'etiqueta #SpanishGP mostren l'abraçada històrica entre els germans Márquez al pàdoc andalús.",
-        "en": "Official clips from @MotoGP and #SpanishGP posts capture the unforgettable scenes as Álex Márquez celebrated his maiden premier-class win."
+        "ja": "ヘレスの低中速セクションでアレックスが見せるフロントの安定感と立ち上がりのトラクションは完璧だったな！兄マルクのお膝元で金曜から堂々の首位奪取、完全に流れを引き寄せているぜ！",
+        "ca": "L'estabilitat de tren davanter i la tracció que ha trobat l'Àlex als revolts enllaçats de Jerez han estat impecables. Manar a la taula de temps des de divendres a casa és un cop psicològic d'autoritat!",
+        "en": "Alex's front-end confidence and drive grip through Jerez's flowing sectors were utterly dialed in. Grabbing P1 on home soil on Friday set a commanding tone that shook the entire paddock."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "DAZN España",
+      "handle": "@DAZN_ES",
+      "url": "https://x.com/DAZN_ES",
+      "postUrl": "https://x.com/DAZN_ES/status/2048375209170723116",
+      "publishedDate": "2026-04-26",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HG1KAf-bcAEH_G8.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "マルク・マルケスがヘレスで転倒！💥 ドゥカティのライダーは序盤の周回でクラッシュを喫し、リタイアとなった😨 #SpanishGP 🇪🇸 #MotoGP",
+        "ca": "CAIGUDA DE MARC MÁRQUEZ A JEREZ! 💥 El pilot de Ducati se'n va a terra a les primeres voltes i queda fora de cursa 😨 #SpanishGP 🇪🇸 #MotoGP",
+        "en": "MARC MÁRQUEZ CRASHES IN JEREZ! 💥 The Ducati rider goes down in the opening laps and is out of the race 😨 #SpanishGP 🇪🇸 #MotoGP"
+      },
+      "editorialCommentary": {
+        "ja": "序盤のフロント限界領域でのプッシュが仇となってしまったか！土曜スプリントを支配しただけに悔やまれるクラッシュだが、攻め切る姿勢こそがマルクの真骨頂だな。",
+        "ca": "Portar el pneumàtic davanter més enllà del límit a les primeres voltes li ha passat factura. Després d'haver dominat l'Sprint dissabte, fa mal veure'l fora, però el seu ADN sempre serà anar a l'atac pur.",
+        "en": "Pushing the absolute front-end envelope on full tanks bit him early. After dominating Saturday's Sprint it's a harsh zero, but that relentless all-or-nothing aggression is exactly why we love him."
       }
     },
     {

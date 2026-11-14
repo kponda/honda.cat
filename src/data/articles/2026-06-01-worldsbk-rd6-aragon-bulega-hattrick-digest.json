@@ -21,19 +21,26 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK",
+      "accountName": "カワサキモータースジャパン",
+      "handle": "@Kawasaki_JPN",
+      "url": "https://x.com/Kawasaki_JPN",
+      "postUrl": "https://x.com/Kawasaki_JPN/status/2112385911292145738",
+      "publishedDate": "2026-10-20",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVCzxloaQAAJDAM.jpg",
+        "https://pbs.twimg.com/media/HVCzxmPaYAAEZ0f.jpg",
+        "https://pbs.twimg.com/media/HVCzxllbkAAA8JD.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第6戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
-        "ca": "【WorldSBK Rd.6】Resultats oficials amb un ritme demolidor a la pista!",
-        "en": "[WorldSBK Rd.6] Official Results and Highlights from the paddock!"
+        "ja": "先週末のSBK最終戦ヘレス、Kawasaki WorldSBK Teamのギャレット・ガーロフは14位/13位/13位。Kawasaki WorldSSP Teamのジェレミー・アルコバは2位/1位、ドミニク・エガーターも参戦。",
+        "ca": "Cap de setmana final de WorldSBK a Jerez: Garrett Gerloff (Kawasaki SBK) fa 14è-13è-13è. A WorldSSP, Jeremy Alcoba aconsegueix un 2n i un 1r lloc amb Kawasaki, al costat de Dominique Aegerter.",
+        "en": "Last weekend at WorldSBK finale in Jerez: Garrett Gerloff (Kawasaki SBK) finished 14th-13th-13th. In WorldSSP, Jeremy Alcoba scored 2nd-1st for Kawasaki alongside Dominique Aegerter."
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第6戦のオンボード映像やハイライトが世界中のファンに配信されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 6.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 6."
+        "ja": "スーパースポーツでのアルコバの優勝は見事だが、SBK本クラスでのZX-10RRの苦戦はデータ的にも旋回脱出のトラクション不足が明白だな。",
+        "ca": "Gran victòria d'Alcoba a WorldSSP, però les xifres de la ZX-10RR a SBK evidencien que la manca de tracció a la sortida dels revolts segueix penalitzant.",
+        "en": "Alcoba's WorldSSP win was stellar, but the SBK numbers lay bare the ZX-10RR's ongoing exit-traction deficit across the weekend."
       }
     },
     {

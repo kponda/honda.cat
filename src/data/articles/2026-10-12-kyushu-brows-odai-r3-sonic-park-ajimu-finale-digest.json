@@ -19,20 +19,53 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "お題付耐久「草」レース ハッシュタグハブ",
-      "handle": "#お題付耐久 / ソニックパーク安心院",
-      "url": "https://x.com/hashtag/お題付耐久",
-      "postUrl": "https://x.com/hashtag/お題付耐久",
+      "citationType": "direct_post",
+      "accountName": "とんぼ@骨折してでもブックマークは外さない",
+      "handle": "@tonbo_baiku",
+      "url": "https://x.com/tonbo_baiku",
+      "postUrl": "https://x.com/tonbo_baiku/status/2113447764655001950",
+      "publishedDate": "2026-10-23",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVR5fbcbgAAQDL8.jpg",
+        "https://pbs.twimg.com/media/HVR5gNkaIAAjyqq.jpg",
+        "https://pbs.twimg.com/media/HVR5hB5akAAsRTQ.jpg",
+        "https://pbs.twimg.com/media/HVR5h8WbwAA2FLe.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【飲酒運転撲滅チャリティー お題付耐久「草」レース R-3 最終戦 in ソニックパーク安心院】2026年シリーズ閉幕！ピットのお題クリアと基準タイム遵守で全チーム笑顔のフィニッシュ！",
-        "ca": "【Final Odai-tsuki Endurance R-3 a Sonic Park Ajimu】Gran tancament de la temporada benèfica 2026 amb tots els equips celebrant la cursa!",
-        "en": "[Charity Odai-tsuki Endurance R-3 Season Finale at Sonic Park Ajimu] The 2026 season concludes with all teams celebrating safe and spirited pit challenges!"
+        "ja": "改夢さんからお題付の写真頂きました！速そうに見える（笑）。スプリント決勝は光の角度もあって超キレイ！今回は膝擦れた。",
+        "ca": "He rebut les fotos de la cursa amb reptes gràcies a Kaimu! Sembla que vagi ràpid, jaja. La final de l'esprint, amb l'angle de la llum, va quedar maquíssima! Aquesta vegada he tocat amb el genoll.",
+        "en": "Got photos from the challenge endurance race courtesy of Kaimu! Looks like I'm fast haha. The sprint final looked gorgeous with that lighting angle! Got my knee down this time."
       },
       "editorialCommentary": {
-        "ja": "X上の「#お題付耐久」タグでは、安心院の自然に囲まれたミニコースで繰り広げられたパドックの温かい交流や、表彰式でのチャリティー活動の様子が参加者から発信されています。",
-        "ca": "Els participants comparteixen fotografies del pàdoc a Sonic Park Ajimu i l'esperit solidari de la iniciativa benèfica a través de #お題付耐久.",
-        "en": "Community posts under #お題付耐久 showcase the family spirit, paddock smiles, and road-safety charity support at Sonic Park Ajimu."
+        "ja": "膝を擦ってご満悦なのはいいが、バンク角に浮かれる前にステップバーのクリアランスとスライダーの摩耗チェックは済ませたかい？草レースでもマシンをきっちり労わってこそ、次のラップが刻めるんだよ。",
+        "ca": "Molt bé per tocar amb el genoll, però abans de flipar amb l'angle d'inclinació, has revisat l'espai dels estreps i el desgast de la lliscadora? Fins i tot a les curses amateurs, mimar el ferro és el que et permet fer la següent volta.",
+        "en": "Nice job dragging knee, but before getting cocky about your lean angle, did you check your footpeg clearance and slider wear? Even in grassroots racing, properly respecting your machine is what keeps you turning laps next time."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "わいゆう",
+      "handle": "@waiyuu222",
+      "url": "https://x.com/waiyuu222",
+      "postUrl": "https://x.com/waiyuu222/status/2111693059859869948",
+      "publishedDate": "2026-10-18",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HU49pLQagAAF9q0.jpg",
+        "https://pbs.twimg.com/media/HU49pLSbsAAPVhg.jpg",
+        "https://pbs.twimg.com/media/HU49pLQbQAEfsCK.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "ソニックパーク安心院。ビレル耐久レースに参加しました。",
+        "ca": "Sonic Park Ajimu. Vaig participar a la cursa de resistència Birel.",
+        "en": "Sonic Park Ajimu. Participated in the Birel endurance race."
+      },
+      "editorialCommentary": {
+        "ja": "安心院のビレル耐久はカートの基本が詰まったタフな舞台だ。レンタルフレームとはいえ、タイヤの内圧管理と熱ダレ対策に頭を使わなきゃ、最後まで安定したラップタイムは残せないよ。",
+        "ca": "La resistència Birel a Ajimu és un escenari exigent on s'aprèn la base del kàrting. Encara que sigui un xassís de lloguer, si no vigiles la pressió dels pneumàtics i la degradació tèrmica, no mantindràs un ritme decent fins al final.",
+        "en": "Ajimu's Birel endurance is a demanding arena packing the core fundamentals of karting. Rental chassis or not, if you don't manage tire pressures and thermal drop-off, you'll never keep consistent lap times till the finish."
       }
     },
     {

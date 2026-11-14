@@ -18,20 +18,50 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "鉄馬 with TSK 公式 ＆ ハッシュタグハブ",
-      "handle": "@tetsuma_with_b / #鉄馬",
-      "url": "https://x.com/tetsuma_with_b",
-      "postUrl": "https://x.com/hashtag/鉄馬",
+      "citationType": "direct_post",
+      "accountName": "鉄馬実行委員会",
+      "handle": "@ihdcsupporters",
+      "url": "https://x.com/ihdcsupporters",
+      "postUrl": "https://x.com/ihdcsupporters/status/2121089673254842630",
+      "publishedDate": "2026-11-13",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HW-fnhbaMAAwttK.jpg",
+        "https://pbs.twimg.com/media/HW-foi-b0AAiNLF.jpg",
+        "https://pbs.twimg.com/media/HW-fprxbkAAmUtD.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 鉄馬 with TSK 合戦の日 in HSR九州】鉄フレームマシンの祭典！空冷・水冷シングルからツインまで、こだわり抜いた名車たちがHSR九州に集結。悪天候を乗り越えて熱い合戦が繰り広げられました！",
-        "ca": "【2026 Tetsuma with TSK a HSR Kyushu】Festival de xassís de ferro a Kumamoto! Malgrat el temps advers, les motos clàssiques i preparades van oferir batalles apassionants.",
-        "en": "[2026 Tetsuma with TSK at HSR Kyushu] Iron-frame motorcycle festival in Kumamoto! Dedicated single and twin cylinder racers battled through changing track conditions."
+        "ja": "鉄馬乱戦の日のエントリーリストとピット割をUPします。走行会参加者のみなさんはピットの指定はありませんので、空いているテントピットをお使いください。 ＃鉄馬withTSK ＃乱戦の日 ＃HSR九州",
+        "ca": "Pugem la llista d'inscrits i la distribució de boxs per a la Diada de Combat de Tetsuma. Els participants de la tanda lliure no tenen box assignat; si us plau, feu servir les carpes lliures. #鉄馬withTSK #乱戦の日 #HSR九州",
+        "en": "Uploading the entry list and pit allocations for Tetsuma Ransen no Hi. Track day participants do not have assigned pits, so please use any open tent pits. #鉄馬withTSK #乱戦の日 #HSR九州"
       },
       "editorialCommentary": {
-        "ja": "鉄馬公式（@tetsuma_with_b）およびX上のハッシュタグ「#鉄馬」では、空冷CBやZ、SR、最新のGB350まで、全国から集結した鉄フレームマシンのカスタム美とパドックの熱気があふれています。",
-        "ca": "El compte oficial @tetsuma_with_b i l'etiqueta #鉄馬 recullen la bellesa de les preparacions i l'esperit del pàdoc a Kumamoto.",
-        "en": "Official dispatches from @tetsuma_with_b and #鉄馬 posts highlight the mechanical artistry of steel-frame racers and warm paddock camaraderie."
+        "ja": "ピット割が出たらまずは周辺の動線と電源の位置を確認しな。共用テントを使う連中は工具やパーツの整理整頓を怠るんじゃないよ、現地でのバタつきはトラブルの元だからね！",
+        "ca": "Quan surti la distribució de boxs, reviseu immediatament l'accés elèctric i les vies de pas. Els qui compartiu carpa, tingueu les eines ben ordenades, que el desordre al pit és el primer pas cap a una fallada mecànica!",
+        "en": "Once pit allocations drop, go scout your power drops and pathway clearances immediately. For those sharing the open tents, keep your tool trays disciplined—a messy paddock box is where preventable mechanical mistakes begin."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "鉄馬実行委員会",
+      "handle": "@ihdcsupporters",
+      "url": "https://x.com/ihdcsupporters",
+      "postUrl": "https://x.com/ihdcsupporters/status/2121064515936891304",
+      "publishedDate": "2026-11-13",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HW-I7WBbIAARnH6.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "鉄馬乱戦の日のタイムスケジュールをUPします。 ＃鉄馬withTSK ＃乱戦の日 ＃HSR九州",
+        "ca": "Pugem els horaris per a la Diada de Combat de Tetsuma. #鉄馬withTSK #乱戦の日 #HSR九州",
+        "en": "Uploading the time schedule for Tetsuma Ransen no Hi. #鉄馬withTSK #乱戦の日 #HSR九州"
+      },
+      "editorialCommentary": {
+        "ja": "タイムスケジュールが出たなら、車検の時間と暖機運転のタイミングを頭に叩き込みな。ギリギリになってエア圧調整や増し締めで慌てるような真似だけは許さないよ！",
+        "ca": "Ara que teniu el programa horari, memoritzeu l'hora de verificacions tècniques i els cicles d'escalfament. No vull veure ningú ajustant pressions de pneumàtics a corre-cuita a última hora!",
+        "en": "Now that the schedule is posted, memorize your scrutineering window and warm-up cycles down to the minute. I don't want to see anyone frantically torquing bolts and checking tire cold pressures at the five-minute horn!"
       }
     },
     {
@@ -50,24 +80,6 @@
         "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
         "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
         "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
-      }
-    },
-    {
-      "platform": "X",
-      "citationType": "official_channel",
-      "accountName": "HSR九州 公式",
-      "handle": "@hsr_kyushu / #HSR九州",
-      "url": "https://x.com/hsr_kyushu",
-      "postUrl": "https://x.com/hashtag/HSR九州",
-      "quotedPostText": {
-        "ja": "HSR九州公式：本日の『鉄馬 with TSK 合戦の日』は雨天のためタイムスケジュールを変更してレース進行中。ご来場の皆様、安全運転で熱い走りをお楽しみください！",
-        "ca": "HSR Kyushu Oficial: horaris adaptats per pluja durant el Tetsuma with TSK d'avui. Gràcies a tots els participants pel seu entusiasme!",
-        "en": "HSR Kyushu Official: Adjusted track schedule underway for Tetsuma with TSK amidst rainy conditions. Thank you to all enthusiastic entrants!"
-      },
-      "editorialCommentary": {
-        "ja": "HSR九州公式（@hsr_kyushu）の迅速なコース状況・スケジュール案内により、悪天候でも安全に各クラスの決勝が成立。サーキット側の手厚い運営がライダーから高く評価されています。",
-        "ca": "La gestió àgil de pista per part d'@hsr_kyushu va permetre disputar les finals amb total seguretat malgrat la pluja.",
-        "en": "Swift track coordination by @hsr_kyushu ensured all class finals ran safely despite rain, earning praise from entrants."
       }
     }
   ],

@@ -21,38 +21,51 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "全日本ロードレース公式 ＆ SUGOハブ",
-      "handle": "@jrr_official / #全日本ロードレース",
-      "url": "https://x.com/jrr_official",
-      "postUrl": "https://x.com/hashtag/全日本ロードレース",
+      "citationType": "direct_post",
+      "accountName": "JRR 全日本ロードレース オフィシャル",
+      "handle": "@MFJ_JRR",
+      "url": "https://x.com/MFJ_JRR",
+      "postUrl": "https://x.com/MFJ_JRR/status/2047962827995144458",
+      "publishedDate": "2026-04-25",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HGvTVM0bgAANqFI.png"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース 第2戦 SUGO大会】杜の都スポーツランドSUGOでJSB1000決勝！水野涼（DUCATI Team KAGAYAMA）がもてぎに続く2連勝を達成！",
-        "ca": "【Campionat del Japó MFJ Rd.2 SUGO】Ryo Mizuno (DUCATI Team KAGAYAMA) suma la seva segona victòria consecutiva a JSB1000 al circuit de Sportsland SUGO!",
-        "en": "[MFJ All-Japan Rd.2 SUGO] Ryo Mizuno (DUCATI Team KAGAYAMA) claims back-to-back victories in JSB1000, conquering the challenging Sportsland SUGO circuit!"
+        "ja": "Round2 [ SUPERBIKE RACE in SUGO ] 4月25日（土）⏰リザルト⏰ [ #JPSPORT ナショナルクラス 決勝 正式結果 ] 1位 25 市原 一優選手 20'40.109 / 2位 22 栗原 文太郎選手 20'40.262 / 3位 10 津田 雄飛選手 20'54.202",
+        "ca": "Ronda 2 [ SUPERBIKE RACE in SUGO ] Dissabte 25 d'abril ⏰RESULTATS⏰ [ Classe Nacional #JPSPORT Resultats Oficials de la Cursa ] 1r #25 Kazumasa Ichihara 20'40.109 / 2n #22 Buntaro Kurihara 20'40.262 / 3r #10 Yuhi Tsuda 20'54.202",
+        "en": "Round 2 [ SUPERBIKE RACE in SUGO ] Saturday, April 25 ⏰RESULTS⏰ [ #JPSPORT National Class Official Race Results ] 1st: #25 Kazumasa Ichihara 20'40.109 / 2nd: #22 Buntaro Kurihara 20'40.262 / 3rd: #10 Yuhi Tsuda 20'54.202"
       },
       "editorialCommentary": {
-        "ja": "全日本ロードレース公式（@jrr_official）および「#全日本ロードレース」では、SUGO名物の10%勾配バックストレッチを駆け上がるドゥカティV4 Rの加速性能が大きな注目を集めています。",
-        "ca": "L'etiqueta #全日本ロードレース destaca la potència de la Ducati Panigale V4 R superant la famosa pujada del 10% de SUGO.",
-        "en": "Community discussion under #全日本ロードレース centers around the Ducati V4 R's formidable drive climbing SUGO's famous 10% uphill straight."
+        "ja": "トップ2台の差がわずか0.153秒という、最後まで息を呑む大接戦でした！SUGOの登りストレートを駆け抜けるチェッカー直前のサイド・バイ・サイドは、ファインダー越しにも鳥肌が立ちました。",
+        "ca": "Una arribada d'infart separada per tan sols 0,153 segons entre els dos primers! La lluita cos a cos pujant la recta de meta de SUGO ha deixat unes imatges absolutament espectaculars al visor.",
+        "en": "A breathtaking duel right to the stripe, separated by a microscopic 0.153 seconds! Watching them charge side-by-side up SUGO's final climb was pure magic through the camera lens."
       }
     },
     {
       "platform": "X",
-      "citationType": "official_channel",
-      "accountName": "スポーツランドSUGO 公式",
-      "handle": "@sugo_official / #スポーツランドSUGO",
-      "url": "https://x.com/sugo_official",
-      "postUrl": "https://x.com/hashtag/スポーツランドSUGO",
+      "citationType": "direct_post",
+      "accountName": "Shota Ite/井手 翔太",
+      "handle": "@shota7474",
+      "url": "https://x.com/shota7474",
+      "postUrl": "https://x.com/shota7474/status/2048004994117570774",
+      "publishedDate": "2026-04-25",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HGv5rkSbcAAecs7.jpg",
+        "https://pbs.twimg.com/media/HGv5rkQb0AAsHT3.jpg",
+        "https://pbs.twimg.com/media/HGv5rkPaYAAvSuP.jpg",
+        "https://pbs.twimg.com/media/HGv5rkPasAAAZg6.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "スポーツランドSUGO公式：全日本ロードレース選手権SUGO大会にご来場いただきありがとうございました！新緑の宮城で熱戦を繰り広げた全ライダーに大きな拍手を！",
-        "ca": "Sportsland SUGO Oficial: Gràcies a tots els aficionats per omplir les grades en aquest gran cap de setmana de velocitat a Miyagi!",
-        "en": "Sportsland SUGO Official: Thank you to all fans who joined us in Miyagi for an unforgettable weekend of premier All-Japan racing!"
+        "ja": "全日本ロードレース選手権 SUGO 予選 P9 昨日のFPはトラブルで走れませんでしたが、今日は解決して走る事が出来ました。チームとYAMAHA、スポンサー様のお陰です。少し出遅れたスタートにはなりましたが、明日は良い結果になると思います。また明日！ #YAMAHA #AKENOSPEED",
+        "ca": "Campionat de Japó de Velocitat SUGO. Qualificació P9. Ahir no vaig poder rodar als FP per problemes, però avui ho hem solucionat i hem pogut sortir gràcies a l'equip, YAMAHA i patrocinadors. Hem començat amb retard, però demà anirà bé. Fins demà! #YAMAHA #AKENOSPEED",
+        "en": "All Japan Road Race Championship SUGO. Qualifying P9. Couldn't ride in yesterday's FP due to trouble, but we resolved it and rode today thanks to the team, YAMAHA, and sponsors. A bit of a delayed start, but tomorrow will bring good results. See you tomorrow! #YAMAHA #AKENOSPEED"
       },
       "editorialCommentary": {
-        "ja": "SUGO公式X（@sugo_official）は、最終コーナー（馬の背からシケイン）での激しいブレーキング勝負の写真をリアルタイムで発信しました。",
-        "ca": "El compte oficial @sugo_official comparteix les millors fotografies de la forta frenada abans de la xicana final.",
-        "en": "Official track updates from @sugo_official highlight the fierce deceleration battles entering the final chicane."
+        "ja": "金曜のメカニカルトラブルを乗り越えてしっかり予選シングルグリッドを確保する姿に、チームの粘り強い団結力を感じました。ピット裏での真剣な表情が決勝での追い上げを予感させますね。",
+        "ca": "Superar una avaria de divendres i col·locar-se entre els nou primers demostra la gran determinació d'aquest box. La concentració que transmetia el pilot feia intuir una gran remuntada per diumenge.",
+        "en": "Bouncing back from Friday's gremlins straight into the top nine shows incredible grit from the garage. The sharp focus on his face in pit lane signaled that Sunday's charge was already underway."
       }
     },
     {

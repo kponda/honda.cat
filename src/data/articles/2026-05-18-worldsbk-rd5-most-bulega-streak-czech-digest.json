@@ -21,19 +21,27 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK",
+      "accountName": "ヤマハ発動機レース情報",
+      "handle": "@yamaha_race",
+      "url": "https://x.com/yamaha_race",
+      "postUrl": "https://x.com/yamaha_race/status/2111995683402354870",
+      "publishedDate": "2026-10-19",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HU9QpPGbsAAf2ce.jpg",
+        "https://pbs.twimg.com/media/HU9QzF1akAAVJTR.jpg",
+        "https://pbs.twimg.com/media/HU9Qt60a0AAd0sq.jpg",
+        "https://pbs.twimg.com/media/HU9Q1EAakAAnNcz.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第5戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
-        "ca": "【WorldSBK Rd.5】Resultats oficials amb un ritme demolidor a la pista!",
-        "en": "[WorldSBK Rd.5] Official Results and Highlights from the paddock!"
+        "ja": "WorldSBK第12戦スペイン：ヤマハ勢の結果はビエルゲがリタイア/9位/12位、ロカテッリが13位/20位/16位、マンジが18位/14位/17位、ガードナーが15位/17位/19位でシーズン最終戦を終了。",
+        "ca": "WorldSBK Ronda 12 a Espanya: resultats de Yamaha amb Vierge (RET/9è/12è), Locatelli (13è/20è/16è), Manzi (18è/14è/17è) i Gardner (15è/17è/19è) per cloure la temporada.",
+        "en": "WorldSBK Rd. 12 Spain: Yamaha squad concludes the season finale with Vierge (RET/9th/12th), Locatelli (13th/20th/16th), Manzi (18th/14th/17th), and Gardner (15th/17th/19th)."
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第5戦のオンボード映像やハイライトが世界中のファンに配信されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 5.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 5."
+        "ja": "過酷なシーズンを戦い抜いたヤマハ陣営だが、トップグループとのタイム差を埋めるには冬の間のシャシーとパワーユニットの徹底的な見直しが不可欠だぜ。",
+        "ca": "Punt final a una temporada duríssima per a Yamaha; per tornar a disputar els llocs de cap caldrà treballar de valent en el xassís i la potència durant l'hivern.",
+        "en": "A demanding season wraps up for the Yamaha camp; closing the gap to the frontrunners will require substantial winter development on chassis balance and engine performance."
       }
     },
     {

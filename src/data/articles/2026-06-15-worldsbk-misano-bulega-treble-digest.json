@@ -21,19 +21,27 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ #EmiliaRomagnaWorldSBK Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://twitter.com/WorldSBK/status/1835639555644358833",
+      "accountName": "カワサキ プラザ知立",
+      "handle": "@kawasaki_chiryu",
+      "url": "https://x.com/kawasaki_chiryu",
+      "postUrl": "https://x.com/kawasaki_chiryu/status/2112831268698095667",
+      "publishedDate": "2026-10-21",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVIZ67caEAAGCm9.jpg",
+        "https://pbs.twimg.com/media/HVIZ9tIbUAArx2J.jpg",
+        "https://pbs.twimg.com/media/HVIZ_qKbQAAaPdN.jpg",
+        "https://pbs.twimg.com/media/HVIaClia0AAOxV7.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【WorldSBK 第6戦 ミサノ】ニコロ・ブレガ（Aruba.it Racing - Ducati）がアッセンに続き今季2度目のパーフェクト・トレブル（3戦全勝）を母国ミサノで達成！",
-        "ca": "【WorldSBK Misano】Nicolò Bulega torna a fer història aconseguint el seu segon triplet de l'any a casa seva davant l'afició italiana a Misano!",
-        "en": "[WorldSBK Misano Round] Nicolò Bulega delivers another clean-sweep masterclass on home soil, securing his second treble of the 2026 season!"
+        "ja": "【2026 WorldSBK シーズン終了】10月16日～18日、スペイン・ヘレスで開催された最終戦をもって2026年WorldSBKが閉幕。レース2ではカワサキ勢が最後まで健闘し、A.ロウズが7位、A.バッサーニが8位。",
+        "ca": "【Final de temporada WorldSBK 2026】 Amb l'última ronda a Jerez del 16 al 18 d'octubre clou el WorldSBK 2026. A la Cursa 2, Kawasaki ha lluitat fins al final: A. Lowes 7è i A. Bassani 8è.",
+        "en": "【2026 WorldSBK Season Finale】The 2026 WorldSBK season concluded with the finale at Jerez on Oct 16-18. In Race 2, Kawasaki fought hard to the end: A. Lowes P7, A. Bassani P8."
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、ドゥカティのお膝元エミリア・ロマーニャで圧巻の速さを見せたブレガ選手のガッツポーズが賞賛されています。",
-        "ca": "El compte oficial @WorldSBK recull la festa dels aficionats ducatistes celebrant el liderat sòlid de Bulega.",
-        "en": "Official social updates celebrate Bulega extending his championship dominance in front of passionate home Ducatisti."
+        "ja": "カワサキ勢の粘り強い走りは見事だが、トップ争いのドゥカティ勢に食らいつくにはもう一段の旋回性とトラクションの進化が不可欠だぜ！",
+        "ca": "La perseverança de Kawasaki és lloable, però per combatre de tu a tu contra Ducati cal fer una passa més en tracció i pas per corba!",
+        "en": "Kawasaki's grit is commendable, but bridging the gap to Ducati's front-runners will demand extra mechanical grip and mid-corner turning prowess!"
       }
     },
     {

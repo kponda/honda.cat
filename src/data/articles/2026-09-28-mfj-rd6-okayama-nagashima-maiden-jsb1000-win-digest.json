@@ -21,38 +21,53 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "全日本ロードレース公式 ＆ 岡山ハブ",
-      "handle": "@jrr_official / #全日本ロードレース",
-      "url": "https://x.com/jrr_official",
-      "postUrl": "https://x.com/hashtag/全日本ロードレース",
+      "citationType": "direct_post",
+      "accountName": "DUNLOP Motorcycle Tyres (ダンロップ二輪タイヤ公式アカウント)",
+      "handle": "@TyresDunlop",
+      "url": "https://x.com/TyresDunlop",
+      "postUrl": "https://x.com/TyresDunlop/status/2104390366464188721",
+      "publishedDate": "2026-09-28",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HTRL4i9aQAA10R0.jpg",
+        "https://pbs.twimg.com/media/HTRL4i1acAA3QNc.jpg",
+        "https://pbs.twimg.com/media/HTRL4i-bAAANYV4.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース 第6戦 岡山国際】JSB1000決勝、長島哲太（DUNLOP Racing Team with YAHAGI）が感動のJSB1000初優勝！ダンロップタイヤとともに掴んだ執念のトップチェッカー！",
-        "ca": "【Campionat del Japó MFJ Rd.6 Okayama】Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI) aconsegueix una emocionant primera victòria a JSB1000 amb pneumàtics Dunlop a Okayama!",
-        "en": "[MFJ All-Japan Rd.6 Okayama] Tetsuta Nagashima (DUNLOP Racing Team with YAHAGI) storms to an emotional maiden JSB1000 victory aboard Dunlop rubber at Okayama!"
+        "ja": "🎉長島哲太サイン入りキャッププレゼント🎉\n\n2026年MFJ全日本ロードレース選手権シリーズ 第6戦 スーパーバイクレース in 岡山のJSB1000クラスでDUNLOP Racing Team with YAHAGIの長島哲太選手が見事優勝しました🥇JSB1000クラスでの優勝はDUNLOPとしては実に12年ぶりの快挙です🎊",
+        "ca": "🎉 Sorteig de gorra signada per Tetsuta Nagashima 🎉\nTetsuta Nagashima (DUNLOP Racing Team with YAHAGI) s'ha endut una magnífica victòria a la categoria JSB1000 de la 6a prova del Campionat de Curses de Velocitat de Tot el Japó MFJ 2026 a Okayama 🥇 Una fita que suposa el primer triomf de DUNLOP a JSB1000 en 12 anys 🎊",
+        "en": "🎉 Tetsuta Nagashima autographed cap giveaway 🎉\nTetsuta Nagashima of DUNLOP Racing Team with YAHAGI claimed a brilliant victory in the JSB1000 class at Round 6 of the 2026 MFJ All-Japan Road Race Championship Superbike Race in Okayama 🥇 This marks Dunlop's first JSB1000 win in 12 years 🎊"
       },
       "editorialCommentary": {
-        "ja": "全日本公式X（@jrr_official）および「#全日本ロードレース」「#JSB1000」では、岡山特有のテクニカルな中低速コーナーでダンロップタイヤのグリップ力を最大限に引き出した長島選手の走りが絶賛されています。",
-        "ca": "El compte oficial @jrr_official destaca el triomf històric de Dunlop i la pilotatge magistral de Nagashima a les corbes tècniques d'Okayama.",
-        "en": "Official updates from @jrr_official celebrate Nagashima extracting every ounce of grip from Dunlop's development compounds."
+        "ja": "雨の岡山で掴み取った12年ぶりの勝利、ダンロップにとっても長島選手にとっても歴史的瞬間ですね！水しぶきを切り裂いてチェッカーを受けた姿はファインダー越しにも胸を打ちました。",
+        "ca": "Una victòria històrica sota la pluja d'Okayama, tant per a Dunlop com per a Tetsuta Nagashima, trencant una sequera de 12 anys! Veure'l creuar la meta aixecant una cortina d'aigua a través del visor ha estat commovedor.",
+        "en": "A historic wet-weather triumph at Okayama, snapping a 12-year drought for Dunlop and celebrating Nagashima's milestone! Capturing him cutting through the spray toward the checkered flag was deeply moving through the lens."
       }
     },
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "岡山国際サーキット ＆ ロードレースハブ",
-      "handle": "#岡山国際サーキット / 全日本ロードレース",
-      "url": "https://x.com/hashtag/岡山国際サーキット",
-      "postUrl": "https://x.com/hashtag/岡山国際サーキット",
+      "citationType": "direct_post",
+      "accountName": "OUTDO JAPAN",
+      "handle": "@outdo_jp",
+      "url": "https://x.com/outdo_jp",
+      "postUrl": "https://x.com/outdo_jp/status/2112017879659159904",
+      "publishedDate": "2026-10-19",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HU9kjuwbwAAk4Li.jpg",
+        "https://pbs.twimg.com/media/HU9kk3iaEAAJltS.jpg",
+        "https://pbs.twimg.com/media/HU9kl8uaQAEGioA.jpg",
+        "https://pbs.twimg.com/media/HU9knhkaMAAzp1K.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "岡山国際サーキット：秋晴れの美作に響くエキゾーストノート！全日本ロードレース第6戦、全クラス熱戦が繰り広げられました！ご来場ありがとうございました！",
-        "ca": "Circuit Internacional d'Okayama: Gran cap de setmana de velocitat sota el sol de tardor a Mimasaka!",
-        "en": "Okayama International Circuit: Crisp autumn skies welcomed magnificent racing across all All-Japan categories in Mimasaka!"
+        "ja": "長島哲太選手が、JSB1000クラスで初優勝🏆\n全日本ロード第6戦岡山。雨のなか4番グリッドから、17周目に首位を奪取。ダンロップタイヤには12年ぶりの勝利です。\n\n次は最終戦・鈴鹿（10/24〜25）。\n#長島哲太 #全日本ロード #OUTDO",
+        "ca": "Tetsuta Nagashima aconsegueix la seva primera victòria a JSB1000 🏆\nA la 6a prova de l'All-Japan Road Race a Okayama, sortint 4t sota la pluja, es va posar líder a la volta 17. Suposa el primer triomf per a Dunlop en 12 anys.\n\nLa propera cita serà la ronda final a Suzuka (24-25 d'octubre).\n#TetsutaNagashima #AllJapanRoad #OUTDO",
+        "en": "Tetsuta Nagashima takes his first victory in the JSB1000 class 🏆\nAt Round 6 of the All-Japan Road Race in Okayama, starting 4th in the rain, he seized the lead on lap 17. Dunlop's first win in 12 years.\n\nNext up is the season finale at Suzuka (Oct 24–25).\n#TetsutaNagashima #AllJapanRoad #OUTDO"
       },
       "editorialCommentary": {
-        "ja": "「#岡山国際サーキット」タグでは、ヘアピンやアトウッドカーブで撮影されたライダーたちのディープバンク写真が多数共有されています。",
-        "ca": "L'etiqueta #岡山国際サーキット recull imatges espectaculars de les inclinades a la forquilla d'Attwood.",
-        "en": "Community posts under #岡山国際サーキット showcase stunning trackside photography through the famous Attwood curve."
+        "ja": "17周目のパッシングシーンは雨雲を切り裂くような気迫に満ちていました。難コンディションでマシンの挙動を完璧に抑え込んだライディングに魅了されました！",
+        "ca": "L'avançament a la volta 17 va mostrar una determinació ferotge capaç d'esquinçar la pluja. Ha estat captivador veure com dominava la moto en unes condicions d'adherència tan delicades!",
+        "en": "That lap 17 overtake carried raw intensity that seemed to cut straight through the rain clouds. His flawless machine control under such tricky, low-grip conditions was truly captivating."
       }
     },
     {

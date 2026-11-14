@@ -19,20 +19,50 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "Let's レン耐！公式 ＆ 青木拓磨",
-      "handle": "@rentai_official / #レン耐",
-      "url": "https://x.com/rentai_official",
-      "postUrl": "https://x.com/hashtag/レン耐",
+      "citationType": "direct_post",
+      "accountName": "Let's レン耐〜みんなでレンタルバイクレースを一緒にしてゴールを目指そうぜ！",
+      "handle": "@takumagp",
+      "url": "https://x.com/takumagp",
+      "postUrl": "https://x.com/takumagp/status/2117052569700761910",
+      "publishedDate": "2026-11-02",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HSRJ7ZfbQAAqpSa.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【Let's レン耐！西日本シリーズ第4戦 in ソニックパーク安心院】レンタルミニバイク3時間耐久！初心者からベテランまでイコールコンディション（GROM/Monkey125）で激走。名物のお題クリアとダブルペリアハンデで大盛り上がり！",
-        "ca": "【Let's Rentai! Sèrie Oest Rd.4 a Sonic Park Ajimu】Resistència de 3 hores amb minimotos de lloguer! Grans rialles i emoció amb els reptes a box i el sistema d'handicap.",
-        "en": "[Let's Rentai! West Japan Rd.4 at Sonic Park Ajimu] 3-hour rental mini-bike endurance! Equal machinery (GROM/Monkey125), hilarious pit challenges, and dramatic handicap finishes!"
+        "ja": "レン耐の主役は走っているライダーだけじゃない。次のライダーを送り出し、ピットで応援し、仲間を支える全員が主役。チーム全員で力を合わせるからゴールがもっと嬉しい。みんなで作る耐久レース、それがレン耐。",
+        "ca": "Els protagonistes del Ren-tai no són només els pilots a pista: qui dona la sortida al següent relleu, qui anima des del pit i qui fa suport. L'esforç de tot l'equip fa la meta molt més dolça. Això és el Ren-tai.",
+        "en": "The heroes of Ren-tai aren't just riders on track. It's those sending off the next rider, cheering from pit lane, and supporting teammates. Working together makes the checkered flag sweeter. That's Ren-tai."
       },
       "editorialCommentary": {
-        "ja": "Let's レン耐！公式（@rentai_official）およびXのハッシュタグ「#レン耐」では、安心院を疾走した参加者たちの笑顔やピットインでのお題挑戦（知恵の輪やなわとび）の熱気がリアルタイムで発信されています。",
-        "ca": "El compte oficial @rentai_official i l'etiqueta #レン耐 mostren la diversió i companyonia dels equips a Sonic Park Ajimu.",
-        "en": "Official updates from @rentai_official and community posts under #レン耐 capture the fun-filled pit challenges and tight racing at Ajimu."
+        "ja": "耐久の神髄をよく分かってるじゃないか。マシンを走らせ続けるのはライダーの手首だけじゃない、ピットの段取りと支える全員の意志だよ。",
+        "ca": "Tenen tota la raó: una cursa de resistència no es guanya només al puny de gas, sinó amb la feina impecable i coordinada de tothom al box.",
+        "en": "They hit the nail on the head. Endurance racing isn't just about the throttle hand; it runs on pit coordination and every team member's resolve."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "Let's レン耐〜みんなでレンタルバイクレースを一緒にしてゴールを目指そうぜ！",
+      "handle": "@takumagp",
+      "url": "https://x.com/takumagp",
+      "postUrl": "https://x.com/takumagp/status/2118578838242476319",
+      "publishedDate": "2026-11-06",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWa0N1zaMAA79aL.jpg",
+        "https://pbs.twimg.com/media/HWa0OJRakAEXxNy.jpg",
+        "https://pbs.twimg.com/media/HWa0OYna0AAf0vO.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "今週末11/8(日)は熊本県・HSR九州で『熊本復興支援レン耐(5時間耐久)』開催！アプリやメールで事前資料（タイムスケジュール・ピット図等）をお送りしていますのでご確認ください。",
+        "ca": "Aquest diumenge 8 de novembre se celebra el 'Ren-tai de suport a la reconstrucció de Kumamoto (5 hores)' a HSR Kyushu! Reviseu la documentació prèvia (horaris, plànols de boxes) enviada per app o correu.",
+        "en": "This Sunday, Nov 8, the 'Kumamoto Reconstruction Support Ren-tai (5-hour endurance)' takes place at HSR Kyushu! Please check the advance briefing materials (schedules, pit layouts) sent via app or email."
+      },
+      "editorialCommentary": {
+        "ja": "5時間走り切るなら事前のピット図とスケジュール確認は基本中の基本だ。準備をサボった奴からピットで慌てることになるんだから、しっかり頭に叩き込みな。",
+        "ca": "Per afrontar cinc hores de resistència cal tenir molt clars els horaris i la distribució de boxes abans d'arribar; la improvisació es paga cara al pit lane.",
+        "en": "Checking your schedule and pit allocations beforehand is Endurance 101 for a five-hour run. Slacking on prep means chaos in the pit lane, so study up."
       }
     },
     {
@@ -51,24 +81,6 @@
         "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
         "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
         "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
-      }
-    },
-    {
-      "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "お題付耐久「草」レース ハッシュタグハブ",
-      "handle": "#お題付耐久 / 中九州カートウェイ",
-      "url": "https://x.com/hashtag/お題付耐久",
-      "postUrl": "https://x.com/hashtag/お題付耐久",
-      "quotedPostText": {
-        "ja": "【飲酒運転撲滅チャリティー お題付耐久「草」レース R-2 in 中九州カートウェイ】90分耐久！かめさん（基準48秒）・うさぎさん（基準46秒）・らいおんさん・チーターさんクラス。絶妙なペース配分とお題クリアで白熱！",
-        "ca": "【Odai-tsuki Endurance R-2 a Nakakyushu Kartway】Cursa benèfica de resistència de 90 minuts amb reptes a box i límits de temps per volta segons categoria!",
-        "en": "[Charity Odai-tsuki Endurance R-2 at Nakakyushu Kartway] 90-minute grassroots endurance with pit challenges and minimum lap time rules per bracket!"
-      },
-      "editorialCommentary": {
-        "ja": "Xのハッシュタグ「#お題付耐久」では、中九州カートウェイで開催された第2戦のパドック風景や、ペースを抑えつつピットのお題で大逆転を狙う参加者たちの創意工夫が共有されています。",
-        "ca": "A través de #お題付耐久, els pilots comparteixen fotos i anècdotes dels reptes a box a Nakakyushu Kartway.",
-        "en": "Entrant posts under #お題付耐久 showcase the unique pit-stop challenge strategies and family-friendly atmosphere at Nakakyushu."
       }
     }
   ],

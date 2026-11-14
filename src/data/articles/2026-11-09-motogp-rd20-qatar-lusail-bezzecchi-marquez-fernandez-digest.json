@@ -23,19 +23,24 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #QatarGP Hub",
-      "handle": "@MotoGP / #QatarGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2116364541051261354",
+      "publishedDate": "2026-10-31",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HV7WTsvWMAAn9vs.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第20戦 カタールGP（ルサイル）公式結果】砂漠のイルミネーションに照らされたナイトレースでマルコ・ベッツェッキ（Aprilia Racing）が優勝！2位マルク・マルケス、3位ラウル・フェルナンデス！",
-        "ca": "【GP de Qatar 2026 a Lusail】Sota els focus del desert, Marco Bezzecchi (Aprilia Racing) aconsegueix la victòria per davant de Marc Márquez (2n) i Raúl Fernández (3r)!",
-        "en": "[2026 MotoGP Qatar GP at Lusail] Under the desert floodlights, Marco Bezzecchi (Aprilia Racing) powers to a magnificent night-race victory ahead of Marc Márquez (2nd) and Raúl Fernández (3rd)!"
+        "ja": "速報：ホルヘ・マルティン（@88jorgemartin）は怪我からの回復を優先するため、マレーシアGPのこれ以降のセッションを欠場します。",
+        "ca": "ÚLTIMA HORA: Jorge Martín (@88jorgemartin) no continuarà participant al GP de Malàisia per centrar-se en la recuperació de la seva lesió.",
+        "en": "BREAKING: Jorge Martín (@88jorgemartin) will take no further part in the Malaysian GP to continue his recovery from injury."
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#QatarGP」では、ルサイルの高速トリプル右コーナー（12〜14コーナー）でアプリリアRS-GPが見せた吸い付くような旋回性能が絶賛されています。",
-        "ca": "El compte oficial @MotoGP destaca el pas per corba de Bezzecchi al triple revolt de dretes de Lusail.",
-        "en": "Official social reporting from @MotoGP and #QatarGP praises Bezzecchi's supreme mid-corner velocity through Turns 12 to 14."
+        "ja": "マルティネatorの欠場はタイトル争いの力学を根底から揺るがす痛烈な一報だ！テレメトリーで見せるアグレッシブな走りの復活を祈るしかない！",
+        "ca": "Una baixa dolorosíssima de Martín que altera per complet la dinàmica del campionat. Necessitem recuperar la seva agressivitat i telemetria el més aviat possible!",
+        "en": "A crushing withdrawal by Martín that completely shakes up championship dynamics. We need his aggressive riding and sharp telemetry back at 100% soon!"
       }
     },
     {

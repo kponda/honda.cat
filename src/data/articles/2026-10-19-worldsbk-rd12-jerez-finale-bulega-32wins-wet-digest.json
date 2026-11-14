@@ -21,19 +21,27 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK",
+      "accountName": "モトバイ｜失敗しないバイク用品ガイド",
+      "handle": "@motorbikejp",
+      "url": "https://x.com/motorbikejp",
+      "postUrl": "https://x.com/motorbikejp/status/2112813638629122048",
+      "publishedDate": "2026-10-21",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVIq4wAagAAxB6v.jpg",
+        "https://pbs.twimg.com/media/HVIq90yakAAFtS3.jpg",
+        "https://pbs.twimg.com/media/HVIq_p8aQAAb8u9.jpg",
+        "https://pbs.twimg.com/media/HVIrA30aQAAyWtw.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第12戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
-        "ca": "【WorldSBK Rd.12】Resultats oficials amb un ritme demolidor a la pista!",
-        "en": "[WorldSBK Rd.12] Official Results and Highlights from the paddock!"
+        "ja": "【豪州】CFMOTO「V4 SR-RR」、当初は70度V4で開発 WorldSBK参戦の噂も浮上\n\nMCNewsの杭州本社取材で、元エンジン開発責任者のジョー・ジョウ氏が、V4エンジンは当初ボア79mmの70度V4として設計され、スーパーバイク水準の高回転性能を得るためにボア81mmの90度V4へ変更したと明かした。",
+        "ca": "[Austràlia] La CFMOTO 'V4 SR-RR' es va concebre inicialment com un V4 a 70 graus; sorgeixen rumors d'entrada al WorldSBK.\n\nEn una entrevista de MCNews a la seu de Hangzhou, l'exresponsable de motors Joe Zhou va revelar que el V4 es va dissenyar originàriament amb 79 mm de diàmetre i 70 graus, canviant després a 81 mm i 90 graus per assolir el règim d'altes revolucions d'una Superbike.",
+        "en": "[Australia] CFMOTO 'V4 SR-RR' originally developed as a 70-degree V4; rumors surface about WorldSBK entry.\n\nIn an MCNews interview at Hangzhou HQ, former engine development chief Joe Zhou revealed the V4 was initially designed as a 79mm bore 70-degree V4, later changed to an 81mm bore 90-degree V4 to hit rev levels required for Superbike competition."
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第12戦のオンボード映像やハイライトが世界中のファンに配信されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 12.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 12."
+        "ja": "ボア81mmの90度V4といえば現行MotoGPやドゥカティSBKの黄金スペックそのもの！CFMOTOが本気でWorldSBKのグリッドを狙ってきたら、パドックの勢力図がさらに面白くなるぜ！",
+        "ca": "Una configuració V4 a 90 graus amb 81 mm de diàmetre és exactament la proporció àuria de MotoGP i de la Ducati de SBK! Si CFMOTO desembarca seriosament a la graella de WorldSBK, el campionat serà una autèntica bogeria!",
+        "en": "An 81mm bore, 90-degree V4 is the exact golden ratio seen in modern MotoGP and Ducati's SBK machinery! If CFMOTO seriously targets the WorldSBK grid, it will shake up the paddock hierarchy big time!"
       }
     },
     {

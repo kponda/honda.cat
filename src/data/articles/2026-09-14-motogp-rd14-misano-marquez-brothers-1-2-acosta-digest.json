@@ -22,19 +22,24 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #SanMarinoGP Hub",
-      "handle": "@MotoGP / #SanMarinoGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2119099159336595694",
+      "publishedDate": "2026-11-07",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWiNdI6XkAAOAeP.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第14戦 サンマリノGP（ミサノ）公式結果】アドリア海のミサノでマルケス兄弟が歴史的1-2フィニッシュ！兄マルク優勝、弟アレックス2位、3位にペドロ・アコスタ！",
-        "ca": "【GP de San Marino 2026 a Misano】Doblet històric dels germans Márquez! Marc Márquez guanya la cursa per davant d'Àlex Márquez (2n) i Pedro Acosta (3r) a Misano!",
-        "en": "[2026 MotoGP San Marino GP at Misano] Historic 1-2 finish for the Márquez brothers! Marc takes victory ahead of younger brother Álex (2nd) with Pedro Acosta in 3rd!"
+        "ja": "ペッコ・バニャイアがクラッシュ、フェルミン・アルデゲルとのアクシデントに巻き込まれる\n\n#QatarGP 🇶🇦",
+        "ca": "Caiguda de @PeccoBagnaia, implicat en un incident amb @Aldeguer54 \n\n#QatarGP 🇶🇦",
+        "en": "Crash for @PeccoBagnaia, involved in an incident with @Aldeguer54 \n\n#QatarGP 🇶🇦"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#SanMarinoGP」では、最高峰クラスの決勝で実の兄弟が1位・2位を独占した歴史的ポディウムに世界中から大反響が寄せられています。",
-        "ca": "El compte oficial @MotoGP celebra el doblet familiar dels Márquez amb fotos emocionants al podi de la costa adriàtica.",
-        "en": "Official dispatches from @MotoGP and #SanMarinoGP celebrate an extraordinary family milestone on the Adriatic coast."
+        "ja": "ブレーキングアプローチでのライン交錯からアルデゲルと接触しての転倒、バニャイアにとっては手痛すぎるゼロポイントだ！チャンピオンシップの力関係が一瞬でひっくり返るこのスリリングさこそグランプリだが、ペッコには酷な結末だな！",
+        "ca": "Una col·lisió amb Aldeguer en la fase de frenada que deixa Pecco amb un zero dolorosíssim a la taula! Això capgira el campionat en un parpelleig, mostrant la cara més cruel i despietada de MotoGP.",
+        "en": "A tangled braking line with Aldeguer sends Pecco sliding into the gravel—a devastating zero-point finish! It flips the title dynamics in an instant, showing just how ruthless and fine the margins are in premier-class racing!"
       }
     },
     {

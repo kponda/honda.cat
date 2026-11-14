@@ -20,19 +20,47 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #AustralianGP Hub",
-      "handle": "@MotoGP / #AustralianGP",
-      "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "accountName": "NOBU",
+      "handle": "@Nobu1200RS",
+      "url": "https://x.com/Nobu1200RS",
+      "postUrl": "https://x.com/Nobu1200RS/status/2115428298176274625",
+      "publishedDate": "2026-10-28",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVuBxoxa8AAmfxq.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第18戦 オーストラリアGP（フィリップ・アイランド）】強風と荒天のバス海峡！新王者マルク・マルケスが土曜スプリントを制覇！日曜決勝は突風のため安全最優先でキャンセル決定。",
-        "ca": "【GP d'Austràlia 2026 a Phillip Island】Vent extrem a l'estret de Bass! Marc Márquez guanya l'Sprint de dissabte mentre que la cursa de diumenge es cancel·la per seguretat davant ràfegues perilloses.",
-        "en": "[2026 MotoGP Australian GP at Phillip Island] Fierce gale-force winds along Bass Strait! Newly crowned champion Marc Márquez masters Saturday's Sprint before Sunday's GP was cancelled for rider safety."
+        "ja": "サーキットからの景色が素晴らしいPhillip Islandでしたが、宿泊地のDrouinまでの景色も素晴らしかった。\nまたいつか開催することを信じて\n.\nNikon Z8 + NIKKOR Z 600mm f/6.3 VR S \n#motogp #AustralianGP",
+        "ca": "El paisatge des del circuit de Phillip Island era sublim, però el camí fins a Drouin, on m'allotjava, també va ser meravellós. Confio que algun dia es torni a disputar aquí.\nNikon Z8 + NIKKOR Z 600mm f/6.3 VR S #motogp #AustralianGP",
+        "en": "The views from the circuit at Phillip Island were stunning, and the scenery on the drive back to Drouin was equally amazing. Trusting it will host races again someday.\nNikon Z8 + NIKKOR Z 600mm f/6.3 VR S #motogp #AustralianGP"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#AustralianGP」では、時速340kmでフィリップアイランドの1コーナー（ドゥーハン・コーナー）へ飛び込むライダーたちの突風との闘いと、FIMの迅速な安全判断が支持を集めました。",
-        "ca": "El compte oficial @MotoGP destaca la decisió encertada dels comissaris de cancel·lar la cursa diumenge davant les ràfegues de vent incontrolables a Doohan Corner.",
-        "en": "Official dispatches from @MotoGP emphasize the FIM Stewards' prudent decision prioritizing rider safety amidst 80 km/h wind gusts into Turn 1."
+        "ja": "海風吹きすさぶフィリップ・アイランドの景観は世界一！日曜の暴風雨による決勝キャンセルは残念無念だが、土曜スプリントを支配したマルケスのテレメトリーデータだけでも現地ファンの魂を揺さぶるには十分だったぜ！",
+        "ca": "L'escenari salvatge al costat del mar de Phillip Island és únic al món! Una llàstima la cancel·lació de diumenge pel temporal, però l'exhibició de Márquez a la cursa Sprint de dissabte va valer per tot un gran premi!",
+        "en": "The windswept ocean scenery of Phillip Island is unmatched in world motorsport! While Sunday's storm cancellation was heartbreaking, Marc Márquez's sheer dominance in Saturday's Sprint provided plenty of telemetry brilliance to savor!"
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "Ai Ogura",
+      "handle": "@AiOgura79",
+      "url": "https://x.com/AiOgura79",
+      "postUrl": "https://x.com/AiOgura79/status/2114834032630657228",
+      "publishedDate": "2026-10-26",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVlmVYFagAATGbl.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "素晴らしいサーキットでした！\nThank you Phillip Island !!\n\n#AustralianGP🇦🇺 P13 / —",
+        "ca": "Un circuit fantàstic! Gràcies, Phillip Island!! #AustralianGP🇦🇺 P13 / —",
+        "en": "An awesome circuit! Thank you Phillip Island !! #AustralianGP🇦🇺 P13 / —"
+      },
+      "editorialCommentary": {
+        "ja": "荒れたコンディションの超高速アイランドで貴重なP13フィニッシュを持ち帰った小椋藍！日曜のキャンセルは悔しいが、この難関トラックで蓄積したセットアップデータは来期への大きな財産になるぞ！",
+        "ca": "Molt valuós P13 d'Ai Ogura en les exigents i ràpides corbes de Phillip Island! Una llàstima no córrer diumenge, però les dades recollides en aquest traçat tan sever són or pur per al futur!",
+        "en": "A gritty P13 finish for Ai Ogura amid the brutal high-speed gusts of Phillip Island! Sunday's weather cancellation was frustrating, but the setup data harvested on this demanding asphalt will pay dividends down the road!"
       }
     },
     {

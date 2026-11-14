@@ -21,19 +21,50 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK",
+      "accountName": "Aruba.it Racing - Ducati",
+      "handle": "@ArubaRacing",
+      "url": "https://x.com/ArubaRacing",
+      "postUrl": "https://x.com/ArubaRacing/status/2050235046208975080",
+      "publishedDate": "2026-05-01",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HHPlNXmWcAAKs-o.jpg",
+        "https://pbs.twimg.com/media/HHPlNXqWAAAHzDT.jpg",
+        "https://pbs.twimg.com/media/HHPlPApWcAAyfA_.jpg",
+        "https://pbs.twimg.com/media/HHPlPA6XYAEWi_v.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第4戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
-        "ca": "【WorldSBK Rd.4】Resultats oficials amb un ritme demolidor a la pista!",
-        "en": "[WorldSBK Rd.4] Official Results and Highlights from the paddock!"
+        "ja": "金曜まとめ：バラトン・パークでAruba.it Racing – Ducatiのチーム内直接対決が再び勃発。レクオナがブレガをコンマ1秒上回り、金曜フリー走行を総合首位で終えました。",
+        "ca": "Resum de divendres: Nou duel directe a l'Aruba.it Racing – Ducati a Balaton. Lecuona tanca divendres en P1, una dècima més ràpid que Bulega en segona posició.",
+        "en": "Friday recap: Another intra-team head-to-head battle for Aruba.it Racing – Ducati at Balaton. Lecuona wraps up Friday in P1, one-tenth quicker than Bulega in second."
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第4戦のオンボード映像やハイライトが世界中のファンに配信されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 4.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 4."
+        "ja": "金曜からチームメイト同士で火花を散らすこのタイムアタック合戦、テレメトリーを見るだけでもアドレナリンが湧いてくるぜ！初開催のバラトン・パークでレクオナがきっちり爪痕を残してきたな。",
+        "ca": "Batalla al límit entre companys d'equip des del divendres; les dades de telemetria treuen fum! Lecuona comença marcant terreny en aquesta nova pista de Balaton.",
+        "en": "Sparks flying between teammates right from Friday practice—the telemetry data is pure adrenaline! Lecuona made an immediate statement at the newly added Balaton Park."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "Aruba.it Racing - Ducati",
+      "handle": "@ArubaRacing",
+      "url": "https://x.com/ArubaRacing",
+      "postUrl": "https://x.com/ArubaRacing/status/2049761758785446323",
+      "publishedDate": "2026-04-30",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HHI2rRyWUAEszeT.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "プレビュー：ハンガリーのバラトン・パーク・サーキットにて、2026年WorldSBKシーズン第4戦が開催されます。",
+        "ca": "Prèvia: El circuit de Balaton Park (Hongria) acull la quarta ronda de la temporada 2026 de WorldSBK.",
+        "en": "Preview: The Balaton Park Circuit in Hungary hosts round four of the 2026 WorldSBK season."
+      },
+      "editorialCommentary": {
+        "ja": "未知のレイアウトとなるバラトン・パークに乗り込む第4戦、マシンのジオメトリセットアップが勝負の分かれ目だ！Ducatiの快進撃がここでも続くか要注目だな。",
+        "ca": "Arribem a la incògnita de Balaton Park per a la quarta ronda; el set-up geomètric serà decisiu per adaptar-se a aquest nou traçat!",
+        "en": "Heading into the unknown layout of Balaton Park for round four; dialling in the geometry setup quickly will separate the contenders from the rest."
       }
     },
     {

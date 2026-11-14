@@ -224,8 +224,12 @@ const {
     <!-- Official X (Twitter) Widget Loader for Embedded Official Posts & Timelines -->
     <script is:inline>
       document.addEventListener('DOMContentLoaded', () => {
-        if (document.querySelector('blockquote.twitter-tweet, a.twitter-timeline')) {
+        if (
+          document.querySelector('blockquote.twitter-tweet, a.twitter-timeline') &&
+          !document.getElementById('twitter-wjs')
+        ) {
           const s = document.createElement('script');
+          s.id = 'twitter-wjs';
           s.src = 'https://platform.twitter.com/widgets.js';
           s.async = true;
           s.charset = 'utf-8';
@@ -261,6 +265,13 @@ const {
               btn.setAttribute('aria-pressed', 'false');
             }
           });
+
+          // Re-render X (Twitter) widgets inside newly revealed language containers
+          if (window.twttr && window.twttr.widgets) {
+            window.twttr.widgets.load();
+          } else if (typeof window.reloadHondaCatTwitterWidgets === 'function') {
+            window.reloadHondaCatTwitterWidgets();
+          }
 
           // Show toast feedback when manually switched
           if (persist && window.__hondaCatToastReady) {

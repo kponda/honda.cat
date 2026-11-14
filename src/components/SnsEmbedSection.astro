@@ -120,7 +120,8 @@ function getYouTubeEmbedUrl(url?: string): string | null {
         const xStatusUrl = getXStatusUrl(item.postUrl) || getXStatusUrl(item.url);
         const igEmbedUrl = getInstagramEmbedUrl(item.postUrl) || getInstagramEmbedUrl(item.url);
         const ytEmbedUrl = getYouTubeEmbedUrl(item.postUrl) || getYouTubeEmbedUrl(item.url);
-        const hasRichMedia = !!(xStatusUrl || igEmbedUrl || ytEmbedUrl);
+        const mediaUrls = (item.mediaUrls || []).slice(0, 4);
+        const hasRichMedia = !!(xStatusUrl || igEmbedUrl || ytEmbedUrl || mediaUrls.length > 0);
         const actionLabel = (viewActionLabels[item.platform] && viewActionLabels[item.platform][lang]) || '元ポストを開く ↗';
 
         return (
@@ -152,10 +153,39 @@ function getYouTubeEmbedUrl(url?: string): string | null {
                 {xStatusUrl ? (
                   <div class="sns-x-tweet-embed">
                     <blockquote class="twitter-tweet" data-theme="dark" data-lang={lang} data-dnt="true" data-align="center">
+                      {mediaUrls.length > 0 && (
+                        <div class="x-inline-photo-grid" data-count={mediaUrls.length}>
+                          {mediaUrls.map((mediaUrl, imgIdx) => (
+                            <a href={rawTargetUrl} target="_blank" rel="noopener noreferrer" class="x-inline-photo-link">
+                              <img
+                                src={mediaUrl}
+                                alt={`${item.accountName} race photo ${imgIdx + 1}`}
+                                loading="lazy"
+                                class="x-inline-photo"
+                              />
+                            </a>
+                          ))}
+                        </div>
+                      )}
                       <p lang={lang} dir="ltr">{item.quotedPostText?.[lang] || ''}</p>
                       &mdash; {item.accountName} ({item.handle}){' '}
                       <a href={xStatusUrl}>{item.publishedDate || 'Official Post'}</a>
                     </blockquote>
+                  </div>
+                ) : mediaUrls.length > 0 ? (
+                  <div class="sns-x-tweet-embed">
+                    <div class="x-inline-photo-grid" data-count={mediaUrls.length}>
+                      {mediaUrls.map((mediaUrl, imgIdx) => (
+                        <a href={rawTargetUrl} target="_blank" rel="noopener noreferrer" class="x-inline-photo-link">
+                          <img
+                            src={mediaUrl}
+                            alt={`${item.accountName} race photo ${imgIdx + 1}`}
+                            loading="lazy"
+                            class="x-inline-photo"
+                          />
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 ) : igEmbedUrl ? (
                   <div class="sns-ig-embed">
@@ -185,8 +215,8 @@ function getYouTubeEmbedUrl(url?: string): string | null {
               </div>
             )}
 
-            {/* Quoted highlight text box (shows below media or as main content when media is not a single embeddable post) */}
-            {item.quotedPostText?.[lang] && !xStatusUrl && (
+            {/* Quoted highlight text box (shows trilingual translated summary / quote) */}
+            {item.quotedPostText?.[lang] && (
               <div class="sns-quoted-box">
                 <div class="quoted-label">{quotedLabel[lang]}</div>
                 <blockquote class="quoted-text">“{item.quotedPostText[lang]}”</blockquote>
@@ -216,6 +246,9 @@ function getYouTubeEmbedUrl(url?: string): string | null {
 {/* Twitter widgets.js and dynamic embed processor */}
 <script is:inline>
   (function() {
+    if (window.__hondaCatTwitterInit) return;
+    window.__hondaCatTwitterInit = true;
+
     function loadTwitterWidgets() {
       if (window.twttr && window.twttr.widgets) {
         window.twttr.widgets.load();
@@ -228,6 +261,8 @@ function getYouTubeEmbedUrl(url?: string): string | null {
         document.head.appendChild(script);
       }
     }
+
+    window.reloadHondaCatTwitterWidgets = loadTwitterWidgets;
 
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', loadTwitterWidgets);
@@ -376,14 +411,63 @@ function getYouTubeEmbedUrl(url?: string): string | null {
   }
 
   .sns-x-tweet-embed blockquote.twitter-tweet {
+    width: 100%;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 0.75rem;
-    padding: 1rem 1.25rem;
-    margin: 0.5rem 0;
+    padding: 0.9rem 1rem;
+    margin: 0.25rem 0;
     color: #e6edf3;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.6;
+  }
+
+  .x-inline-photo-grid {
+    display: grid;
+    gap: 0.45rem;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    border-radius: 0.65rem;
+    overflow: hidden;
+  }
+
+  .x-inline-photo-grid[data-count='1'] {
+    grid-template-columns: 1fr;
+  }
+
+  .x-inline-photo-grid[data-count='2'],
+  .x-inline-photo-grid[data-count='3'],
+  .x-inline-photo-grid[data-count='4'] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .x-inline-photo-grid[data-count='3'] .x-inline-photo-link:first-child {
+    grid-column: span 2;
+  }
+
+  .x-inline-photo-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 0.45rem;
+    background: #10131a;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .x-inline-photo {
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.25s ease;
+  }
+
+  .x-inline-photo-grid[data-count='1'] .x-inline-photo {
+    max-height: 360px;
+  }
+
+  .x-inline-photo-link:hover .x-inline-photo {
+    transform: scale(1.03);
   }
 
   .sns-ig-embed {

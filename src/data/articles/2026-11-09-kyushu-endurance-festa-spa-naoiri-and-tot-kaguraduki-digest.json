@@ -20,20 +20,48 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "オートポリス ＆ SPA直入 公式",
-      "handle": "@autopolis2005 / #SPA直入",
-      "url": "https://x.com/autopolis2005",
-      "postUrl": "https://x.com/hashtag/SPA直入",
+      "citationType": "direct_post",
+      "accountName": "吉田史生",
+      "handle": "@pO6k9Hb5zdLpHaZ",
+      "url": "https://x.com/pO6k9Hb5zdLpHaZ",
+      "postUrl": "https://x.com/pO6k9Hb5zdLpHaZ/status/2119260055375929771",
+      "publishedDate": "2026-11-08",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWkfwrRaYAAoCMC.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【SPA直入 2026 九州エンデュランスフェスタ『Go!Go! 5時間耐久』】秋の大分・SPA直入（全長1,430m）で開催された5時間耐久レース！初心者からベテランまで仲間とタスキをつないだ感動のチェッカー！",
-        "ca": "【5 Hores de Resistència a SPA Naoiri】Gran festa del motociclisme a Takeda amb equips amateurs completant 5 hores d'estratègia i passió!",
-        "en": "[SPA Naoiri 'Go!Go! 5-Hour Endurance Festa'] Grassroots endurance passion at Oita's 1,430m technical circuit! Teamwork and camaraderie right to the chequered flag!"
+        "ja": "2026 Taste of Tsukuba 神楽月ステージ #筑波サーキット #TasteofTsukuba #テイストオブツクバ #TOT2026 #フォトコンテスト",
+        "ca": "2026 Taste of Tsukuba KAGURADUKI STAGE #TsukubaCircuit #TasteofTsukuba #TOT2026 #ConcursFotografia",
+        "en": "2026 Taste of Tsukuba KAGURADUKI STAGE #TsukubaCircuit #TasteofTsukuba #TOT2026 #PhotoContest"
       },
       "editorialCommentary": {
-        "ja": "SPA直入公式（@autopolis2005）およびハッシュタグ「#SPA直入」では、晩秋の阿蘇外輪山を背景に繰り広げられた給油ピットインとチームの歓喜が共有されています。",
-        "ca": "L'etiqueta #SPA直入 recull les fotografies dels relleus a box i l'ambient càlid entre tots els equips participants.",
-        "en": "Posts under #SPA直入 capture the family-like pit-lane atmosphere and triumphant celebrations completing 5 demanding hours."
+        "ja": "テイスト・オブ・ツクバの熱気はいつ見ても胸が熱くなるね。名車たちの咆哮を支えるのは、妥協のない組み上げと日々のメンテの積み重ねなんだよ。",
+        "ca": "La passió que es respira al Taste of Tsukuba sempre impressiona. El bram d'aquestes màquines llegendàries només és possible gràcies a hores infinites d'ajust meticulós a taller.",
+        "en": "Taste of Tsukuba never fails to give me chills. Those roaring vintage superbikes only survive on the limit because of relentless wrenching and uncompromising rebuild standards."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "吉田史生",
+      "handle": "@pO6k9Hb5zdLpHaZ",
+      "url": "https://x.com/pO6k9Hb5zdLpHaZ",
+      "postUrl": "https://x.com/pO6k9Hb5zdLpHaZ/status/2119289452895904060",
+      "publishedDate": "2026-11-08",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWk6gZpbMAE0jK1.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "2026 Taste of Tsukuba 神楽月ステージ #筑波サーキット #TasteofTsukuba #テイストオブツクバ #TOT2026 #フォトコンテスト",
+        "ca": "2026 Taste of Tsukuba KAGURADUKI STAGE #TsukubaCircuit #TasteofTsukuba #TOT2026 #ConcursFotografia",
+        "en": "2026 Taste of Tsukuba KAGURADUKI STAGE #TsukubaCircuit #TasteofTsukuba #TOT2026 #PhotoContest"
+      },
+      "editorialCommentary": {
+        "ja": "筑波のコース上に並ぶ鉄馬たち、サーキットの過酷な負荷を支えるボルト1本1本のワイヤリングを見れば、ピットクルーの魂が分かるってもんさ。",
+        "ca": "Veure aquestes bèsties d'acer a la pista de Tsukuba és pur art; cada fre de filferro als cargols reflecteix l'ànima dels mecànics que les mantenen vives.",
+        "en": "Looking at these iron-frame beasts lined up at Tsukuba, every safety wire tied to those bolts tells you everything about the soul poured into them by their pit crew."
       }
     },
     {
@@ -52,24 +80,6 @@
         "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
         "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
         "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
-      }
-    },
-    {
-      "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "筑波サーキット ＆ テイスト・オブ・ツクバ公式",
-      "handle": "@tsukuba_circuit / #テイストオブツクバ",
-      "url": "https://x.com/tsukuba_circuit",
-      "postUrl": "https://x.com/hashtag/テイストオブツクバ",
-      "quotedPostText": {
-        "ja": "【テイスト・オブ・ツクバ KAGURADUKI STAGE】秋の鉄フレームの祭典・神楽月ステージ！ハーキュリーズやモンスタークラスの名車たちが筑波の空に轟音を響かせました！",
-        "ca": "【Taste of Tsukuba KAGURADUKI STAGE】La gran cita de tardor a Tsukuba amb les màquines clàssiques i preparades més brutals del Japó!",
-        "en": "[Taste of Tsukuba KAGURADUKI STAGE] Autumn celebration of tuned superbikes and steel-frame beasts packing the Tsukuba circuit!"
-      },
-      "editorialCommentary": {
-        "ja": "筑波公式X（@tsukuba_circuit）および「#TOT」タグでは、最終コーナーの脱出スピードを競い合う空冷大排気量マシンの勇姿が発信されています。",
-        "ca": "El compte oficial @tsukuba_circuit mostra les imatges més destacades dels monstres de 4 cilindres a la recta de Tsukuba.",
-        "en": "Official dispatches from @tsukuba_circuit celebrate the extraordinary power and craftsmanship of Hercules class machines."
       }
     }
   ],

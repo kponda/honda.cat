@@ -17,6 +17,57 @@
   ],
   "snsCitations": [
     {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "ハジーナ•ヤポンスカ🦆",
+      "handle": "@hajinajaponska",
+      "url": "https://x.com/hajinajaponska",
+      "postUrl": "https://x.com/hajinajaponska/status/2117122623033442608",
+      "publishedDate": "2026-11-02",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWGHzb9bQAA4Wyv.jpg",
+        "https://pbs.twimg.com/media/HWGHzcKaMAAJ3Vi.jpg",
+        "https://pbs.twimg.com/media/HWGHzcKbYAENp1y.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "バイク整備用にトルクレンチを探したが適正範囲のものが実店舗で見つからず、結局ネット注文してPUDO受取。すごく安かった。24N・mでドレンボルト締めるぞ😊",
+        "ca": "Buscava una dinamomètrica pel manteniment de la moto, però a les botigues físiques no en tenien de rang adequat; al final l'he comprada online i recollida a la taquilla PUDO. Molt barata. A collar el cargol de drenatge a 24 N·m😊",
+        "en": "Hunted for a torque wrench with the right range for bike maintenance, couldn't find one in retail stores, so ended up ordering online and picking up at PUDO. Super cheap. Time to torque the drain bolt to 24 N·m😊"
+      },
+      "editorialCommentary": {
+        "ja": "24N・mを意識するのは結構だけど、安物レンチの精度誤差とネジ山の脱脂状態には注意しな。オイルが付着したままだとオーバートルクでオイルパンのネジ山を飛ばすよ。",
+        "ca": "Està bé tenir clars els 24 N·m, però compte amb la precisió de les eines massa barates i la fricció a la rosca. Si hi ha oli residual, el parell real aplicat et rebentarà el carter.",
+        "en": "Aiming for 24 N·m is fine, but beware of cheap wrench calibration and thread friction. If those threads are dripping oil, friction drops and you'll strip the sump before that click even happens."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "榎本／TSUKAJI",
+      "handle": "@jsnt125_788_CT",
+      "url": "https://x.com/jsnt125_788_CT",
+      "postUrl": "https://x.com/jsnt125_788_CT/status/2116206278284640436",
+      "publishedDate": "2026-10-30",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HV5DBvTasAk6jid.jpg",
+        "https://pbs.twimg.com/media/HV5EG2TasAQnNVu.jpg",
+        "https://pbs.twimg.com/media/HV5F7PebYAEsu7G.jpg",
+        "https://pbs.twimg.com/media/HV5GOKtasAUcA0u.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "クルマやバイクもびっくりなクソデカキャリパーと、回り止め使い方は分からないけどデカいトルクレンチ…三つ折りパンフレット程の太さのボルトを締める。使ってるとこ見てみたい🤤",
+        "ca": "Pinces de fre gegants que farien flipar cotxes i motos, i una dinamomètrica enorme que no sé ni com blocar... collar cargols amb el diàmetre d'un fulletó plegat. M'encantaria veure-la en acció🤤",
+        "en": "Insanely huge calipers that put cars and bikes to shame, plus a gigantic torque wrench... tightening bolts with the diameter of a tri-fold brochure. Would love to see this thing in action🤤"
+      },
+      "editorialCommentary": {
+        "ja": "大型プラントや重機用の巨大トルクレンチだね。サイズが何倍になろうとボルト締め付けの物理法則は同じ、弾性域での軸力管理が命綱ってことさ。",
+        "ca": "Això són dinamomètriques per a maquinària pesant o infraestructures. Per molt bèsties que siguin les dimensions, la física no canvia: manen la deformació elàstica i la tensió axial.",
+        "en": "That's heavy-machinery scale tooling right there. Doesn't matter if the bolt is 10mm or the size of a fist: bolt mechanics and elastic clamp load laws stay exactly the same."
+      }
+    },
+    {
       "platform": "OfficialWeb",
       "accountName": "KTC (京都機械工具株式会社)",
       "handle": "@ktc_tools",
@@ -31,23 +82,6 @@
         "ja": "サーキット整備で最も誤解されているのがトルクレンチです。『カチッ』と鳴った後にグッと押し込む行為は、動摩擦から静摩擦への移行と慣性で設定トルクを15%以上オーバーさせています。",
         "ca": "La clau dinamomètrica és una de les eines més mal utilitzades als circuits. Continuar empenyent després del primer 'clic' afegeix fàcilment un 15% més de parell inercial sobre el cargol.",
         "en": "Torque wrenches are among the most misunderstood tools in the paddock. Pushing past that initial 'click' introduces dynamic inertia that spikes fastener torque 15%+ above nominal."
-      }
-    },
-    {
-      "platform": "X",
-      "accountName": "筑波サーキット (Tsukuba Circuit Official)",
-      "handle": "@tsukuba_circuit",
-      "url": "https://www.tsukubacircuit.jp/",
-      "postUrl": "https://x.com/tsukuba_circuit/status/2119803456789123456",
-      "quotedPostText": {
-        "ja": "コースイン前のパドック点検：フロントキャリパーやアクスルシャフトの締め忘れ・締めすぎにご注意ください。トルクレンチを使用した適正値での確実な締め付けがサーキット走行の第一歩です。",
-        "ca": "Revisió de pàdoc a Tsukuba: vigileu amb cargols de pinces o eixos massa fluixos o excessivament collats. L'aprensió amb clau dinamomètrica calibrada és el primer pas cap a la seguretat.",
-        "en": "Tsukuba Paddock Advisory: Double check against both under-torqued and over-tightened caliper and axle bolts. Correct torque wrench usage is rule number one for safe circuit riding."
-      },
-      "editorialCommentary": {
-        "ja": "アルミクランクケースやフォークボトムのネジ山は非常にデリケートです。オーバートルクでネジ山をナメると走行不能になるだけでなく、レース当日に致命的な走行キャンセルを招きます。",
-        "ca": "Les rosques d'alumini dels càrters i botelles de forquilla són summament delicades. Passar de rosca un cargol arruïna el dia de tandes abans de començar.",
-        "en": "Aluminum threads on fork bottoms and engine castings are extremely fragile. Stripping threads due to over-torquing can prematurely end your race weekend before qualifying begins."
       }
     }
   ],

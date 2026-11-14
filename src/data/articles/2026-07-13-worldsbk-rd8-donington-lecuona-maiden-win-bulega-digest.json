@@ -21,19 +21,27 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK",
+      "accountName": "Pirelli MOTO (JP)",
+      "handle": "@JpPirelli",
+      "url": "https://x.com/JpPirelli",
+      "postUrl": "https://x.com/JpPirelli/status/2112469622322856235",
+      "publishedDate": "2026-10-20",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVDPrLOasAA_Ym-.jpg",
+        "https://pbs.twimg.com/media/HVDPr4ObgAAajZt.jpg",
+        "https://pbs.twimg.com/media/HVDPsYCbQAA7uo0.jpg",
+        "https://pbs.twimg.com/media/HVDPs5oa8AA7Tw-.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第8戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
-        "ca": "【WorldSBK Rd.8】Resultats oficials amb un ritme demolidor a la pista!",
-        "en": "[WorldSBK Rd.8] Official Results and Highlights from the paddock!"
+        "ja": "WorldSBK最終戦にてブレガが3戦全勝し年間32勝を達成。Race 2終盤の雨の中サム・ロウズが最終周に3位へ浮上し、ブレガは全36レース表彰台を記録。ピレリにとっても23年間の公式タイヤ供給ラストレースとなった。",
+        "ca": "Final de WorldSBK: Bulega completa el triplet i arriba a 32 victòries anuals. Sota la pluja tardana de la Cursa 2, Sam Lowes puja al 3r lloc a l'última volta; Bulega tanca l'any amb 36 podis en 36 curses. Cursa de comiat per a Pirelli després de 23 anys com a subministrador oficial.",
+        "en": "WorldSBK finale: Bulega sweeps all three races for 32 wins this season. Amid late rain in Race 2, Sam Lowes grabbed 3rd on the final lap, while Bulega wrapped up the season on the podium in all 36 races. This also marked Pirelli's final race after 23 years as official tire supplier."
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第8戦のオンボード映像やハイライトが世界中のファンに配信されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 8.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 8."
+        "ja": "全36レースで表彰台に立ち続けるなんて、驚異的なアベレージとマシンの仕上がりを見せつけたな！ピレリが長年築き上げたタイヤ性能の限界を余すところなく引き出しきった、歴史に刻まれる圧巻のシーズンだぜ。",
+        "ca": "Pujar al podi a les 36 curses de la temporada demostra una consistència estratosfèrica i un paquet mecànic perfecte! És el millor homenatge possible als 23 anys de Pirelli, explotant la goma fins a l'últim mil·límetre.",
+        "en": "Landing on the podium in every single one of the 36 races is an astounding feat of mechanical consistency and riding mastery! What a historic way to bid farewell to Pirelli's 23-year tenure, squeezing every drop of performance from their rubber."
       }
     },
     {

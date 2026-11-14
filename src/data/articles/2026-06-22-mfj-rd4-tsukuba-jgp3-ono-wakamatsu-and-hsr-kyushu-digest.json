@@ -21,38 +21,51 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "全日本ロードレース公式 ＆ 筑波ハブ",
-      "handle": "@jrr_official / #JGP3",
-      "url": "https://x.com/jrr_official",
-      "postUrl": "https://x.com/hashtag/JGP3",
+      "citationType": "direct_post",
+      "accountName": "JRR 全日本ロードレース オフィシャル",
+      "handle": "@MFJ_JRR",
+      "url": "https://x.com/MFJ_JRR",
+      "postUrl": "https://x.com/MFJ_JRR/status/2113534571333706105",
+      "publishedDate": "2026-10-23",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVTIbBjasAA-Xn_.png"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MFJ全日本ロードレース 第4戦 筑波大会】J-GP3決勝、小野真弘と若松怜が0.000秒差の同着写真判定！ミリ単位のデッドヒートを小野が制して大激闘に幕！",
-        "ca": "【Campionat del Japó MFJ Rd.4 Tsukuba】Final d'infart a J-GP3 amb photo-finish entre Masahiro Ono i Rei Wakamatsu separats per 0,000 segons a la meta de Tsukuba!",
-        "en": "[MFJ All-Japan Rd.4 Tsukuba] Historic photo-finish in J-GP3! Masahiro Ono edges Rei Wakamatsu by a microscopic 0.000s in an all-time classic thriller!"
+        "ja": "2027 JRR暫定カレンダー更新！第4戦もてぎのST1000クラスが決勝2レース制に決定。日程・会場に変更なし。Rd.1 もてぎ(4/17-18 JSB)、Rd.2 SUGO(5/29-30 各クラス)、Rd.3 筑波(6/20)。",
+        "ca": "Actualització del calendari provisional 2027 del JRR! La 4a ronda a Motegi tindrà 2 curses per a ST1000. Sense canvis de dates ni circuits: Rd.1 Motegi (17-18/4), Rd.2 SUGO (29-30/5), Rd.3 Tsukuba (20/6).",
+        "en": "2027 JRR provisional calendar update! Round 4 at Motegi will feature a double-race format for ST1000. Dates and venues unchanged: Rd.1 Motegi (Apr 17-18), Rd.2 SUGO (May 29-30), Rd.3 Tsukuba (Jun 20)."
       },
       "editorialCommentary": {
-        "ja": "全日本公式X（@jrr_official）および「#JGP3」では、筑波の最終コーナー立ち上がりからコントロールラインまでのスリップ合戦と歴史的写真判定画像が大きな話題となりました。",
-        "ca": "La foto oficial d'arribada publicada per @jrr_official confirma una de les finals més ajustades de la història del motociclisme japonès.",
-        "en": "The official photo-finish evidence shared by @jrr_official went viral as one of the closest finishes in All-Japan championship history."
+        "ja": "ST1000がもてぎで2レース開催になるのは、ライダーの体力面でも撮影する側にとっても見どころが増えてワクワクしますね！",
+        "ca": "Que la categoria ST1000 tingui dues curses a Motegi és una notícia fantàstica tant per a l'exigència física dels pilots com per a nosaltres des del vial!",
+        "en": "Adding a double-header race for ST1000 at Motegi is fantastic news, demanding peak endurance from riders and offering double the trackside photo ops!"
       }
     },
     {
       "platform": "X",
-      "citationType": "official_channel",
-      "accountName": "筑波サーキット 公式",
-      "handle": "@tsukuba_circuit / #筑波サーキット",
-      "url": "https://x.com/tsukuba_circuit",
-      "postUrl": "https://x.com/hashtag/筑波サーキット",
+      "citationType": "direct_post",
+      "accountName": "川島康平☄️流し撮り革命",
+      "handle": "@kawashimakouhei",
+      "url": "https://x.com/kawashimakouhei",
+      "postUrl": "https://x.com/kawashimakouhei/status/2115011464767688981",
+      "publishedDate": "2026-10-27",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVoHmCaaQAAyhLe.jpg",
+        "https://pbs.twimg.com/media/HVoHnr-aEAAmJpb.jpg",
+        "https://pbs.twimg.com/media/HVoHpDqaQAAephK.jpg",
+        "https://pbs.twimg.com/media/HVoHqcBbcAAKt6N.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "筑波サーキット公式：全日本ロードレース筑波大会にご来場いただきありがとうございました！名物の1Day開催、タイトな2,045mを駆け抜けた全ライダーの熱走に感謝！",
-        "ca": "Circuit de Tsukuba Oficial: Gràcies a tots els assistents a la jornada única de velocitat al traçat d'Ibaraki!",
-        "en": "Tsukuba Circuit Official: Thank you to all fans who packed our grandstands for an electric one-day sprint showcase!"
+        "ja": "雨の鈴鹿でポール・トゥ・ウイン！筑波で見慣れたKISSが最終戦で大逆転。J-GP3シリーズチャンピオンを獲得しました。KIJIMA KISS RCの飯高新悟選手、初優勝＆初タイトルおめでとうございます！",
+        "ca": "Victòria de pole a bandera sota la pluja a Suzuka! KISS capgira la situació a l'última cursa i s'emporta el campionat de J-GP3. Felicitats a Shingo Iidaka de KIJIMA KISS RC per la seva primera victòria i títol!",
+        "en": "Pole-to-win in wet conditions at Suzuka! KISS pulled off a massive comeback in the finale to clinch the J-GP3 championship. Huge congratulations to Shingo Iidaka of KIJIMA KISS RC on his maiden win and title!"
       },
       "editorialCommentary": {
-        "ja": "筑波公式（@tsukuba_circuit）では、予選から決勝まで息をつく間もない1Day開催ならではの密度の濃いパドックレポートが発信されました。",
-        "ca": "Les xarxes de Tsukuba reflecteixen el ritme intens d'un format compacte de cursa d'un sol dia.",
-        "en": "Tsukuba's official feeds captured the relentless pace and electrifying atmosphere of the circuit's signature one-day event format."
+        "ja": "雨煙の中を駆け抜けるマシンの水しぶきと、戴冠を果たした飯高選手の渾身のガッツポーズが目に浮かぶような素晴らしいドラマですね！",
+        "ca": "Puc visualitzar perfectament la boira d'aigua sobre l'asfalt mullat i el gest de ràbia i alegria d'Iidaka en coronar-se campió sota la pluja!",
+        "en": "One can truly picture the spray kicked up on a soaked Suzuka asphalt and Iidaka's ecstatic celebration crossing the line to take the crown!"
       }
     },
     {

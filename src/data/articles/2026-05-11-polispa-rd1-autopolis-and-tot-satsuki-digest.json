@@ -19,20 +19,51 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "オートポリス公式 ＆ 九州ロードレースハブ",
-      "handle": "@autopolis2005 / #オートポリス",
+      "citationType": "direct_post",
+      "accountName": "オートポリス AUTOPOLIS",
+      "handle": "@autopolis2005",
       "url": "https://x.com/autopolis2005",
-      "postUrl": "https://x.com/hashtag/オートポリス",
+      "postUrl": "https://x.com/autopolis2005/status/2108786401525539059",
+      "publishedDate": "2026-10-10",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HUPqDXAbcAATnAB.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【オートポリス 2026 POLISPAロードレース開幕戦】阿蘇の大自然に抱かれたインターナショナルコース（全長4,674m）で九州のトップライダーが集結！新緑の上津江で熱戦開幕！",
-        "ca": "【Inici del campionat POLISPA 2026 a Autopolis】Els millors pilots de Kyushu competeixen al traçat internacional de 4.674m sota el verd primaveral d'Oita!",
-        "en": "[2026 POLISPA Season Opener at Autopolis] Kyushu's top riders gather at the 4,674m international racing course in Kamitsue for the spring opener!"
+        "ja": "おかえりなさい！元オートポリスサーキットクイーンで現在メディア等で活躍中の今村ふわりさんがバイクの体験走行に来場。サーキットクイーン時代をきっかけに二輪免許を取得されたそうです。",
+        "ca": "Benvinguda de nou! Fuwari Imamura, antiga reina del circuit d'Autopolis i actual comunicadora, ha vingut a rodar en moto després d'haver-se tret el carnet arran de la seva etapa al circuit.",
+        "en": "Welcome back! Former Autopolis Circuit Queen Fuwari Imamura, now active in broadcast media, returned to ride on track after earning her motorcycle license inspired by her circuit days."
       },
       "editorialCommentary": {
-        "ja": "オートポリス公式（@autopolis2005）および「#オートポリス」では、標高900mの阿蘇外輪山特有の気圧変化に対応したキャブ・ECUセッティングに挑むピットの様子が伝えられています。",
-        "ca": "El compte oficial @autopolis2005 reflecteix el repte tècnic d'ajustar la injecció a 900m d'altitud a la muntanya d'Aso.",
-        "en": "Updates from @autopolis2005 highlight the engine mapping challenges of competing at 900m elevation in the Aso caldera."
+        "ja": "パドックに華を添えていた方がライダーとして阿蘇のコースに戻ってきてくれるなんて、とても素敵な一枚ですね。ピットロードの笑顔がコースの魅力を物語っています。",
+        "ca": "És una imatge preciosa veure com algú que representava el circuit torna ara sobre dues rodes; la passió per rodar a Autopolis no s'oblida mai.",
+        "en": "What a lovely scene to see a former circuit queen return to the Aso tarmac on two wheels; the joy on the pit lane captured the pure spirit of riding."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "いしいめぐみ@12/6(日)GOGOカート4時間耐久(徳島)",
+      "handle": "@ishiimegumi0904",
+      "url": "https://x.com/ishiimegumi0904",
+      "postUrl": "https://x.com/ishiimegumi0904/status/2120907246263803988",
+      "publishedDate": "2026-11-12",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HW7548hbkAACNeM.jpg",
+        "https://pbs.twimg.com/media/HW7548uaIAAlfDk.jpg",
+        "https://pbs.twimg.com/media/HW7548iboAAniZB.jpg",
+        "https://pbs.twimg.com/media/HW7548ibwAIFlYh.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "レジェンド坂本選手の勢いが止まりません！北海道のスター、「侍」坂本弘正選手の勇姿。",
+        "ca": "L'empenta del llegendari Sakamoto no s'atura! L'estrella d'Hokkaido, el 'Samurai' Hiromasa Sakamoto, en plena acció a Tsukuba.",
+        "en": "Legendary rider Sakamoto's momentum cannot be stopped! Hokkaido's star, the 'Samurai' Hiromasa Sakamoto, showing his prowess at Tsukuba."
+      },
+      "editorialCommentary": {
+        "ja": "テイスト・オブ・ツクバの熱気を背負って走る坂本選手の気迫が、ファインダー越しにもビシビシ伝わってきます。長年愛される名物レースならではの素晴らしい瞬間です。",
+        "ca": "A través de la lent es percep tota l'energia i determinació de Sakamoto a Taste of Tsukuba; és la màgia autèntica d'aquestes curses clàssiques tan estimades.",
+        "en": "You can truly feel Sakamoto's grit and fighting spirit right through the lens; Taste of Tsukuba always produces such memorable, raw racing moments."
       }
     },
     {
@@ -51,24 +82,6 @@
         "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
         "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
         "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
-      }
-    },
-    {
-      "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "筑波サーキット ＆ テイスト・オブ・ツクバ公式",
-      "handle": "@tsukuba_circuit / #テイストオブツクバ",
-      "url": "https://x.com/tsukuba_circuit",
-      "postUrl": "https://x.com/hashtag/テイストオブツクバ",
-      "quotedPostText": {
-        "ja": "【テイスト・オブ・ツクバ SATSUKI STAGE】鉄フレーム＆空水冷モンスターの聖地・筑波！全国の旧車・カスタムファンが詰めかけ、熱気渦巻く名物バトルが繰り広げられました！",
-        "ca": "【Taste of Tsukuba SATSUKI STAGE】El temple dels xassís clàssics i les grans preparacions fa vibrar Tsukuba amb milers d'aficionats!",
-        "en": "[Taste of Tsukuba SATSUKI STAGE] The ultimate sanctuary for tuned steel-frame monsters packed Tsukuba with passionate enthusiasts!"
-      },
-      "editorialCommentary": {
-        "ja": "筑波サーキット公式（@tsukuba_circuit）および「#TOT」タグでは、ハーキュリーズやスーパーモンスターエボリューションの異次元の加速サウンドが動画で共有されています。",
-        "ca": "L'etiqueta #TOT recull vídeos de l'espectacular so dels motors preparats a la recta de meta de Tsukuba.",
-        "en": "Posts under #TOT showcase the thunderous exhaust notes and extreme bespoke engineering down Tsukuba's front straight."
       }
     }
   ],

@@ -18,20 +18,50 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "オートポリス ＆ SPA直入 公式",
-      "handle": "@autopolis2005 / #SPA直入",
-      "url": "https://x.com/autopolis2005",
-      "postUrl": "https://x.com/hashtag/SPA直入",
+      "citationType": "direct_post",
+      "accountName": "SPA直入",
+      "handle": "@spa_naoiri",
+      "url": "https://x.com/spa_naoiri",
+      "postUrl": "https://x.com/spa_naoiri/status/2093897711837938138",
+      "publishedDate": "2026-08-30",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HQ8Ezzaa8AAcL0Q.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【SPA直入 スーパーサンデーフェスタ 2026 SPRING】大分県竹田市のテクニカルミニサーキットSPA直入（全長1,430m）にて春のサンデーレース＆入門トラックデイを開催！基準タイム別クラス分け模擬レースでサーキットデビュー！",
-        "ca": "【Super Sunday Festa 2026 SPRING a SPA Naoiri】Jornada d'iniciació i curses amateurs al circuit tècnic de 1.430m a Takeda, prefectura d'Oita!",
-        "en": "[SPA Naoiri Super Sunday Festa 2026 SPRING] Beginner-friendly Sunday track event and sprint simulations at Oita's 1,430m technical circuit!"
+        "ja": "🏁🏍️ 来週末はSPA直入でレース観戦！バイクレースを生で観たことありますか？9月5日（土）・6日（日）の2日間、SPA直入はレースウィーク！5日（土）『2026 Ninja Team Green Cup SPA直入』、6日（日）『2026 POLISPAロードレース選手権 第3戦』『Super Sunday Festa』開催！",
+        "ca": "🏁🏍️ El proper cap de setmana, vine a veure curses a SPA Naoiri! Heu vist mai una cursa de motos en directe? El 5 i 6 de setembre: dissabte 'Ninja Team Green Cup' i diumenge la 3a ronda del 'Campionat POLISPA' i el 'Super Sunday Festa'!",
+        "en": "🏁🏍️ Watch the races at SPA Naoiri next weekend! Have you ever seen motorcycle racing live? A full race weekend on Sept 5–6: Saturday's Ninja Team Green Cup, followed by Sunday's POLISPA Road Race Championship Rd.3 and Super Sunday Festa!"
       },
       "editorialCommentary": {
-        "ja": "SPA直入・オートポリス運営公式（@autopolis2005）およびハッシュタグ「#SPA直入」でパドックの様子が共有される春恒例のサンデーフェスタ。タイム別クラス分けで初サーキットでも安心して走れる草イベントです。",
-        "ca": "L'etiqueta oficial #SPA直入 i el compte @autopolis2005 recullen l'ambient d'aquesta jornada amateur pensada per a debutants.",
-        "en": "Official updates from @autopolis2005 and community posts under #SPA直入 capture the welcoming grassroots paddock vibe at Takeda."
+        "ja": "直入のテクニカルなレイアウトは、ブレーキ整備と足回りの煮詰め具合が露骨に出るんだよ。サーキットの生音とオイルの匂いを嗅ぎに来な、後悔はさせないからさ。",
+        "ca": "El traçat tècnic de Naoiri no perdona si no portes la suspensió i els frens ajustats al mil·límetre. Aneu-hi a respirar l'olor a pneumàtic calent i gasolina, que val molt la pena.",
+        "en": "Naoiri's twisty layout immediately exposes any laziness in brake maintenance or suspension setup. Get down to the track to smell the tyre smoke and hot oil—you won't regret it."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "SPA直入",
+      "handle": "@spa_naoiri",
+      "url": "https://x.com/spa_naoiri",
+      "postUrl": "https://x.com/spa_naoiri/status/2060592118490603835",
+      "publishedDate": "2026-05-30",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HJixnDSaMAAW7Ce.jpg",
+        "https://pbs.twimg.com/media/HJixnDUbUAAbCOb.jpg",
+        "https://pbs.twimg.com/media/HJixnDSaAAAcJnE.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "来週末6月7日は『2026 POLISPAロードレース選手権シリーズ 第2戦』＆『スーパーサンデーフェスタ 2026 PreSUMMER』開催！天気が気になりますが梅雨入り前の好天を祈って！入場料は駐車場代込みでお一人様1,000円（税込）です👐",
+        "ca": "El proper 7 de juny: 2a ronda de les POLISPA Road Race Series 2026 i Super Sunday Festa 2026 PreSUMMER! Esperem que el temps aguanti abans de les pluges. Entrada: 1.000 iens (taxa i pàrquing inclosos)!",
+        "en": "Next weekend on June 7th: 2026 POLISPA Road Race Series Rd.2 and Super Sunday Festa 2026 PreSUMMER! Hoping the rain holds off. Admission is 1,000 yen (tax included, parking included) per person!"
+      },
+      "editorialCommentary": {
+        "ja": "梅雨前の不安定な空模様は、タイヤチョイスと内圧セッティングの腕の見せ所だよ。千円ポッキリでサンデーレーサーたちの本気バトルが間近で見られるんだから、工具の手を止めてでも行く価値はあるね。",
+        "ca": "Amb un temps tan canviant abans de les pluges, la tria de pneumàtics i la gestió de pressions dictaran la cursa. Per només mil iens, veure aquesta passió a pista és una autèntica ganga.",
+        "en": "Unpredictable pre-rainy season weather puts tyre compounds and pressure management strictly to the test. For a mere thousand yen, watching these grassroots racers push to the limit is unbeatable value."
       }
     },
     {

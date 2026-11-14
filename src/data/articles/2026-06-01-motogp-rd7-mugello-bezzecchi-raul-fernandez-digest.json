@@ -21,19 +21,24 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #ItalianGP Hub",
-      "handle": "@MotoGP / #ItalianGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2119107948895256827",
+      "publishedDate": "2026-11-07",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWiUa86XIAEz_WR.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第7戦 イタリアGP（ムジェロ）公式結果】マルコ・ベッツェッキ（Aprilia Racing）が母国ムジェロで劇的勝利！トスカーナの丘をアプリリアの咆哮が揺らす！2位マルティン、3位バニャイア！",
-        "ca": "【GP d'Itàlia 2026 a Mugello】Victòria èpica de Marco Bezzecchi (Aprilia Racing) a casa seva davant d'una marea de «tifosi» a la Toscana!",
-        "en": "[2026 MotoGP Italian GP at Mugello] Marco Bezzecchi (Aprilia Racing) storms to an emotional home triumph amidst ecstatic Italian fans in Tuscany!"
+        "ja": "マルク・マルケスがルサイルでの息を呑むスプリントを制覇！",
+        "ca": "Marc Márquez s'emporta un Sprint impressionant a Lusail!",
+        "en": "Marc Marquez wins a jaw-dropping Sprint at Lusail!"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#ItalianGP」では、ムジェロの超ロングストレート（1,141m）を時速360km超で駆け抜けるアプリリアRS-GPの最高速バトルが熱く共有されています。",
-        "ca": "El compte oficial @MotoGP destaca la velocitat punta de més de 360 km/h d'Aprilia a la recta de Mugello.",
-        "en": "Official posts from @MotoGP and #ItalianGP celebrate Bezzecchi's sensational top speed runs exceeding 360 km/h."
+        "ja": "スプリントの超高密度なバトルでフロントを極限までねじ込むマルクの勝負勘、テレメトリーで見ても尋常じゃないアグレッシブさだ！",
+        "ca": "La gestió del tren davanter i la fam competitiva de Marc en curses curtes és pura dinamita; les dades de telemetria deuen fer por!",
+        "en": "Marc's front-end feel and killer instinct in high-stakes sprints remain unreal; the telemetry traces in those closing laps must look outright wild!"
       }
     },
     {

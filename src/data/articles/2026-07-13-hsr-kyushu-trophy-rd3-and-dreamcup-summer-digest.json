@@ -20,20 +20,51 @@
   "snsCitations": [
     {
       "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "HSR九州 公式 ＆ ハッシュタグハブ",
-      "handle": "@hsr_kyushu / #HSR九州",
-      "url": "https://x.com/hsr_kyushu",
-      "postUrl": "https://x.com/hashtag/HSR九州",
+      "citationType": "direct_post",
+      "accountName": "nassy_グランパワーヒノクニリーダー",
+      "handle": "@nassygph",
+      "url": "https://x.com/nassygph",
+      "postUrl": "https://x.com/nassygph/status/2119391567320617135",
+      "publishedDate": "2026-11-08",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWmXYsybkAADkYP.jpg",
+        "https://pbs.twimg.com/media/HWmXYs0agAAgZl1.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 HSR九州 Trophy 第3戦 ＆ ドリームカップフェスティバル】真夏の熊本・HSR九州！ST1000・ST600・JP250の選手権スプリントから、初心者歓迎のドリームカップまで炎天下の阿蘇麓で激走！",
-        "ca": "【HSR Kyushu Trophy Rd.3 i Dream Cup Festival】Resistència i velocitat d'estiu a Kumamoto sota altes temperatures!",
-        "en": "[2026 HSR Kyushu Trophy Rd.3 & Dream Cup Festival] Midsummer sprint showdowns at Kumamoto with ST1000, ST600, JP250, and grassroots Dream Cup races!"
+        "ja": "HSR九州本コースにて5時間レン耐（レンタルバイク耐久レース）に参戦。1コーナーでオーバーランして焦ったものの転倒せず復帰でき、好天の下で気持ちよく走れたと報告。",
+        "ca": "Participació a la resistència de 5 hores Ren-tai (amb motos de lloguer) al circuit principal de l'HSR Kyushu. Tot i l'ensurt d'haver-se sortit al revolt 1, va poder tornar a pista sense caure i gaudir d'un gran dia assolellat.",
+        "en": "Raced in the 5-hour Rentai (rental bike endurance race) on HSR Kyushu's main track. Had a scare overshooting Turn 1 but rejoined without going down, enjoying great riding under fine weather."
       },
       "editorialCommentary": {
-        "ja": "HSR九州公式（@hsr_kyushu）およびハッシュタグ「#HSR九州」では、真夏の猛暑の中でタイヤマネジメントに挑んだライダーたちの熱走とピット風景が共有されています。",
-        "ca": "Les publicacions oficials d'@hsr_kyushu mostren la gestió de pneumàtics dels pilots locals sota la intensa calor estival.",
-        "en": "Official updates from @hsr_kyushu and community posts capture the tyre management battles and spirited paddock at Kumamoto."
+        "ja": "1コーナーのオーバーランで冷静にマシンを立て直して復帰したのは上出来だよ。真夏の5時間耐久はフルードもタイヤ内圧も熱で一気に狂いやすいから、無理をせずマシンをいたわる走りが何より大切さ。",
+        "ca": "Salvar la sortida al revolt 1 sense anar per terra demostra sang freda, ben fet. En una resistència de 5 hores sota la xafogor d'estiu, el líquid de frens i les pressions de les gomes pateixen molt, així que cal cuidar la mecànica.",
+        "en": "Keeping your composure and keeping the bike upright after overshooting Turn 1 was textbook. In a five-hour midsummer endurance race, brake fluid and tire pressures spike fast, so preserving your machinery is priority number one."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "YSP筑紫",
+      "handle": "@YSP_yamaha",
+      "url": "https://x.com/YSP_yamaha",
+      "postUrl": "https://x.com/YSP_yamaha/status/2114127779285680205",
+      "publishedDate": "2026-10-24",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HVbkAJpaoAAeDjf.jpg",
+        "https://pbs.twimg.com/media/HVbkAJoaQAA9Qi0.jpg",
+        "https://pbs.twimg.com/media/HVbkAJ3agAAnK79.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "本日はHSR九州で開催されているピレリ・ファントラックデイに参加中。天気が何とか持ちそうで良かったと綴る。",
+        "ca": "Prenent part al Pirelli Fun Track Day que se celebra a l'HSR Kyushu, alleujat de veure que el temps sembla aguantar.",
+        "en": "Taking part in the Pirelli Fun Track Day held at HSR Kyushu today, glad that the weather seems to be holding up."
+      },
+      "editorialCommentary": {
+        "ja": "雨を免れたのは幸いだけど、曇り空で路面温度が上がりきらないとタイヤの熱入れ管理がシビアになるよ。コースイン前のエアチェックを抜かりなくやって、熱が入るまでは無理にバンクさせないことだね。",
+        "ca": "Esquivar la pluja està molt bé, però si la temperatura d'asfalt no puja prou, l'escalfament de les gomes és traïdor. Reviseu bé les pressions en fred al box i no forceu la inclinació fins que el compost agafi temperatura.",
+        "en": "Dodging the rain is fine, but if track temperatures don't rise, getting tires into their working window gets tricky. Double-check your cold pressures in the garage and don't lean aggressively until the rubber is thoroughly warm."
       }
     },
     {
@@ -52,24 +83,6 @@
         "ja": "公式YouTube映像では、現地のコース幅や高低差、ライダーたちの躍動感あふれるライディングフォームが高画質で記録されています。",
         "ca": "El vídeo oficial de YouTube permet apreciar la tècnica dels pilots i el desnivell real de la pista.",
         "en": "Official YouTube onboard and trackside footage vividly reveals rider posture and the undulating circuit topography."
-      }
-    },
-    {
-      "platform": "X",
-      "citationType": "hashtag_hub",
-      "accountName": "HSR九州 ドリームカップ ハッシュタグハブ",
-      "handle": "#ドリームカップ / HSR九州",
-      "url": "https://x.com/hashtag/ドリームカップ",
-      "postUrl": "https://x.com/hashtag/ドリームカップ",
-      "quotedPostText": {
-        "ja": "【HSR九州 ドリームカップ】エントリーしやすいミニバイク＆市販スポーツ車によるフレンドリーなレース！初心者からステップアップを目指すライダーまでみんなで楽しむ真夏のサンデーフェスティバル！",
-        "ca": "【Dream Cup HSR Kyushu】Festival amateur per a minimotos i esportives de petita cilindrada pensat per aprendre i competir amb seguretat.",
-        "en": "[HSR Kyushu Dream Cup] Accessible entry-level racing for mini-bikes and lightweights, welcoming first-timers to track competition."
-      },
-      "editorialCommentary": {
-        "ja": "「#ドリームカップ」タグでは、初めてレースに参加したライダーたちの興奮やパドックのバーベキューなど、九州ならではの温かいコミュニティの様子が発信されています。",
-        "ca": "Els missatges a #ドリームカップ reflecteixen el caliu del pàdoc i l'emoció dels debutants en curses a Kumamoto.",
-        "en": "Community posts under #ドリームカップ showcase the family atmosphere, paddock camaraderie, and joy of track debuts at HSR Kyushu."
       }
     }
   ],

@@ -27,6 +27,7 @@
         { "platform": "OfficialWeb", "handle": "MotoGP.com Official", "url": "https://www.motogp.com/" },
         { "platform": "Instagram", "handle": "@motogp", "url": "https://www.instagram.com/motogp/" }
       ],
+      "searchQueries": ["id:MotoGP", "MotoGP Marquez", "MotoGP 2026"],
       "hashtags": ["#MotoGP", "#MotoGP2026"]
     },
     {
@@ -52,6 +53,7 @@
         { "platform": "YouTube", "handle": "WorldSBK Official", "url": "https://www.youtube.com/@WorldSBK" },
         { "platform": "OfficialWeb", "handle": "WorldSBK.com Official", "url": "https://www.worldsbk.com/" }
       ],
+      "searchQueries": ["WorldSBK Bulega", "WorldSBK Superbike", "FIM EWC"],
       "hashtags": ["#WorldSBK", "#FIMEWC"]
     },
     {
@@ -76,6 +78,7 @@
         { "platform": "OfficialWeb", "handle": "Circuit de Barcelona-Catalunya", "url": "https://www.circuitcat.com/" },
         { "platform": "Instagram", "handle": "@circuitdebcncatalunya", "url": "https://www.instagram.com/circuitdebcncatalunya/" }
       ],
+      "searchQueries": ["CatalanGP MotoGP", "Circuit de Barcelona-Catalunya MotoGP"],
       "hashtags": ["#CatalanGP", "#CircuitCat"]
     },
     {
@@ -98,10 +101,11 @@
         "https://www.mfj.or.jp/result/"
       ],
       "sns": [
-        { "platform": "X", "handle": "@jrr_official", "url": "https://x.com/jrr_official" },
+        { "platform": "X", "handle": "@MFJ_JRR", "url": "https://x.com/MFJ_JRR" },
         { "platform": "YouTube", "handle": "motoバトルLIVE", "url": "https://www.youtube.com/@motobattlelive" },
         { "platform": "OfficialWeb", "handle": "全日本ロードレース選手権公式 (superbike.jp)", "url": "https://www.superbike.jp/" }
       ],
+      "searchQueries": ["全日本ロードレース JSB1000", "全日本ロードレース ST1000", "motoバトルLIVE 全日本ロード"],
       "hashtags": ["#全日本ロードレース", "#JSB1000", "#ST1000", "#ST600", "#JGP3"]
     },
     {
@@ -127,6 +131,7 @@
         { "platform": "OfficialWeb", "handle": "鈴鹿サーキット公式", "url": "https://www.suzukacircuit.jp/" },
         { "platform": "Instagram", "handle": "@suzukacircuit_official", "url": "https://www.instagram.com/suzukacircuit_official/" }
       ],
+      "searchQueries": ["鈴鹿サーキット ロードレース", "鈴鹿8耐", "鈴鹿サンデーロードレース"],
       "hashtags": ["#鈴鹿サーキット", "#鈴鹿8耐", "#鈴鹿サンデー"]
     },
     {
@@ -150,6 +155,7 @@
         { "platform": "X", "handle": "@motegi_official", "url": "https://x.com/motegi_official" },
         { "platform": "OfficialWeb", "handle": "モビリティリゾートもてぎ公式", "url": "https://www.mr-motegi.jp/" }
       ],
+      "searchQueries": ["モビリティリゾートもてぎ ロードレース", "もてぎ2&4 JSB1000", "もて耐"],
       "hashtags": ["#モビリティリゾートもてぎ", "#もて耐", "#もてぎロードレース"]
     },
     {
@@ -173,6 +179,7 @@
         { "platform": "X", "handle": "@tsukuba_circuit", "url": "https://x.com/tsukuba_circuit" },
         { "platform": "OfficialWeb", "handle": "筑波サーキット公式", "url": "https://www.tsukuba-circuit.jp/" }
       ],
+      "searchQueries": ["テイストオブツクバ", "筑波ロードレース選手権"],
       "hashtags": ["#筑波サーキット", "#テイストオブツクバ", "#TOT", "#筑波ロードレース"]
     },
     {
@@ -196,6 +203,7 @@
         { "platform": "X", "handle": "@sugo_official", "url": "https://x.com/sugo_official" },
         { "platform": "OfficialWeb", "handle": "スポーツランドSUGO公式", "url": "https://www.sportsland-sugo.co.jp/" }
       ],
+      "searchQueries": ["スポーツランドSUGO ロードレース", "全日本ロードレース SUGO"],
       "hashtags": ["#スポーツランドSUGO", "#SUGOロードレース"]
     },
     {
@@ -216,9 +224,11 @@
         "https://www.okayama-international-circuit.jp/mirai/result/"
       ],
       "sns": [
+        { "platform": "X", "handle": "@oic_pr", "url": "https://x.com/oic_pr" },
         { "platform": "X", "handle": "@fswpress", "url": "https://x.com/fswpress" },
         { "platform": "OfficialWeb", "handle": "岡山国際サーキット公式", "url": "https://www.okayama-international-circuit.jp/" }
       ],
+      "searchQueries": ["岡山国際サーキット ロードレース", "全日本ロードレース 岡山", "富士スピードウェイ ミニろく"],
       "hashtags": ["#岡山国際サーキット", "#富士スピードウェイ", "#ミニろく"]
     },
     {
@@ -239,11 +249,13 @@
         "https://spa-naoiri.com/race/"
       ],
       "sns": [
+        { "platform": "X", "handle": "@spa_naoiri", "url": "https://x.com/spa_naoiri" },
         { "platform": "X", "handle": "@autopolis2005", "url": "https://x.com/autopolis2005" },
         { "platform": "OfficialWeb", "handle": "SPA直入公式サイト", "url": "https://spa-naoiri.com/" },
         { "platform": "Facebook", "handle": "SPA直入公式Facebook", "url": "https://www.facebook.com/spanaoiri" },
         { "platform": "Instagram", "handle": "#SPA直入", "url": "https://www.instagram.com/explore/tags/spa%E7%9B%B4%E5%85%A5/" }
       ],
+      "searchQueries": ["SPA直入", "SPA直入 耐久", "SPA直入 サンデーフェスタ"],
       "hashtags": ["#SPA直入", "#スーパーサンデーフェスタ", "#九州エンデュランスフェスタ"]
     },
     {
@@ -269,6 +281,7 @@
         { "platform": "OfficialWeb", "handle": "オートポリス公式サイト", "url": "https://autopolis.jp/" },
         { "platform": "Instagram", "handle": "@autopolis_official", "url": "https://www.instagram.com/autopolis_official/" }
       ],
+      "searchQueries": ["オートポリス ロードレース", "全日本ロードレース オートポリス", "オートポリス バイク"],
       "hashtags": ["#オートポリス", "#九州ロードレース", "#ゴールドカップ"]
     },
     {
@@ -296,6 +309,7 @@
         { "platform": "OfficialWeb", "handle": "鉄馬公式サイト", "url": "https://www.tetsuma.jp/" },
         { "platform": "Instagram", "handle": "@hsr_kyushu", "url": "https://www.instagram.com/hsr_kyushu/" }
       ],
+      "searchQueries": ["HSR九州 鉄馬", "HSR九州 ドリームカップ", "HSR九州 バイク"],
       "hashtags": ["#HSR九州", "#鉄馬", "#ドリームカップ", "#HSR九州Trophy"]
     },
     {
@@ -317,9 +331,12 @@
         "https://brow-s.jp/"
       ],
       "sns": [
+        { "platform": "X", "handle": "@BROWs0305", "url": "https://x.com/BROWs0305" },
+        { "platform": "X", "handle": "@sonicparkajimu", "url": "https://x.com/sonicparkajimu" },
         { "platform": "OfficialWeb", "handle": "BROW'S公式サイト（イベント案内・リザルト）", "url": "https://brow-s.jp/" },
         { "platform": "Facebook", "handle": "BROW'S公式Facebook", "url": "https://www.facebook.com/ridersfanshopbrows" }
       ],
+      "searchQueries": ["ソニックパーク安心院 バイク", "中九州カートウェイ 耐久", "草耐久 バイク 九州"],
       "hashtags": ["#お題付耐久", "#お題付草耐久", "#ソニックパーク安心院", "#中九州カートウェイ"]
     },
     {
@@ -340,11 +357,12 @@
         "http://rentai.takuma-gp.com/"
       ],
       "sns": [
-        { "platform": "X", "handle": "@rentai_official", "url": "https://x.com/rentai_official" },
+        { "platform": "X", "handle": "@takumagp", "url": "https://x.com/takumagp" },
         { "platform": "X", "handle": "@takuma_aoki", "url": "https://x.com/takuma_aoki" },
         { "platform": "YouTube", "handle": "Let's レン耐！公式 / 青木拓磨チャンネル", "url": "https://www.youtube.com/@takumaaoki" },
         { "platform": "OfficialWeb", "handle": "Let's レン耐！公式サイト", "url": "http://rentai.takuma-gp.com/" }
       ],
+      "searchQueries": ["レン耐", "レッツレン耐"],
       "hashtags": ["#レン耐", "#Letsレン耐", "#青木拓磨"]
     },
     {
@@ -367,6 +385,7 @@
         { "platform": "X", "handle": "@Webike_net", "url": "https://x.com/Webike_net" },
         { "platform": "OfficialWeb", "handle": "WebikeイベントNAVI (event.webike.net)", "url": "https://event.webike.net/event?type=8" }
       ],
+      "searchQueries": ["Webike バイク レース", "ミニバイク 耐久レース"],
       "hashtags": ["#Webike", "#ウェビック", "#WebikeイベントNAVI"]
     }
   ]

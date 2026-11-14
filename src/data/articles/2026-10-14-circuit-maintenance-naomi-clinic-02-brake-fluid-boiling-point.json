@@ -17,6 +17,55 @@
   ],
   "snsCitations": [
     {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "きくさん。#8 11/14プロT日光",
+      "handle": "@ct9atohru0513",
+      "url": "https://x.com/ct9atohru0513",
+      "postUrl": "https://x.com/ct9atohru0513/status/2111348920735678673",
+      "publishedDate": "2026-10-17",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HU0EproboAANyRb.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "ブレーキフルード入れ替えとエア抜き\nこれで今シーズンも無交換で乗り切れるでしょう\n抜いたやつは親父がバイクで使うらしいw",
+        "ca": "Canvi de líquid de frens i purgat complet. Amb això segur que acabo la temporada sense canviar-lo més. Pel que sembla, el vell aprofitarà el líquid vell per a la seva moto, jaja.",
+        "en": "Brake fluid flush and bleeding done. This should get me through the rest of the season without changing it again. Apparently, my dad is going to reuse the drained fluid in his bike lol."
+      },
+      "editorialCommentary": {
+        "ja": "ちょっと待ちなさい！抜いたフルードを親父さんのバイクに再利用なんて正気の沙汰じゃないよ。吸湿して沸点が落ちたフルードは即廃棄、ブレーキラインを甘く見たら命取りだよ！",
+        "ca": "Para el carro! Reutilitzar líquid de frens purgat a la moto del teu pare és una bogeria absoluta. El líquid degradat per la humitat es llença immediatament; no et juguis la pell amb el circuit hidràulic!",
+        "en": "Hold on right there! Reusing drained brake fluid in your dad's bike is sheer madness. Fluid that's absorbed moisture and lost its boiling point must be trashed immediately—never take hydraulic lines lightly!"
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "クラッチ",
+      "handle": "@TerumasaKurachi",
+      "url": "https://x.com/TerumasaKurachi",
+      "postUrl": "https://x.com/TerumasaKurachi/status/2111218141762371736",
+      "publishedDate": "2026-10-16",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HUyNrazbIAAK3q8.jpg",
+        "https://pbs.twimg.com/media/HUyNry4a8AA3po_.jpg",
+        "https://pbs.twimg.com/media/HUyNsapbkAACwCL.jpg",
+        "https://pbs.twimg.com/media/HUyNs_1bcAAIp2D.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "クラッチさんの朝ポスト☺\nバイク修行Day282🌅\n\nん〜〜〜\n実は悩んでいた\n\n先日交換したGSR400のマスターシリンダーASSY\nGSX-R1000(K1.K2)純正改から\nGSX-S1000純正へ\n万が一の転倒時リスクを下げるべく\nブレーキフルードタンクを別体式から一体式へ変えたのだが",
+        "ca": "Post matinal de Clutch ☺ Entrenament en moto Dia 282 🌅\nUfff... la veritat és que tenia els meus dubtes.\nL'altre dia vaig canviar la bomba de fre de la GSR400: de la de sèrie modificada de GSX-R1000 (K1/K2) a la d'origen de GSX-S1000. Per reduir riscos en cas de caiguda, vaig passar de dipòsit separat a integrat, però...",
+        "en": "Clutch's morning post ☺ Bike training Day 282 🌅\nHmmm... honestly I've been wrestling with this.\nThe master cylinder assembly I swapped on my GSR400 the other day: went from modified GSX-R1000 (K1/K2) stock to GSX-S1000 OEM. Changed from a separate reservoir to an integrated one to cut crash damage risks, but..."
+      },
+      "editorialCommentary": {
+        "ja": "別体から一体型タンクへの変更は転倒時の破損対策として理にかなってるよ。ただピストン径やレバー比でタッチが激変するから、エア抜きと合わせてストロークの初期応答はきっちり煮詰めな。",
+        "ca": "Passar d'un dipòsit separat a un d'integrat té tot el sentit del món per evitar trencaments en caigudes. Tot i així, el diàmetre del pistó i la ràtio de maneta canvien radicalment el tacte, així que purga a fons i vigila el mordent inicial.",
+        "en": "Switching from a separate reservoir to an integrated one makes complete sense for crash resilience. However, differences in piston bore and leverage ratio will drastically alter lever feel, so bleed it meticulously and dial in that initial bite."
+      }
+    },
+    {
       "platform": "OfficialWeb",
       "accountName": "MFJ 国内競技規則 (ロードレース技術仕様)",
       "handle": "@mfj_official",
@@ -31,23 +80,6 @@
         "ja": "国際レーシングコースの1コーナー進入時、ブレーキローター温度は500℃超、キャリパー内フルードは200℃近くまで加熱されます。吸湿したフルードは一瞬で沸騰し、レバーがグリップにくっつく『ベーパーロック』を引き起こします。",
         "ca": "A les frenades més fortes com la recta d'Autopolis o Montmeló, el líquid de la pinça arriba a 200°C. Si ha absorbit humitat, bull a l'instant provocant el temut 'Vapor Lock'.",
         "en": "Under severe braking, caliper fluid temperatures approach 200°C. Moisture-laden fluid boils instantly, causing compressible steam bubbles and complete brake lever collapse (Vapor Lock)."
-      }
-    },
-    {
-      "platform": "X",
-      "accountName": "モビリティリゾートもてぎ (Mobility Resort Motegi)",
-      "handle": "@motegi_official",
-      "url": "https://x.com/motegi_official",
-      "postUrl": "https://x.com/motegi_official/status/2119468112345678901",
-      "quotedPostText": {
-        "ja": "ダウンヒルストレートエンドの90度コーナーなど、激しいブレーキングが続くもてぎでは、走行前のブレーキフルード点検とエア抜きが必須です！フルードの鮮度を保って安全なスポーツ走行をお楽しみください。",
-        "ca": "Al circuit de Motegi, amb frenades extremes com el revolt de 90 graus després de la baixada, la purga del líquid de frens abans d'entrar a pista és una mesura vital de seguretat.",
-        "en": "At Motegi, with intense decelerations like the 90-degree corner following the downhill straight, inspecting and bleeding brake fluid before track sessions is critical for safety."
-      },
-      "editorialCommentary": {
-        "ja": "ストップ＆ゴーのサーキットでは熱負荷が極大に達します。色がまだ綺麗でも、空気中の水分を吸湿していれば沸点は大幅に低下しています。",
-        "ca": "Als circuits de frenada brusca, l'estrès tèrmic és màxim. Encara que el líquid sembli transparent, la humitat acumulada en redueix el punt d'ebullició de manera invisible.",
-        "en": "Stop-and-go tracks inflict extreme thermal punishment. Even if fluid appears clear in the reservoir, absorbed ambient moisture significantly degrades boiling points."
       }
     }
   ],

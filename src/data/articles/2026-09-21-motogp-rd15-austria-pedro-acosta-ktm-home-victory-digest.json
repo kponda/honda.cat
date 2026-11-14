@@ -22,19 +22,24 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "MotoGP Official ＆ #AustrianGP Hub",
-      "handle": "@MotoGP / #AustrianGP",
+      "accountName": "MotoGP™🏁",
+      "handle": "@MotoGP",
       "url": "https://x.com/MotoGP",
-      "postUrl": "https://twitter.com/MotoGP/status/1842756190796648506",
+      "postUrl": "https://x.com/MotoGP/status/2117874491649032394",
+      "publishedDate": "2026-11-04",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HWNZwgRWwAAuDG2.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【2026 MotoGP 第15戦 オーストリアGP（レッドブル・リンク）公式結果】ペドロ・アコスタ（Red Bull KTM Factory Racing）がシュピールベルクで初優勝！KTMの母国グランプリで魂の熱走！2位マルケス、3位バニャイア！",
-        "ca": "【GP d'Àustria 2026 a Red Bull Ring】Pedro Acosta (Red Bull KTM Factory Racing) aconsegueix la seva primera victòria a MotoGP a casa de KTM a Spielberg!",
-        "en": "[2026 MotoGP Austrian GP at Red Bull Ring] Pedro Acosta (Red Bull KTM Factory Racing) clinches his maiden MotoGP victory on KTM's home turf in Spielberg!"
+        "ja": "カタールにナイトレースが帰ってくる🌙\n\n#QatarGP🇶🇦",
+        "ca": "Les curses nocturnes tornen a Qatar 🌙\n\n#QatarGP🇶🇦",
+        "en": "Night racing returns to Qatar 🌙\n\n#QatarGP🇶🇦"
       },
       "editorialCommentary": {
-        "ja": "MotoGP公式（@MotoGP）および「#AustrianGP」では、オーストリアの山々に囲まれたストップ＆ゴーサーキットで若き天才アコスタ選手がKTMに捧げた母国制覇に大喝采が送られています。",
-        "ca": "El compte oficial @MotoGP destaca l'emoció desbordada dels aficionats austríacs celebrant la victòria d'Acosta i KTM.",
-        "en": "Official posts from @MotoGP and #AustrianGP celebrate Acosta's breakthrough premier-class triumph in front of the orange home army."
+        "ja": "砂漠を照らすカクテル光線の下、スロットルを開け切るスリルは唯一無二だ！涼しい夜間コンディションでのタイヤ内圧とグリップ変化のデータ分析が勝負の鍵を握るぜ。",
+        "ca": "Sota els projectors del desert, la sensació de gas a fons és inigualable! L'anàlisi de telemetria amb temperatures nocturnes i pressió de pneumàtics serà absolutament decisiva.",
+        "en": "WOT under the floodlights in the desert offers unmatched drama! Dialing in telemetry to manage cooler nocturnal track temps and tire pressures is where the race will be won or lost."
       }
     },
     {

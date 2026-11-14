@@ -21,19 +21,26 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
-      "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK",
+      "accountName": "みなみの",
+      "handle": "@minamino_765",
+      "url": "https://x.com/minamino_765",
+      "postUrl": "https://x.com/minamino_765/status/2111832217337167873",
+      "publishedDate": "2026-10-18",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HU68MP8bgAA6qel.jpg",
+        "https://pbs.twimg.com/media/HU68MsKbMAEN7Rw.jpg",
+        "https://pbs.twimg.com/media/HU68NIsbcAAd2w5.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第10戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
-        "ca": "【WorldSBK Rd.10】Resultats oficials amb un ritme demolidor a la pista!",
-        "en": "[WorldSBK Rd.10] Official Results and Highlights from the paddock!"
+        "ja": "WorldSBK、12戦全て終了ー！\nシーズン通してDUCATI強かった😆\n\nそして‥\nBautista、今シーズンのラストレース、ナイスファイトでした‥表彰台めちゃめちゃ惜しかったよ‥😭\nあの最後のパドックでの感じ、やはりSBKは引退ってことなのかな‥俺はまだ諦めてないよ〜😭",
+        "ca": "WorldSBK ha acabat les 12 rondes! Ducati ha estat fortíssima tota la temporada 😆 I Bautista, quina gran lluita a l'última cursa de l'any... el podi ha anat de ben poc! 😭 Amb aquest ambient al pàdoc, significa que es retira del SBK? Jo encara no em rendeixo! 😭",
+        "en": "WorldSBK has wrapped up all 12 rounds! Ducati was formidable all season long 😆 And Bautista, what a fight in the season finale... podium was so close! 😭 Given the mood in the paddock, is this really his retirement from SBK? I haven't given up hope yet! 😭"
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第10戦のオンボード映像やハイライトが世界中のファンに配信されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 10.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 10."
+        "ja": "バウティスタが見せた意地の追い上げは魂を揺さぶられたぜ！引退の噂があろうと、あの卓越したスロットルワークとコーナリングスピードは永遠のレジェンド級だ。",
+        "ca": "La remuntada d'orgull de Bautista m'ha posat la pell de gallina! Rumors de retirada a banda, el seu pas per corba i la precisió amb el gas continuen sent pura màgia de campió.",
+        "en": "Bautista's spirited final charge gave me goosebumps! Retirement rumors or not, his razor-sharp cornering speeds and throttle modulation remain true hall-of-fame caliber."
       }
     },
     {

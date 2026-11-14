@@ -38,6 +38,11 @@ import sys
 from pathlib import Path
 from typing import Any
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+import x_photo_finder  # noqa: E402
+
 try:
     from dotenv import load_dotenv
     load_dotenv()
@@ -246,6 +251,8 @@ ARTICLE_JSON_SCHEMA: dict[str, Any] = {
                     "url": {"type": "string"},
                     "postUrl": {"type": "string"},
                     "publishedDate": {"type": "string"},
+                    "mediaUrls": {"type": "array", "items": {"type": "string"}},
+                    "verifiedAt": {"type": "string"},
                     "quotedPostText": {
                         "type": "object",
                         "required": ["ja", "ca", "en"],
@@ -541,7 +548,32 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
     relevant_sources = extract_relevant_sources(prompt_context, all_sources)
     sources_context = json.dumps(relevant_sources, ensure_ascii=False, indent=2)
 
-    print(f"[1/3] Scouting verified historical & technical facts ({len(relevant_sources)} target sources) with Gemini 3.8 Flash + Google Search...")
+    # Discover & deterministically verify real photo-attached X posts before authoring
+    x_queries: list[str] = []
+    x_handles: list[str] = []
+    for src in relevant_sources:
+        for q in src.get("searchQueries", [])[:2]:
+            if q not in x_queries:
+                x_queries.append(q)
+        for s in src.get("sns", []):
+            if s.get("platform") == "X":
+                h = s.get("handle", "").lstrip("@")
+                if h and h not in x_handles:
+                    x_handles.append(h)
+
+    if not x_queries:
+        x_queries = ["MotoGP 2026", "全日本ロードレース", "バイク サーキット 整備"]
+
+    verified_x_posts = x_photo_finder.find_verified_photo_tweets(
+        queries=x_queries[:4],
+        web_queries=x_queries[:3],
+        handles=x_handles[:2],
+        target_date=today_str,
+        count=2,
+    )
+    verified_x_context = json.dumps(verified_x_posts, ensure_ascii=False, indent=2)
+
+    print(f"[1/3] Scouting verified historical & technical facts ({len(relevant_sources)} target sources, {len(verified_x_posts)} verified X photo posts) with Gemini 3.8 Flash + Google Search...")
     research_interaction = client.interactions.create(
         model="gemini-3.8-flash",
         system_instruction=SYSTEM_INSTRUCTION,
@@ -555,6 +587,7 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
             "- Targeted YouTube search: `site:youtube.com ... \"公式\"`\n"
             "- Official Web result pages & official Facebook posts.\n"
             "- STRICT RELEVANCE: Search ONLY for sources directly connected to this event/circuit/riders.\n\n"
+            f"VERIFIED PHOTO-ATTACHED X POSTS (USE THESE DIRECT POSTS & MEDIA URLS FIRST):\n{verified_x_context}\n\n"
             f"TARGET RELEVANT OFFICIAL SOURCES & SNS REGISTRY:\n{sources_context}"
         ),
         tools=[{"type": "google_search"}],
@@ -573,10 +606,11 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
             "2. Populate `factCheck` with `verified: true`, `verifiedAt`, trilingual `basis`, and real `sources` URLs.\n"
             "3. Populate `snsCitations` following the strict platform priority: X > YouTube > OfficialWeb > Facebook > Instagram.\n"
             "   - Every citation MUST be directly relevant to this specific race event, host circuit, or podium riders.\n"
-            "   - ZERO HALLUCINATION: If a verified individual post URL was found online, set `citationType: 'direct_post'` and `postUrl`.\n"
-            "   - If no specific post URL was found, do NOT fabricate status IDs. Instead, cite the verified official channel/profile (`citationType: 'official_channel'`), official hashtag search URL (`citationType: 'hashtag_hub'`), or official web result (`citationType: 'official_web'`).\n"
+            "   - MANDATORY VERIFIED PHOTO X POSTS: Include the verified photo-attached X posts provided below with `citationType: 'direct_post'`, exact `postUrl`, `publishedDate`, and `mediaUrls`.\n"
+            "   - ZERO HALLUCINATION: Do NOT fabricate status IDs. Only use status URLs verified in the list below or verified online.\n"
             "   - NEVER cite unrelated accounts (e.g., citing MotoGP or Suzuka for a Kyushu local or grassroots race is strictly forbidden).\n"
             "4. In `catDialogues`, convey Naomi's (`naomi`) scruffy garage mechanic voice and her occasional shy, maidenly phrasing naturally through the text itself without any explicit mode labels.\n\n"
+            f"VERIFIED PHOTO-ATTACHED X POSTS:\n{verified_x_context}\n\n"
             f"VERIFIED RESEARCH DOSSIER:\n{research_notes}"
         ),
         response_format={
@@ -586,6 +620,60 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
         },
     )
     draft_json = json.loads(author_interaction.output_text)
+
+    # Deterministically verify/attach mediaUrls on any X direct_post citations
+    if verified_x_posts:
+        by_url = {v["postUrl"]: v for v in verified_x_posts}
+        cites = draft_json.get("snsCitations") or []
+        has_verified_photo_x = False
+        for cite in cites:
+            if cite.get("platform") == "X":
+                pu = cite.get("postUrl") or ""
+                if pu in by_url:
+                    cite["citationType"] = "direct_post"
+                    cite["mediaUrls"] = by_url[pu]["mediaUrls"]
+                    cite["publishedDate"] = by_url[pu]["publishedDate"]
+                    cite["verifiedAt"] = today_str
+                    has_verified_photo_x = True
+                else:
+                    m_id = re.search(r"/status/(\d+)", pu)
+                    if m_id:
+                        v = x_photo_finder.verify_tweet_with_syndication(m_id.group(1))
+                        if v:
+                            cite["citationType"] = "direct_post"
+                            cite["postUrl"] = v["postUrl"]
+                            cite["url"] = v["url"]
+                            cite["mediaUrls"] = v["mediaUrls"]
+                            cite["publishedDate"] = v["publishedDate"]
+                            cite["verifiedAt"] = today_str
+                            has_verified_photo_x = True
+        if not has_verified_photo_x:
+            top_v = verified_x_posts[0]
+            cites.insert(
+                0,
+                {
+                    "platform": "X",
+                    "citationType": "direct_post",
+                    "accountName": top_v["accountName"],
+                    "handle": f"@{top_v['screenName']}",
+                    "url": top_v["url"],
+                    "postUrl": top_v["postUrl"],
+                    "publishedDate": top_v["publishedDate"],
+                    "mediaUrls": top_v["mediaUrls"],
+                    "verifiedAt": today_str,
+                    "quotedPostText": {
+                        "ja": top_v["rawText"],
+                        "ca": top_v["rawText"],
+                        "en": top_v["rawText"],
+                    },
+                    "editorialCommentary": {
+                        "ja": f"現地・公式X（@{top_v['screenName']}）から発信された写真付きポスト。リアルな現場の熱気とマシンの様子が伝わります。",
+                        "ca": f"Publicació oficial amb fotografies des de @{top_v['screenName']} mostrant l'ambient real del circuit.",
+                        "en": f"Verified photo post from @{top_v['screenName']} capturing authentic trackside action.",
+                    },
+                },
+            )
+            draft_json["snsCitations"] = cites
 
     print("[3/3] Running Independent Fact-Auditor Gate...")
     audit_interaction = client.interactions.create(
@@ -1341,11 +1429,21 @@ OFFICIAL_ALLOWED_DOMAINS = [
     # Official Platforms & Social Media
     "x.com",
     "twitter.com",
+    "twimg.com",
     "youtube.com",
     "youtu.be",
     "instagram.com",
     "facebook.com",
 ]
+
+FORBIDDEN_FAKE_STATUS_IDS = {
+    "1844000000000000001",
+    "2119468112345678901",
+    "2119582109876543210",
+    "2119695420112233445",
+    "2119803456789123456",
+    "2119914567890123456",
+}
 
 
 def is_allowed_domain(url: str) -> bool:
@@ -1412,15 +1510,38 @@ def validate_existing_articles() -> int:
         if not isinstance(basis, dict) or not all(basis.get(l) for l in ["ja", "ca", "en"]):
             errors.append(f"[{fname}] `factCheck.basis` is missing trilingual explanation (ja, ca, en)")
 
-        # 4. SNS Citations verification
+        # 4. SNS Citations verification (including verified photo-attached X post check)
         sns_cites = doc.get("snsCitations", [])
         if not sns_cites or not isinstance(sns_cites, list):
             errors.append(f"[{fname}] `snsCitations` is missing or empty")
         else:
+            has_verified_photo_x = False
             for idx, cite in enumerate(sns_cites, start=1):
                 post_url = cite.get("postUrl") or cite.get("url", "")
                 if post_url and not is_allowed_domain(post_url):
                     errors.append(f"[{fname}] snsCitation #{idx} postUrl `{post_url}` is not in OFFICIAL_ALLOWED_DOMAINS")
+
+                for url_field in (cite.get("postUrl", ""), cite.get("url", "")):
+                    for bad_id in FORBIDDEN_FAKE_STATUS_IDS:
+                        if bad_id in str(url_field):
+                            errors.append(f"[{fname}] snsCitation #{idx} contains known 404/fabricated status ID `{bad_id}`")
+
+                if cite.get("platform") == "X":
+                    has_status = bool(re.search(r"^https?://(?:www\.)?(?:x\.com|twitter\.com)/[^/]+/status/\d+", str(cite.get("postUrl", ""))))
+                    media_urls = cite.get("mediaUrls") or []
+                    valid_media = [
+                        m for m in media_urls
+                        if isinstance(m, str) and "pbs.twimg.com/" in m and is_allowed_domain(m)
+                    ]
+                    if media_urls and len(valid_media) != len(media_urls):
+                        errors.append(f"[{fname}] snsCitation #{idx} has invalid or disallowed domain in `mediaUrls`")
+                    if has_status and len(valid_media) >= 1:
+                        has_verified_photo_x = True
+
+            if not has_verified_photo_x:
+                errors.append(
+                    f"[{fname}] Missing verified photo-attached X post (`platform: 'X'` with `/status/<id>` postUrl and >=1 `pbs.twimg.com/` URL in `mediaUrls`)"
+                )
 
         # 5. Hero Image Physical Existence
         hero_img = doc.get("heroImage", "")

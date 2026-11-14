@@ -26,6 +26,8 @@ export interface SnsCiteItem {
   url: string;
   postUrl?: string;
   publishedDate?: string;
+  mediaUrls?: string[];
+  verifiedAt?: string;
   quotedPostText: Record<Lang, string>;
   editorialCommentary: Record<Lang, string>;
 }

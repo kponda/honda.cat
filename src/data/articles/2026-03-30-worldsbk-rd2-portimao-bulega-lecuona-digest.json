@@ -21,19 +21,51 @@
     {
       "platform": "X",
       "citationType": "direct_post",
-      "accountName": "WorldSBK Official ＆ Hashtag Hub",
-      "handle": "@WorldSBK / #WorldSBK",
+      "accountName": "WorldSBK",
+      "handle": "@WorldSBK",
       "url": "https://x.com/WorldSBK",
-      "postUrl": "https://x.com/WorldSBK",
+      "postUrl": "https://x.com/WorldSBK/status/2031096336787849647",
+      "publishedDate": "2026-03-09",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HC_nWfxXEAAB3ne.jpg",
+        "https://pbs.twimg.com/media/HC_nWfxW8AA9aSP.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "【FIM WorldSBK 第2戦】公式結果速報：ニコロ・ブレガ選手が圧倒的な走りを披露！",
-        "ca": "【WorldSBK Rd.2】Resultats oficials amb un ritme demolidor a la pista!",
-        "en": "[WorldSBK Rd.2] Official Results and Highlights from the paddock!"
+        "ja": "ポルティマオでの初日セッションが終了！✅ こちらが#WorldSBKの初日結果です👀",
+        "ca": "Primer dia completat a Portimão! ✅ Aquí teniu els resultats de #WorldSBK 👀",
+        "en": "Day 1 is done and dusted at Portimao! ✅ Here are your #WorldSBK results 👀"
       },
       "editorialCommentary": {
-        "ja": "WorldSBK公式（@WorldSBK）および「#WorldSBK」では、第2戦のオンボード映像やハイライトが世界中のファンに配信されています。",
-        "ca": "El compte oficial @WorldSBK i l'etiqueta #WorldSBK mostren els millors moments de la ronda 2.",
-        "en": "Official dispatches from @WorldSBK and #WorldSBK showcase high-speed action from Round 2."
+        "ja": "アップダウンが激しいポルティマオのジェットコースターコースでも、ブレガの安定したピッチング制御が際立っていたな！初日からのセットアップ熟成度がモノを言っているぜ。",
+        "ca": "En una muntanya russa tan exigent com Portimão, el control del xassís de Bulega ha tornat a marcar diferències! Trobar el regl Round-trip ideal des de divendres és mig triomf.",
+        "en": "Around Portimão's demanding roller-coaster layout, Bulega's pitch control and stability stood out immediately! Nailing the setup on day one gives a massive tactical edge."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "ヤマハ発動機レース情報",
+      "handle": "@yamaha_race",
+      "url": "https://x.com/yamaha_race",
+      "postUrl": "https://x.com/yamaha_race/status/2111996924085903467",
+      "publishedDate": "2026-10-19",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HU9QpPGbsAAf2ce.jpg",
+        "https://pbs.twimg.com/media/HU9QzF1akAAVJTR.jpg",
+        "https://pbs.twimg.com/media/HU9Qt60a0AAd0sq.jpg",
+        "https://pbs.twimg.com/media/HU9Q1EAakAAnNcz.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "🇪🇸 #WorldSBK 第12戦スペイン 🏁 🔵 スーパーバイク世界選手権：#97 ビエルゲ選手（RET/9位/12位）、#55 ロカテッリ選手（13位/20位/16位）、#62 マンジ選手（18位/14位/17位）、#87 ガードナー選手（15位/17位/19位）。シーズン最終レースが終了しました🏁。",
+        "ca": "🇪🇸 #WorldSBK Rd.12 Espanya 🏁 🔵 Campionat del Món de Superbike: #97 Vierge (RET/9è/12è), #55 Locatelli (13è/20è/16è), #62 Manzi (18è/14è/17è), #87 Gardner (15è/17è/19è). La cursa final de la temporada ha conclòs 🏁.",
+        "en": "🇪🇸 #WorldSBK Rd.12 Spain 🏁 🔵 Superbike World Championship: #97 Vierge (RET/P9/P12), #55 Locatelli (P13/P20/P16), #62 Manzi (P18/P14/P17), #87 Gardner (P15/P17/P19). The final race of the season is complete 🏁."
+      },
+      "editorialCommentary": {
+        "ja": "ヤマハ勢にとってはタフな展開となったが、ビエルゲが9位に食い込んで意地を見せてくれたな！このテレメトリーデータを徹底分析して来季の反撃に繋げてほしいぜ。",
+        "ca": "Un cap de setmana exigent per a Yamaha, tot i que en Vierge va salvar l'honor lluitant per una meritòria novena posició. Ara toca buidar la telemetria per trobar el camí correcte de cara al proper curs!",
+        "en": "A demanding weekend across the board for Yamaha, though Vierge fought hard to claim a commendable ninth place. Digging deep into that telemetry data will be key to their winter rebuild!"
       }
     },
     {

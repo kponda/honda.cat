@@ -18,19 +18,51 @@
   "snsCitations": [
     {
       "platform": "X",
-      "accountName": "鈴鹿サーキット Suzuka Circuit",
-      "handle": "@suzuka_event",
-      "url": "https://x.com/suzuka_event",
-      "postUrl": "https://x.com/suzuka_event/status/2119354245585699238",
+      "citationType": "direct_post",
+      "accountName": "PRCCA プレッカ",
+      "handle": "@PRCCA_JAPAN",
+      "url": "https://x.com/PRCCA_JAPAN",
+      "postUrl": "https://x.com/PRCCA_JAPAN/status/2108040328863469992",
+      "publishedDate": "2026-10-08",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HUFDgTAbgAEnZ_X.jpg",
+        "https://pbs.twimg.com/media/HUFDgTDa8AAKqbD.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
       "quotedPostText": {
-        "ja": "MFJ国内競技規則（ロードレース技術仕様）：オイルドレンボルト、オイルフィラーキャップ、オイルフィルター等のオイル経路ボルト類は、緩み防止のためロックワイヤー（ワイヤリング）を確実に施すこと。",
-        "ca": "Reglament Tècnic Oficial MFJ de Velocitat: tots els cargols de buidatge d'oli, taps d'ompliment i filtres d'oli han d'estar degudament assegurats amb filferro de bloqueig (wire-locking) per superar la verificació tècnica.",
-        "en": "MFJ Domestic Road Racing Technical Regulations: All oil drain plugs, filler caps, and oil filter bolts must be positively secured with safety lock wire to pass pre-race technical inspection."
+        "ja": "通勤クロスバイクは駅の駐輪場へ。しなやかワイヤーロックDXは先端の輪っかが金属ではなくワイヤーと同じ素材なので、バイクやホイールに傷をつけずにシューっと一発で抜けるようになりました。",
+        "ca": "La bici de cicloturisme per anar a la feina, a l'aparcament de l'estació. Com que l'anella del cadenat flexible Wire Lock DX no és de metall sinó del mateix material que el cable, no ratlla la bici ni les llandes i surt d'una sola tirada suau.",
+        "en": "Commuter bike parked at the station. The flexible Wire Lock DX has a loop made of cable material instead of metal, so it slides off cleanly in one go without scratching the bike or wheels."
       },
       "editorialCommentary": {
-        "ja": "各サーキットの公式車検（Tech Inspection）で車検員が最も厳しくチェックするのが、ドレンボルトやフィラーキャップのワイヤリングが『締まる方向（時計回り）』にピンと張られているかです。緩む方向に引っ張られていると即再検査となります。",
-        "ca": "A les verificacions tècniques oficials de circuit, els comissaris comproven amb màxim rigor que el filferro d'assegurament tiri en sentit horari (d'estrènyer). Si estira en sentit d'afluixar, es rebutja a l'instant.",
-        "en": "At official pre-race scrutineering, technical inspectors rigorously check that safety wire pulls strictly in the clockwise tightening direction. Any reverse tension results in an immediate failure."
+        "ja": "街乗りの盗難防止ワイヤーも傷防止は大事だが、レーサーの保安ワイヤリングはボルトを緩ませないための命綱だ。被膜や端末の処理に気を使う精神は、パドックのワイヤーツイストにも通じるものがあるね。",
+        "ca": "Evitar ratllades amb cables antirobatori al carrer està bé, però el filferro de seguretat d'un bòlid de competició és una línia de vida contra afluixaments. La cura en els acabats és un principi que també s'aplica al trenat del pàdoc.",
+        "en": "Preventing scratches with anti-theft cable locks on street rides is fine, but safety wiring on a race bike is a literal lifeline against loose bolts. Taking care with wire ends and coatings shares the exact same spirit as paddock wire-twisting."
+      }
+    },
+    {
+      "platform": "X",
+      "citationType": "direct_post",
+      "accountName": "もふもふ配達員@🐸🥫🚀配達員",
+      "handle": "@catelaine222",
+      "url": "https://x.com/catelaine222",
+      "postUrl": "https://x.com/catelaine222/status/2112016732189823263",
+      "publishedDate": "2026-10-19",
+      "mediaUrls": [
+        "https://pbs.twimg.com/media/HU9j-QbbcAE62Qb.jpg",
+        "https://pbs.twimg.com/media/HU9j_HEakAAjOPG.jpg",
+        "https://pbs.twimg.com/media/HU9kAIOaQAA_PfP.jpg"
+      ],
+      "verifiedAt": "2026-11-14",
+      "quotedPostText": {
+        "ja": "ダイソーのU字ロックが意外としっかりしていたので購入したらPCXにぴったりでした。税込550円と安く、チェーンやワイヤーロックみたいに簡単には切られなさそう。エアタグも装備し後輪にはワイヤーロック、乗らない時はカバーを被せています。",
+        "ca": "El cadenat en U de Daiso és sorprenentment robust i, en comprar-lo, ha anat perfecte per a la PCX. És econòmic (550 iens) i no sembla fàcil de tallar com una cadena o cable. Li he posat un AirTag, el cable antic a la roda del darrere i funda quan no la faig servir.",
+        "en": "Daiso's U-lock is surprisingly sturdy, and when I bought it, it fit my PCX perfectly. Cheap at 550 yen, and looks tougher to cut through than chains or cable locks. Added an AirTag, put my old cable lock on the rear wheel, and cover it when parked."
+      },
+      "editorialCommentary": {
+        "ja": "多重ロックにカバー掛け、愛車を守る危機管理としては理にかなってるよ。サーキットのワイヤリングも同じで、『物理的なロック＋二重三重の安全策』を怠らないやつだけが無事にチェッカーを受けられるんだ。",
+        "ca": "Múltiples cadenats i funda: és una gestió de riscos impecable per protegir la màquina. Al circuit passa el mateix amb el filferro de seguretat; només qui assegura bloquejos físics i redundàncies arriba sa i estalvi a la bandera de quadres.",
+        "en": "Layering multiple locks and a cover is textbook risk management for safeguarding your bike. Circuit safety wiring works the exact same way—only those who insist on mechanical locking and redundant fail-safes will see the checkered flag."
       }
     },
     {
