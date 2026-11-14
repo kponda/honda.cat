@@ -116,18 +116,20 @@ const categories = ['all', 'motogp', 'sbk', 'kyushu', 'endurance-fun', 'maintena
           </p>
         </div>
 
-        <div class="category-filters" role="tablist" aria-label="Category Filter">
-          {categories.map((catKey, idx) => (
-            <button
-              type="button"
-              class={`filter-btn ${idx === 0 ? 'active' : ''}`}
-              data-filter-category={catKey}
-            >
-              <span data-i18n="ja">{UI_TEXT.categories[catKey].ja}</span>
-              <span data-i18n="ca">{UI_TEXT.categories[catKey].ca}</span>
-              <span data-i18n="en">{UI_TEXT.categories[catKey].en}</span>
-            </button>
-          ))}
+        <div class="category-filters-wrapper">
+          <div class="category-filters" role="tablist" aria-label="Category Filter">
+            {categories.map((catKey, idx) => (
+              <button
+                type="button"
+                class={`filter-btn ${idx === 0 ? 'active' : ''}`}
+                data-filter-category={catKey}
+              >
+                <span data-i18n="ja">{UI_TEXT.categories[catKey].ja}</span>
+                <span data-i18n="ca">{UI_TEXT.categories[catKey].ca}</span>
+                <span data-i18n="en">{UI_TEXT.categories[catKey].en}</span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -171,6 +173,9 @@ const categories = ['all', 'motogp', 'sbk', 'kyushu', 'endurance-fun', 'maintena
         const selected = btn.getAttribute('data-filter-category');
         filterButtons.forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
+
+        // Center active chip on mobile horizontal scroll
+        btn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
 
         articleCards.forEach((card) => {
           const cat = card.getAttribute('data-category');
@@ -291,6 +296,11 @@ const categories = ['all', 'motogp', 'sbk', 'kyushu', 'endurance-fun', 'maintena
     font-size: clamp(1.45rem, 2.8vw, 2rem);
     font-weight: 900;
     margin-top: 0.5rem;
+  }
+
+  .category-filters-wrapper {
+    position: relative;
+    width: 100%;
   }
 
   .category-filters {
@@ -442,6 +452,57 @@ const categories = ['all', 'motogp', 'sbk', 'kyushu', 'endurance-fun', 'maintena
     .cta-arrow {
       align-self: stretch;
       text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .articles-section {
+      padding: 2.5rem 0 1.5rem;
+    }
+
+    .articles-header {
+      gap: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .section-heading {
+      font-size: 1.35rem;
+    }
+
+    .articles-subnote {
+      font-size: 0.8rem;
+    }
+
+    /* Mobile 1-row horizontal scrollable category filter chips */
+    .category-filters-wrapper {
+      margin: 0 -1.25rem;
+      padding: 0 1.25rem;
+      position: relative;
+    }
+
+    .category-filters {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      gap: 0.5rem;
+      padding: 0.25rem 0.25rem 0.65rem;
+    }
+
+    .category-filters::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-btn {
+      flex-shrink: 0;
+      white-space: nowrap;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.8rem;
+    }
+
+    .articles-grid {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
     }
   }
 </style>

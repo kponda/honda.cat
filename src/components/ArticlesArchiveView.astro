@@ -199,23 +199,25 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
           </div>
         )}
 
-        <div class="category-filters" role="tablist" aria-label="Category Filter">
-          {categories.map((catKey) => {
-            const isSelected = isCategoryView ? activeCategory === catKey : (!isTagView && catKey === 'all');
-            return (
-              <a
-                href={getCategoryUrl(catKey)}
-                class={`filter-btn ${isSelected ? 'active' : ''}`}
-                data-filter-category={catKey}
-                role="tab"
-                aria-selected={isSelected}
-              >
-                <span data-i18n="ja">{UI_TEXT.categories[catKey].ja}</span>
-                <span data-i18n="ca">{UI_TEXT.categories[catKey].ca}</span>
-                <span data-i18n="en">{UI_TEXT.categories[catKey].en}</span>
-              </a>
-            );
-          })}
+        <div class="category-filters-wrapper">
+          <div class="category-filters" role="tablist" aria-label="Category Filter">
+            {categories.map((catKey) => {
+              const isSelected = isCategoryView ? activeCategory === catKey : (!isTagView && catKey === 'all');
+              return (
+                <a
+                  href={getCategoryUrl(catKey)}
+                  class={`filter-btn ${isSelected ? 'active' : ''}`}
+                  data-filter-category={catKey}
+                  role="tab"
+                  aria-selected={isSelected}
+                >
+                  <span data-i18n="ja">{UI_TEXT.categories[catKey].ja}</span>
+                  <span data-i18n="ca">{UI_TEXT.categories[catKey].ca}</span>
+                  <span data-i18n="en">{UI_TEXT.categories[catKey].en}</span>
+                </a>
+              );
+            })}
+          </div>
         </div>
       </div>
 
@@ -285,6 +287,16 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
     </div>
   </section>
 </main>
+
+<script>
+  // Center active filter button in mobile horizontal scroll on page load
+  (function () {
+    const activeBtn = document.querySelector('.category-filters .filter-btn.active');
+    if (activeBtn) {
+      activeBtn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'instant' });
+    }
+  })();
+</script>
 
 <Footer />
 
@@ -444,6 +456,11 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
     color: #fff;
   }
 
+  .category-filters-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
   .category-filters {
     display: flex;
     flex-wrap: wrap;
@@ -587,6 +604,110 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
     background: var(--accent-gold);
     color: #0d0f14;
     border-color: var(--accent-gold);
+  }
+
+  @media (max-width: 768px) {
+    .archive-banner {
+      padding: 1.35rem 0 1.5rem;
+    }
+
+    .breadcrumb {
+      margin-bottom: 0.65rem;
+      font-size: 0.76rem;
+    }
+
+    .badge-row {
+      margin-bottom: 0.5rem;
+      gap: 0.45rem;
+    }
+
+    .archive-title {
+      font-size: 1.45rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .archive-subtitle {
+      font-size: 0.85rem;
+      margin-bottom: 0.85rem;
+      line-height: 1.55;
+    }
+
+    /* Compact horizontal scrolling metrics */
+    .archive-metrics {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      gap: 0.45rem;
+      padding-bottom: 0.25rem;
+      margin: 0 -1.25rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .archive-metrics::-webkit-scrollbar {
+      display: none;
+    }
+
+    .metric-pill {
+      flex-direction: row;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.65rem;
+      border-radius: 0.5rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .metric-pill strong {
+      font-size: 0.68rem;
+    }
+
+    .metric-pill span {
+      font-size: 0.78rem;
+    }
+
+    .archive-list-section {
+      padding: 1.35rem 0 2rem;
+    }
+
+    .filter-bar {
+      margin-bottom: 1.25rem;
+      gap: 0.75rem;
+    }
+
+    /* Mobile 1-row horizontal scrollable category filter chips */
+    .category-filters-wrapper {
+      margin: 0 -1.25rem;
+      padding: 0 1.25rem;
+      position: relative;
+    }
+
+    .category-filters {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      gap: 0.5rem;
+      padding: 0.25rem 0.25rem 0.65rem;
+    }
+
+    .category-filters::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-btn {
+      flex-shrink: 0;
+      white-space: nowrap;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.8rem;
+    }
+
+    .articles-grid {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
   }
 
   @media (max-width: 640px) {
