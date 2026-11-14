@@ -129,133 +129,133 @@ const currentNav: NavKey = activeNav || (
       </button>
     </div>
   </div>
+</header>
 
-  <!-- Mobile Drawer & Backdrop -->
-  <div id="mobile-nav-backdrop" class="mobile-nav-backdrop" aria-hidden="true"></div>
-  <div id="mobile-nav-drawer" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="モバイルメニュー" aria-hidden="true">
-    <div class="drawer-header">
-      <div class="drawer-brand">
-        <span class="brand-logo-mini">🐾🏁</span>
-        <span class="brand-domain racing-font">HONDA<span class="dot-cat">.CAT</span></span>
-      </div>
-      <button type="button" id="drawer-close-btn" class="drawer-close-btn" aria-label="メニューを閉じる">
-        ✕
-      </button>
+<!-- Mobile Drawer & Backdrop (placed outside .site-header to avoid backdrop-filter containing block) -->
+<div id="mobile-nav-backdrop" class="mobile-nav-backdrop" aria-hidden="true"></div>
+<div id="mobile-nav-drawer" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="モバイルメニュー" aria-hidden="true">
+  <div class="drawer-header">
+    <div class="drawer-brand">
+      <span class="brand-logo-mini">🐾🏁</span>
+      <span class="brand-domain racing-font">HONDA<span class="dot-cat">.CAT</span></span>
     </div>
+    <button type="button" id="drawer-close-btn" class="drawer-close-btn" aria-label="メニューを閉じる">
+      ✕
+    </button>
+  </div>
 
-    <div class="drawer-body">
-      <nav class="drawer-nav" aria-label="Mobile Navigation">
-        <a
-          href="/"
-          class={`drawer-nav-link ${currentNav === 'home' ? 'nav-highlight' : ''}`}
-          aria-current={currentNav === 'home' ? 'page' : undefined}
-        >
-          <span class="nav-icon">🏠</span>
-          <span class="nav-text">
-            <span data-i18n="ja">{UI_TEXT.nav.home.ja}</span>
-            <span data-i18n="ca">{UI_TEXT.nav.home.ca}</span>
-            <span data-i18n="en">{UI_TEXT.nav.home.en}</span>
-          </span>
-          <span class="nav-arrow">›</span>
-        </a>
-        <a
-          href="/articles/"
-          class={`drawer-nav-link ${currentNav === 'articles' ? 'nav-highlight' : ''}`}
-          aria-current={currentNav === 'articles' ? 'page' : undefined}
-        >
-          <span class="nav-icon">📰</span>
-          <span class="nav-text">
-            <span data-i18n="ja">{UI_TEXT.nav.articles.ja}</span>
-            <span data-i18n="ca">{UI_TEXT.nav.articles.ca}</span>
-            <span data-i18n="en">{UI_TEXT.nav.articles.en}</span>
-          </span>
-          <span class="nav-arrow">›</span>
-        </a>
-        <a
-          href="/schedule/"
-          class={`drawer-nav-link ${currentNav === 'schedule' ? 'nav-highlight' : ''}`}
-          aria-current={currentNav === 'schedule' ? 'page' : undefined}
-        >
-          <span class="nav-icon">📅</span>
-          <span class="nav-text">
-            <span data-i18n="ja">{UI_TEXT.nav.schedule.ja}</span>
-            <span data-i18n="ca">{UI_TEXT.nav.schedule.ca}</span>
-            <span data-i18n="en">{UI_TEXT.nav.schedule.en}</span>
-          </span>
-          <span class="nav-arrow">›</span>
-        </a>
-        <a
-          href="/kyushu/"
-          class={`drawer-nav-link ${currentNav === 'kyushu' ? 'nav-highlight' : ''}`}
-          aria-current={currentNav === 'kyushu' ? 'page' : undefined}
-        >
-          <span class="nav-icon">🗾</span>
-          <span class="nav-text">
-            <span data-i18n="ja">{UI_TEXT.nav.kyushu.ja}</span>
-            <span data-i18n="ca">{UI_TEXT.nav.kyushu.ca}</span>
-            <span data-i18n="en">{UI_TEXT.nav.kyushu.en}</span>
-          </span>
-          <span class="nav-arrow">›</span>
-        </a>
-        <a
-          href="/cats/"
-          class={`drawer-nav-link ${currentNav === 'cats' ? 'nav-highlight' : ''}`}
-          aria-current={currentNav === 'cats' ? 'page' : undefined}
-        >
-          <span class="nav-icon">🐱</span>
-          <span class="nav-text">
-            <span data-i18n="ja">{UI_TEXT.nav.cats.ja}</span>
-            <span data-i18n="ca">{UI_TEXT.nav.cats.ca}</span>
-            <span data-i18n="en">{UI_TEXT.nav.cats.en}</span>
-          </span>
-          <span class="nav-arrow">›</span>
-        </a>
-        <a
-          href="/about/"
-          class={`drawer-nav-link ${currentNav === 'about' ? 'nav-highlight' : ''}`}
-          aria-current={currentNav === 'about' ? 'page' : undefined}
-        >
-          <span class="nav-icon">ℹ️</span>
-          <span class="nav-text">
-            <span data-i18n="ja">{UI_TEXT.nav.about.ja}</span>
-            <span data-i18n="ca">{UI_TEXT.nav.about.ca}</span>
-            <span data-i18n="en">{UI_TEXT.nav.about.en}</span>
-          </span>
-          <span class="nav-arrow">›</span>
-        </a>
-        <a
-          href="https://x.com/hondacats"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="drawer-nav-link drawer-x-link"
-        >
-          <span class="nav-icon">𝕏</span>
-          <span class="nav-text">
-            <span data-i18n="ja">公式X (@hondacats)</span>
-            <span data-i18n="ca">X Oficial (@hondacats)</span>
-            <span data-i18n="en">Official X (@hondacats)</span>
-          </span>
-          <span class="nav-arrow">↗</span>
-        </a>
-      </nav>
+  <div class="drawer-body">
+    <nav class="drawer-nav" aria-label="Mobile Navigation">
+      <a
+        href="/"
+        class={`drawer-nav-link ${currentNav === 'home' ? 'nav-highlight' : ''}`}
+        aria-current={currentNav === 'home' ? 'page' : undefined}
+      >
+        <span class="nav-icon">🏠</span>
+        <span class="nav-text">
+          <span data-i18n="ja">{UI_TEXT.nav.home.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.nav.home.ca}</span>
+          <span data-i18n="en">{UI_TEXT.nav.home.en}</span>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+      <a
+        href="/articles/"
+        class={`drawer-nav-link ${currentNav === 'articles' ? 'nav-highlight' : ''}`}
+        aria-current={currentNav === 'articles' ? 'page' : undefined}
+      >
+        <span class="nav-icon">📰</span>
+        <span class="nav-text">
+          <span data-i18n="ja">{UI_TEXT.nav.articles.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.nav.articles.ca}</span>
+          <span data-i18n="en">{UI_TEXT.nav.articles.en}</span>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+      <a
+        href="/schedule/"
+        class={`drawer-nav-link ${currentNav === 'schedule' ? 'nav-highlight' : ''}`}
+        aria-current={currentNav === 'schedule' ? 'page' : undefined}
+      >
+        <span class="nav-icon">📅</span>
+        <span class="nav-text">
+          <span data-i18n="ja">{UI_TEXT.nav.schedule.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.nav.schedule.ca}</span>
+          <span data-i18n="en">{UI_TEXT.nav.schedule.en}</span>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+      <a
+        href="/kyushu/"
+        class={`drawer-nav-link ${currentNav === 'kyushu' ? 'nav-highlight' : ''}`}
+        aria-current={currentNav === 'kyushu' ? 'page' : undefined}
+      >
+        <span class="nav-icon">🗾</span>
+        <span class="nav-text">
+          <span data-i18n="ja">{UI_TEXT.nav.kyushu.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.nav.kyushu.ca}</span>
+          <span data-i18n="en">{UI_TEXT.nav.kyushu.en}</span>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+      <a
+        href="/cats/"
+        class={`drawer-nav-link ${currentNav === 'cats' ? 'nav-highlight' : ''}`}
+        aria-current={currentNav === 'cats' ? 'page' : undefined}
+      >
+        <span class="nav-icon">🐱</span>
+        <span class="nav-text">
+          <span data-i18n="ja">{UI_TEXT.nav.cats.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.nav.cats.ca}</span>
+          <span data-i18n="en">{UI_TEXT.nav.cats.en}</span>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+      <a
+        href="/about/"
+        class={`drawer-nav-link ${currentNav === 'about' ? 'nav-highlight' : ''}`}
+        aria-current={currentNav === 'about' ? 'page' : undefined}
+      >
+        <span class="nav-icon">ℹ️</span>
+        <span class="nav-text">
+          <span data-i18n="ja">{UI_TEXT.nav.about.ja}</span>
+          <span data-i18n="ca">{UI_TEXT.nav.about.ca}</span>
+          <span data-i18n="en">{UI_TEXT.nav.about.en}</span>
+        </span>
+        <span class="nav-arrow">›</span>
+      </a>
+      <a
+        href="https://x.com/hondacats"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="drawer-nav-link drawer-x-link"
+      >
+        <span class="nav-icon">𝕏</span>
+        <span class="nav-text">
+          <span data-i18n="ja">公式X (@hondacats)</span>
+          <span data-i18n="ca">X Oficial (@hondacats)</span>
+          <span data-i18n="en">Official X (@hondacats)</span>
+        </span>
+        <span class="nav-arrow">↗</span>
+      </a>
+    </nav>
 
-      <div class="drawer-lang-section">
-        <span class="drawer-section-title">🌐 LANGUAGE / 言語選択</span>
-        <div class="drawer-lang-switcher" role="group" aria-label="Language Switcher">
-          <button type="button" class="lang-btn drawer-lang-btn active" data-lang-switch="ja" title="日本語 (デフォルト・自動記憶)">
-            🇯🇵 日本語
-          </button>
-          <button type="button" class="lang-btn drawer-lang-btn" data-lang-switch="ca" title="Català (.cat Oficial)">
-            🏴󠁥󠁳󠁣󠁴󠁿 Català
-          </button>
-          <button type="button" class="lang-btn drawer-lang-btn" data-lang-switch="en" title="English">
-            🇬🇧 English
-          </button>
-        </div>
+    <div class="drawer-lang-section">
+      <span class="drawer-section-title">🌐 LANGUAGE / 言語選択</span>
+      <div class="drawer-lang-switcher" role="group" aria-label="Language Switcher">
+        <button type="button" class="lang-btn drawer-lang-btn active" data-lang-switch="ja" title="日本語 (デフォルト・自動記憶)">
+          🇯🇵 日本語
+        </button>
+        <button type="button" class="lang-btn drawer-lang-btn" data-lang-switch="ca" title="Català (.cat Oficial)">
+          🏴󠁥󠁳󠁣󠁴󠁿 Català
+        </button>
+        <button type="button" class="lang-btn drawer-lang-btn" data-lang-switch="en" title="English">
+          🇬🇧 English
+        </button>
       </div>
     </div>
   </div>
-</header>
+</div>
 
 <div id="lang-memory-toast" class="lang-toast" role="status" aria-live="polite"></div>
 
@@ -275,7 +275,7 @@ const currentNav: NavKey = activeNav || (
       drawer.setAttribute('aria-hidden', 'false');
       backdrop.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
-      if (closeBtn) closeBtn.focus();
+      if (closeBtn) closeBtn.focus({ preventScroll: true });
     }
 
     function closeMenu() {
@@ -285,7 +285,7 @@ const currentNav: NavKey = activeNav || (
       drawer.setAttribute('aria-hidden', 'true');
       backdrop.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
-      toggleBtn.focus();
+      toggleBtn.focus({ preventScroll: true });
     }
 
     toggleBtn.addEventListener('click', () => {
@@ -330,6 +330,7 @@ const currentNav: NavKey = activeNav || (
     top: 0;
     z-index: 100;
     background: rgba(13, 15, 20, 0.9);
+    -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--border-subtle);
   }
@@ -452,7 +453,7 @@ const currentNav: NavKey = activeNav || (
     position: fixed;
     bottom: 1.25rem;
     right: 1.25rem;
-    z-index: 200;
+    z-index: 1100;
     background: #1b202c;
     color: #fff;
     border: 1px solid var(--accent-gold);
@@ -626,8 +627,9 @@ const currentNav: NavKey = activeNav || (
       position: fixed;
       inset: 0;
       background: rgba(0, 0, 0, 0.75);
+      -webkit-backdrop-filter: blur(6px);
       backdrop-filter: blur(6px);
-      z-index: 150;
+      z-index: 990;
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.25s ease;
@@ -645,19 +647,25 @@ const currentNav: NavKey = activeNav || (
       top: 0;
       right: 0;
       bottom: 0;
+      height: 100vh;
+      height: 100dvh;
       width: 86%;
       max-width: 340px;
       background: #11141c;
       border-left: 1px solid rgba(255, 255, 255, 0.12);
       box-shadow: -15px 0 40px rgba(0, 0, 0, 0.8);
-      z-index: 160;
+      z-index: 1000;
+      visibility: hidden;
+      pointer-events: none;
       transform: translateX(100%);
-      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.28s;
       overflow-y: auto;
       overscroll-behavior: contain;
     }
 
     .mobile-nav-drawer.is-open {
+      visibility: visible;
+      pointer-events: auto;
       transform: translateX(0);
     }
 
@@ -665,6 +673,7 @@ const currentNav: NavKey = activeNav || (
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-shrink: 0;
       padding: 1.1rem 1.25rem;
       border-bottom: 1px solid var(--border-subtle);
       background: rgba(255, 255, 255, 0.02);
