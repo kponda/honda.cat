@@ -171,6 +171,19 @@ import { UI_TEXT } from '../data/i18n';
                 <span data-i18n="en">HONDA DENNO LLC Official Website (honda.dev) ↗</span>
               </span>
             </a>
+            <a
+              href="https://x.com/hondacats"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="operator-site-link operator-x-link"
+            >
+              <span aria-hidden="true">𝕏</span>
+              <span class="operator-site-name">
+                <span data-i18n="ja">HONDA.CAT 公式X (@hondacats) ↗</span>
+                <span data-i18n="ca">X Oficial de HONDA.CAT (@hondacats) ↗</span>
+                <span data-i18n="en">HONDA.CAT Official X (@hondacats) ↗</span>
+              </span>
+            </a>
           </div>
         </div>
       </section>
@@ -271,6 +284,9 @@ import { UI_TEXT } from '../data/i18n';
   }
 
   .operator-profile-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
     margin-top: 0.5rem;
   }
 
@@ -293,6 +309,18 @@ import { UI_TEXT } from '../data/i18n';
     border-color: rgba(255, 183, 3, 0.4);
     color: var(--accent-gold);
     transform: translateY(-1px);
+  }
+
+  .operator-x-link {
+    background: rgba(29, 155, 240, 0.12);
+    border-color: rgba(29, 155, 240, 0.35);
+    color: #58a6ff;
+  }
+
+  .operator-x-link:hover {
+    background: #1d9bf0;
+    border-color: #1d9bf0;
+    color: #fff;
   }
 
   .operator-site-logo {

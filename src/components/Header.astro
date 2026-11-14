@@ -90,6 +90,17 @@ const currentNav: NavKey = activeNav || (
     </nav>
 
     <div class="header-right">
+      <a
+        href="https://x.com/hondacats"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header-x-link racing-font"
+        title="Official X (@hondacats)"
+      >
+        <span class="x-icon">𝕏</span>
+        <span class="x-handle">@hondacats</span>
+      </a>
+
       <div class="lang-switcher desktop-lang-switcher" role="group" aria-label="Language Switcher">
         <button type="button" class="lang-btn active" data-lang-switch="ja" title="日本語 (デフォルト・自動記憶)">
           🇯🇵 日本語
@@ -211,6 +222,20 @@ const currentNav: NavKey = activeNav || (
             <span data-i18n="en">{UI_TEXT.nav.about.en}</span>
           </span>
           <span class="nav-arrow">›</span>
+        </a>
+        <a
+          href="https://x.com/hondacats"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="drawer-nav-link drawer-x-link"
+        >
+          <span class="nav-icon">𝕏</span>
+          <span class="nav-text">
+            <span data-i18n="ja">公式X (@hondacats)</span>
+            <span data-i18n="ca">X Oficial (@hondacats)</span>
+            <span data-i18n="en">Official X (@hondacats)</span>
+          </span>
+          <span class="nav-arrow">↗</span>
         </a>
       </nav>
 
@@ -453,6 +478,34 @@ const currentNav: NavKey = activeNav || (
     gap: 0.65rem;
   }
 
+  .header-x-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.42rem 0.78rem;
+    border-radius: 0.55rem;
+    background: rgba(29, 155, 240, 0.12);
+    border: 1px solid rgba(29, 155, 240, 0.35);
+    color: #58a6ff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+
+  .header-x-link:hover {
+    background: #1d9bf0;
+    border-color: #1d9bf0;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(29, 155, 240, 0.35);
+    transform: translateY(-1px);
+  }
+
+  .header-x-link .x-icon {
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+
   .menu-toggle-btn {
     display: none;
     align-items: center;
@@ -561,6 +614,10 @@ const currentNav: NavKey = activeNav || (
     }
 
     .desktop-lang-switcher {
+      display: none;
+    }
+
+    .header-x-link {
       display: none;
     }
 
@@ -684,6 +741,18 @@ const currentNav: NavKey = activeNav || (
       border-color: rgba(255, 183, 3, 0.4);
       color: var(--accent-gold);
       font-weight: 700;
+    }
+
+    .drawer-nav-link.drawer-x-link {
+      background: rgba(29, 155, 240, 0.1);
+      border-color: rgba(29, 155, 240, 0.32);
+      color: #58a6ff;
+    }
+
+    .drawer-nav-link.drawer-x-link:hover {
+      background: rgba(29, 155, 240, 0.22);
+      border-color: #1d9bf0;
+      color: #fff;
     }
 
     .nav-icon {

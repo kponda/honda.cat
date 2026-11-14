@@ -27,6 +27,16 @@ import { UI_TEXT } from '../data/i18n';
           <span data-i18n="ca">{UI_TEXT.churuSupport.footerButton.ca} ↗</span>
           <span data-i18n="en">{UI_TEXT.churuSupport.footerButton.en} ↗</span>
         </a>
+        <a
+          href="https://x.com/hondacats"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-x-link"
+        >
+          <span data-i18n="ja">𝕏 公式X (@hondacats) ↗</span>
+          <span data-i18n="ca">𝕏 Oficial (@hondacats) ↗</span>
+          <span data-i18n="en">𝕏 Official (@hondacats) ↗</span>
+        </a>
         <a href="/about/" class="footer-about-link">
           <span data-i18n="ja">ℹ️ 当サイトについて（.cat カタルーニャ貢献・編集方針）</span>
           <span data-i18n="ca">ℹ️ Sobre nosaltres (Missió .cat i Política Editorial)</span>
@@ -141,6 +151,28 @@ import { UI_TEXT } from '../data/i18n';
     border-color: #ffb703;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(255, 183, 3, 0.3);
+  }
+
+  .footer-x-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(29, 155, 240, 0.14);
+    border: 1px solid rgba(29, 155, 240, 0.4);
+    color: #58a6ff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: all 0.15s ease;
+  }
+
+  .footer-x-link:hover {
+    background: #1d9bf0;
+    border-color: #1d9bf0;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(29, 155, 240, 0.35);
   }
 
   .footer-about-link {
