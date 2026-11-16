@@ -34,6 +34,8 @@ const articleActiveNav = article.category === 'kyushu' ? 'kyushu' : 'home';
   description={article.locales.ja.summary}
   initialLang="ja"
   canonicalPath={`/articles/${article.slug}/`}
+  image={article.heroImage}
+  ogType="article"
 >
   <Header activeNav={articleActiveNav} />
 

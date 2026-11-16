@@ -22,11 +22,13 @@ import argparse
 import base64
 import hashlib
 import hmac
+import io
 import json
 import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import uuid
@@ -42,12 +44,14 @@ except ImportError:
     pass
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
+PUBLIC_DIR = ROOT_DIR / "public"
 ARTICLES_DIR = ROOT_DIR / "src" / "data" / "articles"
 POSTED_FILE = ROOT_DIR / "src" / "data" / "x_posted.json"
 BASE_URL = "https://honda.cat"
 
-# Latest X Developer Platform endpoint (api.x.com)
+# Latest X Developer Platform endpoints (api.x.com & upload.twitter.com)
 X_API_URL = "https://api.x.com/2/tweets"
+X_MEDIA_UPLOAD_URL = "https://upload.twitter.com/1.1/media/upload.json"
 
 
 # -----------------------------------------------------------------------------
@@ -105,8 +109,110 @@ def get_oauth1_header(
     return f"OAuth {', '.join(header_parts)}"
 
 
-def send_tweet(text: str, dry_run: bool = False) -> dict[str, Any]:
-    """Send tweet via X API v2 (POST https://api.x.com/2/tweets).
+def resolve_hero_image_path(article_data: dict[str, Any]) -> Path | None:
+    """Resolve an article's heroImage path under public/ if it exists on disk."""
+    hero_rel = str(article_data.get("heroImage") or "").strip().lstrip("/")
+    if not hero_rel:
+        return None
+    candidate = PUBLIC_DIR / hero_rel
+    return candidate if candidate.is_file() else None
+
+
+def prepare_image_bytes(image_path: Path) -> tuple[bytes, str, str]:
+    """Convert WebP/PNG/JPEG hero image to RGB JPEG bytes suitable for X media upload."""
+    try:
+        from PIL import Image  # type: ignore
+
+        with Image.open(image_path) as img:
+            if "A" in img.getbands():
+                rgba = img.convert("RGBA")
+                bg = Image.new("RGB", rgba.size, (18, 22, 30))
+                bg.paste(rgba, mask=rgba.split()[-1])
+                rgb = bg
+            else:
+                rgb = img.convert("RGB")
+            buf = io.BytesIO()
+            rgb.save(buf, format="JPEG", quality=90, optimize=True)
+            return buf.getvalue(), "image/jpeg", f"{image_path.stem}.jpg"
+    except Exception as e:
+        print(f"⚠️ Pillow conversion skipped ({e}); using raw bytes for {image_path.name}")
+        suffix = image_path.suffix.lower()
+        mime_map = {
+            ".webp": "image/webp",
+            ".png": "image/png",
+            ".jpg": "image/jpeg",
+            ".jpeg": "image/jpeg",
+        }
+        return image_path.read_bytes(), mime_map.get(suffix, "application/octet-stream"), image_path.name
+
+
+def upload_media_oauth1(
+    image_path: Path,
+    api_key: str,
+    api_secret: str,
+    access_token: str,
+    access_token_secret: str,
+) -> str | None:
+    """Upload hero image to X Media API (upload.twitter.com/1.1/media/upload.json) via OAuth 1.0a."""
+    img_bytes, mime_type, filename = prepare_image_bytes(image_path)
+    print(f"🖼️ Uploading hero image ({filename}, {len(img_bytes) // 1024} KB, {mime_type}) to X Media API...")
+
+    try:
+        from requests_oauthlib import OAuth1Session  # type: ignore
+
+        session = OAuth1Session(
+            client_key=api_key,
+            client_secret=api_secret,
+            resource_owner_key=access_token,
+            resource_owner_secret=access_token_secret,
+        )
+        response = session.post(
+            X_MEDIA_UPLOAD_URL,
+            files={"media": (filename, img_bytes, mime_type)},
+            timeout=30,
+        )
+        if response.status_code not in (200, 201, 202):
+            print(f"⚠️ X Media upload failed ({response.status_code}): {response.text}; falling back to link card.")
+            return None
+        data = response.json()
+        media_id = data.get("media_id_string") or str(data.get("media_id") or "")
+        return media_id or None
+    except ImportError:
+        boundary = f"----HondaCatBoundary{uuid.uuid4().hex}"
+        body = (
+            f"--{boundary}\r\n"
+            f'Content-Disposition: form-data; name="media"; filename="{filename}"\r\n'
+            f"Content-Type: {mime_type}\r\n\r\n"
+        ).encode("utf-8") + img_bytes + f"\r\n--{boundary}--\r\n".encode("utf-8")
+        auth_header = get_oauth1_header(
+            "POST", X_MEDIA_UPLOAD_URL, api_key, api_secret, access_token, access_token_secret
+        )
+        req = urllib.request.Request(
+            X_MEDIA_UPLOAD_URL,
+            data=body,
+            headers={
+                "Authorization": auth_header,
+                "Content-Type": f"multipart/form-data; boundary={boundary}",
+                "User-Agent": "HondaCatPublisher/1.0",
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                media_id = data.get("media_id_string") or str(data.get("media_id") or "")
+                return media_id or None
+        except urllib.error.HTTPError as e:
+            err_body = e.read().decode("utf-8", errors="replace")
+            print(f"⚠️ X Media upload HTTP {e.code}: {err_body}; falling back to link card.")
+            return None
+    except Exception as e:
+        print(f"⚠️ X Media upload error ({e}); falling back to link card.")
+        return None
+
+
+def send_tweet(text: str, dry_run: bool = False, media_path: Path | None = None) -> dict[str, Any]:
+    """Send tweet via X API v2 (POST https://api.x.com/2/tweets) with optional hero image attachment.
 
     Supports:
       1. OAuth 1.0a User Context (API Key, API Secret, Access Token, Access Token Secret)
@@ -123,26 +229,49 @@ def send_tweet(text: str, dry_run: bool = False) -> dict[str, Any]:
     has_oauth1 = bool(api_key and api_secret and access_token and access_token_secret)
     has_bearer = bool(bearer_token or (access_token and not (api_key and api_secret)))
 
-    if not has_oauth1 and not has_bearer:
-        if dry_run:
+    if dry_run:
+        img_info = "none"
+        if media_path is not None:
+            img_bytes, mime_type, filename = prepare_image_bytes(media_path)
+            img_info = f"{media_path} -> {filename} ({len(img_bytes) // 1024} KB, {mime_type})"
+        if not has_oauth1 and not has_bearer:
             print("ℹ️ X API credentials not fully set, but running in dry-run mode.")
+            print(f"🖼️ [DRY-RUN] Hero media attachment: {img_info}")
             return {"data": {"id": "dry_run_sample_id", "text": text}}
+        auth_mode = "OAuth 1.0a (User Context)" if has_oauth1 else "OAuth 2.0 (Bearer Token)"
+        print(f"🔍 [DRY-RUN] Tweet would be posted via {auth_mode} to {X_API_URL}:")
+        print("--------------------------------------------------")
+        print(text)
+        print("--------------------------------------------------")
+        print(f"🖼️ [DRY-RUN] Hero media attachment: {img_info}")
+        print(f"Character count approx: {len(text)} chars")
+        return {"data": {"id": "dry_run_id", "text": text}}
+
+    if not has_oauth1 and not has_bearer:
         raise ValueError(
             "Missing X API credentials. Please provide either:\n"
             "  Option A (OAuth 1.0a - recommended for personal bots): X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET\n"
             "  Option B (OAuth 2.0 User Access Token): X_BEARER_TOKEN (or X_ACCESS_TOKEN with tweet.write scope)"
         )
 
-    if dry_run:
-        auth_mode = "OAuth 1.0a (User Context)" if has_oauth1 else "OAuth 2.0 (Bearer Token)"
-        print(f"🔍 [DRY-RUN] Tweet would be posted via {auth_mode} to {X_API_URL}:")
-        print("--------------------------------------------------")
-        print(text)
-        print("--------------------------------------------------")
-        print(f"Character count approx: {len(text)} chars")
-        return {"data": {"id": "dry_run_id", "text": text}}
+    tweet_payload: dict[str, Any] = {"text": text}
 
-    payload = json.dumps({"text": text}).encode("utf-8")
+    if media_path is not None:
+        if has_oauth1:
+            media_id = upload_media_oauth1(
+                media_path,
+                api_key=api_key,  # type: ignore[arg-type]
+                api_secret=api_secret,  # type: ignore[arg-type]
+                access_token=access_token,  # type: ignore[arg-type]
+                access_token_secret=access_token_secret,  # type: ignore[arg-type]
+            )
+            if media_id:
+                tweet_payload["media"] = {"media_ids": [media_id]}
+                print(f"📎 Attached X media_id: {media_id}")
+        else:
+            print("ℹ️ OAuth 2.0 Bearer mode cannot upload to v1.1 media/upload.json; relying on Twitter Card OGP tags.")
+
+    payload = json.dumps(tweet_payload).encode("utf-8")
 
     # Mode 1: OAuth 2.0 Bearer Token (if OAuth 1.0a is not configured)
     if not has_oauth1 and has_bearer:
@@ -177,7 +306,7 @@ def send_tweet(text: str, dry_run: bool = False) -> dict[str, Any]:
         )
         response = session.post(
             X_API_URL,
-            json={"text": text},
+            json=tweet_payload,
             headers={"Content-Type": "application/json"},
             timeout=20,
         )
@@ -480,11 +609,12 @@ def main() -> int:
 
         print(f"\n📝 Generating post for: {slug} (Reporter: {cat_name})")
         tweet_text = generate_tweet_text(article)
+        media_path = resolve_hero_image_path(article)
 
         print(f"💬 Tweet Preview ({len(tweet_text)} chars):\n{tweet_text}\n")
 
         try:
-            resp = send_tweet(tweet_text, dry_run=args.dry_run)
+            resp = send_tweet(tweet_text, dry_run=args.dry_run, media_path=media_path)
             tweet_id = resp.get("data", {}).get("id", "dry_run")
             print(f"✅ Successfully posted to X! (Tweet ID: {tweet_id})")
 
