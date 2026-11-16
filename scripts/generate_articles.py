@@ -463,7 +463,9 @@ def check_online_results_for_event(ev: dict[str, Any], today_str: str) -> dict[s
 
 def extract_relevant_sources(prompt_context: str, all_sources: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Filter sources_config.json so only sources directly related to the target event(s) are passed to LLM."""
-    lower_ctx = prompt_context.lower()
+    cleaned_ctx = re.sub(r"`?(?:featuredCat|category|articleType)\s*:\s*'[^']*'`?", "", prompt_context)
+    cleaned_ctx = re.sub(r'"(?:category|previewArticleId|resultArticleId|scope)"\s*:\s*"[^"]*"', "", cleaned_ctx)
+    lower_ctx = cleaned_ctx.lower()
     matched: list[dict[str, Any]] = []
 
     for src in all_sources:
@@ -483,16 +485,16 @@ def extract_relevant_sources(prompt_context: str, all_sources: list[dict[str, An
         if any(w in lower_ctx for w in ["worldsbk", "sbk", "superbike", "ewc", "8hours", "8耐"]):
             if sid == "worldsbk-official":
                 matched.append(src)
-            if ("8耐" in lower_ctx or "suzuka" in lower_ctx or "鈴鹿" in lower_ctx) and sid == "suzuka-circuit":
+            if any(w in lower_ctx for w in ["8耐", "鈴鹿", "suzuka circuit", "suzuka 8", "suzuka-circuit"]) and sid == "suzuka-circuit":
                 matched.append(src)
 
-        # All-Japan / Regional Championships
-        if any(w in lower_ctx for w in ["mfj", "全日本", "jsb1000", "st1000", "st600", "j-gp3", "jgp3"]):
+        # All-Japan Championships (exclude regional classes/categories mentioning JSB1000 or all-japan)
+        if any(w in lower_ctx for w in ["全日本ロード", "全日本選手権", "mfjグランプリ", "mfjgp"]):
             if sid == "mfj-all-japan-official":
                 matched.append(src)
 
         # Specific Circuits
-        if any(w in lower_ctx for w in ["suzuka", "鈴鹿"]) and sid == "suzuka-circuit":
+        if any(w in lower_ctx for w in ["鈴鹿", "suzuka circuit", "suzuka 8", "suzuka sunday", "suzuka-circuit"]) and sid == "suzuka-circuit":
             matched.append(src)
         if any(w in lower_ctx for w in ["motegi", "もてぎ"]) and sid == "mobility-resort-motegi":
             matched.append(src)
@@ -520,7 +522,7 @@ def extract_relevant_sources(prompt_context: str, all_sources: list[dict[str, An
         if any(w in lower_ctx for w in ["webike", "ウェビック", "地方選", "走行会", "草耐久", "4耐", "6耐", "エンジョイ", "saga cup", "明智"]) and sid == "webike-event-navi-race":
             matched.append(src)
 
-    # De-duplicate while preserving order
+    # De-duplicate while prioritizing host-circuit/series-specific sources ahead of umbrella aggregators
     unique: list[dict[str, Any]] = []
     seen: set[str] = set()
     for s in matched:
@@ -528,9 +530,132 @@ def extract_relevant_sources(prompt_context: str, all_sources: list[dict[str, An
             seen.add(s["id"])
             unique.append(s)
 
+    umbrella_ids = {"mfj-all-japan-official", "webike-event-navi-race"}
+    unique.sort(key=lambda s: 1 if s.get("id", "").lower() in umbrella_ids else 0)
+
     if not unique:
         return all_sources[:3]
     return unique
+
+
+def _build_x_search_params(
+    prompt_context: str,
+    relevant_sources: list[dict[str, Any]],
+) -> tuple[list[str], list[str], list[str]]:
+    """Build prioritized, round-robined X queries, handles, and relevance keywords from event metadata + sources."""
+    cleaned_ctx = re.sub(r"`?(?:featuredCat|category|articleType)\s*:\s*'[^']*'`?", "", prompt_context)
+    lower_ctx = cleaned_ctx.lower()
+
+    event_queries: list[str] = []
+    relevance_keywords: list[str] = []
+
+    def _add_unique(lst: list[str], val: str) -> None:
+        v = val.strip()
+        if v and v not in lst:
+            lst.append(v)
+
+    event_names = re.findall(r'"eventName"\s*:\s*\{\s*"ja"\s*:\s*"([^"]+)"', cleaned_ctx)
+    circuit_names = re.findall(r'"circuit"\s*:\s*\{\s*"ja"\s*:\s*"([^"]+)"', cleaned_ctx)
+
+    for cname in circuit_names:
+        short_c = re.sub(r"（.*?）|【.*?】", "", cname).strip()
+        short_c = re.sub(r"\s+(?:国際レーシングコース|ロードコース|インターナショナルレーシングコース)$", "", short_c).strip()
+        if short_c:
+            _add_unique(relevance_keywords, short_c)
+        for token in ["SUGO", "スポーツランドSUGO", "岡山", "OKAYAMA", "岡山国際サーキット", "筑波", "もてぎ", "鈴鹿", "HSR九州", "オートポリス", "SPA直入", "明智", "安心院", "中九州", "十勝", "富士"]:
+            if token.lower() in cname.lower():
+                _add_unique(relevance_keywords, token)
+
+    for ename in event_names:
+        clean_e = re.sub(r"（.*?）|【.*?】", "", ename).strip()
+        clean_e = re.sub(r"^20\d\d\s+(?:FIM\s+)?", "", clean_e).strip()
+        parts = [p.strip() for p in re.split(r"[／/]", clean_e) if p.strip()]
+        for p in parts[:2]:
+            p_short = re.sub(r"^20\d\d\s+", "", p).strip()
+            p_short = re.sub(r"\s*(?:シリーズ・地方選手権|地方選手権|Rd\.\d+|Round\s*\d+|R-\d+|第\d+戦).*$", "", p_short, flags=re.I).strip()
+            if len(p_short) >= 4:
+                _add_unique(event_queries, p_short)
+                for tok in re.split(r"[\s・]+", p_short):
+                    if len(tok) >= 3 and tok.lower() not in {"2026", "race", "series", "レース", "ロードレース", "シリーズ", "選手権"}:
+                        _add_unique(relevance_keywords, tok)
+
+    # Combine circuit + event keyword queries for higher hit rate
+    if circuit_names and event_names:
+        c_short = re.sub(r"（.*?）|【.*?】", "", circuit_names[0]).strip()
+        c_short = re.sub(r"\s+(?:国際レーシングコース|ロードコース|インターナショナルレーシングコース)$", "", c_short).strip()
+        if c_short and not any(c_short in eq for eq in event_queries):
+            _add_unique(event_queries, f"{c_short} ロードレース")
+
+    # Round-robin queries and handles across relevant_sources so multi-event digests hit all circuits
+    umbrella_ids = {"mfj-all-japan-official", "webike-event-navi-race"}
+    primary_sources = [s for s in relevant_sources if s.get("id") not in umbrella_ids]
+    secondary_sources = [s for s in relevant_sources if s.get("id") in umbrella_ids]
+    ordered_sources = primary_sources + secondary_sources
+
+    is_all_japan = any(w in lower_ctx for w in ["全日本ロード", "全日本選手権", "all-japan", "jsb1000", "st1000", "j-gp3", "mfjgp"])
+    is_fuji = any(w in lower_ctx for w in ["富士", "fuji", "ミニろく"])
+
+    src_queries: list[str] = []
+    max_q_len = max((len(s.get("searchQueries", [])) for s in ordered_sources), default=0)
+    for q_idx in range(min(max_q_len, 2)):
+        for s in ordered_sources:
+            qs = s.get("searchQueries", [])
+            if q_idx < len(qs):
+                q = qs[q_idx]
+                if "全日本ロードレース" in q and not is_all_japan:
+                    continue
+                if "富士" in q and not is_fuji:
+                    continue
+                _add_unique(src_queries, q)
+
+    x_handles: list[str] = []
+    max_h_len = max((len([sn for sn in s.get("sns", []) if sn.get("platform") == "X"]) for s in primary_sources or ordered_sources), default=0)
+    for h_idx in range(max_h_len):
+        for s in primary_sources or ordered_sources:
+            x_sns = [sn for sn in s.get("sns", []) if sn.get("platform") == "X"]
+            if h_idx < len(x_sns):
+                h = x_sns[h_idx].get("handle", "").lstrip("@")
+                if h.lower() == "fswpress" and not is_fuji:
+                    continue
+                _add_unique(x_handles, h)
+
+    if any(w in lower_ctx for w in ["サーキット整備塾", "naomi clinic", "ワイヤリング", "ブレーキフルード", "タイヤ空気圧", "ドライブチェーン", "トルクレンチ", "冷却水"]):
+        x_queries = ["バイク サーキット 整備", "レース 整備 バイク", "サーキット メンテナンス"]
+        relevance_keywords.extend(["整備", "サーキット", "タイヤ", "ブレーキ", "チェーン", "トルク", "冷却水", "ワイヤリング"])
+    else:
+        x_queries = []
+        for q in event_queries + src_queries:
+            _add_unique(x_queries, q)
+
+    if not x_queries:
+        x_queries = ["MotoGP 2026", "全日本ロードレース", "バイク サーキット 整備"]
+
+    return x_queries, x_handles, relevance_keywords
+
+
+def _make_verified_x_citation(top_v: dict[str, Any], today_str: str) -> dict[str, Any]:
+    """Build a schema-valid SnsCiteItem dict from a verified tweet metadata record."""
+    return {
+        "platform": "X",
+        "citationType": "direct_post",
+        "accountName": top_v["accountName"],
+        "handle": f"@{top_v['screenName']}",
+        "url": top_v["url"],
+        "postUrl": top_v["postUrl"],
+        "publishedDate": top_v["publishedDate"],
+        "mediaUrls": top_v["mediaUrls"],
+        "verifiedAt": today_str,
+        "quotedPostText": {
+            "ja": top_v["rawText"],
+            "ca": top_v["rawText"],
+            "en": top_v["rawText"],
+        },
+        "editorialCommentary": {
+            "ja": f"現地・公式X（@{top_v['screenName']}）から発信された写真付きポスト。リアルな現場の熱気とマシンの様子が伝わります。",
+            "ca": f"Publicació amb fotografies des de @{top_v['screenName']} mostrant l'ambient real del circuit.",
+            "en": f"Verified photo post from @{top_v['screenName']} capturing authentic trackside action.",
+        },
+    }
 
 
 def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, Any]:
@@ -549,27 +674,15 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
     sources_context = json.dumps(relevant_sources, ensure_ascii=False, indent=2)
 
     # Discover & deterministically verify real photo-attached X posts before authoring
-    x_queries: list[str] = []
-    x_handles: list[str] = []
-    for src in relevant_sources:
-        for q in src.get("searchQueries", [])[:2]:
-            if q not in x_queries:
-                x_queries.append(q)
-        for s in src.get("sns", []):
-            if s.get("platform") == "X":
-                h = s.get("handle", "").lstrip("@")
-                if h and h not in x_handles:
-                    x_handles.append(h)
-
-    if not x_queries:
-        x_queries = ["MotoGP 2026", "全日本ロードレース", "バイク サーキット 整備"]
+    x_queries, x_handles, relevance_keywords = _build_x_search_params(prompt_context, relevant_sources)
 
     verified_x_posts = x_photo_finder.find_verified_photo_tweets(
-        queries=x_queries[:4],
-        web_queries=x_queries[:3],
-        handles=x_handles[:2],
+        queries=x_queries[:6],
+        relevance_keywords=relevance_keywords or None,
+        web_queries=x_queries[:4],
+        handles=x_handles[:4],
         target_date=today_str,
-        count=2,
+        count=3,
     )
     verified_x_context = json.dumps(verified_x_posts, ensure_ascii=False, indent=2)
 
@@ -587,7 +700,7 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
             "- Targeted YouTube search: `site:youtube.com ... \"公式\"`\n"
             "- Official Web result pages & official Facebook posts.\n"
             "- STRICT RELEVANCE: Search ONLY for sources directly connected to this event/circuit/riders.\n\n"
-            f"VERIFIED PHOTO-ATTACHED X POSTS (USE THESE DIRECT POSTS & MEDIA URLS FIRST):\n{verified_x_context}\n\n"
+            f"VERIFIED PHOTO-ATTACHED X POSTS (USE RELEVANT DIRECT POSTS & MEDIA URLS FIRST):\n{verified_x_context}\n\n"
             f"TARGET RELEVANT OFFICIAL SOURCES & SNS REGISTRY:\n{sources_context}"
         ),
         tools=[{"type": "google_search"}],
@@ -606,7 +719,8 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
             "2. Populate `factCheck` with `verified: true`, `verifiedAt`, trilingual `basis`, and real `sources` URLs.\n"
             "3. Populate `snsCitations` following the strict platform priority: X > YouTube > OfficialWeb > Facebook > Instagram.\n"
             "   - Every citation MUST be directly relevant to this specific race event, host circuit, or podium riders.\n"
-            "   - MANDATORY VERIFIED PHOTO X POSTS: Include the verified photo-attached X posts provided below with `citationType: 'direct_post'`, exact `postUrl`, `publishedDate`, and `mediaUrls`.\n"
+            "   - VERIFIED PHOTO X POSTS: From `VERIFIED PHOTO-ATTACHED X POSTS` below, select ONLY the verified photo-attached X posts directly related to the featured event(s), host circuit(s), or competing riders, using `citationType: 'direct_post'`, exact `postUrl`, `publishedDate`, and `mediaUrls`.\n"
+            "   - If any item in `VERIFIED PHOTO-ATTACHED X POSTS` is about an unrelated race/circuit, SKIP it instead of citing it.\n"
             "   - ZERO HALLUCINATION: Do NOT fabricate status IDs. Only use status URLs verified in the list below or verified online.\n"
             "   - NEVER cite unrelated accounts (e.g., citing MotoGP or Suzuka for a Kyushu local or grassroots race is strictly forbidden).\n"
             "4. In `catDialogues`, convey Naomi's (`naomi`) scruffy garage mechanic voice and her occasional shy, maidenly phrasing naturally through the text itself without any explicit mode labels.\n\n"
@@ -648,59 +762,78 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
                             cite["verifiedAt"] = today_str
                             has_verified_photo_x = True
         if not has_verified_photo_x:
-            top_v = verified_x_posts[0]
-            cites.insert(
-                0,
-                {
-                    "platform": "X",
-                    "citationType": "direct_post",
-                    "accountName": top_v["accountName"],
-                    "handle": f"@{top_v['screenName']}",
-                    "url": top_v["url"],
-                    "postUrl": top_v["postUrl"],
-                    "publishedDate": top_v["publishedDate"],
-                    "mediaUrls": top_v["mediaUrls"],
-                    "verifiedAt": today_str,
-                    "quotedPostText": {
-                        "ja": top_v["rawText"],
-                        "ca": top_v["rawText"],
-                        "en": top_v["rawText"],
-                    },
-                    "editorialCommentary": {
-                        "ja": f"現地・公式X（@{top_v['screenName']}）から発信された写真付きポスト。リアルな現場の熱気とマシンの様子が伝わります。",
-                        "ca": f"Publicació oficial amb fotografies des de @{top_v['screenName']} mostrant l'ambient real del circuit.",
-                        "en": f"Verified photo post from @{top_v['screenName']} capturing authentic trackside action.",
-                    },
-                },
-            )
+            relevant_fallback = [
+                v for v in verified_x_posts
+                if not relevance_keywords
+                or any(kw.lower() in v["rawText"].lower() for kw in relevance_keywords)
+            ]
+            top_v = (relevant_fallback or verified_x_posts)[0]
+            cites.insert(0, _make_verified_x_citation(top_v, today_str))
             draft_json["snsCitations"] = cites
 
     print("[3/3] Running Independent Fact-Auditor Gate...")
-    audit_interaction = client.interactions.create(
-        model="gemini-3.8-flash",
-        input=(
-            "You are a strict Motorsport & Mechanical Engineering Fact Auditor.\n"
-            "Audit the following generated article JSON against the research dossier and real-world history.\n"
-            "Fail (`passed: false`) if you find ANY of the following:\n"
-            "1. Unrelated or incorrect circuit-to-event pairings (e.g., claiming a race series is held at a circuit where it was never held).\n"
-            "2. Fictional team names in results or fabricated race winners.\n"
-            "3. Incorrect circuit lengths or false technical/physics claims.\n"
-            "4. Unrelated SNS/Web citations: Citing accounts or sources that have no direct relationship with the featured event, host circuit, or competing riders/teams (e.g. citing MotoGP or Suzuka for a Kyushu local race or grassroots endurance event). All citations must directly relate to the event.\n"
-            "5. Hallucinated / Fabricated post URLs: Fictional tweet status IDs or made-up post texts not matching real posts or official channels.\n\n"
-            f"RESEARCH DOSSIER:\n{research_notes}\n\n"
-            f"CANDIDATE ARTICLE JSON:\n{json.dumps(draft_json, ensure_ascii=False)}"
-        ),
-        tools=[{"type": "google_search"}],
-        response_format={
-            "type": "text",
-            "mime_type": "application/json",
-            "schema": AUDIT_JSON_SCHEMA,
-        },
-    )
-    audit_result = json.loads(audit_interaction.output_text)
+
+    def _run_audit(candidate_doc: dict[str, Any]) -> dict[str, Any]:
+        audit_interaction = client.interactions.create(
+            model="gemini-3.8-flash",
+            input=(
+                "You are a strict Motorsport & Mechanical Engineering Fact Auditor.\n"
+                "Audit the following generated article JSON against the research dossier and real-world history.\n"
+                "Fail (`passed: false`) if you find ANY of the following:\n"
+                "1. Unrelated or incorrect circuit-to-event pairings (e.g., claiming a race series is held at a circuit where it was never held).\n"
+                "2. Fictional team names in results or fabricated race winners.\n"
+                "3. Incorrect circuit lengths or false technical/physics claims.\n"
+                "4. Unrelated SNS/Web citations: Citing accounts or sources that have no direct relationship with the featured event, host circuit, or competing riders/teams (e.g. citing MotoGP or Suzuka for a Kyushu local race or grassroots endurance event). All citations must directly relate to the event.\n"
+                "5. Hallucinated / Fabricated post URLs: Fictional tweet status IDs or made-up post texts not matching real posts or official channels.\n\n"
+                f"RESEARCH DOSSIER:\n{research_notes}\n\n"
+                f"CANDIDATE ARTICLE JSON:\n{json.dumps(candidate_doc, ensure_ascii=False)}"
+            ),
+            tools=[{"type": "google_search"}],
+            response_format={
+                "type": "text",
+                "mime_type": "application/json",
+                "schema": AUDIT_JSON_SCHEMA,
+            },
+        )
+        return json.loads(audit_interaction.output_text)
+
+    audit_result = _run_audit(draft_json)
     if not audit_result.get("passed", False):
-        issues = "; ".join(audit_result.get("issues", ["Unknown fact check failure"]))
-        raise FactCheckError(f"❌ Fact Audit Rejected Article: {issues}")
+        issues_list = audit_result.get("issues", ["Unknown fact check failure"])
+        issues_str = "; ".join(issues_list)
+        if any(kw in issues_str.lower() for kw in ["unrelated sns", "sns citation", "citation", "@"]):
+            mentioned_handles = {h.lower() for h in re.findall(r"@([A-Za-z0-9_]+)", issues_str)}
+            filtered_cites: list[dict[str, Any]] = []
+            for cite in draft_json.get("snsCitations") or []:
+                handle_clean = str(cite.get("handle") or "").lstrip("@").lower()
+                post_url_lower = str(cite.get("postUrl") or cite.get("url") or "").lower()
+                if handle_clean in mentioned_handles or any(f"/{h}/" in post_url_lower for h in mentioned_handles):
+                    continue
+                if cite.get("platform") == "X" and relevance_keywords:
+                    qt = " ".join(str((cite.get("quotedPostText") or {}).get(l, "")) for l in ("ja", "en")).lower()
+                    if not any(kw.lower() in qt for kw in relevance_keywords):
+                        continue
+                filtered_cites.append(cite)
+
+            has_x_photo = any(c.get("platform") == "X" and c.get("mediaUrls") for c in filtered_cites)
+            if not has_x_photo and verified_x_posts:
+                for cand_v in verified_x_posts:
+                    if cand_v["screenName"].lower() in mentioned_handles:
+                        continue
+                    if relevance_keywords and not any(kw.lower() in cand_v["rawText"].lower() for kw in relevance_keywords):
+                        continue
+                    filtered_cites.insert(0, _make_verified_x_citation(cand_v, today_str))
+                    has_x_photo = True
+                    break
+
+            if filtered_cites and filtered_cites != (draft_json.get("snsCitations") or []):
+                draft_json["snsCitations"] = filtered_cites
+                print("⚠️ [3/3] Pruned unrelated SNS citation(s); re-running Independent Fact Audit...")
+                audit_result = _run_audit(draft_json)
+
+        if not audit_result.get("passed", False):
+            issues = "; ".join(audit_result.get("issues", ["Unknown fact check failure"]))
+            raise FactCheckError(f"❌ Fact Audit Rejected Article: {issues}")
 
     print(f"[3/3] ✅ Fact Audit Passed: {audit_result.get('summary')}")
     print("[4/4] 📸 Generating authentic motorsport hero photo with Imagen 3...")
