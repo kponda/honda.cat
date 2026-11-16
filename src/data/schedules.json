@@ -1818,9 +1818,9 @@
       "verifiedSource": "FIM MotoGP 公式カレンダー (motogp.com)",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
+        "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00"
+        "lastCheckedAt": "2026-11-16"
       }
     },
     {
@@ -1853,9 +1853,9 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4469/) ＆ HSR九州公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
+        "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00",
+        "lastCheckedAt": "2026-11-16",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -1889,8 +1889,8 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4146/) ＆ スポーツランドSUGO公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
-        "resultArticleId": null,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-11-16-2026-11-16-japan-domestic-race-digest-sugo-4h-6h-okayama-rd5",
         "lastCheckedAt": "2026-11-12T09:00:00+09:00",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
@@ -1925,9 +1925,9 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4480/) ＆ HSR九州公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
+        "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00",
+        "lastCheckedAt": "2026-11-16",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -1961,9 +1961,9 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4645/) ＆ レン耐公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
+        "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-12T09:00:00+09:00",
+        "lastCheckedAt": "2026-11-16",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -1997,8 +1997,8 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4424/) ＆ 岡山国際サーキット公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
-        "resultArticleId": null,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-11-16-2026-11-16-japan-domestic-race-digest-sugo-4h-6h-okayama-rd5",
         "lastCheckedAt": "2026-11-12T09:00:00+09:00",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
@@ -2033,8 +2033,8 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4147/) ＆ スポーツランドSUGO公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
-        "resultArticleId": null,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-11-16-2026-11-16-japan-domestic-race-digest-sugo-4h-6h-okayama-rd5",
         "lastCheckedAt": "2026-11-12T09:00:00+09:00",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
