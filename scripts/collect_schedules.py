@@ -114,10 +114,13 @@ SCHEDULES_COLLECTION_SCHEMA: dict[str, Any] = {
 
 
 OFFICIAL_TRUSTED_DOMAINS = [
-    # World Championships
+    # World Championships & Sanctioning Bodies
     "motogp.com",
     "worldsbk.com",
     "fimewc.com",
+    "fim-moto.com",
+    "fim-europe.com",
+    "fim-asia.com",
     # World Circuit Hosts
     "circuitcat.com",
     "circuitvalencia.com",
@@ -136,6 +139,16 @@ OFFICIAL_TRUSTED_DOMAINS = [
     "phillipislandcircuit.com.au",
     "sepangcircuit.com",
     "lcsc.qa",
+    "balatonparkcircuit.com",
+    "cremonacircuit.it",
+    "circuitoestoril.pt",
+    "circuit-magnycours.com",
+    "donington-park.co.uk",
+    "autodrom-most.cz",
+    "circuitricardotormo.com",
+    "circuitofamericas.com",
+    "bric.co.th",
+    "changinternationalcircuit.com",
     # Japanese Sanctioning & All-Japan
     "mfj.or.jp",
     "superbike.jp",
@@ -147,6 +160,26 @@ OFFICIAL_TRUSTED_DOMAINS = [
     "okayama-international-circuit.jp",
     "fsw.tv",
     "tokachi.msf.ne.jp",
+    # Japanese Regional / Mini-bike / Kart Circuits
+    "msl-hobby.jp",
+    "akigase.co.jp",
+    "akechi-h.com",
+    "osl.vc",
+    "mobara-tc.com",
+    "yrp-kota.com",
+    "kinspo.com",
+    "sakaikartland.com",
+    "nkw-kumamoto.com",
+    "shiraito-speedland.com",
+    "twc.ne.jp",
+    "meihan-sl.com",
+    "takasucircuit.com",
+    "central-circuit.co.jp",
+    "sodegaura-forest-raceway.com",
+    "ebisu-circuit.com",
+    "nihonkai-maze.com",
+    "sp-nakayama.jp",
+    "bihoku-highland.com",
     # Kyushu Circuits & Grassroots Endurance
     "autopolis.jp",
     "spa-naoiri.com",
@@ -160,6 +193,25 @@ OFFICIAL_TRUSTED_DOMAINS = [
     "webike.net",
 ]
 
+UNTRUSTED_CIRCUIT_DENYLIST = [
+    "wikipedia.org",
+    "example.com",
+    "localhost",
+    "bit.ly",
+    "tinyurl.com",
+    "t.co",
+    "ameblo.jp",
+    "fc2.com",
+    "note.com",
+    "hatenablog.com",
+    "blogspot.com",
+    "x.com",
+    "twitter.com",
+    "youtube.com",
+    "instagram.com",
+    "facebook.com",
+]
+
 
 def is_domain_trusted(url: str, trusted_domains: list[str]) -> bool:
     """Validate that the URL belongs to a trusted official domain or its subdomains."""
@@ -170,6 +222,122 @@ def is_domain_trusted(url: str, trusted_domains: list[str]) -> bool:
         return False
     host = match.group(1).lower()
     return any(host == d or host.endswith("." + d) for d in trusted_domains)
+
+
+def is_valid_circuit_url(url: str, official_url: str = "") -> bool:
+    """Validate circuitWebUrl: accept trusted domains, or valid non-denylisted domains paired with a trusted officialWebUrl."""
+    if is_domain_trusted(url, OFFICIAL_TRUSTED_DOMAINS):
+        return True
+    if not url or not is_domain_trusted(official_url, OFFICIAL_TRUSTED_DOMAINS):
+        return False
+    match = re.search(r"^https?://([^/:?#\s]+)", url.strip(), re.IGNORECASE)
+    if not match:
+        return False
+    host = match.group(1).lower()
+    if "." not in host or ".." in host or "@" in host:
+        return False
+    if re.match(r"^\d+(?:\.\d+){3}$", host):
+        return False
+    if any(host == d or host.endswith("." + d) for d in UNTRUSTED_CIRCUIT_DENYLIST):
+        return False
+    return True
+
+
+def validate_schedule_event(
+    ev: dict[str, Any],
+    seen_ids: set[str] | None = None,
+    ref_date: dt.date | None = None,
+    idx: int = 0,
+) -> list[str]:
+    """Deterministically validate one schedule event dict and return a list of violation strings."""
+    errors: list[str] = []
+    eid = ev.get("id", f"unknown-entry-#{idx}")
+    today_d = ref_date or dt.date.today()
+
+    # 1. Unique ID
+    if seen_ids is not None and eid in seen_ids:
+        errors.append(f"[{eid}] Duplicate event ID found in schedules.json")
+
+    # 2. Required fields
+    for field in [
+        "id",
+        "scope",
+        "category",
+        "series",
+        "startDate",
+        "endDate",
+        "circuit",
+        "eventName",
+        "scheduleWindow",
+        "officialWebUrl",
+        "circuitWebUrl",
+    ]:
+        if not ev.get(field):
+            errors.append(f"[{eid}] Missing required field: `{field}`")
+
+    # 3. Scope & Category Enum
+    if ev.get("scope") not in ["world", "japan"]:
+        errors.append(f"[{eid}] Invalid scope: `{ev.get('scope')}` (expected 'world' or 'japan')")
+    if ev.get("category") not in ["world", "motogp", "sbk", "all-japan", "kyushu", "endurance-fun"]:
+        errors.append(f"[{eid}] Invalid category: `{ev.get('category')}`")
+
+    # 4. Trilingual structures
+    for tri_field in ["circuit", "eventName", "scheduleWindow"]:
+        tri_obj = ev.get(tri_field, {})
+        if not isinstance(tri_obj, dict):
+            errors.append(f"[{eid}] Field `{tri_field}` must be an object with ja/ca/en")
+        else:
+            for lang in ["ja", "ca", "en"]:
+                if not tri_obj.get(lang):
+                    errors.append(f"[{eid}] Field `{tri_field}.{lang}` is missing or empty")
+
+    # 5. Date format, validity, range, and dynamic season boundary
+    start_str = ev.get("startDate", "")
+    end_str = ev.get("endDate", "")
+    start_d: dt.date | None = None
+    end_d: dt.date | None = None
+
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", start_str):
+        errors.append(f"[{eid}] Invalid startDate format: `{start_str}` (expected YYYY-MM-DD)")
+    else:
+        try:
+            start_d = dt.date.fromisoformat(start_str)
+        except ValueError:
+            errors.append(f"[{eid}] Non-existent calendar date for startDate: `{start_str}`")
+
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", end_str):
+        errors.append(f"[{eid}] Invalid endDate format: `{end_str}` (expected YYYY-MM-DD)")
+    else:
+        try:
+            end_d = dt.date.fromisoformat(end_str)
+        except ValueError:
+            errors.append(f"[{eid}] Non-existent calendar date for endDate: `{end_str}`")
+
+    if start_d and end_d:
+        if start_d > end_d:
+            errors.append(f"[{eid}] startDate ({start_d}) is after endDate ({end_d})")
+        diff_days = (end_d - start_d).days
+        if diff_days < 0 or diff_days > 6:
+            errors.append(f"[{eid}] Event duration of {diff_days} days is abnormal for a race event (expected 0-6 days)")
+
+        # Dynamic Zero-Hallucination Season Boundary Check:
+        # Allow 2026 through next calendar year (e.g. official 2027 season announced in late 2026)
+        if start_d.year < 2026 or start_d.year > today_d.year + 1:
+            errors.append(
+                f"[{eid}] Date {start_d} is outside confirmed season window (2026 - {today_d.year + 1}). "
+                "Unannounced far-future schedules are prohibited."
+            )
+
+    # 6. Official & Circuit Domain Integrity
+    off_url = ev.get("officialWebUrl", "")
+    if not is_domain_trusted(off_url, OFFICIAL_TRUSTED_DOMAINS):
+        errors.append(f"[{eid}] officialWebUrl `{off_url}` is not in OFFICIAL_TRUSTED_DOMAINS")
+
+    circ_url = ev.get("circuitWebUrl", "")
+    if not is_valid_circuit_url(circ_url, off_url):
+        errors.append(f"[{eid}] circuitWebUrl `{circ_url}` is invalid or untrusted")
+
+    return errors
 
 
 def extract_structured_webike_events(raw_html: str) -> str:
@@ -275,6 +443,8 @@ def sync_schedules_with_gemini(
         "and Kyushu's 3 major circuits (SPA Naoiri, Autopolis, HSR Kyushu) + recreational endurance series.\n\n"
         "STRICT FACT POLICY:\n"
         "- Never fabricate dates. Set `startDate` and `endDate` (YYYY-MM-DD) from verified official calendars.\n"
+        "- `officialWebUrl` MUST use an official sanctioning or organizer domain (e.g., motogp.com, worldsbk.com, mfj.or.jp, superbike.jp, event.webike.net, takuma-gp.com, brow-s.jp, tetsuma.jp, suzukacircuit.jp, mr-motegi.jp, tsukuba-circuit.jp, sportsland-sugo.co.jp, okayama-international-circuit.jp, autopolis.jp, spa-naoiri.com, hsr.jp).\n"
+        "- `circuitWebUrl` MUST be the real official circuit domain (never Wikipedia, blogs, or social media profiles); if unavailable, set it equal to `officialWebUrl`.\n"
         "- Set `hasUpdates: true` if any event date, name, or schedule window changed compared to `EXISTING_DB`.\n\n"
         f"EXISTING_DB:\n{json.dumps(existing_db, ensure_ascii=False)}\n\n"
         f"SCRAPED OFFICIAL SOURCES:\n{json.dumps(scraped_data, ensure_ascii=False)}"
@@ -293,19 +463,56 @@ def sync_schedules_with_gemini(
 
     parsed = json.loads(interaction.output_text)
     has_updates = bool(parsed.get("hasUpdates", False))
+    today_date = now.date()
 
+    existing_events = existing_db.get("events", [])
+    existing_by_id = {ev["id"]: ev for ev in existing_events if ev.get("id")}
     existing_states = {
         ev["id"]: ev.get(
             "publicationState",
             {"previewPublished": False, "resultStatus": "pending", "lastCheckedAt": today_iso},
         )
-        for ev in existing_db.get("events", [])
+        for ev in existing_events
+        if ev.get("id")
     }
 
     merged_events: list[dict[str, Any]] = []
-    for ev in parsed.get("events", []):
+    seen_ids: set[str] = set()
+
+    def _sanitize_and_accept(ev: dict[str, Any], idx: int) -> bool:
+        eid = ev.get("id", "")
+        prev_ev = existing_by_id.get(eid)
+
+        if not is_domain_trusted(ev.get("officialWebUrl", ""), OFFICIAL_TRUSTED_DOMAINS):
+            if prev_ev and is_domain_trusted(prev_ev.get("officialWebUrl", ""), OFFICIAL_TRUSTED_DOMAINS):
+                print(f"⚠️ [{eid}] Restoring trusted officialWebUrl from existing DB (got `{ev.get('officialWebUrl')}`).")
+                ev["officialWebUrl"] = prev_ev["officialWebUrl"]
+
+        if not is_valid_circuit_url(ev.get("circuitWebUrl", ""), ev.get("officialWebUrl", "")):
+            if prev_ev and is_valid_circuit_url(prev_ev.get("circuitWebUrl", ""), ev.get("officialWebUrl", "")):
+                print(f"⚠️ [{eid}] Restoring valid circuitWebUrl from existing DB (got `{ev.get('circuitWebUrl')}`).")
+                ev["circuitWebUrl"] = prev_ev["circuitWebUrl"]
+            elif is_domain_trusted(ev.get("officialWebUrl", ""), OFFICIAL_TRUSTED_DOMAINS):
+                print(f"⚠️ [{eid}] Replacing invalid circuitWebUrl `{ev.get('circuitWebUrl')}` with trusted officialWebUrl.")
+                ev["circuitWebUrl"] = ev["officialWebUrl"]
+
+        ev_errors = validate_schedule_event(ev, seen_ids=seen_ids, ref_date=today_date, idx=idx)
+        if ev_errors:
+            if prev_ev and eid not in seen_ids:
+                fallback_ev = {
+                    **prev_ev,
+                    "publicationState": {**prev_ev.get("publicationState", {}), "lastCheckedAt": today_iso},
+                }
+                if not validate_schedule_event(fallback_ev, seen_ids=seen_ids, ref_date=today_date, idx=idx):
+                    print(f"⚠️ [{eid}] Proposed update failed validation ({'; '.join(ev_errors)}); keeping existing valid entry.")
+                    merged_events.append(fallback_ev)
+                    seen_ids.add(eid)
+                    return True
+            print(f"⚠️ Skipping invalid proposed schedule entry [{eid}]: {'; '.join(ev_errors)}")
+            return False
+
         prev_state = existing_states.get(
-            ev["id"],
+            eid,
             {"previewPublished": False, "resultStatus": "pending", "lastCheckedAt": today_iso},
         )
         ev["publicationState"] = {
@@ -313,6 +520,25 @@ def sync_schedules_with_gemini(
             "lastCheckedAt": today_iso,
         }
         merged_events.append(ev)
+        seen_ids.add(eid)
+        return True
+
+    for idx, ev in enumerate(parsed.get("events", []), start=1):
+        _sanitize_and_accept(ev, idx)
+
+    # Never drop existing verified events if omitted by the model response
+    for idx, prev_ev in enumerate(existing_events, start=1):
+        eid = prev_ev.get("id", "")
+        if eid and eid not in seen_ids:
+            restored = {
+                **prev_ev,
+                "publicationState": {**prev_ev.get("publicationState", {}), "lastCheckedAt": today_iso},
+            }
+            if not validate_schedule_event(restored, seen_ids=seen_ids, ref_date=today_date, idx=idx):
+                merged_events.append(restored)
+                seen_ids.add(eid)
+
+    merged_events.sort(key=lambda e: (e.get("startDate", ""), e.get("id", "")))
 
     updated_db = {
         "lastUpdated": today_iso,
@@ -346,81 +572,17 @@ def verify_schedule_registry() -> int:
     print(f"\n🗓️ Running Deterministic Fact & Integrity Verification on {SCHEDULES_JSON_PATH.name} ({len(events)} entries)...")
     errors: list[str] = []
     seen_ids: set[str] = set()
+    ref_date = dt.date.today()
 
     for idx, ev in enumerate(events, start=1):
         eid = ev.get("id", f"unknown-entry-#{idx}")
-        # 1. Unique ID
-        if eid in seen_ids:
-            errors.append(f"[{eid}] Duplicate event ID found in schedules.json")
+        ev_errors = validate_schedule_event(ev, seen_ids=seen_ids, ref_date=ref_date, idx=idx)
+        errors.extend(ev_errors)
         seen_ids.add(eid)
-
-        # 2. Required fields
-        for field in ["id", "scope", "category", "series", "startDate", "endDate", "circuit", "eventName", "scheduleWindow", "officialWebUrl", "circuitWebUrl"]:
-            if not ev.get(field):
-                errors.append(f"[{eid}] Missing required field: `{field}`")
-
-        # 3. Scope & Category Enum
-        if ev.get("scope") not in ["world", "japan"]:
-            errors.append(f"[{eid}] Invalid scope: `{ev.get('scope')}` (expected 'world' or 'japan')")
-        if ev.get("category") not in ["world", "motogp", "sbk", "all-japan", "kyushu", "endurance-fun"]:
-            errors.append(f"[{eid}] Invalid category: `{ev.get('category')}`")
-
-        # 4. Trilingual structures
-        for tri_field in ["circuit", "eventName", "scheduleWindow"]:
-            tri_obj = ev.get(tri_field, {})
-            if not isinstance(tri_obj, dict):
-                errors.append(f"[{eid}] Field `{tri_field}` must be an object with ja/ca/en")
-            else:
-                for lang in ["ja", "ca", "en"]:
-                    if not tri_obj.get(lang):
-                        errors.append(f"[{eid}] Field `{tri_field}.{lang}` is missing or empty")
-
-        # 5. Date format, validity, range, and season boundary
-        start_str = ev.get("startDate", "")
-        end_str = ev.get("endDate", "")
-        start_d: dt.date | None = None
-        end_d: dt.date | None = None
-
-        if not re.match(r"^\d{4}-\d{2}-\d{2}$", start_str):
-            errors.append(f"[{eid}] Invalid startDate format: `{start_str}` (expected YYYY-MM-DD)")
-        else:
-            try:
-                start_d = dt.date.fromisoformat(start_str)
-            except ValueError:
-                errors.append(f"[{eid}] Non-existent calendar date for startDate: `{start_str}`")
-
-        if not re.match(r"^\d{4}-\d{2}-\d{2}$", end_str):
-            errors.append(f"[{eid}] Invalid endDate format: `{end_str}` (expected YYYY-MM-DD)")
-        else:
-            try:
-                end_d = dt.date.fromisoformat(end_str)
-            except ValueError:
-                errors.append(f"[{eid}] Non-existent calendar date for endDate: `{end_str}`")
-
-        if start_d and end_d:
-            if start_d > end_d:
-                errors.append(f"[{eid}] startDate ({start_d}) is after endDate ({end_d})")
-            diff_days = (end_d - start_d).days
-            if diff_days < 0 or diff_days > 6:
-                errors.append(f"[{eid}] Event duration of {diff_days} days is abnormal for a race event (expected 0-6 days)")
-            
-            # Zero-Hallucination Season Boundary Check:
-            # Events must be within the verified 2026 season or official 2027 early test/pre-season (Jan-Feb 2027)
-            if start_d.year < 2026 or (start_d.year == 2027 and start_d.month > 2) or start_d.year > 2027:
-                errors.append(f"[{eid}] Date {start_d} is outside confirmed season window (2026 - Feb 2027). Unannounced future schedules are prohibited.")
-
-        # 6. Official Domain Integrity
-        off_url = ev.get("officialWebUrl", "")
-        if not is_domain_trusted(off_url, OFFICIAL_TRUSTED_DOMAINS):
-            errors.append(f"[{eid}] officialWebUrl `{off_url}` is not in OFFICIAL_TRUSTED_DOMAINS")
-
-        circ_url = ev.get("circuitWebUrl", "")
-        if not is_domain_trusted(circ_url, OFFICIAL_TRUSTED_DOMAINS):
-            errors.append(f"[{eid}] circuitWebUrl `{circ_url}` is not in OFFICIAL_TRUSTED_DOMAINS")
 
         state = ev.get("publicationState", {})
         print(
-            f"   ✅ {eid} ({ev.get('scope')}) | {start_str}..{end_str} | "
+            f"   ✅ {eid} ({ev.get('scope')}) | {ev.get('startDate', '')}..{ev.get('endDate', '')} | "
             f"preview={state.get('previewPublished')} | result={state.get('resultStatus')}"
         )
 

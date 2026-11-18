@@ -18,6 +18,8 @@ Supports:
 --------------------------------------------------------------------------------
 """
 
+from __future__ import annotations
+
 import argparse
 import base64
 import hashlib
@@ -110,12 +112,18 @@ def get_oauth1_header(
 
 
 def resolve_hero_image_path(article_data: dict[str, Any]) -> Path | None:
-    """Resolve an article's heroImage path under public/ if it exists on disk."""
+    """Resolve a raster hero image path under public/, falling back from .svg to the cat avatar PNG."""
     hero_rel = str(article_data.get("heroImage") or "").strip().lstrip("/")
-    if not hero_rel:
-        return None
-    candidate = PUBLIC_DIR / hero_rel
-    return candidate if candidate.is_file() else None
+    if hero_rel and not hero_rel.lower().endswith(".svg"):
+        candidate = PUBLIC_DIR / hero_rel
+        if candidate.is_file():
+            return candidate
+    featured_cat = str(article_data.get("featuredCat") or "naomi").strip().lower()
+    cat_fallback = PUBLIC_DIR / "images" / "cats" / f"{featured_cat}.png"
+    if cat_fallback.is_file():
+        return cat_fallback
+    default_hero = PUBLIC_DIR / "images" / "cats" / "hero-paddock.png"
+    return default_hero if default_hero.is_file() else None
 
 
 def prepare_image_bytes(image_path: Path) -> tuple[bytes, str, str]:
