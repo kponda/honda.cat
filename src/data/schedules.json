@@ -1818,9 +1818,9 @@
       "verifiedSource": "FIM MotoGP 公式カレンダー (motogp.com)",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "retry_wednesday",
+        "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-16"
+        "lastCheckedAt": "2026-11-18"
       }
     },
     {
@@ -1853,9 +1853,9 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4469/) ＆ HSR九州公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "retry_wednesday",
+        "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-16",
+        "lastCheckedAt": "2026-11-18",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -1925,9 +1925,9 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4480/) ＆ HSR九州公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "retry_wednesday",
+        "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-16",
+        "lastCheckedAt": "2026-11-18",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -1961,9 +1961,9 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4645/) ＆ レン耐公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "retry_wednesday",
+        "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-16",
+        "lastCheckedAt": "2026-11-18",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
