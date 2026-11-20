@@ -2103,10 +2103,11 @@
       "snsUrl": "https://x.com/tsukuba_circuit",
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4232/) ＆ 筑波サーキット公式",
       "publicationState": {
-        "previewPublished": false,
+        "previewPublished": true,
         "resultStatus": "pending",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
     },
     {
@@ -2138,10 +2139,11 @@
       "snsUrl": "https://www.facebook.com/spanaoiri",
       "verifiedSource": "SPA直入公式カレンダー (autopolis.jp/spa/)",
       "publicationState": {
-        "previewPublished": false,
+        "previewPublished": true,
         "resultStatus": "pending",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
     },
     {
@@ -2173,10 +2175,11 @@
       "snsUrl": "https://x.com/rentai_official",
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4646/) ＆ レン耐公式",
       "publicationState": {
-        "previewPublished": false,
+        "previewPublished": true,
         "resultStatus": "pending",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
     },
     {
