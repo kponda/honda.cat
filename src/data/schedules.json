@@ -2069,9 +2069,9 @@
       "verifiedSource": "FIM MotoGP 公式カレンダー (motogp.com)",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
+        "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-23"
       }
     },
     {
@@ -2104,9 +2104,9 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4232/) ＆ 筑波サーキット公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
+        "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "lastCheckedAt": "2026-11-23",
         "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
     },
@@ -2140,8 +2140,8 @@
       "verifiedSource": "SPA直入公式カレンダー (autopolis.jp/spa/)",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
-        "resultArticleId": null,
+        "resultStatus": "published_monday",
+        "resultArticleId": "2026-11-23-2026-spa-naoiri-super-sunday-festa-winter-digest",
         "lastCheckedAt": "2026-11-18T22:23:36+00:00",
         "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
@@ -2176,9 +2176,9 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4646/) ＆ レン耐公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "pending",
+        "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "lastCheckedAt": "2026-11-23",
         "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
     },
