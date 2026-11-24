@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-18T22:23:36+00:00",
+  "lastUpdated": "2026-11-24T08:57:41+00:00",
   "season": 2026,
   "collectionMethod": "Weekly Official Calendar Database Sync (Dec–Feb Off-Season Full-Year Ingestion + Weekly Differential Check)",
   "events": [
@@ -35,7 +35,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-02-23-worldsbk-rd1-phillip-island-bulega-sweep-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -70,7 +70,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-03-30-worldsbk-rd2-portimao-bulega-lecuona-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -96,7 +96,7 @@
         "en": "April 4–5, 2026 (JSB1000 Season Opener)"
       },
       "classes": "JSB1000",
-      "officialWebUrl": "https://www.superbike.jp/calendar/",
+      "officialWebUrl": "https://superbike.jp/calendar/",
       "circuitWebUrl": "https://www.mr-motegi.jp/2and4/",
       "snsHandle": "@jrr_official / @motegi_official",
       "snsUrl": "https://x.com/jrr_official",
@@ -105,7 +105,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-04-06-mfj-rd1-motegi-2and4-jsb1000-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -140,7 +140,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-04-13-kyushu-spa-naoiri-sunday-festa-spring-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -175,7 +175,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-04-20-worldsbk-assen-dutch-round-bulega-treble-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -210,7 +210,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-04-27-motogp-rd4-jerez-alex-marquez-victory-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -236,7 +236,7 @@
         "en": "April 25–26, 2026 (JSB1000, ST1000, ST600, J-GP3)"
       },
       "classes": "JSB1000 (2レース) / ST1000 / ST600 (2レース) / J-GP3 / 鈴鹿サンデー各クラス",
-      "officialWebUrl": "https://www.superbike.jp/calendar/",
+      "officialWebUrl": "https://superbike.jp/calendar/",
       "circuitWebUrl": "https://www.sportsland-sugo.co.jp/race/",
       "snsHandle": "@jrr_official / @sugo_official / @suzuka_event",
       "snsUrl": "https://x.com/jrr_official",
@@ -245,7 +245,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-04-27-mfj-rd2-sugo-and-suzuka-sunday-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -280,7 +280,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-04-worldsbk-rd4-balaton-park-bulega-record12wins-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -315,7 +315,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-04-hsr-kyushu-tetsuma-kassen-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -350,7 +350,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-11-motogp-rd5-lemans-martin-ogura-podium-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -385,7 +385,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-11-polispa-rd1-autopolis-and-tot-satsuki-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -420,7 +420,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-18-motogp-rd6-catalunya-digiannantonio-aldeguer-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -455,7 +455,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-18-worldsbk-rd5-most-bulega-streak-czech-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -490,7 +490,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-25-kyushu-odai-r2-nakakyushu-and-rentai-ajimu-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -525,7 +525,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-25-kyushu-odai-r2-nakakyushu-and-rentai-ajimu-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -560,7 +560,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-01-motogp-rd7-mugello-bezzecchi-raul-fernandez-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -595,7 +595,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-01-worldsbk-rd6-aragon-bulega-hattrick-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -622,7 +622,7 @@
       },
       "classes": "JSB1000 (2レース) / ST1000 / ST600 / J-GP3 / MFJ CUP JP250",
       "officialWebUrl": "https://autopolis.jp/ap/event/",
-      "circuitWebUrl": "https://www.superbike.jp/",
+      "circuitWebUrl": "https://superbike.jp/",
       "snsHandle": "@autopolis2005 / @jrr_official",
       "snsUrl": "https://x.com/autopolis2005",
       "verifiedSource": "オートポリス公式 (autopolis.jp) ＆ MFJ / JRR全日本公式 (superbike.jp)",
@@ -630,7 +630,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-01-mfj-rd3-autopolis-kyushu-superbike-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -665,7 +665,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-08-motogp-rd8-hungary-balaton-marquez-sweep-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -700,7 +700,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-08-suzuka-motegi-regional-and-spa-naoiri-presummer-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -735,7 +735,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-15-worldsbk-misano-bulega-treble-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -770,7 +770,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-22-motogp-rd9-brno-marquez-ogura-bagnaia-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -796,7 +796,7 @@
         "en": "June 21, 2026 (Tsukuba & HSR Kyushu)"
       },
       "classes": "筑波：J-GP3 / JP-SPORT ／ HSR九州：ST1000 / ST600 / JP250 / ドリームカップ",
-      "officialWebUrl": "https://www.superbike.jp/calendar/",
+      "officialWebUrl": "https://superbike.jp/calendar/",
       "circuitWebUrl": "https://www.hsr.jp/",
       "snsHandle": "@jrr_official / @tsukuba_circuit / @hsr_kyushu",
       "snsUrl": "https://x.com/jrr_official",
@@ -805,7 +805,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-22-mfj-rd4-tsukuba-jgp3-ono-wakamatsu-and-hsr-kyushu-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -840,7 +840,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-29-motogp-rd10-assen-ai-ogura-maiden-win-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -875,7 +875,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-07-06-ewc-rd3-suzuka-8hours-hrc-5peat-takahashi-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -910,7 +910,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-07-13-motogp-rd11-sachsenring-marquez-fernandez-ogura-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -933,7 +933,7 @@
       "scheduleWindow": {
         "ja": "2026-07-10 - 2026-07-12 Race 1 / Superpole Race / Race 2",
         "ca": "2026-07-10 - 2026-07-12 (Race 1, Superpole Race i Race 2)",
-        "en": "2026-07-10 - 2026-07-12 (Race 1, Superpole Race & Race 2)"
+        "en": "2026-07-10 - 2026-07-10 (Race 1, Superpole Race & Race 2)"
       },
       "classes": "WorldSBK / WorldSSP / WorldSSP300",
       "officialWebUrl": "https://www.worldsbk.com/en/calendar",
@@ -945,7 +945,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-07-13-worldsbk-rd8-donington-lecuona-maiden-win-bulega-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -980,7 +980,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-07-13-hsr-kyushu-trophy-rd3-and-dreamcup-summer-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1015,7 +1015,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-08-10-motogp-rd12-silverstone-raul-fernandez-aprilia-123-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1050,7 +1050,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-08-24-hsr-kyushu-trophy-rd4-season-finale-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1085,7 +1085,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-08-31-motogp-rd13-aragon-marquez-acosta-bezzecchi-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1111,7 +1111,7 @@
         "en": "August 29–30, 2026 (Ryo Mizuno sweeps JSB1000 Races 1 & 2; Taiga Hada wins ST1000)"
       },
       "classes": "JSB1000 (2レース) / ST1000 / ST600 / J-GP3",
-      "officialWebUrl": "https://www.superbike.jp/calendar/",
+      "officialWebUrl": "https://superbike.jp/calendar/",
       "circuitWebUrl": "https://www.mr-motegi.jp/",
       "snsHandle": "@jrr_official / @motegi_official",
       "snsUrl": "https://x.com/jrr_official",
@@ -1120,7 +1120,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-08-31-mfj-rd5-motegi-mizuno-double-hada-fujita-chishiki-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1155,7 +1155,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-09-07-worldsbk-rd9-magny-cours-bulega-10th-pole-treble-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1190,7 +1190,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-09-07-polispa-rd3-spa-naoiri-autumn-and-hsr-4h-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1225,7 +1225,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-09-14-motogp-rd14-misano-marquez-brothers-1-2-acosta-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1260,7 +1260,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-09-21-motogp-rd15-austria-pedro-acosta-ktm-home-victory-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1295,7 +1295,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-09-21-hsr-kyushu-tetsuma-kessen-no-hi-september-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1330,7 +1330,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-09-28-worldsbk-rd10-cremona-bulega-champion-lecuona-win-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1356,7 +1356,7 @@
         "en": "September 26–27, 2026 (Tetsuta Nagashima claims maiden JSB1000 victory in the wet)"
       },
       "classes": "JSB1000 / ST1000 / ST600 / J-GP3",
-      "officialWebUrl": "https://www.superbike.jp/calendar/",
+      "officialWebUrl": "https://superbike.jp/calendar/",
       "circuitWebUrl": "https://www.okayama-international-circuit.jp/",
       "snsHandle": "@jrr_official",
       "snsUrl": "https://x.com/jrr_official",
@@ -1365,7 +1365,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-09-28-mfj-rd6-okayama-nagashima-maiden-jsb1000-win-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1400,7 +1400,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-05-motogp-rd16-japan-motegi-marc-marquez-2026-champion-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1435,7 +1435,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-05-polispa-rd4-autopolis-finale-and-sunday-festa-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1470,7 +1470,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-12-motogp-rd17-indonesia-mandalika-bezzecchi-aprilia-123-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1505,7 +1505,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-12-worldsbk-rd11-estoril-bulega-record-points-hattrick-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1540,7 +1540,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-12-kyushu-brows-odai-r3-sonic-park-ajimu-finale-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1575,7 +1575,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-19-worldsbk-rd12-jerez-finale-bulega-32wins-wet-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1610,7 +1610,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-26-motogp-rd18-australia-phillip-island-marquez-sprint-weather-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1636,7 +1636,7 @@
         "en": "October 24–25, 2026 (Ryo Mizuno clinches historic Ducati JSB1000 title; Katsuyuki Nakasuga wins farewell Race 2!)"
       },
       "classes": "JSB1000 (2レース) / ST1000 / ST600 / J-GP3 / JP250",
-      "officialWebUrl": "https://www.superbike.jp/calendar/",
+      "officialWebUrl": "https://superbike.jp/calendar/",
       "circuitWebUrl": "https://www.suzukacircuit.jp/mfjgp/",
       "snsHandle": "@jrr_official / @suzuka_event",
       "snsUrl": "https://x.com/jrr_official",
@@ -1645,7 +1645,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-26-mfj-rd7-suzuka-mfjgp-mizuno-ducati-title-nakasuga-farewell-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1680,7 +1680,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-11-02-motogp-rd19-malaysia-sepang-marquez-acosta-alex-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1715,7 +1715,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-11-09-motogp-rd20-qatar-lusail-bezzecchi-marquez-fernandez-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1750,7 +1750,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-11-09-kyushu-endurance-festa-spa-naoiri-and-tot-kaguraduki-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1785,7 +1785,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-11-09-kyushu-endurance-festa-spa-naoiri-and-tot-kaguraduki-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1820,7 +1820,7 @@
         "previewPublished": true,
         "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -1855,7 +1855,7 @@
         "previewPublished": true,
         "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -1891,7 +1891,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-11-16-2026-11-16-japan-domestic-race-digest-sugo-4h-6h-okayama-rd5",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -1927,7 +1927,7 @@
         "previewPublished": true,
         "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -1963,7 +1963,7 @@
         "previewPublished": true,
         "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -1999,7 +1999,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-11-16-2026-11-16-japan-domestic-race-digest-sugo-4h-6h-okayama-rd5",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
       }
     },
@@ -2035,8 +2035,42 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-11-16-2026-11-16-japan-domestic-race-digest-sugo-4h-6h-okayama-rd5",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-13-japan-autumn-circuit-endurance-preview-2026-sugo-hsr-okayama-ake"
+      }
+    },
+    {
+      "id": "2026-11-20-motogp-rd21-portimao-portugal",
+      "scope": "world",
+      "category": "motogp",
+      "series": "2026 FIM MotoGP 世界選手権 第21戦 ポルトガルGP (ポルティマオ)",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-22",
+      "circuit": {
+        "ja": "アウトードロモ・インテルナシオナル・ド・アルガルヴェ（ポルトガル・ポルティマオ・全長4,592m）",
+        "ca": "Autódromo Internacional do Algarve (Portimão, Portugal · 4.592 m)",
+        "en": "Autódromo Internacional do Algarve (Portimão, Portugal · 4,592m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第21戦 グランプレミオ・デ・ポルトガル（ポルティマオGP）",
+        "ca": "2026 Gran Premi de Portugal de MotoGP a Portimão",
+        "en": "2026 MotoGP Rd.21 Grande Prémio de Portugal (Portimão)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月20日(金)〜11月22日(日) 開催（欧州終盤2連戦初戦・高低差ジェットコースター決戦）",
+        "ca": "20-22 de novembre de 2026 (Muntanya russa d'Algarve)",
+        "en": "November 20–22, 2026 (Rollercoaster elevation showdown at Portimão)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/en/calendar",
+      "circuitWebUrl": "https://autodromodoalgarve.com/",
+      "snsHandle": "@MotoGP / @AIAgenc",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP 公式カレンダー (motogp.com)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -2071,7 +2105,7 @@
         "previewPublished": true,
         "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-23"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -2106,7 +2140,7 @@
         "previewPublished": true,
         "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-23",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
     },
@@ -2142,7 +2176,7 @@
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-11-23-2026-spa-naoiri-super-sunday-festa-winter-digest",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
     },
@@ -2178,7 +2212,7 @@
         "previewPublished": true,
         "resultStatus": "retry_wednesday",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-23",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
     },
@@ -2214,7 +2248,75 @@
         "previewPublished": false,
         "resultStatus": "pending",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-11-25-worldsbk-jerez-official-test",
+      "scope": "world",
+      "category": "sbk",
+      "series": "2026-2027 FIM WorldSBK ヘレス公式オフシーズンテスト",
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-26",
+      "circuit": {
+        "ja": "ヘレス・サーキット＝アンヘル・ニエト（スペイン・アンダルシア・全長4,423m）",
+        "ca": "Circuito de Jerez-Ángel Nieto (Andalusia, Espanya · 4.423 m)",
+        "en": "Circuito de Jerez-Ángel Nieto (Andalusia, Spain · 4,423m)"
+      },
+      "eventName": {
+        "ja": "2026 WorldSBK ヘレス公式テスト (Jerez Official Test)",
+        "ca": "Test Oficial de WorldSBK a Jerez 2026",
+        "en": "2026 WorldSBK Jerez Official Test"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月25日(水)〜11月26日(木) 開催（2027年プレシーズンテスト開幕）",
+        "ca": "25-26 de novembre de 2026 (Test oficial de pretemporada a Jerez)",
+        "en": "November 25–26, 2026 (Official post-season test at Jerez)"
+      },
+      "classes": "WorldSBK / WorldSSP",
+      "officialWebUrl": "https://www.worldsbk.com/en/calendar",
+      "circuitWebUrl": "https://www.circuitodejerez.com/",
+      "snsHandle": "@WorldSBK",
+      "snsUrl": "https://x.com/WorldSBK",
+      "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-11-27-motogp-rd22-valencia-spain-finale",
+      "scope": "world",
+      "category": "motogp",
+      "series": "2026 FIM MotoGP 世界選手権 第22戦（シーズン最終戦）バレンシアGP",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-29",
+      "circuit": {
+        "ja": "サーキット・リカルド・トルモ（スペイン・バレンシア・チェステ / 全長4,005m）",
+        "ca": "Circuit Ricardo Tormo (Xest, País Valencià · 4.005 m)",
+        "en": "Circuit Ricardo Tormo (Cheste, Valencia, Spain · 4,005m)"
+      },
+      "eventName": {
+        "ja": "2026 FIM MotoGP 第22戦 グランプレミオ・モトゥル・デ・ラ・コムニタ・バレンシアーナ（グランドファイナル）",
+        "ca": "2026 Gran Premi Motul de la Comunitat Valenciana de MotoGP (Gran Final)",
+        "en": "2026 MotoGP Rd.22 Gran Premio Motul de la Comunitat Valenciana (Season Finale)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月27日(金)〜11月29日(日) 開催（MotoGP 2026 シーズン閉幕・年間表彰式）",
+        "ca": "27-29 de novembre de 2026 (Gran Final de la Temporada MotoGP 2026)",
+        "en": "November 27–29, 2026 (MotoGP 2026 Season Finale & FIM Awards)"
+      },
+      "classes": "MotoGP / Moto2 / Moto3",
+      "officialWebUrl": "https://www.motogp.com/en/calendar",
+      "circuitWebUrl": "https://www.circuitvalencia.com/",
+      "snsHandle": "@MotoGP / @CircuitValencia",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP 公式カレンダー (motogp.com)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -2249,7 +2351,7 @@
         "previewPublished": false,
         "resultStatus": "pending",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -2283,7 +2385,41 @@
       "publicationState": {
         "previewPublished": false,
         "resultStatus": "pending",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-12-01-motogp-valencia-official-test",
+      "scope": "world",
+      "category": "motogp",
+      "series": "2026-2027 FIM MotoGP バレンシア公式テスト",
+      "startDate": "2026-12-01",
+      "endDate": "2026-12-01",
+      "circuit": {
+        "ja": "サーキット・リカルド・トルモ（スペイン・バレンシア・チェステ）",
+        "ca": "Circuit Ricardo Tormo (Xest, País Valencià)",
+        "en": "Circuit Ricardo Tormo (Cheste, Valencia, Spain)"
+      },
+      "eventName": {
+        "ja": "2027 MotoGP プレシーズン初戦：バレンシア公式テスト (Valencia Official Test)",
+        "ca": "Test Oficial de MotoGP a València 2027 (Pretemporada)",
+        "en": "2027 MotoGP Valencia Official Test (First Pre-Season Test)"
+      },
+      "scheduleWindow": {
+        "ja": "2026年12月1日(火) 1Day開催（最終戦直後・850cc新規定初テスト＆移籍ライダー初走行）",
+        "ca": "1 de desembre de 2026 (Primer test oficial amb les noves motos de 850cc)",
+        "en": "December 1, 2026 (First shakedown of new 850cc prototypes & rider team debuts)"
+      },
+      "classes": "MotoGP Premier Class",
+      "officialWebUrl": "https://www.motogp.com/en/calendar",
+      "circuitWebUrl": "https://www.circuitvalencia.com/",
+      "snsHandle": "@MotoGP",
+      "snsUrl": "https://x.com/MotoGP",
+      "verifiedSource": "FIM MotoGP 公式 (motogp.com)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -2317,7 +2453,7 @@
       "publicationState": {
         "previewPublished": false,
         "resultStatus": "pending",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     },
     {
@@ -2351,7 +2487,7 @@
       "publicationState": {
         "previewPublished": false,
         "resultStatus": "pending",
-        "lastCheckedAt": "2026-11-18T22:23:36+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
       }
     }
   ]
