@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T08:57:41+00:00",
+  "lastUpdated": "2026-11-25T21:15:00+09:00",
   "season": 2026,
   "collectionMethod": "Weekly Official Calendar Database Sync (Dec–Feb Off-Season Full-Year Ingestion + Weekly Differential Check)",
   "events": [
@@ -39,6 +39,76 @@
       }
     },
     {
+      "id": "2026-03-08-hsr-kyushu-s250-hinokuni-5h-endurance",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 MFJ承認 S250火の国耐久レース（5時間耐久・火の国5）in HSR九州",
+      "startDate": "2026-03-08",
+      "endDate": "2026-03-08",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 MFJ承認 S250火の国 5時間耐久レース in HSR九州",
+        "ca": "2026 S250 Hinokuni Resistència de 5 Hores a HSR Kyushu",
+        "en": "2026 MFJ S250 Hinokuni 5-Hour Endurance Race at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年3月8日(日) 1Day開催（4スト250cc市販車ベース・5時間耐久開幕戦）",
+        "ca": "8 de març de 2026 (Resistència de 5 hores per a 250cc 4T a HSR Kyushu)",
+        "en": "March 8, 2026 (250cc 4-stroke 5-hour endurance opener at HSR Kyushu)"
+      },
+      "classes": "シングル250 / ツイン250 / マルチ250 / G310R",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/170/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
+      }
+    },
+    {
+      "id": "2026-03-15-hsr-kyushu-dream-sunday-rd1-and-trophy-rd1",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 ドリームSundayレース R-1（ミニバイク）＆ HSR九州 Trophy ロードレース R-1",
+      "startDate": "2026-03-15",
+      "endDate": "2026-03-15",
+      "circuit": {
+        "ja": "HSR九州 ドリームコース（695m）＆ サーキットコース（2,350m・熊本県大津町）",
+        "ca": "HSR Kyushu Dream Course (695m) i Circuit Course (2.350m · Kumamoto)",
+        "en": "HSR Kyushu Dream Course (695m) & Circuit Course (2,350m · Kumamoto)"
+      },
+      "eventName": {
+        "ja": "2026 ドリームSundayレース R-1（ミニバイク開幕戦）＆ HSR九州 Trophy ロードレース選手権 R-1",
+        "ca": "2026 Dream Sunday Minibike Race R-1 i HSR Kyushu Trophy Road Race R-1",
+        "en": "2026 Dream Sunday Minibike Race R-1 & HSR Kyushu Trophy Road Race R-1"
+      },
+      "scheduleWindow": {
+        "ja": "2026年3月15日(日) 1Day開催（ドリームコースAMミニバイクスプリント＆PM耐久 ／ 本コースTrophy開幕戦）",
+        "ca": "15 de març de 2026 (Obertura de les sèries Minibike i Trophy a HSR Kyushu)",
+        "en": "March 15, 2026 (Minibike AM sprint/PM endurance & Trophy opener at HSR Kyushu)"
+      },
+      "classes": "ミニバイク：SP / ST12 / OP12 / HRC Grom Cup / NSF100 Trophy / 耐久A・B・C ／ 本コース：ST1000 / ST600 / JP250 / ドリームカップ",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/189/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
+      }
+    },
+    {
       "id": "2026-03-27-worldsbk-portimao-portuguese-round",
       "scope": "world",
       "category": "sbk",
@@ -74,6 +144,41 @@
       }
     },
     {
+      "id": "2026-03-29-hsr-kyushu-super-dream-sunday-minibike-rd1",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 SuperドリームSundayレース R-1（サーキットコース・ミニバイク）",
+      "startDate": "2026-03-29",
+      "endDate": "2026-03-29",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 SuperドリームSundayレース R-1（HSR九州 本コース・ミニバイクスプリント＆耐久）",
+        "ca": "2026 Super Dream Sunday Minibike Race R-1 a HSR Kyushu",
+        "en": "2026 Super Dream Sunday Minibike Race R-1 at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年3月29日(日) 1Day開催（全長2,350mフルコースで競うミニバイクスプリント＆耐久第1戦）",
+        "ca": "29 de març de 2026 (Sprint i resistència de minibikes al traçat principal d'HSR Kyushu)",
+        "en": "March 29, 2026 (Minibike sprint & endurance Round 1 on HSR Kyushu full course)"
+      },
+      "classes": "2st-SP50 / 4st-SP100 / 4st-SP100S / 4st-SF100 / 4st-125 (GROM/Z125) / ST17",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/149/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
+      }
+    },
+    {
       "id": "2026-04-04-mfj-rd1-motegi-2and4",
       "scope": "japan",
       "category": "all-japan",
@@ -96,16 +201,51 @@
         "en": "April 4–5, 2026 (JSB1000 Season Opener)"
       },
       "classes": "JSB1000",
-      "officialWebUrl": "https://superbike.jp/calendar/",
+      "officialWebUrl": "https://www.jrr.jp/calendar/",
       "circuitWebUrl": "https://www.mr-motegi.jp/2and4/",
       "snsHandle": "@jrr_official / @motegi_official",
       "snsUrl": "https://x.com/jrr_official",
-      "verifiedSource": "MFJ / JRR公式 (superbike.jp) ＆ モビリティリゾートもてぎ公式 (mr-motegi.jp)",
+      "verifiedSource": "MFJ / JRR公式 (jrr.jp) ＆ モビリティリゾートもてぎ公式 (mr-motegi.jp)",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-04-06-mfj-rd1-motegi-2and4-jsb1000-digest",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-04-05-hsr-kyushu-saga-cup-rd1",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 SAGA CUP R-1 in HSR九州（ミニバイク耐久＆スプリント）",
+      "startDate": "2026-04-05",
+      "endDate": "2026-04-05",
+      "circuit": {
+        "ja": "HSR九州 ドリームコース（熊本県菊池郡大津町・全長695m）",
+        "ca": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)",
+        "en": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)"
+      },
+      "eventName": {
+        "ja": "2026 SAGA CUP R-1【HSR九州 ドリームコース（ミニバイク耐久＋スプリント）】",
+        "ca": "2026 SAGA CUP R-1 de Minibikes a HSR Kyushu Dream Course",
+        "en": "2026 SAGA CUP R-1 Minibike Endurance & Sprint at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年4月5日(日) 1Day開催（九州ミニバイク耐久＆スプリント人気シリーズ開幕戦）",
+        "ca": "5 d'abril de 2026 (Ronda inaugural de la SAGA CUP de minibikes a HSR Kyushu)",
+        "en": "April 5, 2026 (SAGA CUP minibike endurance & sprint Round 1 at HSR Kyushu)"
+      },
+      "classes": "ミニバイク耐久レース＋スプリント（17インチまでのミニバイク各車両）",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/182/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {
@@ -236,11 +376,11 @@
         "en": "April 25–26, 2026 (JSB1000, ST1000, ST600, J-GP3)"
       },
       "classes": "JSB1000 (2レース) / ST1000 / ST600 (2レース) / J-GP3 / 鈴鹿サンデー各クラス",
-      "officialWebUrl": "https://superbike.jp/calendar/",
+      "officialWebUrl": "https://www.jrr.jp/calendar/",
       "circuitWebUrl": "https://www.sportsland-sugo.co.jp/race/",
       "snsHandle": "@jrr_official / @sugo_official / @suzuka_event",
       "snsUrl": "https://x.com/jrr_official",
-      "verifiedSource": "MFJ / JRR公式 (superbike.jp) ・ SUGO公式 ・ 鈴鹿サーキット公式",
+      "verifiedSource": "MFJ / JRR公式 (jrr.jp) ・ SUGO公式 ・ 鈴鹿サーキット公式",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
@@ -306,11 +446,11 @@
         "en": "May 2–3, 2026 (Qualifying & Finals across all Iron Frame classes)"
       },
       "classes": "アイアンACS / WCS / ACT17 / ACT18 / WCT / ネオクラシック350",
-      "officialWebUrl": "https://www.tetsuma.jp/",
-      "circuitWebUrl": "https://www.hsr.jp/",
+      "officialWebUrl": "https://www.tetsuuma.com/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
       "snsHandle": "@tetsuma_with_b / @hsr_kyushu",
       "snsUrl": "https://x.com/tetsuma_with_b",
-      "verifiedSource": "鉄馬実行委員会公式 (tetsuma.jp) ＆ HSR九州公式 (hsr.jp)",
+      "verifiedSource": "鉄馬実行委員会公式 (tetsuuma.com) ＆ HSR九州公式 (rms.co.jp/kumamoto/hsr/)",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
@@ -386,6 +526,41 @@
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-11-polispa-rd1-autopolis-and-tot-satsuki-digest",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-05-10-hsr-kyushu-super-dream-sunday-minibike-rd2",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 SuperドリームSundayレース R-2（サーキットコース・ミニバイク）",
+      "startDate": "2026-05-10",
+      "endDate": "2026-05-10",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 SuperドリームSundayレース R-2（HSR九州 本コース・ミニバイクスプリント＆耐久）",
+        "ca": "2026 Super Dream Sunday Minibike Race R-2 a HSR Kyushu",
+        "en": "2026 Super Dream Sunday Minibike Race R-2 at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年5月10日(日) 1Day開催（HSR九州サーキットコース ミニバイクスプリント＆耐久第2戦）",
+        "ca": "10 de maig de 2026 (Sprint i resistència de minibikes Ronda 2 a HSR Kyushu)",
+        "en": "May 10, 2026 (Minibike sprint & endurance Round 2 on HSR Kyushu Circuit Course)"
+      },
+      "classes": "2st-SP50 / 4st-SP100 / 4st-SP100S / 4st-SF100 / 4st-125 / ST17",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/149/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {
@@ -491,6 +666,41 @@
         "resultStatus": "published_monday",
         "resultArticleId": "2026-05-25-kyushu-odai-r2-nakakyushu-and-rentai-ajimu-digest",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-05-24-hsr-kyushu-dream-sunday-minibike-rd2",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 ドリームSundayレース R-2（ドリームコース・ミニバイク）",
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-24",
+      "circuit": {
+        "ja": "HSR九州 ドリームコース（熊本県菊池郡大津町・全長695m）",
+        "ca": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)",
+        "en": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)"
+      },
+      "eventName": {
+        "ja": "2026 ドリームSundayレース R-2【HSR九州 ドリームコース（ミニバイクAMスプリント＆PM耐久）】",
+        "ca": "2026 Dream Sunday Minibike Race R-2 a HSR Kyushu Dream Course",
+        "en": "2026 Dream Sunday Minibike Race R-2 at HSR Kyushu Dream Course"
+      },
+      "scheduleWindow": {
+        "ja": "2026年5月24日(日) 1Day開催（HRC Grom Cup・NSF100 Trophy・ミニバイク耐久第2戦）",
+        "ca": "24 de maig de 2026 (HRC Grom Cup, NSF100 Trophy i resistència de minibikes R-2)",
+        "en": "May 24, 2026 (HRC Grom Cup, NSF100 Trophy & minibike endurance Round 2)"
+      },
+      "classes": "SP / ST12 / OP12 / HRC Grom Cup / NSF100 HRC Trophy / 耐久A・B・Cクラス",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/189/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {
@@ -622,10 +832,10 @@
       },
       "classes": "JSB1000 (2レース) / ST1000 / ST600 / J-GP3 / MFJ CUP JP250",
       "officialWebUrl": "https://autopolis.jp/ap/event/",
-      "circuitWebUrl": "https://superbike.jp/",
+      "circuitWebUrl": "https://www.jrr.jp/",
       "snsHandle": "@autopolis2005 / @jrr_official",
       "snsUrl": "https://x.com/autopolis2005",
-      "verifiedSource": "オートポリス公式 (autopolis.jp) ＆ MFJ / JRR全日本公式 (superbike.jp)",
+      "verifiedSource": "オートポリス公式 (autopolis.jp) ＆ MFJ / JRR全日本公式 (jrr.jp)",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
@@ -701,6 +911,41 @@
         "resultStatus": "published_monday",
         "resultArticleId": "2026-06-08-suzuka-motegi-regional-and-spa-naoiri-presummer-digest",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-06-07-hsr-kyushu-saga-cup-rd2",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 SAGA CUP R-2 in HSR九州（ミニバイク耐久＆スプリント）",
+      "startDate": "2026-06-07",
+      "endDate": "2026-06-07",
+      "circuit": {
+        "ja": "HSR九州 ドリームコース（熊本県菊池郡大津町・全長695m）",
+        "ca": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)",
+        "en": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)"
+      },
+      "eventName": {
+        "ja": "2026 SAGA CUP R-2【HSR九州 ドリームコース（ミニバイク耐久＋スプリント）】",
+        "ca": "2026 SAGA CUP R-2 de Minibikes a HSR Kyushu Dream Course",
+        "en": "2026 SAGA CUP R-2 Minibike Endurance & Sprint at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年6月7日(日) 1Day開催（九州ミニバイク耐久＆スプリント第2戦）",
+        "ca": "7 de juny de 2026 (SAGA CUP de minibikes Ronda 2 a HSR Kyushu)",
+        "en": "June 7, 2026 (SAGA CUP minibike endurance & sprint Round 2 at HSR Kyushu)"
+      },
+      "classes": "ミニバイク耐久レース＋スプリント（17インチまでのミニバイク各車両）",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/182/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {
@@ -796,11 +1041,11 @@
         "en": "June 21, 2026 (Tsukuba & HSR Kyushu)"
       },
       "classes": "筑波：J-GP3 / JP-SPORT ／ HSR九州：ST1000 / ST600 / JP250 / ドリームカップ",
-      "officialWebUrl": "https://superbike.jp/calendar/",
-      "circuitWebUrl": "https://www.hsr.jp/",
+      "officialWebUrl": "https://www.jrr.jp/calendar/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
       "snsHandle": "@jrr_official / @tsukuba_circuit / @hsr_kyushu",
       "snsUrl": "https://x.com/jrr_official",
-      "verifiedSource": "MFJ / JRR全日本公式 (superbike.jp) ・ 筑波サーキット公式 ・ HSR九州公式",
+      "verifiedSource": "MFJ / JRR全日本公式 (jrr.jp) ・ 筑波サーキット公式 ・ HSR九州公式",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
@@ -971,11 +1216,11 @@
         "en": "July 12, 2026 (HSR Kyushu, Kumamoto)"
       },
       "classes": "ST1000 / ST600 / JP250 / ドリームカップ各クラス",
-      "officialWebUrl": "https://www.hsr.jp/",
-      "circuitWebUrl": "https://www.hsr.jp/",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
       "snsHandle": "@hsr_kyushu",
       "snsUrl": "https://www.instagram.com/hsr_kyushu/",
-      "verifiedSource": "HSR九州公式 (hsr.jp) ＆ MFJ九州公式",
+      "verifiedSource": "HSR九州公式 (rms.co.jp/kumamoto/hsr/) ＆ MFJ九州公式",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
@@ -1019,6 +1264,41 @@
       }
     },
     {
+      "id": "2026-08-16-hsr-kyushu-s250-hinokuni-7h-endurance",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 MFJ承認 S250火の国耐久レース（7時間耐久・火の国7）in HSR九州",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 MFJ承認 S250火の国 7時間耐久レース in HSR九州",
+        "ca": "2026 S250 Hinokuni Resistència de 7 Hores a HSR Kyushu",
+        "en": "2026 MFJ S250 Hinokuni 7-Hour Endurance Race at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年8月16日(日) 1Day開催（真夏の阿蘇麓を走り抜く250cc 7時間耐久）",
+        "ca": "16 d'agost de 2026 (Resistència estival de 7 hores per a 250cc 4T a HSR Kyushu)",
+        "en": "August 16, 2026 (Midsummer 250cc 4-stroke 7-hour endurance at HSR Kyushu)"
+      },
+      "classes": "シングル250 / ツイン250 / マルチ250 / G310R",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/170/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
+      }
+    },
+    {
       "id": "2026-08-23-hsr-kyushu-trophy-rd4-finale",
       "scope": "japan",
       "category": "kyushu",
@@ -1041,11 +1321,11 @@
         "en": "August 23, 2026 (HSR Kyushu Trophy Season Finale)"
       },
       "classes": "ST1000 / ST600 / JP250 / ドリームカップ各クラス",
-      "officialWebUrl": "https://www.hsr.jp/",
-      "circuitWebUrl": "https://www.hsr.jp/",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
       "snsHandle": "@hsr_kyushu",
       "snsUrl": "https://www.instagram.com/hsr_kyushu/",
-      "verifiedSource": "HSR九州公式 (hsr.jp)",
+      "verifiedSource": "HSR九州公式 (rms.co.jp/kumamoto/hsr/)",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
@@ -1111,16 +1391,51 @@
         "en": "August 29–30, 2026 (Ryo Mizuno sweeps JSB1000 Races 1 & 2; Taiga Hada wins ST1000)"
       },
       "classes": "JSB1000 (2レース) / ST1000 / ST600 / J-GP3",
-      "officialWebUrl": "https://superbike.jp/calendar/",
+      "officialWebUrl": "https://www.jrr.jp/calendar/",
       "circuitWebUrl": "https://www.mr-motegi.jp/",
       "snsHandle": "@jrr_official / @motegi_official",
       "snsUrl": "https://x.com/jrr_official",
-      "verifiedSource": "MFJ / JRR全日本公式 (superbike.jp) ＆ モビリティリゾートもてぎ公式",
+      "verifiedSource": "MFJ / JRR全日本公式 (jrr.jp) ＆ モビリティリゾートもてぎ公式",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-08-31-mfj-rd5-motegi-mizuno-double-hada-fujita-chishiki-digest",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-08-30-hsr-kyushu-super-dream-sunday-minibike-rd3-grom",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 SuperドリームSundayレース R-3（グロムオンリー）",
+      "startDate": "2026-08-30",
+      "endDate": "2026-08-30",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 SuperドリームSundayレース R-3（グロムオンリー特別戦）in HSR九州",
+        "ca": "2026 Super Dream Sunday Minibike Race R-3 (Especial Honda GROM) a HSR Kyushu",
+        "en": "2026 Super Dream Sunday Minibike Race R-3 (GROM-Only Special) at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年8月30日(日) 1Day開催（HSR九州サーキットコース グロム限定スプリント＆耐久）",
+        "ca": "30 d'agost de 2026 (Cursa especial exclusiva per a Honda GROM al circuit principal d'HSR Kyushu)",
+        "en": "August 30, 2026 (GROM-only sprint & endurance special on HSR Kyushu Circuit Course)"
+      },
+      "classes": "Honda GROM (4st-125) スプリント＆耐久",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/149/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {
@@ -1182,10 +1497,10 @@
       },
       "classes": "POLISPA (JSB1000 / ST1000 / ST600 / JP-SPORT) / Ninja Team Green Cup / HSR九州ドリームカップ4耐",
       "officialWebUrl": "https://autopolis.jp/spa/",
-      "circuitWebUrl": "https://www.hsr.jp/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
       "snsHandle": "SPA直入公式FB / @autopolis2005 / @hsr_kyushu",
       "snsUrl": "https://x.com/autopolis2005",
-      "verifiedSource": "SPA直入公式 (autopolis.jp/spa/) ＆ HSR九州公式 (hsr.jp)",
+      "verifiedSource": "SPA直入公式 (autopolis.jp/spa/) ＆ HSR九州公式 (rms.co.jp/kumamoto/hsr/)",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
@@ -1226,6 +1541,41 @@
         "resultStatus": "published_monday",
         "resultArticleId": "2026-09-14-motogp-rd14-misano-marquez-brothers-1-2-acosta-digest",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-09-13-hsr-kyushu-world-saga-cup-3h",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 WORLD SAGA CUP（サーキットコース ミニバイク3時間耐久）in HSR九州",
+      "startDate": "2026-09-13",
+      "endDate": "2026-09-13",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 WORLD SAGA CUP（HSR九州 本コース・ミニバイク3時間耐久レース）",
+        "ca": "2026 WORLD SAGA CUP: 3 Hores de Resistència de Minibikes a HSR Kyushu",
+        "en": "2026 WORLD SAGA CUP 3-Hour Minibike Endurance at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年9月13日(日) 開催（年1回の本コース特別開催・クジ引きグリッドから挑むミニバイク3時間耐久）",
+        "ca": "13 de setembre de 2026 (3 hores de resistència especial de minibikes al circuit complet d'HSR Kyushu)",
+        "en": "September 13, 2026 (Annual 3-hour minibike endurance special on HSR Kyushu Circuit Course)"
+      },
+      "classes": "ミニバイク3時間耐久（17インチまでのミニバイク各車両）",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/182/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式 (rms.co.jp/kumamoto/hsr/) ＆ 公式リザルト (ms-event.net)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {
@@ -1286,11 +1636,11 @@
         "en": "September 19–20, 2026 (4-Cylinder Iron Frame Sprint Festival at HSR Kyushu)"
       },
       "classes": "アイアン4気筒各クラス（ACS / WCS / ACT17 / ACT18 / SUPER IRON 他）",
-      "officialWebUrl": "https://www.tetsuma.jp/",
-      "circuitWebUrl": "https://www.hsr.jp/",
+      "officialWebUrl": "https://www.tetsuuma.com/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
       "snsHandle": "@tetsuma_with_b / @hsr_kyushu",
       "snsUrl": "https://x.com/tetsuma_with_b",
-      "verifiedSource": "鉄馬実行委員会公式 (tetsuma.jp) ＆ HSR九州公式 (hsr.jp)",
+      "verifiedSource": "鉄馬実行委員会公式 (tetsuuma.com) ＆ HSR九州公式 (rms.co.jp/kumamoto/hsr/)",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
@@ -1356,11 +1706,11 @@
         "en": "September 26–27, 2026 (Tetsuta Nagashima claims maiden JSB1000 victory in the wet)"
       },
       "classes": "JSB1000 / ST1000 / ST600 / J-GP3",
-      "officialWebUrl": "https://superbike.jp/calendar/",
+      "officialWebUrl": "https://www.jrr.jp/calendar/",
       "circuitWebUrl": "https://www.okayama-international-circuit.jp/",
       "snsHandle": "@jrr_official",
       "snsUrl": "https://x.com/jrr_official",
-      "verifiedSource": "MFJ / JRR全日本公式 (superbike.jp) ＆ 岡山国際サーキット公式",
+      "verifiedSource": "MFJ / JRR全日本公式 (jrr.jp) ＆ 岡山国際サーキット公式",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
@@ -1401,6 +1751,41 @@
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-05-motogp-rd16-japan-motegi-marc-marquez-2026-champion-digest",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-10-04-hsr-kyushu-saga-cup-rd3",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 SAGA CUP R-3 in HSR九州（ミニバイク2時間耐久＆スプリント）",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "circuit": {
+        "ja": "HSR九州 ドリームコース（熊本県菊池郡大津町・全長695m）",
+        "ca": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)",
+        "en": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)"
+      },
+      "eventName": {
+        "ja": "2026 SAGA CUP R-3【HSR九州 ドリームコース（ミニバイク2時間耐久＋スプリント）】",
+        "ca": "2026 SAGA CUP R-3 de Minibikes a HSR Kyushu Dream Course",
+        "en": "2026 SAGA CUP R-3 Minibike 2h Endurance & Sprint at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月4日(日) 1Day開催（ミニバイク2時間耐久＆スプリント2ヒート制）",
+        "ca": "4 d'octubre de 2026 (2 hores de resistència i 2 mànegues sprint de minibikes a HSR Kyushu)",
+        "en": "October 4, 2026 (Minibike 2-hour endurance & 2-race sprint Round 3 at HSR Kyushu)"
+      },
+      "classes": "ミニバイク2時間耐久＋スプリント（RACE-1 / RACE-2）",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/182/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式 (rms.co.jp/kumamoto/hsr/) ＆ 公式リザルト (ms-event.net)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {
@@ -1579,6 +1964,41 @@
       }
     },
     {
+      "id": "2026-10-18-hsr-kyushu-s250-hinokuni-3h-endurance",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 MFJ承認 S250火の国耐久レース（3時間耐久・火の国3）in HSR九州",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 MFJ承認 S250火の国 3時間耐久レース in HSR九州",
+        "ca": "2026 S250 Hinokuni Resistència de 3 Hores a HSR Kyushu",
+        "en": "2026 MFJ S250 Hinokuni 3-Hour Endurance Race at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月18日(日) 1Day開催（2026年S250火の国耐久シリーズ締めくくりの3時間耐久）",
+        "ca": "18 d'octubre de 2026 (Cursa final de 3 hores de la sèrie S250 Hinokuni a HSR Kyushu)",
+        "en": "October 18, 2026 (Season-closing 3-hour endurance of the S250 Hinokuni series at HSR Kyushu)"
+      },
+      "classes": "シングル250 / ツイン250 / マルチ250 / G310R",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/170/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式 (rms.co.jp/kumamoto/hsr/) ＆ 公式リザルト (ms-event.net)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
+      }
+    },
+    {
       "id": "2026-10-23-motogp-rd18-australia-phillip-island",
       "scope": "world",
       "category": "motogp",
@@ -1636,16 +2056,51 @@
         "en": "October 24–25, 2026 (Ryo Mizuno clinches historic Ducati JSB1000 title; Katsuyuki Nakasuga wins farewell Race 2!)"
       },
       "classes": "JSB1000 (2レース) / ST1000 / ST600 / J-GP3 / JP250",
-      "officialWebUrl": "https://superbike.jp/calendar/",
+      "officialWebUrl": "https://www.jrr.jp/calendar/",
       "circuitWebUrl": "https://www.suzukacircuit.jp/mfjgp/",
       "snsHandle": "@jrr_official / @suzuka_event",
       "snsUrl": "https://x.com/jrr_official",
-      "verifiedSource": "MFJ / JRR全日本公式 (superbike.jp) ＆ 鈴鹿サーキット公式 (suzukacircuit.jp)",
+      "verifiedSource": "MFJ / JRR全日本公式 (jrr.jp) ＆ 鈴鹿サーキット公式 (suzukacircuit.jp)",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "published_monday",
         "resultArticleId": "2026-10-26-mfj-rd7-suzuka-mfjgp-mizuno-ducati-title-nakasuga-farewell-digest",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-10-25-hsr-kyushu-dream-sunday-minibike-rd3",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 ドリームSundayレース R-3（ドリームコース・ミニバイク）",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "circuit": {
+        "ja": "HSR九州 ドリームコース（熊本県菊池郡大津町・全長695m）",
+        "ca": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)",
+        "en": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)"
+      },
+      "eventName": {
+        "ja": "2026 ドリームSundayレース R-3【HSR九州 ドリームコース（ミニバイクスプリント＆3時間耐久）】",
+        "ca": "2026 Dream Sunday Minibike Race R-3 (Sprint i 3 Hores) a HSR Kyushu",
+        "en": "2026 Dream Sunday Minibike Race R-3 (Sprint & 3h Endurance) at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年10月25日(日) 1Day開催（GROM RC/AC・SP/ST/NSFスプリント＆3時間耐久）",
+        "ca": "25 d'octubre de 2026 (Sprint GROM / SP / ST / NSF i 3 hores de resistència a HSR Kyushu)",
+        "en": "October 25, 2026 (GROM / SP / ST / NSF sprints & 3-hour minibike endurance at HSR Kyushu)"
+      },
+      "classes": "SP / ST12 / OP12 / HRC Grom Cup (AC/RC) / NSF100 HRC Trophy / 3時間耐久（A・B・Cクラス）",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/189/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式 (rms.co.jp/kumamoto/hsr/) ＆ 公式リザルト (ms-event.net)",
+      "publicationState": {
+        "previewPublished": true,
+        "resultStatus": "not_available",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {
@@ -1829,25 +2284,25 @@
       "category": "kyushu",
       "series": "2026 HSR九州 エンジョイ4時間耐久レース練習会＆レース",
       "startDate": "2026-11-14",
-      "endDate": "2026-11-15",
+      "endDate": "2026-11-14",
       "circuit": {
         "ja": "HSR九州ロードコース（熊本県菊池郡大津町・全長2,350m）",
         "ca": "Circuit HSR Kyushu (Ozu, Kumamoto · 2.350 m)",
         "en": "HSR Kyushu Road Course (Ozu, Kumamoto · 2,350m)"
       },
       "eventName": {
-        "ja": "2026 エンジョイ4時間耐久レース練習会＆レース【HSR九州(熊本)】",
-        "ca": "2026 Cursa i entrenaments de 4 hores de resistència Enjoy a HSR Kyushu",
-        "en": "2026 Enjoy 4-Hour Endurance Practice & Race at HSR Kyushu"
+        "ja": "2026 HSR九州 エンジョイ4時間耐久レース 公式練習会【サーキットコース】",
+        "ca": "Entrenaments Oficials de les 4 Hores Enjoy de Minibikes a HSR Kyushu",
+        "en": "2026 HSR Kyushu Enjoy 4-Hour Minibike Endurance Official Practice"
       },
       "scheduleWindow": {
-        "ja": "2026年11月14日(土)練習会・11月15日(日)決勝（阿蘇の麓で駆けるミニバイク4時間耐久）",
-        "ca": "14-15 de novembre de 2026 (Resistència de minibikes de 4 hores a HSR Kyushu)",
-        "en": "November 14–15, 2026 (Minibike 4-hour endurance at HSR Kyushu)"
+        "ja": "2026年11月14日(土) AM練習会開催（本戦レースは12月20日開催）",
+        "ca": "14 de novembre de 2026 (Sessió preparatòria per a la cursa del 20 de desembre)",
+        "en": "November 14, 2026 (Official practice session ahead of the Dec 20 race)"
       },
       "classes": "ミニバイク（〜125cc MT / GROM / NSR50 / XR100等）",
-      "officialWebUrl": "https://event.webike.net/event/4469/",
-      "circuitWebUrl": "https://www.hsr.jp/",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2025/12/745/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
       "snsHandle": "@Webike_net / @hsr_kyushu",
       "snsUrl": "https://x.com/Webike_net",
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4469/) ＆ HSR九州公式",
@@ -1903,9 +2358,9 @@
       "startDate": "2026-11-15",
       "endDate": "2026-11-15",
       "circuit": {
-        "ja": "HSR九州ロードコース（熊本県菊池郡大津町・全長2,350m）",
-        "ca": "Circuit HSR Kyushu (Ozu, Kumamoto · 2.350 m)",
-        "en": "HSR Kyushu Road Course (Ozu, Kumamoto · 2,350m)"
+        "ja": "HSR九州 ドリームコース（熊本県菊池郡大津町・全長695m）",
+        "ca": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695 m)",
+        "en": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)"
       },
       "eventName": {
         "ja": "2026 SAGA CUP R-4【HSR九州(熊本)】",
@@ -1918,11 +2373,11 @@
         "en": "November 15, 2026 (Kyushu minibike sprint & endurance Round 4)"
       },
       "classes": "ミニバイク（〜125cc MT / スクーター / ノービス各クラス）",
-      "officialWebUrl": "https://event.webike.net/event/4480/",
-      "circuitWebUrl": "https://www.hsr.jp/",
-      "snsHandle": "@Webike_net / @hsr_kyushu",
-      "snsUrl": "https://x.com/hsr_kyushu",
-      "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4480/) ＆ HSR九州公式",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/182/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式 (rms.co.jp/kumamoto/hsr/) ＆ 公式リザルト (ms-event.net)",
       "publicationState": {
         "previewPublished": true,
         "resultStatus": "not_available",
@@ -2106,6 +2561,41 @@
         "resultStatus": "not_available",
         "resultArticleId": null,
         "lastCheckedAt": "2026-11-25"
+      }
+    },
+    {
+      "id": "2026-11-21-hsr-kyushu-tetsuma-ransen",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "HSR九州「2026 鉄馬 with TSK 乱戦の日」（シングル＆ツイン特別大会）",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-22",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 鉄馬 with TSK 「乱戦の日」（シングル＆ツイン鉄フレーム決戦）in HSR九州",
+        "ca": "Festival «2026 Tetsuma with TSK: Dia de la Mêlée» (Single & Twin) a HSR Kyushu",
+        "en": "2026 Tetsuma with TSK 'Day of Melee' (Single & Twin Iron Frame) at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月21日(土) 予選 ／ 11月22日(日) セミファイナル・ファイナル決勝",
+        "ca": "21-22 de novembre de 2026 (Qualificació, Semifinals i Finals Single & Twin a HSR Kyushu)",
+        "en": "November 21–22, 2026 (Qualifying, Semi-Finals & Finals at HSR Kyushu)"
+      },
+      "classes": "ACT18-NC350 / WCS / ACS / WCT / ACT17",
+      "officialWebUrl": "https://www.tetsuuma.com/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@tetsuma_with_b / @HSR_KYUSHU",
+      "snsUrl": "https://x.com/tetsuma_with_b",
+      "verifiedSource": "鉄馬実行委員会公式 (tetsuuma.com) ＆ HSR九州公式リザルト (ms-event.net)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {
@@ -2355,6 +2845,41 @@
       }
     },
     {
+      "id": "2026-11-29-hsr-kyushu-dream-sunday-minibike-rd4-finale",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 ドリームSundayレース R-4（最終戦・ミニバイク）",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "circuit": {
+        "ja": "HSR九州 ドリームコース（熊本県菊池郡大津町・全長695m）",
+        "ca": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)",
+        "en": "HSR Kyushu Dream Course (Ozu, Kumamoto · 695m)"
+      },
+      "eventName": {
+        "ja": "2026 ドリームSundayレース R-4（最終戦）【HSR九州 ドリームコース ミニバイクAMスプリント＆PM耐久】",
+        "ca": "2026 Dream Sunday Minibike Race R-4 (Final) a HSR Kyushu Dream Course",
+        "en": "2026 Dream Sunday Minibike Race R-4 (Season Finale) at HSR Kyushu Dream Course"
+      },
+      "scheduleWindow": {
+        "ja": "2026年11月29日(日) 1Day開催（ドリームコース年間シリーズ最終戦・AMスプリント＆PM耐久）",
+        "ca": "29 de novembre de 2026 (Ronda final de la sèrie de minibikes Dream Sunday a HSR Kyushu)",
+        "en": "November 29, 2026 (Dream Course minibike AM sprint & PM endurance series finale)"
+      },
+      "classes": "SP / ST12 / OP12 / HRC Grom Cup / NSF100 HRC Trophy / ミニバイク耐久（A・B・Cレンタルクラス）",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/189/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/event/2023/12/189/)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
+      }
+    },
+    {
       "id": "2026-11-29-lets-rentai-west-rd8-msl-hobby",
       "scope": "japan",
       "category": "endurance-fun",
@@ -2423,6 +2948,41 @@
       }
     },
     {
+      "id": "2026-12-12-hsr-kyushu-super-dream-sunday-8h-endurance",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 SuperドリームSunday 8時間耐久レース With J・TRIP（九州ミニバイク年間総決算）",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-13",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m・シケイン有）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 SuperドリームSunday 8時間耐久レース With J・TRIP【HSR九州 ミニバイクチャンピオン決定戦】",
+        "ca": "2026 Super Dream Sunday 8 Hores de Resistència de Minibikes With J·TRIP a HSR Kyushu",
+        "en": "2026 Super Dream Sunday 8-Hour Minibike Endurance With J-TRIP at HSR Kyushu"
+      },
+      "scheduleWindow": {
+        "ja": "2026年12月12日(土) 公式車検・練習・公式予選 ／ 12月13日(日) 8時間耐久決勝（九州ミニバイクレーサー1年の締めくくり）",
+        "ca": "12-13 de desembre de 2026 (Qualificació dissabte i Gran Final de 8 hores de minibikes diumenge a HSR Kyushu)",
+        "en": "December 12–13, 2026 (Saturday Qualifying & Sunday 8-Hour Minibike Endurance Season Finale at HSR Kyushu)"
+      },
+      "classes": "2st-SP50 / 4st-SP100 / 4st-SF100 / 4st-ST125 (GROM・Z125等)",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2023/12/152/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/event/2023/12/152/)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
+      }
+    },
+    {
       "id": "2026-12-13-lets-rentai-rs-taichi-xmas-haruna",
       "scope": "japan",
       "category": "endurance-fun",
@@ -2454,6 +3014,41 @@
         "previewPublished": false,
         "resultStatus": "pending",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+      }
+    },
+    {
+      "id": "2026-12-20-hsr-kyushu-enjoy-4h-minibike-endurance",
+      "scope": "japan",
+      "category": "kyushu",
+      "series": "2026 HSR九州 エンジョイ4時間耐久レース（年末走り納めミニバイク4耐）",
+      "startDate": "2026-12-20",
+      "endDate": "2026-12-20",
+      "circuit": {
+        "ja": "HSR九州 サーキットコース（熊本県菊池郡大津町・全長2,350m）",
+        "ca": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2.350m)",
+        "en": "HSR Kyushu Circuit Course (Ozu, Kumamoto · 2,350m)"
+      },
+      "eventName": {
+        "ja": "2026 HSR九州 エンジョイ4時間耐久レース（年内最終・走り納めミニバイク4時間耐久）",
+        "ca": "2026 Enjoy 4 Hores de Resistència de Minibikes de Cap d'Any a HSR Kyushu",
+        "en": "2026 HSR Kyushu Year-End Enjoy 4-Hour Minibike Endurance Race"
+      },
+      "scheduleWindow": {
+        "ja": "2026年12月20日(日) 1Day開催（RSG・皆木インストラクター主催 レンタルGROM＆ミニバイク4時間耐久）",
+        "ca": "20 de desembre de 2026 (Resistència de 4 hores de tancament d'any amb minibikes i GROM a HSR Kyushu)",
+        "en": "December 20, 2026 (Year-closing 4-hour minibike & rental GROM endurance at HSR Kyushu)"
+      },
+      "classes": "レンタルGROM / ミニバイク各クラス（Sドリームライセンス・QMSCライセンス）",
+      "officialWebUrl": "https://www.rms.co.jp/kumamoto/hsr/event/2025/12/745/",
+      "circuitWebUrl": "https://www.rms.co.jp/kumamoto/hsr/",
+      "snsHandle": "@HSR_KYUSHU",
+      "snsUrl": "https://x.com/HSR_KYUSHU",
+      "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/event/2025/12/745/)",
+      "publicationState": {
+        "previewPublished": false,
+        "resultStatus": "pending",
+        "resultArticleId": null,
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
       }
     },
     {

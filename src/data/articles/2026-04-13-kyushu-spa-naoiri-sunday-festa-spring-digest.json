@@ -87,8 +87,8 @@
       "citationType": "official_web",
       "accountName": "SPA直入公式サイト",
       "handle": "spa-naoiri.com",
-      "url": "https://spa-naoiri.com/",
-      "postUrl": "https://spa-naoiri.com/race/",
+      "url": "https://autopolis.jp/spa/",
+      "postUrl": "https://autopolis.jp/spa/result/",
       "quotedPostText": {
         "ja": "SPA直入イベント案内：スーパーサンデーフェスタは初心者からベテランまで楽しめる参加型走行会＆模擬レースイベントです。阿蘇外輪山を臨むテクニカルコース（全長1,430m）で安全にレース体験が可能です。",
         "ca": "Avís oficial de SPA Naoiri: la Super Sunday Festa és una jornada oberta tant a debutants com a veterans amb curses per categories de temps.",
@@ -112,7 +112,7 @@
     "sources": [
       {
         "title": "SPA直入 公式スケジュール・レース案内 (spa-naoiri.com)",
-        "url": "https://spa-naoiri.com/schedule/"
+        "url": "https://autopolis.jp/spa/entry/race-bike/"
       },
       {
         "title": "オートポリス・SPA直入 2026 モータースポーツカレンダー",

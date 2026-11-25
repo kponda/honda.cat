@@ -5,8 +5,23 @@ import { getAllArticles } from '../data/articles';
 
 const events = schedulesData.events;
 const sources = sourcesConfig.sources;
+const circuitResultPages = sourcesConfig.circuitResultPages || [];
 const allArticles = getAllArticles();
 const articleMap = new Map(allArticles.map((art) => [art.id, art]));
+
+function resolveOfficialResultUrl(ev: (typeof events)[number]): string | null {
+  const blob = `${ev.id} ${ev.series} ${ev.eventName.ja} ${ev.circuit.ja} ${ev.officialWebUrl} ${ev.circuitWebUrl}`
+    .replace(/https?:\/\/autopolis\.jp\/spa[^\s]*/gi, 'spa直入')
+    .toLowerCase();
+  for (const cr of circuitResultPages) {
+    if (!cr.hasResultPage || !cr.resultUrls || cr.resultUrls.length === 0) continue;
+    if (cr.circuitId === 'motogp' && blob.includes('worldsbk') && !blob.includes('motogp')) continue;
+    if (cr.keywords.some((kw: string) => blob.includes(kw.toLowerCase()))) {
+      return cr.resultUrls[0];
+    }
+  }
+  return null;
+}
 
 const CATEGORY_META: Record<
   string,
@@ -64,6 +79,7 @@ const enrichedEvents = events.map((ev) => {
     catColor: catMeta.color,
     catLabel: catMeta.label,
     articleSlug: linkedArticle?.slug || null,
+    officialResultUrl: resolveOfficialResultUrl(ev),
   };
 });
 
@@ -388,6 +404,13 @@ const weekdays = [
                   <span data-i18n="ca">Fitxa de la cursa</span>
                   <span data-i18n="en">Jump to Card</span>
                 </a>
+                {ev.officialResultUrl && (
+                  <a href={ev.officialResultUrl} target="_blank" rel="noopener noreferrer" class="cal-tip-btn ghost">
+                    🏆 <span data-i18n="ja">公式リザルト</span>
+                    <span data-i18n="ca">Resultats Oficials</span>
+                    <span data-i18n="en">Official Results</span>
+                  </a>
+                )}
                 <a href={ev.officialWebUrl} target="_blank" rel="noopener noreferrer" class="cal-tip-btn ghost">
                   🌐 <span data-i18n="ja">公式情報</span>
                   <span data-i18n="ca">Web Oficial</span>
@@ -458,6 +481,11 @@ const weekdays = [
                 📰 <span data-i18n="ja">レース結果記事</span><span data-i18n="ca">Crònica de la Cursa</span><span data-i18n="en">Race Report</span>
               </a>
             )}
+            {ev.officialResultUrl && (
+              <a href={ev.officialResultUrl} target="_blank" rel="noopener noreferrer" class="source-pill result-pill">
+                🏆 <span data-i18n="ja">公式リザルト</span><span data-i18n="ca">Resultats Oficials</span><span data-i18n="en">Official Results</span>
+              </a>
+            )}
             <a href={ev.officialWebUrl} target="_blank" rel="noopener noreferrer" class="source-pill web-pill">
               🌐 <span data-i18n="ja">公式カレンダー</span><span data-i18n="ca">Calendari Oficial</span><span data-i18n="en">Official Calendar</span>
             </a>
@@ -474,9 +502,9 @@ const weekdays = [
 
     <details class="crawler-registry-details">
       <summary class="registry-summary">
-        <span data-i18n="ja">🔍 自動収集対象の公式サイト・全国サーキット・公式SNS一覧（全 {sources.length} 系統）を表示</span>
-        <span data-i18n="ca">🔍 Veure totes les fonts oficials i comptes de xarxes socials monitoritzats ({sources.length} sistemes)</span>
-        <span data-i18n="en">🔍 View All Monitored Official Websites, Nationwide Circuits & SNS Accounts ({sources.length} feeds)</span>
+        <span data-i18n="ja">🔍 自動収集対象の公式サイト・サーキット別公式リザルトページ・公式SNS一覧（全 {sources.length} 系統）を表示</span>
+        <span data-i18n="ca">🔍 Veure totes les fonts oficials, pàgines de resultats i xarxes socials monitoritzades ({sources.length} sistemes)</span>
+        <span data-i18n="en">🔍 View All Monitored Official Websites, Circuit Result Pages & SNS Accounts ({sources.length} feeds)</span>
       </summary>
       <div class="registry-table-wrap">
         <table class="registry-table">
@@ -485,6 +513,7 @@ const weekdays = [
               <th>REGION / AREA</th>
               <th>OFFICIAL ORGANIZATION / CIRCUIT</th>
               <th>CALENDAR URLS</th>
+              <th>OFFICIAL RESULT PAGES</th>
               <th>OFFICIAL SNS ACCOUNTS</th>
             </tr>
           </thead>
@@ -502,6 +531,21 @@ const weekdays = [
                     {src.calendarUrls.map((u) => (
                       <a href={u} target="_blank" rel="noopener noreferrer" class="reg-link">{u}</a>
                     ))}
+                  </div>
+                </td>
+                <td>
+                  <div class="url-list">
+                    {src.resultUrls && src.resultUrls.length > 0 ? (
+                      src.resultUrls.map((ru) => (
+                        <a href={ru} target="_blank" rel="noopener noreferrer" class="reg-link">{ru}</a>
+                      ))
+                    ) : (
+                      <span style="color: var(--text-muted); font-size: 0.75rem;">
+                        <span data-i18n="ja">専用一覧なし（主催・開催サーキット側参照）</span>
+                        <span data-i18n="ca">Sense índex propi (vegeu circuit/organitzador)</span>
+                        <span data-i18n="en">No standalone index (uses host circuit/organizer)</span>
+                      </span>
+                    )}
                   </div>
                 </td>
                 <td>
@@ -1355,6 +1399,12 @@ const weekdays = [
     background: rgba(255, 183, 3, 0.18);
     border-color: rgba(255, 183, 3, 0.55);
     color: var(--accent-gold);
+  }
+
+  .source-pill.result-pill {
+    background: rgba(42, 157, 143, 0.16);
+    border-color: rgba(78, 205, 196, 0.45);
+    color: #4ecdc4;
   }
 
   .source-pill:hover {

@@ -297,14 +297,14 @@ export const UI_TEXT = {
           en: 'HSR Kyushu Circuit (Ozu, Kumamoto)'
         },
         spec: {
-          ja: '全長 2,350m / 九州ロードレース選手権・鉄馬・ドリームカップ・ミニバイク8耐',
-          ca: '2.350m / Campionat de Kyushu, Tetsuma (Iron Horse) i 8 Hores Mini',
-          en: '2,350m / Kyushu Road Race, "Tetsuma" Iron Horse & Mini 8-Hours'
+          ja: 'サーキットコース 2,350m・ドリームコース 695m / 毎年12月ミニバイク8耐・ミニバイク各戦・Trophy・鉄馬',
+          ca: '2.350m i Dream 695m / 8 Hores Minibike (Desembre), Sèries Minibike, Trophy i Tetsuma',
+          en: '2,350m & Dream 695m / Dec 8-Hour Minibike Finale, Minibike Series, Trophy & "Tetsuma"'
         },
         desc: {
-          ja: '熊本県菊池郡大津町、ホンダ熊本製作所に隣接する全長2,350mのサーキットコース。MFJ九州ロードレース選手権、鉄フレーム車両の祭典「鉄馬（Tetsuma）」、CBR250R/GROMドリームカップ、ミニバイク8時間耐久など多彩な公式戦が開催されています。',
-          ca: 'Situat al costat de la fàbrica de motos de Kumamoto, aquest circuit de 2.350m acull el Campionat de Kyushu MFJ, el festival «Tetsuma» i les 8 Hores de resistència.',
-          en: 'Located beside the Kumamoto motorcycle plant, this 2,350m course hosts the MFJ Kyushu Road Race Championship, the "Tetsuma" festival, Dream Cup races, and the 8-Hour Mini-Bike Endurance.'
+          ja: '熊本県菊池郡大津町、ホンダ熊本製作所に隣接するサーキットコース（2,350m）とドリームコース（695m）。九州ミニバイクレーサー1年の締めくくりとなる12月の「SuperドリームSunday 8時間耐久レース」をはじめ、ドリームSundayレース・SAGA CUP・エンジョイ4耐などのミニバイク戦、HSR九州Trophyロードレース、鉄馬（Tetsuma）まで多彩な公式戦が開催されています。',
+          ca: 'Situat al costat de la fàbrica de motos de Kumamoto, disposa del traçat principal (2.350m) i el Dream Course (695m). Acull la gran final anual de desembre «Super Dream Sunday 8 Hores de Resistència de Minibikes», les sèries Dream Sunday i SAGA CUP, l\'HSR Kyushu Trophy i el festival «Tetsuma».',
+          en: 'Located beside the Kumamoto motorcycle plant with a 2,350m main course and 695m Dream Course. Home to December’s flagship "Super Dream Sunday 8-Hour Minibike Endurance" season finale, Dream Sunday & SAGA CUP minibike series, HSR Kyushu Trophy, and the "Tetsuma" festival.'
         }
       }
     ]

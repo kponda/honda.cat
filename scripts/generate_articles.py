@@ -41,6 +41,7 @@ from typing import Any
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
+import circuit_results_fetcher  # noqa: E402
 import x_photo_finder  # noqa: E402
 
 try:
@@ -103,8 +104,11 @@ CRITICAL HISTORICAL & TECHNICAL FACT POLICY (ZERO HALLUCINATION):
   * DIRECT RELEVANCE REQUIREMENT: Every cited source MUST strictly belong to the event's organizer, host circuit, confirmed podium rider/team, or official event hashtag. NEVER cite unrelated accounts (e.g. citing MotoGP or Suzuka for a Kyushu grassroots endurance race is strictly forbidden).
   * ZERO HALLUCINATION FOR POSTS: Search for real, verifiable post URLs (X status, YouTube video, Official Web announcement, Facebook post). If a specific individual post URL cannot be verified online, you MUST cite the official account profile, official web result page, or official hashtag hub URL (e.g. https://x.com/hashtag/鉄馬) instead of fabricating a random status ID or fictional text.
 - NEVER invent fictional team names, fictional rider names, or fabricated race result tables.
+- OFFICIAL CIRCUIT RESULT PAGE GROUNDING (MANDATORY):
+  * Before authoring any race result article, each circuit's official result page is explored and parsed directly (e.g., SPA Naoiri `https://autopolis.jp/spa/result/`, HSR Kyushu `https://www1.ms-event.net/hsrweb/user/?a=event_info_data.event_info_data_list`, Autopolis `https://autopolis.jp/ap/result/`, Suzuka `suzukacircuit.jp/result_s/`, Motegi `mr-motegi.jp/result_m/`, Tsukuba `tsukuba-circuit.jp/race/results/results.html`, SUGO `sportsland-sugo.co.jp/results/`, Okayama `ms-event.net/oicweb`, JRR `jrr.jp/results/`).
+  * Whenever `OFFICIAL CIRCUIT RESULT PAGE DATA` is present, you MUST reflect those exact official results (class names, winner & podium rider/team names, machine models, lap counts, total times, gaps, best laps, weather/temperature, and penalties) accurately in `locales.{ja,ca,en}.results`, `sections`, `highlightPoint`, `eventMeta`, and `factCheck`. NEVER omit confirmed winners or contradict the official circuit result sheet.
 - Only include race results that have been verified online from official sources.
-- Always populate `factCheck.basis` (in `ja`, `ca`, `en`) and `factCheck.sources` with real, verifiable reference URLs.
+- Always populate `factCheck.basis` (in `ja`, `ca`, `en`) and `factCheck.sources` with real, verifiable reference URLs (including the circuit's official result page URL whenever available).
 """
 
 LOCALE_CONTENT_SCHEMA: dict[str, Any] = {
@@ -432,24 +436,47 @@ def find_retry_wednesday_events(db: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def check_online_results_for_event(ev: dict[str, Any], today_str: str) -> dict[str, Any]:
-    """Query official result URLs & SNS via Gemini 3.8 Flash + Google Search to see if confirmed results are online."""
+    """Explore circuit official result pages first (HTML & PDF sheets), then combine with Gemini + Google Search."""
     from google import genai
 
     client = genai.Client()
+    sources_cfg = circuit_results_fetcher.load_sources_config()
+
+    print(f"   📡 Exploring official circuit result page(s) for `{ev['id']}`...")
+    circuit_res = circuit_results_fetcher.fetch_event_circuit_results(
+        ev,
+        sources_cfg=sources_cfg,
+        client=client,
+        max_pdfs=6,
+    )
+    circuit_dossier = circuit_res.get("dossierText", "")
+    verified_circuit_urls = circuit_res.get("verifiedResultUrls", [])
+    matched_on_circuit_page = bool(circuit_res.get("matchedResultsOnPage", False))
+
+    if matched_on_circuit_page:
+        print(f"   ✅ Official circuit result page matched! Extracted {len(verified_circuit_urls)} official result URL(s).")
+    elif circuit_res.get("hasOfficialResultPage"):
+        print("   ℹ️ Circuit has an official result page, but no matching final sheet was found yet; checking web/SNS...")
+    else:
+        print("   ℹ️ No dedicated circuit 2-wheel result index registered; checking organizer web & official SNS...")
+
     interaction = client.interactions.create(
         model="gemini-3.8-flash",
         system_instruction=SYSTEM_INSTRUCTION,
         input=(
             f"Today's date is {today_str}.\n"
-            "Check official websites, official result pages, and official SNS accounts to determine whether "
-            "confirmed race results have been published online for the following scheduled event:\n"
+            "Check the directly fetched OFFICIAL CIRCUIT RESULT PAGE DATA below, along with official websites and official SNS accounts, "
+            "to determine whether confirmed race results have been published online for the following scheduled event:\n"
             f"- Event: {ev['eventName']['ja']} ({ev['series']})\n"
             f"- Circuit: {ev['circuit']['ja']}\n"
             f"- Dates: {ev.get('startDate')} to {ev.get('endDate')}\n"
             f"- Official URLs: {ev.get('officialWebUrl')} / {ev.get('circuitWebUrl')}\n"
             f"- Official SNS: {ev.get('snsHandle')} ({ev.get('snsUrl')})\n\n"
-            "STRICT RULE: Set `resultsFound: true` ONLY if actual confirmed race results (winners/podium/timings) "
-            "for this event are verifiable online. Never guess or fabricate results."
+            f"OFFICIAL CIRCUIT RESULT PAGE DATA (DIRECTLY FETCHED FROM CIRCUIT RESULT SERVER):\n"
+            f"{circuit_dossier or '(No matching entry on circuit result page yet)'}\n\n"
+            "STRICT RULE:\n"
+            "- If `OFFICIAL CIRCUIT RESULT PAGE DATA` above contains confirmed final race classifications / PDF transcriptions for this event, set `resultsFound: true` and preserve ALL exact winners, podiums, rider/team names, machines, lap counts, total times, gaps, best laps, and weather in `verifiedFactsDossier`.\n"
+            "- Otherwise set `resultsFound: true` ONLY if actual confirmed race results (winners/podium/timings) for this event are verifiable online. Never guess or fabricate results."
         ),
         tools=[{"type": "google_search"}],
         response_format={
@@ -458,7 +485,25 @@ def check_online_results_for_event(ev: dict[str, Any], today_str: str) -> dict[s
             "schema": RESULT_AVAILABILITY_SCHEMA,
         },
     )
-    return json.loads(interaction.output_text)
+    parsed = json.loads(interaction.output_text)
+
+    if matched_on_circuit_page and "公式決勝リザルトPDF" in circuit_dossier:
+        parsed["resultsFound"] = True
+
+    merged_urls: list[str] = []
+    for u in verified_circuit_urls + (parsed.get("sourceUrls") or []):
+        if isinstance(u, str) and u and u not in merged_urls:
+            merged_urls.append(u)
+    parsed["sourceUrls"] = merged_urls
+
+    if circuit_dossier:
+        parsed["officialCircuitResultDossier"] = circuit_dossier
+        parsed["verifiedFactsDossier"] = (
+            f"{parsed.get('verifiedFactsDossier', '')}\n\n"
+            f"=== DIRECT OFFICIAL CIRCUIT RESULT PAGE DATA ===\n{circuit_dossier}"
+        ).strip()
+    parsed["circuitsChecked"] = circuit_res.get("circuitsChecked", [])
+    return parsed
 
 
 def extract_relevant_sources(prompt_context: str, all_sources: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -511,7 +556,7 @@ def extract_relevant_sources(prompt_context: str, all_sources: list[dict[str, An
                 matched.append(src)
         if any(w in lower_ctx for w in ["autopolis", "オートポリス", "ゴールドカップ"]) and sid == "autopolis":
             matched.append(src)
-        if any(w in lower_ctx for w in ["hsr", "hsr九州", "鉄馬", "tetsuma", "ドリームカップ"]) and sid == "hsr-kyushu":
+        if any(w in lower_ctx for w in ["hsr", "hsr九州", "鉄馬", "tetsuma", "tetsuuma", "ドリームカップ", "ドリームsunday", "saga cup", "火の国", "8時間耐久", "エンジョイ4時間"]) and sid == "hsr-kyushu":
             matched.append(src)
         if any(w in lower_ctx for w in ["お題", "ブラウズ", "brow", "安心院", "ソニックパーク", "中九州", "草耐久", "草レース"]) and sid == "brows-odai-endurance":
             matched.append(src)
@@ -663,15 +708,53 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
     from google import genai
 
     client = genai.Client()
+    sources_cfg: dict[str, Any] = {}
     all_sources: list[dict[str, Any]] = []
     if SOURCES_CONFIG_PATH.exists():
         try:
-            all_sources = json.loads(SOURCES_CONFIG_PATH.read_text(encoding="utf-8")).get("sources", [])
+            sources_cfg = json.loads(SOURCES_CONFIG_PATH.read_text(encoding="utf-8"))
+            all_sources = sources_cfg.get("sources", [])
         except Exception:
+            sources_cfg = {}
             all_sources = []
 
     relevant_sources = extract_relevant_sources(prompt_context, all_sources)
     sources_context = json.dumps(relevant_sources, ensure_ascii=False, indent=2)
+
+    # Explore & fetch official circuit result pages automatically unless this is a pre-race preview or maintenance clinic,
+    # or unless `check_online_results_for_event` already embedded `DIRECT OFFICIAL CIRCUIT RESULT PAGE DATA`.
+    is_preview_or_maint = any(
+        marker in prompt_context
+        for marker in ("articleType: 'preview'", "articleType: 'maintenance'", "category: 'maintenance'")
+    )
+    direct_circuit_results_dossier = ""
+    direct_circuit_result_urls: list[str] = []
+    if "DIRECT OFFICIAL CIRCUIT RESULT PAGE DATA" in prompt_context:
+        direct_circuit_results_dossier = "(Embedded in event payload above — treat all `DIRECT OFFICIAL CIRCUIT RESULT PAGE DATA` sections as highest-priority ground truth.)"
+    elif not is_preview_or_maint:
+        date_matches = re.findall(r"(20\d\d-\d\d-\d\d)", prompt_context)
+        inferred_start = min(date_matches) if date_matches else None
+        inferred_end = max(date_matches) if date_matches else None
+        print("[0/3] 📡 Exploring circuit official result page(s) for accurate race result reflection...")
+        fetched_cr = circuit_results_fetcher.fetch_circuit_results_for_target(
+            search_text=prompt_context,
+            start_date=inferred_start,
+            end_date=inferred_end,
+            sources_cfg=sources_cfg,
+            client=client,
+            max_pdfs=6,
+        )
+        direct_circuit_results_dossier = fetched_cr.get("dossierText", "")
+        direct_circuit_result_urls = fetched_cr.get("verifiedResultUrls", [])
+        if fetched_cr.get("matchedResultsOnPage"):
+            print(f"   ✅ Extracted official circuit result data ({len(direct_circuit_result_urls)} verified result URL(s)).")
+
+    circuit_results_block = (
+        f"\n\nOFFICIAL CIRCUIT RESULT PAGE DATA (HIGHEST-PRIORITY GROUND TRUTH — REFLECT EXACT WINNERS, PODIUMS, MACHINES, LAPS & TIMES):\n"
+        f"{direct_circuit_results_dossier}\n"
+        if direct_circuit_results_dossier
+        else ""
+    )
 
     # Discover & deterministically verify real photo-attached X posts before authoring
     x_queries, x_handles, relevance_keywords = _build_x_search_params(prompt_context, relevant_sources)
@@ -692,10 +775,12 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
         system_instruction=SYSTEM_INSTRUCTION,
         input=(
             f"Today's date is {today_str}.\n"
-            f"{prompt_context}\n\n"
+            f"{prompt_context}"
+            f"{circuit_results_block}\n\n"
             "TARGETED OFFICIAL & SOCIAL MEDIA DISCOVERY INSTRUCTIONS:\n"
             "Search for confirmed race facts, podium results, and authentic social posts following STRICT platform priority:\n"
             "Priority: X > YouTube > OfficialWeb > Facebook > Instagram\n"
+            "- If `OFFICIAL CIRCUIT RESULT PAGE DATA` (or `DIRECT OFFICIAL CIRCUIT RESULT PAGE DATA`) is present above, preserve EVERY official class winner, podium finisher, rider/team name, bike number, machine model, lap count, total time, gap, best lap, weather/temperature, and official URL verbatim in your dossier.\n"
             "- Targeted X search: `site:x.com/{handle} ...` or `site:x.com \"#{hashtag}\"`\n"
             "- Targeted YouTube search: `site:youtube.com ... \"公式\"`\n"
             "- Official Web result pages & official Facebook posts.\n"
@@ -712,22 +797,23 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
         model="gemini-3.8-flash",
         system_instruction=SYSTEM_INSTRUCTION,
         input=(
-            f"Using ONLY the verified facts in the research dossier below (Date: {today_str}), "
+            f"Using ONLY the verified facts in the research dossier and official circuit result data below (Date: {today_str}), "
             "generate a complete trilingual article JSON (`ja`, `ca`, `en`).\n\n"
             "STRICT RULES:\n"
-            "1. Do NOT invent any fictional team names, rider names, or unverified race results.\n"
-            "2. Populate `factCheck` with `verified: true`, `verifiedAt`, trilingual `basis`, and real `sources` URLs. "
-            "In `factCheck.sources`, cite ONLY official governing bodies (fim-moto.com, mfj.or.jp, jisc.go.jp, iso.org), "
-            "official race/circuit sites (motogp.com, worldsbk.com, suzukacircuit.jp, sportsland-sugo.co.jp, etc.), "
-            "or established OEM/parts manufacturer domains (honda.co.jp, brembo.com, ohlins.com, motul.com, did-daido.co.jp, etc.). "
-            "NEVER cite personal blogs, wikis, or unverified third-party mirrors.\n"
+            "1. ACCURATE REFLECTION OF OFFICIAL CIRCUIT RESULTS (MANDATORY): Whenever official circuit result page data is present, you MUST accurately reflect the exact class winners, podium finishers, rider/team names, machine models, lap counts, total times, gaps, fastest laps, and weather/track conditions in `locales.{ja,ca,en}.results`, `sections`, `highlightPoint`, and `eventMeta`. Do NOT invent any fictional team names, rider names, or unverified race results, and NEVER write vague filler omitting winners when official results are available.\n"
+            "2. Populate `factCheck` with `verified: true`, `verifiedAt`, trilingual `basis`, and real `sources` URLs (including the circuit's official result page URL(s) whenever available). "
+            "In `factCheck.sources`, cite ONLY official governing bodies (`fim-moto.com`, `mfj.or.jp`, `jrr.jp`, `jisc.go.jp`, `iso.org`), "
+            "official race/circuit/timing sites (`motogp.com`, `worldsbk.com`, `autopolis.jp`, `ms-event.net`, `rms.co.jp`, `tetsuuma.com`, `suzukacircuit.jp`, `mr-motegi.jp`, `tsukuba-circuit.jp`, `sportsland-sugo.co.jp`, `okayama-international-circuit.jp`, `fsw.tv`, `tokachi.msf.ne.jp`, `brow-s.jp`, `takuma-gp.com`, etc.), "
+            "or established OEM/parts manufacturer domains (`honda.co.jp`, `brembo.com`, `ohlins.com`, `motul.com`, `did-daido.co.jp`, etc.). "
+            "NEVER cite defunct domains (`hsr.jp`, `tetsuma.jp`, `spa-naoiri.com`, `superbike.jp`), personal blogs, wikis, or unverified third-party mirrors.\n"
             "3. Populate `snsCitations` following the strict platform priority: X > YouTube > OfficialWeb > Facebook > Instagram.\n"
             "   - Every citation MUST be directly relevant to this specific race event, host circuit, or podium riders.\n"
             "   - VERIFIED PHOTO X POSTS: From `VERIFIED PHOTO-ATTACHED X POSTS` below, select ONLY the verified photo-attached X posts directly related to the featured event(s), host circuit(s), or competing riders, using `citationType: 'direct_post'`, exact `postUrl`, `publishedDate`, and `mediaUrls`.\n"
             "   - If any item in `VERIFIED PHOTO-ATTACHED X POSTS` is about an unrelated race/circuit, SKIP it instead of citing it.\n"
             "   - ZERO HALLUCINATION: Do NOT fabricate status IDs. Only use status URLs verified in the list below or verified online.\n"
             "   - NEVER cite unrelated accounts (e.g., citing MotoGP or Suzuka for a Kyushu local or grassroots race is strictly forbidden).\n"
-            "4. In `catDialogues`, convey Naomi's (`naomi`) scruffy garage mechanic voice and her occasional shy, maidenly phrasing naturally through the text itself without any explicit mode labels.\n\n"
+            "4. In `catDialogues`, convey Naomi's (`naomi`) scruffy garage mechanic voice and her occasional shy, maidenly phrasing naturally through the text itself without any explicit mode labels.\n"
+            f"{circuit_results_block}\n"
             f"VERIFIED PHOTO-ATTACHED X POSTS:\n{verified_x_context}\n\n"
             f"VERIFIED RESEARCH DOSSIER:\n{research_notes}"
         ),
@@ -738,6 +824,24 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
         },
     )
     draft_json = json.loads(author_interaction.output_text)
+
+    # Normalize slug to prevent duplicate date prefixes (`YYYY-MM-DD-YYYY-MM-DD-...`)
+    if isinstance(draft_json.get("slug"), str):
+        stripped_slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", draft_json["slug"].strip())
+        if stripped_slug:
+            draft_json["slug"] = stripped_slug
+
+    # Ensure verified circuit official result page URLs are recorded in factCheck.sources
+    if direct_circuit_result_urls:
+        fc_obj = draft_json.setdefault("factCheck", {})
+        fc_sources = fc_obj.setdefault("sources", [])
+        existing_fc_urls = {
+            (s if isinstance(s, str) else s.get("url", "")) for s in fc_sources
+        }
+        for r_url in direct_circuit_result_urls[:2]:
+            if r_url not in existing_fc_urls and is_allowed_domain(r_url):
+                fc_sources.append({"title": "Official Circuit Race Results", "url": r_url})
+                existing_fc_urls.add(r_url)
 
     # Deterministically verify/attach mediaUrls on any X direct_post citations
     if verified_x_posts:
@@ -787,10 +891,11 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
                 "Audit the following generated article JSON against the research dossier and real-world history.\n"
                 "Fail (`passed: false`) if you find ANY of the following:\n"
                 "1. Unrelated or incorrect circuit-to-event pairings (e.g., claiming a race series is held at a circuit where it was never held).\n"
-                "2. Fictional team names in results or fabricated race winners.\n"
+                "2. Fictional team names in results, fabricated race winners, OR any discrepancy/omission against `OFFICIAL CIRCUIT RESULT PAGE DATA` (winners, podium positions, rider/team names, machines, lap counts, or times MUST match the official circuit result sheet when provided).\n"
                 "3. Incorrect circuit lengths or false technical/physics claims.\n"
                 "4. Unrelated SNS/Web citations: Citing accounts or sources that have no direct relationship with the featured event, host circuit, or competing riders/teams (e.g. citing MotoGP or Suzuka for a Kyushu local race or grassroots endurance event). All citations must directly relate to the event.\n"
-                "5. Hallucinated / Fabricated post URLs: Fictional tweet status IDs or made-up post texts not matching real posts or official channels.\n\n"
+                "5. Hallucinated / Fabricated post URLs: Fictional tweet status IDs or made-up post texts not matching real posts or official channels.\n"
+                f"{circuit_results_block}\n"
                 f"RESEARCH DOSSIER:\n{research_notes}\n\n"
                 f"CANDIDATE ARTICLE JSON:\n{json.dumps(candidate_doc, ensure_ascii=False)}"
             ),
@@ -1523,6 +1628,7 @@ OFFICIAL_ALLOWED_DOMAINS = [
     "motogp.com",
     "worldsbk.com",
     "fimewc.com",
+    "its-results.com",
     "fim-moto.com",
     "fim-europe.com",
     "fim-asia.com",
@@ -1556,9 +1662,10 @@ OFFICIAL_ALLOWED_DOMAINS = [
     "circuitofamericas.com",
     "bric.co.th",
     "changinternationalcircuit.com",
-    # Japanese Sanctioning & All-Japan
+    # Japanese Sanctioning, All-Japan & Official Timing Portals
     "mfj.or.jp",
-    "superbike.jp",
+    "jrr.jp",
+    "ms-event.net",
     # Nationwide Japanese Major Circuits
     "suzukacircuit.jp",
     "mr-motegi.jp",
@@ -1570,13 +1677,14 @@ OFFICIAL_ALLOWED_DOMAINS = [
     # Japanese Regional / Mini-bike / Kart Circuits
     "msl-hobby.jp",
     "akigase.co.jp",
-    "akechi-h.com",
+    "akechi-ht.com",
+    "coocan.jp",
     "osl.vc",
     "mobara-tc.com",
     "yrp-kota.com",
     "kinspo.com",
     "sakaikartland.com",
-    "nkw-kumamoto.com",
+    "nkw.jp",
     "shiraito-speedland.com",
     "twc.ne.jp",
     "meihan-sl.com",
@@ -1589,12 +1697,12 @@ OFFICIAL_ALLOWED_DOMAINS = [
     "bihoku-highland.com",
     # Kyushu Circuits & Grassroots Endurance
     "autopolis.jp",
-    "spa-naoiri.com",
-    "hsr.jp",
-    "tetsuma.jp",
+    "rms.co.jp",
+    "tetsuuma.com",
     "brow-s.jp",
+    "seesaa.net",
     "takuma-gp.com",
-    "sonicpark.jp",
+    "sonicpark.co.jp",
     # Official Motorcycle Event Navis & Portals
     "event.webike.net",
     "webike.net",

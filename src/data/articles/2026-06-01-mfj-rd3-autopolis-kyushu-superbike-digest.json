@@ -100,15 +100,15 @@
     "sources": [
       {
         "title": "オートポリス 公式モータースポーツリザルト (autopolis.jp)",
-        "url": "https://autopolis.jp/ap/motorsports/result/"
+        "url": "https://autopolis.jp/ap/result/"
       },
       {
         "title": "JRR 全日本ロードレース選手権 第3戦 九州大会 公式リザルト (superbike.jp)",
-        "url": "https://www.superbike.jp/result/"
+        "url": "https://www.jrr.jp/results/"
       },
       {
         "title": "MFJ 日本モーターサイクルスポーツ協会 公式リザルト",
-        "url": "https://www.mfj.or.jp/result/"
+        "url": "https://www.mfj.or.jp/other/result-center/"
       }
     ]
   },

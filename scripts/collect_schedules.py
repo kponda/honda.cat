@@ -5,14 +5,17 @@ honda.cat — Weekly Official Race Schedule Database Sync
 Runs once a week (with enhanced off-season full-calendar discovery from Dec to Feb)
 to check for schedule updates across:
   1. FIM MotoGP Official (`motogp.com`) & WorldSBK (`worldsbk.com`) & Montmeló (`circuitcat.com`)
-  2. MFJ Official (`mfj.or.jp`) & JRR All-Japan Road Race (`superbike.jp`)
+  2. MFJ Official (`mfj.or.jp`) & JRR All-Japan Road Race (`jrr.jp`)
   3. All Nationwide Regional Championships & Major Circuits:
      - Suzuka (`suzukacircuit.jp`), Motegi (`mr-motegi.jp`), Tsukuba (`tsukuba-circuit.jp`),
-       SUGO (`sportsland-sugo.co.jp`), Okayama (`okayama-international-circuit.jp`),
+       SUGO (`sportsland-sugo.co.jp`), Okayama (`okayama-international-circuit.jp`, `ms-event.net/oicweb`),
        Fuji (`fsw.tv`), Tokachi (`tokachi.msf.ne.jp`)
-  4. Kyushu 3 Major Circuits:
-     - Autopolis (`autopolis.jp`), SPA Naoiri (`spa-naoiri.com`), HSR Kyushu (`hsr.jp`, `tetsuma.jp`)
-  5. Official SNS Accounts (X, Instagram, Facebook)
+  4. Kyushu 3 Major Circuits & Mini-Bike / Endurance Series:
+     - Autopolis (`autopolis.jp/ap/`), SPA Naoiri (`autopolis.jp/spa/`),
+       HSR Kyushu (`rms.co.jp/kumamoto/hsr/`, `ms-event.net/hsrweb`, `tetsuuma.com`)
+       * MANDATORY COVERAGE: HSR Kyushu Mini-Bike Series (`SuperドリームSunday 8時間耐久レース With J・TRIP` every December,
+         `SuperドリームSundayレース`, `ドリームSundayレース`, `SAGA CUP / WORLD SAGA CUP`, `エンジョイ4時間耐久レース`)
+  5. Official SNS Accounts (X, YouTube, Facebook, Instagram)
 
 If schedule additions or date changes are detected, updates `src/data/schedules.json`
 while preserving existing `publicationState` (`previewPublished`, `resultStatus`).
@@ -21,12 +24,15 @@ while preserving existing `publicationState` (`previewPublished`, `resultStatus`
 from __future__ import annotations
 
 import argparse
+import codecs
 import datetime as dt
 import html
+import io
 import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 from pathlib import Path
 from typing import Any
@@ -118,6 +124,7 @@ OFFICIAL_TRUSTED_DOMAINS = [
     "motogp.com",
     "worldsbk.com",
     "fimewc.com",
+    "its-results.com",
     "fim-moto.com",
     "fim-europe.com",
     "fim-asia.com",
@@ -149,9 +156,10 @@ OFFICIAL_TRUSTED_DOMAINS = [
     "circuitofamericas.com",
     "bric.co.th",
     "changinternationalcircuit.com",
-    # Japanese Sanctioning & All-Japan
+    # Japanese Sanctioning, All-Japan & Timing Portals
     "mfj.or.jp",
-    "superbike.jp",
+    "jrr.jp",
+    "ms-event.net",
     # Nationwide Japanese Major Circuits
     "suzukacircuit.jp",
     "mr-motegi.jp",
@@ -163,13 +171,14 @@ OFFICIAL_TRUSTED_DOMAINS = [
     # Japanese Regional / Mini-bike / Kart Circuits
     "msl-hobby.jp",
     "akigase.co.jp",
-    "akechi-h.com",
+    "akechi-ht.com",
+    "coocan.jp",
     "osl.vc",
     "mobara-tc.com",
     "yrp-kota.com",
     "kinspo.com",
     "sakaikartland.com",
-    "nkw-kumamoto.com",
+    "nkw.jp",
     "shiraito-speedland.com",
     "twc.ne.jp",
     "meihan-sl.com",
@@ -182,18 +191,24 @@ OFFICIAL_TRUSTED_DOMAINS = [
     "bihoku-highland.com",
     # Kyushu Circuits & Grassroots Endurance
     "autopolis.jp",
-    "spa-naoiri.com",
-    "hsr.jp",
-    "tetsuma.jp",
+    "rms.co.jp",
+    "tetsuuma.com",
     "brow-s.jp",
+    "seesaa.net",
     "takuma-gp.com",
-    "sonicpark.jp",
+    "sonicpark.co.jp",
     # Official Motorcycle Event Navis & Portals
     "event.webike.net",
     "webike.net",
 ]
 
 UNTRUSTED_CIRCUIT_DENYLIST = [
+    # Defunct / hijacked legacy domains (must NEVER be used)
+    "hsr.jp",
+    "tetsuma.jp",
+    "spa-naoiri.com",
+    "superbike.jp",
+    # Non-official / social / aggregator domains
     "wikipedia.org",
     "example.com",
     "localhost",
@@ -221,6 +236,8 @@ def is_domain_trusted(url: str, trusted_domains: list[str]) -> bool:
     if not match:
         return False
     host = match.group(1).lower()
+    if any(host == d or host.endswith("." + d) for d in UNTRUSTED_CIRCUIT_DENYLIST):
+        return False
     return any(host == d or host.endswith("." + d) for d in trusted_domains)
 
 
@@ -340,6 +357,35 @@ def validate_schedule_event(
     return errors
 
 
+def _safe_decode_http_bytes(raw: bytes, header_charset: str | None) -> str:
+    """Safely decode HTTP response bytes even when servers send bogus charsets like `charset=none`."""
+    cs = (header_charset or "").strip()
+    if not cs or cs.lower() in ("none", "unknown", "binary"):
+        m = re.search(rb"charset=[\"\x27]?([A-Za-z0-9_-]+)", raw[:4096], re.IGNORECASE)
+        cs = m.group(1).decode("ascii", "ignore") if m else "utf-8"
+    try:
+        codecs.lookup(cs)
+    except LookupError:
+        cs = "utf-8"
+    return raw.decode(cs, errors="replace")
+
+
+def _extract_pdf_text_snippet(raw_pdf: bytes, max_len: int = 12000) -> str:
+    """Extract text from an official PDF schedule (e.g., HSR Kyushu annual event_schedule PDF) if pypdf is installed."""
+    try:
+        from pypdf import PdfReader  # type: ignore
+
+        reader = PdfReader(io.BytesIO(raw_pdf))
+        pages_txt: list[str] = []
+        for p in reader.pages[:6]:
+            t = p.extract_text() or ""
+            if t.strip():
+                pages_txt.append(re.sub(r"\s+", " ", t).strip())
+        return "\n".join(pages_txt)[:max_len]
+    except Exception:
+        return ""
+
+
 def extract_structured_webike_events(raw_html: str) -> str:
     """Extract structured race event records directly from Webike Event NAVI HTML."""
     pattern = re.compile(
@@ -360,6 +406,25 @@ def extract_structured_webike_events(raw_html: str) -> str:
     return "\n".join(lines)
 
 
+def extract_structured_hsr_event_links(raw_html: str, base_url: str) -> list[str]:
+    """Discover all HSR Kyushu 2-wheel road/minibike event detail URLs from `/kumamoto/hsr/event/`."""
+    cards = re.findall(
+        r'<a[^>]+href=[\"\'](https?://www\.rms\.co\.jp/kumamoto/hsr/event/\d{4}/\d{2}/\d+/|/kumamoto/hsr/event/\d{4}/\d{2}/\d+/)[\"\'][^>]*>(.*?)</a>',
+        raw_html,
+        re.DOTALL | re.IGNORECASE,
+    )
+    skip_keywords = ("4輪", "クルマ", "K-CAR", "サイクル", "モトクロス", "エンデューロ", "オフロード", "オフスク", "スクール", "走行会")
+    keep_keywords = ("8時間耐久", "ドリームSunday", "SAGA CUP", "4時間耐久", "Trophy", "ドリームカップ", "火の国", "鉄馬")
+    discovered: list[str] = []
+    for href, inner in cards:
+        label = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", inner))).strip()
+        if any(k in label for k in keep_keywords) or ("ミニバイク" in label and not any(s in label for s in skip_keywords)):
+            full_u = urllib.parse.urljoin(base_url, href)
+            if full_u not in discovered:
+                discovered.append(full_u)
+    return discovered
+
+
 def strip_html_tags(raw_html: str, max_len: int = 15000) -> str:
     cleaned = re.sub(r"<script\b[^>]*>.*?</script>", " ", raw_html, flags=re.DOTALL | re.IGNORECASE)
     cleaned = re.sub(r"<style\b[^>]*>.*?</style>", " ", cleaned, flags=re.DOTALL | re.IGNORECASE)
@@ -370,32 +435,72 @@ def strip_html_tags(raw_html: str, max_len: int = 15000) -> str:
 
 
 def fetch_official_site_snippets(sources: list[dict[str, Any]], timeout: int = 8) -> list[dict[str, Any]]:
-    """Fetch live HTML snippets from MotoGP, MFJ, Webike, and nationwide circuit calendar URLs."""
+    """Fetch live HTML/PDF snippets from MotoGP, MFJ/JRR, Webike, HSR Kyushu mini-bike pages, and nationwide circuits."""
     results: list[dict[str, Any]] = []
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; HondaCatScheduleCollector/2.0; +https://honda.cat)"
+        "User-Agent": "Mozilla/5.0 (compatible; HondaCatScheduleCollector/2.1; +https://honda.cat)"
     }
+    cur_year = dt.date.today().year
+
     for src in sources:
         fetched_pages: list[dict[str, str]] = []
-        for url in src.get("calendarUrls", []):
+        urls_to_fetch = list(src.get("calendarUrls", []))
+
+        # Dynamically check next-season HSR Kyushu PDF schedule (e.g. event_schedule2027.pdf during off-season)
+        if src.get("id") == "hsr-kyushu":
+            for y in (cur_year, cur_year + 1):
+                dyn_pdf = f"https://www.rms.co.jp/kumamoto/hsr/pdf/event_schedule{y}.pdf"
+                if dyn_pdf not in urls_to_fetch:
+                    urls_to_fetch.append(dyn_pdf)
+
+        seen_urls: set[str] = set()
+        idx = 0
+        while idx < len(urls_to_fetch):
+            url = urls_to_fetch[idx]
+            idx += 1
+            if url in seen_urls:
+                continue
+            seen_urls.add(url)
+
             try:
                 req = urllib.request.Request(url, headers=headers)
                 with urllib.request.urlopen(req, timeout=timeout) as resp:
-                    charset = resp.headers.get_content_charset() or "utf-8"
-                    body = resp.read().decode(charset, errors="replace")
-                    
-                    # If this is Webike Event NAVI, extract structured events first
+                    ctype = (resp.headers.get_content_type() or "").lower()
+                    raw = resp.read()
+
+                    if url.lower().endswith(".pdf") or "pdf" in ctype:
+                        pdf_txt = _extract_pdf_text_snippet(raw)
+                        fetched_pages.append(
+                            {
+                                "url": url,
+                                "status": "ok_pdf",
+                                "snippet": pdf_txt or f"[Official PDF Schedule Verified Online: {url}]",
+                            }
+                        )
+                        continue
+
+                    body = _safe_decode_http_bytes(raw, resp.headers.get_content_charset())
+
+                    # Auto-discover any newly added HSR Kyushu 2-wheel / mini-bike event detail pages
+                    if src.get("id") == "hsr-kyushu" and url.rstrip("/").endswith("/kumamoto/hsr/event"):
+                        for extra_u in extract_structured_hsr_event_links(body, url):
+                            if extra_u not in seen_urls and extra_u not in urls_to_fetch:
+                                urls_to_fetch.append(extra_u)
+
                     structured_text = ""
                     if "event.webike.net" in url:
                         structured_text = extract_structured_webike_events(body)
-                    
-                    snippet = strip_html_tags(body)
+
+                    # Focus on <main> content if available so nav chrome doesn't crowd out dates
+                    main_match = re.search(r"<main\b[^>]*>(.*?)</main>", body, flags=re.DOTALL | re.IGNORECASE)
+                    snippet = strip_html_tags(main_match.group(1) if main_match else body)
                     if structured_text:
                         snippet = f"{structured_text}\n\n[Raw Page Snippet]:\n{snippet}"
-                    
+
                     fetched_pages.append({"url": url, "status": "ok", "snippet": snippet})
             except Exception as exc:
                 fetched_pages.append({"url": url, "status": f"deferred_to_search ({type(exc).__name__})", "snippet": ""})
+
         results.append(
             {
                 "id": src["id"],
@@ -438,14 +543,24 @@ def sync_schedules_with_gemini(
         "verify and update the annual race schedule database across:\n"
         "1. `scope: 'world'`: FIM MotoGP (`motogp.com/en/calendar`), FIM WorldSBK (`worldsbk.com/en/calendar`), "
         "and Circuit de Barcelona-Catalunya (`circuitcat.com`).\n"
-        "2. `scope: 'japan'`: MFJ Official (`mfj.or.jp/calendar/`), All-Japan Road Race (`superbike.jp/calendar/`), "
+        "2. `scope: 'japan'`: MFJ Official (`mfj.or.jp`), JRR All-Japan Road Race (`jrr.jp/calendar/`), "
         "all nationwide MFJ Regional Championships (Suzuka, Motegi, Tsukuba, SUGO, Okayama, Fuji, Tokachi), "
-        "and Kyushu's 3 major circuits (SPA Naoiri, Autopolis, HSR Kyushu) + recreational endurance series.\n\n"
-        "STRICT FACT POLICY:\n"
+        "and Kyushu's 3 major circuits (SPA Naoiri `autopolis.jp/spa/`, Autopolis `autopolis.jp/ap/`, HSR Kyushu `rms.co.jp/kumamoto/hsr/`) + recreational endurance series.\n\n"
+        "MANDATORY HSR KYUSHU MINI-BIKE & ENDURANCE COVERAGE RULE (NEVER OMIT!):\n"
+        "- HSR Kyushu (`https://www.rms.co.jp/kumamoto/hsr/event/` & `ms-event.net/hsrweb`) hosts a rich calendar of mini-bike sprints and endurance races across both its Circuit Course (2,350m) and Dream Course (695m).\n"
+        "- You MUST NEVER miss or omit HSR Kyushu mini-bike races, especially:\n"
+        "  1) Every December's season-closing flagship `SuperドリームSunday 8時間耐久レース With J・TRIP` (8-Hour Mini-Bike Endurance Championship Finale on HSR Kyushu Circuit Course, 2st-SP50 / 4st-SP100 / 4st-SF100 / 4st-ST125).\n"
+        "  2) `SuperドリームSundayレース` (all rounds on HSR Kyushu Circuit Course).\n"
+        "  3) `ドリームSundayレース` (all 4 rounds on HSR Kyushu Dream Course, AM Sprint & PM Endurance / HRC GROM Cup / NSF100 HRC Trophy).\n"
+        "  4) `SAGA CUP` (all 4 Dream Course rounds) & `WORLD SAGA CUP` (Circuit Course 3h endurance).\n"
+        "  5) `エンジョイ4時間耐久レース` (year-end mini-bike 4-hour endurance on HSR Kyushu Circuit Course).\n"
+        "  6) Plus `HSR九州 Trophy ロードレース選手権`, `ドリームカップフェスティバル`, `S250火の国耐久レース`, and `鉄馬 with TSK` (`tetsuuma.com`).\n\n"
+        "STRICT FACT & DOMAIN POLICY:\n"
         "- Never fabricate dates. Set `startDate` and `endDate` (YYYY-MM-DD) from verified official calendars.\n"
-        "- `officialWebUrl` MUST use an official sanctioning or organizer domain (e.g., motogp.com, worldsbk.com, mfj.or.jp, superbike.jp, event.webike.net, takuma-gp.com, brow-s.jp, tetsuma.jp, suzukacircuit.jp, mr-motegi.jp, tsukuba-circuit.jp, sportsland-sugo.co.jp, okayama-international-circuit.jp, autopolis.jp, spa-naoiri.com, hsr.jp).\n"
+        "- NEVER use defunct/hijacked domains `hsr.jp`, `tetsuma.jp`, `spa-naoiri.com`, or `superbike.jp`. Always use `rms.co.jp/kumamoto/hsr/` or `ms-event.net/hsrweb` for HSR Kyushu, `tetsuuma.com` for Tetsuma, `autopolis.jp/spa/` for SPA Naoiri, and `jrr.jp` for All-Japan Road Race.\n"
+        "- `officialWebUrl` MUST use an official sanctioning, circuit, or organizer domain (`motogp.com`, `worldsbk.com`, `mfj.or.jp`, `jrr.jp`, `rms.co.jp`, `ms-event.net`, `tetsuuma.com`, `autopolis.jp`, `suzukacircuit.jp`, `mr-motegi.jp`, `tsukuba-circuit.jp`, `sportsland-sugo.co.jp`, `okayama-international-circuit.jp`, `fsw.tv`, `tokachi.msf.ne.jp`, `brow-s.jp`, `takuma-gp.com`, `event.webike.net`).\n"
         "- `circuitWebUrl` MUST be the real official circuit domain (never Wikipedia, blogs, or social media profiles); if unavailable, set it equal to `officialWebUrl`.\n"
-        "- Set `hasUpdates: true` if any event date, name, or schedule window changed compared to `EXISTING_DB`.\n\n"
+        "- Set `hasUpdates: true` if any event date, name, or schedule window changed or new events were added compared to `EXISTING_DB`.\n\n"
         f"EXISTING_DB:\n{json.dumps(existing_db, ensure_ascii=False)}\n\n"
         f"SCRAPED OFFICIAL SOURCES:\n{json.dumps(scraped_data, ensure_ascii=False)}"
     )
@@ -540,6 +655,9 @@ def sync_schedules_with_gemini(
 
     merged_events.sort(key=lambda e: (e.get("startDate", ""), e.get("id", "")))
 
+    if len(merged_events) != len(existing_events):
+        has_updates = True
+
     updated_db = {
         "lastUpdated": today_iso,
         "season": now.year if now.month < 12 else now.year + 1,
@@ -562,17 +680,28 @@ def verify_schedule_registry() -> int:
     schedules_data = json.loads(SCHEDULES_JSON_PATH.read_text(encoding="utf-8"))
 
     sources = sources_cfg.get("sources", [])
+    circuit_res_pages = sources_cfg.get("circuitResultPages", [])
     events = schedules_data.get("events", [])
-    print(f"📡 Registered Official Websites & SNS Sources: {len(sources)}")
+    print(f"📡 Registered Official Websites & SNS Sources: {len(sources)} (Circuit Result Registry: {len(circuit_res_pages)} circuits)")
     for s in sources:
-        urls = ", ".join(s.get("calendarUrls", []))
+        urls = ", ".join(s.get("calendarUrls", [])[:3])
+        res_urls = ", ".join(s.get("resultUrls", [])) or "none"
         sns_list = ", ".join(f"{x['platform']}:{x['handle']}" for x in s.get("sns", []))
-        print(f"   - [{s['id']}] ({s.get('scope')}) {s['name']['ja']} | Web: {urls} | SNS: {sns_list}")
+        print(f"   - [{s['id']}] ({s.get('scope')}) {s['name']['ja']} | Cal: {urls} | Results: {res_urls} | SNS: {sns_list}")
 
     print(f"\n🗓️ Running Deterministic Fact & Integrity Verification on {SCHEDULES_JSON_PATH.name} ({len(events)} entries)...")
     errors: list[str] = []
     seen_ids: set[str] = set()
     ref_date = dt.date.today()
+
+    # Deterministic check: ensure HSR Kyushu mini-bike 8-hour endurance finale is never missing
+    has_hsr_8h = any(
+        "hsr" in (ev.get("id", "") + ev.get("circuit", {}).get("ja", "")).lower()
+        and ("8時間耐久" in ev.get("eventName", {}).get("ja", "") or "8h" in ev.get("id", "").lower())
+        for ev in events
+    )
+    if not has_hsr_8h:
+        errors.append("[hsr-kyushu-8h] Mandatory December HSR Kyushu Mini-Bike 8-Hour Endurance (`SuperドリームSunday 8時間耐久レース`) is missing from schedules.json!")
 
     for idx, ev in enumerate(events, start=1):
         eid = ev.get("id", f"unknown-entry-#{idx}")
@@ -590,7 +719,7 @@ def verify_schedule_registry() -> int:
         print(f"\n❌ DETERMINISTIC INTEGRITY AUDIT FAILED! Found {len(errors)} violation(s):")
         for err in errors:
             print(f"   🚨 {err}")
-        print("\n🚫 Aborting pipeline to prevent fabricated or hallucinated schedules from being published!")
+        print("\n🚫 Aborting pipeline to prevent fabricated, incomplete, or untrusted schedules from being published!")
         return 1
 
     print(f"\n🎯 All {len(events)} schedule entries passed strict deterministic integrity audit!")
@@ -615,7 +744,7 @@ def main() -> int:
     sources_cfg = json.loads(SOURCES_CONFIG_PATH.read_text(encoding="utf-8"))
     existing_db = json.loads(SCHEDULES_JSON_PATH.read_text(encoding="utf-8"))
 
-    print("🌐 Running weekly official race schedule check across MotoGP, MFJ, nationwide circuits, and SNS...")
+    print("🌐 Running weekly official race schedule check across MotoGP, MFJ, nationwide circuits, HSR Kyushu mini-bike series, and SNS...")
     scraped = fetch_official_site_snippets(sources_cfg["sources"])
     has_updates, updated_db = sync_schedules_with_gemini(sources_cfg, existing_db, scraped)
 

@@ -75,7 +75,7 @@
       "accountName": "オートポリス 公式サイト（年間ランキング）",
       "handle": "autopolis.jp",
       "url": "https://autopolis.jp/",
-      "postUrl": "https://autopolis.jp/ap/motorsports/result/",
+      "postUrl": "https://autopolis.jp/ap/result/",
       "quotedPostText": {
         "ja": "オートポリス公式リザルト：2026 POLISPAロードレース選手権 第4戦の正式結果および年間ポイントランキング表を公開しました。",
         "ca": "Resultats oficials Autopolis: classificacions finals de la 4a prova i taula oficial de punts 2026.",
@@ -117,11 +117,11 @@
     "sources": [
       {
         "title": "オートポリス 公式モータースポーツリザルト (autopolis.jp)",
-        "url": "https://autopolis.jp/ap/motorsports/result/"
+        "url": "https://autopolis.jp/ap/result/"
       },
       {
         "title": "MFJ九州 2026 POLISPAロードレース選手権カレンダー",
-        "url": "https://www.mfj.or.jp/calendar/"
+        "url": "https://www.mfj.or.jp/race-calendar/"
       }
     ]
   },
