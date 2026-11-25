@@ -2103,9 +2103,9 @@
       "verifiedSource": "FIM MotoGP 公式カレンダー (motogp.com)",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "retry_wednesday",
+        "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+        "lastCheckedAt": "2026-11-25"
       }
     },
     {
@@ -2138,8 +2138,8 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4232/) ＆ 筑波サーキット公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "retry_wednesday",
-        "resultArticleId": null,
+        "resultStatus": "published_wednesday",
+        "resultArticleId": "2026-11-25-2026-11-25-digest-tsukuba-tourist-trophy-november",
         "lastCheckedAt": "2026-11-24T08:57:41+00:00",
         "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
@@ -2210,9 +2210,9 @@
       "verifiedSource": "WebikeイベントNAVI (event.webike.net/event/4646/) ＆ レン耐公式",
       "publicationState": {
         "previewPublished": true,
-        "resultStatus": "retry_wednesday",
+        "resultStatus": "not_available",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
+        "lastCheckedAt": "2026-11-25",
         "previewArticleId": "2026-11-20-preview-2026-11-21-tsukuba-tt-spa-naoiri-rentai"
       }
     },
