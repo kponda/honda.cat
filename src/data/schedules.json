@@ -2770,9 +2770,10 @@
       "snsUrl": "https://x.com/WorldSBK",
       "verifiedSource": "FIM WorldSBK Official (worldsbk.com)",
       "publicationState": {
-        "previewPublished": false,
+        "previewPublished": true,
         "resultStatus": "pending",
-        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
+        "previewArticleId": "2026-11-26-motogp-valencia-finale-and-worldsbk-jerez-test-preview"
       }
     },
     {
@@ -2804,9 +2805,10 @@
       "snsUrl": "https://x.com/MotoGP",
       "verifiedSource": "FIM MotoGP 公式カレンダー (motogp.com)",
       "publicationState": {
-        "previewPublished": false,
+        "previewPublished": true,
         "resultStatus": "pending",
-        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
+        "previewArticleId": "2026-11-26-motogp-valencia-finale-and-worldsbk-jerez-test-preview"
       }
     },
     {
