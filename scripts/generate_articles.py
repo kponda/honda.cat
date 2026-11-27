@@ -31,6 +31,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import os
 import re
@@ -42,6 +43,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 import circuit_results_fetcher  # noqa: E402
+import colab_image_generator  # noqa: E402
 import x_photo_finder  # noqa: E402
 
 try:
@@ -58,33 +60,28 @@ HERO_IMAGES_DIR = Path(__file__).resolve().parent.parent / "public" / "images" /
 CAT_IMAGES_DIR = Path(__file__).resolve().parent.parent / "public" / "images" / "cats"
 
 IMAGE_PROMPT_SYSTEM_INSTRUCTION = """You are the Lead Visual Director and Motorsport Photojournalist for `honda.cat`.
-Your mission is to generate a single, highly realistic text-to-image prompt for Gemini Image Generation featuring our anthropomorphic retro "Nameneko-style" cat reporters in action at the specific race or circuit featured in the article.
+Your mission is to generate a single, highly realistic text-to-image prompt for FLUX.2-klein-4B / Gemini image-conditioned generation featuring our anthropomorphic retro "Nameneko-style" cat reporters in dynamic, varied motorsport scenes.
 
 CRITICAL CHARACTER PROPORTION & IDENTITY RULE (AUTHENTIC NAMENEKO STYLE):
-- The cat in the image MUST EXACTLY match the character shown in the provided reference image:
-  * PROPORTION: Exactly 2.5 to 3 heads tall (a chubby, real domestic cat standing upright on two short hind legs with short cute feline paws).
-  * STRICT PROHIBITION: NEVER make the cat an 8-head-tall person, humanoid, or furry body. It must look like an authentic Japanese 1980s "Nameneko" style photograph — a real cute chubby domestic cat dressed in miniature motorsport gear.
+- Keep ONLY the cat's exact face, fur markings, key signature outfit markers, and chubby proportions from the reference image:
+  * PROPORTION: Exactly 2.5 to 3 heads tall (a chubby, real domestic cat standing, sitting, or crouching on short hind legs with short cute feline paws).
+  * STRICT PROHIBITION: NEVER make the cat an 8-head-tall person, humanoid, or slender human-limbed character. It must look like an authentic Japanese 1980s "Nameneko" style photograph — a real cute chubby domestic cat dressed in miniature motorsport gear.
   * HEAD & FACE: Round fluffy domestic cat head, feline whiskers, realistic fur, expressive cat eyes.
 
+MANDATORY VARIETY & ANTI-COPY-PASTE RULE:
+- You will be given an `ASSIGNED SCENE DIRECTIVE` specifying exact shot framing, pose/action, prop rules, and setting/lighting.
+- You MUST strictly obey that `ASSIGNED SCENE DIRECTIVE` and ACTIVELY BREAK AWAY from the reference image's dead-center static front-facing standing pose and default background.
+- Place the cat off-center (rule of thirds), seated, crouching, leaning over a pit wall, walking mid-stride, or viewed from a dynamic 3/4 or over-the-shoulder angle as directed.
+- Explicitly honor the `Prop Rule` so reference props (like Marc's stopwatch/notepad or Naomi's wrench) do not reappear when replaced.
+
 THE THREE CAT REPORTERS:
-1. `marc` (Marc):
-   - Male orange tabby cat, warm striped fur, amber feline eyes.
-   - Attire: Red-white-and-blue zippered racing jacket, lanyard with MEDIA PASS.
-   - Actions: Standing at pit wall or paddock cafe, holding telemetry tablet analyzing lap times as race bikes speed past.
-2. `suzuka` (Suzuka):
-   - Female calico cat, soft tricolor fur (white/black/orange), green eyes.
-   - Attire: White collared shirt, beige photographer multi-pocket vest with PRESS badge, small black shoes.
-   - Actions: Gripping a black DSLR camera with a long telephoto white lens with both paws, aiming it trackside at circuit kerbs or grandstand.
-3. `naomi` (Naomi):
-   - Female sleek black cat, glossy black fur, sharp green eyes, tiny pink cherry blossom flower hairpin on left ear.
-   - Attire: Oil-stained dark blue mechanic coveralls (sleeves & cuffs rolled up), red mechanic pass.
-   - Actions: Kneeling or standing beside a race bike on a paddock stand, holding a metallic wrench or torque wrench, inspecting tires or radiator in pit garage.
+1. `marc` (Marc): Male orange tabby cat, warm striped fur, amber feline eyes. Signature gear: retro red-white-and-blue zippered racing jacket with PRESS/MARC patches and media lanyard.
+2. `suzuka` (Suzuka): Female calico cat, soft tricolor fur (white/black/orange), green eyes. Signature gear: white collared shirt, khaki multi-pocket photographer vest with '87 PRESS SUZUKA badge, small black shoes.
+3. `naomi` (Naomi): Female sleek black cat, glossy black fur, sharp green eyes, tiny pink cherry blossom flower clip by left ear. Signature gear: oil-stained navy mechanic coveralls with rolled sleeves and name badge.
 
 SCENARIO SPECIFICATION:
-- Contextual Circuit Background: Incorporate specific landmarks (e.g. Suzuka Ferris wheel, Autopolis rolling Aso mountains, Montmeló grandstand, SPA Naoiri bowl, Lusail night floodlights).
-- Match the race weather (overcast, rain puddles, bright sun, evening dusk).
-- Shot on 50mm f/1.8 lens, natural lighting, subtle 35mm film grain, authentic Nameneko photography style.
-- Output ONLY the raw English prompt string (around 50-80 words). No quotes, no prefix, no Markdown.
+- Incorporate concrete landmarks, bikes, race weather, and story context from the article naturally into the background and lighting.
+- Output ONLY the raw English prompt string (around 65-110 words) detailing spatial composition, cat pose, replaced props, background depth, camera lens, natural lighting, and subtle 35mm film grain. No quotes, no prefix, no Markdown.
 """
 
 SYSTEM_INSTRUCTION = """You are the Strict Fact-Based Editorial Engine for `honda.cat`, an independent trilingual (Japanese `ja`, Catalan `ca`, English `en`) motorcycle racing & circuit maintenance portal run by three bipedal "Nameneko-style" (non-delinquent, authentic motorsport professional) cats:
@@ -894,7 +891,11 @@ def _ground_and_sanitize_sns_citations(
     return cleaned_cites
 
 
-def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, Any]:
+def author_and_audit_article(
+    prompt_context: str,
+    today_str: str,
+    image_backend: str = "auto",
+) -> dict[str, Any]:
     """Run Stage 1/2/3 grounded authoring + strict independent fact audit and save the article JSON."""
     from google import genai
 
@@ -1146,8 +1147,8 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
         raise FactCheckError(f"❌ Fact Audit Rejected Article: {issues}")
 
     print(f"[3/3] ✅ Fact Audit Passed: {audit_result.get('summary')}")
-    print("[4/4] 📸 Generating authentic motorsport hero photo with Imagen 3...")
-    hero_image_url = generate_and_save_hero_image(draft_json, client)
+    print("[4/4] 📸 Generating authentic motorsport hero photo...")
+    hero_image_url = generate_and_save_hero_image(draft_json, client, image_backend=image_backend)
     article = finalize_article_record(draft_json, today_str, hero_image=hero_image_url)
     _sanitize_article_domains(article, relevant_sources)
 
@@ -1409,42 +1410,311 @@ def generate_technical_svg_hero(article_data: dict[str, Any]) -> str:
     return public_url
 
 
+HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
+    "marc": [
+        {
+            "id": "marc_paddock_cafe_map",
+            "preferred_types": ("preview",),
+            "shot_framing": "Medium wide environmental shot framed off-center (rule of thirds, Marc seated on the left third at an outdoor cafe table)",
+            "pose_action": "Sitting relaxed on a wooden paddock cafe chair, leaning forward with one paw tracing a corner on a spread-out circuit map",
+            "prop_rule": "Hold ONLY a white espresso cup near a folded paper circuit map and sunglasses on the table. Do NOT hold the reference stopwatch or paper notepad.",
+            "setting_lighting": "Bright Mediterranean morning sunlight at an outdoor paddock terrace cafe with parasols, parked paddock scooters, and sunlit grandstands in soft background bokeh.",
+        },
+        {
+            "id": "marc_pitwall_over_shoulder",
+            "preferred_types": ("digest", "preview"),
+            "shot_framing": "Dynamic 3/4 rear-side over-the-shoulder shot from the pit wall, Marc placed on the right third looking toward the track",
+            "pose_action": "Leaning both front paws on the concrete pit-wall rail, peering intently past a hanging timing monitor onto the main straight",
+            "prop_rule": "Wear radio headset over his ears and lean on the pit wall rail beside a mounted pit timing screen. Do NOT hold a stopwatch or notepad.",
+            "setting_lighting": "High-contrast afternoon race light with two MotoGP-style superbikes motion-blurred at high speed along the asphalt straight and pit boards ahead.",
+        },
+        {
+            "id": "marc_grid_walk_mic",
+            "preferred_types": ("preview", "digest"),
+            "shot_framing": "Candid eye-level medium shot angled diagonally along a crowded starting grid, Marc off-center on the left",
+            "pose_action": "Walking mid-stride along the starting grid asphalt while turning his head slightly toward the camera with a lively expression",
+            "prop_rule": "Hold a handheld broadcast reporter microphone with a wind foam cap in one paw while the other paw gestures toward the grid bikes. Do NOT hold the stopwatch or notepad.",
+            "setting_lighting": "Crisp pre-race daylight on the starting grid with painted white grid boxes, racing bikes on rear stands under umbrellas, and blurred mechanics in background.",
+        },
+        {
+            "id": "marc_media_center_dusk",
+            "preferred_types": ("digest",),
+            "shot_framing": "Warm indoor-to-outdoor window composition, Marc seated at a press desk in the foreground left looking toward a wide glass window",
+            "pose_action": "Seated upright on an office chair behind a press room desk, typing on a sleek silver laptop while glancing out at the dusk circuit",
+            "prop_rule": "Paws resting on a compact open laptop beside a stack of printed lap-time sheets. Do NOT hold the reference stopwatch or notepad.",
+            "setting_lighting": "Blue-hour twilight and warm tungsten press-room desk lamp glow contrasting against the illuminated pit lane and circuit floodlights outside the window.",
+        },
+        {
+            "id": "marc_corner_apex_watch",
+            "preferred_types": ("preview", "digest"),
+            "shot_framing": "Low-angle wide shot from behind red-and-white corner kerbs, Marc positioned on the left foreground observing the apex",
+            "pose_action": "Crouching slightly on short hind legs beside a trackside marshal barrier, leaning forward to study riders' cornering lean angles",
+            "prop_rule": "Hold compact black binoculars raised near his eyes with both paws. Do NOT hold the stopwatch or paper notepad.",
+            "setting_lighting": "Dramatic late-afternoon side sunlight casting long shadows across dark rubbered-in asphalt, striped kerbs, and leaning motorcycles blurred through the corner.",
+        },
+        {
+            "id": "marc_parc_ferme_recorder",
+            "preferred_types": ("digest",),
+            "shot_framing": "Candid side-angle documentary shot at Parc Fermé barriers, Marc framed in the right foreground",
+            "pose_action": "Standing on short hind legs turned 3/4 toward a victorious race bike parked behind metal barricades, extending one paw forward",
+            "prop_rule": "Hold a compact digital voice recorder forward in one paw while gesturing with the other. Do NOT hold the reference stopwatch or notepad.",
+            "setting_lighting": "Energetic post-race golden afternoon light with confetti-dusted tarmac, podium backdrop structures, and photographers clustered around parked race bikes.",
+        },
+        {
+            "id": "marc_garage_doorway_stride",
+            "preferred_types": ("preview", "digest"),
+            "shot_framing": "Medium full-body shot framed through an open team pit garage doorway, Marc walking out toward pit lane on the left third",
+            "pose_action": "Stepping out mid-stride from a shaded pit box onto sunlit pit lane asphalt, glancing back toward a race machine inside",
+            "prop_rule": "Carry a sleek horizontal telemetry tablet tucked under one arm while checking a pit-lane credential wristband. Do NOT hold the stopwatch or paper notepad.",
+            "setting_lighting": "Dramatic doorway rim lighting transitioning from cool LED pit-box interior (toolbox cabinets, spare fairings) to bright sunlit pit apron.",
+        },
+        {
+            "id": "marc_grandstand_golden_hour",
+            "preferred_types": ("preview", "digest"),
+            "shot_framing": "Wide cinematic 3/4 profile shot from an elevated grandstand terrace looking down at the circuit",
+            "pose_action": "Standing beside a metal terrace railing turned in 3/4 profile, pointing one paw out toward a sweeping S-curve below",
+            "prop_rule": "No stopwatch and no notepad; rest one paw on the terrace railing and hold a folded race weekend program booklet in the other.",
+            "setting_lighting": "Warm golden-hour sunset rays across tiered grandstands, sweeping ribbon of distant racetrack, and dramatic clouds.",
+        },
+    ],
+    "suzuka": [
+        {
+            "id": "suzuka_low_kerb_crouch",
+            "preferred_types": ("digest", "preview"),
+            "shot_framing": "Dynamic low-angle ground-level tracking shot, Suzuka crouched on the right third near red-and-white corner kerbs",
+            "pose_action": "Crouching low on short hind legs in the grass verge, twisting her torso in 3/4 profile to pan horizontally with passing bikes",
+            "prop_rule": "Hold a compact black rangefinder camera with a short fast prime lens (no giant white bazooka telephoto lens) close to her face.",
+            "setting_lighting": "Bright crisp daylight with blurred green grass blades in foreground, fast panning motion blur on a leaning superbike right behind her.",
+        },
+        {
+            "id": "suzuka_pitlane_lcd_check",
+            "preferred_types": ("digest",),
+            "shot_framing": "Candid over-the-shoulder medium close-up from the left, showing Suzuka's profile and the glowing rear LCD screen of her camera",
+            "pose_action": "Tilting her calico head downward in concentration, holding her DSLR at chest height to inspect the rear photo review screen",
+            "prop_rule": "Camera hangs on her neck strap while both paws hold the camera body angled up so the rear LCD preview is visible. No lens aimed forward.",
+            "setting_lighting": "Overcast soft pit-lane daylight with race mechanics wheeling tire stacks and glowing pit garage lights softly out of focus behind her.",
+        },
+        {
+            "id": "suzuka_rainy_awning_lens_wipe",
+            "preferred_types": ("digest", "preview"),
+            "shot_framing": "Atmospheric medium shot under a paddock tent awning on the left third, looking out toward rain-soaked asphalt",
+            "pose_action": "Standing sheltered under a pit canopy in a bright yellow rain poncho, gently wiping raindrops off her camera lens with a microfiber cloth",
+            "prop_rule": "Hold a small microfiber lens cloth in one paw and her camera cradled against her chest in the other, wearing a translucent yellow rain poncho over her vest.",
+            "setting_lighting": "Moody rainy Japanese circuit weather with falling rain streaks, shimmering puddles reflecting pit lights, and wet bikes spraying mist on track.",
+        },
+        {
+            "id": "suzuka_podium_wide_angle",
+            "preferred_types": ("digest",),
+            "shot_framing": "Low wide-angle upward shot from the front of the podium celebration crowd, Suzuka positioned on the left foreground",
+            "pose_action": "Looking upward at a 45-degree angle toward an elevated circuit podium, raising a wide-angle DSLR overhead to capture the celebration",
+            "prop_rule": "Hold a compact black DSLR with a wide-angle hood tilted steeply upward with both paws; no long white telephoto lens.",
+            "setting_lighting": "Vibrant celebratory afternoon light with champagne spray mist catching sunbeams above a blurred podium backdrop and cheering team crew.",
+        },
+        {
+            "id": "suzuka_paddock_stool_review",
+            "preferred_types": ("preview", "digest"),
+            "shot_framing": "Relaxed eye-level environmental portrait framed off-center on the left, seated beside stacked Pelican camera cases",
+            "pose_action": "Sitting on a folding canvas paddock stool with knees tucked, resting both paws on a rugged silver laptop on her lap",
+            "prop_rule": "Camera rests inside an open padded black camera case beside her stool; her paws hold an open silver laptop showing photo thumbnails. Do NOT hold a camera up.",
+            "setting_lighting": "Clear Japanese mountain circuit afternoon (lush cedar hills or Ferris wheel in distance) with warm dappled sunlight across paddock asphalt.",
+        },
+        {
+            "id": "suzuka_endurance_twilight_pit",
+            "preferred_types": ("preview", "digest"),
+            "shot_framing": "Cinematic 3/4 side shot from pit lane apron at dusk, Suzuka kneeling on one knee on the right third",
+            "pose_action": "Kneeling beside a pit lane line marker, angling her camera low toward an endurance racer entering pit box for refueling",
+            "prop_rule": "Hold a black DSLR equipped with a medium 24-70mm zoom lens and glowing hotshoe flash trigger; no giant white telephoto lens.",
+            "setting_lighting": "Deep cobalt twilight sky mixed with warm tungsten pit-box floodlights, glowing motorcycle headlights, and blurred pit crew in fireproof suits.",
+        },
+        {
+            "id": "suzuka_hillside_over_shoulder",
+            "preferred_types": ("preview",),
+            "shot_framing": "Elevated scenic 3/4 back-angle shot from a grassy spectator bank, Suzuka on the left third overlooking sweeping bends",
+            "pose_action": "Standing on a sloped grassy hillside, leaning slightly forward with camera slung across her shoulder while pointing toward a downhill hairpin",
+            "prop_rule": "Let the camera hang loosely at her hip on its strap while she raises a paper circuit map and points one paw toward the track below.",
+            "setting_lighting": "Bright morning sunshine over green hillside circuit, distant valley hairpin curves with tiny colorful racing bikes and safety barriers.",
+        },
+        {
+            "id": "suzuka_grid_morning_aperture",
+            "preferred_types": ("preview", "digest"),
+            "shot_framing": "Crisp medium shot angled down pit lane at dawn/morning, Suzuka standing off-center right in side profile",
+            "pose_action": "Standing in 3/4 profile adjusting the aperture ring on a vintage silver-and-black 35mm film camera held at waist level",
+            "prop_rule": "Hold a classic compact metallic SLR camera at waist level while adjusting its lens dial, with a small press notebook tucked in her vest pocket.",
+            "setting_lighting": "Fresh early-morning golden rim light with long shadows across pit lane asphalt, mist rising off distant hills, and bikes warming up.",
+        },
+    ],
+    "naomi": [
+        {
+            "id": "naomi_tire_warmer_gauge",
+            "preferred_types": ("preview", "maintenance", "digest"),
+            "shot_framing": "Dynamic low-angle outdoor paddock shot, Naomi crouched on the left third beside a sportbike wrapped in red tire warmers",
+            "pose_action": "Crouching beside the rear wheel of a racing motorcycle on a paddock stand, pressing a brass dial tire pressure gauge onto the valve stem",
+            "prop_rule": "Hold ONLY a round analog tire pressure gauge with rubber hose against the rear tire valve. Do NOT hold the reference wrench.",
+            "setting_lighting": "Bright sunlit outdoor paddock canopy tent with blue sky, circuit paddock trucks, and warm sunlight glinting off racing slicks and alloy wheels.",
+        },
+        {
+            "id": "naomi_workbench_caliper",
+            "preferred_types": ("maintenance",),
+            "shot_framing": "Tight medium close-up across a cluttered metal workshop bench, Naomi framed slightly right behind foreground brake components",
+            "pose_action": "Leaning over a steel garage workbench, carefully measuring a drilled stainless steel brake rotor with stainless vernier calipers",
+            "prop_rule": "Hold precision stainless steel vernier calipers in both paws measuring a brake disc on the bench. Do NOT hold the reference open-end wrench.",
+            "setting_lighting": "Focused warm overhead task lamp illuminating metallic brake rotors, sintered brake pads, and clean shop rags in a sunlit open garage bay.",
+        },
+        {
+            "id": "naomi_front_fork_torque",
+            "preferred_types": ("maintenance", "digest"),
+            "shot_framing": "3/4 side-angle medium shot inside an active race pit box, Naomi standing off-center right next to the front wheel",
+            "pose_action": "Standing in 3/4 profile beside the front forks of a superbike on a front head-lift stand, tightening a caliper pinch bolt",
+            "prop_rule": "Hold a long chrome micrometer click-type torque wrench horizontally with both paws on the front brake caliper. Do NOT hold the reference flat spanner.",
+            "setting_lighting": "Cool white pit-box LED strips mixed with daylight from the open pit lane behind, carbon front fender, gold fork tubes, and pit wall visible.",
+        },
+        {
+            "id": "naomi_pitwall_signboard",
+            "preferred_types": ("digest", "preview"),
+            "shot_framing": "Energetic candid 3/4 shot from pit lane looking toward the pit wall fence, Naomi standing on the left third",
+            "pose_action": "Holding up a black-and-yellow pit board with chalk lap numbers over the pit wall opening as an endurance bike flashes past",
+            "prop_rule": "Grip a rectangular pit signboard with chalk numbers ('P1' / 'IN') in both paws; no wrench.",
+            "setting_lighting": "Bright afternoon trackside sunlight with heat haze, blurred motorcycle streaking past on the main straight, and race team canopies behind.",
+        },
+        {
+            "id": "naomi_outdoor_canopy_checklist",
+            "preferred_types": ("preview", "maintenance"),
+            "shot_framing": "Sunlit outdoor grassy paddock shot, Naomi sitting on a stacked set of racing slick tires on the right third",
+            "pose_action": "Seated casually on a stack of black racing tires under a team pop-up tent, jotting setup notes on an aluminum clipboard",
+            "prop_rule": "Hold an aluminum setup clipboard and pen in her paws; no wrench in hand.",
+            "setting_lighting": "Warm late-morning sunshine at a Japanese grassroots endurance paddock with colorful team tents, mini-bikes, and green circuit hills behind.",
+        },
+        {
+            "id": "naomi_chain_slack_low_angle",
+            "preferred_types": ("maintenance", "digest"),
+            "shot_framing": "Extreme low-angle shot from floor level looking along the swingarm and gold drive chain, Naomi kneeling on the left",
+            "pose_action": "Kneeling on one knee on rubber pit mats, holding a small steel millimeter ruler up against the lower run of a gold racing chain",
+            "prop_rule": "Hold a 150mm stainless steel ruler and safety-wire pliers beside the rear sprocket. Do NOT hold the reference large wrench.",
+            "setting_lighting": "Dramatic low-key pit bay lighting with bright daylight spilling from the open pit door onto the gold chain and anodized sprocket.",
+        },
+        {
+            "id": "naomi_fluid_clinic_bench",
+            "preferred_types": ("maintenance",),
+            "shot_framing": "Medium environmental shot inside a bright clean technical bay, Naomi positioned on the left third behind clear fluid bottles",
+            "pose_action": "Wearing clear safety goggles pushed up on her forehead near her sakura clip, squeezing a transparent brake-bleeder bottle tube",
+            "prop_rule": "Hold a clear silicone brake bleeder hose and catch bottle connected to a caliper bleed nipple. Do NOT hold a wrench.",
+            "setting_lighting": "Crisp bright daylight pouring through wide open garage bay doors onto clean concrete floor, aluminum paddock stand, and tool trolley.",
+        },
+        {
+            "id": "naomi_sunset_garage_cooldown",
+            "preferred_types": ("digest", "maintenance"),
+            "shot_framing": "Warm atmospheric back-lit wide shot from outside looking into an open pit garage at sunset, Naomi slightly off-center right",
+            "pose_action": "Sitting on a low rolling mechanic creeper stool wiping grease off her paws with a red shop rag while admiring a parked race bike",
+            "prop_rule": "Hold ONLY a folded red cotton shop rag wiping her paws, with an open helmet resting on a work mat nearby. No wrench.",
+            "setting_lighting": "Golden-orange sunset rays streaming diagonally across the concrete apron and illuminating warm glowing silhouettes inside the pit bay.",
+        },
+    ],
+}
+
+
+def _pick_preferred_directives(
+    directives: list[dict[str, Any]],
+    article_data: dict[str, Any],
+) -> list[dict[str, Any]]:
+    article_type = str(article_data.get("articleType") or "").lower()
+    category = str(article_data.get("category") or "").lower()
+    weather_raw = json.dumps(article_data.get("eventMeta", {}).get("weather", {}), ensure_ascii=False).lower()
+
+    if any(w in weather_raw for w in ("rain", "wet", "雨", "pluja")):
+        wet_matches = [d for d in directives if "rain" in d["id"] or "rain" in d["setting_lighting"].lower()]
+        if wet_matches:
+            return wet_matches
+
+    if any(w in weather_raw for w in ("night", "floodlight", "ナイター", "夜", "dusk", "twilight")):
+        night_matches = [d for d in directives if any(k in d["id"] for k in ("dusk", "twilight", "sunset", "media_center"))]
+        if night_matches:
+            return night_matches
+
+    target_type = "maintenance" if category == "maintenance" or article_type == "maintenance" else article_type
+    if target_type:
+        typed = [d for d in directives if target_type in d.get("preferred_types", ())]
+        if typed:
+            return typed
+
+    return directives
+
+
+def select_hero_scene_directive(
+    article_data: dict[str, Any],
+    variant_index: int = 0,
+    exclude_ids: set[str] | None = None,
+) -> dict[str, Any]:
+    """Deterministically choose a varied visual scene directive for the featured cat."""
+    featured_cat = article_data.get("featuredCat", "naomi")
+    directives = HERO_SCENE_DIRECTIVES.get(featured_cat, HERO_SCENE_DIRECTIVES["naomi"])
+    candidates = _pick_preferred_directives(directives, article_data)
+    if len(candidates) < 2:
+        candidates = directives
+
+    if exclude_ids:
+        filtered = [d for d in candidates if d["id"] not in exclude_ids]
+        if not filtered:
+            filtered = [d for d in directives if d["id"] not in exclude_ids]
+        if filtered:
+            candidates = filtered
+
+    slug = str(article_data.get("slug") or article_data.get("id") or "default")
+    pub = str(article_data.get("publishedAt") or "")
+    digest = hashlib.sha256(f"{slug}:{pub}:{featured_cat}:{variant_index}".encode("utf-8")).hexdigest()
+    idx = (int(digest[:8], 16) + variant_index) % len(candidates)
+    return candidates[idx]
+
+
+def compute_hero_seed(slug: str, variant_index: int = 0) -> int:
+    digest = hashlib.sha256(f"{slug}:seed:{variant_index}".encode("utf-8")).hexdigest()
+    return int(digest[:8], 16) % (2**31 - 1)
+
+
 def get_fallback_image_prompt(
     featured_cat: str,
     category: str,
     circuit: str,
     weather: str = "Dry",
+    directive: dict[str, Any] | None = None,
 ) -> str:
-    """Generate a high-realism cat reporter action prompt if dynamic LLM generation fails."""
-    cat_lower = (category or "").lower()
-    if featured_cat == "suzuka":
-        return (
-            f"Trackside documentary photograph of Suzuka, an anthropomorphic calico cat standing upright on two legs like a professional photojournalist. "
-            f"She has soft calico fur, cat ears, and whiskers, wearing a tailored photographer vest with PRESS badge. "
-            f"She holds a professional black DSLR camera equipped with a long telephoto lens with both paws, aiming it towards the racetrack corner at {circuit}. "
-            f"Background shows asphalt track under {weather} daylight, with a race motorcycle blurred in distance. "
-            f"Shot on 50mm f/1.8 lens, shallow depth of field, sharp focus on the calico cat, realistic fur texture, subtle 35mm film grain."
-        )
-    elif featured_cat == "marc":
-        return (
-            f"Candid editorial photograph of Marc, an anthropomorphic orange tabby male cat standing upright on two legs like a stylish European motorsport editor. "
-            f"He has warm striped orange tabby fur, feline eyes, whiskers, wearing a tailored paddock polo shirt and VIP media pass. "
-            f"He holds a digital telemetry tablet in his paws while gesturing animatedly, explaining race physics at {circuit} paddock. "
-            f"Background shows team pit boxes and grandstand under {weather} sky. "
-            f"Shot on 85mm f/1.4 lens, natural ambient lighting, shallow depth of field, sharp focus on the orange cat, subtle 35mm film grain."
-        )
-    else:  # naomi
-        return (
-            f"Authentic workshop documentary photograph of Naomi, an anthropomorphic black female cat standing upright on two legs like a veteran motorcycle mechanic. "
-            f"She has sleek black fur, green feline eyes, whiskers, wearing oil-stained navy work coveralls with rolled sleeves and red bandana on forehead. "
-            f"She carefully works on a racing motorcycle on a paddock stand using a metallic wrench with both paws in a bright garage at {circuit}. "
-            f"Background shows tool chests and tire warmers under {weather} ambient light. "
-            f"Shot on 50mm f/1.8 lens, realistic workshop lighting, gritty mechanical texture, shallow depth of field, subtle film grain."
-        )
+    """Generate a high-realism, varied cat reporter action prompt if dynamic LLM generation fails."""
+    if directive is None:
+        directives = HERO_SCENE_DIRECTIVES.get(featured_cat, HERO_SCENE_DIRECTIVES["naomi"])
+        digest = hashlib.sha256(f"{featured_cat}:{category}:{circuit}".encode("utf-8")).hexdigest()
+        directive = directives[int(digest[:8], 16) % len(directives)]
+
+    cat_identity = {
+        "marc": (
+            "Marc, a chubby anthropomorphic orange tabby domestic cat (2.5 to 3 heads tall on short feline legs) "
+            "wearing his retro red-white-and-blue zippered motorsport paddock jacket with PRESS/MARC patches and media lanyard"
+        ),
+        "suzuka": (
+            "Suzuka, a chubby anthropomorphic calico domestic cat (2.5 to 3 heads tall on short feline legs) "
+            "wearing a white collared shirt, khaki multi-pocket photographer vest with '87 PRESS SUZUKA badge, and black shoes"
+        ),
+        "naomi": (
+            "Naomi, a chubby anthropomorphic sleek black domestic cat (2.5 to 3 heads tall on short feline legs) "
+            "with green eyes, a tiny pink cherry blossom flower clip by her left ear, and oil-stained navy mechanic coveralls"
+        ),
+    }.get(featured_cat, "Naomi, a chubby black domestic cat mechanic in navy coveralls")
+
+    circuit_txt = circuit or "a Japanese road racing circuit"
+    weather_txt = weather or "natural daylight"
+    return (
+        f"{directive['shot_framing']} featuring {cat_identity} at {circuit_txt}. "
+        f"{directive['pose_action']}. {directive['prop_rule']} "
+        f"Environment & atmosphere: {directive['setting_lighting']} Weather condition: {weather_txt}. "
+        f"Authentic 1980s Japanese Nameneko documentary photography style, crisp fur texture, natural depth of field, subtle 35mm film grain."
+    )
 
 
-def build_hero_image_prompt(article_data: dict[str, Any], client: Any) -> str:
-    """Construct a de-AI photographic prompt featuring the cat reporter in action using Gemini 3.8 Flash."""
+def build_hero_image_prompt(
+    article_data: dict[str, Any],
+    client: Any,
+    directive: dict[str, Any] | None = None,
+    exclude_ids: set[str] | None = None,
+) -> tuple[str, dict[str, Any]]:
+    """Construct a varied photographic prompt featuring the cat reporter in action."""
     featured_cat = article_data.get("featuredCat", "naomi")
     category = article_data.get("category", "")
     circuit = article_data.get("circuit", "")
@@ -1454,10 +1724,13 @@ def build_hero_image_prompt(article_data: dict[str, Any], client: Any) -> str:
     weather_info = article_data.get("eventMeta", {}).get("weather", {})
     weather = weather_info.get("en") or weather_info.get("ja") or "Dry / Clear"
 
+    if directive is None:
+        directive = select_hero_scene_directive(article_data, exclude_ids=exclude_ids)
+
     cat_desc = {
-        "marc": "Marc (male orange tabby cat, editor-in-chief, telemetry & race physics expert, paddock polo/jacket, analyzing data or gesturing at paddock cafe)",
-        "suzuka": "Suzuka (female calico cat, trackside photojournalist, photographer vest with PRESS badge or yellow rain poncho, wielding heavy DSLR telephoto lens)",
-        "naomi": "Naomi (female black cat, veteran mechanic, oil-stained coveralls with tail opening, red bandana, tools & tire warmers & torque wrench in pit box)",
+        "marc": "Marc (male orange tabby cat, editor-in-chief, retro red-white-and-blue racing jacket with PRESS/MARC patches and media lanyard)",
+        "suzuka": "Suzuka (female calico cat, trackside photojournalist, white shirt, khaki multi-pocket vest with '87 PRESS SUZUKA badge, black shoes)",
+        "naomi": "Naomi (female sleek black cat, veteran mechanic, tiny pink cherry blossom clip by left ear, oil-stained navy coveralls)",
     }.get(featured_cat, "Naomi (female black cat mechanic)")
 
     context_desc = (
@@ -1467,62 +1740,66 @@ def build_hero_image_prompt(article_data: dict[str, Any], client: Any) -> str:
         f"Weather / Atmosphere: {weather}\n"
         f"Japanese Title: {ja_title}\n"
         f"Summary: {ja_summary}\n"
-        f"Key Highlight: {highlight}\n"
+        f"Key Highlight: {highlight}\n\n"
+        f"ASSIGNED SCENE DIRECTIVE (MANDATORY — DO NOT REPEAT DEFAULT CENTERED POSE):\n"
+        f"- Directive ID: {directive['id']}\n"
+        f"- Shot Framing: {directive['shot_framing']}\n"
+        f"- Pose & Action: {directive['pose_action']}\n"
+        f"- Prop Rule: {directive['prop_rule']}\n"
+        f"- Setting & Lighting: {directive['setting_lighting']}\n"
     )
 
-    try:
-        interaction = client.interactions.create(
-            model="gemini-3.8-flash",
-            system_instruction=IMAGE_PROMPT_SYSTEM_INSTRUCTION,
-            input=f"Generate a vivid, realistic text-to-image prompt showing the cat reporter in action at this specific race event:\n\n{context_desc}",
-        )
-        prompt = (interaction.output_text or "").strip()
-        prompt = re.sub(r'^["\'`]+|["\'`]+$', '', prompt).strip()
-        if prompt and len(prompt) > 20:
-            return prompt
-    except Exception as e:
-        print(f"⚠️ Dynamic prompt generation via Gemini failed ({e}). Using robust template fallback.")
+    if client is not None:
+        try:
+            interaction = client.interactions.create(
+                model="gemini-3.8-flash",
+                system_instruction=IMAGE_PROMPT_SYSTEM_INSTRUCTION,
+                input=(
+                    "Generate a vivid, realistic text-to-image prompt following the ASSIGNED SCENE DIRECTIVE "
+                    f"for this specific motorsport article:\n\n{context_desc}"
+                ),
+            )
+            prompt = (interaction.output_text or "").strip()
+            prompt = re.sub(r'^["\'`]+|["\'`]+$', '', prompt).strip()
+            if prompt and len(prompt) > 20:
+                return prompt, directive
+        except Exception as e:
+            print(f"⚠️ Dynamic prompt generation via Gemini failed ({e}). Using varied directive fallback.")
 
-    return get_fallback_image_prompt(featured_cat, category, circuit, weather)
+    return get_fallback_image_prompt(featured_cat, category, circuit, weather, directive=directive), directive
 
 
-def generate_and_save_hero_image(
-    article_data: dict[str, Any],
-    client: Any,
-    force: bool = False,
-) -> str | None:
-    """Generate a photojournalistic hero image using Imagen 3 and save it as an optimized WebP file."""
-    raw_slug = article_data.get("slug")
-    if not raw_slug:
-        return None
-    slug = slugify(raw_slug)
-
-    HERO_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
-    target_webp = HERO_IMAGES_DIR / f"{slug}.webp"
-    public_url = f"/images/articles/{slug}.webp"
-
-    if target_webp.exists() and not force:
-        print(f"📷 Hero image already exists at {target_webp}, reusing.")
-        return public_url
-
-    featured_cat = article_data.get("featuredCat", "naomi")
-    ref_image_path = CAT_IMAGES_DIR / f"{featured_cat}.png"
-
-    prompt_body = build_hero_image_prompt(article_data, client)
-    prompt = (
-        f"Generate a 16:9 photographic hero image featuring the EXACT same character from the reference image ({featured_cat}): "
-        f"CRITICAL PROPORTIONS & IDENTITY: A real chubby domestic cat standing upright on two short hind legs, exactly 2.5 to 3 heads tall, "
-        f"NOT human proportions, NOT an 8-head-tall person, short cute feline limbs and fluffy fur matching the reference photo. "
+def compose_final_hero_prompt(
+    featured_cat: str,
+    prompt_body: str,
+    directive: dict[str, Any],
+) -> str:
+    """Wrap the scene prompt with identity preservation + anti-copy-paste framing rules."""
+    return (
+        f"Generate a 16:9 photographic hero image featuring the character identity from the reference image ({featured_cat}). "
+        f"KEEP ONLY the cat's exact face, fur markings, signature outfit identity, and chubby 2.5-to-3-heads-tall domestic cat proportions "
+        f"(NOT an 8-head-tall humanoid). "
+        f"COMPLETELY CHANGE the camera angle, pose, framing, background location, lighting, and held props from the reference photo "
+        f"to match this specific scene ({directive['id']}): "
         f"{prompt_body}"
     )
-    print(f"🎨 Generating realistic Nameneko-style hero photo with Gemini Image for '{slug}' ({featured_cat})...")
-    print(f"📝 Prompt: {prompt}")
 
+
+def _generate_hero_with_gemini(
+    slug: str,
+    featured_cat: str,
+    ref_image_path: Path,
+    prompt: str,
+    target_webp: Path,
+    client: Any,
+) -> bool:
+    """Generate hero image via `gemini-2.5-flash-image` and save optimized 1200px WebP."""
     from google.genai import types
     import io
     import time
     from PIL import Image
 
+    print(f"🎨 Generating realistic Nameneko-style hero photo with Gemini Image for '{slug}' ({featured_cat})...")
     for attempt in range(1, 5):
         try:
             contents: list[Any] = [prompt]
@@ -1558,21 +1835,76 @@ def generate_and_save_hero_image(
             with Image.open(io.BytesIO(img_bytes)) as im:
                 if im.mode in ("RGBA", "P"):
                     im = im.convert("RGB")
-                # Optimize image width for LCP and web performance (standard hero width 1200px)
                 if im.width > 1200:
                     target_height = int(im.height * (1200 / im.width))
                     im = im.resize((1200, target_height), Image.Resampling.LANCZOS)
                 im.save(target_webp, format="WEBP", quality=85, method=6)
 
             size_kb = target_webp.stat().st_size // 1024
-            print(f"✅ Successfully generated and saved hero photo: {target_webp} ({size_kb} KB)")
-            return public_url
+            print(f"✅ Successfully generated and saved Gemini hero photo: {target_webp} ({size_kb} KB)")
+            return True
         except Exception as e:
-            print(f"⚠️ Image generation attempt {attempt} failed: {e}")
+            print(f"⚠️ Gemini image generation attempt {attempt} failed: {e}")
             time.sleep(5 * attempt)
 
+    return False
+
+
+def generate_and_save_hero_image(
+    article_data: dict[str, Any],
+    client: Any,
+    force: bool = False,
+    image_backend: str = "auto",
+) -> str | None:
+    """Generate a photojournalistic hero image (Colab FLUX.2-klein-4B primary, Gemini fallback) as WebP."""
+    raw_slug = article_data.get("slug")
+    if not raw_slug:
+        return None
+    slug = slugify(raw_slug)
+
+    HERO_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+    target_webp = HERO_IMAGES_DIR / f"{slug}.webp"
+    public_url = f"/images/articles/{slug}.webp"
+
+    if target_webp.exists() and not force:
+        print(f"📷 Hero image already exists at {target_webp}, reusing.")
+        return public_url
+
+    featured_cat = article_data.get("featuredCat", "naomi")
+    ref_image_path = CAT_IMAGES_DIR / f"{featured_cat}.png"
+
+    prompt_body, directive = build_hero_image_prompt(article_data, client)
+    prompt = compose_final_hero_prompt(featured_cat, prompt_body, directive)
+    seed = compute_hero_seed(slug)
+    print(f"🎬 Scene directive [{directive['id']}] | seed={seed}")
+    print(f"📝 Prompt: {prompt}")
+
+    use_colab = image_backend in ("auto", "colab") and colab_image_generator.is_colab_configured()
+    if image_backend == "colab" and not use_colab:
+        print("⚠️ `--image-backend colab` requested, but Colab CLI/ADC credentials are not configured.")
+
+    if use_colab:
+        try:
+            print(f"☁️ Generating varied hero photo via Colab T4 FLUX.2-klein-4B for '{slug}' ({featured_cat})...")
+            if colab_image_generator.generate_hero_image(
+                slug=slug,
+                featured_cat=featured_cat,
+                ref_image_path=ref_image_path,
+                prompt=prompt,
+                output_webp_path=target_webp,
+                seed=seed,
+            ):
+                return public_url
+            print("⚠️ Colab FLUX.2-klein-4B generation did not produce output.")
+        except Exception as colab_err:
+            print(f"⚠️ Colab FLUX.2-klein-4B generation failed ({colab_err}).")
+
+    if image_backend != "colab" and client is not None:
+        if _generate_hero_with_gemini(slug, featured_cat, ref_image_path, prompt, target_webp, client):
+            return public_url
+
     if article_data.get("category") == "maintenance":
-        print("⚠️ Gemini Image generation failed for maintenance article; falling back to technical SVG hero.")
+        print("⚠️ Hero image generation failed for maintenance article; falling back to technical SVG hero.")
         return generate_technical_svg_hero(article_data)
 
     return None
@@ -1613,6 +1945,7 @@ def run_schedule_driven_mode(
     mode: str,
     custom_topic: str | None = None,
     ref_date_override: dt.date | None = None,
+    image_backend: str = "auto",
 ) -> int:
     today = ref_date_override or dt.date.today()
     today_str = today.isoformat()
@@ -1630,7 +1963,7 @@ def run_schedule_driven_mode(
             "for the following MotoGP / WorldSBK event(s) scheduled this weekend:\n"
             f"{json.dumps(events, ensure_ascii=False, indent=2)}"
         )
-        article = author_and_audit_article(prompt, today_str)
+        article = author_and_audit_article(prompt, today_str, image_backend=image_backend)
         for ev in events:
             ev["publicationState"]["previewPublished"] = True
             ev["publicationState"]["previewArticleId"] = article["id"]
@@ -1649,7 +1982,7 @@ def run_schedule_driven_mode(
             "covering all of the following Japanese motorcycle races scheduled this weekend across Japan:\n"
             f"{json.dumps(events, ensure_ascii=False, indent=2)}"
         )
-        article = author_and_audit_article(prompt, today_str)
+        article = author_and_audit_article(prompt, today_str, image_backend=image_backend)
         for ev in events:
             ev["publicationState"]["previewPublished"] = True
             ev["publicationState"]["previewArticleId"] = article["id"]
@@ -1688,6 +2021,7 @@ def run_schedule_driven_mode(
                 "featuring ONLY the confirmed online race results below:\n"
                 f"{json.dumps(world_payload, ensure_ascii=False, indent=2)}",
                 today_str,
+                image_backend=image_backend,
             )
             for ev, _ in verified_world:
                 ev["publicationState"]["resultStatus"] = "published_monday"
@@ -1702,6 +2036,7 @@ def run_schedule_driven_mode(
                 "featuring ONLY the confirmed online race results below:\n"
                 f"{json.dumps(japan_payload, ensure_ascii=False, indent=2)}",
                 today_str,
+                image_backend=image_backend,
             )
             for ev, _ in verified_japan:
                 ev["publicationState"]["resultStatus"] = "published_monday"
@@ -1742,6 +2077,7 @@ def run_schedule_driven_mode(
                 "for the newly published official results below:\n"
                 f"{json.dumps(world_payload, ensure_ascii=False, indent=2)}",
                 today_str,
+                image_backend=image_backend,
             )
             for ev, _ in recovered_world:
                 ev["publicationState"]["resultStatus"] = "published_wednesday"
@@ -1754,6 +2090,7 @@ def run_schedule_driven_mode(
                 "for the newly published official results below:\n"
                 f"{json.dumps(japan_payload, ensure_ascii=False, indent=2)}",
                 today_str,
+                image_backend=image_backend,
             )
             for ev, _ in recovered_japan:
                 ev["publicationState"]["resultStatus"] = "published_wednesday"
@@ -1781,12 +2118,12 @@ def run_schedule_driven_mode(
                 "3. In `diagram`, provide a structured 3-panel technical illustration breakdown (`good` pass example, `bad` hazard failure example, and `detail` standard specifications/metrics) for `ja`, `ca`, and `en`.\n"
                 "4. In `catDialogues`, Naomi speaks with her sharp-tongued veteran mechanic persona while showing her subtle caring heart for the rider's safety."
             )
-        author_and_audit_article(prompt, today_str)
+        author_and_audit_article(prompt, today_str, image_backend=image_backend)
         return 0
 
     # 6. Manual Custom Dispatch (`workflow_dispatch`)
     prompt = custom_topic or "Create a strictly fact-verified motorsport or circuit maintenance article."
-    author_and_audit_article(prompt, today_str)
+    author_and_audit_article(prompt, today_str, image_backend=image_backend)
     return 0
 
 
@@ -1794,41 +2131,116 @@ def update_hero_images_for_existing(
     limit: int | None = None,
     force: bool = False,
     specific_slug: str | None = None,
+    image_backend: str = "auto",
 ) -> int:
-    """Generate realistic hero photos for existing articles using Imagen 3."""
-    from google import genai
-    client = genai.Client()
+    """Generate realistic hero photos for existing articles (batching via Colab T4 when configured)."""
+    api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    client = None
+    if api_key:
+        from google import genai
+        client = genai.Client()
 
-    existing = sorted(ARTICLES_DIR.glob("*.json"))
+    existing = sorted(ARTICLES_DIR.glob("*.json"), reverse=True)
     print(f"🔍 Checking hero images for {len(existing)} existing articles...")
 
-    updated_count = 0
+    targets: list[tuple[Path, dict[str, Any]]] = []
     for path in existing:
-        if limit is not None and updated_count >= limit:
-            print(f"⏹️ Reached generation limit ({limit}). Stopping.")
+        if limit is not None and len(targets) >= limit:
+            print(f"⏹️ Reached generation limit ({limit}).")
             break
 
         doc = json.loads(path.read_text(encoding="utf-8"))
-        slug = doc.get("slug")
-        if specific_slug and slug != specific_slug:
+        slug = slugify(doc.get("slug", ""))
+        if specific_slug and doc.get("slug") != specific_slug and slug != specific_slug:
             continue
 
         current_hero = doc.get("heroImage", "")
-        # If it already has an articles/ webp and force is False, skip
         if not force and current_hero.startswith("/images/articles/") and (HERO_IMAGES_DIR / f"{slug}.webp").exists():
             continue
 
-        print(f"\n📸 Processing hero image for [{slug}] (current: {current_hero})...")
-        new_hero_url = generate_and_save_hero_image(doc, client, force=force)
-        if new_hero_url:
-            doc["heroImage"] = new_hero_url
-            path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-            print(f"💾 Updated {path.name} with new heroImage: {new_hero_url}")
-            updated_count += 1
-            import time
-            time.sleep(2)
-        else:
-            print(f"⏩ Skipped updating {path.name} (image generation failed or skipped).")
+        targets.append((path, doc))
+
+    if not targets:
+        print("✨ All matching articles already have up-to-date hero images.")
+        return 0
+
+    use_colab = image_backend in ("auto", "colab") and colab_image_generator.is_colab_configured()
+    if image_backend == "colab" and not use_colab:
+        print("❌ `--image-backend colab` requested, but Colab CLI/ADC credentials are not configured.")
+        return 1
+
+    HERO_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+    updated_count = 0
+
+    if use_colab:
+        jobs: list[colab_image_generator.HeroImageJob] = []
+        pending_by_slug: dict[str, tuple[Path, dict[str, Any], str, Path]] = {}
+        used_directives_by_cat: dict[str, set[str]] = {}
+
+        for path, doc in targets:
+            slug = slugify(doc.get("slug", ""))
+            featured_cat = doc.get("featuredCat", "naomi")
+            ref_image_path = CAT_IMAGES_DIR / f"{featured_cat}.png"
+            target_webp = HERO_IMAGES_DIR / f"{slug}.webp"
+            used_for_cat = used_directives_by_cat.setdefault(featured_cat, set())
+            prompt_body, directive = build_hero_image_prompt(doc, client, exclude_ids=used_for_cat)
+            used_for_cat.add(directive["id"])
+            prompt = compose_final_hero_prompt(featured_cat, prompt_body, directive)
+            seed = compute_hero_seed(slug)
+            print(f"\n🎬 Queued [{slug}] ({featured_cat}) | directive={directive['id']} | seed={seed}")
+            print(f"📝 Prompt: {prompt}")
+            jobs.append(
+                colab_image_generator.HeroImageJob(
+                    slug=slug,
+                    featured_cat=featured_cat,
+                    ref_image_path=ref_image_path,
+                    prompt=prompt,
+                    output_webp_path=target_webp,
+                    seed=seed,
+                )
+            )
+            pending_by_slug[slug] = (path, doc, prompt, target_webp)
+
+        colab_succeeded: dict[str, Path] = {}
+        try:
+            colab_succeeded = colab_image_generator.generate_hero_images_batch(jobs)
+        except Exception as exc:
+            print(f"⚠️ Colab batch hero generation failed ({exc}).")
+
+        for slug, (path, doc, prompt, target_webp) in pending_by_slug.items():
+            new_hero_url: str | None = None
+            if slug in colab_succeeded:
+                new_hero_url = f"/images/articles/{slug}.webp"
+            elif image_backend != "colab" and client is not None:
+                featured_cat = doc.get("featuredCat", "naomi")
+                ref_image_path = CAT_IMAGES_DIR / f"{featured_cat}.png"
+                if _generate_hero_with_gemini(slug, featured_cat, ref_image_path, prompt, target_webp, client):
+                    new_hero_url = f"/images/articles/{slug}.webp"
+            if not new_hero_url and doc.get("category") == "maintenance":
+                new_hero_url = generate_technical_svg_hero(doc)
+
+            if new_hero_url:
+                doc["heroImage"] = new_hero_url
+                path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                print(f"💾 Updated {path.name} with new heroImage: {new_hero_url}")
+                updated_count += 1
+            else:
+                print(f"⏩ Skipped updating {path.name} (image generation failed).")
+    else:
+        for path, doc in targets:
+            slug = doc.get("slug")
+            current_hero = doc.get("heroImage", "")
+            print(f"\n📸 Processing hero image for [{slug}] (current: {current_hero})...")
+            new_hero_url = generate_and_save_hero_image(doc, client, force=force, image_backend=image_backend)
+            if new_hero_url:
+                doc["heroImage"] = new_hero_url
+                path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                print(f"💾 Updated {path.name} with new heroImage: {new_hero_url}")
+                updated_count += 1
+                import time
+                time.sleep(2)
+            else:
+                print(f"⏩ Skipped updating {path.name} (image generation failed or skipped).")
 
     print(f"\n🎉 Finished updating hero images. Total generated/updated: {updated_count}")
     return 0
@@ -2315,26 +2727,43 @@ def main() -> int:
         default=None,
         help="Specific article slug to process for --generate-hero-images",
     )
+    parser.add_argument(
+        "--image-backend",
+        choices=["auto", "colab", "gemini"],
+        default=os.environ.get("HERO_IMAGE_BACKEND", "auto"),
+        help="Hero image generation backend (auto=Colab T4 FLUX.2-klein-4B primary with Gemini fallback)",
+    )
     args = parser.parse_args()
 
     api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
-    if args.dry_run or not api_key:
-        if not api_key and not args.dry_run:
-            print("ℹ️ GEMINI_API_KEY not set in environment; running local Fact-Check & Schedule State Audit.")
+    if args.dry_run:
         return validate_existing_articles()
 
     if args.generate_hero_images:
+        if not api_key and not colab_image_generator.is_colab_configured():
+            print("ℹ️ Neither GEMINI_API_KEY nor Colab ADC credentials are configured; running Fact-Check Audit.")
+            return validate_existing_articles()
         return update_hero_images_for_existing(
             limit=args.limit,
             force=args.force_images,
             specific_slug=args.slug,
+            image_backend=args.image_backend,
         )
+
+    if not api_key:
+        print("ℹ️ GEMINI_API_KEY not set in environment; running local Fact-Check & Schedule State Audit.")
+        return validate_existing_articles()
 
     if args.mode == "backfill":
         return run_backfill_window(args.start_date, args.end_date)
 
     ref_date = dt.date.fromisoformat(args.date) if args.date else None
-    return run_schedule_driven_mode(mode=args.mode, custom_topic=args.topic, ref_date_override=ref_date)
+    return run_schedule_driven_mode(
+        mode=args.mode,
+        custom_topic=args.topic,
+        ref_date_override=ref_date,
+        image_backend=args.image_backend,
+    )
 
 
 if __name__ == "__main__":

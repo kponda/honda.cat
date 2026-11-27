@@ -46,6 +46,21 @@ on:
         description: "カスタムお題（手動実行時：任意のトピックを指定して1クリック生成）"
         required: false
         type: string
+      force_images:
+        description: "ヒーロー画像を強制再生成する（generate_hero_images用）"
+        required: false
+        default: false
+        type: boolean
+      limit:
+        description: "画像再生成の最大件数（例: 5）"
+        required: false
+        default: ""
+        type: string
+      slug:
+        description: "特定記事のslugのみ画像再生成する"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -99,13 +114,25 @@ jobs:
       - name: Execute Weekly Schedule Sync or Schedule-Driven Article Pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          COLAB_ADC_JSON: ${{ secrets.COLAB_ADC_JSON }}
+          HERO_IMAGE_BACKEND: ${{ vars.HERO_IMAGE_BACKEND || 'auto' }}
         run: |
           TASK="${{ steps.resolve_task.outputs.task }}"
           echo "Running pipeline task: $TASK"
           if [ "$TASK" = "sync_schedule" ]; then
             python3 scripts/collect_schedules.py
           elif [ "$TASK" = "generate_hero_images" ]; then
-            python3 scripts/generate_articles.py --generate-hero-images
+            EXTRA_ARGS=""
+            if [ "${{ inputs.force_images }}" = "true" ]; then
+              EXTRA_ARGS="$EXTRA_ARGS --force-images"
+            fi
+            if [ -n "${{ inputs.limit }}" ]; then
+              EXTRA_ARGS="$EXTRA_ARGS --limit ${{ inputs.limit }}"
+            fi
+            if [ -n "${{ inputs.slug }}" ]; then
+              EXTRA_ARGS="$EXTRA_ARGS --slug ${{ inputs.slug }}"
+            fi
+            python3 scripts/generate_articles.py --generate-hero-images $EXTRA_ARGS
           elif [ -n "${{ inputs.topic }}" ]; then
             python3 scripts/generate_articles.py --mode "$TASK" --topic "${{ inputs.topic }}"
           else

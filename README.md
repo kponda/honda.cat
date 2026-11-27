@@ -20,8 +20,9 @@
 4. **Gemini 3.8 Flash + Google Search Grounding によるスケジュール連動・史実検証パイプライン**
    - [scripts/generate_articles.py](file:///Users/kat/Projects/honda.cat/scripts/generate_articles.py) がスケジュールDBに連動して開催プレビューや結果ダイジェストを3言語で自動生成します。
    - **ナオミのサーキット整備塾（週1連載・水曜 12:00 JST）**: 過去記事を自動スキャンして未消化テーマを特定する「整備塾シラバス（年間52週・1テーマ深掘りエンジン）」を搭載。ネタ切れを起こさず、JIS/MFJ/FIM規格や物理計算（熱力学・締結力学）に基づく濃厚な単一テーマ解説とテクニカル図解データを全自動生成します。
-5. **テクニカル図解・イラスト（SVG/WebP）の全自動生成システム**
-   - レース報道記事には Imagen 3 によるリアルな報道写真、メンテナンス記事にはクッキリ鮮明なテクニカルSVGイラスト（高精細ベクターアイキャッチ＆本文内の図解ボード）を全自動生成。Retinaディスプレイやスマートフォンでもジャギーゼロで美しくレンダリングされます。
+5. **ヒーロー写真（Colab T4 `FLUX.2-klein-4B` ＋ Gemini フォールバック）＆テクニカル図解（SVG）の自動生成システム**
+   - レース報道記事のヒーロー写真には Google AI Pro の Colab クレジットを活用した **Colab T4 (`black-forest-labs/FLUX.2-klein-4B`)** を優先利用（未設定・失敗時は `gemini-2.5-flash-image` へ自動フォールバック）。記事ごとのカメラアングル・ポーズ・小道具・ロケーションを多様化するシーンディレクティブ機構により、毎回新鮮な構図で生成します。
+   - メンテナンス記事にはクッキリ鮮明なテクニカルSVGイラスト（高精細ベクターアイキャッチ＆本文内の図解ボード）もサポート。Retinaディスプレイやスマートフォンでもジャギーゼロで美しくレンダリングされます。
 
 ---
 
@@ -41,9 +42,14 @@ python3 scripts/generate_articles.py --dry-run
 export GEMINI_API_KEY="your-api-key"
 python3 scripts/generate_articles.py --mode custom --topic "ソニックパーク安心院・中九州カートウェイのお題付耐久草レースとレン耐の公式ガイド"
 
-# 既存記事のヒーロー写真を一括または個別生成（Imagen 3）
+# 既存記事のヒーロー写真を一括または個別生成（Colab T4 FLUX.2-klein-4B / 未設定時は Gemini）
 python3 scripts/generate_articles.py --generate-hero-images --limit 5
 python3 scripts/generate_articles.py --generate-hero-images --slug "circuit-maintenance-wire-locking-brake-fluid-tire-pressure"
+
+# Colab API (Google AI Pro クレジット) 認証セットアップ（初回のみ）
+python3 scripts/colab_image_generator.py --auth-url
+python3 scripts/colab_image_generator.py --auth-exchange "<AUTH_CODE>"
+python3 scripts/colab_image_generator.py --check
 ```
 
 ---
@@ -60,7 +66,7 @@ python3 scripts/generate_articles.py --generate-hero-images --slug "circuit-main
    - **Build command**: `npm run build`
    - **Build output directory**: `dist`
 4. **Custom domains** で `honda.cat` および `www.honda.cat` を追加（SSL証明書が自動発行されます）。
-5. GitHub リポジトリの **Settings > Secrets and variables > Actions** に `GEMINI_API_KEY` を登録すると、[.github/workflows/auto-generate.yml](file:///Users/kat/Projects/honda.cat/.github/workflows/auto-generate.yml) により週3回自動で新着記事が生成・公開されます。
+5. GitHub リポジトリの **Settings > Secrets and variables > Actions** に `GEMINI_API_KEY` と（任意で画像生成を Colab へ逃がす場合）`~/.config/honda-cat/colab_adc.json` の中身を `COLAB_ADC_JSON` として登録すると、[.github/workflows/auto-generate.yml](file:///Users/kat/Projects/honda.cat/.github/workflows/auto-generate.yml) により週3回自動で新着記事が生成・公開されます。
 
 ### 方法B: GitHub Pages（GitHub完結・完全無料）
 1. GitHub リポジトリの **Settings > Pages** で Source を **GitHub Actions** に設定。
