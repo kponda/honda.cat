@@ -52,6 +52,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "honda-cat-auto-pipeline"
+  cancel-in-progress: false
+
 jobs:
   run-scheduled-pipeline:
     runs-on: ubuntu-latest
@@ -59,12 +63,12 @@ jobs:
       has_changes: ${{ steps.commit_step.outputs.has_changes }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -124,25 +128,27 @@ jobs:
             echo "has_changes=false" >> $GITHUB_OUTPUT
           else
             git commit -m "chore(pipeline): automated update via ${{ steps.resolve_task.outputs.task }}"
-            git push
+            for i in 1 2 3; do
+              git push && break
+              echo "⚠️ Push conflict on attempt $i; rebasing onto latest origin/main..."
+              git pull --rebase origin main
+              sleep 2
+            done
             echo "has_changes=true" >> $GITHUB_OUTPUT
           fi
 
-  deploy-autonomous-site:
+  build-autonomous-site:
     needs: run-scheduled-pipeline
     if: needs.run-scheduled-pipeline.outputs.has_changes == 'true'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout latest published code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "22"
           cache: "npm"
@@ -154,13 +160,40 @@ jobs:
         run: npm run build
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
 
+  deploy-autonomous-site:
+    needs: [run-scheduled-pipeline, build-autonomous-site]
+    if: needs.run-scheduled-pipeline.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Wait for Pages artifact index visibility
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 15); do
+            COUNT=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" --jq '[.artifacts[] | select(.name == "github-pages" and .expired == false)] | length' 2>/dev/null || echo 0)
+            if [ "${COUNT:-0}" -ge 1 ]; then
+              echo "✅ Verified github-pages artifact is visible in API (attempt $i)."
+              exit 0
+            fi
+            echo "⏳ Waiting for github-pages artifact visibility (attempt $i/15)..."
+            sleep 2
+          done
+          echo "❌ github-pages artifact did not appear in API after 30s."
+          exit 1
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   post-to-x:
     needs: [run-scheduled-pipeline, deploy-autonomous-site]
@@ -168,12 +201,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout latest published code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
 
       - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -200,6 +233,11 @@ jobs:
             echo "🐾 No newly posted articles recorded; registry is clean."
           else
             git commit -m "chore(x): update posted article registry [skip ci]"
-            git push
+            for i in 1 2 3; do
+              git push && break
+              echo "⚠️ Push conflict on attempt $i; rebasing onto latest origin/main..."
+              git pull --rebase origin main
+              sleep 2
+            done
           fi
 

@@ -599,11 +599,34 @@ def _build_x_search_params(
         if v and v not in lst:
             lst.append(v)
 
+    generic_stop_words = {
+        "2026",
+        "2027",
+        "race",
+        "series",
+        "finale",
+        "round",
+        "レース",
+        "ロードレース",
+        "シリーズ",
+        "選手権",
+        "最終戦",
+        "開幕戦",
+        "特別戦",
+        "フルコース",
+        "西日本シリーズ",
+        "東日本シリーズ",
+        "年間シリーズ",
+        "4時間耐久",
+        "8時間耐久",
+    }
+
     event_names = re.findall(r'"eventName"\s*:\s*\{\s*"ja"\s*:\s*"([^"]+)"', cleaned_ctx)
     circuit_names = re.findall(r'"circuit"\s*:\s*\{\s*"ja"\s*:\s*"([^"]+)"', cleaned_ctx)
+    raw_sns_handles = re.findall(r'"snsHandle"\s*:\s*"([^"]+)"', cleaned_ctx)
 
     for cname in circuit_names:
-        short_c = re.sub(r"（.*?）|【.*?】", "", cname).strip()
+        short_c = re.sub(r"（.*?）|\(.*?\)|【.*?】", "", cname).strip()
         short_c = re.sub(r"\s+(?:国際レーシングコース|ロードコース|インターナショナルレーシングコース)$", "", short_c).strip()
         if short_c:
             _add_unique(relevance_keywords, short_c)
@@ -612,21 +635,36 @@ def _build_x_search_params(
                 _add_unique(relevance_keywords, token)
 
     for ename in event_names:
-        clean_e = re.sub(r"（.*?）|【.*?】", "", ename).strip()
+        clean_e = re.sub(r"（.*?）|\(.*?\)|【.*?】", "", ename).strip()
         clean_e = re.sub(r"^20\d\d\s+(?:FIM\s+)?", "", clean_e).strip()
         parts = [p.strip() for p in re.split(r"[／/]", clean_e) if p.strip()]
         for p in parts[:2]:
             p_short = re.sub(r"^20\d\d\s+", "", p).strip()
-            p_short = re.sub(r"\s*(?:シリーズ・地方選手権|地方選手権|Rd\.\d+|Round\s*\d+|R-\d+|第\d+戦).*$", "", p_short, flags=re.I).strip()
+            p_short = re.sub(
+                r"^(?:[^\s]+(?:シリーズ|選手権))?\s*(?:最終戦|開幕戦|特別戦|第\d+戦|Rd\.?\s*\d+|Round\s*\d+|R-\d+)\s*",
+                "",
+                p_short,
+                flags=re.I,
+            ).strip()
+            p_short = re.sub(
+                r"\s*(?:シリーズ・地方選手権|地方選手権|Rd\.?\s*\d+|Round\s*\d+|R-\d+|第\d+戦).*$",
+                "",
+                p_short,
+                flags=re.I,
+            ).strip()
             if len(p_short) >= 4:
                 _add_unique(event_queries, p_short)
+                if "fun&run" in p_short.lower():
+                    _add_unique(event_queries, "鈴鹿 FUN&RUN")
+                if "レン耐" in p_short:
+                    _add_unique(event_queries, "Let'sレン耐")
                 for tok in re.split(r"[\s・]+", p_short):
-                    if len(tok) >= 3 and tok.lower() not in {"2026", "race", "series", "レース", "ロードレース", "シリーズ", "選手権"}:
+                    if len(tok) >= 3 and tok.lower() not in generic_stop_words:
                         _add_unique(relevance_keywords, tok)
 
     # Combine circuit + event keyword queries for higher hit rate
     if circuit_names and event_names:
-        c_short = re.sub(r"（.*?）|【.*?】", "", circuit_names[0]).strip()
+        c_short = re.sub(r"（.*?）|\(.*?\)|【.*?】", "", circuit_names[0]).strip()
         c_short = re.sub(r"\s+(?:国際レーシングコース|ロードコース|インターナショナルレーシングコース)$", "", c_short).strip()
         if c_short and not any(c_short in eq for eq in event_queries):
             _add_unique(event_queries, f"{c_short} ロードレース")
@@ -663,6 +701,15 @@ def _build_x_search_params(
                 if h.lower() == "fswpress" and not is_fuji:
                     continue
                 _add_unique(x_handles, h)
+
+    for raw_h in raw_sns_handles:
+        for part in re.split(r"[/,\s]+", raw_h):
+            if part.startswith("@"):
+                cand_h = part.lstrip("@").strip()
+                if re.match(r"^[A-Za-z0-9_]{1,15}$", cand_h):
+                    if cand_h.lower() == "fswpress" and not is_fuji:
+                        continue
+                    _add_unique(x_handles, cand_h)
 
     if any(w in lower_ctx for w in ["サーキット整備塾", "naomi clinic", "ワイヤリング", "ブレーキフルード", "タイヤ空気圧", "ドライブチェーン", "トルクレンチ", "冷却水"]):
         x_queries = ["バイク サーキット 整備", "レース 整備 バイク", "サーキット メンテナンス"]
@@ -701,6 +748,150 @@ def _make_verified_x_citation(top_v: dict[str, Any], today_str: str) -> dict[str
             "en": f"Verified photo post from @{top_v['screenName']} capturing authentic trackside action.",
         },
     }
+
+
+def _ground_and_sanitize_sns_citations(
+    draft_json: dict[str, Any],
+    verified_x_posts: list[dict[str, Any]],
+    relevant_sources: list[dict[str, Any]],
+    relevance_keywords: list[str],
+    research_notes: str,
+    prompt_context: str,
+    today_str: str,
+    rejected_handles: set[str] | None = None,
+    rejected_status_ids: set[str] | None = None,
+) -> list[dict[str, Any]]:
+    """Deterministically verify X/non-X citations, purge fabricated status/video IDs, and ensure a verified X photo post."""
+    rej_h = {h.lower() for h in (rejected_handles or set())}
+    rej_ids = set(rejected_status_ids or set())
+
+    eligible_x = [
+        v for v in verified_x_posts
+        if v.get("screenName", "").lower() not in rej_h
+        and v.get("statusId") not in rej_ids
+        and not x_photo_finder._is_noise_post(
+            str(v.get("rawText") or ""),
+            str(v.get("screenName") or ""),
+            str(v.get("accountName") or ""),
+        )
+    ]
+    by_id = {str(v["statusId"]): v for v in eligible_x if v.get("statusId")}
+
+    official_x_by_handle: dict[str, dict[str, str]] = {}
+    official_channels_by_platform: dict[str, list[dict[str, str]]] = {}
+    for src in relevant_sources:
+        for sn in src.get("sns") or []:
+            plat = sn.get("platform", "")
+            handle_raw = str(sn.get("handle") or "")
+            url_val = str(sn.get("url") or "")
+            if plat == "X" and handle_raw:
+                official_x_by_handle[handle_raw.lstrip("@").lower()] = {
+                    "accountName": str(src.get("name", {}).get("ja") or handle_raw),
+                    "handle": f"@{handle_raw.lstrip('@')}",
+                    "url": url_val,
+                }
+            if plat and url_val:
+                official_channels_by_platform.setdefault(plat, []).append(
+                    {"handle": handle_raw, "url": url_val}
+                )
+
+    allowed_context_blob = "\n".join([
+        research_notes or "",
+        prompt_context or "",
+        json.dumps(relevant_sources, ensure_ascii=False),
+    ])
+
+    cleaned_cites: list[dict[str, Any]] = []
+    has_verified_photo_x = False
+
+    for cite in draft_json.get("snsCitations") or []:
+        if not isinstance(cite, dict):
+            continue
+        platform = str(cite.get("platform") or "")
+        handle_clean = str(cite.get("handle") or "").lstrip("@").lower()
+        account_name = str(cite.get("accountName") or "")
+        post_url = str(cite.get("postUrl") or "")
+        chan_url = str(cite.get("url") or "")
+        qt_obj = cite.get("quotedPostText") if isinstance(cite.get("quotedPostText"), dict) else {}
+        qt_blob = " ".join(str(qt_obj.get(l, "")) for l in ("ja", "en", "ca"))
+
+        if handle_clean and handle_clean in rej_h:
+            continue
+        if x_photo_finder._is_noise_post(qt_blob, handle_clean, account_name):
+            continue
+
+        if platform == "X":
+            m_id = re.search(r"/status/(\d+)", post_url) or re.search(r"/status/(\d+)", chan_url)
+            if m_id:
+                sid = m_id.group(1)
+                if sid in rej_ids or sid in FORBIDDEN_FAKE_STATUS_IDS:
+                    continue
+                v = by_id.get(sid) or x_photo_finder.verify_tweet_with_syndication(sid)
+                if v and v["screenName"].lower() not in rej_h and v["statusId"] not in rej_ids:
+                    cite["citationType"] = "direct_post"
+                    cite["accountName"] = v["accountName"]
+                    cite["handle"] = f"@{v['screenName']}"
+                    cite["url"] = v["url"]
+                    cite["postUrl"] = v["postUrl"]
+                    cite["mediaUrls"] = v["mediaUrls"]
+                    cite["publishedDate"] = v["publishedDate"]
+                    cite["verifiedAt"] = today_str
+
+                    raw_text = str(v.get("rawText") or "").strip()
+                    if raw_text:
+                        ja_text = str(qt_obj.get("ja") or "").strip()
+                        overlap = sum(1 for ch in set(ja_text) if not ch.isspace() and ch in raw_text)
+                        if not ja_text or overlap < 8:
+                            qt_obj["ja"] = raw_text
+                        for loc_k in ("ca", "en"):
+                            if not str(qt_obj.get(loc_k) or "").strip():
+                                qt_obj[loc_k] = raw_text
+                        cite["quotedPostText"] = qt_obj
+
+                    has_verified_photo_x = True
+                    cleaned_cites.append(cite)
+                else:
+                    # Never leave an unverified/fabricated /status/<id> URL
+                    off_info = official_x_by_handle.get(handle_clean)
+                    if off_info and off_info.get("url"):
+                        cite["citationType"] = "official_channel"
+                        cite["url"] = off_info["url"]
+                        cite["handle"] = off_info["handle"]
+                        cite.pop("postUrl", None)
+                        cite.pop("mediaUrls", None)
+                        cleaned_cites.append(cite)
+            else:
+                if chan_url and is_allowed_domain(chan_url):
+                    cite.pop("postUrl", None)
+                    cite.pop("mediaUrls", None)
+                    cleaned_cites.append(cite)
+        else:
+            # Non-X citations: strip fabricated deep-link IDs not grounded in research/sources
+            deep_id_match = (
+                re.search(r"watch\?v=([A-Za-z0-9_-]{11})", post_url)
+                or re.search(r"youtu\.be/([A-Za-z0-9_-]{11})", post_url)
+                or re.search(r"/(?:posts|reel|p)/([A-Za-z0-9_.-]+)", post_url)
+            )
+            if deep_id_match and deep_id_match.group(1) not in allowed_context_blob:
+                cite.pop("postUrl", None)
+                if not chan_url or deep_id_match.group(1) in chan_url:
+                    fallbacks = official_channels_by_platform.get(platform) or []
+                    if fallbacks:
+                        cite["url"] = fallbacks[0]["url"]
+                cite["citationType"] = "official_web" if platform == "OfficialWeb" else "official_channel"
+            cleaned_cites.append(cite)
+
+    if not has_verified_photo_x and eligible_x:
+        relevant_fallback = [
+            v for v in eligible_x
+            if not relevance_keywords
+            or any(kw.lower() in v["rawText"].lower() for kw in relevance_keywords)
+        ]
+        top_v = (relevant_fallback or eligible_x)[0]
+        cleaned_cites.insert(0, _make_verified_x_citation(top_v, today_str))
+
+    draft_json["snsCitations"] = cleaned_cites
+    return cleaned_cites
 
 
 def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, Any]:
@@ -763,10 +954,25 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
         queries=x_queries[:6],
         relevance_keywords=relevance_keywords or None,
         web_queries=x_queries[:4],
-        handles=x_handles[:4],
+        handles=x_handles[:8],
         target_date=today_str,
-        count=3,
+        count=6,
     )
+    if not verified_x_posts:
+        broader_queries = [f"{kw} バイク" for kw in relevance_keywords[:3]] + [
+            "全日本ロードレース",
+            "鈴鹿サーキット バイク",
+            "HSR九州 バイク",
+            "サーキット バイク 走行",
+        ]
+        verified_x_posts = x_photo_finder.find_verified_photo_tweets(
+            queries=broader_queries[:6],
+            relevance_keywords=relevance_keywords or None,
+            web_queries=broader_queries[:4],
+            handles=x_handles[:8],
+            target_date=today_str,
+            count=6,
+        )
     verified_x_context = json.dumps(verified_x_posts, ensure_ascii=False, indent=2)
 
     print(f"[1/3] Scouting verified historical & technical facts ({len(relevant_sources)} target sources, {len(verified_x_posts)} verified X photo posts) with Gemini 3.8 Flash + Google Search...")
@@ -825,61 +1031,39 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
     )
     draft_json = json.loads(author_interaction.output_text)
 
-    # Normalize slug to prevent duplicate date prefixes (`YYYY-MM-DD-YYYY-MM-DD-...`)
-    if isinstance(draft_json.get("slug"), str):
-        stripped_slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", draft_json["slug"].strip())
-        if stripped_slug:
-            draft_json["slug"] = stripped_slug
+    def _normalize_and_ground(doc_obj: dict[str, Any], rej_h: set[str], rej_ids: set[str]) -> None:
+        if isinstance(doc_obj.get("slug"), str):
+            stripped_slug = re.sub(r"^(?:\d{4}-\d{2}-\d{2}-)+", "", doc_obj["slug"].strip())
+            if stripped_slug:
+                doc_obj["slug"] = stripped_slug
 
-    # Ensure verified circuit official result page URLs are recorded in factCheck.sources
-    if direct_circuit_result_urls:
-        fc_obj = draft_json.setdefault("factCheck", {})
-        fc_sources = fc_obj.setdefault("sources", [])
-        existing_fc_urls = {
-            (s if isinstance(s, str) else s.get("url", "")) for s in fc_sources
-        }
-        for r_url in direct_circuit_result_urls[:2]:
-            if r_url not in existing_fc_urls and is_allowed_domain(r_url):
-                fc_sources.append({"title": "Official Circuit Race Results", "url": r_url})
-                existing_fc_urls.add(r_url)
+        if direct_circuit_result_urls:
+            fc_obj = doc_obj.setdefault("factCheck", {})
+            fc_sources = fc_obj.setdefault("sources", [])
+            existing_fc_urls = {
+                (s if isinstance(s, str) else s.get("url", "")) for s in fc_sources
+            }
+            for r_url in direct_circuit_result_urls[:2]:
+                if r_url not in existing_fc_urls and is_allowed_domain(r_url):
+                    fc_sources.append({"title": "Official Circuit Race Results", "url": r_url})
+                    existing_fc_urls.add(r_url)
 
-    # Deterministically verify/attach mediaUrls on any X direct_post citations
-    if verified_x_posts:
-        by_url = {v["postUrl"]: v for v in verified_x_posts}
-        cites = draft_json.get("snsCitations") or []
-        has_verified_photo_x = False
-        for cite in cites:
-            if cite.get("platform") == "X":
-                pu = cite.get("postUrl") or ""
-                if pu in by_url:
-                    cite["citationType"] = "direct_post"
-                    cite["mediaUrls"] = by_url[pu]["mediaUrls"]
-                    cite["publishedDate"] = by_url[pu]["publishedDate"]
-                    cite["verifiedAt"] = today_str
-                    has_verified_photo_x = True
-                else:
-                    m_id = re.search(r"/status/(\d+)", pu)
-                    if m_id:
-                        v = x_photo_finder.verify_tweet_with_syndication(m_id.group(1))
-                        if v:
-                            cite["citationType"] = "direct_post"
-                            cite["postUrl"] = v["postUrl"]
-                            cite["url"] = v["url"]
-                            cite["mediaUrls"] = v["mediaUrls"]
-                            cite["publishedDate"] = v["publishedDate"]
-                            cite["verifiedAt"] = today_str
-                            has_verified_photo_x = True
-        if not has_verified_photo_x:
-            relevant_fallback = [
-                v for v in verified_x_posts
-                if not relevance_keywords
-                or any(kw.lower() in v["rawText"].lower() for kw in relevance_keywords)
-            ]
-            top_v = (relevant_fallback or verified_x_posts)[0]
-            cites.insert(0, _make_verified_x_citation(top_v, today_str))
-            draft_json["snsCitations"] = cites
+        _ground_and_sanitize_sns_citations(
+            draft_json=doc_obj,
+            verified_x_posts=verified_x_posts,
+            relevant_sources=relevant_sources,
+            relevance_keywords=relevance_keywords,
+            research_notes=research_notes,
+            prompt_context=prompt_context,
+            today_str=today_str,
+            rejected_handles=rej_h,
+            rejected_status_ids=rej_ids,
+        )
+        _sanitize_article_domains(doc_obj, relevant_sources)
 
-    _sanitize_article_domains(draft_json, relevant_sources)
+    rejected_handles: set[str] = set()
+    rejected_status_ids: set[str] = set()
+    _normalize_and_ground(draft_json, rejected_handles, rejected_status_ids)
 
     print("[3/3] Running Independent Fact-Auditor Gate...")
 
@@ -888,14 +1072,16 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
             model="gemini-3.8-flash",
             input=(
                 "You are a strict Motorsport & Mechanical Engineering Fact Auditor.\n"
-                "Audit the following generated article JSON against the research dossier and real-world history.\n"
+                "Audit the following generated article JSON against the research dossier, verified X posts, and real-world history.\n"
                 "Fail (`passed: false`) if you find ANY of the following:\n"
                 "1. Unrelated or incorrect circuit-to-event pairings (e.g., claiming a race series is held at a circuit where it was never held).\n"
                 "2. Fictional team names in results, fabricated race winners, OR any discrepancy/omission against `OFFICIAL CIRCUIT RESULT PAGE DATA` (winners, podium positions, rider/team names, machines, lap counts, or times MUST match the official circuit result sheet when provided).\n"
                 "3. Incorrect circuit lengths or false technical/physics claims.\n"
-                "4. Unrelated SNS/Web citations: Citing accounts or sources that have no direct relationship with the featured event, host circuit, or competing riders/teams (e.g. citing MotoGP or Suzuka for a Kyushu local race or grassroots endurance event). All citations must directly relate to the event.\n"
-                "5. Hallucinated / Fabricated post URLs: Fictional tweet status IDs or made-up post texts not matching real posts or official channels.\n"
+                "4. Unrelated SNS/Web citations: Official series, organizer, host circuit (including recent 2-wheel motorcycle road/minibike posts at the host circuit for pre-race previews), and competing 2-wheel riders/teams ARE valid; fail Rule 4 if a citation is about 4-wheel racing (Super Formula, Super GT, F1, Caterham, etc.) or an unrelated circuit/championship.\n"
+                "5. Hallucinated / Fabricated post URLs: Status IDs and texts listed in `VERIFIED PHOTO-ATTACHED X POSTS` are HTTP-verified directly from X Syndication API — do NOT mark them as fabricated. Fail Rule 5 only if a status URL/post URL or quoted text is fabricated and absent from both `VERIFIED PHOTO-ATTACHED X POSTS` and `RESEARCH DOSSIER`.\n"
                 f"{circuit_results_block}\n"
+                f"VERIFIED PHOTO-ATTACHED X POSTS (HTTP-VERIFIED REAL TWEETS WITH PHOTOS):\n{verified_x_context}\n\n"
+                f"TARGET RELEVANT OFFICIAL SOURCES:\n{sources_context}\n\n"
                 f"RESEARCH DOSSIER:\n{research_notes}\n\n"
                 f"CANDIDATE ARTICLE JSON:\n{json.dumps(candidate_doc, ensure_ascii=False)}"
             ),
@@ -909,42 +1095,55 @@ def author_and_audit_article(prompt_context: str, today_str: str) -> dict[str, A
         return json.loads(audit_interaction.output_text)
 
     audit_result = _run_audit(draft_json)
-    if not audit_result.get("passed", False):
+    for attempt in range(1, 3):
+        if audit_result.get("passed", False):
+            break
         issues_list = audit_result.get("issues", ["Unknown fact check failure"])
         issues_str = "; ".join(issues_list)
-        if any(kw in issues_str.lower() for kw in ["unrelated sns", "sns citation", "citation", "@"]):
-            mentioned_handles = {h.lower() for h in re.findall(r"@([A-Za-z0-9_]+)", issues_str)}
-            filtered_cites: list[dict[str, Any]] = []
-            for cite in draft_json.get("snsCitations") or []:
-                handle_clean = str(cite.get("handle") or "").lstrip("@").lower()
-                post_url_lower = str(cite.get("postUrl") or cite.get("url") or "").lower()
-                if handle_clean in mentioned_handles or any(f"/{h}/" in post_url_lower for h in mentioned_handles):
-                    continue
-                if cite.get("platform") == "X" and relevance_keywords:
-                    qt = " ".join(str((cite.get("quotedPostText") or {}).get(l, "")) for l in ("ja", "en")).lower()
-                    if not any(kw.lower() in qt for kw in relevance_keywords):
-                        continue
-                filtered_cites.append(cite)
+        print(f"⚠️ [3/3] Audit failed (round {attempt}): {issues_str}")
 
-            has_x_photo = any(c.get("platform") == "X" and c.get("mediaUrls") for c in filtered_cites)
-            if not has_x_photo and verified_x_posts:
-                for cand_v in verified_x_posts:
-                    if cand_v["screenName"].lower() in mentioned_handles:
-                        continue
-                    if relevance_keywords and not any(kw.lower() in cand_v["rawText"].lower() for kw in relevance_keywords):
-                        continue
-                    filtered_cites.insert(0, _make_verified_x_citation(cand_v, today_str))
-                    has_x_photo = True
-                    break
+        for h in re.findall(r"@([A-Za-z0-9_]+)", issues_str):
+            rejected_handles.add(h.lower())
+        for sid in re.findall(r"\b(\d{15,20})\b", issues_str):
+            rejected_status_ids.add(sid)
 
-            if filtered_cites and filtered_cites != (draft_json.get("snsCitations") or []):
-                draft_json["snsCitations"] = filtered_cites
-                print("⚠️ [3/3] Pruned unrelated SNS citation(s); re-running Independent Fact Audit...")
-                audit_result = _run_audit(draft_json)
+        prev_cites_json = json.dumps(draft_json.get("snsCitations") or [], sort_keys=True, ensure_ascii=False)
+        _normalize_and_ground(draft_json, rejected_handles, rejected_status_ids)
+        new_cites_json = json.dumps(draft_json.get("snsCitations") or [], sort_keys=True, ensure_ascii=False)
 
-        if not audit_result.get("passed", False):
-            issues = "; ".join(audit_result.get("issues", ["Unknown fact check failure"]))
-            raise FactCheckError(f"❌ Fact Audit Rejected Article: {issues}")
+        non_sns_issue = any(
+            marker in issues_str.lower()
+            for marker in ["rule 1", "rule 2", "rule 3", "discrepancy", "omission", "circuit", "fictional", "incorrect"]
+        )
+        if non_sns_issue or new_cites_json == prev_cites_json:
+            print(f"🛠️ [3/3] Requesting LLM revision to resolve audit issues (round {attempt})...")
+            revise_interaction = client.interactions.create(
+                model="gemini-3.8-flash",
+                system_instruction=SYSTEM_INSTRUCTION,
+                input=(
+                    f"Revise the article JSON below to resolve EVERY issue reported by the Fact Auditor while strictly preserving verified facts, official results, and valid verified X posts.\n\n"
+                    f"AUDIT ISSUES TO FIX:\n{issues_str}\n\n"
+                    f"CURRENT ARTICLE JSON:\n{json.dumps(draft_json, ensure_ascii=False)}\n\n"
+                    f"{circuit_results_block}\n"
+                    f"VERIFIED PHOTO-ATTACHED X POSTS:\n{verified_x_context}\n\n"
+                    f"VERIFIED RESEARCH DOSSIER:\n{research_notes}"
+                ),
+                response_format={
+                    "type": "text",
+                    "mime_type": "application/json",
+                    "schema": ARTICLE_JSON_SCHEMA,
+                },
+            )
+            draft_json = json.loads(revise_interaction.output_text)
+            _normalize_and_ground(draft_json, rejected_handles, rejected_status_ids)
+        else:
+            print(f"🧹 [3/3] Pruned/re-grounded SNS citation(s); re-running Independent Fact Audit (round {attempt})...")
+
+        audit_result = _run_audit(draft_json)
+
+    if not audit_result.get("passed", False):
+        issues = "; ".join(audit_result.get("issues", ["Unknown fact check failure"]))
+        raise FactCheckError(f"❌ Fact Audit Rejected Article: {issues}")
 
     print(f"[3/3] ✅ Fact Audit Passed: {audit_result.get('summary')}")
     print("[4/4] 📸 Generating authentic motorsport hero photo with Imagen 3...")
@@ -1063,23 +1262,37 @@ NAOMI_CLINIC_SYLLABUS = [
 
 def resolve_next_maintenance_topic(articles_dir: Path) -> tuple[int, str, str]:
     """Resolve the next unwritten maintenance topic from Naomi's Clinic Syllabus."""
-    existing_files = sorted(articles_dir.glob("*circuit-maintenance*.json"))
+    existing_files = sorted(articles_dir.glob("*.json"))
     covered_keywords: set[str] = set()
     highest_issue = 0
 
     for path in existing_files:
         try:
             doc = json.loads(path.read_text(encoding="utf-8"))
-            slug = doc.get("slug", "")
-            ja_title = doc.get("locales", {}).get("ja", {}).get("title", "")
-            
-            m = re.search(r"#(\d+)", ja_title)
-            if m:
-                highest_issue = max(highest_issue, int(m.group(1)))
-            
+            if doc.get("category") != "maintenance" and doc.get("articleType") != "maintenance":
+                continue
+            slug = str(doc.get("slug", ""))
+            doc_id = str(doc.get("id", ""))
+            locales = doc.get("locales") or {}
+            ja_title = str(locales.get("ja", {}).get("title", ""))
+            en_title = str(locales.get("en", {}).get("title", ""))
+
+            for title_txt in (ja_title, en_title):
+                m = re.search(r"#(\d+)", title_txt)
+                if m:
+                    highest_issue = max(highest_issue, int(m.group(1)))
+
+            for slug_txt in (slug, doc_id):
+                m_slug = re.search(r"(?:clinic|maintenance)[-_]0*(\d+)", slug_txt, flags=re.IGNORECASE)
+                if m_slug:
+                    highest_issue = max(highest_issue, int(m_slug.group(1)))
+
             for word in slug.split("-"):
                 if len(word) > 2:
                     covered_keywords.add(word.lower())
+            for tag in doc.get("tags") or []:
+                if isinstance(tag, str) and len(tag.strip()) > 2:
+                    covered_keywords.add(tag.strip().lower())
         except Exception:
             continue
 

@@ -70,6 +70,39 @@ NOISE_KEYWORDS = [
     "ライブ配信アプリ",
     "オンラインカジノ",
     "お小遣い",
+    "レースクイーン",
+    "レースアンバサダー",
+    "ラウンドガール",
+    "撮影会",
+    "チェキ",
+]
+
+FOUR_WHEEL_EXCLUSION_KEYWORDS = [
+    "スーパーフォーミュラ",
+    "super formula",
+    "sformula",
+    "super gt",
+    "スーパーgt",
+    "supergt",
+    "gt500",
+    "gt300",
+    "caterham",
+    "ケータハム",
+    "スーパー耐久",
+    "s耐",
+    "d1gp",
+    "フォーミュラ",
+    "fia-f4",
+    "sfライツ",
+    "f1jp",
+    "formula 1",
+    "wrc",
+    "ラリージャパン",
+    "86/brz",
+    "ロードスター・パーティレース",
+    "vita-01",
+    "k4-gp",
+    "オートテスト",
 ]
 
 MOTORSPORT_BOOST_HANDLES = {
@@ -215,6 +248,8 @@ def _clean_tweet_text(raw_text: str) -> str:
 def _is_noise_post(text: str, screen_name: str, name: str) -> bool:
     combined = f"{text} {screen_name} {name}".lower()
     if any(kw in combined for kw in NOISE_KEYWORDS):
+        return True
+    if any(kw in combined for kw in FOUR_WHEEL_EXCLUSION_KEYWORDS):
         return True
     if combined.count("#") >= 12:
         return True
@@ -578,7 +613,15 @@ def verify_tweet_with_syndication(status_id: str) -> dict[str, Any] | None:
     cache = _load_json_cache(CACHE_PATH)
     if sid in cache:
         cached = cache[sid]
-        return cached if cached else None
+        if isinstance(cached, dict):
+            if _is_noise_post(
+                str(cached.get("rawText") or ""),
+                str(cached.get("screenName") or ""),
+                str(cached.get("accountName") or ""),
+            ):
+                return None
+            return cached
+        return None
 
     url = f"https://cdn.syndication.twimg.com/tweet-result?id={sid}&lang=ja&token=x"
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
