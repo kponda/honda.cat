@@ -2840,10 +2840,11 @@
       "snsUrl": "https://x.com/suzuka_event",
       "verifiedSource": "鈴鹿サーキット公式 (suzukacircuit.jp)",
       "publicationState": {
-        "previewPublished": false,
+        "previewPublished": true,
         "resultStatus": "pending",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
+        "previewArticleId": "2026-11-27-weekend-preview-suzuka-fun-and-run-hsr-dream-sunday-rentai-msl-h"
       }
     },
     {
@@ -2875,10 +2876,11 @@
       "snsUrl": "https://x.com/HSR_KYUSHU",
       "verifiedSource": "HSR九州公式カレンダー (rms.co.jp/kumamoto/hsr/event/2023/12/189/)",
       "publicationState": {
-        "previewPublished": false,
+        "previewPublished": true,
         "resultStatus": "pending",
         "resultArticleId": null,
-        "lastCheckedAt": "2026-11-25T21:15:00+09:00"
+        "lastCheckedAt": "2026-11-25T21:15:00+09:00",
+        "previewArticleId": "2026-11-27-weekend-preview-suzuka-fun-and-run-hsr-dream-sunday-rentai-msl-h"
       }
     },
     {
@@ -2910,9 +2912,10 @@
       "snsUrl": "https://x.com/rentai_official",
       "verifiedSource": "Let's レン耐！公式 (rentai.takuma-gp.com)",
       "publicationState": {
-        "previewPublished": false,
+        "previewPublished": true,
         "resultStatus": "pending",
-        "lastCheckedAt": "2026-11-24T08:57:41+00:00"
+        "lastCheckedAt": "2026-11-24T08:57:41+00:00",
+        "previewArticleId": "2026-11-27-weekend-preview-suzuka-fun-and-run-hsr-dream-sunday-rentai-msl-h"
       }
     },
     {
