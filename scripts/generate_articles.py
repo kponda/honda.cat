@@ -69,10 +69,14 @@ CRITICAL CHARACTER PROPORTION & IDENTITY RULE (AUTHENTIC NAMENEKO STYLE):
   * HEAD & FACE: Round fluffy domestic cat head, feline whiskers, realistic fur, expressive cat eyes.
 
 MANDATORY VARIETY & ANTI-COPY-PASTE RULE:
-- You will be given an `ASSIGNED SCENE DIRECTIVE` specifying exact shot framing, pose/action, prop rules, and setting/lighting.
+- You will be given an `ASSIGNED SCENE DIRECTIVE` specifying exact shot framing, pose/action, facial expression, prop rules, and setting/lighting.
 - You MUST strictly obey that `ASSIGNED SCENE DIRECTIVE` and ACTIVELY BREAK AWAY from the reference image's dead-center static front-facing standing pose and default background.
 - Place the cat off-center (rule of thirds), seated, crouching, leaning over a pit wall, walking mid-stride, or viewed from a dynamic 3/4 or over-the-shoulder angle as directed.
 - Explicitly honor the `Prop Rule` so reference props (like Marc's stopwatch/notepad or Naomi's wrench) do not reappear when replaced.
+
+EXPRESSION & EMOTION VARIETY RULE:
+- Actively change the cat's facial expression to match the `Facial Expression` in `ASSIGNED SCENE DIRECTIVE`.
+- Do NOT freeze the reference image's stiff, neutral, or stern face; render natural happy domestic-cat smiles via gently crinkled/squinting eyes, upturned whisker pads, or cheerful slightly open-mouth meow-smiles — NEVER creepy human teeth.
 
 THE THREE CAT REPORTERS:
 1. `marc` (Marc): Male orange tabby cat, warm striped fur, amber feline eyes. Signature gear: retro red-white-and-blue zippered racing jacket with PRESS/MARC patches and media lanyard.
@@ -1417,6 +1421,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview",),
             "shot_framing": "Medium wide environmental shot framed off-center (rule of thirds, Marc seated on the left third at an outdoor cafe table)",
             "pose_action": "Sitting relaxed on a wooden paddock cafe chair, leaning forward with one paw tracing a corner on a spread-out circuit map",
+            "expression": "Warm relaxed feline smile with gently upturned whisker pads, softly squinting happy amber eyes, and cheerful approachable expression",
             "prop_rule": "Hold ONLY a white espresso cup near a folded paper circuit map and sunglasses on the table. Do NOT hold the reference stopwatch or paper notepad.",
             "setting_lighting": "Bright Mediterranean morning sunlight at an outdoor paddock terrace cafe with parasols, parked paddock scooters, and sunlit grandstands in soft background bokeh.",
         },
@@ -1425,6 +1430,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("digest", "preview"),
             "shot_framing": "Dynamic 3/4 rear-side over-the-shoulder shot from the pit wall, Marc placed on the right third looking toward the track",
             "pose_action": "Leaning both front paws on the concrete pit-wall rail, peering intently past a hanging timing monitor onto the main straight",
+            "expression": "Eager, animated expression with ears perked forward and bright attentive eyes watching the track battle",
             "prop_rule": "Wear radio headset over his ears and lean on the pit wall rail beside a mounted pit timing screen. Do NOT hold a stopwatch or notepad.",
             "setting_lighting": "High-contrast afternoon race light with two MotoGP-style superbikes motion-blurred at high speed along the asphalt straight and pit boards ahead.",
         },
@@ -1433,6 +1439,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview", "digest"),
             "shot_framing": "Candid eye-level medium shot angled diagonally along a crowded starting grid, Marc off-center on the left",
             "pose_action": "Walking mid-stride along the starting grid asphalt while turning his head slightly toward the camera with a lively expression",
+            "expression": "Joyful laughing feline expression with mouth happily open in a cheerful meow-smile showing a tiny pink tongue, softly crinkled smiling eyes, and perked ears",
             "prop_rule": "Hold a handheld broadcast reporter microphone with a wind foam cap in one paw while the other paw gestures toward the grid bikes. Do NOT hold the stopwatch or notepad.",
             "setting_lighting": "Crisp pre-race daylight on the starting grid with painted white grid boxes, racing bikes on rear stands under umbrellas, and blurred mechanics in background.",
         },
@@ -1441,6 +1448,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("digest",),
             "shot_framing": "Warm indoor-to-outdoor window composition, Marc seated at a press desk in the foreground left looking toward a wide glass window",
             "pose_action": "Seated upright on an office chair behind a press room desk, typing on a sleek silver laptop while glancing out at the dusk circuit",
+            "expression": "Thoughtful, gently smiling expression with softened amber eyes while studying telemetry graphs",
             "prop_rule": "Paws resting on a compact open laptop beside a stack of printed lap-time sheets. Do NOT hold the reference stopwatch or notepad.",
             "setting_lighting": "Blue-hour twilight and warm tungsten press-room desk lamp glow contrasting against the illuminated pit lane and circuit floodlights outside the window.",
         },
@@ -1449,6 +1457,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview", "digest"),
             "shot_framing": "Low-angle wide shot from behind red-and-white corner kerbs, Marc positioned on the left foreground observing the apex",
             "pose_action": "Crouching slightly on short hind legs beside a trackside marshal barrier, leaning forward to study riders' cornering lean angles",
+            "expression": "Keen, fascinated feline focus with wide curious amber eyes and forward-tilted ears",
             "prop_rule": "Hold compact black binoculars raised near his eyes with both paws. Do NOT hold the stopwatch or paper notepad.",
             "setting_lighting": "Dramatic late-afternoon side sunlight casting long shadows across dark rubbered-in asphalt, striped kerbs, and leaning motorcycles blurred through the corner.",
         },
@@ -1457,6 +1466,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("digest",),
             "shot_framing": "Candid side-angle documentary shot at Parc Fermé barriers, Marc framed in the right foreground",
             "pose_action": "Standing on short hind legs turned 3/4 toward a victorious race bike parked behind metal barricades, extending one paw forward",
+            "expression": "Beaming celebratory feline smile with happily squinted eyes, upturned mouth corners, and excited open-mouth laugh",
             "prop_rule": "Hold a compact digital voice recorder forward in one paw while gesturing with the other. Do NOT hold the reference stopwatch or notepad.",
             "setting_lighting": "Energetic post-race golden afternoon light with confetti-dusted tarmac, podium backdrop structures, and photographers clustered around parked race bikes.",
         },
@@ -1465,6 +1475,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview", "digest"),
             "shot_framing": "Medium full-body shot framed through an open team pit garage doorway, Marc walking out toward pit lane on the left third",
             "pose_action": "Stepping out mid-stride from a shaded pit box onto sunlit pit lane asphalt, glancing back toward a race machine inside",
+            "expression": "Friendly, confident cat grin with upturned whisker pads and lively bright eyes",
             "prop_rule": "Carry a sleek horizontal telemetry tablet tucked under one arm while checking a pit-lane credential wristband. Do NOT hold the stopwatch or paper notepad.",
             "setting_lighting": "Dramatic doorway rim lighting transitioning from cool LED pit-box interior (toolbox cabinets, spare fairings) to bright sunlit pit apron.",
         },
@@ -1473,6 +1484,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview", "digest"),
             "shot_framing": "Wide cinematic 3/4 profile shot from an elevated grandstand terrace looking down at the circuit",
             "pose_action": "Standing beside a metal terrace railing turned in 3/4 profile, pointing one paw out toward a sweeping S-curve below",
+            "expression": "Peaceful content cat squint-smile with gently half-closed smiling eyes enjoying the warm sunset",
             "prop_rule": "No stopwatch and no notepad; rest one paw on the terrace railing and hold a folded race weekend program booklet in the other.",
             "setting_lighting": "Warm golden-hour sunset rays across tiered grandstands, sweeping ribbon of distant racetrack, and dramatic clouds.",
         },
@@ -1483,6 +1495,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("digest", "preview"),
             "shot_framing": "Dynamic low-angle ground-level tracking shot, Suzuka crouched on the right third near red-and-white corner kerbs",
             "pose_action": "Crouching low on short hind legs in the grass verge, twisting her torso in 3/4 profile to pan horizontally with passing bikes",
+            "expression": "Excited, sparkling photojournalist focus with bright green eyes and perked ears tracking the apex",
             "prop_rule": "Hold a compact black rangefinder camera with a short fast prime lens (no giant white bazooka telephoto lens) close to her face.",
             "setting_lighting": "Bright crisp daylight with blurred green grass blades in foreground, fast panning motion blur on a leaning superbike right behind her.",
         },
@@ -1491,6 +1504,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("digest",),
             "shot_framing": "Candid over-the-shoulder medium close-up from the left, showing Suzuka's profile and the glowing rear LCD screen of her camera",
             "pose_action": "Tilting her calico head downward in concentration, holding her DSLR at chest height to inspect the rear photo review screen",
+            "expression": "Delighted happy feline smile with softly squinted smiling eyes and upturned whisker pads admiring a great shot",
             "prop_rule": "Camera hangs on her neck strap while both paws hold the camera body angled up so the rear LCD preview is visible. No lens aimed forward.",
             "setting_lighting": "Overcast soft pit-lane daylight with race mechanics wheeling tire stacks and glowing pit garage lights softly out of focus behind her.",
         },
@@ -1499,6 +1513,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("digest", "preview"),
             "shot_framing": "Atmospheric medium shot under a paddock tent awning on the left third, looking out toward rain-soaked asphalt",
             "pose_action": "Standing sheltered under a pit canopy in a bright yellow rain poncho, gently wiping raindrops off her camera lens with a microfiber cloth",
+            "expression": "Upbeat, plucky gentle cat smile with bright cheerful green eyes despite the pouring rain",
             "prop_rule": "Hold a small microfiber lens cloth in one paw and her camera cradled against her chest in the other, wearing a translucent yellow rain poncho over her vest.",
             "setting_lighting": "Moody rainy Japanese circuit weather with falling rain streaks, shimmering puddles reflecting pit lights, and wet bikes spraying mist on track.",
         },
@@ -1507,6 +1522,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("digest",),
             "shot_framing": "Low wide-angle upward shot from the front of the podium celebration crowd, Suzuka positioned on the left foreground",
             "pose_action": "Looking upward at a 45-degree angle toward an elevated circuit podium, raising a wide-angle DSLR overhead to capture the celebration",
+            "expression": "Radiant laughing feline expression with mouth happily open in an excited meow-smile, tiny pink tongue visible, and joyful sparkling eyes",
             "prop_rule": "Hold a compact black DSLR with a wide-angle hood tilted steeply upward with both paws; no long white telephoto lens.",
             "setting_lighting": "Vibrant celebratory afternoon light with champagne spray mist catching sunbeams above a blurred podium backdrop and cheering team crew.",
         },
@@ -1515,6 +1531,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview", "digest"),
             "shot_framing": "Relaxed eye-level environmental portrait framed off-center on the left, seated beside stacked Pelican camera cases",
             "pose_action": "Sitting on a folding canvas paddock stool with knees tucked, resting both paws on a rugged silver laptop on her lap",
+            "expression": "Cozy warm cat squint-smile with gently crinkled eyes and relaxed happy mouth corners",
             "prop_rule": "Camera rests inside an open padded black camera case beside her stool; her paws hold an open silver laptop showing photo thumbnails. Do NOT hold a camera up.",
             "setting_lighting": "Clear Japanese mountain circuit afternoon (lush cedar hills or Ferris wheel in distance) with warm dappled sunlight across paddock asphalt.",
         },
@@ -1523,6 +1540,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview", "digest"),
             "shot_framing": "Cinematic 3/4 side shot from pit lane apron at dusk, Suzuka kneeling on one knee on the right third",
             "pose_action": "Kneeling beside a pit lane line marker, angling her camera low toward an endurance racer entering pit box for refueling",
+            "expression": "Intense, determined trackside concentration with bright wide green eyes reflecting pit lights",
             "prop_rule": "Hold a black DSLR equipped with a medium 24-70mm zoom lens and glowing hotshoe flash trigger; no giant white telephoto lens.",
             "setting_lighting": "Deep cobalt twilight sky mixed with warm tungsten pit-box floodlights, glowing motorcycle headlights, and blurred pit crew in fireproof suits.",
         },
@@ -1531,6 +1549,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview",),
             "shot_framing": "Elevated scenic 3/4 back-angle shot from a grassy spectator bank, Suzuka on the left third overlooking sweeping bends",
             "pose_action": "Standing on a sloped grassy hillside, leaning slightly forward with camera slung across her shoulder while pointing toward a downhill hairpin",
+            "expression": "Cheerful excited smiling profile with mouth slightly open in delight and perked ears",
             "prop_rule": "Let the camera hang loosely at her hip on its strap while she raises a paper circuit map and points one paw toward the track below.",
             "setting_lighting": "Bright morning sunshine over green hillside circuit, distant valley hairpin curves with tiny colorful racing bikes and safety barriers.",
         },
@@ -1539,6 +1558,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview", "digest"),
             "shot_framing": "Crisp medium shot angled down pit lane at dawn/morning, Suzuka standing off-center right in side profile",
             "pose_action": "Standing in 3/4 profile adjusting the aperture ring on a vintage silver-and-black 35mm film camera held at waist level",
+            "expression": "Fresh, gentle morning cat smile with softly upturned whisker pads and warm relaxed gaze",
             "prop_rule": "Hold a classic compact metallic SLR camera at waist level while adjusting its lens dial, with a small press notebook tucked in her vest pocket.",
             "setting_lighting": "Fresh early-morning golden rim light with long shadows across pit lane asphalt, mist rising off distant hills, and bikes warming up.",
         },
@@ -1549,6 +1569,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview", "maintenance", "digest"),
             "shot_framing": "Dynamic low-angle outdoor paddock shot, Naomi crouched on the left third beside a sportbike wrapped in red tire warmers",
             "pose_action": "Crouching beside the rear wheel of a racing motorcycle on a paddock stand, pressing a brass dial tire pressure gauge onto the valve stem",
+            "expression": "Sharp, focused veteran mechanic concentration with attentive green eyes",
             "prop_rule": "Hold ONLY a round analog tire pressure gauge with rubber hose against the rear tire valve. Do NOT hold the reference wrench.",
             "setting_lighting": "Bright sunlit outdoor paddock canopy tent with blue sky, circuit paddock trucks, and warm sunlight glinting off racing slicks and alloy wheels.",
         },
@@ -1557,6 +1578,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("maintenance",),
             "shot_framing": "Tight medium close-up across a cluttered metal workshop bench, Naomi framed slightly right behind foreground brake components",
             "pose_action": "Leaning over a steel garage workbench, carefully measuring a drilled stainless steel brake rotor with stainless vernier calipers",
+            "expression": "Deeply concentrated craftsman gaze with steady green eyes inspecting the metal part",
             "prop_rule": "Hold precision stainless steel vernier calipers in both paws measuring a brake disc on the bench. Do NOT hold the reference open-end wrench.",
             "setting_lighting": "Focused warm overhead task lamp illuminating metallic brake rotors, sintered brake pads, and clean shop rags in a sunlit open garage bay.",
         },
@@ -1565,6 +1587,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("maintenance", "digest"),
             "shot_framing": "3/4 side-angle medium shot inside an active race pit box, Naomi standing off-center right next to the front wheel",
             "pose_action": "Standing in 3/4 profile beside the front forks of a superbike on a front head-lift stand, tightening a caliper pinch bolt",
+            "expression": "Confident, subtle mechanic smirk with slightly upturned mouth corners and proud green eyes",
             "prop_rule": "Hold a long chrome micrometer click-type torque wrench horizontally with both paws on the front brake caliper. Do NOT hold the reference flat spanner.",
             "setting_lighting": "Cool white pit-box LED strips mixed with daylight from the open pit lane behind, carbon front fender, gold fork tubes, and pit wall visible.",
         },
@@ -1573,6 +1596,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("digest", "preview"),
             "shot_framing": "Energetic candid 3/4 shot from pit lane looking toward the pit wall fence, Naomi standing on the left third",
             "pose_action": "Holding up a black-and-yellow pit board with chalk lap numbers over the pit wall opening as an endurance bike flashes past",
+            "expression": "Lively cheering feline laugh with mouth happily open in an excited shout-smile and bright sparkling green eyes",
             "prop_rule": "Grip a rectangular pit signboard with chalk numbers ('P1' / 'IN') in both paws; no wrench.",
             "setting_lighting": "Bright afternoon trackside sunlight with heat haze, blurred motorcycle streaking past on the main straight, and race team canopies behind.",
         },
@@ -1581,6 +1605,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("preview", "maintenance"),
             "shot_framing": "Sunlit outdoor grassy paddock shot, Naomi sitting on a stacked set of racing slick tires on the right third",
             "pose_action": "Seated casually on a stack of black racing tires under a team pop-up tent, jotting setup notes on an aluminum clipboard",
+            "expression": "Rare, gentle, slightly shy warm cat smile with softened green eyes and subtly upturned whisker pads",
             "prop_rule": "Hold an aluminum setup clipboard and pen in her paws; no wrench in hand.",
             "setting_lighting": "Warm late-morning sunshine at a Japanese grassroots endurance paddock with colorful team tents, mini-bikes, and green circuit hills behind.",
         },
@@ -1589,6 +1614,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("maintenance", "digest"),
             "shot_framing": "Extreme low-angle shot from floor level looking along the swingarm and gold drive chain, Naomi kneeling on the left",
             "pose_action": "Kneeling on one knee on rubber pit mats, holding a small steel millimeter ruler up against the lower run of a gold racing chain",
+            "expression": "Focused diagnostic mechanic expression with keen green eyes",
             "prop_rule": "Hold a 150mm stainless steel ruler and safety-wire pliers beside the rear sprocket. Do NOT hold the reference large wrench.",
             "setting_lighting": "Dramatic low-key pit bay lighting with bright daylight spilling from the open pit door onto the gold chain and anodized sprocket.",
         },
@@ -1597,6 +1623,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("maintenance",),
             "shot_framing": "Medium environmental shot inside a bright clean technical bay, Naomi positioned on the left third behind clear fluid bottles",
             "pose_action": "Wearing clear safety goggles pushed up on her forehead near her sakura clip, squeezing a transparent brake-bleeder bottle tube",
+            "expression": "Playful, proud cat smile with twinkling green eyes and cheerful upturned whisker pads",
             "prop_rule": "Hold a clear silicone brake bleeder hose and catch bottle connected to a caliper bleed nipple. Do NOT hold a wrench.",
             "setting_lighting": "Crisp bright daylight pouring through wide open garage bay doors onto clean concrete floor, aluminum paddock stand, and tool trolley.",
         },
@@ -1605,6 +1632,7 @@ HERO_SCENE_DIRECTIVES: dict[str, list[dict[str, Any]]] = {
             "preferred_types": ("digest", "maintenance"),
             "shot_framing": "Warm atmospheric back-lit wide shot from outside looking into an open pit garage at sunset, Naomi slightly off-center right",
             "pose_action": "Sitting on a low rolling mechanic creeper stool wiping grease off her paws with a red shop rag while admiring a parked race bike",
+            "expression": "Peaceful, satisfied cat squint-smile with gently half-closed smiling eyes and relaxed happy expression",
             "prop_rule": "Hold ONLY a folded red cotton shop rag wiping her paws, with an open helmet resting on a work mat nearby. No wrench.",
             "setting_lighting": "Golden-orange sunset rays streaming diagonally across the concrete apron and illuminating warm glowing silhouettes inside the pit bay.",
         },
@@ -1700,9 +1728,10 @@ def get_fallback_image_prompt(
 
     circuit_txt = circuit or "a Japanese road racing circuit"
     weather_txt = weather or "natural daylight"
+    expr_txt = directive.get("expression", "Warm natural feline expression")
     return (
         f"{directive['shot_framing']} featuring {cat_identity} at {circuit_txt}. "
-        f"{directive['pose_action']}. {directive['prop_rule']} "
+        f"{directive['pose_action']}. Facial expression: {expr_txt}. {directive['prop_rule']} "
         f"Environment & atmosphere: {directive['setting_lighting']} Weather condition: {weather_txt}. "
         f"Authentic 1980s Japanese Nameneko documentary photography style, crisp fur texture, natural depth of field, subtle 35mm film grain."
     )
@@ -1745,6 +1774,7 @@ def build_hero_image_prompt(
         f"- Directive ID: {directive['id']}\n"
         f"- Shot Framing: {directive['shot_framing']}\n"
         f"- Pose & Action: {directive['pose_action']}\n"
+        f"- Facial Expression: {directive['expression']}\n"
         f"- Prop Rule: {directive['prop_rule']}\n"
         f"- Setting & Lighting: {directive['setting_lighting']}\n"
     )
@@ -1777,9 +1807,10 @@ def compose_final_hero_prompt(
     """Wrap the scene prompt with identity preservation + anti-copy-paste framing rules."""
     return (
         f"Generate a 16:9 photographic hero image featuring the character identity from the reference image ({featured_cat}). "
-        f"KEEP ONLY the cat's exact face, fur markings, signature outfit identity, and chubby 2.5-to-3-heads-tall domestic cat proportions "
+        f"KEEP ONLY the cat's fur color/markings, ear shape, signature outfit identity, and chubby 2.5-to-3-heads-tall domestic cat proportions "
         f"(NOT an 8-head-tall humanoid). "
-        f"COMPLETELY CHANGE the camera angle, pose, framing, background location, lighting, and held props from the reference photo "
+        f"COMPLETELY CHANGE the facial expression (do NOT freeze the reference image's stiff or stern expression—use a natural expressive domestic-cat face with NO human teeth), "
+        f"camera angle, pose, framing, background location, lighting, and held props from the reference photo "
         f"to match this specific scene ({directive['id']}): "
         f"{prompt_body}"
     )
